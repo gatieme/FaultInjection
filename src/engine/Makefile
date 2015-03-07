@@ -17,8 +17,8 @@ else
 
 obj-m := memoryEngine.o
 
-KERNELDIR=/lib/modules/$(shell uname -r)/build
-#KERNELDIR=/lib/modules/3.16.0-23-generic/build
+#KERNELDIR=/lib/modules/$(shell uname -r)/build
+KERNELDIR=/lib/modules/3.16.0-23-generic/build
 
 PWD=$(shell pwd)
 

@@ -201,31 +201,44 @@ void do_request(void)
 */
 int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 {
-	struct mm_struct *pMM;
-	struct vm_area_struct *pVMA;
-	struct vm_area_struct *p;
-	char file[MAX_LINE];
-	struct dentry *pPath = NULL;
-	char *end, *start;
-	char *info = pData;
+	struct mm_struct        *pMM;                   // struct mm_struct is defined in `include/linux/mm_types.h`
+	struct vm_area_struct   *pVMA;
+	struct vm_area_struct   *p;
+	struct dentry *         pPath    = NULL;
+	char                    *info    = pData;
 
-	long phy_addr;
-	unsigned long start_va,end_va;
-	int status;
+    char                    file[MAX_LINE];
+	char                    *end, *start;
+
+	long                    phy_addr;
+	unsigned long           start_va, end_va;
+	int                     status;
 
 	if(pTask == NULL) { return FAIL; }
 	if((pMM = pTask->mm) == NULL) { return FAIL; }
 
 	memset(pData, '\0', length);
-	//前19个字段是关于进程内存信息的总体信息
+
+	//  前19个字段是关于进程内存信息的总体信息
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);
+
+/// modify by gatieme for system porting NeoKylin-linux-3.14/16
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
+    //  error: ‘struct mm_struct’ has no member named ‘reserved_vm’
+    //
+    //  从linux 3.7.0开始内核不再支持RESERVED_VM
+    //  struct mm_struct 也没有了reserved_mm字段
+    //  struct vm_area_struct结构体中flag标志使用值 VM_RESERVED -=> (VM_DONTEXPAND | VM_DONTDUMP)
+    //
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->reserved_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);
+#endif
+
+    safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER);
@@ -831,9 +844,12 @@ static int __init initME(void)
 		dbginfo("Can't create /proc/memoryEngine/\n");
 		return FAIL;
 	}
+
+    /// modify by gatieme for system porting NeoKylin-linux-3.14/16
+    /// error: dereferencing pointer to incomplete type
 	dir->owner = THIS_MODULE;
 
-    ///  create a file named "pid" in direntory
+    /// create a file named "pid" in direntory
 	proc_pid = create_proc_entry("pid", PERMISSION, dir);
 	if(proc_pid == NULL)
 	{
@@ -847,7 +863,7 @@ static int __init initME(void)
 	proc_pid->owner = THIS_MODULE;
 
 
-    ///  create a file named "virtualAddr" in direntory
+    /// create a file named "virtualAddr" in direntory
 	proc_va = create_proc_entry("virtualAddr", PERMISSION, dir);
 	if(proc_va == NULL)
 	{
