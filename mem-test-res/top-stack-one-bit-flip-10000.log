@@ -1,0 +1,5006 @@
+Test Num : 0
+Inject fault at 0x600fffffff99f2ce(physical:0x10000f3edbf2ce)
+one bit flip(0xffff00000001600f -> 0xffff00000001200f)
+7814 timeout
+[ 2011-5-13 14:22:57]Process 7814 exited with code 0
+Test Num : 1
+Inject fault at 0x600fffffffbbf5f1(physical:0x10000f3edbf5f1)
+one bit flip(0x0 -> 0x2)
+7822 timeout
+[  2011-5-13 14:23:0]Process 7822 exited with code 0
+Test Num : 2
+Inject fault at 0x600fffffffe1db93(physical:0x10000f3edbdb93)
+one bit flip(0x2030203020302030 -> 0x2030203020302038)
+7830 timeout
+[  2011-5-13 14:23:3]Process 7830 exited with code 0
+Test Num : 3
+Inject fault at 0x600ffffffff3edcb(physical:0x10000fa09cedcb)
+one bit flip(0x0 -> 0x800)
+7838 timeout
+[  2011-5-13 14:23:6]Process 7838 exited with code 0
+Test Num : 4
+Inject fault at 0x600fffffffb5dec1(physical:0x10000fa09cdec1)
+one bit flip(0x2030203020302030 -> 0x2030203020302032)
+7846 timeout
+[  2011-5-13 14:23:9]Process 7846 exited with code 0
+Test Num : 5
+Inject fault at 0x600fffffffe5d97e(physical:0x10000fa09cd97e)
+one bit flip(0x2030203020302030 -> 0x2030203020306030)
+7854 timeout
+[ 2011-5-13 14:23:12]Process 7854 exited with code 0
+Test Num : 6
+Inject fault at 0x600fffffffccd6c0(physical:0x10000fa09cd6c0)
+one bit flip(0x0 -> 0x1)
+7862 timeout
+[ 2011-5-13 14:23:15]Process 7862 exited with code 0
+Test Num : 7
+Inject fault at 0x600fffffffe9d895(physical:0x10000fa09cd895)
+one bit flip(0x0 -> 0x20)
+7870 timeout
+[ 2011-5-13 14:23:18]Process 7870 exited with code 0
+Test Num : 8
+Inject fault at 0x600fffffffb5dbfe(physical:0x10000f6ccadbfe)
+one bit flip(0x3020302030203020 -> 0x3020302030207020)
+7878 timeout
+[ 2011-5-13 14:23:22]Process 7878 exited with code 0
+Test Num : 9
+Inject fault at 0x600fffffffcdf5a4(physical:0x10000fa09cf5a4)
+one bit flip(0x0 -> 0x10)
+7886 timeout
+[ 2011-5-13 14:23:25]Process 7886 exited with code 0
+Test Num : 10
+Inject fault at 0x600fffffff95c63c(physical:0x10000d9254c63c)
+one bit flip(0x0 -> 0x1000)
+7895 timeout
+[ 2011-5-13 14:23:28]Process 7895 exited with code 0
+Test Num : 11
+Inject fault at 0x600fffffffe8e0d2(physical:0x10000fa09ce0d2)
+one bit flip(0x0 -> 0x4)
+7903 timeout
+[ 2011-5-13 14:23:31]Process 7903 exited with code 0
+Test Num : 12
+Inject fault at 0x600fffffff9aba00(physical:0x10000d9254ba00)
+one bit flip(0x0 -> 0x1)
+7911 timeout
+[ 2011-5-13 14:23:34]Process 7911 exited with code 0
+Test Num : 13
+Inject fault at 0x600fffffffa4ba13(physical:0x10000fa09cba13)
+one bit flip(0x0 -> 0x8)
+7919 timeout
+[ 2011-5-13 14:23:37]Process 7919 exited with code 0
+Test Num : 14
+Inject fault at 0x600fffffffbbcc85(physical:0x10000d9254cc85)
+one bit flip(0x100000794000000 -> 0x100000794000020)
+7927 timeout
+[ 2011-5-13 14:23:40]Process 7927 exited with code 0
+Test Num : 15
+Inject fault at 0x600fffffffbbf944(physical:0x10000fa09cf944)
+one bit flip(0x0 -> 0x10)
+7935 timeout
+[ 2011-5-13 14:23:43]Process 7935 exited with code 0
+Test Num : 16
+Inject fault at 0x600ffffffff4c068(physical:0x10000fa09cc068)
+one bit flip(0x0 -> 0x100)
+7943 timeout
+[ 2011-5-13 14:23:46]Process 7943 exited with code 0
+Test Num : 17
+Inject fault at 0x600fffffffbbde40(physical:0x10000fa09cde40)
+one bit flip(0x3020302030203020 -> 0x3020302030203021)
+7951 timeout
+[ 2011-5-13 14:23:49]Process 7951 exited with code 0
+Test Num : 18
+Inject fault at 0x600fffffffd1bb03(physical:0x10000fa09cbb03)
+one bit flip(0x0 -> 0x8)
+7960 timeout
+[ 2011-5-13 14:23:53]Process 7960 exited with code 0
+Test Num : 19
+Inject fault at 0x600fffffffd3e068(physical:0x10000fa09ce068)
+one bit flip(0x0 -> 0x100)
+7968 timeout
+[ 2011-5-13 14:23:56]Process 7968 exited with code 0
+Test Num : 20
+Inject fault at 0x600fffffffa6ce96(physical:0x10000fa413ce96)
+one bit flip(0xffffff017a017201 -> 0xffffff017a017241)
+7976 timeout
+[ 2011-5-13 14:23:59]Process 7976 exited with code 0
+Test Num : 21
+Inject fault at 0x600fffffffc0d105(physical:0x10000f696bd105)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffffdf)
+7985 timeout
+[  2011-5-13 14:24:2]Process 7985 exited with code 0
+Test Num : 22
+Inject fault at 0x600fffffff83d386(physical:0x10000f696bd386)
+one bit flip(0x0 -> 0x40)
+7995 timeout
+[  2011-5-13 14:24:5]Process 7995 exited with code 0
+Test Num : 23
+Inject fault at 0x600fffffffc9c979(physical:0x10000d9254c979)
+one bit flip(0x0 -> 0x200)
+8003 timeout
+[  2011-5-13 14:24:8]Process 8003 exited with code 0
+Test Num : 24
+Inject fault at 0x600ffffffffdd968(physical:0x10000f696bd968)
+one bit flip(0xa302064656b636f -> 0xa302064656b626f)
+8011 timeout
+[ 2011-5-13 14:24:11]Process 8011 exited with code 0
+Test Num : 25
+Inject fault at 0x600fffffffa7caa7(physical:0x10000f696bcaa7)
+one bit flip(0x0 -> 0x80)
+8020 timeout
+[ 2011-5-13 14:24:14]Process 8020 exited with code 0
+Test Num : 26
+Inject fault at 0x600ffffffffbe8f9(physical:0x10000d9254e8f9)
+one bit flip(0xff200000000004f9 -> 0xff200000000006f9)
+8032 timeout
+[ 2011-5-13 14:24:17]Process 8032 exited with code 0
+Test Num : 27
+Inject fault at 0x600fffffffa7c70e(physical:0x10000f696bc70e)
+one bit flip(0x0 -> 0x4000)
+8044 timeout
+[ 2011-5-13 14:24:20]Process 8044 exited with code 0
+Test Num : 28
+Inject fault at 0x600fffffffb2cfb0(physical:0x10000fa5d5cfb0)
+one bit flip(0x5f035a0355034d03 -> 0x5f035a0355034d02)
+8058 timeout
+[ 2011-5-13 14:24:24]Process 8058 exited with code 0
+Test Num : 29
+Inject fault at 0x600fffffffcdf5c4(physical:0x10000f1cf2f5c4)
+one bit flip(0x0 -> 0x10)
+8069 timeout
+[ 2011-5-13 14:24:27]Process 8069 exited with code 0
+Test Num : 30
+Inject fault at 0x600fffffffb4e260(physical:0x10000fa5d5e260)
+one bit flip(0x1 -> 0x0)
+8082 timeout
+[ 2011-5-13 14:24:30]Process 8082 exited with code 0
+Test Num : 31
+Inject fault at 0x600fffffffd0cb27(physical:0x10000c54b2cb27)
+one bit flip(0x0 -> 0x80)
+8091 timeout
+[ 2011-5-13 14:24:33]Process 8091 exited with code 0
+Test Num : 32
+Inject fault at 0x600fffffffa4ba47(physical:0x10000c54b2ba47)
+one bit flip(0x0 -> 0x80)
+8099 timeout
+[ 2011-5-13 14:24:36]Process 8099 exited with code 0
+Test Num : 33
+Inject fault at 0x600fffffffc4d96e(physical:0x10000c54b2d96e)
+one bit flip(0x2030203000000a30 -> 0x2030203000004a30)
+8109 timeout
+[ 2011-5-13 14:24:39]Process 8109 exited with code 0
+Test Num : 34
+Inject fault at 0x600fffffff8fda14(physical:0x10000c54b2da14)
+one bit flip(0x3020302035383630 -> 0x3020302035383620)
+8119 timeout
+[ 2011-5-13 14:24:42]Process 8119 exited with code 0
+Test Num : 35
+Inject fault at 0x600fffffff8ad292(physical:0x10000c54b2d292)
+one bit flip(0x0 -> 0x4)
+8129 timeout
+[ 2011-5-13 14:24:45]Process 8129 exited with code 0
+Test Num : 36
+Inject fault at 0x600ffffffff6de6f(physical:0x10000c54b2de6f)
+one bit flip(0x2030203020302030 -> 0x203020302030a030)
+8140 timeout
+[ 2011-5-13 14:24:48]Process 8140 exited with code 0
+Test Num : 37
+Inject fault at 0x600fffffffb5f76f(physical:0x10000c54b2f76f)
+one bit flip(0xfffffffb5f76000 -> 0xfffffffb5f7e000)
+8149 timeout
+[ 2011-5-13 14:24:51]Process 8149 exited with code 0
+Test Num : 38
+Inject fault at 0x600fffffffb4f510(physical:0x10000c54b2f510)
+one bit flip(0x200000000004d768 -> 0x200000000004d769)
+8158 timeout
+[ 2011-5-13 14:24:55]Process 8158 exited with code 0
+Test Num : 39
+Inject fault at 0x600fffffffc3defb(physical:0x10000c54b2defb)
+one bit flip(0xc3e2f00000000000 -> 0xc3e2f00000000800)
+8166 timeout
+[ 2011-5-13 14:24:58]Process 8166 exited with code 0
+Test Num : 40
+Inject fault at 0x600fffffff93c449(physical:0x10000c54b2c449)
+one bit flip(0x0 -> 0x200)
+8174 timeout
+[  2011-5-13 14:25:1]Process 8174 exited with code 0
+Test Num : 41
+Inject fault at 0x600ffffffff5f9d0(physical:0x10000f681df9d0)
+one bit flip(0x4000000000018f40 -> 0x4000000000018f41)
+8182 timeout
+[  2011-5-13 14:25:4]Process 8182 exited with code 0
+Test Num : 42
+Inject fault at 0x600ffffffff0e036(physical:0x10000c54b2e036)
+one bit flip(0x0 -> 0x40)
+8191 timeout
+[  2011-5-13 14:25:7]Process 8191 exited with code 0
+Test Num : 43
+Inject fault at 0x600fffffffe6c8d4(physical:0x10000c54b2c8d4)
+one bit flip(0x0 -> 0x10)
+8200 timeout
+[ 2011-5-13 14:25:10]Process 8200 exited with code 0
+Test Num : 44
+Inject fault at 0x600fffffffdae764(physical:0x10000c54b2e764)
+one bit flip(0x600fffff -> 0x600fffef)
+8209 timeout
+[ 2011-5-13 14:25:13]Process 8209 exited with code 0
+Test Num : 45
+Inject fault at 0x600fffffffc6f0b3(physical:0x10000c54b2f0b3)
+one bit flip(0x100 -> 0x108)
+8217 timeout
+[ 2011-5-13 14:25:16]Process 8217 exited with code 0
+Test Num : 46
+Inject fault at 0x600fffffffc8c3bf(physical:0x10000c54b2c3bf)
+one bit flip(0x0 -> 0x8000)
+8225 timeout
+[ 2011-5-13 14:25:19]Process 8225 exited with code 0
+Test Num : 47
+Inject fault at 0x600fffffffbcc502(physical:0x10000c54b2c502)
+one bit flip(0x0 -> 0x4)
+8233 timeout
+[ 2011-5-13 14:25:22]Process 8233 exited with code 0
+Test Num : 48
+Inject fault at 0x600fffffff8ef56c(physical:0x10000f681df56c)
+one bit flip(0x0 -> 0x1000)
+8241 timeout
+[ 2011-5-13 14:25:26]Process 8241 exited with code 0
+Test Num : 49
+Inject fault at 0x600fffffffbaba02(physical:0x10000c54b2ba02)
+one bit flip(0x0 -> 0x4)
+8249 timeout
+[ 2011-5-13 14:25:29]Process 8249 exited with code 0
+Test Num : 50
+Inject fault at 0x600fffffff90d3be(physical:0x10000c54b2d3be)
+one bit flip(0x0 -> 0x4000)
+8258 timeout
+[ 2011-5-13 14:25:32]Process 8258 exited with code 0
+Test Num : 51
+Inject fault at 0x600fffffff8fddc0(physical:0x10000c54b2ddc0)
+one bit flip(0x8000000000000000 -> 0x8000000000000001)
+8267 timeout
+[ 2011-5-13 14:25:35]Process 8267 exited with code 0
+Test Num : 52
+Inject fault at 0x600fffffffd2ebbe(physical:0x10000c54b2ebbe)
+one bit flip(0x148f80000 -> 0x148f84000)
+8276 timeout
+[ 2011-5-13 14:25:38]Process 8276 exited with code 0
+Test Num : 53
+Inject fault at 0x600fffffff8ae2f5(physical:0x10000c54b2e2f5)
+one bit flip(0x0 -> 0x20)
+8285 timeout
+[ 2011-5-13 14:25:41]Process 8285 exited with code 0
+Test Num : 54
+Inject fault at 0x600fffffff85c9ed(physical:0x10000c54b2c9ed)
+one bit flip(0x0 -> 0x2000)
+8293 timeout
+[ 2011-5-13 14:25:44]Process 8293 exited with code 0
+Test Num : 55
+Inject fault at 0x600fffffff88dbc8(physical:0x10000f6c6adbc8)
+one bit flip(0x3020302030203020 -> 0x3020302030203120)
+8301 timeout
+[ 2011-5-13 14:25:47]Process 8301 exited with code 0
+Test Num : 56
+Inject fault at 0x600fffffffd5f37a(physical:0x10000c54b2f37a)
+one bit flip(0x0 -> 0x400)
+8310 timeout
+[ 2011-5-13 14:25:50]Process 8310 exited with code 0
+Test Num : 57
+Inject fault at 0x600fffffffe9ef2f(physical:0x10000c54b2ef2f)
+one bit flip(0x584b49 -> 0x58cb49)
+8318 timeout
+[ 2011-5-13 14:25:53]Process 8318 exited with code 0
+Test Num : 58
+Inject fault at 0x600fffffffe5cdb2(physical:0x10000c54b2cdb2)
+one bit flip(0xffed800000000000 -> 0xffed800000000008)
+8326 timeout
+[ 2011-5-13 14:25:57]Process 8326 exited with code 0
+Test Num : 59
+Inject fault at 0x600fffffffbddfa3(physical:0x10000c54b2dfa3)
+one bit flip(0xc000000000 -> 0xc000000008)
+8335 timeout
+[  2011-5-13 14:26:0]Process 8335 exited with code 0
+Test Num : 60
+Inject fault at 0x600fffffff88d27a(physical:0x10000c54b2d27a)
+one bit flip(0x0 -> 0x400)
+8343 timeout
+[  2011-5-13 14:26:3]Process 8343 exited with code 0
+Test Num : 61
+Inject fault at 0x600fffffffe5dd63(physical:0x10000c54b2dd63)
+one bit flip(0x123400000000000 -> 0x123400000000008)
+8352 timeout
+[  2011-5-13 14:26:6]Process 8352 exited with code 0
+Test Num : 62
+Inject fault at 0x600fffffffeed620(physical:0x10000c54b2d620)
+one bit flip(0x0 -> 0x1)
+8360 timeout
+[  2011-5-13 14:26:9]Process 8360 exited with code 0
+Test Num : 63
+Inject fault at 0x600fffffffdee459(physical:0x10000c54b2e459)
+one bit flip(0x0 -> 0x200)
+8368 timeout
+[ 2011-5-13 14:26:12]Process 8368 exited with code 0
+Test Num : 64
+Inject fault at 0x600fffffffc5dd4f(physical:0x10000c54b2dd4f)
+one bit flip(0x30 -> 0x8030)
+8376 timeout
+[ 2011-5-13 14:26:15]Process 8376 exited with code 0
+Test Num : 65
+Inject fault at 0x600fffffffebf597(physical:0x10000c54b2f597)
+one bit flip(0x0 -> 0x80)
+8384 timeout
+[ 2011-5-13 14:26:18]Process 8384 exited with code 0
+Test Num : 66
+Inject fault at 0x600fffffffb7e74c(physical:0x10000f6c6ae74c)
+one bit flip(0x0 -> 0x1000)
+8394 timeout
+[ 2011-5-13 14:26:21]Process 8394 exited with code 0
+Test Num : 67
+Inject fault at 0x600fffffffc1ebb5(physical:0x10000c54b2ebb5)
+one bit flip(0x20000000000 -> 0x20000000020)
+8402 timeout
+[ 2011-5-13 14:26:24]Process 8402 exited with code 0
+Test Num : 68
+Inject fault at 0x600ffffffff0d9c0(physical:0x10000c54b2d9c0)
+one bit flip(0x2030203020302030 -> 0x2030203020302034)
+8410 timeout
+[ 2011-5-13 14:26:28]Process 8410 exited with code 0
+Test Num : 69
+Inject fault at 0x600fffffffb8cd4c(physical:0x10000c54b2cd4c)
+one bit flip(0x0 -> 0x1000)
+8418 timeout
+[ 2011-5-13 14:26:31]Process 8418 exited with code 0
+Test Num : 70
+Inject fault at 0x600fffffffeec492(physical:0x10000c54b2c492)
+one bit flip(0x0 -> 0x4)
+8426 timeout
+[ 2011-5-13 14:26:34]Process 8426 exited with code 0
+Test Num : 71
+Inject fault at 0x600fffffffa8c769(physical:0x10000c54b2c769)
+one bit flip(0x0 -> 0x200)
+8435 timeout
+[ 2011-5-13 14:26:37]Process 8435 exited with code 0
+Test Num : 72
+Inject fault at 0x600fffffffbbda2f(physical:0x10000c54b2da2f)
+one bit flip(0x2030203020302030 -> 0x203020302030a030)
+8443 timeout
+[ 2011-5-13 14:26:40]Process 8443 exited with code 0
+Test Num : 73
+Inject fault at 0x600fffffffafeda8(physical:0x10000ce34aeda8)
+one bit flip(0x0 -> 0x100)
+8451 timeout
+[ 2011-5-13 14:26:43]Process 8451 exited with code 0
+Test Num : 74
+Inject fault at 0x600fffffff8abcbc(physical:0x10000ce34abcbc)
+one bit flip(0x20000000 -> 0x20001000)
+8459 timeout
+[ 2011-5-13 14:26:46]Process 8459 exited with code 0
+Test Num : 75
+Inject fault at 0x600fffffff87ce9c(physical:0x10000ce34ace9c)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffefff)
+8467 timeout
+[ 2011-5-13 14:26:49]Process 8467 exited with code 0
+Test Num : 76
+Inject fault at 0x600fffffff9cc642(physical:0x10000dba71c642)
+one bit flip(0x0 -> 0x4)
+8475 timeout
+[ 2011-5-13 14:26:52]Process 8475 exited with code 0
+Test Num : 77
+Inject fault at 0x600fffffffcbf176(physical:0x10000dba71f176)
+one bit flip(0xffffffcbf7402000 -> 0xffffffcbf7402040)
+8483 timeout
+[ 2011-5-13 14:26:55]Process 8483 exited with code 0
+Test Num : 78
+Inject fault at 0x600fffffffb2f035(physical:0x10000c53ddf035)
+one bit flip(0x1000000 -> 0x1000001)
+8491 timeout
+[ 2011-5-13 14:26:59]Process 8491 exited with code 0
+Test Num : 79
+Inject fault at 0x600fffffff88d233(physical:0x10000fa447d233)
+one bit flip(0x0 -> 0x8)
+8499 timeout
+[  2011-5-13 14:27:2]Process 8499 exited with code 0
+Test Num : 80
+Inject fault at 0x600fffffffd2ca4f(physical:0x10000f7436ca4f)
+one bit flip(0x0 -> 0x8000)
+8507 timeout
+[  2011-5-13 14:27:5]Process 8507 exited with code 0
+Test Num : 81
+Inject fault at 0x600fffffff95f634(physical:0x10000f7436f634)
+one bit flip(0x0 -> 0x10)
+8515 timeout
+[  2011-5-13 14:27:8]Process 8515 exited with code 0
+Test Num : 82
+Inject fault at 0x600fffffff9bee4c(physical:0x10000f7436ee4c)
+one bit flip(0x0 -> 0x1000)
+8523 timeout
+[ 2011-5-13 14:27:11]Process 8523 exited with code 0
+Test Num : 83
+Inject fault at 0x600fffffff9fdad3(physical:0x10000d7094dad3)
+one bit flip(0x2030203020302030 -> 0x2030203020302038)
+8532 timeout
+[ 2011-5-13 14:27:14]Process 8532 exited with code 0
+Test Num : 84
+Inject fault at 0x600fffffff8bbd44(physical:0x10000d7094bd44)
+one bit flip(0x0 -> 0x10)
+8540 timeout
+[ 2011-5-13 14:27:17]Process 8540 exited with code 0
+Test Num : 85
+Inject fault at 0x600fffffffb0db48(physical:0x10000d7094db48)
+one bit flip(0x3020302030203020 -> 0x3020302030203120)
+8548 timeout
+[ 2011-5-13 14:27:20]Process 8548 exited with code 0
+Test Num : 86
+Inject fault at 0x600ffffffffddc82(physical:0x10000f7436dc82)
+one bit flip(0x1cc820000000000a -> 0x1cc820000000000e)
+8556 timeout
+[ 2011-5-13 14:27:23]Process 8556 exited with code 0
+Test Num : 87
+Inject fault at 0x600fffffffbdd20c(physical:0x10000fa5aad20c)
+one bit flip(0x0 -> 0x1000)
+8564 timeout
+[ 2011-5-13 14:27:26]Process 8564 exited with code 0
+Test Num : 88
+Inject fault at 0x600ffffffffac052(physical:0x10000fdf94c052)
+one bit flip(0x0 -> 0x2)
+8572 timeout
+[ 2011-5-13 14:27:30]Process 8572 exited with code 0
+Test Num : 89
+Inject fault at 0x600fffffffa7c4f0(physical:0x10000fdf94c4f0)
+one bit flip(0x0 -> 0x1)
+8580 timeout
+[ 2011-5-13 14:27:33]Process 8580 exited with code 0
+Test Num : 90
+Inject fault at 0x600ffffffff0cd17(physical:0x10000fa0f7cd17)
+one bit flip(0x0 -> 0x80)
+8589 timeout
+[ 2011-5-13 14:27:36]Process 8589 exited with code 0
+Test Num : 91
+Inject fault at 0x600fffffffdff3f0(physical:0x10000d8747f3f0)
+one bit flip(0x0 -> 0x1)
+8597 timeout
+[ 2011-5-13 14:27:39]Process 8597 exited with code 0
+Test Num : 92
+Inject fault at 0x600fffffffd7bbf3(physical:0x10000d8747bbf3)
+one bit flip(0x0 -> 0x8)
+8605 timeout
+[ 2011-5-13 14:27:42]Process 8605 exited with code 0
+Test Num : 93
+Inject fault at 0x600ffffffffbbc44(physical:0x10000f9cb4bc44)
+one bit flip(0x3e077000000000 -> 0x3e077000000010)
+8614 timeout
+[ 2011-5-13 14:27:45]Process 8614 exited with code 0
+Test Num : 94
+Inject fault at 0x600fffffffe8d306(physical:0x10000c988bd306)
+one bit flip(0x0 -> 0x40)
+8622 timeout
+[ 2011-5-13 14:27:48]Process 8622 exited with code 0
+Test Num : 95
+Inject fault at 0x600fffffffc3c558(physical:0x10000f9af7c558)
+one bit flip(0x0 -> 0x100)
+8630 timeout
+[ 2011-5-13 14:27:51]Process 8630 exited with code 0
+Test Num : 96
+Inject fault at 0x600ffffffffecd4e(physical:0x10000c988bcd4e)
+one bit flip(0x0 -> 0x4000)
+8638 timeout
+[ 2011-5-13 14:27:54]Process 8638 exited with code 0
+Test Num : 97
+Inject fault at 0x600ffffffff8cdc8(physical:0x10000f9277cdc8)
+one bit flip(0x1003e -> 0x1013e)
+8646 timeout
+[ 2011-5-13 14:27:57]Process 8646 exited with code 0
+Test Num : 98
+Inject fault at 0x600fffffffe3df76(physical:0x10000f9449df76)
+one bit flip(0x2000 -> 0x2002)
+8654 timeout
+[  2011-5-13 14:28:1]Process 8654 exited with code 0
+Test Num : 99
+Inject fault at 0x600fffffffccdd16(physical:0x10000fa0cbdd16)
+one bit flip(0xffff -> 0xffbf)
+8662 timeout
+[  2011-5-13 14:28:4]Process 8662 exited with code 0
+Test Num : 100
+Inject fault at 0x600fffffff86d315(physical:0x10000fa0cbd315)
+one bit flip(0x0 -> 0x20)
+8670 timeout
+[  2011-5-13 14:28:7]Process 8670 exited with code 0
+Test Num : 101
+Inject fault at 0x600fffffffa1f2b4(physical:0x10000f1455f2b4)
+one bit flip(0x0 -> 0x10)
+8678 timeout
+[ 2011-5-13 14:28:10]Process 8678 exited with code 0
+Test Num : 102
+Inject fault at 0x600fffffff82f98e(physical:0x10000fa0cbf98e)
+one bit flip(0x0 -> 0x4000)
+8686 timeout
+[ 2011-5-13 14:28:13]Process 8686 exited with code 0
+Test Num : 103
+Inject fault at 0x600ffffffff4f3c0(physical:0x10000fa0cbf3c0)
+one bit flip(0x0 -> 0x1)
+8694 timeout
+[ 2011-5-13 14:28:16]Process 8694 exited with code 0
+Test Num : 104
+Inject fault at 0x600fffffffadcf37(physical:0x10000f87fecf37)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffff7f)
+8702 timeout
+[ 2011-5-13 14:28:19]Process 8702 exited with code 0
+Test Num : 105
+Inject fault at 0x600fffffffd1c204(physical:0x10000f4ca7c204)
+one bit flip(0x0 -> 0x10)
+8710 timeout
+[ 2011-5-13 14:28:22]Process 8710 exited with code 0
+Test Num : 106
+Inject fault at 0x600fffffffcddf57(physical:0x10000c5019df57)
+one bit flip(0x0 -> 0x80)
+8719 timeout
+[ 2011-5-13 14:28:25]Process 8719 exited with code 0
+Test Num : 107
+Inject fault at 0x600fffffffc4bae1(physical:0x10000c4d7fbae1)
+one bit flip(0x0 -> 0x2)
+8729 timeout
+[ 2011-5-13 14:28:28]Process 8729 exited with code 0
+Test Num : 108
+Inject fault at 0x600fffffffa7f213(physical:0x10000c4c7ff213)
+one bit flip(0x0 -> 0x8)
+8738 timeout
+[ 2011-5-13 14:28:32]Process 8738 exited with code 0
+Test Num : 109
+Inject fault at 0x600fffffffd0d79d(physical:0x10000c4c7fd79d)
+one bit flip(0x0 -> 0x2000)
+8746 timeout
+[ 2011-5-13 14:28:35]Process 8746 exited with code 0
+Test Num : 110
+Inject fault at 0x600ffffffff9ba7b(physical:0x10000c4c7fba7b)
+one bit flip(0x0 -> 0x800)
+8756 timeout
+[ 2011-5-13 14:28:38]Process 8756 exited with code 0
+Test Num : 111
+Inject fault at 0x600fffffff99d9e1(physical:0x10000f6774d9e1)
+one bit flip(0x3120302031372030 -> 0x3120302031372032)
+8765 timeout
+[ 2011-5-13 14:28:41]Process 8765 exited with code 0
+Test Num : 112
+Inject fault at 0x600fffffffaedc81(physical:0x10000c4649dc81)
+one bit flip(0xc820000000000a48 -> 0xc820000000000a4a)
+8774 timeout
+[ 2011-5-13 14:28:44]Process 8774 exited with code 0
+Test Num : 113
+Inject fault at 0x600ffffffface40e(physical:0x10000f116ee40e)
+one bit flip(0x0 -> 0x4000)
+8782 timeout
+[ 2011-5-13 14:28:47]Process 8782 exited with code 0
+Test Num : 114
+Inject fault at 0x600ffffffffec2b1(physical:0x10000f3e78c2b1)
+one bit flip(0x0 -> 0x2)
+8790 timeout
+[ 2011-5-13 14:28:50]Process 8790 exited with code 0
+Test Num : 115
+Inject fault at 0x600fffffff9aeb1f(physical:0x10000f68b2eb1f)
+one bit flip(0x0 -> 0x8000)
+8799 timeout
+[ 2011-5-13 14:28:53]Process 8799 exited with code 0
+Test Num : 116
+Inject fault at 0x600fffffffa4eb69(physical:0x10000c1eb6eb69)
+one bit flip(0x0 -> 0x200)
+8807 timeout
+[ 2011-5-13 14:28:56]Process 8807 exited with code 0
+Test Num : 117
+Inject fault at 0x600fffffff87c922(physical:0x10000f21a3c922)
+one bit flip(0x0 -> 0x4)
+8815 timeout
+[ 2011-5-13 14:28:59]Process 8815 exited with code 0
+Test Num : 118
+Inject fault at 0x600fffffffb7e317(physical:0x10000c1d56e317)
+one bit flip(0x4c91860 -> 0x4c918e0)
+8823 timeout
+[  2011-5-13 14:29:3]Process 8823 exited with code 0
+Test Num : 119
+Inject fault at 0x600fffffff9ccc17(physical:0x10000f79fdcc17)
+one bit flip(0x0 -> 0x80)
+8831 timeout
+[  2011-5-13 14:29:6]Process 8831 exited with code 0
+Test Num : 120
+Inject fault at 0x600ffffffffcc13a(physical:0x10000c1e25c13a)
+one bit flip(0x0 -> 0x400)
+8839 timeout
+[  2011-5-13 14:29:9]Process 8839 exited with code 0
+Test Num : 121
+Inject fault at 0x600fffffff80d3a0(physical:0x10000c1afcd3a0)
+one bit flip(0x0 -> 0x1)
+8850 timeout
+[ 2011-5-13 14:29:12]Process 8850 exited with code 0
+Test Num : 122
+Inject fault at 0x600fffffffbdeee7(physical:0x10000f6d90eee7)
+one bit flip(0x504f5749484e4b4d -> 0x504f5749484e4bcd)
+8858 timeout
+[ 2011-5-13 14:29:15]Process 8858 exited with code 0
+Test Num : 123
+Inject fault at 0x600fffffffc7eb77(physical:0x10000c1651eb77)
+one bit flip(0x0 -> 0x80)
+8866 timeout
+[ 2011-5-13 14:29:18]Process 8866 exited with code 0
+Test Num : 124
+Inject fault at 0x600fffffffc8cee3(physical:0x10000c1869cee3)
+one bit flip(0x210020d020201ff -> 0x210020d020201f7)
+8874 timeout
+[ 2011-5-13 14:29:21]Process 8874 exited with code 0
+Test Num : 125
+Inject fault at 0x600fffffffbed2fc(physical:0x10000f6dc1d2fc)
+one bit flip(0x0 -> 0x1000)
+8883 timeout
+[ 2011-5-13 14:29:24]Process 8883 exited with code 0
+Test Num : 126
+Inject fault at 0x600fffffffc7c859(physical:0x10000f6dc1c859)
+one bit flip(0x0 -> 0x200)
+8891 timeout
+[ 2011-5-13 14:29:27]Process 8891 exited with code 0
+Test Num : 127
+Inject fault at 0x600ffffffff0ed37(physical:0x10000f6c8bed37)
+one bit flip(0x4f93800 -> 0x4f93880)
+8899 timeout
+[ 2011-5-13 14:29:30]Process 8899 exited with code 0
+Test Num : 128
+Inject fault at 0x600fffffff99f126(physical:0x10000f7c64f126)
+one bit flip(0x0 -> 0x40)
+8907 timeout
+[ 2011-5-13 14:29:33]Process 8907 exited with code 0
+Test Num : 129
+Inject fault at 0x600fffffffaeef73(physical:0x10000f7192ef73)
+one bit flip(0x30000000000 -> 0x30000000200)
+8915 timeout
+[ 2011-5-13 14:29:37]Process 8915 exited with code 0
+Test Num : 130
+Inject fault at 0x600ffffffff8f2a5(physical:0x10000f6273f2a5)
+one bit flip(0x0 -> 0x20)
+8923 timeout
+[ 2011-5-13 14:29:40]Process 8923 exited with code 0
+Test Num : 131
+Inject fault at 0x600fffffffefcc04(physical:0x10000f6273cc04)
+one bit flip(0x0 -> 0x10)
+8932 timeout
+[ 2011-5-13 14:29:43]Process 8932 exited with code 0
+Test Num : 132
+Inject fault at 0x600fffffffcdd5ac(physical:0x10000c108bd5ac)
+one bit flip(0x0 -> 0x1000)
+8940 timeout
+[ 2011-5-13 14:29:46]Process 8940 exited with code 0
+Test Num : 133
+Inject fault at 0x600ffffffface483(physical:0x10000c11dee483)
+one bit flip(0x0 -> 0x8)
+8948 timeout
+[ 2011-5-13 14:29:49]Process 8948 exited with code 0
+Test Num : 134
+Inject fault at 0x600fffffffc9f9db(physical:0x10000c1114f9db)
+one bit flip(0xc9fa080000000000 -> 0xc9fa080000000800)
+8956 timeout
+[ 2011-5-13 14:29:52]Process 8956 exited with code 0
+Test Num : 135
+Inject fault at 0x600ffffffff6c512(physical:0x10000c1101c512)
+one bit flip(0x0 -> 0x4)
+8964 timeout
+[ 2011-5-13 14:29:55]Process 8964 exited with code 0
+Test Num : 136
+Inject fault at 0x600fffffff9ce5d5(physical:0x10000c10b7e5d5)
+one bit flip(0xffff9ce618000000 -> 0xffff9ce618000020)
+8972 timeout
+[ 2011-5-13 14:29:58]Process 8972 exited with code 0
+Test Num : 137
+Inject fault at 0x600fffffffaccec0(physical:0x10000c10b7cec0)
+one bit flip(0xc101b801af01a601 -> 0xc101b801af01a600)
+8980 timeout
+[  2011-5-13 14:30:1]Process 8980 exited with code 0
+Test Num : 138
+Inject fault at 0x600fffffffe1be03(physical:0x10000c10b7be03)
+one bit flip(0x0 -> 0x8)
+8988 timeout
+[  2011-5-13 14:30:4]Process 8988 exited with code 0
+Test Num : 139
+Inject fault at 0x600fffffffe9f553(physical:0x10000f1058f553)
+one bit flip(0x2000000000 -> 0x2000000100)
+8997 timeout
+[  2011-5-13 14:30:8]Process 8997 exited with code 0
+Test Num : 140
+Inject fault at 0x600fffffffe8d708(physical:0x10000f1494d708)
+one bit flip(0x0 -> 0x100)
+9005 timeout
+[ 2011-5-13 14:30:11]Process 9005 exited with code 0
+Test Num : 141
+Inject fault at 0x600fffffffaebd1c(physical:0x10000f1f7abd1c)
+one bit flip(0x0 -> 0x1000)
+9013 timeout
+[ 2011-5-13 14:30:14]Process 9013 exited with code 0
+Test Num : 142
+Inject fault at 0x600ffffffffef41d(physical:0x10000f21a9f41d)
+one bit flip(0xfffffef2d0200000 -> 0xfffffef2d0202000)
+9022 timeout
+[ 2011-5-13 14:30:17]Process 9022 exited with code 0
+Test Num : 143
+Inject fault at 0x600fffffffc3e2af(physical:0x10000f3852e2af)
+one bit flip(0x12020 -> 0x1a020)
+9030 timeout
+[ 2011-5-13 14:30:20]Process 9030 exited with code 0
+Test Num : 144
+Inject fault at 0x600fffffff84bbe7(physical:0x10000f3852bbe7)
+one bit flip(0x0 -> 0x80)
+9039 timeout
+[ 2011-5-13 14:30:23]Process 9039 exited with code 0
+Test Num : 145
+Inject fault at 0x600fffffffdde632(physical:0x10000f1015e632)
+one bit flip(0x8000 -> 0x8004)
+9048 timeout
+[ 2011-5-13 14:30:26]Process 9048 exited with code 0
+Test Num : 146
+Inject fault at 0x600fffffffa6c6ee(physical:0x10000f341bc6ee)
+one bit flip(0x0 -> 0x4000)
+9057 timeout
+[ 2011-5-13 14:30:29]Process 9057 exited with code 0
+Test Num : 147
+Inject fault at 0x600fffffff94eec5(physical:0x10000f6c25eec5)
+one bit flip(0x700000006000000 -> 0x700000006000020)
+9066 timeout
+[ 2011-5-13 14:30:32]Process 9066 exited with code 0
+Test Num : 148
+Inject fault at 0x600fffffffaee7f5(physical:0x10000f2736e7f5)
+one bit flip(0x0 -> 0x20)
+9075 timeout
+[ 2011-5-13 14:30:35]Process 9075 exited with code 0
+Test Num : 149
+Inject fault at 0x600fffffffedbcb7(physical:0x10000f2736bcb7)
+one bit flip(0x4f93820 -> 0x4f938a0)
+9083 timeout
+[ 2011-5-13 14:30:39]Process 9083 exited with code 0
+Test Num : 150
+Inject fault at 0x600fffffffc2ede9(physical:0x10000f2736ede9)
+one bit flip(0x0 -> 0x200)
+9091 timeout
+[ 2011-5-13 14:30:42]Process 9091 exited with code 0
+Test Num : 151
+Inject fault at 0x600fffffffb6d45f(physical:0x10000f2736d45f)
+one bit flip(0x0 -> 0x8000)
+9099 timeout
+[ 2011-5-13 14:30:45]Process 9099 exited with code 0
+Test Num : 152
+Inject fault at 0x600fffffffdddbad(physical:0x10000f2736dbad)
+one bit flip(0x2030203020302030 -> 0x2030203020300030)
+9107 timeout
+[ 2011-5-13 14:30:48]Process 9107 exited with code 0
+Test Num : 153
+Inject fault at 0x600fffffffd6f8c7(physical:0x10000f6c25f8c7)
+one bit flip(0x0 -> 0x80)
+9115 timeout
+[ 2011-5-13 14:30:51]Process 9115 exited with code 0
+Test Num : 154
+Inject fault at 0x600fffffffbae4fe(physical:0x10000f10a8e4fe)
+one bit flip(0x0 -> 0x4000)
+9123 timeout
+[ 2011-5-13 14:30:54]Process 9123 exited with code 0
+Test Num : 155
+Inject fault at 0x600fffffffc8e0b6(physical:0x10000f10a8e0b6)
+one bit flip(0x0 -> 0x40)
+9131 timeout
+[ 2011-5-13 14:30:57]Process 9131 exited with code 0
+Test Num : 156
+Inject fault at 0x600fffffff93ef0c(physical:0x10000f19e8ef0c)
+one bit flip(0x500000004 -> 0x500001004)
+9140 timeout
+[  2011-5-13 14:31:0]Process 9140 exited with code 0
+Test Num : 157
+Inject fault at 0x600fffffff8de7e1(physical:0x10000f19e8e7e1)
+one bit flip(0xc100000000000000 -> 0xc100000000000002)
+9148 timeout
+[  2011-5-13 14:31:3]Process 9148 exited with code 0
+Test Num : 158
+Inject fault at 0x600fffffffc4bf1c(physical:0x10000f19e8bf1c)
+one bit flip(0x0 -> 0x1000)
+9156 timeout
+[  2011-5-13 14:31:6]Process 9156 exited with code 0
+Test Num : 159
+Inject fault at 0x600fffffffa5ca0c(physical:0x10000f19e8ca0c)
+one bit flip(0x0 -> 0x1000)
+9164 timeout
+[ 2011-5-13 14:31:10]Process 9164 exited with code 0
+Test Num : 160
+Inject fault at 0x600fffffffd6c06e(physical:0x10000fcc03c06e)
+one bit flip(0x0 -> 0x4000)
+9172 timeout
+[ 2011-5-13 14:31:13]Process 9172 exited with code 0
+Test Num : 161
+Inject fault at 0x600ffffffffcbd59(physical:0x10000f1f8bbd59)
+one bit flip(0x0 -> 0x200)
+9180 timeout
+[ 2011-5-13 14:31:16]Process 9180 exited with code 0
+Test Num : 162
+Inject fault at 0x600fffffff93ee64(physical:0x10000c1065ee64)
+one bit flip(0x0 -> 0x10)
+9188 timeout
+[ 2011-5-13 14:31:19]Process 9188 exited with code 0
+Test Num : 163
+Inject fault at 0x600fffffffa0db03(physical:0x10000c1065db03)
+one bit flip(0x2030203020302030 -> 0x2030203020302038)
+9197 timeout
+[ 2011-5-13 14:31:22]Process 9197 exited with code 0
+Test Num : 164
+Inject fault at 0x600fffffff98c6f2(physical:0x10000c1065c6f2)
+one bit flip(0x0 -> 0x4)
+9205 timeout
+[ 2011-5-13 14:31:25]Process 9205 exited with code 0
+Test Num : 165
+Inject fault at 0x600fffffff9ac84d(physical:0x10000c1065c84d)
+one bit flip(0x0 -> 0x2000)
+9213 timeout
+[ 2011-5-13 14:31:28]Process 9213 exited with code 0
+Test Num : 166
+Inject fault at 0x600fffffffc6e6a6(physical:0x10000c1065e6a6)
+one bit flip(0xa04d8a74437f0000 -> 0xa04d8a74437f0040)
+9221 timeout
+[ 2011-5-13 14:31:31]Process 9221 exited with code 0
+Test Num : 167
+Inject fault at 0x600fffffff9edbd2(physical:0x10000c1065dbd2)
+one bit flip(0x3020302030203020 -> 0x3020302030203024)
+9229 timeout
+[ 2011-5-13 14:31:34]Process 9229 exited with code 0
+Test Num : 168
+Inject fault at 0x600ffffffff9d17e(physical:0x10000c1065d17e)
+one bit flip(0x0 -> 0x4000)
+9237 timeout
+[ 2011-5-13 14:31:37]Process 9237 exited with code 0
+Test Num : 169
+Inject fault at 0x600fffffffb4f7e8(physical:0x10000c1065f7e8)
+one bit flip(0x0 -> 0x100)
+9245 timeout
+[ 2011-5-13 14:31:41]Process 9245 exited with code 0
+Test Num : 170
+Inject fault at 0x600fffffffadcd58(physical:0x10000c1065cd58)
+one bit flip(0x0 -> 0x100)
+9253 timeout
+[ 2011-5-13 14:31:44]Process 9253 exited with code 0
+Test Num : 171
+Inject fault at 0x600fffffffacd968(physical:0x10000c1065d968)
+one bit flip(0xa302064656b636f -> 0xa302064656b626f)
+9261 timeout
+[ 2011-5-13 14:31:47]Process 9261 exited with code 0
+Test Num : 172
+Inject fault at 0x600fffffff9be8de(physical:0x10000c1065e8de)
+one bit flip(0x10000 -> 0x14000)
+9269 timeout
+[ 2011-5-13 14:31:50]Process 9269 exited with code 0
+Test Num : 173
+Inject fault at 0x600fffffff8ed164(physical:0x10000c1065d164)
+one bit flip(0x0 -> 0x10)
+9277 timeout
+[ 2011-5-13 14:31:53]Process 9277 exited with code 0
+Test Num : 174
+Inject fault at 0x600fffffffb2dcba(physical:0x10000f2471dcba)
+one bit flip(0xffff000000000000 -> 0xffff000000000400)
+9285 timeout
+[ 2011-5-13 14:31:56]Process 9285 exited with code 0
+Test Num : 175
+Inject fault at 0x600ffffffffbe70b(physical:0x10000f2471e70b)
+one bit flip(0x600fffffff -> 0x600ffff7ff)
+9293 timeout
+[ 2011-5-13 14:31:59]Process 9293 exited with code 0
+Test Num : 176
+Inject fault at 0x600fffffff9fd442(physical:0x10000f2471d442)
+one bit flip(0x0 -> 0x4)
+9301 timeout
+[  2011-5-13 14:32:2]Process 9301 exited with code 0
+Test Num : 177
+Inject fault at 0x600fffffffc9c80f(physical:0x10000f6ccac80f)
+one bit flip(0x0 -> 0x8000)
+9309 timeout
+[  2011-5-13 14:32:5]Process 9309 exited with code 0
+Test Num : 178
+Inject fault at 0x600ffffffff6cfbc(physical:0x10000f25d3cfbc)
+one bit flip(0x8903810379037103 -> 0x8903810379036103)
+9317 timeout
+[  2011-5-13 14:32:8]Process 9317 exited with code 0
+Test Num : 179
+Inject fault at 0x600fffffff9ec63e(physical:0x10000f56eec63e)
+one bit flip(0x0 -> 0x4000)
+9325 timeout
+[ 2011-5-13 14:32:11]Process 9325 exited with code 0
+Test Num : 180
+Inject fault at 0x600ffffffffee5c8(physical:0x10000f11c1e5c8)
+one bit flip(0x0 -> 0x100)
+9334 timeout
+[ 2011-5-13 14:32:15]Process 9334 exited with code 0
+Test Num : 181
+Inject fault at 0x600fffffffc7f23f(physical:0x10000f11c1f23f)
+one bit flip(0x0 -> 0x8000)
+9342 timeout
+[ 2011-5-13 14:32:18]Process 9342 exited with code 0
+Test Num : 182
+Inject fault at 0x600ffffffface379(physical:0x10000f11c1e379)
+one bit flip(0x8900000000000000 -> 0x8900000000000200)
+9350 timeout
+[ 2011-5-13 14:32:21]Process 9350 exited with code 0
+Test Num : 183
+Inject fault at 0x600fffffffe5dead(physical:0x10000f11c1dead)
+one bit flip(0x2030203020302030 -> 0x2030203020300030)
+9358 timeout
+[ 2011-5-13 14:32:24]Process 9358 exited with code 0
+Test Num : 184
+Inject fault at 0x600fffffffd2f249(physical:0x10000f11c1f249)
+one bit flip(0x0 -> 0x200)
+9366 timeout
+[ 2011-5-13 14:32:27]Process 9366 exited with code 0
+Test Num : 185
+Inject fault at 0x600fffffff87df65(physical:0x10000f11c1df65)
+one bit flip(0x0 -> 0x20)
+9375 timeout
+[ 2011-5-13 14:32:30]Process 9375 exited with code 0
+Test Num : 186
+Inject fault at 0x600ffffffff0cc9f(physical:0x10000ce1afcc9f)
+one bit flip(0x100 -> 0x8100)
+9387 timeout
+[ 2011-5-13 14:32:33]Process 9387 exited with code 0
+Test Num : 187
+Inject fault at 0x600fffffff92f71a(physical:0x10000f11c1f71a)
+one bit flip(0x0 -> 0x400)
+9396 timeout
+[ 2011-5-13 14:32:36]Process 9396 exited with code 0
+Test Num : 188
+Inject fault at 0x600ffffffffadce1(physical:0x10000cdb25dce1)
+one bit flip(0x3820000000001582 -> 0x3820000000001580)
+9405 timeout
+[ 2011-5-13 14:32:39]Process 9405 exited with code 0
+Test Num : 189
+Inject fault at 0x600fffffffc9df32(physical:0x10000cdb25df32)
+one bit flip(0xc918600fffffffc9 -> 0xc918600fffffffcd)
+9413 timeout
+[ 2011-5-13 14:32:42]Process 9413 exited with code 0
+Test Num : 190
+Inject fault at 0x600fffffff90d0ac(physical:0x10000cdb25d0ac)
+one bit flip(0xffffffffff0516ff -> 0xffffffffff0506ff)
+9421 timeout
+[ 2011-5-13 14:32:46]Process 9421 exited with code 0
+Test Num : 191
+Inject fault at 0x600fffffffb8e3a4(physical:0x10000f1146e3a4)
+one bit flip(0xffb8e31000000000 -> 0xffb8e31000000010)
+9430 timeout
+[ 2011-5-13 14:32:49]Process 9430 exited with code 0
+Test Num : 192
+Inject fault at 0x600fffffff85c644(physical:0x10000f67fdc644)
+one bit flip(0x0 -> 0x10)
+9565 timeout
+[ 2011-5-13 14:32:52]Process 9565 exited with code 0
+Test Num : 193
+Inject fault at 0x600fffffffcee29e(physical:0x10000f67fde29e)
+one bit flip(0x15e1200000 -> 0x15e1204000)
+9575 timeout
+[ 2011-5-13 14:32:55]Process 9575 exited with code 0
+Test Num : 194
+Inject fault at 0x600fffffffeeda0b(physical:0x10000f1564da0b)
+one bit flip(0x2035323739322030 -> 0x2035323739322830)
+9583 timeout
+[ 2011-5-13 14:32:58]Process 9583 exited with code 0
+Test Num : 195
+Inject fault at 0x600fffffffabce56(physical:0x10000f67fdce56)
+one bit flip(0x8ffffffffffff01 -> 0x8ffffffffffff41)
+9592 timeout
+[  2011-5-13 14:33:1]Process 9592 exited with code 0
+Test Num : 196
+Inject fault at 0x600fffffffabc25e(physical:0x10000d76c5c25e)
+one bit flip(0x0 -> 0x4000)
+9600 timeout
+[  2011-5-13 14:33:4]Process 9600 exited with code 0
+Test Num : 197
+Inject fault at 0x600fffffffa2c7c8(physical:0x10000f732cc7c8)
+one bit flip(0x0 -> 0x100)
+9608 timeout
+[  2011-5-13 14:33:7]Process 9608 exited with code 0
+Test Num : 198
+Inject fault at 0x600fffffffbce939(physical:0x10000f2970e939)
+one bit flip(0x0 -> 0x200)
+9616 timeout
+[ 2011-5-13 14:33:10]Process 9616 exited with code 0
+Test Num : 199
+Inject fault at 0x600fffffffcacc67(physical:0x10000f21e3cc67)
+one bit flip(0xa52db20 -> 0xa52da20)
+9624 timeout
+[ 2011-5-13 14:33:14]Process 9624 exited with code 0
+Test Num : 200
+Inject fault at 0x600fffffffa9c23b(physical:0x10000f1564c23b)
+one bit flip(0x0 -> 0x800)
+9632 timeout
+[ 2011-5-13 14:33:17]Process 9632 exited with code 0
+Test Num : 201
+Inject fault at 0x600fffffffd5ce96(physical:0x10000f1564ce96)
+one bit flip(0xffffff017a017201 -> 0xffffff017a017241)
+9640 timeout
+[ 2011-5-13 14:33:20]Process 9640 exited with code 0
+Test Num : 202
+Inject fault at 0x600ffffffff9d7c0(physical:0x10000fcd4dd7c0)
+one bit flip(0x0 -> 0x1)
+9649 timeout
+[ 2011-5-13 14:33:23]Process 9649 exited with code 0
+Test Num : 203
+Inject fault at 0x600fffffffe6f961(physical:0x10000f1564f961)
+one bit flip(0x20000000001617 -> 0x20000000001615)
+9657 timeout
+[ 2011-5-13 14:33:26]Process 9657 exited with code 0
+Test Num : 204
+Inject fault at 0x600ffffffff2e4f4(physical:0x10000f12dce4f4)
+one bit flip(0x0 -> 0x10)
+9675 timeout
+[ 2011-5-13 14:33:29]Process 9675 exited with code 0
+Test Num : 205
+Inject fault at 0x600fffffffc0c9f5(physical:0x10000fcacbc9f5)
+one bit flip(0x0 -> 0x20)
+9866 timeout
+[ 2011-5-13 14:33:32]Process 9866 exited with code 0
+Test Num : 206
+Inject fault at 0x600fffffffbbe09e(physical:0x10000f2293e09e)
+one bit flip(0x0 -> 0x4000)
+9880 timeout
+[ 2011-5-13 14:33:35]Process 9880 exited with code 0
+Test Num : 207
+Inject fault at 0x600fffffffe5ebab(physical:0x10000fcab5ebab)
+one bit flip(0x100000000000000 -> 0x100000000000800)
+9888 timeout
+[ 2011-5-13 14:33:38]Process 9888 exited with code 0
+Test Num : 208
+Inject fault at 0x600fffffffb6da72(physical:0x10000fcab5da72)
+one bit flip(0x3020302030203020 -> 0x3020302030203024)
+9896 timeout
+[ 2011-5-13 14:33:41]Process 9896 exited with code 0
+Test Num : 209
+Inject fault at 0x600fffffff9fedd8(physical:0x10000fcab5edd8)
+one bit flip(0x0 -> 0x100)
+9904 timeout
+[ 2011-5-13 14:33:45]Process 9904 exited with code 0
+Test Num : 210
+Inject fault at 0x600fffffff90d0ef(physical:0x10000fc966d0ef)
+one bit flip(0xffffffffffffffff -> 0xffffffffffff7fff)
+9913 timeout
+[ 2011-5-13 14:33:48]Process 9913 exited with code 0
+Test Num : 211
+Inject fault at 0x600ffffffff2f665(physical:0x10000f134bf665)
+one bit flip(0x700200000 -> 0x700200020)
+9924 timeout
+[ 2011-5-13 14:33:51]Process 9924 exited with code 0
+Test Num : 212
+Inject fault at 0x600fffffffbcd972(physical:0x10000f1557d972)
+one bit flip(0x2030203020302030 -> 0x2030203020302034)
+9933 timeout
+[ 2011-5-13 14:33:54]Process 9933 exited with code 0
+Test Num : 213
+Inject fault at 0x600ffffffffae4dc(physical:0x10000fcacbe4dc)
+one bit flip(0x0 -> 0x1000)
+9941 timeout
+[ 2011-5-13 14:33:57]Process 9941 exited with code 0
+Test Num : 214
+Inject fault at 0x600fffffffe1da84(physical:0x10000f1112da84)
+one bit flip(0x3020302030203020 -> 0x3020302030203030)
+9951 timeout
+[  2011-5-13 14:34:0]Process 9951 exited with code 0
+Test Num : 215
+Inject fault at 0x600fffffffbbba15(physical:0x10000f1112ba15)
+one bit flip(0x0 -> 0x20)
+9962 timeout
+[  2011-5-13 14:34:3]Process 9962 exited with code 0
+Test Num : 216
+Inject fault at 0x600fffffff83db41(physical:0x10000f1557db41)
+one bit flip(0x2030203020302030 -> 0x2030203020302032)
+9989 timeout
+[  2011-5-13 14:34:6]Process 9989 exited with code 0
+Test Num : 217
+Inject fault at 0x600fffffffceed16(physical:0x10000f1557ed16)
+one bit flip(0x6000 -> 0x6040)
+9997 timeout
+[  2011-5-13 14:34:9]Process 9997 exited with code 0
+Test Num : 218
+Inject fault at 0x600fffffffbfcba8(physical:0x10000f1112cba8)
+one bit flip(0x0 -> 0x100)
+10005 timeout
+[ 2011-5-13 14:34:12]Process 10005 exited with code 0
+Test Num : 219
+Inject fault at 0x600ffffffff8d900(physical:0x10000f1112d900)
+one bit flip(0x0 -> 0x1)
+10014 timeout
+[ 2011-5-13 14:34:16]Process 10014 exited with code 0
+Test Num : 220
+Inject fault at 0x600ffffffffcc923(physical:0x10000f1112c923)
+one bit flip(0x0 -> 0x8)
+10023 timeout
+[ 2011-5-13 14:34:19]Process 10023 exited with code 0
+Test Num : 221
+Inject fault at 0x600fffffff8cc09a(physical:0x10000f676dc09a)
+one bit flip(0x0 -> 0x400)
+10031 timeout
+[ 2011-5-13 14:34:22]Process 10031 exited with code 0
+Test Num : 222
+Inject fault at 0x600fffffffc8bf8f(physical:0x10000f7addbf8f)
+one bit flip(0x0 -> 0x8000)
+10040 timeout
+[ 2011-5-13 14:34:25]Process 10040 exited with code 0
+Test Num : 223
+Inject fault at 0x600fffffff8dc9ed(physical:0x10000f1921c9ed)
+one bit flip(0x0 -> 0x2000)
+10048 timeout
+[ 2011-5-13 14:34:28]Process 10048 exited with code 0
+Test Num : 224
+Inject fault at 0x600fffffffebf204(physical:0x10000fafb6f204)
+one bit flip(0x0 -> 0x10)
+10056 timeout
+[ 2011-5-13 14:34:31]Process 10056 exited with code 0
+Test Num : 225
+Inject fault at 0x600fffffffcee556(physical:0x10000f1921e556)
+one bit flip(0x0 -> 0x40)
+10064 timeout
+[ 2011-5-13 14:34:34]Process 10064 exited with code 0
+Test Num : 226
+Inject fault at 0x600fffffff84ecd4(physical:0x10000f1921ecd4)
+one bit flip(0x3e05d800000000 -> 0x3e05d800000010)
+10072 timeout
+[ 2011-5-13 14:34:37]Process 10072 exited with code 0
+Test Num : 227
+Inject fault at 0x600fffffffead57c(physical:0x10000f98f8d57c)
+one bit flip(0x0 -> 0x1000)
+10081 timeout
+[ 2011-5-13 14:34:40]Process 10081 exited with code 0
+Test Num : 228
+Inject fault at 0x600ffffffff9dc69(physical:0x10000fafa7dc69)
+one bit flip(0x6800000000000000 -> 0x6800000000000200)
+10091 timeout
+[ 2011-5-13 14:34:43]Process 10091 exited with code 0
+Test Num : 229
+Inject fault at 0x600fffffff8bcdfe(physical:0x10000f9be1cdfe)
+one bit flip(0xf000a0006000300 -> 0xf000a0006004300)
+10100 timeout
+[ 2011-5-13 14:34:46]Process 10100 exited with code 0
+Test Num : 230
+Inject fault at 0x600fffffffd5f146(physical:0x10000f6aa8f146)
+one bit flip(0x0 -> 0x40)
+10109 timeout
+[ 2011-5-13 14:34:50]Process 10109 exited with code 0
+Test Num : 231
+Inject fault at 0x600fffffffc6c542(physical:0x10000f6aa8c542)
+one bit flip(0x0 -> 0x4)
+10117 timeout
+[ 2011-5-13 14:34:53]Process 10117 exited with code 0
+Test Num : 232
+Inject fault at 0x600fffffff99ec86(physical:0x10000f6aa8ec86)
+one bit flip(0x115b56000 -> 0x115b56040)
+10125 timeout
+[ 2011-5-13 14:34:56]Process 10125 exited with code 0
+Test Num : 233
+Inject fault at 0x600fffffffacdb8e(physical:0x10000f607bdb8e)
+one bit flip(0x3020302030203020 -> 0x3020302030207020)
+10133 timeout
+[ 2011-5-13 14:34:59]Process 10133 exited with code 0
+Test Num : 234
+Inject fault at 0x600fffffff7fda9f(physical:0x10000f607bda9f)
+one bit flip(0x2030203020302030 -> 0x203020302030a030)
+10141 timeout
+[  2011-5-13 14:35:2]Process 10141 exited with code 0
+Test Num : 235
+Inject fault at 0x600fffffffded2ea(physical:0x10000f607bd2ea)
+one bit flip(0x0 -> 0x400)
+10150 timeout
+[  2011-5-13 14:35:5]Process 10150 exited with code 0
+Test Num : 236
+Inject fault at 0x600fffffff93e6fa(physical:0x10000f9be1e6fa)
+one bit flip(0x389000000000000 -> 0x389000000000400)
+10158 timeout
+[  2011-5-13 14:35:8]Process 10158 exited with code 0
+Test Num : 237
+Inject fault at 0x600fffffff8bef88(physical:0x10000f171fef88)
+one bit flip(0x7 -> 0x107)
+10166 timeout
+[ 2011-5-13 14:35:11]Process 10166 exited with code 0
+Test Num : 238
+Inject fault at 0x600fffffffa7ebe1(physical:0x10000f1264ebe1)
+one bit flip(0x0 -> 0x2)
+10268 timeout
+[ 2011-5-13 14:35:14]Process 10268 exited with code 0
+Test Num : 239
+Inject fault at 0x600fffffffa9e10f(physical:0x10000f1498e10f)
+one bit flip(0x0 -> 0x8000)
+10312 timeout
+[ 2011-5-13 14:35:18]Process 10312 exited with code 0
+Test Num : 240
+Inject fault at 0x600fffffffc2d11d(physical:0x10000f1498d11d)
+one bit flip(0x531052e -> 0x531252e)
+10320 timeout
+[ 2011-5-13 14:35:21]Process 10320 exited with code 0
+Test Num : 241
+Inject fault at 0x600fffffffa3ba8f(physical:0x10000f1498ba8f)
+one bit flip(0x0 -> 0x8000)
+10333 timeout
+[ 2011-5-13 14:35:24]Process 10333 exited with code 0
+Test Num : 242
+Inject fault at 0x600fffffffb2d1fe(physical:0x10000f38c2d1fe)
+one bit flip(0x0 -> 0x4000)
+10442 timeout
+[ 2011-5-13 14:35:27]Process 10442 exited with code 0
+Test Num : 243
+Inject fault at 0x600fffffff9acd78(physical:0x10000f38c2cd78)
+one bit flip(0x0 -> 0x100)
+10556 timeout
+[ 2011-5-13 14:35:30]Process 10556 exited with code 0
+Test Num : 244
+Inject fault at 0x600ffffffff2d78c(physical:0x10000f1e50d78c)
+one bit flip(0x0 -> 0x1000)
+10572 timeout
+[ 2011-5-13 14:35:33]Process 10572 exited with code 0
+Test Num : 245
+Inject fault at 0x600fffffffe4f110(physical:0x10000f1e50f110)
+one bit flip(0x0 -> 0x1)
+10582 timeout
+[ 2011-5-13 14:35:36]Process 10582 exited with code 0
+Test Num : 246
+Inject fault at 0x600fffffff92f72b(physical:0x10000f38c2f72b)
+one bit flip(0x1622000000000000 -> 0x1622000000000800)
+10591 timeout
+[ 2011-5-13 14:35:39]Process 10591 exited with code 0
+Test Num : 247
+Inject fault at 0x600fffffffe7e195(physical:0x10000f5a9be195)
+one bit flip(0x8000000 -> 0x8000020)
+10729 timeout
+[ 2011-5-13 14:35:42]Process 10729 exited with code 0
+Test Num : 248
+Inject fault at 0x600fffffff9be8a0(physical:0x10000f38c2e8a0)
+one bit flip(0x0 -> 0x1)
+10738 timeout
+[ 2011-5-13 14:35:45]Process 10738 exited with code 0
+Test Num : 249
+Inject fault at 0x600ffffffff5eb24(physical:0x10000f38c2eb24)
+one bit flip(0x0 -> 0x4000)
+10747 timeout
+[ 2011-5-13 14:35:49]Process 10747 exited with code 0
+Test Num : 250
+Inject fault at 0x600fffffffc8db51(physical:0x10000f38c2db51)
+one bit flip(0x2030203020302030 -> 0x2030203020302032)
+10755 timeout
+[ 2011-5-13 14:35:52]Process 10755 exited with code 0
+Test Num : 251
+Inject fault at 0x600fffffffacf6ae(physical:0x10000f38c2f6ae)
+one bit flip(0x162200600f -> 0x162200200f)
+10763 timeout
+[ 2011-5-13 14:35:55]Process 10763 exited with code 0
+Test Num : 252
+Inject fault at 0x600fffffff9bbb18(physical:0x10000f38c2bb18)
+one bit flip(0x0 -> 0x100)
+10772 timeout
+[ 2011-5-13 14:35:58]Process 10772 exited with code 0
+Test Num : 253
+Inject fault at 0x600fffffffcec101(physical:0x10000f6787c101)
+one bit flip(0x0 -> 0x2)
+10780 timeout
+[  2011-5-13 14:36:1]Process 10780 exited with code 0
+Test Num : 254
+Inject fault at 0x600fffffffabeb97(physical:0x10000f66edeb97)
+one bit flip(0x448800 -> 0x448880)
+10788 timeout
+[  2011-5-13 14:36:4]Process 10788 exited with code 0
+Test Num : 255
+Inject fault at 0x600fffffffe4c01b(physical:0x10000f119fc01b)
+one bit flip(0x0 -> 0x800)
+10796 timeout
+[  2011-5-13 14:36:7]Process 10796 exited with code 0
+Test Num : 256
+Inject fault at 0x600fffffff9dda94(physical:0x10000f119fda94)
+one bit flip(0x3020302030203020 -> 0x3020302030203030)
+10804 timeout
+[ 2011-5-13 14:36:10]Process 10804 exited with code 0
+Test Num : 257
+Inject fault at 0x600fffffffafe71b(physical:0x10000cc7cee71b)
+one bit flip(0x600fffffff -> 0x600ffff7ff)
+10812 timeout
+[ 2011-5-13 14:36:13]Process 10812 exited with code 0
+Test Num : 258
+Inject fault at 0x600fffffff7fcea5(physical:0x10000fc6d8cea5)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffffdf)
+10820 timeout
+[ 2011-5-13 14:36:16]Process 10820 exited with code 0
+Test Num : 259
+Inject fault at 0x600fffffff8ce384(physical:0x10000c1c11e384)
+one bit flip(0xc0000000 -> 0xc0000002)
+10829 timeout
+[ 2011-5-13 14:36:20]Process 10829 exited with code 0
+Test Num : 260
+Inject fault at 0x600fffffffa3cb0a(physical:0x10000fc74dcb0a)
+one bit flip(0x0 -> 0x400)
+10838 timeout
+[ 2011-5-13 14:36:23]Process 10838 exited with code 0
+Test Num : 261
+Inject fault at 0x600fffffffa3e1fd(physical:0x10000c1c11e1fd)
+one bit flip(0xff00000000000000 -> 0xff00000000002000)
+10846 timeout
+[ 2011-5-13 14:36:26]Process 10846 exited with code 0
+Test Num : 262
+Inject fault at 0x600fffffff88f656(physical:0x10000f98f5f656)
+one bit flip(0xae52000 -> 0xae52040)
+10856 timeout
+[ 2011-5-13 14:36:29]Process 10856 exited with code 0
+Test Num : 263
+Inject fault at 0x600fffffff8ad7fc(physical:0x10000fc63fd7fc)
+one bit flip(0x0 -> 0x1000)
+10865 timeout
+[ 2011-5-13 14:36:32]Process 10865 exited with code 0
+Test Num : 264
+Inject fault at 0x600ffffffff3f635(physical:0x10000f2293f635)
+one bit flip(0x0 -> 0x20)
+10873 timeout
+[ 2011-5-13 14:36:35]Process 10873 exited with code 0
+Test Num : 265
+Inject fault at 0x600fffffff95e341(physical:0x10000f98f5e341)
+one bit flip(0x0 -> 0x2)
+10881 timeout
+[ 2011-5-13 14:36:38]Process 10881 exited with code 0
+Test Num : 266
+Inject fault at 0x600fffffffc9e86b(physical:0x10000f68d7e86b)
+one bit flip(0x0 -> 0x800)
+10889 timeout
+[ 2011-5-13 14:36:41]Process 10889 exited with code 0
+Test Num : 267
+Inject fault at 0x600ffffffff1cd69(physical:0x10000f68d7cd69)
+one bit flip(0x0 -> 0x200)
+10897 timeout
+[ 2011-5-13 14:36:44]Process 10897 exited with code 0
+Test Num : 268
+Inject fault at 0x600ffffffffcc2f9(physical:0x10000f68d7c2f9)
+one bit flip(0x0 -> 0x200)
+10905 timeout
+[ 2011-5-13 14:36:47]Process 10905 exited with code 0
+Test Num : 269
+Inject fault at 0x600fffffffb1c9e2(physical:0x10000f98f5c9e2)
+one bit flip(0x0 -> 0x4)
+10913 timeout
+[ 2011-5-13 14:36:51]Process 10913 exited with code 0
+Test Num : 270
+Inject fault at 0x600fffffffa6be21(physical:0x10000f68d7be21)
+one bit flip(0x0 -> 0x2)
+10921 timeout
+[ 2011-5-13 14:36:54]Process 10921 exited with code 0
+Test Num : 271
+Inject fault at 0x600fffffffa2f660(physical:0x10000f98f5f660)
+one bit flip(0x2000000000162338 -> 0x2000000000162339)
+10929 timeout
+[ 2011-5-13 14:36:57]Process 10929 exited with code 0
+Test Num : 272
+Inject fault at 0x600fffffffb5c936(physical:0x10000f98f5c936)
+one bit flip(0x0 -> 0x40)
+10937 timeout
+[  2011-5-13 14:37:0]Process 10937 exited with code 0
+Test Num : 273
+Inject fault at 0x600fffffffc0eb07(physical:0x10000c1a10eb07)
+one bit flip(0x0 -> 0x80)
+10945 timeout
+[  2011-5-13 14:37:3]Process 10945 exited with code 0
+Test Num : 274
+Inject fault at 0x600fffffffe3f6fd(physical:0x10000c1a10f6fd)
+one bit flip(0xffffe3f6c0200000 -> 0xffffe3f6c0202000)
+10953 timeout
+[  2011-5-13 14:37:6]Process 10953 exited with code 0
+Test Num : 275
+Inject fault at 0x600fffffffaabfa9(physical:0x10000c1a10bfa9)
+one bit flip(0x0 -> 0x200)
+10961 timeout
+[  2011-5-13 14:37:9]Process 10961 exited with code 0
+Test Num : 276
+Inject fault at 0x600fffffff94ec30(physical:0x10000c1a10ec30)
+one bit flip(0x1 -> 0x0)
+10969 timeout
+[ 2011-5-13 14:37:12]Process 10969 exited with code 0
+Test Num : 277
+Inject fault at 0x600fffffffbfd7d0(physical:0x10000c1a10d7d0)
+one bit flip(0x0 -> 0x1)
+10978 timeout
+[ 2011-5-13 14:37:15]Process 10978 exited with code 0
+Test Num : 278
+Inject fault at 0x600fffffffcecd33(physical:0x10000c1a10cd33)
+one bit flip(0x0 -> 0x8)
+10986 timeout
+[ 2011-5-13 14:37:18]Process 10986 exited with code 0
+Test Num : 279
+Inject fault at 0x600ffffffff8e1e3(physical:0x10000c1a10e1e3)
+one bit flip(0x6ef0000000000 -> 0x6ef0000000080)
+10994 timeout
+[ 2011-5-13 14:37:22]Process 10994 exited with code 0
+Test Num : 280
+Inject fault at 0x600fffffffe5e8bc(physical:0x10000c1a10e8bc)
+one bit flip(0x16233840000000 -> 0x16233840001000)
+11002 timeout
+[ 2011-5-13 14:37:25]Process 11002 exited with code 0
+Test Num : 281
+Inject fault at 0x600fffffffb2d19a(physical:0x10000c1a10d19a)
+one bit flip(0x0 -> 0x400)
+11010 timeout
+[ 2011-5-13 14:37:28]Process 11010 exited with code 0
+Test Num : 282
+Inject fault at 0x600ffffffff1c31b(physical:0x10000c1a10c31b)
+one bit flip(0x0 -> 0x800)
+11018 timeout
+[ 2011-5-13 14:37:31]Process 11018 exited with code 0
+Test Num : 283
+Inject fault at 0x600ffffffff4ee61(physical:0x10000c1d5aee61)
+one bit flip(0x3e -> 0x3c)
+11026 timeout
+[ 2011-5-13 14:37:34]Process 11026 exited with code 0
+Test Num : 284
+Inject fault at 0x600fffffffc2de72(physical:0x10000c1d5ade72)
+one bit flip(0x3020302030203020 -> 0x3020302030203024)
+11035 timeout
+[ 2011-5-13 14:37:37]Process 11035 exited with code 0
+Test Num : 285
+Inject fault at 0x600fffffffb4c1e5(physical:0x10000fc6dec1e5)
+one bit flip(0x0 -> 0x20)
+11043 timeout
+[ 2011-5-13 14:37:40]Process 11043 exited with code 0
+Test Num : 286
+Inject fault at 0x600ffffffff1c5a6(physical:0x10000c9b3ac5a6)
+one bit flip(0x0 -> 0x40)
+11051 timeout
+[ 2011-5-13 14:37:43]Process 11051 exited with code 0
+Test Num : 287
+Inject fault at 0x600fffffffeec317(physical:0x10000c9b3ac317)
+one bit flip(0x0 -> 0x80)
+11059 timeout
+[ 2011-5-13 14:37:46]Process 11059 exited with code 0
+Test Num : 288
+Inject fault at 0x600fffffffa2ced1(physical:0x10000caa0cced1)
+one bit flip(0x1e501e001dcffff -> 0x1e501e001dcfffd)
+11067 timeout
+[ 2011-5-13 14:37:49]Process 11067 exited with code 0
+Test Num : 289
+Inject fault at 0x600fffffffcdc67c(physical:0x10000caa0cc67c)
+one bit flip(0x0 -> 0x1000)
+11075 timeout
+[ 2011-5-13 14:37:53]Process 11075 exited with code 0
+Test Num : 290
+Inject fault at 0x600fffffff9fe873(physical:0x10000caa0ce873)
+one bit flip(0x0 -> 0x8)
+11083 timeout
+[ 2011-5-13 14:37:56]Process 11083 exited with code 0
+Test Num : 291
+Inject fault at 0x600fffffff92d6e0(physical:0x10000caa0cd6e0)
+one bit flip(0x0 -> 0x1)
+11093 timeout
+[ 2011-5-13 14:37:59]Process 11093 exited with code 0
+Test Num : 292
+Inject fault at 0x600fffffffbccff3(physical:0x10000f8887cff3)
+one bit flip(0x449044104390431 -> 0x449044104390439)
+11101 timeout
+[  2011-5-13 14:38:2]Process 11101 exited with code 0
+Test Num : 293
+Inject fault at 0x600fffffffefbfc2(physical:0x10000d2305bfc2)
+one bit flip(0x0 -> 0x4)
+11109 timeout
+[  2011-5-13 14:38:5]Process 11109 exited with code 0
+Test Num : 294
+Inject fault at 0x600fffffffb6f8b2(physical:0x10000c9880f8b2)
+one bit flip(0x0 -> 0x4)
+11117 timeout
+[  2011-5-13 14:38:8]Process 11117 exited with code 0
+Test Num : 295
+Inject fault at 0x600ffffffff4d08a(physical:0x10000c9880d08a)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffbff)
+11125 timeout
+[ 2011-5-13 14:38:11]Process 11125 exited with code 0
+Test Num : 296
+Inject fault at 0x600fffffffdeea60(physical:0x10000c9880ea60)
+one bit flip(0x0 -> 0x1)
+11133 timeout
+[ 2011-5-13 14:38:14]Process 11133 exited with code 0
+Test Num : 297
+Inject fault at 0x600fffffffbef357(physical:0x10000c9880f357)
+one bit flip(0x0 -> 0x80)
+11141 timeout
+[ 2011-5-13 14:38:17]Process 11141 exited with code 0
+Test Num : 298
+Inject fault at 0x600fffffffa4e501(physical:0x10000fc759e501)
+one bit flip(0x0 -> 0x2)
+11149 timeout
+[ 2011-5-13 14:38:20]Process 11149 exited with code 0
+Test Num : 299
+Inject fault at 0x600fffffffcbdcb8(physical:0x10000c982cdcb8)
+one bit flip(0x0 -> 0x1000)
+11157 timeout
+[ 2011-5-13 14:38:24]Process 11157 exited with code 0
+Test Num : 300
+Inject fault at 0x600fffffff9aef29(physical:0x10000c982cef29)
+one bit flip(0x4b4948577a796d6c -> 0x4b4948577a796f6c)
+11165 timeout
+[ 2011-5-13 14:38:27]Process 11165 exited with code 0
+Test Num : 301
+Inject fault at 0x600fffffff88d0b8(physical:0x10000c982cd0b8)
+one bit flip(0xffffffffffffff05 -> 0xfffffffffffffe05)
+11174 timeout
+[ 2011-5-13 14:38:30]Process 11174 exited with code 0
+Test Num : 302
+Inject fault at 0x600fffffffe5f7ed(physical:0x10000c982cf7ed)
+one bit flip(0x550a41000000 -> 0x550a41002000)
+11182 timeout
+[ 2011-5-13 14:38:33]Process 11182 exited with code 0
+Test Num : 303
+Inject fault at 0x600fffffffd5f73c(physical:0x10000c982cf73c)
+one bit flip(0xa2020000000 -> 0xa2020001000)
+11190 timeout
+[ 2011-5-13 14:38:36]Process 11190 exited with code 0
+Test Num : 304
+Inject fault at 0x600fffffffded862(physical:0x10000c982cd862)
+one bit flip(0x0 -> 0x4)
+11198 timeout
+[ 2011-5-13 14:38:39]Process 11198 exited with code 0
+Test Num : 305
+Inject fault at 0x600fffffffd4c7f1(physical:0x10000f68d7c7f1)
+one bit flip(0x0 -> 0x2)
+11206 timeout
+[ 2011-5-13 14:38:42]Process 11206 exited with code 0
+Test Num : 306
+Inject fault at 0x600ffffffffcbb66(physical:0x10000f68d7bb66)
+one bit flip(0x0 -> 0x40)
+11214 timeout
+[ 2011-5-13 14:38:45]Process 11214 exited with code 0
+Test Num : 307
+Inject fault at 0x600ffffffff8e357(physical:0x10000f68d7e357)
+one bit flip(0x20 -> 0xa0)
+11222 timeout
+[ 2011-5-13 14:38:48]Process 11222 exited with code 0
+Test Num : 308
+Inject fault at 0x600fffffffb4f294(physical:0x10000f68d7f294)
+one bit flip(0x0 -> 0x10)
+11231 timeout
+[ 2011-5-13 14:38:51]Process 11231 exited with code 0
+Test Num : 309
+Inject fault at 0x600fffffff9fc79c(physical:0x10000c982cc79c)
+one bit flip(0x0 -> 0x80)
+11239 timeout
+[ 2011-5-13 14:38:55]Process 11239 exited with code 0
+Test Num : 310
+Inject fault at 0x600fffffff8dc433(physical:0x10000c982cc433)
+one bit flip(0x0 -> 0x8)
+11247 timeout
+[ 2011-5-13 14:38:58]Process 11247 exited with code 0
+Test Num : 311
+Inject fault at 0x600fffffff97d72d(physical:0x10000f6fc5d72d)
+one bit flip(0x0 -> 0x2000)
+11255 timeout
+[  2011-5-13 14:39:1]Process 11255 exited with code 0
+Test Num : 312
+Inject fault at 0x600ffffffff4d38e(physical:0x10000f6fc5d38e)
+one bit flip(0x0 -> 0x4000)
+11263 timeout
+[  2011-5-13 14:39:4]Process 11263 exited with code 0
+Test Num : 313
+Inject fault at 0x600fffffffebc7d1(physical:0x10000f6fc5c7d1)
+one bit flip(0x0 -> 0x2)
+11271 timeout
+[  2011-5-13 14:39:7]Process 11271 exited with code 0
+Test Num : 314
+Inject fault at 0x600fffffffc8e70b(physical:0x10000c982ce70b)
+one bit flip(0x600fffffff -> 0x600ffff7ff)
+11279 timeout
+[ 2011-5-13 14:39:10]Process 11279 exited with code 0
+Test Num : 315
+Inject fault at 0x600fffffffb1befe(physical:0x10000c982cbefe)
+one bit flip(0x0 -> 0x4000)
+11287 timeout
+[ 2011-5-13 14:39:13]Process 11287 exited with code 0
+Test Num : 316
+Inject fault at 0x600fffffff94bfcd(physical:0x10000c982cbfcd)
+one bit flip(0x0 -> 0x2000)
+11295 timeout
+[ 2011-5-13 14:39:16]Process 11295 exited with code 0
+Test Num : 317
+Inject fault at 0x600fffffff8fdd67(physical:0x10000c982cdd67)
+one bit flip(0x1234000 -> 0x1234080)
+11303 timeout
+[ 2011-5-13 14:39:19]Process 11303 exited with code 0
+Test Num : 318
+Inject fault at 0x600fffffffd1db9d(physical:0x10000d6e0ddb9d)
+one bit flip(0x2030203020302030 -> 0x2030203020300030)
+11311 timeout
+[ 2011-5-13 14:39:22]Process 11311 exited with code 0
+Test Num : 319
+Inject fault at 0x600fffffffe4e4b3(physical:0x10000d6e0de4b3)
+one bit flip(0x0 -> 0x8)
+11319 timeout
+[ 2011-5-13 14:39:26]Process 11319 exited with code 0
+Test Num : 320
+Inject fault at 0x600fffffffaed207(physical:0x10000c982cd207)
+one bit flip(0x0 -> 0x80)
+11327 timeout
+[ 2011-5-13 14:39:29]Process 11327 exited with code 0
+Test Num : 321
+Inject fault at 0x600fffffff85e50d(physical:0x10000c982ce50d)
+one bit flip(0x0 -> 0x2000)
+11335 timeout
+[ 2011-5-13 14:39:32]Process 11335 exited with code 0
+Test Num : 322
+Inject fault at 0x600fffffffc1ef8f(physical:0x10000c9880ef8f)
+one bit flip(0x416d00 -> 0x41ed00)
+11343 timeout
+[ 2011-5-13 14:39:35]Process 11343 exited with code 0
+Test Num : 323
+Inject fault at 0x600fffffffdfd555(physical:0x10000c9880d555)
+one bit flip(0x0 -> 0x20)
+11351 timeout
+[ 2011-5-13 14:39:38]Process 11351 exited with code 0
+Test Num : 324
+Inject fault at 0x600fffffff92f889(physical:0x10000c9880f889)
+one bit flip(0x0 -> 0x200)
+11359 timeout
+[ 2011-5-13 14:39:41]Process 11359 exited with code 0
+Test Num : 325
+Inject fault at 0x600ffffffff0d8e5(physical:0x10000c4183d8e5)
+one bit flip(0x8124000000 -> 0x8124000020)
+11368 timeout
+[ 2011-5-13 14:39:44]Process 11368 exited with code 0
+Test Num : 326
+Inject fault at 0x600fffffffb8d249(physical:0x10000cc412d249)
+one bit flip(0x0 -> 0x200)
+11376 timeout
+[ 2011-5-13 14:39:47]Process 11376 exited with code 0
+Test Num : 327
+Inject fault at 0x600fffffffb7cba6(physical:0x10000cc412cba6)
+one bit flip(0x0 -> 0x40)
+11384 timeout
+[ 2011-5-13 14:39:50]Process 11384 exited with code 0
+Test Num : 328
+Inject fault at 0x600fffffffa8bfd2(physical:0x10000cc412bfd2)
+one bit flip(0x0 -> 0x4)
+11392 timeout
+[ 2011-5-13 14:39:53]Process 11392 exited with code 0
+Test Num : 329
+Inject fault at 0x600fffffffc8c4a2(physical:0x10000cc412c4a2)
+one bit flip(0x0 -> 0x1000)
+11400 timeout
+[ 2011-5-13 14:39:57]Process 11400 exited with code 0
+Test Num : 330
+Inject fault at 0x600fffffffb6d967(physical:0x10000ce0f2d967)
+one bit flip(0x302064656b636f6c -> 0x302064656b636fec)
+11408 timeout
+[  2011-5-13 14:40:0]Process 11408 exited with code 0
+Test Num : 331
+Inject fault at 0x600fffffff94c4ad(physical:0x10000ce0f2c4ad)
+one bit flip(0x0 -> 0x2000)
+11416 timeout
+[  2011-5-13 14:40:3]Process 11416 exited with code 0
+Test Num : 332
+Inject fault at 0x600fffffffe0d2ad(physical:0x10000ce0f2d2ad)
+one bit flip(0x0 -> 0x2000)
+11425 timeout
+[  2011-5-13 14:40:6]Process 11425 exited with code 0
+Test Num : 333
+Inject fault at 0x600fffffffdce592(physical:0x10000ce0f2e592)
+one bit flip(0x200000000045 -> 0x200000000041)
+11433 timeout
+[  2011-5-13 14:40:9]Process 11433 exited with code 0
+Test Num : 334
+Inject fault at 0x600fffffff9ce976(physical:0x10000c65b0e976)
+one bit flip(0x2000 -> 0x2040)
+11441 timeout
+[ 2011-5-13 14:40:12]Process 11441 exited with code 0
+Test Num : 335
+Inject fault at 0x600ffffffff1e80b(physical:0x10000c65b0e80b)
+one bit flip(0x0 -> 0x800)
+11449 timeout
+[ 2011-5-13 14:40:15]Process 11449 exited with code 0
+Test Num : 336
+Inject fault at 0x600fffffffc1ddc7(physical:0x10000c65b0ddc7)
+one bit flip(0xffed80 -> 0xffed00)
+11457 timeout
+[ 2011-5-13 14:40:18]Process 11457 exited with code 0
+Test Num : 337
+Inject fault at 0x600fffffffcccc18(physical:0x10000cac19cc18)
+one bit flip(0x0 -> 0x100)
+11465 timeout
+[ 2011-5-13 14:40:21]Process 11465 exited with code 0
+Test Num : 338
+Inject fault at 0x600fffffff93f5be(physical:0x10000cac19f5be)
+one bit flip(0x0 -> 0x4000)
+11473 timeout
+[ 2011-5-13 14:40:24]Process 11473 exited with code 0
+Test Num : 339
+Inject fault at 0x600fffffff89c97a(physical:0x10000cac19c97a)
+one bit flip(0x0 -> 0x400)
+11481 timeout
+[ 2011-5-13 14:40:28]Process 11481 exited with code 0
+Test Num : 340
+Inject fault at 0x600fffffff8cd04b(physical:0x10000cac19d04b)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffff7ff)
+11489 timeout
+[ 2011-5-13 14:40:31]Process 11489 exited with code 0
+Test Num : 341
+Inject fault at 0x600fffffffa4cdbb(physical:0x10000fc6d1cdbb)
+one bit flip(0x96f0870000000000 -> 0x96f0870000000800)
+11497 timeout
+[ 2011-5-13 14:40:34]Process 11497 exited with code 0
+Test Num : 342
+Inject fault at 0x600ffffffff3ba3c(physical:0x10000fc6d1ba3c)
+one bit flip(0x0 -> 0x1000)
+11505 timeout
+[ 2011-5-13 14:40:37]Process 11505 exited with code 0
+Test Num : 343
+Inject fault at 0x600fffffffa1ca4a(physical:0x10000fc6d1ca4a)
+one bit flip(0x0 -> 0x400)
+11513 timeout
+[ 2011-5-13 14:40:40]Process 11513 exited with code 0
+Test Num : 344
+Inject fault at 0x600fffffffa1dc69(physical:0x10000cac19dc69)
+one bit flip(0x6800000000000000 -> 0x6800000000000200)
+11521 timeout
+[ 2011-5-13 14:40:43]Process 11521 exited with code 0
+Test Num : 345
+Inject fault at 0x600fffffff7fbf55(physical:0x10000cac19bf55)
+one bit flip(0x0 -> 0x20)
+11529 timeout
+[ 2011-5-13 14:40:46]Process 11529 exited with code 0
+Test Num : 346
+Inject fault at 0x600fffffff94c95d(physical:0x10000f1ce5c95d)
+one bit flip(0x0 -> 0x2000)
+11537 timeout
+[ 2011-5-13 14:40:49]Process 11537 exited with code 0
+Test Num : 347
+Inject fault at 0x600fffffffeef86f(physical:0x10000cac19f86f)
+one bit flip(0x0 -> 0x8000)
+11545 timeout
+[ 2011-5-13 14:40:52]Process 11545 exited with code 0
+Test Num : 348
+Inject fault at 0x600fffffffc1c8dd(physical:0x10000f1ce5c8dd)
+one bit flip(0x0 -> 0x2000)
+11553 timeout
+[ 2011-5-13 14:40:55]Process 11553 exited with code 0
+Test Num : 349
+Inject fault at 0x600fffffff9af156(physical:0x10000c5c6ff156)
+one bit flip(0x0 -> 0x20)
+11562 timeout
+[ 2011-5-13 14:40:59]Process 11562 exited with code 0
+Test Num : 350
+Inject fault at 0x600ffffffffdc39d(physical:0x10000f38c2c39d)
+one bit flip(0x0 -> 0x2000)
+11571 timeout
+[  2011-5-13 14:41:2]Process 11571 exited with code 0
+Test Num : 351
+Inject fault at 0x600fffffff91f342(physical:0x10000c5c6ff342)
+one bit flip(0x0 -> 0x4)
+11579 timeout
+[  2011-5-13 14:41:5]Process 11579 exited with code 0
+Test Num : 352
+Inject fault at 0x600fffffff95d584(physical:0x10000c5c6fd584)
+one bit flip(0x0 -> 0x10)
+11587 timeout
+[  2011-5-13 14:41:8]Process 11587 exited with code 0
+Test Num : 353
+Inject fault at 0x600fffffff89f379(physical:0x10000caa6af379)
+one bit flip(0x0 -> 0x200)
+11595 timeout
+[ 2011-5-13 14:41:11]Process 11595 exited with code 0
+Test Num : 354
+Inject fault at 0x600fffffffcbd8b0(physical:0x10000d3b91d8b0)
+one bit flip(0x0 -> 0x1)
+11603 timeout
+[ 2011-5-13 14:41:14]Process 11603 exited with code 0
+Test Num : 355
+Inject fault at 0x600fffffff92c389(physical:0x10000d3b91c389)
+one bit flip(0x0 -> 0x200)
+11611 timeout
+[ 2011-5-13 14:41:17]Process 11611 exited with code 0
+Test Num : 356
+Inject fault at 0x600fffffffd3c78f(physical:0x10000d3b91c78f)
+one bit flip(0x0 -> 0x8000)
+11620 timeout
+[ 2011-5-13 14:41:20]Process 11620 exited with code 0
+Test Num : 357
+Inject fault at 0x600fffffffb1c719(physical:0x10000caa6ac719)
+one bit flip(0x0 -> 0x200)
+11628 timeout
+[ 2011-5-13 14:41:23]Process 11628 exited with code 0
+Test Num : 358
+Inject fault at 0x600ffffffff7da3b(physical:0x10000f67e9da3b)
+one bit flip(0x2030203020302030 -> 0x2030203020302830)
+11636 timeout
+[ 2011-5-13 14:41:26]Process 11636 exited with code 0
+Test Num : 359
+Inject fault at 0x600fffffffb5e7c7(physical:0x10000f67e9e7c7)
+one bit flip(0x0 -> 0x8)
+11644 timeout
+[ 2011-5-13 14:41:30]Process 11644 exited with code 0
+Test Num : 360
+Inject fault at 0x600fffffffaee611(physical:0x10000f67e9e611)
+one bit flip(0x0 -> 0x2)
+11652 timeout
+[ 2011-5-13 14:41:33]Process 11652 exited with code 0
+Test Num : 361
+Inject fault at 0x600fffffffeee6bd(physical:0x10000f67e9e6bd)
+one bit flip(0x30000000 -> 0x30002000)
+11660 timeout
+[ 2011-5-13 14:41:36]Process 11660 exited with code 0
+Test Num : 362
+Inject fault at 0x600ffffffff6ea24(physical:0x10000f67e9ea24)
+one bit flip(0x0 -> 0x10)
+11668 timeout
+[ 2011-5-13 14:41:39]Process 11668 exited with code 0
+Test Num : 363
+Inject fault at 0x600fffffffc7e160(physical:0x10000f67e9e160)
+one bit flip(0x8 -> 0x9)
+11676 timeout
+[ 2011-5-13 14:41:42]Process 11676 exited with code 0
+Test Num : 364
+Inject fault at 0x600fffffffe3e2f9(physical:0x10000f67e9e2f9)
+one bit flip(0x0 -> 0x200)
+11684 timeout
+[ 2011-5-13 14:41:45]Process 11684 exited with code 0
+Test Num : 365
+Inject fault at 0x600fffffffd1cae6(physical:0x10000f67e9cae6)
+one bit flip(0x0 -> 0x40)
+11692 timeout
+[ 2011-5-13 14:41:48]Process 11692 exited with code 0
+Test Num : 366
+Inject fault at 0x600fffffff92c1cf(physical:0x10000f67e9c1cf)
+one bit flip(0x0 -> 0x8000)
+11700 timeout
+[ 2011-5-13 14:41:51]Process 11700 exited with code 0
+Test Num : 367
+Inject fault at 0x600fffffff88d602(physical:0x10000f67e9d602)
+one bit flip(0x0 -> 0x4)
+11708 timeout
+[ 2011-5-13 14:41:54]Process 11708 exited with code 0
+Test Num : 368
+Inject fault at 0x600ffffffffeeb84(physical:0x10000f67e9eb84)
+one bit flip(0x1000000000000 -> 0x1000000000010)
+11716 timeout
+[ 2011-5-13 14:41:57]Process 11716 exited with code 0
+Test Num : 369
+Inject fault at 0x600fffffffe5d9c3(physical:0x10000f6760d9c3)
+one bit flip(0x3138342030203020 -> 0x3138342030203030)
+11724 timeout
+[  2011-5-13 14:42:1]Process 11724 exited with code 0
+Test Num : 370
+Inject fault at 0x600fffffff9bbe4f(physical:0x10000f6760be4f)
+one bit flip(0x0 -> 0x8000)
+11732 timeout
+[  2011-5-13 14:42:4]Process 11732 exited with code 0
+Test Num : 371
+Inject fault at 0x600fffffff8ddc6a(physical:0x10000f6760dc6a)
+one bit flip(0xf468000000000000 -> 0xf468000000000400)
+11740 timeout
+[  2011-5-13 14:42:7]Process 11740 exited with code 0
+Test Num : 372
+Inject fault at 0x600fffffffa7e236(physical:0x10000cdc17e236)
+one bit flip(0x4f938600f -> 0x4f938604f)
+11748 timeout
+[ 2011-5-13 14:42:10]Process 11748 exited with code 0
+Test Num : 373
+Inject fault at 0x600fffffff9fc89d(physical:0x10000f79cac89d)
+one bit flip(0x0 -> 0x2000)
+11757 timeout
+[ 2011-5-13 14:42:13]Process 11757 exited with code 0
+Test Num : 374
+Inject fault at 0x600fffffffddddba(physical:0x10000f79caddba)
+one bit flip(0x0 -> 0x400)
+11765 timeout
+[ 2011-5-13 14:42:16]Process 11765 exited with code 0
+Test Num : 375
+Inject fault at 0x600fffffffe8f453(physical:0x10000f79caf453)
+one bit flip(0x0 -> 0x8)
+11773 timeout
+[ 2011-5-13 14:42:19]Process 11773 exited with code 0
+Test Num : 376
+Inject fault at 0x600fffffffa3c726(physical:0x10000f79cac726)
+one bit flip(0x0 -> 0x40)
+11781 timeout
+[ 2011-5-13 14:42:22]Process 11781 exited with code 0
+Test Num : 377
+Inject fault at 0x600fffffff89c45e(physical:0x10000f79cac45e)
+one bit flip(0x0 -> 0x4000)
+11789 timeout
+[ 2011-5-13 14:42:25]Process 11789 exited with code 0
+Test Num : 378
+Inject fault at 0x600fffffffe5f18b(physical:0x10000f79caf18b)
+one bit flip(0x48ad0600fffffff -> 0x48ad0600ffff7ff)
+11797 timeout
+[ 2011-5-13 14:42:28]Process 11797 exited with code 0
+Test Num : 379
+Inject fault at 0x600fffffff8aeef2(physical:0x10000f79caeef2)
+one bit flip(0xd000000000000 -> 0xd000000000400)
+11805 timeout
+[ 2011-5-13 14:42:32]Process 11805 exited with code 0
+Test Num : 380
+Inject fault at 0x600fffffffc5e34b(physical:0x10000f79cae34b)
+one bit flip(0x1ded00000000000 -> 0x1ded00000000800)
+11813 timeout
+[ 2011-5-13 14:42:35]Process 11813 exited with code 0
+Test Num : 381
+Inject fault at 0x600fffffffaabe0f(physical:0x10000f79cabe0f)
+one bit flip(0x0 -> 0x8000)
+11822 timeout
+[ 2011-5-13 14:42:38]Process 11822 exited with code 0
+Test Num : 382
+Inject fault at 0x600fffffffcbc5f5(physical:0x10000cdc17c5f5)
+one bit flip(0x0 -> 0x20)
+11830 timeout
+[ 2011-5-13 14:42:41]Process 11830 exited with code 0
+Test Num : 383
+Inject fault at 0x600fffffffdde06a(physical:0x10000f66f7e06a)
+one bit flip(0x0 -> 0x400)
+11838 timeout
+[ 2011-5-13 14:42:44]Process 11838 exited with code 0
+Test Num : 384
+Inject fault at 0x600fffffffead33b(physical:0x10000f66f7d33b)
+one bit flip(0x0 -> 0x800)
+11846 timeout
+[ 2011-5-13 14:42:47]Process 11846 exited with code 0
+Test Num : 385
+Inject fault at 0x600fffffffcbdac9(physical:0x10000f9824dac9)
+one bit flip(0x2030203020302030 -> 0x2030203020302230)
+11854 timeout
+[ 2011-5-13 14:42:50]Process 11854 exited with code 0
+Test Num : 386
+Inject fault at 0x600fffffff8ec9bf(physical:0x10000f66f7c9bf)
+one bit flip(0x0 -> 0x8000)
+11862 timeout
+[ 2011-5-13 14:42:53]Process 11862 exited with code 0
+Test Num : 387
+Inject fault at 0x600ffffffffdc3da(physical:0x10000f77dec3da)
+one bit flip(0x0 -> 0x400)
+11870 timeout
+[ 2011-5-13 14:42:56]Process 11870 exited with code 0
+Test Num : 388
+Inject fault at 0x600fffffff9bee64(physical:0x10000f66f7ee64)
+one bit flip(0x0 -> 0x10)
+11878 timeout
+[ 2011-5-13 14:42:59]Process 11878 exited with code 0
+Test Num : 389
+Inject fault at 0x600ffffffffceede(physical:0x10000f77deeede)
+one bit flip(0x7976757473726c6a -> 0x7976757473726d6a)
+11886 timeout
+[  2011-5-13 14:43:3]Process 11886 exited with code 0
+Test Num : 390
+Inject fault at 0x600fffffffadf302(physical:0x10000c644bf302)
+one bit flip(0x200000000004 -> 0x200000000000)
+11894 timeout
+[  2011-5-13 14:43:6]Process 11894 exited with code 0
+Test Num : 391
+Inject fault at 0x600fffffff9ecbd2(physical:0x10000f9b9fcbd2)
+one bit flip(0x0 -> 0x4)
+11902 timeout
+[  2011-5-13 14:43:9]Process 11902 exited with code 0
+Test Num : 392
+Inject fault at 0x600fffffff93f03c(physical:0x10000f9b9ff03c)
+one bit flip(0x0 -> 0x1000)
+11910 timeout
+[ 2011-5-13 14:43:12]Process 11910 exited with code 0
+Test Num : 393
+Inject fault at 0x600ffffffffdc8dd(physical:0x10000f9b9fc8dd)
+one bit flip(0x0 -> 0x2000)
+11918 timeout
+[ 2011-5-13 14:43:15]Process 11918 exited with code 0
+Test Num : 394
+Inject fault at 0x600fffffffc5eff5(physical:0x10000f9b9feff5)
+one bit flip(0x0 -> 0x20)
+11926 timeout
+[ 2011-5-13 14:43:18]Process 11926 exited with code 0
+Test Num : 395
+Inject fault at 0x600fffffff8fd898(physical:0x10000f9b9fd898)
+one bit flip(0x0 -> 0x100)
+11934 timeout
+[ 2011-5-13 14:43:21]Process 11934 exited with code 0
+Test Num : 396
+Inject fault at 0x600fffffffb3c5c4(physical:0x10000f9b9fc5c4)
+one bit flip(0x0 -> 0x10)
+11942 timeout
+[ 2011-5-13 14:43:24]Process 11942 exited with code 0
+Test Num : 397
+Inject fault at 0x600fffffff80c62f(physical:0x10000f9b9fc62f)
+one bit flip(0x0 -> 0x8000)
+11950 timeout
+[ 2011-5-13 14:43:27]Process 11950 exited with code 0
+Test Num : 398
+Inject fault at 0x600fffffffbac997(physical:0x10000c644bc997)
+one bit flip(0x0 -> 0x80)
+11959 timeout
+[ 2011-5-13 14:43:30]Process 11959 exited with code 0
+Test Num : 399
+Inject fault at 0x600ffffffff0f55c(physical:0x10000c644bf55c)
+one bit flip(0x0 -> 0x8000)
+11967 timeout
+[ 2011-5-13 14:43:34]Process 11967 exited with code 0
+Test Num : 400
+Inject fault at 0x600fffffff91d3d1(physical:0x10000c644bd3d1)
+one bit flip(0x0 -> 0x2)
+11975 timeout
+[ 2011-5-13 14:43:37]Process 11975 exited with code 0
+Test Num : 401
+Inject fault at 0x600fffffffb0cedc(physical:0x10000f1832cedc)
+one bit flip(0xffffffffff01ed01 -> 0xffffffffff01fd01)
+11983 timeout
+[ 2011-5-13 14:43:40]Process 11983 exited with code 0
+Test Num : 402
+Inject fault at 0x600fffffffb7f304(physical:0x10000c644bf304)
+one bit flip(0x20000000 -> 0x20000010)
+11991 timeout
+[ 2011-5-13 14:43:43]Process 11991 exited with code 0
+Test Num : 403
+Inject fault at 0x600fffffffc7e81b(physical:0x10000c644be81b)
+one bit flip(0xad80010000000000 -> 0xad80010000000800)
+11999 timeout
+[ 2011-5-13 14:43:46]Process 11999 exited with code 0
+Test Num : 404
+Inject fault at 0x600fffffff80dcac(physical:0x10000c644bdcac)
+one bit flip(0x100000000 -> 0x100001000)
+12007 timeout
+[ 2011-5-13 14:43:49]Process 12007 exited with code 0
+Test Num : 405
+Inject fault at 0x600fffffffdcefae(physical:0x10000c644befae)
+one bit flip(0x4dcd7be50000 -> 0x4dcd7be54000)
+12016 timeout
+[ 2011-5-13 14:43:52]Process 12016 exited with code 0
+Test Num : 406
+Inject fault at 0x600ffffffff4c0fe(physical:0x10000c644bc0fe)
+one bit flip(0x0 -> 0x4000)
+12024 timeout
+[ 2011-5-13 14:43:55]Process 12024 exited with code 0
+Test Num : 407
+Inject fault at 0x600fffffffa4f651(physical:0x10000c644bf651)
+one bit flip(0xe5200000000004f9 -> 0xe5200000000004fb)
+12032 timeout
+[ 2011-5-13 14:43:58]Process 12032 exited with code 0
+Test Num : 408
+Inject fault at 0x600fffffffa3cb5b(physical:0x10000c644bcb5b)
+one bit flip(0x0 -> 0x800)
+12040 timeout
+[  2011-5-13 14:44:1]Process 12040 exited with code 0
+Test Num : 409
+Inject fault at 0x600fffffff9abc22(physical:0x10000c644bbc22)
+one bit flip(0x0 -> 0x800)
+12048 timeout
+[  2011-5-13 14:44:5]Process 12048 exited with code 0
+Test Num : 410
+Inject fault at 0x600fffffffe0f69c(physical:0x10000c65b3f69c)
+one bit flip(0xffffffff20000000 -> 0xffffffff20001000)
+12056 timeout
+[  2011-5-13 14:44:8]Process 12056 exited with code 0
+Test Num : 411
+Inject fault at 0x600fffffffa9f745(physical:0x10000c65b3f745)
+one bit flip(0x69ab00007273 -> 0x69ab00007253)
+12064 timeout
+[ 2011-5-13 14:44:11]Process 12064 exited with code 0
+Test Num : 412
+Inject fault at 0x600fffffff99e33c(physical:0x10000c644be33c)
+one bit flip(0x0 -> 0x1000)
+12072 timeout
+[ 2011-5-13 14:44:14]Process 12072 exited with code 0
+Test Num : 413
+Inject fault at 0x600fffffffaccc9c(physical:0x10000c644bcc9c)
+one bit flip(0x100000000 -> 0x100001000)
+12080 timeout
+[ 2011-5-13 14:44:17]Process 12080 exited with code 0
+Test Num : 414
+Inject fault at 0x600fffffff81cfab(physical:0x10000f9b3bcfab)
+one bit flip(0x34d0345033d0335 -> 0x34d0345033d0b35)
+12088 timeout
+[ 2011-5-13 14:44:20]Process 12088 exited with code 0
+Test Num : 415
+Inject fault at 0x600ffffffffbe176(physical:0x10000c644be176)
+one bit flip(0x11b300000 -> 0x11b300040)
+12096 timeout
+[ 2011-5-13 14:44:23]Process 12096 exited with code 0
+Test Num : 416
+Inject fault at 0x600fffffffeacc29(physical:0x10000c644bcc29)
+one bit flip(0x0 -> 0x200)
+12104 timeout
+[ 2011-5-13 14:44:26]Process 12104 exited with code 0
+Test Num : 417
+Inject fault at 0x600fffffff8de67d(physical:0x10000c644be67d)
+one bit flip(0x0 -> 0x2000)
+12112 timeout
+[ 2011-5-13 14:44:29]Process 12112 exited with code 0
+Test Num : 418
+Inject fault at 0x600fffffff96c684(physical:0x10000c644bc684)
+one bit flip(0x0 -> 0x10)
+12120 timeout
+[ 2011-5-13 14:44:32]Process 12120 exited with code 0
+Test Num : 419
+Inject fault at 0x600fffffff80bba8(physical:0x10000d537dbba8)
+one bit flip(0x0 -> 0x800)
+12128 timeout
+[ 2011-5-13 14:44:36]Process 12128 exited with code 0
+Test Num : 420
+Inject fault at 0x600fffffffbdcaa7(physical:0x10000c64b5caa7)
+one bit flip(0x0 -> 0x80)
+12136 timeout
+[ 2011-5-13 14:44:39]Process 12136 exited with code 0
+Test Num : 421
+Inject fault at 0x600fffffff90ce6c(physical:0x10000f11edce6c)
+one bit flip(0x23011f011b011501 -> 0x23011f011b010501)
+12144 timeout
+[ 2011-5-13 14:44:42]Process 12144 exited with code 0
+Test Num : 422
+Inject fault at 0x600fffffffc0f58d(physical:0x10000c74e9f58d)
+one bit flip(0x0 -> 0x2000)
+12153 timeout
+[ 2011-5-13 14:44:45]Process 12153 exited with code 0
+Test Num : 423
+Inject fault at 0x600fffffffdbe4ba(physical:0x10000f1c62e4ba)
+one bit flip(0x0 -> 0x400)
+12161 timeout
+[ 2011-5-13 14:44:48]Process 12161 exited with code 0
+Test Num : 424
+Inject fault at 0x600fffffffefe726(physical:0x10000f1c62e726)
+one bit flip(0xffffffefe6900000 -> 0xffffffefe6900040)
+12169 timeout
+[ 2011-5-13 14:44:51]Process 12169 exited with code 0
+Test Num : 425
+Inject fault at 0x600fffffffb7ef9a(physical:0x10000c74e9ef9a)
+one bit flip(0x0 -> 0x400)
+12177 timeout
+[ 2011-5-13 14:44:54]Process 12177 exited with code 0
+Test Num : 426
+Inject fault at 0x600fffffffe8d821(physical:0x10000c74e9d821)
+one bit flip(0x0 -> 0x2)
+12185 timeout
+[ 2011-5-13 14:44:57]Process 12185 exited with code 0
+Test Num : 427
+Inject fault at 0x600fffffff8ed9cf(physical:0x10000c74e9d9cf)
+one bit flip(0x2030203020302030 -> 0x203020302030a030)
+12193 timeout
+[  2011-5-13 14:45:0]Process 12193 exited with code 0
+Test Num : 428
+Inject fault at 0x600fffffffefe912(physical:0x10000c74e9e912)
+one bit flip(0xf938200000000015 -> 0xf938200000000011)
+12201 timeout
+[  2011-5-13 14:45:3]Process 12201 exited with code 0
+Test Num : 429
+Inject fault at 0x600fffffff86f9f1(physical:0x10000c74e9f9f1)
+one bit flip(0x3800000000000000 -> 0x3800000000000010)
+12210 timeout
+[  2011-5-13 14:45:7]Process 12210 exited with code 0
+Test Num : 430
+Inject fault at 0x600fffffffd6d791(physical:0x10000c64b5d791)
+one bit flip(0x0 -> 0x2)
+12218 timeout
+[ 2011-5-13 14:45:10]Process 12218 exited with code 0
+Test Num : 431
+Inject fault at 0x600fffffff83be2d(physical:0x10000c74e9be2d)
+one bit flip(0x0 -> 0x2000)
+12226 timeout
+[ 2011-5-13 14:45:13]Process 12226 exited with code 0
+Test Num : 432
+Inject fault at 0x600fffffffdabd02(physical:0x10000c74e9bd02)
+one bit flip(0x0 -> 0x4)
+12234 timeout
+[ 2011-5-13 14:45:16]Process 12234 exited with code 0
+Test Num : 433
+Inject fault at 0x600fffffffc7f9d2(physical:0x10000d90d7f9d2)
+one bit flip(0x1400000000001 -> 0x1400000000005)
+12242 timeout
+[ 2011-5-13 14:45:19]Process 12242 exited with code 0
+Test Num : 434
+Inject fault at 0x600fffffffb7dcba(physical:0x10000d90d7dcba)
+one bit flip(0xffff000000000000 -> 0xffff000000000400)
+12250 timeout
+[ 2011-5-13 14:45:22]Process 12250 exited with code 0
+Test Num : 435
+Inject fault at 0x600fffffffd1eaef(physical:0x10000d90d7eaef)
+one bit flip(0x0 -> 0x8000)
+12258 timeout
+[ 2011-5-13 14:45:25]Process 12258 exited with code 0
+Test Num : 436
+Inject fault at 0x600ffffffff0e45a(physical:0x10000c74e9e45a)
+one bit flip(0x0 -> 0x400)
+12266 timeout
+[ 2011-5-13 14:45:28]Process 12266 exited with code 0
+Test Num : 437
+Inject fault at 0x600fffffffd8c87e(physical:0x10000c74e9c87e)
+one bit flip(0x0 -> 0x4000)
+12274 timeout
+[ 2011-5-13 14:45:31]Process 12274 exited with code 0
+Test Num : 438
+Inject fault at 0x600ffffffff1f37a(physical:0x10000caa0cf37a)
+one bit flip(0x0 -> 0x400)
+12282 timeout
+[ 2011-5-13 14:45:34]Process 12282 exited with code 0
+Test Num : 439
+Inject fault at 0x600fffffffc5e9ba(physical:0x10000c74e9e9ba)
+one bit flip(0x0 -> 0x20)
+12290 timeout
+[ 2011-5-13 14:45:38]Process 12290 exited with code 0
+Test Num : 440
+Inject fault at 0x600fffffffc6c4f6(physical:0x10000caa0cc4f6)
+one bit flip(0x0 -> 0x40)
+12298 timeout
+[ 2011-5-13 14:45:41]Process 12298 exited with code 0
+Test Num : 441
+Inject fault at 0x600fffffff98d132(physical:0x10000c74e9d132)
+one bit flip(0x0 -> 0x4)
+12306 timeout
+[ 2011-5-13 14:45:44]Process 12306 exited with code 0
+Test Num : 442
+Inject fault at 0x600fffffffdfc30c(physical:0x10000caa0cc30c)
+one bit flip(0x0 -> 0x1000)
+12314 timeout
+[ 2011-5-13 14:45:47]Process 12314 exited with code 0
+Test Num : 443
+Inject fault at 0x600fffffffb5e56d(physical:0x10000ceae2e56d)
+one bit flip(0x450ee8000000 -> 0x450ee8002000)
+12322 timeout
+[ 2011-5-13 14:45:50]Process 12322 exited with code 0
+Test Num : 444
+Inject fault at 0x600fffffffb7ec00(physical:0x10000ceae2ec00)
+one bit flip(0x200000000004f938 -> 0x200000000004f939)
+12330 timeout
+[ 2011-5-13 14:45:53]Process 12330 exited with code 0
+Test Num : 445
+Inject fault at 0x600fffffff8ff5ef(physical:0x10000ceae2f5ef)
+one bit flip(0x0 -> 0x8000)
+12338 timeout
+[ 2011-5-13 14:45:56]Process 12338 exited with code 0
+Test Num : 446
+Inject fault at 0x600ffffffff4e14f(physical:0x10000c64b5e14f)
+one bit flip(0x0 -> 0x8000)
+12347 timeout
+[ 2011-5-13 14:45:59]Process 12347 exited with code 0
+Test Num : 447
+Inject fault at 0x600fffffffa6f8aa(physical:0x10000f1088f8aa)
+one bit flip(0x0 -> 0x400)
+12355 timeout
+[  2011-5-13 14:46:2]Process 12355 exited with code 0
+Test Num : 448
+Inject fault at 0x600fffffff90e7f7(physical:0x10000f1088e7f7)
+one bit flip(0x0 -> 0x80)
+12363 timeout
+[  2011-5-13 14:46:5]Process 12363 exited with code 0
+Test Num : 449
+Inject fault at 0x600ffffffff1c286(physical:0x10000f713bc286)
+one bit flip(0x0 -> 0x40)
+12371 timeout
+[  2011-5-13 14:46:9]Process 12371 exited with code 0
+Test Num : 450
+Inject fault at 0x600fffffffdccbb9(physical:0x10000f1088cbb9)
+one bit flip(0x0 -> 0x200)
+12379 timeout
+[ 2011-5-13 14:46:12]Process 12379 exited with code 0
+Test Num : 451
+Inject fault at 0x600fffffff9dbb4d(physical:0x10000f713bbb4d)
+one bit flip(0x0 -> 0x2000)
+12387 timeout
+[ 2011-5-13 14:46:15]Process 12387 exited with code 0
+Test Num : 452
+Inject fault at 0x600fffffff8df2ab(physical:0x10000f1088f2ab)
+one bit flip(0x0 -> 0x800)
+12395 timeout
+[ 2011-5-13 14:46:18]Process 12395 exited with code 0
+Test Num : 453
+Inject fault at 0x600fffffffb1f502(physical:0x10000f1088f502)
+one bit flip(0x0 -> 0x4)
+12404 timeout
+[ 2011-5-13 14:46:21]Process 12404 exited with code 0
+Test Num : 454
+Inject fault at 0x600fffffff83e33d(physical:0x10000f1088e33d)
+one bit flip(0x0 -> 0x2000)
+12412 timeout
+[ 2011-5-13 14:46:24]Process 12412 exited with code 0
+Test Num : 455
+Inject fault at 0x600fffffff82cb12(physical:0x10000f1088cb12)
+one bit flip(0x0 -> 0x4)
+12422 timeout
+[ 2011-5-13 14:46:27]Process 12422 exited with code 0
+Test Num : 456
+Inject fault at 0x600fffffff8cbf23(physical:0x10000f1088bf23)
+one bit flip(0x0 -> 0x8)
+12431 timeout
+[ 2011-5-13 14:46:30]Process 12431 exited with code 0
+Test Num : 457
+Inject fault at 0x600fffffff8ad21b(physical:0x10000d7b7dd21b)
+one bit flip(0x0 -> 0x800)
+12439 timeout
+[ 2011-5-13 14:46:33]Process 12439 exited with code 0
+Test Num : 458
+Inject fault at 0x600fffffffe4e3d2(physical:0x10000f1088e3d2)
+one bit flip(0x0 -> 0x4)
+12447 timeout
+[ 2011-5-13 14:46:36]Process 12447 exited with code 0
+Test Num : 459
+Inject fault at 0x600fffffffa3cfa8(physical:0x10000f1ecccfa8)
+one bit flip(0x45033d0335032d03 -> 0x45033d0335032d83)
+12455 timeout
+[ 2011-5-13 14:46:40]Process 12455 exited with code 0
+Test Num : 460
+Inject fault at 0x600fffffff87d65e(physical:0x10000f1eccd65e)
+one bit flip(0x0 -> 0x4000)
+12463 timeout
+[ 2011-5-13 14:46:43]Process 12463 exited with code 0
+Test Num : 461
+Inject fault at 0x600fffffffa5bca0(physical:0x10000f1eccbca0)
+one bit flip(0xffffffff -> 0xfffffffe)
+12471 timeout
+[ 2011-5-13 14:46:46]Process 12471 exited with code 0
+Test Num : 462
+Inject fault at 0x600fffffffa2db1e(physical:0x10000d7ddbdb1e)
+one bit flip(0x3020302030203020 -> 0x3020302030207020)
+12481 timeout
+[ 2011-5-13 14:46:49]Process 12481 exited with code 0
+Test Num : 463
+Inject fault at 0x600fffffffd6c89f(physical:0x10000d7ddbc89f)
+one bit flip(0x0 -> 0x8000)
+12489 timeout
+[ 2011-5-13 14:46:52]Process 12489 exited with code 0
+Test Num : 464
+Inject fault at 0x600ffffffff6d94c(physical:0x10000d7ddbd94c)
+one bit flip(0x0 -> 0x1000)
+12497 timeout
+[ 2011-5-13 14:46:55]Process 12497 exited with code 0
+Test Num : 465
+Inject fault at 0x600fffffffe4eb71(physical:0x10000d7ddbeb71)
+one bit flip(0x0 -> 0x2)
+12506 timeout
+[ 2011-5-13 14:46:58]Process 12506 exited with code 0
+Test Num : 466
+Inject fault at 0x600fffffffd1d4a6(physical:0x10000d7ddbd4a6)
+one bit flip(0x0 -> 0x40)
+12514 timeout
+[  2011-5-13 14:47:1]Process 12514 exited with code 0
+Test Num : 467
+Inject fault at 0x600fffffffd1dafb(physical:0x10000c66ccdafb)
+one bit flip(0x2030203020302030 -> 0x2030203020302830)
+12522 timeout
+[  2011-5-13 14:47:4]Process 12522 exited with code 0
+Test Num : 468
+Inject fault at 0x600fffffffdbd940(physical:0x10000d7ddbd940)
+one bit flip(0x200000000004a2c0 -> 0x200000000004a2c1)
+12530 timeout
+[  2011-5-13 14:47:7]Process 12530 exited with code 0
+Test Num : 469
+Inject fault at 0x600fffffffe4d063(physical:0x10000d7ddbd063)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffff7)
+12540 timeout
+[ 2011-5-13 14:47:11]Process 12540 exited with code 0
+Test Num : 470
+Inject fault at 0x600fffffffc3de40(physical:0x10000f2be8de40)
+one bit flip(0x3020302030203020 -> 0x3020302030203021)
+12550 timeout
+[ 2011-5-13 14:47:14]Process 12550 exited with code 0
+Test Num : 471
+Inject fault at 0x600fffffffd3c1a9(physical:0x10000f2be8c1a9)
+one bit flip(0x0 -> 0x200)
+12558 timeout
+[ 2011-5-13 14:47:17]Process 12558 exited with code 0
+Test Num : 472
+Inject fault at 0x600fffffffe7f6fb(physical:0x10000f2be8f6fb)
+one bit flip(0xe7f6c02000000000 -> 0xe7f6c02000000800)
+12566 timeout
+[ 2011-5-13 14:47:20]Process 12566 exited with code 0
+Test Num : 473
+Inject fault at 0x600fffffffb1f70c(physical:0x10000f2be8f70c)
+one bit flip(0x0 -> 0x1000)
+12574 timeout
+[ 2011-5-13 14:47:23]Process 12574 exited with code 0
+Test Num : 474
+Inject fault at 0x600fffffffd5dc50(physical:0x10000f2be8dc50)
+one bit flip(0x3020302030203020 -> 0x3020302030203021)
+12582 timeout
+[ 2011-5-13 14:47:26]Process 12582 exited with code 0
+Test Num : 475
+Inject fault at 0x600fffffffa4cba2(physical:0x10000f2be8cba2)
+one bit flip(0x0 -> 0x4)
+12590 timeout
+[ 2011-5-13 14:47:29]Process 12590 exited with code 0
+Test Num : 476
+Inject fault at 0x600ffffffffbd7e5(physical:0x10000f2be8d7e5)
+one bit flip(0x0 -> 0x20)
+12598 timeout
+[ 2011-5-13 14:47:32]Process 12598 exited with code 0
+Test Num : 477
+Inject fault at 0x600fffffffd0c191(physical:0x10000f2be8c191)
+one bit flip(0x0 -> 0x2)
+12607 timeout
+[ 2011-5-13 14:47:35]Process 12607 exited with code 0
+Test Num : 478
+Inject fault at 0x600ffffffffbedf9(physical:0x10000f2be8edf9)
+one bit flip(0x0 -> 0x200)
+12615 timeout
+[ 2011-5-13 14:47:38]Process 12615 exited with code 0
+Test Num : 479
+Inject fault at 0x600fffffff8fba11(physical:0x10000f2be8ba11)
+one bit flip(0x0 -> 0x2)
+12623 timeout
+[ 2011-5-13 14:47:42]Process 12623 exited with code 0
+Test Num : 480
+Inject fault at 0x600fffffff98e50c(physical:0x10000f2be8e50c)
+one bit flip(0x0 -> 0x1000)
+12631 timeout
+[ 2011-5-13 14:47:45]Process 12631 exited with code 0
+Test Num : 481
+Inject fault at 0x600fffffff89e0d7(physical:0x10000f2be8e0d7)
+one bit flip(0x0 -> 0x80)
+12639 timeout
+[ 2011-5-13 14:47:48]Process 12639 exited with code 0
+Test Num : 482
+Inject fault at 0x600ffffffffdbacf(physical:0x10000d6cb4bacf)
+one bit flip(0x0 -> 0x8000)
+12647 timeout
+[ 2011-5-13 14:47:51]Process 12647 exited with code 0
+Test Num : 483
+Inject fault at 0x600fffffffbae73a(physical:0x10000f7195e73a)
+one bit flip(0x1 -> 0x401)
+12655 timeout
+[ 2011-5-13 14:47:54]Process 12655 exited with code 0
+Test Num : 484
+Inject fault at 0x600fffffff90be92(physical:0x10000db7dbbe92)
+one bit flip(0x0 -> 0x4)
+12663 timeout
+[ 2011-5-13 14:47:57]Process 12663 exited with code 0
+Test Num : 485
+Inject fault at 0x600fffffffdddb92(physical:0x10000db7dbdb92)
+one bit flip(0x3020302030203020 -> 0x3020302030203024)
+12671 timeout
+[  2011-5-13 14:48:0]Process 12671 exited with code 0
+Test Num : 486
+Inject fault at 0x600fffffffced99f(physical:0x10000db7dbd99f)
+one bit flip(0x3620302030203020 -> 0x362030203020b020)
+12679 timeout
+[  2011-5-13 14:48:3]Process 12679 exited with code 0
+Test Num : 487
+Inject fault at 0x600ffffffff6c1f4(physical:0x10000db7dbc1f4)
+one bit flip(0x0 -> 0x10)
+12687 timeout
+[  2011-5-13 14:48:6]Process 12687 exited with code 0
+Test Num : 488
+Inject fault at 0x600fffffff94c34d(physical:0x10000db7dbc34d)
+one bit flip(0x0 -> 0x2000)
+12696 timeout
+[  2011-5-13 14:48:9]Process 12696 exited with code 0
+Test Num : 489
+Inject fault at 0x600fffffffaac498(physical:0x10000db7dbc498)
+one bit flip(0x0 -> 0x100)
+12704 timeout
+[ 2011-5-13 14:48:13]Process 12704 exited with code 0
+Test Num : 490
+Inject fault at 0x600fffffffd4ec7c(physical:0x10000db7dbec7c)
+one bit flip(0x115b460000000 -> 0x115b460001000)
+12713 timeout
+[ 2011-5-13 14:48:16]Process 12713 exited with code 0
+Test Num : 491
+Inject fault at 0x600fffffffbed32f(physical:0x10000db7dbd32f)
+one bit flip(0x0 -> 0x8000)
+12721 timeout
+[ 2011-5-13 14:48:19]Process 12721 exited with code 0
+Test Num : 492
+Inject fault at 0x600fffffff88d19c(physical:0x10000db7dbd19c)
+one bit flip(0x0 -> 0x1000)
+12730 timeout
+[ 2011-5-13 14:48:22]Process 12730 exited with code 0
+Test Num : 493
+Inject fault at 0x600fffffffd6ed5c(physical:0x10000db7dbed5c)
+one bit flip(0x0 -> 0x1000)
+12739 timeout
+[ 2011-5-13 14:48:25]Process 12739 exited with code 0
+Test Num : 494
+Inject fault at 0x600fffffffece492(physical:0x10000f62f0e492)
+one bit flip(0x0 -> 0x4)
+12750 timeout
+[ 2011-5-13 14:48:28]Process 12750 exited with code 0
+Test Num : 495
+Inject fault at 0x600fffffff81ebcb(physical:0x10000db7dbebcb)
+one bit flip(0x0 -> 0x800)
+12758 timeout
+[ 2011-5-13 14:48:31]Process 12758 exited with code 0
+Test Num : 496
+Inject fault at 0x600fffffffa9bf3d(physical:0x10000f7195bf3d)
+one bit flip(0x0 -> 0x2000)
+12766 timeout
+[ 2011-5-13 14:48:34]Process 12766 exited with code 0
+Test Num : 497
+Inject fault at 0x600fffffffc4eb45(physical:0x10000d9725eb45)
+one bit flip(0x0 -> 0x20)
+12774 timeout
+[ 2011-5-13 14:48:37]Process 12774 exited with code 0
+Test Num : 498
+Inject fault at 0x600fffffffeed509(physical:0x10000d9725d509)
+one bit flip(0x0 -> 0x200)
+12782 timeout
+[ 2011-5-13 14:48:40]Process 12782 exited with code 0
+Test Num : 499
+Inject fault at 0x600fffffffccf3cf(physical:0x10000d8747f3cf)
+one bit flip(0x0 -> 0x8000)
+12790 timeout
+[ 2011-5-13 14:48:44]Process 12790 exited with code 0
+Test Num : 500
+Inject fault at 0x600fffffff9cc2e3(physical:0x10000cb3f6c2e3)
+one bit flip(0x0 -> 0x8)
+12799 timeout
+[ 2011-5-13 14:48:47]Process 12799 exited with code 0
+Test Num : 501
+Inject fault at 0x600fffffffbae0cc(physical:0x10000cbc9ae0cc)
+one bit flip(0x0 -> 0x1000)
+12809 timeout
+[ 2011-5-13 14:48:50]Process 12809 exited with code 0
+Test Num : 502
+Inject fault at 0x600fffffffdbde18(physical:0x10000cb3f6de18)
+one bit flip(0x74782f782f6f666e -> 0x74782f782f6f676e)
+12818 timeout
+[ 2011-5-13 14:48:53]Process 12818 exited with code 0
+Test Num : 503
+Inject fault at 0x600fffffffb3f354(physical:0x10000cb3f6f354)
+one bit flip(0x0 -> 0x10)
+12828 timeout
+[ 2011-5-13 14:48:56]Process 12828 exited with code 0
+Test Num : 504
+Inject fault at 0x600fffffffc3f30c(physical:0x10000f7195f30c)
+one bit flip(0x0 -> 0x1000)
+12838 timeout
+[ 2011-5-13 14:48:59]Process 12838 exited with code 0
+Test Num : 505
+Inject fault at 0x600fffffffa0d2b5(physical:0x10000f8e6fd2b5)
+one bit flip(0x0 -> 0x20)
+12846 timeout
+[  2011-5-13 14:49:2]Process 12846 exited with code 0
+Test Num : 506
+Inject fault at 0x600fffffff88bb9d(physical:0x10000d6274bb9d)
+one bit flip(0x0 -> 0x2000)
+12854 timeout
+[  2011-5-13 14:49:5]Process 12854 exited with code 0
+Test Num : 507
+Inject fault at 0x600fffffffcccee1(physical:0x10000d6274cee1)
+one bit flip(0x20d020201ffffff -> 0x20d020201fffffd)
+12862 timeout
+[  2011-5-13 14:49:8]Process 12862 exited with code 0
+Test Num : 508
+Inject fault at 0x600fffffff9bd638(physical:0x10000d6274d638)
+one bit flip(0x0 -> 0x100)
+12870 timeout
+[ 2011-5-13 14:49:11]Process 12870 exited with code 0
+Test Num : 509
+Inject fault at 0x600fffffffa9eb0a(physical:0x10000d6274eb0a)
+one bit flip(0x0 -> 0x400)
+12878 timeout
+[ 2011-5-13 14:49:15]Process 12878 exited with code 0
+Test Num : 510
+Inject fault at 0x600fffffffebbc79(physical:0x10000d6274bc79)
+one bit flip(0x100000001000008 -> 0x100000001000208)
+12886 timeout
+[ 2011-5-13 14:49:18]Process 12886 exited with code 0
+Test Num : 511
+Inject fault at 0x600fffffffe9e88d(physical:0x10000d6274e88d)
+one bit flip(0x4f938200000 -> 0x4f938202000)
+12894 timeout
+[ 2011-5-13 14:49:21]Process 12894 exited with code 0
+Test Num : 512
+Inject fault at 0x600fffffffc5ec69(physical:0x10000d6274ec69)
+one bit flip(0xb460000000000115 -> 0xb460000000000315)
+12902 timeout
+[ 2011-5-13 14:49:24]Process 12902 exited with code 0
+Test Num : 513
+Inject fault at 0x600fffffffbae841(physical:0x10000d6274e841)
+one bit flip(0x14200000000008b0 -> 0x14200000000008b2)
+12910 timeout
+[ 2011-5-13 14:49:27]Process 12910 exited with code 0
+Test Num : 514
+Inject fault at 0x600fffffffa9e1ad(physical:0x10000d6274e1ad)
+one bit flip(0x554e -> 0x754e)
+12918 timeout
+[ 2011-5-13 14:49:30]Process 12918 exited with code 0
+Test Num : 515
+Inject fault at 0x600fffffffa0e4fd(physical:0x10000d6274e4fd)
+one bit flip(0x0 -> 0x2000)
+12926 timeout
+[ 2011-5-13 14:49:33]Process 12926 exited with code 0
+Test Num : 516
+Inject fault at 0x600fffffffb0c737(physical:0x10000d6274c737)
+one bit flip(0x0 -> 0x80)
+12934 timeout
+[ 2011-5-13 14:49:36]Process 12934 exited with code 0
+Test Num : 517
+Inject fault at 0x600fffffff98ba28(physical:0x10000f5772ba28)
+one bit flip(0x0 -> 0x100)
+12942 timeout
+[ 2011-5-13 14:49:39]Process 12942 exited with code 0
+Test Num : 518
+Inject fault at 0x600fffffffdddfbe(physical:0x10000fc0c6dfbe)
+one bit flip(0x6007 -> 0x2007)
+12950 timeout
+[ 2011-5-13 14:49:42]Process 12950 exited with code 0
+Test Num : 519
+Inject fault at 0x600fffffff86cd22(physical:0x10000f5772cd22)
+one bit flip(0x0 -> 0x4)
+12959 timeout
+[ 2011-5-13 14:49:46]Process 12959 exited with code 0
+Test Num : 520
+Inject fault at 0x600fffffffebeda9(physical:0x10000d2789eda9)
+one bit flip(0x0 -> 0x200)
+12967 timeout
+[ 2011-5-13 14:49:49]Process 12967 exited with code 0
+Test Num : 521
+Inject fault at 0x600fffffffcfdcae(physical:0x10000f5772dcae)
+one bit flip(0x3020000000010000 -> 0x3020000000014000)
+12975 timeout
+[ 2011-5-13 14:49:52]Process 12975 exited with code 0
+Test Num : 522
+Inject fault at 0x600fffffffc3d9e2(physical:0x10000f5772d9e2)
+one bit flip(0x3131203020313720 -> 0x3131203020313724)
+12983 timeout
+[ 2011-5-13 14:49:55]Process 12983 exited with code 0
+Test Num : 523
+Inject fault at 0x600fffffffc4bb73(physical:0x10000f5772bb73)
+one bit flip(0x0 -> 0x8)
+12991 timeout
+[ 2011-5-13 14:49:58]Process 12991 exited with code 0
+Test Num : 524
+Inject fault at 0x600ffffffff5d964(physical:0x10000f5772d964)
+one bit flip(0x656b636f6c625f73 -> 0x656b636f6c625f63)
+12999 timeout
+[  2011-5-13 14:50:1]Process 12999 exited with code 0
+Test Num : 525
+Inject fault at 0x600fffffffabd0ef(physical:0x10000f5772d0ef)
+one bit flip(0xffffffffffffffff -> 0xffffffffffff7fff)
+13007 timeout
+[  2011-5-13 14:50:4]Process 13007 exited with code 0
+Test Num : 526
+Inject fault at 0x600fffffffb6f4e2(physical:0x10000f5772f4e2)
+one bit flip(0x0 -> 0x4)
+13016 timeout
+[  2011-5-13 14:50:7]Process 13016 exited with code 0
+Test Num : 527
+Inject fault at 0x600fffffff93dad3(physical:0x10000f5772dad3)
+one bit flip(0x2030203020302030 -> 0x2030203020302038)
+13024 timeout
+[ 2011-5-13 14:50:10]Process 13024 exited with code 0
+Test Num : 528
+Inject fault at 0x600fffffffe8f08a(physical:0x10000f5772f08a)
+one bit flip(0x1000000010000 -> 0x1000000010400)
+13032 timeout
+[ 2011-5-13 14:50:13]Process 13032 exited with code 0
+Test Num : 529
+Inject fault at 0x600fffffffc3e759(physical:0x10000d2789e759)
+one bit flip(0x202000000000049c -> 0x202000000000069c)
+13040 timeout
+[ 2011-5-13 14:50:17]Process 13040 exited with code 0
+Test Num : 530
+Inject fault at 0x600fffffffb8c512(physical:0x10000f5772c512)
+one bit flip(0x0 -> 0x4)
+13048 timeout
+[ 2011-5-13 14:50:20]Process 13048 exited with code 0
+Test Num : 531
+Inject fault at 0x600ffffffff6cce6(physical:0x10000fa2bdcce6)
+one bit flip(0x0 -> 0x40)
+13056 timeout
+[ 2011-5-13 14:50:23]Process 13056 exited with code 0
+Test Num : 532
+Inject fault at 0x600fffffffabf417(physical:0x10000d2789f417)
+one bit flip(0x3e000060 -> 0x3e0000e0)
+13064 timeout
+[ 2011-5-13 14:50:26]Process 13064 exited with code 0
+Test Num : 533
+Inject fault at 0x600ffffffff6dd4d(physical:0x10000d2789dd4d)
+one bit flip(0x302030 -> 0x300030)
+13072 timeout
+[ 2011-5-13 14:50:29]Process 13072 exited with code 0
+Test Num : 534
+Inject fault at 0x600fffffffe0ba2f(physical:0x10000d2789ba2f)
+one bit flip(0x0 -> 0x8000)
+13080 timeout
+[ 2011-5-13 14:50:32]Process 13080 exited with code 0
+Test Num : 535
+Inject fault at 0x600fffffff8dd2e7(physical:0x10000d2789d2e7)
+one bit flip(0x0 -> 0x80)
+13088 timeout
+[ 2011-5-13 14:50:35]Process 13088 exited with code 0
+Test Num : 536
+Inject fault at 0x600fffffffc6d973(physical:0x10000d2789d973)
+one bit flip(0x3020302030203020 -> 0x3020302030203028)
+13096 timeout
+[ 2011-5-13 14:50:38]Process 13096 exited with code 0
+Test Num : 537
+Inject fault at 0x600fffffffe3dba5(physical:0x10000f14cedba5)
+one bit flip(0x2030203020302030 -> 0x2030203020302010)
+13104 timeout
+[ 2011-5-13 14:50:41]Process 13104 exited with code 0
+Test Num : 538
+Inject fault at 0x600fffffffc6f0f5(physical:0x10000f14cef0f5)
+one bit flip(0x0 -> 0x20)
+13112 timeout
+[ 2011-5-13 14:50:44]Process 13112 exited with code 0
+Test Num : 539
+Inject fault at 0x600ffffffff0efb0(physical:0x10000d2789efb0)
+one bit flip(0x4dcd7d84 -> 0x4dcd7d85)
+13120 timeout
+[ 2011-5-13 14:50:48]Process 13120 exited with code 0
+Test Num : 540
+Inject fault at 0x600fffffffbec24b(physical:0x10000f14cec24b)
+one bit flip(0x0 -> 0x800)
+13128 timeout
+[ 2011-5-13 14:50:51]Process 13128 exited with code 0
+Test Num : 541
+Inject fault at 0x600fffffffdcd7ff(physical:0x10000f7733d7ff)
+one bit flip(0x0 -> 0x8000)
+13136 timeout
+[ 2011-5-13 14:50:54]Process 13136 exited with code 0
+Test Num : 542
+Inject fault at 0x600fffffff9fc8e2(physical:0x10000f7733c8e2)
+one bit flip(0x0 -> 0x4)
+13144 timeout
+[ 2011-5-13 14:50:57]Process 13144 exited with code 0
+Test Num : 543
+Inject fault at 0x600fffffff7ff808(physical:0x10000f7733f808)
+one bit flip(0x600fffffff7ff770 -> 0x600fffffff7ff670)
+13153 timeout
+[  2011-5-13 14:51:0]Process 13153 exited with code 0
+Test Num : 544
+Inject fault at 0x600ffffffff5f065(physical:0x10000f7733f065)
+one bit flip(0x100000000000000 -> 0x100000000000020)
+13161 timeout
+[  2011-5-13 14:51:3]Process 13161 exited with code 0
+Test Num : 545
+Inject fault at 0x600ffffffffdf28e(physical:0x10000f7733f28e)
+one bit flip(0x0 -> 0x4000)
+13169 timeout
+[  2011-5-13 14:51:6]Process 13169 exited with code 0
+Test Num : 546
+Inject fault at 0x600fffffffd9c00f(physical:0x10000f7733c00f)
+one bit flip(0x0 -> 0x8000)
+13177 timeout
+[  2011-5-13 14:51:9]Process 13177 exited with code 0
+Test Num : 547
+Inject fault at 0x600fffffffdcc966(physical:0x10000f7733c966)
+one bit flip(0x0 -> 0x40)
+13185 timeout
+[ 2011-5-13 14:51:12]Process 13185 exited with code 0
+Test Num : 548
+Inject fault at 0x600ffffffff5f4d7(physical:0x10000f7733f4d7)
+one bit flip(0x0 -> 0x80)
+13193 timeout
+[ 2011-5-13 14:51:15]Process 13193 exited with code 0
+Test Num : 549
+Inject fault at 0x600fffffffebd4a2(physical:0x10000f7733d4a2)
+one bit flip(0x0 -> 0x4)
+13201 timeout
+[ 2011-5-13 14:51:19]Process 13201 exited with code 0
+Test Num : 550
+Inject fault at 0x600fffffffa3e664(physical:0x10000f7733e664)
+one bit flip(0xffa3fa1800000000 -> 0xffa3fa1800000010)
+13210 timeout
+[ 2011-5-13 14:51:22]Process 13210 exited with code 0
+Test Num : 551
+Inject fault at 0x600ffffffff8d945(physical:0x10000f5d37d945)
+one bit flip(0x200000 -> 0x200020)
+13218 timeout
+[ 2011-5-13 14:51:25]Process 13218 exited with code 0
+Test Num : 552
+Inject fault at 0x600fffffff93bc42(physical:0x10000f7733bc42)
+one bit flip(0x770000000000000 -> 0x770000000000004)
+13226 timeout
+[ 2011-5-13 14:51:28]Process 13226 exited with code 0
+Test Num : 553
+Inject fault at 0x600fffffffc1e0a2(physical:0x10000f7733e0a2)
+one bit flip(0x0 -> 0x4)
+13234 timeout
+[ 2011-5-13 14:51:31]Process 13234 exited with code 0
+Test Num : 554
+Inject fault at 0x600fffffffc1c615(physical:0x10000f7733c615)
+one bit flip(0x0 -> 0x20)
+13242 timeout
+[ 2011-5-13 14:51:34]Process 13242 exited with code 0
+Test Num : 555
+Inject fault at 0x600fffffffa4c60c(physical:0x10000f7733c60c)
+one bit flip(0x0 -> 0x1000)
+13250 timeout
+[ 2011-5-13 14:51:37]Process 13250 exited with code 0
+Test Num : 556
+Inject fault at 0x600fffffff91f772(physical:0x10000f5d37f772)
+one bit flip(0x238600fffffff91 -> 0x238600fffffff95)
+13258 timeout
+[ 2011-5-13 14:51:40]Process 13258 exited with code 0
+Test Num : 557
+Inject fault at 0x600fffffffcac59a(physical:0x10000f7733c59a)
+one bit flip(0x0 -> 0x400)
+13266 timeout
+[ 2011-5-13 14:51:43]Process 13266 exited with code 0
+Test Num : 558
+Inject fault at 0x600fffffff95f8f1(physical:0x10000f5d37f8f1)
+one bit flip(0x0 -> 0x2)
+13274 timeout
+[ 2011-5-13 14:51:46]Process 13274 exited with code 0
+Test Num : 559
+Inject fault at 0x600fffffffa0bc3c(physical:0x10000f5d37bc3c)
+one bit flip(0x0 -> 0x1000)
+13282 timeout
+[ 2011-5-13 14:51:50]Process 13282 exited with code 0
+Test Num : 560
+Inject fault at 0x600fffffffface2e(physical:0x10000f1039ce2e)
+one bit flip(0xbd00b900b000ab00 -> 0xbd00b900b000eb00)
+13290 timeout
+[ 2011-5-13 14:51:53]Process 13290 exited with code 0
+Test Num : 561
+Inject fault at 0x600fffffffc2c3e6(physical:0x10000f1039c3e6)
+one bit flip(0x0 -> 0x40)
+13298 timeout
+[ 2011-5-13 14:51:56]Process 13298 exited with code 0
+Test Num : 562
+Inject fault at 0x600ffffffff1ed4a(physical:0x10000f5d37ed4a)
+one bit flip(0x1000 -> 0x1400)
+13306 timeout
+[ 2011-5-13 14:51:59]Process 13306 exited with code 0
+Test Num : 563
+Inject fault at 0x600fffffffc7dbdc(physical:0x10000f5d37dbdc)
+one bit flip(0x3020302030203020 -> 0x3020302030202020)
+13314 timeout
+[  2011-5-13 14:52:2]Process 13314 exited with code 0
+Test Num : 564
+Inject fault at 0x600fffffffb7ea98(physical:0x10000f5d37ea98)
+one bit flip(0x0 -> 0x100)
+13322 timeout
+[  2011-5-13 14:52:5]Process 13322 exited with code 0
+Test Num : 565
+Inject fault at 0x600fffffff9df2d6(physical:0x10000f1039f2d6)
+one bit flip(0x4d0b0600f -> 0x4d0b0604f)
+13330 timeout
+[  2011-5-13 14:52:8]Process 13330 exited with code 0
+Test Num : 566
+Inject fault at 0x600fffffffdde8d1(physical:0x10000f1039e8d1)
+one bit flip(0x4b00000001000000 -> 0x4b00000001000002)
+13338 timeout
+[ 2011-5-13 14:52:11]Process 13338 exited with code 0
+Test Num : 567
+Inject fault at 0x600fffffff93bf9a(physical:0x10000f1039bf9a)
+one bit flip(0x0 -> 0x400)
+13347 timeout
+[ 2011-5-13 14:52:14]Process 13347 exited with code 0
+Test Num : 568
+Inject fault at 0x600fffffffe4d2db(physical:0x10000f1039d2db)
+one bit flip(0x0 -> 0x800)
+13355 timeout
+[ 2011-5-13 14:52:17]Process 13355 exited with code 0
+Test Num : 569
+Inject fault at 0x600fffffffe5bb7a(physical:0x10000f1039bb7a)
+one bit flip(0x0 -> 0x400)
+13363 timeout
+[ 2011-5-13 14:52:21]Process 13363 exited with code 0
+Test Num : 570
+Inject fault at 0x600fffffffa4c4e6(physical:0x10000f1039c4e6)
+one bit flip(0x0 -> 0x40)
+13371 timeout
+[ 2011-5-13 14:52:24]Process 13371 exited with code 0
+Test Num : 571
+Inject fault at 0x600fffffffdbcc97(physical:0x10000f1039cc97)
+one bit flip(0x0 -> 0x80)
+13379 timeout
+[ 2011-5-13 14:52:27]Process 13379 exited with code 0
+Test Num : 572
+Inject fault at 0x600fffffffb8eecc(physical:0x10000d7852eecc)
+one bit flip(0x600000007 -> 0x600001007)
+13387 timeout
+[ 2011-5-13 14:52:30]Process 13387 exited with code 0
+Test Num : 573
+Inject fault at 0x600fffffff8df188(physical:0x10000d7852f188)
+one bit flip(0x600fffffff8df730 -> 0x600fffffff8df630)
+13395 timeout
+[ 2011-5-13 14:52:33]Process 13395 exited with code 0
+Test Num : 574
+Inject fault at 0x600ffffffff3f4ad(physical:0x10000f1039f4ad)
+one bit flip(0x0 -> 0x2000)
+13404 timeout
+[ 2011-5-13 14:52:36]Process 13404 exited with code 0
+Test Num : 575
+Inject fault at 0x600fffffff84dc23(physical:0x10000f1039dc23)
+one bit flip(0x2030203020302030 -> 0x2030203020302038)
+13412 timeout
+[ 2011-5-13 14:52:39]Process 13412 exited with code 0
+Test Num : 576
+Inject fault at 0x600fffffffc9c805(physical:0x10000f1039c805)
+one bit flip(0x0 -> 0x20)
+13420 timeout
+[ 2011-5-13 14:52:42]Process 13420 exited with code 0
+Test Num : 577
+Inject fault at 0x600fffffffa6ebae(physical:0x10000f9b1eebae)
+one bit flip(0x100000000 -> 0x100004000)
+13428 timeout
+[ 2011-5-13 14:52:45]Process 13428 exited with code 0
+Test Num : 578
+Inject fault at 0x600fffffffaaf20f(physical:0x10000f9b1ef20f)
+one bit flip(0x0 -> 0x8000)
+13436 timeout
+[ 2011-5-13 14:52:48]Process 13436 exited with code 0
+Test Num : 579
+Inject fault at 0x600ffffffff3c8cc(physical:0x10000f1039c8cc)
+one bit flip(0x0 -> 0x1000)
+13444 timeout
+[ 2011-5-13 14:52:52]Process 13444 exited with code 0
+Test Num : 580
+Inject fault at 0x600fffffffabc2f5(physical:0x10000f1039c2f5)
+one bit flip(0x0 -> 0x20)
+13452 timeout
+[ 2011-5-13 14:52:55]Process 13452 exited with code 0
+Test Num : 581
+Inject fault at 0x600fffffffc1dc50(physical:0x10000f1039dc50)
+one bit flip(0x3020302030203020 -> 0x3020302030203021)
+13460 timeout
+[ 2011-5-13 14:52:58]Process 13460 exited with code 0
+Test Num : 582
+Inject fault at 0x600fffffffc6bc12(physical:0x10000f1039bc12)
+one bit flip(0x0 -> 0x4)
+13468 timeout
+[  2011-5-13 14:53:1]Process 13468 exited with code 0
+Test Num : 583
+Inject fault at 0x600fffffffc3d8b9(physical:0x10000f1039d8b9)
+one bit flip(0x0 -> 0x200)
+13476 timeout
+[  2011-5-13 14:53:4]Process 13476 exited with code 0
+Test Num : 584
+Inject fault at 0x600fffffff8edfab(physical:0x10000f1039dfab)
+one bit flip(0x5568410000000000 -> 0x5568410000000800)
+13484 timeout
+[  2011-5-13 14:53:7]Process 13484 exited with code 0
+Test Num : 585
+Inject fault at 0x600fffffffc9dfb2(physical:0x10000f1039dfb2)
+one bit flip(0x818000000000055 -> 0x818000000000051)
+13492 timeout
+[ 2011-5-13 14:53:10]Process 13492 exited with code 0
+Test Num : 586
+Inject fault at 0x600fffffffa5c090(physical:0x10000f9d93c090)
+one bit flip(0x0 -> 0x1)
+13500 timeout
+[ 2011-5-13 14:53:13]Process 13500 exited with code 0
+Test Num : 587
+Inject fault at 0x600fffffffe8ef67(physical:0x10000f9d93ef67)
+one bit flip(0x4b4d7a7976757473 -> 0x4b4d7a79767574f3)
+13508 timeout
+[ 2011-5-13 14:53:16]Process 13508 exited with code 0
+Test Num : 588
+Inject fault at 0x600fffffffeade35(physical:0x10000f9d93de35)
+one bit flip(0x2030203020302030 -> 0x2030203020302010)
+13516 timeout
+[ 2011-5-13 14:53:19]Process 13516 exited with code 0
+Test Num : 589
+Inject fault at 0x600fffffffbaf6bc(physical:0x10000f1039f6bc)
+one bit flip(0x120000000 -> 0x120001000)
+13524 timeout
+[ 2011-5-13 14:53:23]Process 13524 exited with code 0
+Test Num : 590
+Inject fault at 0x600fffffff85cd01(physical:0x10000f9d93cd01)
+one bit flip(0x0 -> 0x2)
+13532 timeout
+[ 2011-5-13 14:53:26]Process 13532 exited with code 0
+Test Num : 591
+Inject fault at 0x600fffffff87f035(physical:0x10000f9d93f035)
+one bit flip(0x1000000 -> 0x1000020)
+13541 timeout
+[ 2011-5-13 14:53:29]Process 13541 exited with code 0
+Test Num : 592
+Inject fault at 0x600fffffffa5f142(physical:0x10000f1039f142)
+one bit flip(0x0 -> 0x4)
+13549 timeout
+[ 2011-5-13 14:53:32]Process 13549 exited with code 0
+Test Num : 593
+Inject fault at 0x600fffffffd7df5f(physical:0x10000f1039df5f)
+one bit flip(0x0 -> 0x8000)
+13557 timeout
+[ 2011-5-13 14:53:35]Process 13557 exited with code 0
+Test Num : 594
+Inject fault at 0x600ffffffff8f3bb(physical:0x10000f1039f3bb)
+one bit flip(0x0 -> 0x800)
+13565 timeout
+[ 2011-5-13 14:53:38]Process 13565 exited with code 0
+Test Num : 595
+Inject fault at 0x600fffffffdaedc0(physical:0x10000fa737edc0)
+one bit flip(0x0 -> 0x1)
+13573 timeout
+[ 2011-5-13 14:53:41]Process 13573 exited with code 0
+Test Num : 596
+Inject fault at 0x600fffffffc1dbc4(physical:0x10000f568ddbc4)
+one bit flip(0x3020302030203020 -> 0x3020302030203030)
+13581 timeout
+[ 2011-5-13 14:53:44]Process 13581 exited with code 0
+Test Num : 597
+Inject fault at 0x600ffffffff8ea3d(physical:0x10000fa737ea3d)
+one bit flip(0x0 -> 0x2000)
+13589 timeout
+[ 2011-5-13 14:53:47]Process 13589 exited with code 0
+Test Num : 598
+Inject fault at 0x600fffffffb3bc5b(physical:0x10000fa737bc5b)
+one bit flip(0x1623382000000000 -> 0x1623382000000800)
+13598 timeout
+[ 2011-5-13 14:53:50]Process 13598 exited with code 0
+Test Num : 599
+Inject fault at 0x600fffffffa7f76a(physical:0x10000fa737f76a)
+one bit flip(0xf760000000000000 -> 0xf760000000000400)
+13606 timeout
+[ 2011-5-13 14:53:54]Process 13606 exited with code 0
+Test Num : 600
+Inject fault at 0x600fffffffc3e2b0(physical:0x10000fa737e2b0)
+one bit flip(0x120 -> 0x121)
+13614 timeout
+[ 2011-5-13 14:53:57]Process 13614 exited with code 0
+Test Num : 601
+Inject fault at 0x600fffffff85d25e(physical:0x10000fa737d25e)
+one bit flip(0x0 -> 0x4000)
+13622 timeout
+[  2011-5-13 14:54:0]Process 13622 exited with code 0
+Test Num : 602
+Inject fault at 0x600fffffffb5dcc7(physical:0x10000fa737dcc7)
+one bit flip(0x2030203020302000 -> 0x2030203020302080)
+13630 timeout
+[  2011-5-13 14:54:3]Process 13630 exited with code 0
+Test Num : 603
+Inject fault at 0x600ffffffff4ca03(physical:0x10000fa0a6ca03)
+one bit flip(0x0 -> 0x8)
+13638 timeout
+[  2011-5-13 14:54:6]Process 13638 exited with code 0
+Test Num : 604
+Inject fault at 0x600fffffff8bd654(physical:0x10000fa737d654)
+one bit flip(0x0 -> 0x10)
+13646 timeout
+[  2011-5-13 14:54:9]Process 13646 exited with code 0
+Test Num : 605
+Inject fault at 0x600fffffffcbf177(physical:0x10000fa0a6f177)
+one bit flip(0xfffffffcbf74020 -> 0xfffffffcbf740a0)
+13654 timeout
+[ 2011-5-13 14:54:12]Process 13654 exited with code 0
+Test Num : 606
+Inject fault at 0x600ffffffff0e27b(physical:0x10000fa737e27b)
+one bit flip(0x450000004400 -> 0x450000004c00)
+13662 timeout
+[ 2011-5-13 14:54:15]Process 13662 exited with code 0
+Test Num : 607
+Inject fault at 0x600fffffffe5db06(physical:0x10000fa737db06)
+one bit flip(0x3020302030203020 -> 0x3020302030203060)
+13670 timeout
+[ 2011-5-13 14:54:18]Process 13670 exited with code 0
+Test Num : 608
+Inject fault at 0x600fffffff94c30e(physical:0x10000fa737c30e)
+one bit flip(0x0 -> 0x4000)
+13678 timeout
+[ 2011-5-13 14:54:21]Process 13678 exited with code 0
+Test Num : 609
+Inject fault at 0x600ffffffff4f0fd(physical:0x10000fa737f0fd)
+one bit flip(0x0 -> 0x2000)
+13686 timeout
+[ 2011-5-13 14:54:25]Process 13686 exited with code 0
+Test Num : 610
+Inject fault at 0x600fffffffb1be85(physical:0x10000fa737be85)
+one bit flip(0x0 -> 0x20)
+13694 timeout
+[ 2011-5-13 14:54:28]Process 13694 exited with code 0
+Test Num : 611
+Inject fault at 0x600ffffffff5c4c5(physical:0x10000fa737c4c5)
+one bit flip(0x0 -> 0x20)
+13702 timeout
+[ 2011-5-13 14:54:31]Process 13702 exited with code 0
+Test Num : 612
+Inject fault at 0x600fffffffe2c002(physical:0x10000f1e4cc002)
+one bit flip(0x0 -> 0x4)
+13710 timeout
+[ 2011-5-13 14:54:34]Process 13710 exited with code 0
+Test Num : 613
+Inject fault at 0x600fffffff9ce0ce(physical:0x10000f1e4ce0ce)
+one bit flip(0x0 -> 0x4000)
+13718 timeout
+[ 2011-5-13 14:54:37]Process 13718 exited with code 0
+Test Num : 614
+Inject fault at 0x600fffffffb2bc77(physical:0x10000f1e4cbc77)
+one bit flip(0x1000008fc00 -> 0x1000008fc80)
+13726 timeout
+[ 2011-5-13 14:54:40]Process 13726 exited with code 0
+Test Num : 615
+Inject fault at 0x600fffffff8dcc3a(physical:0x10000fa744cc3a)
+one bit flip(0x0 -> 0x400)
+13735 timeout
+[ 2011-5-13 14:54:43]Process 13735 exited with code 0
+Test Num : 616
+Inject fault at 0x600ffffffff4d46d(physical:0x10000fa744d46d)
+one bit flip(0x0 -> 0x2000)
+13743 timeout
+[ 2011-5-13 14:54:46]Process 13743 exited with code 0
+Test Num : 617
+Inject fault at 0x600fffffffedd9cb(physical:0x10000fa744d9cb)
+one bit flip(0x2030203020302032 -> 0x2030203020302832)
+13751 timeout
+[ 2011-5-13 14:54:49]Process 13751 exited with code 0
+Test Num : 618
+Inject fault at 0x600fffffffd2c8ca(physical:0x10000fa744c8ca)
+one bit flip(0x0 -> 0x400)
+13759 timeout
+[ 2011-5-13 14:54:52]Process 13759 exited with code 0
+Test Num : 619
+Inject fault at 0x600fffffff84f564(physical:0x10000f1e4cf564)
+one bit flip(0x0 -> 0x10)
+13767 timeout
+[ 2011-5-13 14:54:56]Process 13767 exited with code 0
+Test Num : 620
+Inject fault at 0x600fffffff94eb86(physical:0x10000fa744eb86)
+one bit flip(0x100000000 -> 0x100000040)
+13775 timeout
+[ 2011-5-13 14:54:59]Process 13775 exited with code 0
+Test Num : 621
+Inject fault at 0x600ffffffffbed77(physical:0x10000f66e2ed77)
+one bit flip(0x0 -> 0x80)
+13783 timeout
+[  2011-5-13 14:55:2]Process 13783 exited with code 0
+Test Num : 622
+Inject fault at 0x600fffffffb0d157(physical:0x10000f66e2d157)
+one bit flip(0x0 -> 0x80)
+13791 timeout
+[  2011-5-13 14:55:5]Process 13791 exited with code 0
+Test Num : 623
+Inject fault at 0x600fffffff86e194(physical:0x10000f66e2e194)
+one bit flip(0x800000000 -> 0x800000010)
+13800 timeout
+[  2011-5-13 14:55:8]Process 13800 exited with code 0
+Test Num : 624
+Inject fault at 0x600fffffffa4ca97(physical:0x10000f66e2ca97)
+one bit flip(0x0 -> 0x80)
+13808 timeout
+[ 2011-5-13 14:55:11]Process 13808 exited with code 0
+Test Num : 625
+Inject fault at 0x600fffffffb1e930(physical:0x10000d9ba9e930)
+one bit flip(0x200000000008b01b -> 0x200000000008b01a)
+13816 timeout
+[ 2011-5-13 14:55:14]Process 13816 exited with code 0
+Test Num : 626
+Inject fault at 0x600fffffffddbfb3(physical:0x10000d9ba9bfb3)
+one bit flip(0x0 -> 0x8)
+13824 timeout
+[ 2011-5-13 14:55:17]Process 13824 exited with code 0
+Test Num : 627
+Inject fault at 0x600fffffffb2cd89(physical:0x10000fa744cd89)
+one bit flip(0x0 -> 0x200)
+13832 timeout
+[ 2011-5-13 14:55:20]Process 13832 exited with code 0
+Test Num : 628
+Inject fault at 0x600ffffffff4d209(physical:0x10000b10c4d209)
+one bit flip(0x0 -> 0x200)
+13840 timeout
+[ 2011-5-13 14:55:23]Process 13840 exited with code 0
+Test Num : 629
+Inject fault at 0x600fffffffadec0f(physical:0x10000b10f0ec0f)
+one bit flip(0x16233820 -> 0x1623b820)
+13848 timeout
+[ 2011-5-13 14:55:27]Process 13848 exited with code 0
+Test Num : 630
+Inject fault at 0x600fffffff9eea67(physical:0x10000b10f0ea67)
+one bit flip(0x0 -> 0x80)
+13856 timeout
+[ 2011-5-13 14:55:30]Process 13856 exited with code 0
+Test Num : 631
+Inject fault at 0x600fffffff80d6c7(physical:0x10000b10f0d6c7)
+one bit flip(0x0 -> 0x80)
+13864 timeout
+[ 2011-5-13 14:55:33]Process 13864 exited with code 0
+Test Num : 632
+Inject fault at 0x600fffffff89c777(physical:0x10000b10f0c777)
+one bit flip(0x0 -> 0x80)
+13872 timeout
+[ 2011-5-13 14:55:36]Process 13872 exited with code 0
+Test Num : 633
+Inject fault at 0x600fffffffe7d6ee(physical:0x10000b10f0d6ee)
+one bit flip(0x0 -> 0x4000)
+13880 timeout
+[ 2011-5-13 14:55:39]Process 13880 exited with code 0
+Test Num : 634
+Inject fault at 0x600fffffffa1de46(physical:0x10000b10f0de46)
+one bit flip(0x3020302030203020 -> 0x3020302030203060)
+13888 timeout
+[ 2011-5-13 14:55:42]Process 13888 exited with code 0
+Test Num : 635
+Inject fault at 0x600ffffffff3e2eb(physical:0x10000b124be2eb)
+one bit flip(0x0 -> 0x800)
+13896 timeout
+[ 2011-5-13 14:55:45]Process 13896 exited with code 0
+Test Num : 636
+Inject fault at 0x600fffffffadc5a0(physical:0x10000b124bc5a0)
+one bit flip(0x0 -> 0x1)
+13904 timeout
+[ 2011-5-13 14:55:48]Process 13904 exited with code 0
+Test Num : 637
+Inject fault at 0x600fffffffa6dde9(physical:0x10000b124bdde9)
+one bit flip(0x0 -> 0x200)
+13912 timeout
+[ 2011-5-13 14:55:51]Process 13912 exited with code 0
+Test Num : 638
+Inject fault at 0x600ffffffffbf404(physical:0x10000b124bf404)
+one bit flip(0xfffbf74020000000 -> 0xfffbf74020000010)
+13920 timeout
+[ 2011-5-13 14:55:54]Process 13920 exited with code 0
+Test Num : 639
+Inject fault at 0x600fffffffeee8e2(physical:0x10000b124be8e2)
+one bit flip(0x0 -> 0x4)
+13928 timeout
+[ 2011-5-13 14:55:58]Process 13928 exited with code 0
+Test Num : 640
+Inject fault at 0x600fffffff80e0c5(physical:0x10000b1330e0c5)
+one bit flip(0x0 -> 0x20)
+13937 timeout
+[  2011-5-13 14:56:1]Process 13937 exited with code 0
+Test Num : 641
+Inject fault at 0x600fffffffc4cad3(physical:0x10000b124bcad3)
+one bit flip(0x0 -> 0x8)
+13945 timeout
+[  2011-5-13 14:56:4]Process 13945 exited with code 0
+Test Num : 642
+Inject fault at 0x600fffffffc9bab8(physical:0x10000b124bbab8)
+one bit flip(0x0 -> 0x100)
+13953 timeout
+[  2011-5-13 14:56:7]Process 13953 exited with code 0
+Test Num : 643
+Inject fault at 0x600fffffffe6f1d5(physical:0x10000b139af1d5)
+one bit flip(0x0 -> 0x20)
+13961 timeout
+[ 2011-5-13 14:56:10]Process 13961 exited with code 0
+Test Num : 644
+Inject fault at 0x600fffffffcacc32(physical:0x10000b1585cc32)
+one bit flip(0x0 -> 0x4)
+13969 timeout
+[ 2011-5-13 14:56:13]Process 13969 exited with code 0
+Test Num : 645
+Inject fault at 0x600fffffffafe832(physical:0x10000b1493e832)
+one bit flip(0xb014600fffffffaf -> 0xb014600fffffffab)
+13977 timeout
+[ 2011-5-13 14:56:16]Process 13977 exited with code 0
+Test Num : 646
+Inject fault at 0x600fffffffb4c576(physical:0x10000b1555c576)
+one bit flip(0x0 -> 0x40)
+13985 timeout
+[ 2011-5-13 14:56:19]Process 13985 exited with code 0
+Test Num : 647
+Inject fault at 0x600fffffff91eab5(physical:0x10000b1582eab5)
+one bit flip(0x0 -> 0x20)
+13994 timeout
+[ 2011-5-13 14:56:22]Process 13994 exited with code 0
+Test Num : 648
+Inject fault at 0x600fffffffbadb14(physical:0x10000b15f0db14)
+one bit flip(0x3020302030203020 -> 0x3020302030203030)
+14002 timeout
+[ 2011-5-13 14:56:25]Process 14002 exited with code 0
+Test Num : 649
+Inject fault at 0x600fffffffb7d8f3(physical:0x10000b15f1d8f3)
+one bit flip(0x0 -> 0x8)
+14010 timeout
+[ 2011-5-13 14:56:28]Process 14010 exited with code 0
+Test Num : 650
+Inject fault at 0x600fffffff82bd2f(physical:0x10000b1a13bd2f)
+one bit flip(0x16125800 -> 0x1612d800)
+14018 timeout
+[ 2011-5-13 14:56:32]Process 14018 exited with code 0
+Test Num : 651
+Inject fault at 0x600fffffff93baeb(physical:0x10000b1a91baeb)
+one bit flip(0x0 -> 0x800)
+14026 timeout
+[ 2011-5-13 14:56:35]Process 14026 exited with code 0
+Test Num : 652
+Inject fault at 0x600fffffffc6ba02(physical:0x10000b1ac8ba02)
+one bit flip(0x0 -> 0x4)
+14034 timeout
+[ 2011-5-13 14:56:38]Process 14034 exited with code 0
+Test Num : 653
+Inject fault at 0x600fffffffd0de69(physical:0x10000b1ac8de69)
+one bit flip(0x2030203020302030 -> 0x2030203020302230)
+14042 timeout
+[ 2011-5-13 14:56:41]Process 14042 exited with code 0
+Test Num : 654
+Inject fault at 0x600fffffffbfcd7e(physical:0x10000b1234cd7e)
+one bit flip(0x0 -> 0x4000)
+14050 timeout
+[ 2011-5-13 14:56:44]Process 14050 exited with code 0
+Test Num : 655
+Inject fault at 0x600fffffffd3bc8f(physical:0x10000b1234bc8f)
+one bit flip(0x100 -> 0x8100)
+14058 timeout
+[ 2011-5-13 14:56:47]Process 14058 exited with code 0
+Test Num : 656
+Inject fault at 0x600fffffffa9d63d(physical:0x10000b1234d63d)
+one bit flip(0x0 -> 0x2000)
+14066 timeout
+[ 2011-5-13 14:56:50]Process 14066 exited with code 0
+Test Num : 657
+Inject fault at 0x600fffffffe7e24c(physical:0x10000b1234e24c)
+one bit flip(0x600fffff -> 0x600fefff)
+14074 timeout
+[ 2011-5-13 14:56:53]Process 14074 exited with code 0
+Test Num : 658
+Inject fault at 0x600fffffffaece03(physical:0x10000b1234ce03)
+one bit flip(0x1a0014000f000a -> 0x1a0014000f0002)
+14082 timeout
+[ 2011-5-13 14:56:56]Process 14082 exited with code 0
+Test Num : 659
+Inject fault at 0x600fffffffcfd926(physical:0x10000b1234d926)
+one bit flip(0x4dcd7ef80000 -> 0x4dcd7ef80040)
+14090 timeout
+[ 2011-5-13 14:56:59]Process 14090 exited with code 0
+Test Num : 660
+Inject fault at 0x600ffffffffbcc09(physical:0x10000b1234cc09)
+one bit flip(0x0 -> 0x200)
+14098 timeout
+[  2011-5-13 14:57:3]Process 14098 exited with code 0
+Test Num : 661
+Inject fault at 0x600fffffffa1c6fa(physical:0x10000b1234c6fa)
+one bit flip(0x0 -> 0x400)
+14106 timeout
+[  2011-5-13 14:57:6]Process 14106 exited with code 0
+Test Num : 662
+Inject fault at 0x600fffffffb9e304(physical:0x10000b1234e304)
+one bit flip(0x0 -> 0x10)
+14114 timeout
+[  2011-5-13 14:57:9]Process 14114 exited with code 0
+Test Num : 663
+Inject fault at 0x600fffffffcad100(physical:0x10000b1234d100)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffffe)
+14122 timeout
+[ 2011-5-13 14:57:12]Process 14122 exited with code 0
+Test Num : 664
+Inject fault at 0x600ffffffff5f5b7(physical:0x10000b2383f5b7)
+one bit flip(0x0 -> 0x80)
+14131 timeout
+[ 2011-5-13 14:57:15]Process 14131 exited with code 0
+Test Num : 665
+Inject fault at 0x600fffffff7fd961(physical:0x10000b2435d961)
+one bit flip(0x6f6c625f73636f72 -> 0x6f6c625f73636f70)
+14139 timeout
+[ 2011-5-13 14:57:18]Process 14139 exited with code 0
+Test Num : 666
+Inject fault at 0x600fffffffdad25b(physical:0x10000b2435d25b)
+one bit flip(0x0 -> 0x800)
+14147 timeout
+[ 2011-5-13 14:57:21]Process 14147 exited with code 0
+Test Num : 667
+Inject fault at 0x600fffffffdbf7cb(physical:0x10000b2401f7cb)
+one bit flip(0x0 -> 0x800)
+14155 timeout
+[ 2011-5-13 14:57:24]Process 14155 exited with code 0
+Test Num : 668
+Inject fault at 0x600fffffffe9bf94(physical:0x10000b1a8fbf94)
+one bit flip(0x0 -> 0x10)
+14163 timeout
+[ 2011-5-13 14:57:27]Process 14163 exited with code 0
+Test Num : 669
+Inject fault at 0x600fffffff87e855(physical:0x10000b1a8fe855)
+one bit flip(0x8b014200000 -> 0x8b014200020)
+14171 timeout
+[ 2011-5-13 14:57:30]Process 14171 exited with code 0
+Test Num : 670
+Inject fault at 0x600fffffffe8e91d(physical:0x10000b1a8fe91d)
+one bit flip(0x8b008200000 -> 0x8b008202000)
+14179 timeout
+[ 2011-5-13 14:57:34]Process 14179 exited with code 0
+Test Num : 671
+Inject fault at 0x600fffffffdebfb8(physical:0x10000b2581bfb8)
+one bit flip(0x0 -> 0x100)
+14188 timeout
+[ 2011-5-13 14:57:37]Process 14188 exited with code 0
+Test Num : 672
+Inject fault at 0x600fffffffadde3e(physical:0x10000b25f4de3e)
+one bit flip(0x3020302030203020 -> 0x3020302030207020)
+14196 timeout
+[ 2011-5-13 14:57:40]Process 14196 exited with code 0
+Test Num : 673
+Inject fault at 0x600fffffffa8c924(physical:0x10000b2688c924)
+one bit flip(0x0 -> 0x10)
+14204 timeout
+[ 2011-5-13 14:57:43]Process 14204 exited with code 0
+Test Num : 674
+Inject fault at 0x600fffffffe1c3b8(physical:0x10000b26b3c3b8)
+one bit flip(0x0 -> 0x100)
+14212 timeout
+[ 2011-5-13 14:57:46]Process 14212 exited with code 0
+Test Num : 675
+Inject fault at 0x600ffffffffacd5c(physical:0x10000b2796cd5c)
+one bit flip(0x0 -> 0x1000)
+14220 timeout
+[ 2011-5-13 14:57:49]Process 14220 exited with code 0
+Test Num : 676
+Inject fault at 0x600fffffff89d79e(physical:0x10000b2813d79e)
+one bit flip(0x0 -> 0x4000)
+14228 timeout
+[ 2011-5-13 14:57:52]Process 14228 exited with code 0
+Test Num : 677
+Inject fault at 0x600fffffff8ee55d(physical:0x10000c5005e55d)
+one bit flip(0x0 -> 0x2000)
+14236 timeout
+[ 2011-5-13 14:57:55]Process 14236 exited with code 0
+Test Num : 678
+Inject fault at 0x600fffffffd8c028(physical:0x10000b2686c028)
+one bit flip(0x0 -> 0x100)
+14244 timeout
+[ 2011-5-13 14:57:58]Process 14244 exited with code 0
+Test Num : 679
+Inject fault at 0x600fffffffc3f351(physical:0x10000b29f5f351)
+one bit flip(0x0 -> 0x2)
+14252 timeout
+[  2011-5-13 14:58:1]Process 14252 exited with code 0
+Test Num : 680
+Inject fault at 0x600fffffffdfea07(physical:0x10000b29b1ea07)
+one bit flip(0xffed80 -> 0xffed82)
+14260 timeout
+[  2011-5-13 14:58:5]Process 14260 exited with code 0
+Test Num : 681
+Inject fault at 0x600fffffffe6bc2d(physical:0x10000b291cbc2d)
+one bit flip(0x0 -> 0x2000)
+14268 timeout
+[  2011-5-13 14:58:8]Process 14268 exited with code 0
+Test Num : 682
+Inject fault at 0x600fffffffb4ebdc(physical:0x10000b29f2ebdc)
+one bit flip(0x0 -> 0x1000)
+14276 timeout
+[ 2011-5-13 14:58:11]Process 14276 exited with code 0
+Test Num : 683
+Inject fault at 0x600fffffffc2d9ab(physical:0x10000b2708d9ab)
+one bit flip(0x3020302030203020 -> 0x3020302030203820)
+14284 timeout
+[ 2011-5-13 14:58:14]Process 14284 exited with code 0
+Test Num : 684
+Inject fault at 0x600fffffffe4ea91(physical:0x10000b2a86ea91)
+one bit flip(0x0 -> 0x2)
+14292 timeout
+[ 2011-5-13 14:58:17]Process 14292 exited with code 0
+Test Num : 685
+Inject fault at 0x600ffffffff5d070(physical:0x10000b1996d070)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffffe)
+14300 timeout
+[ 2011-5-13 14:58:20]Process 14300 exited with code 0
+Test Num : 686
+Inject fault at 0x600fffffffecd057(physical:0x10000b2b0ed057)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffff7f)
+14308 timeout
+[ 2011-5-13 14:58:23]Process 14308 exited with code 0
+Test Num : 687
+Inject fault at 0x600fffffff8ebe94(physical:0x10000b2c19be94)
+one bit flip(0x0 -> 0x10)
+14316 timeout
+[ 2011-5-13 14:58:26]Process 14316 exited with code 0
+Test Num : 688
+Inject fault at 0x600fffffff92ccb8(physical:0x10000b2c19ccb8)
+one bit flip(0x0 -> 0x100)
+14325 timeout
+[ 2011-5-13 14:58:29]Process 14325 exited with code 0
+Test Num : 689
+Inject fault at 0x600fffffffeaf230(physical:0x10000b2ca5f230)
+one bit flip(0x0 -> 0x1)
+14333 timeout
+[ 2011-5-13 14:58:32]Process 14333 exited with code 0
+Test Num : 690
+Inject fault at 0x600fffffff9cbd21(physical:0x10000b2935bd21)
+one bit flip(0x0 -> 0x80)
+14341 timeout
+[ 2011-5-13 14:58:36]Process 14341 exited with code 0
+Test Num : 691
+Inject fault at 0x600fffffffa4beb0(physical:0x10000b2935beb0)
+one bit flip(0x0 -> 0x1)
+14349 timeout
+[ 2011-5-13 14:58:39]Process 14349 exited with code 0
+Test Num : 692
+Inject fault at 0x600fffffffe5c0f1(physical:0x10000b2935c0f1)
+one bit flip(0x0 -> 0x2)
+14357 timeout
+[ 2011-5-13 14:58:42]Process 14357 exited with code 0
+Test Num : 693
+Inject fault at 0x600fffffffc3d6b5(physical:0x10000b2935d6b5)
+one bit flip(0x0 -> 0x20)
+14365 timeout
+[ 2011-5-13 14:58:45]Process 14365 exited with code 0
+Test Num : 694
+Inject fault at 0x600fffffffcff683(physical:0x10000b2935f683)
+one bit flip(0x2000000000 -> 0x2000000008)
+14373 timeout
+[ 2011-5-13 14:58:48]Process 14373 exited with code 0
+Test Num : 695
+Inject fault at 0x600fffffff8dde79(physical:0x10000b2ef3de79)
+one bit flip(0x2030203020302030 -> 0x2030203020302230)
+14382 timeout
+[ 2011-5-13 14:58:51]Process 14382 exited with code 0
+Test Num : 696
+Inject fault at 0x600fffffffadbe82(physical:0x10000b2cd0be82)
+one bit flip(0x0 -> 0x4)
+14390 timeout
+[ 2011-5-13 14:58:54]Process 14390 exited with code 0
+Test Num : 697
+Inject fault at 0x600fffffffacf2ec(physical:0x10000b2e03f2ec)
+one bit flip(0x600fffff -> 0x600fefff)
+14398 timeout
+[ 2011-5-13 14:58:57]Process 14398 exited with code 0
+Test Num : 698
+Inject fault at 0x600fffffffd1e29d(physical:0x10000b2c0ae29d)
+one bit flip(0x15e120000000 -> 0x15e120002000)
+14406 timeout
+[  2011-5-13 14:59:0]Process 14406 exited with code 0
+Test Num : 699
+Inject fault at 0x600ffffffff4cbd3(physical:0x10000b2cd0cbd3)
+one bit flip(0x0 -> 0x8)
+14414 timeout
+[  2011-5-13 14:59:3]Process 14414 exited with code 0
+Test Num : 700
+Inject fault at 0x600fffffffbae12a(physical:0x10000b2cd0e12a)
+one bit flip(0x0 -> 0x400)
+14422 timeout
+[  2011-5-13 14:59:7]Process 14422 exited with code 0
+Test Num : 701
+Inject fault at 0x600fffffffdec359(physical:0x10000b2cd0c359)
+one bit flip(0x0 -> 0x200)
+14430 timeout
+[ 2011-5-13 14:59:10]Process 14430 exited with code 0
+Test Num : 702
+Inject fault at 0x600fffffff82cd6f(physical:0x10000b2cd0cd6f)
+one bit flip(0x0 -> 0x8000)
+14438 timeout
+[ 2011-5-13 14:59:13]Process 14438 exited with code 0
+Test Num : 703
+Inject fault at 0x600ffffffffbf90e(physical:0x10000b2cd0f90e)
+one bit flip(0x0 -> 0x4000)
+14446 timeout
+[ 2011-5-13 14:59:16]Process 14446 exited with code 0
+Test Num : 704
+Inject fault at 0x600fffffffedec45(physical:0x10000b3296ec45)
+one bit flip(0x0 -> 0x20)
+14454 timeout
+[ 2011-5-13 14:59:19]Process 14454 exited with code 0
+Test Num : 705
+Inject fault at 0x600ffffffffad779(physical:0x10000b328ad779)
+one bit flip(0x0 -> 0x200)
+14462 timeout
+[ 2011-5-13 14:59:22]Process 14462 exited with code 0
+Test Num : 706
+Inject fault at 0x600fffffff8cd6a6(physical:0x10000b3010d6a6)
+one bit flip(0x0 -> 0x40)
+14470 timeout
+[ 2011-5-13 14:59:25]Process 14470 exited with code 0
+Test Num : 707
+Inject fault at 0x600fffffffb2e816(physical:0x10000b3135e816)
+one bit flip(0x0 -> 0x40)
+14478 timeout
+[ 2011-5-13 14:59:28]Process 14478 exited with code 0
+Test Num : 708
+Inject fault at 0x600fffffffecc33d(physical:0x10000b3531c33d)
+one bit flip(0x0 -> 0x2000)
+14486 timeout
+[ 2011-5-13 14:59:31]Process 14486 exited with code 0
+Test Num : 709
+Inject fault at 0x600ffffffff1e64b(physical:0x10000b3405e64b)
+one bit flip(0x6000000000 -> 0x6000000800)
+14494 timeout
+[ 2011-5-13 14:59:34]Process 14494 exited with code 0
+Test Num : 710
+Inject fault at 0x600fffffffc0cc1b(physical:0x10000b350bcc1b)
+one bit flip(0x0 -> 0x800)
+14502 timeout
+[ 2011-5-13 14:59:38]Process 14502 exited with code 0
+Test Num : 711
+Inject fault at 0x600fffffffc1bde4(physical:0x10000b3481bde4)
+one bit flip(0x0 -> 0x10)
+14510 timeout
+[ 2011-5-13 14:59:41]Process 14510 exited with code 0
+Test Num : 712
+Inject fault at 0x600fffffffcff07b(physical:0x10000b3509f07b)
+one bit flip(0x0 -> 0x800)
+14519 timeout
+[ 2011-5-13 14:59:44]Process 14519 exited with code 0
+Test Num : 713
+Inject fault at 0x600fffffffddefec(physical:0x10000b356cefec)
+one bit flip(0x0 -> 0x1000)
+14527 timeout
+[ 2011-5-13 14:59:47]Process 14527 exited with code 0
+Test Num : 714
+Inject fault at 0x600ffffffff2eb74(physical:0x10000b3285eb74)
+one bit flip(0x0 -> 0x10)
+14535 timeout
+[ 2011-5-13 14:59:50]Process 14535 exited with code 0
+Test Num : 715
+Inject fault at 0x600fffffff8dbc31(physical:0x10000b3285bc31)
+one bit flip(0x0 -> 0x2)
+14543 timeout
+[ 2011-5-13 14:59:53]Process 14543 exited with code 0
+Test Num : 716
+Inject fault at 0x600fffffffe6e70a(physical:0x10000b3285e70a)
+one bit flip(0x600fffffffe6 -> 0x600ffffffbe6)
+14551 timeout
+[ 2011-5-13 14:59:56]Process 14551 exited with code 0
+Test Num : 717
+Inject fault at 0x600fffffffcfeef4(physical:0x10000b38b1eef4)
+one bit flip(0xd00000000 -> 0xd00000010)
+14559 timeout
+[ 2011-5-13 14:59:59]Process 14559 exited with code 0
+Test Num : 718
+Inject fault at 0x600fffffff7fec6d(physical:0x10000b38c2ec6d)
+one bit flip(0x115b4600000 -> 0x115b4602000)
+14567 timeout
+[   2011-5-13 15:0:2]Process 14567 exited with code 0
+Test Num : 719
+Inject fault at 0x600fffffff80dedf(physical:0x10000b3951dedf)
+one bit flip(0x80230 -> 0x88230)
+14576 timeout
+[   2011-5-13 15:0:5]Process 14576 exited with code 0
+Test Num : 720
+Inject fault at 0x600fffffffb8e0be(physical:0x10000b3952e0be)
+one bit flip(0x0 -> 0x4000)
+14584 timeout
+[   2011-5-13 15:0:9]Process 14584 exited with code 0
+Test Num : 721
+Inject fault at 0x600fffffffb6d5fb(physical:0x10000b38c3d5fb)
+one bit flip(0x0 -> 0x800)
+14592 timeout
+[  2011-5-13 15:0:12]Process 14592 exited with code 0
+Test Num : 722
+Inject fault at 0x600fffffff9bc599(physical:0x10000b3a5ec599)
+one bit flip(0x0 -> 0x200)
+14600 timeout
+[  2011-5-13 15:0:15]Process 14600 exited with code 0
+Test Num : 723
+Inject fault at 0x600fffffffdcedbf(physical:0x10000b3b07edbf)
+one bit flip(0x0 -> 0x8000)
+14608 timeout
+[  2011-5-13 15:0:18]Process 14608 exited with code 0
+Test Num : 724
+Inject fault at 0x600fffffff87f2e9(physical:0x10000b3aaff2e9)
+one bit flip(0x600fffffff87f7 -> 0x600fffffff85f7)
+14616 timeout
+[  2011-5-13 15:0:21]Process 14616 exited with code 0
+Test Num : 725
+Inject fault at 0x600fffffffa5bca9(physical:0x10000b3a5fbca9)
+one bit flip(0x5800000000000000 -> 0x5800000000000200)
+14624 timeout
+[  2011-5-13 15:0:24]Process 14624 exited with code 0
+Test Num : 726
+Inject fault at 0x600fffffffbac36f(physical:0x10000b3b8ac36f)
+one bit flip(0x0 -> 0x8000)
+14632 timeout
+[  2011-5-13 15:0:27]Process 14632 exited with code 0
+Test Num : 727
+Inject fault at 0x600fffffffa5f21f(physical:0x10000b380af21f)
+one bit flip(0x0 -> 0x8000)
+14640 timeout
+[  2011-5-13 15:0:30]Process 14640 exited with code 0
+Test Num : 728
+Inject fault at 0x600fffffffe9d929(physical:0x10000b3a5fd929)
+one bit flip(0x78000000004dcd7f -> 0x78000000004dcf7f)
+14648 timeout
+[  2011-5-13 15:0:33]Process 14648 exited with code 0
+Test Num : 729
+Inject fault at 0x600fffffffb7e630(physical:0x10000b3c3be630)
+one bit flip(0x80000001 -> 0x80000000)
+14656 timeout
+[  2011-5-13 15:0:36]Process 14656 exited with code 0
+Test Num : 730
+Inject fault at 0x600fffffffb9e73b(physical:0x10000b3af3e73b)
+one bit flip(0x0 -> 0x800)
+14664 timeout
+[  2011-5-13 15:0:40]Process 14664 exited with code 0
+Test Num : 731
+Inject fault at 0x600fffffffa1c515(physical:0x10000b3c9fc515)
+one bit flip(0x0 -> 0x20)
+14672 timeout
+[  2011-5-13 15:0:43]Process 14672 exited with code 0
+Test Num : 732
+Inject fault at 0x600fffffff8fe519(physical:0x10000b3d99e519)
+one bit flip(0x0 -> 0x200)
+14680 timeout
+[  2011-5-13 15:0:46]Process 14680 exited with code 0
+Test Num : 733
+Inject fault at 0x600ffffffff8e25d(physical:0x10000b3afae25d)
+one bit flip(0x1200000 -> 0x1202000)
+14688 timeout
+[  2011-5-13 15:0:49]Process 14688 exited with code 0
+Test Num : 734
+Inject fault at 0x600fffffffdcd519(physical:0x10000b3dd7d519)
+one bit flip(0x0 -> 0x200)
+14696 timeout
+[  2011-5-13 15:0:52]Process 14696 exited with code 0
+Test Num : 735
+Inject fault at 0x600fffffffeac251(physical:0x10000b3eddc251)
+one bit flip(0x0 -> 0x2)
+14704 timeout
+[  2011-5-13 15:0:55]Process 14704 exited with code 0
+Test Num : 736
+Inject fault at 0x600fffffffa0e282(physical:0x10000b3d69e282)
+one bit flip(0x46000000000000 -> 0x46000000000004)
+14713 timeout
+[  2011-5-13 15:0:58]Process 14713 exited with code 0
+Test Num : 737
+Inject fault at 0x600fffffff9edf66(physical:0x10000b3dd8df66)
+one bit flip(0x0 -> 0x40)
+14721 timeout
+[   2011-5-13 15:1:1]Process 14721 exited with code 0
+Test Num : 738
+Inject fault at 0x600fffffffcfe45d(physical:0x10000b3edee45d)
+one bit flip(0x0 -> 0x2000)
+14730 timeout
+[   2011-5-13 15:1:4]Process 14730 exited with code 0
+Test Num : 739
+Inject fault at 0x600fffffffd5ce30(physical:0x10000b404dce30)
+one bit flip(0xc400bd00b900b000 -> 0xc400bd00b900b001)
+14739 timeout
+[   2011-5-13 15:1:7]Process 14739 exited with code 0
+Test Num : 740
+Inject fault at 0x600fffffff98ca50(physical:0x10000b404eca50)
+one bit flip(0x0 -> 0x1)
+14747 timeout
+[  2011-5-13 15:1:11]Process 14747 exited with code 0
+Test Num : 741
+Inject fault at 0x600fffffff9ccfc0(physical:0x10000b430acfc0)
+one bit flip(0x9903910389038103 -> 0x9903910389038102)
+14755 timeout
+[  2011-5-13 15:1:14]Process 14755 exited with code 0
+Test Num : 742
+Inject fault at 0x600fffffff9cd073(physical:0x10000b4395d073)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffff7)
+14763 timeout
+[  2011-5-13 15:1:17]Process 14763 exited with code 0
+Test Num : 743
+Inject fault at 0x600fffffffa2d96b(physical:0x10000b43a5d96b)
+one bit flip(0x3000000a30206465 -> 0x3000000a30206c65)
+14771 timeout
+[  2011-5-13 15:1:20]Process 14771 exited with code 0
+Test Num : 744
+Inject fault at 0x600fffffffeff01a(physical:0x10000b43a5f01a)
+one bit flip(0x1000000000000 -> 0x1000000000400)
+14780 timeout
+[  2011-5-13 15:1:23]Process 14780 exited with code 0
+Test Num : 745
+Inject fault at 0x600fffffffd3f9bb(physical:0x10000b4392f9bb)
+one bit flip(0x0 -> 0x800)
+14788 timeout
+[  2011-5-13 15:1:26]Process 14788 exited with code 0
+Test Num : 746
+Inject fault at 0x600ffffffff9d30a(physical:0x10000b3288d30a)
+one bit flip(0x0 -> 0x400)
+14796 timeout
+[  2011-5-13 15:1:29]Process 14796 exited with code 0
+Test Num : 747
+Inject fault at 0x600fffffff8ed255(physical:0x10000b3e93d255)
+one bit flip(0x0 -> 0x20)
+14804 timeout
+[  2011-5-13 15:1:32]Process 14804 exited with code 0
+Test Num : 748
+Inject fault at 0x600fffffffd7cd53(physical:0x10000b45d5cd53)
+one bit flip(0x0 -> 0x8)
+14812 timeout
+[  2011-5-13 15:1:35]Process 14812 exited with code 0
+Test Num : 749
+Inject fault at 0x600fffffffdfe289(physical:0x10000b4589e289)
+one bit flip(0x4800000047000000 -> 0x4800000047000200)
+14820 timeout
+[  2011-5-13 15:1:38]Process 14820 exited with code 0
+Test Num : 750
+Inject fault at 0x600fffffffb0e5fe(physical:0x10000b45d3e5fe)
+one bit flip(0x313231373335 -> 0x313231373375)
+14828 timeout
+[  2011-5-13 15:1:42]Process 14828 exited with code 0
+Test Num : 751
+Inject fault at 0x600fffffffb3da56(physical:0x10000b45a1da56)
+one bit flip(0x3020302030203020 -> 0x3020302030203060)
+14836 timeout
+[  2011-5-13 15:1:45]Process 14836 exited with code 0
+Test Num : 752
+Inject fault at 0x600fffffffe0e769(physical:0x10000b31c5e769)
+one bit flip(0x0 -> 0x200)
+14844 timeout
+[  2011-5-13 15:1:48]Process 14844 exited with code 0
+Test Num : 753
+Inject fault at 0x600fffffff8fd790(physical:0x10000b4608d790)
+one bit flip(0x0 -> 0x1)
+14852 timeout
+[  2011-5-13 15:1:51]Process 14852 exited with code 0
+Test Num : 754
+Inject fault at 0x600fffffff88d05a(physical:0x10000b4600d05a)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffbff)
+14860 timeout
+[  2011-5-13 15:1:54]Process 14860 exited with code 0
+Test Num : 755
+Inject fault at 0x600fffffffb6f4e0(physical:0x10000b4609f4e0)
+one bit flip(0x0 -> 0x1)
+14868 timeout
+[  2011-5-13 15:1:57]Process 14868 exited with code 0
+Test Num : 756
+Inject fault at 0x600fffffff84f64d(physical:0x10000b45e6f64d)
+one bit flip(0x4f938200000 -> 0x4f938202000)
+14876 timeout
+[   2011-5-13 15:2:0]Process 14876 exited with code 0
+Test Num : 757
+Inject fault at 0x600fffffff8ff90e(physical:0x10000b45e6f90e)
+one bit flip(0x0 -> 0x4000)
+14884 timeout
+[   2011-5-13 15:2:3]Process 14884 exited with code 0
+Test Num : 758
+Inject fault at 0x600fffffffa3ccdc(physical:0x10000b4584ccdc)
+one bit flip(0x0 -> 0x1000)
+14893 timeout
+[   2011-5-13 15:2:6]Process 14893 exited with code 0
+Test Num : 759
+Inject fault at 0x600fffffffa3ed74(physical:0x10000b428fed74)
+one bit flip(0x0 -> 0x10)
+14901 timeout
+[   2011-5-13 15:2:9]Process 14901 exited with code 0
+Test Num : 760
+Inject fault at 0x600fffffff8ebdf5(physical:0x10000b428fbdf5)
+one bit flip(0x0 -> 0x20)
+14909 timeout
+[  2011-5-13 15:2:13]Process 14909 exited with code 0
+Test Num : 761
+Inject fault at 0x600fffffffb8e34d(physical:0x10000f6709e34d)
+one bit flip(0x1ded0000000 -> 0x1ded0002000)
+14918 timeout
+[  2011-5-13 15:2:16]Process 14918 exited with code 0
+Test Num : 762
+Inject fault at 0x600fffffffb9c9ce(physical:0x10000fdf45c9ce)
+one bit flip(0x0 -> 0x4000)
+14927 timeout
+[  2011-5-13 15:2:19]Process 14927 exited with code 0
+Test Num : 763
+Inject fault at 0x600fffffffc1d04f(physical:0x10000fdf45d04f)
+one bit flip(0xffffffffffffffff -> 0xffffffffffff7fff)
+14935 timeout
+[  2011-5-13 15:2:22]Process 14935 exited with code 0
+Test Num : 764
+Inject fault at 0x600fffffff83efa0(physical:0x10000b3c9fefa0)
+one bit flip(0x0 -> 0x1)
+14943 timeout
+[  2011-5-13 15:2:25]Process 14943 exited with code 0
+Test Num : 765
+Inject fault at 0x600fffffff81bfb0(physical:0x10000b3c9fbfb0)
+one bit flip(0x0 -> 0x1)
+14951 timeout
+[  2011-5-13 15:2:28]Process 14951 exited with code 0
+Test Num : 766
+Inject fault at 0x600fffffffddce43(physical:0x10000b3c9fce43)
+one bit flip(0xf0ffffffffffff -> 0xf0fffffffffff7)
+14959 timeout
+[  2011-5-13 15:2:31]Process 14959 exited with code 0
+Test Num : 767
+Inject fault at 0x600ffffffff4d45a(physical:0x10000b2cbed45a)
+one bit flip(0x0 -> 0x400)
+14967 timeout
+[  2011-5-13 15:2:34]Process 14967 exited with code 0
+Test Num : 768
+Inject fault at 0x600fffffffe6ed0e(physical:0x10000b3c9fed0e)
+one bit flip(0x10000 -> 0x14000)
+14976 timeout
+[  2011-5-13 15:2:38]Process 14976 exited with code 0
+Test Num : 769
+Inject fault at 0x600fffffffd5bcb5(physical:0x10000b3c9fbcb5)
+one bit flip(0x4f938200000 -> 0x4f938200020)
+14984 timeout
+[  2011-5-13 15:2:41]Process 14984 exited with code 0
+Test Num : 770
+Inject fault at 0x600fffffff86e644(physical:0x10000b46a9e644)
+one bit flip(0x139b020000000 -> 0x139b020000010)
+14992 timeout
+[  2011-5-13 15:2:44]Process 14992 exited with code 0
+Test Num : 771
+Inject fault at 0x600fffffffbac886(physical:0x10000b467cc886)
+one bit flip(0x0 -> 0x40)
+15000 timeout
+[  2011-5-13 15:2:47]Process 15000 exited with code 0
+Test Num : 772
+Inject fault at 0x600fffffff9bf2ca(physical:0x10000b46b8f2ca)
+one bit flip(0x1600fffffff9b -> 0x1600ffffffb9b)
+15008 timeout
+[  2011-5-13 15:2:50]Process 15008 exited with code 0
+Test Num : 773
+Inject fault at 0x600fffffff93cf21(physical:0x10000b3deacf21)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffffd)
+15016 timeout
+[  2011-5-13 15:2:53]Process 15016 exited with code 0
+Test Num : 774
+Inject fault at 0x600fffffffa0e92c(physical:0x10000b1b42e92c)
+one bit flip(0x8b01620000000 -> 0x8b01620001000)
+15024 timeout
+[  2011-5-13 15:2:56]Process 15024 exited with code 0
+Test Num : 775
+Inject fault at 0x600fffffff9bd2c1(physical:0x10000b46a7d2c1)
+one bit flip(0x0 -> 0x2)
+15032 timeout
+[  2011-5-13 15:2:59]Process 15032 exited with code 0
+Test Num : 776
+Inject fault at 0x600fffffffc9e0d1(physical:0x10000b3791e0d1)
+one bit flip(0x0 -> 0x8)
+15040 timeout
+[   2011-5-13 15:3:3]Process 15040 exited with code 0
+Test Num : 777
+Inject fault at 0x600fffffffa7f247(physical:0x10000d59f0f247)
+one bit flip(0x0 -> 0x80)
+15048 timeout
+[   2011-5-13 15:3:6]Process 15048 exited with code 0
+Test Num : 778
+Inject fault at 0x600fffffff9ddce5(physical:0x10000d59f0dce5)
+one bit flip(0x4f938200000 -> 0x4f938200020)
+15056 timeout
+[   2011-5-13 15:3:9]Process 15056 exited with code 0
+Test Num : 779
+Inject fault at 0x600fffffffc0be78(physical:0x10000d59f0be78)
+one bit flip(0x0 -> 0x100)
+15064 timeout
+[  2011-5-13 15:3:12]Process 15064 exited with code 0
+Test Num : 780
+Inject fault at 0x600fffffff9fdce0(physical:0x10000d3b91dce0)
+one bit flip(0x2000000000158228 -> 0x2000000000158229)
+15072 timeout
+[  2011-5-13 15:3:15]Process 15072 exited with code 0
+Test Num : 781
+Inject fault at 0x600fffffff9ac553(physical:0x10000d3b91c553)
+one bit flip(0x0 -> 0x8)
+15080 timeout
+[  2011-5-13 15:3:18]Process 15080 exited with code 0
+Test Num : 782
+Inject fault at 0x600ffffffff4f4ce(physical:0x10000d3b91f4ce)
+one bit flip(0x0 -> 0x4000)
+15088 timeout
+[  2011-5-13 15:3:21]Process 15088 exited with code 0
+Test Num : 783
+Inject fault at 0x600fffffff99f1ec(physical:0x10000fa3aff1ec)
+one bit flip(0x0 -> 0x1000)
+15096 timeout
+[  2011-5-13 15:3:24]Process 15096 exited with code 0
+Test Num : 784
+Inject fault at 0x600fffffffb2e728(physical:0x10000b2fc1e728)
+one bit flip(0x600fffffffb2e690 -> 0x600fffffffb2e790)
+15104 timeout
+[  2011-5-13 15:3:28]Process 15104 exited with code 0
+Test Num : 785
+Inject fault at 0x600fffffff9acaa9(physical:0x10000f60c6caa9)
+one bit flip(0x0 -> 0x200)
+15113 timeout
+[  2011-5-13 15:3:31]Process 15113 exited with code 0
+Test Num : 786
+Inject fault at 0x600fffffff85e81b(physical:0x10000b469be81b)
+one bit flip(0xad80010000000000 -> 0xad80010000000800)
+15121 timeout
+[  2011-5-13 15:3:34]Process 15121 exited with code 0
+Test Num : 787
+Inject fault at 0x600fffffffedc70f(physical:0x10000f60c6c70f)
+one bit flip(0x0 -> 0x8000)
+15129 timeout
+[  2011-5-13 15:3:37]Process 15129 exited with code 0
+Test Num : 788
+Inject fault at 0x600fffffffdef23e(physical:0x10000b469bf23e)
+one bit flip(0x0 -> 0x4000)
+15137 timeout
+[  2011-5-13 15:3:40]Process 15137 exited with code 0
+Test Num : 789
+Inject fault at 0x600fffffffe1e99c(physical:0x10000f60c6e99c)
+one bit flip(0x0 -> 0x1000)
+15145 timeout
+[  2011-5-13 15:3:44]Process 15145 exited with code 0
+Test Num : 790
+Inject fault at 0x600fffffffd6c82d(physical:0x10000cb04fc82d)
+one bit flip(0x0 -> 0x2000)
+15153 timeout
+[  2011-5-13 15:3:47]Process 15153 exited with code 0
+Test Num : 791
+Inject fault at 0x600fffffffe4ea5a(physical:0x10000cb04fea5a)
+one bit flip(0x0 -> 0x400)
+15161 timeout
+[  2011-5-13 15:3:50]Process 15161 exited with code 0
+Test Num : 792
+Inject fault at 0x600fffffff98e301(physical:0x10000cb04fe301)
+one bit flip(0x0 -> 0x2)
+15170 timeout
+[  2011-5-13 15:3:53]Process 15170 exited with code 0
+Test Num : 793
+Inject fault at 0x600fffffffbebeef(physical:0x10000cb04fbeef)
+one bit flip(0x0 -> 0x8000)
+15178 timeout
+[  2011-5-13 15:3:56]Process 15178 exited with code 0
+Test Num : 794
+Inject fault at 0x600fffffffafdda6(physical:0x10000cb04fdda6)
+one bit flip(0x30000 -> 0x30040)
+15186 timeout
+[  2011-5-13 15:3:59]Process 15186 exited with code 0
+Test Num : 795
+Inject fault at 0x600fffffffdbca9e(physical:0x10000cb04fca9e)
+one bit flip(0x0 -> 0x4000)
+15194 timeout
+[   2011-5-13 15:4:2]Process 15194 exited with code 0
+Test Num : 796
+Inject fault at 0x600fffffffb3e28a(physical:0x10000b4796e28a)
+one bit flip(0x48000000470000 -> 0x48000000470400)
+15202 timeout
+[   2011-5-13 15:4:5]Process 15202 exited with code 0
+Test Num : 797
+Inject fault at 0x600fffffff95c333(physical:0x10000b4796c333)
+one bit flip(0x0 -> 0x8)
+15210 timeout
+[   2011-5-13 15:4:8]Process 15210 exited with code 0
+Test Num : 798
+Inject fault at 0x600ffffffffacfd4(physical:0x10000b4796cfd4)
+one bit flip(0xdd03d503cd03c503 -> 0xdd03d503cd03c513)
+15218 timeout
+[  2011-5-13 15:4:11]Process 15218 exited with code 0
+Test Num : 799
+Inject fault at 0x600fffffffadd9f4(physical:0x10000b4821d9f4)
+one bit flip(0x3020302030203020 -> 0x3020302030203024)
+15226 timeout
+[  2011-5-13 15:4:15]Process 15226 exited with code 0
+Test Num : 800
+Inject fault at 0x600fffffffb1d20d(physical:0x10000b4821d20d)
+one bit flip(0x0 -> 0x2000)
+15234 timeout
+[  2011-5-13 15:4:18]Process 15234 exited with code 0
+Test Num : 801
+Inject fault at 0x600fffffff96e516(physical:0x10000b1aeae516)
+one bit flip(0x0 -> 0x40)
+15242 timeout
+[  2011-5-13 15:4:21]Process 15242 exited with code 0
+Test Num : 802
+Inject fault at 0x600fffffffc5f64b(physical:0x10000b4949f64b)
+one bit flip(0x4f9382000000000 -> 0x4f9382000000800)
+15250 timeout
+[  2011-5-13 15:4:24]Process 15250 exited with code 0
+Test Num : 803
+Inject fault at 0x600fffffff91ea0c(physical:0x10000f5ce9ea0c)
+one bit flip(0x1f94752300000000 -> 0x1f94752300001000)
+15258 timeout
+[  2011-5-13 15:4:27]Process 15258 exited with code 0
+Test Num : 804
+Inject fault at 0x600fffffffced842(physical:0x10000f5ce9d842)
+one bit flip(0x0 -> 0x4)
+15266 timeout
+[  2011-5-13 15:4:30]Process 15266 exited with code 0
+Test Num : 805
+Inject fault at 0x600fffffffaede41(physical:0x10000b49c9de41)
+one bit flip(0x2030203020302030 -> 0x2030203020302032)
+15274 timeout
+[  2011-5-13 15:4:33]Process 15274 exited with code 0
+Test Num : 806
+Inject fault at 0x600fffffffb6f592(physical:0x10000b4a05f592)
+one bit flip(0x0 -> 0x4)
+15282 timeout
+[  2011-5-13 15:4:36]Process 15282 exited with code 0
+Test Num : 807
+Inject fault at 0x600fffffffcaf6ab(physical:0x10000b49e0f6ab)
+one bit flip(0x162200600fffffff -> 0x162200600ffff7ff)
+15290 timeout
+[  2011-5-13 15:4:39]Process 15290 exited with code 0
+Test Num : 808
+Inject fault at 0x600fffffff87ee3c(physical:0x10000b4a11ee3c)
+one bit flip(0x7c96f08700000000 -> 0x7c96f08700001000)
+15298 timeout
+[  2011-5-13 15:4:42]Process 15298 exited with code 0
+Test Num : 809
+Inject fault at 0x600fffffffebf9ce(physical:0x10000b4aa4f9ce)
+one bit flip(0x18f400000 -> 0x18f400001)
+15307 timeout
+[  2011-5-13 15:4:46]Process 15307 exited with code 0
+Test Num : 810
+Inject fault at 0x600fffffffa5baed(physical:0x10000b4aa4baed)
+one bit flip(0x0 -> 0x2000)
+15315 timeout
+[  2011-5-13 15:4:49]Process 15315 exited with code 0
+Test Num : 811
+Inject fault at 0x600fffffffecd436(physical:0x10000f61e5d436)
+one bit flip(0x0 -> 0x40)
+15323 timeout
+[  2011-5-13 15:4:52]Process 15323 exited with code 0
+Test Num : 812
+Inject fault at 0x600fffffffa3d35b(physical:0x10000b4bb3d35b)
+one bit flip(0x0 -> 0x800)
+15331 timeout
+[  2011-5-13 15:4:55]Process 15331 exited with code 0
+Test Num : 813
+Inject fault at 0x600fffffffe0c948(physical:0x10000b4b10c948)
+one bit flip(0x0 -> 0x100)
+15339 timeout
+[  2011-5-13 15:4:58]Process 15339 exited with code 0
+Test Num : 814
+Inject fault at 0x600fffffffe8c866(physical:0x10000b4b10c866)
+one bit flip(0x0 -> 0x40)
+15347 timeout
+[   2011-5-13 15:5:1]Process 15347 exited with code 0
+Test Num : 815
+Inject fault at 0x600fffffff8dccf3(physical:0x10000b4bb9ccf3)
+one bit flip(0x0 -> 0x8)
+15355 timeout
+[   2011-5-13 15:5:4]Process 15355 exited with code 0
+Test Num : 816
+Inject fault at 0x600fffffff9cbc80(physical:0x10000b4c8cbc80)
+one bit flip(0x1 -> 0x0)
+15364 timeout
+[   2011-5-13 15:5:7]Process 15364 exited with code 0
+Test Num : 817
+Inject fault at 0x600fffffff9edd2e(physical:0x10000b4c8cdd2e)
+one bit flip(0x0 -> 0x4000)
+15372 timeout
+[  2011-5-13 15:5:10]Process 15372 exited with code 0
+Test Num : 818
+Inject fault at 0x600fffffffeada44(physical:0x10000b4c8ada44)
+one bit flip(0x3020302030203020 -> 0x3020302030203030)
+15380 timeout
+[  2011-5-13 15:5:13]Process 15380 exited with code 0
+Test Num : 819
+Inject fault at 0x600fffffffc9d522(physical:0x10000b4c89d522)
+one bit flip(0x0 -> 0x400)
+15388 timeout
+[  2011-5-13 15:5:17]Process 15388 exited with code 0
+Test Num : 820
+Inject fault at 0x600fffffffa5c922(physical:0x10000d3b91c922)
+one bit flip(0x0 -> 0x4)
+15396 timeout
+[  2011-5-13 15:5:20]Process 15396 exited with code 0
+Test Num : 821
+Inject fault at 0x600fffffffa7ed0d(physical:0x10000b4daaed0d)
+one bit flip(0x1000000 -> 0x1002000)
+15404 timeout
+[  2011-5-13 15:5:23]Process 15404 exited with code 0
+Test Num : 822
+Inject fault at 0x600fffffff99f4ab(physical:0x10000b4e30f4ab)
+one bit flip(0x0 -> 0x800)
+15412 timeout
+[  2011-5-13 15:5:26]Process 15412 exited with code 0
+Test Num : 823
+Inject fault at 0x600fffffffb7f8e2(physical:0x10000b4e30f8e2)
+one bit flip(0x0 -> 0x4)
+15420 timeout
+[  2011-5-13 15:5:29]Process 15420 exited with code 0
+Test Num : 824
+Inject fault at 0x600fffffffefcc45(physical:0x10000b4e30cc45)
+one bit flip(0x0 -> 0x20)
+15428 timeout
+[  2011-5-13 15:5:32]Process 15428 exited with code 0
+Test Num : 825
+Inject fault at 0x600fffffffa4c56c(physical:0x10000b501cc56c)
+one bit flip(0x0 -> 0x1000)
+15436 timeout
+[  2011-5-13 15:5:35]Process 15436 exited with code 0
+Test Num : 826
+Inject fault at 0x600fffffffeecb80(physical:0x10000b4e30cb80)
+one bit flip(0x0 -> 0x1)
+15444 timeout
+[  2011-5-13 15:5:38]Process 15444 exited with code 0
+Test Num : 827
+Inject fault at 0x600fffffffb7eb10(physical:0x10000b4e30eb10)
+one bit flip(0x0 -> 0x1)
+15452 timeout
+[  2011-5-13 15:5:41]Process 15452 exited with code 0
+Test Num : 828
+Inject fault at 0x600fffffff8aec7c(physical:0x10000b4e30ec7c)
+one bit flip(0x115b460000000 -> 0x115b460001000)
+15460 timeout
+[  2011-5-13 15:5:44]Process 15460 exited with code 0
+Test Num : 829
+Inject fault at 0x600fffffffaec787(physical:0x10000b5196c787)
+one bit flip(0x0 -> 0x800)
+15468 timeout
+[  2011-5-13 15:5:48]Process 15468 exited with code 0
+Test Num : 830
+Inject fault at 0x600fffffffd1cc2d(physical:0x10000b505acc2d)
+one bit flip(0x0 -> 0x2000)
+15476 timeout
+[  2011-5-13 15:5:51]Process 15476 exited with code 0
+Test Num : 831
+Inject fault at 0x600fffffffadee4c(physical:0x10000b505aee4c)
+one bit flip(0x0 -> 0x1000)
+15484 timeout
+[  2011-5-13 15:5:54]Process 15484 exited with code 0
+Test Num : 832
+Inject fault at 0x600ffffffff6c0a4(physical:0x10000b51fbc0a4)
+one bit flip(0x0 -> 0x10)
+15492 timeout
+[  2011-5-13 15:5:57]Process 15492 exited with code 0
+Test Num : 833
+Inject fault at 0x600fffffffebbf2a(physical:0x10000b4a45bf2a)
+one bit flip(0x0 -> 0x400)
+15502 timeout
+[   2011-5-13 15:6:0]Process 15502 exited with code 0
+Test Num : 834
+Inject fault at 0x600fffffffdaf7e7(physical:0x10000b4a45f7e7)
+one bit flip(0xc0 -> 0x40)
+15510 timeout
+[   2011-5-13 15:6:3]Process 15510 exited with code 0
+Test Num : 835
+Inject fault at 0x600fffffffd3bcf0(physical:0x10000b4a45bcf0)
+one bit flip(0x0 -> 0x1)
+15518 timeout
+[   2011-5-13 15:6:6]Process 15518 exited with code 0
+Test Num : 836
+Inject fault at 0x600fffffffb9c39b(physical:0x10000b5363c39b)
+one bit flip(0x0 -> 0x800)
+15526 timeout
+[   2011-5-13 15:6:9]Process 15526 exited with code 0
+Test Num : 837
+Inject fault at 0x600fffffffc3e437(physical:0x10000b5436e437)
+one bit flip(0x0 -> 0x80)
+15534 timeout
+[  2011-5-13 15:6:12]Process 15534 exited with code 0
+Test Num : 838
+Inject fault at 0x600fffffff88f577(physical:0x10000b50d8f577)
+one bit flip(0x0 -> 0x80)
+15542 timeout
+[  2011-5-13 15:6:15]Process 15542 exited with code 0
+Test Num : 839
+Inject fault at 0x600fffffffaddea1(physical:0x10000b50d8dea1)
+one bit flip(0x2030203020302030 -> 0x2030203020303030)
+15550 timeout
+[  2011-5-13 15:6:19]Process 15550 exited with code 0
+Test Num : 840
+Inject fault at 0x600fffffffe1d330(physical:0x10000b50d8d330)
+one bit flip(0x0 -> 0x1)
+15559 timeout
+[  2011-5-13 15:6:22]Process 15559 exited with code 0
+Test Num : 841
+Inject fault at 0x600ffffffffaee70(physical:0x10000b5534ee70)
+one bit flip(0x40400000 -> 0x40400001)
+15567 timeout
+[  2011-5-13 15:6:25]Process 15567 exited with code 0
+Test Num : 842
+Inject fault at 0x600ffffffffbf057(physical:0x10000b55f4f057)
+one bit flip(0x10000000100 -> 0x10000000180)
+15575 timeout
+[  2011-5-13 15:6:28]Process 15575 exited with code 0
+Test Num : 843
+Inject fault at 0x600fffffffb9bf72(physical:0x10000b50d8bf72)
+one bit flip(0x0 -> 0x4)
+15583 timeout
+[  2011-5-13 15:6:31]Process 15583 exited with code 0
+Test Num : 844
+Inject fault at 0x600fffffffd9dde6(physical:0x10000b55f1dde6)
+one bit flip(0x0 -> 0x40)
+15591 timeout
+[  2011-5-13 15:6:34]Process 15591 exited with code 0
+Test Num : 845
+Inject fault at 0x600ffffffff3d4ad(physical:0x10000b5609d4ad)
+one bit flip(0x0 -> 0x2000)
+15599 timeout
+[  2011-5-13 15:6:37]Process 15599 exited with code 0
+Test Num : 846
+Inject fault at 0x600fffffffe6df62(physical:0x10000b560adf62)
+one bit flip(0x0 -> 0x4)
+15607 timeout
+[  2011-5-13 15:6:40]Process 15607 exited with code 0
+Test Num : 847
+Inject fault at 0x600fffffff83f7ec(physical:0x10000b5629f7ec)
+one bit flip(0x550a4100000000 -> 0x550a4100001000)
+15615 timeout
+[  2011-5-13 15:6:43]Process 15615 exited with code 0
+Test Num : 848
+Inject fault at 0x600ffffffffad579(physical:0x10000b5629d579)
+one bit flip(0x0 -> 0x200)
+15623 timeout
+[  2011-5-13 15:6:46]Process 15623 exited with code 0
+Test Num : 849
+Inject fault at 0x600fffffff81d5d4(physical:0x10000b5a63d5d4)
+one bit flip(0x0 -> 0x4000)
+15667 timeout
+[  2011-5-13 15:6:50]Process 15667 exited with code 0
+Test Num : 850
+Inject fault at 0x600ffffffffdd260(physical:0x10000b5b24d260)
+one bit flip(0x0 -> 0x1)
+15675 timeout
+[  2011-5-13 15:6:53]Process 15675 exited with code 0
+Test Num : 851
+Inject fault at 0x600fffffffb6c1b5(physical:0x10000b46c5c1b5)
+one bit flip(0x0 -> 0x20)
+15694 timeout
+[  2011-5-13 15:6:56]Process 15694 exited with code 0
+Test Num : 852
+Inject fault at 0x600fffffff84bde0(physical:0x10000b46c5bde0)
+one bit flip(0x0 -> 0x1)
+15754 timeout
+[  2011-5-13 15:6:59]Process 15754 exited with code 0
+Test Num : 853
+Inject fault at 0x600fffffffa1caa5(physical:0x10000b46c5caa5)
+one bit flip(0x0 -> 0x20)
+15762 timeout
+[   2011-5-13 15:7:2]Process 15762 exited with code 0
+Test Num : 854
+Inject fault at 0x600fffffffc8dc10(physical:0x10000b46c5dc10)
+one bit flip(0x3020302030203020 -> 0x3020302030203021)
+15771 timeout
+[   2011-5-13 15:7:5]Process 15771 exited with code 0
+Test Num : 855
+Inject fault at 0x600fffffff9be618(physical:0x10000b5f2ee618)
+one bit flip(0x0 -> 0x100)
+15779 timeout
+[   2011-5-13 15:7:8]Process 15779 exited with code 0
+Test Num : 856
+Inject fault at 0x600fffffffd8bc4b(physical:0x10000b5a42bc4b)
+one bit flip(0x4f9382000000000 -> 0x4f9382000000800)
+15788 timeout
+[  2011-5-13 15:7:11]Process 15788 exited with code 0
+Test Num : 857
+Inject fault at 0x600fffffff7ff3ef(physical:0x10000b46c5f3ef)
+one bit flip(0x0 -> 0x8000)
+15798 timeout
+[  2011-5-13 15:7:14]Process 15798 exited with code 0
+Test Num : 858
+Inject fault at 0x600ffffffff8f820(physical:0x10000b606ff820)
+one bit flip(0x0 -> 0x1)
+15806 timeout
+[  2011-5-13 15:7:17]Process 15806 exited with code 0
+Test Num : 859
+Inject fault at 0x600fffffffe2e3eb(physical:0x10000b46c5e3eb)
+one bit flip(0x0 -> 0x1)
+15814 timeout
+[  2011-5-13 15:7:21]Process 15814 exited with code 0
+Test Num : 860
+Inject fault at 0x600fffffffc6d168(physical:0x10000b47b8d168)
+one bit flip(0x0 -> 0x100)
+15823 timeout
+[  2011-5-13 15:7:24]Process 15823 exited with code 0
+Test Num : 861
+Inject fault at 0x600ffffffff2f959(physical:0x10000b6210f959)
+one bit flip(0x8000000000000000 -> 0x8000000000000200)
+15831 timeout
+[  2011-5-13 15:7:27]Process 15831 exited with code 0
+Test Num : 862
+Inject fault at 0x600fffffffedd838(physical:0x10000b6385d838)
+one bit flip(0x600fffffffedddd0 -> 0x600fffffffeddcd0)
+15840 timeout
+[  2011-5-13 15:7:30]Process 15840 exited with code 0
+Test Num : 863
+Inject fault at 0x600ffffffff3e1c0(physical:0x10000b636be1c0)
+one bit flip(0x200000000004f938 -> 0x200000000004f939)
+15848 timeout
+[  2011-5-13 15:7:33]Process 15848 exited with code 0
+Test Num : 864
+Inject fault at 0x600fffffff88ef21(physical:0x10000b5fa1ef21)
+one bit flip(0x6a67666564636256 -> 0x6a67666564636254)
+15857 timeout
+[  2011-5-13 15:7:36]Process 15857 exited with code 0
+Test Num : 865
+Inject fault at 0x600fffffff95f005(physical:0x10000b6432f005)
+one bit flip(0x0 -> 0x20)
+15910 timeout
+[  2011-5-13 15:7:39]Process 15910 exited with code 0
+Test Num : 866
+Inject fault at 0x600fffffffa5e0dc(physical:0x10000b643fe0dc)
+one bit flip(0x0 -> 0x1000)
+15918 timeout
+[  2011-5-13 15:7:42]Process 15918 exited with code 0
+Test Num : 867
+Inject fault at 0x600fffffff8cec35(physical:0x10000b65a3ec35)
+one bit flip(0x0 -> 0x20)
+15926 timeout
+[  2011-5-13 15:7:45]Process 15926 exited with code 0
+Test Num : 868
+Inject fault at 0x600fffffffddea74(physical:0x10000b65a3ea74)
+one bit flip(0x0 -> 0x10)
+15934 timeout
+[  2011-5-13 15:7:48]Process 15934 exited with code 0
+Test Num : 869
+Inject fault at 0x600fffffff8ee8a1(physical:0x10000b65a3e8a1)
+one bit flip(0xd800000000000000 -> 0xd800000000000002)
+15942 timeout
+[  2011-5-13 15:7:52]Process 15942 exited with code 0
+Test Num : 870
+Inject fault at 0x600fffffffb7f8e7(physical:0x10000b65a3f8e7)
+one bit flip(0x0 -> 0x80)
+15950 timeout
+[  2011-5-13 15:7:55]Process 15950 exited with code 0
+Test Num : 871
+Inject fault at 0x600fffffffbdce15(physical:0x10000b65a3ce15)
+one bit flip(0x840080ffffffff -> 0x840080ffffffdf)
+15958 timeout
+[  2011-5-13 15:7:58]Process 15958 exited with code 0
+Test Num : 872
+Inject fault at 0x600fffffffbed5fe(physical:0x10000b65a3d5fe)
+one bit flip(0x0 -> 0x4000)
+15966 timeout
+[   2011-5-13 15:8:1]Process 15966 exited with code 0
+Test Num : 873
+Inject fault at 0x600fffffffd6c23d(physical:0x10000b6883c23d)
+one bit flip(0x0 -> 0x2000)
+15975 timeout
+[   2011-5-13 15:8:4]Process 15975 exited with code 0
+Test Num : 874
+Inject fault at 0x600fffffff89f211(physical:0x10000b6a2df211)
+one bit flip(0x0 -> 0x2)
+15983 timeout
+[   2011-5-13 15:8:7]Process 15983 exited with code 0
+Test Num : 875
+Inject fault at 0x600fffffff8cc1a9(physical:0x10000b65a3c1a9)
+one bit flip(0x0 -> 0x200)
+15991 timeout
+[  2011-5-13 15:8:10]Process 15991 exited with code 0
+Test Num : 876
+Inject fault at 0x600fffffffe7dc94(physical:0x10000b65a3dc94)
+one bit flip(0x9100000001 -> 0x9100000011)
+15999 timeout
+[  2011-5-13 15:8:13]Process 15999 exited with code 0
+Test Num : 877
+Inject fault at 0x600fffffffd8f5b2(physical:0x10000b65a3f5b2)
+one bit flip(0x0 -> 0x4)
+16007 timeout
+[  2011-5-13 15:8:16]Process 16007 exited with code 0
+Test Num : 878
+Inject fault at 0x600fffffffabf61c(physical:0x10000b62c3f61c)
+one bit flip(0x0 -> 0x1000)
+16016 timeout
+[  2011-5-13 15:8:19]Process 16016 exited with code 0
+Test Num : 879
+Inject fault at 0x600fffffffbcd707(physical:0x10000b6c9fd707)
+one bit flip(0x0 -> 0x80)
+16024 timeout
+[  2011-5-13 15:8:23]Process 16024 exited with code 0
+Test Num : 880
+Inject fault at 0x600fffffffcfd337(physical:0x10000b6d35d337)
+one bit flip(0x0 -> 0x80)
+16032 timeout
+[  2011-5-13 15:8:26]Process 16032 exited with code 0
+Test Num : 881
+Inject fault at 0x600fffffff98c415(physical:0x10000b6d57c415)
+one bit flip(0x0 -> 0x20)
+16042 timeout
+[  2011-5-13 15:8:29]Process 16042 exited with code 0
+Test Num : 882
+Inject fault at 0x600fffffff9ce7b6(physical:0x10000b6d57e7b6)
+one bit flip(0x0 -> 0x40)
+16051 timeout
+[  2011-5-13 15:8:32]Process 16051 exited with code 0
+Test Num : 883
+Inject fault at 0x600ffffffff3da96(physical:0x10000b7001da96)
+one bit flip(0x2030203020302030 -> 0x2030203020302070)
+16059 timeout
+[  2011-5-13 15:8:35]Process 16059 exited with code 0
+Test Num : 884
+Inject fault at 0x600ffffffff3f9be(physical:0x10000b7048f9be)
+one bit flip(0x8000000000000000 -> 0x8000000000004000)
+16067 timeout
+[  2011-5-13 15:8:38]Process 16067 exited with code 0
+Test Num : 885
+Inject fault at 0x600ffffffff4c39a(physical:0x10000b7124c39a)
+one bit flip(0x0 -> 0x400)
+16075 timeout
+[  2011-5-13 15:8:41]Process 16075 exited with code 0
+Test Num : 886
+Inject fault at 0x600fffffffd2ef1b(physical:0x10000b7054ef1b)
+one bit flip(0x6256555453525150 -> 0x6256555453525950)
+16083 timeout
+[  2011-5-13 15:8:44]Process 16083 exited with code 0
+Test Num : 887
+Inject fault at 0x600fffffffd6e2da(physical:0x10000b7285e2da)
+one bit flip(0xe680200000000047 -> 0xe680200000000447)
+16091 timeout
+[  2011-5-13 15:8:47]Process 16091 exited with code 0
+Test Num : 888
+Inject fault at 0x600fffffffb8f330(physical:0x10000b714bf330)
+one bit flip(0x0 -> 0x1)
+16100 timeout
+[  2011-5-13 15:8:50]Process 16100 exited with code 0
+Test Num : 889
+Inject fault at 0x600fffffffdfc3c8(physical:0x10000b7030c3c8)
+one bit flip(0x0 -> 0x100)
+16108 timeout
+[  2011-5-13 15:8:54]Process 16108 exited with code 0
+Test Num : 890
+Inject fault at 0x600fffffff92cf0d(physical:0x10000b7030cf0d)
+one bit flip(0xffffffff02a5ffff -> 0xffffffff02a5dfff)
+16116 timeout
+[  2011-5-13 15:8:57]Process 16116 exited with code 0
+Test Num : 891
+Inject fault at 0x600fffffffabc012(physical:0x10000b7030c012)
+one bit flip(0x0 -> 0x4)
+16124 timeout
+[   2011-5-13 15:9:0]Process 16124 exited with code 0
+Test Num : 892
+Inject fault at 0x600fffffff8fdc42(physical:0x10000b7030dc42)
+one bit flip(0x2030203020302030 -> 0x2030203020302034)
+16132 timeout
+[   2011-5-13 15:9:3]Process 16132 exited with code 0
+Test Num : 893
+Inject fault at 0x600fffffffa0bc18(physical:0x10000b7030bc18)
+one bit flip(0x0 -> 0x100)
+16140 timeout
+[   2011-5-13 15:9:6]Process 16140 exited with code 0
+Test Num : 894
+Inject fault at 0x600fffffff8de158(physical:0x10000b7352e158)
+one bit flip(0x0 -> 0x100)
+16148 timeout
+[   2011-5-13 15:9:9]Process 16148 exited with code 0
+Test Num : 895
+Inject fault at 0x600fffffff9ed692(physical:0x10000b7626d692)
+one bit flip(0x0 -> 0x4)
+16156 timeout
+[  2011-5-13 15:9:12]Process 16156 exited with code 0
+Test Num : 896
+Inject fault at 0x600fffffff91e077(physical:0x10000b7611e077)
+one bit flip(0x0 -> 0x80)
+16164 timeout
+[  2011-5-13 15:9:15]Process 16164 exited with code 0
+Test Num : 897
+Inject fault at 0x600fffffffb9ed91(physical:0x10000b77cded91)
+one bit flip(0x0 -> 0x2)
+16172 timeout
+[  2011-5-13 15:9:18]Process 16172 exited with code 0
+Test Num : 898
+Inject fault at 0x600fffffffdabb2c(physical:0x10000b7744bb2c)
+one bit flip(0x0 -> 0x1000)
+16180 timeout
+[  2011-5-13 15:9:21]Process 16180 exited with code 0
+Test Num : 899
+Inject fault at 0x600fffffffe4c033(physical:0x10000b74c0c033)
+one bit flip(0x0 -> 0x8)
+16188 timeout
+[  2011-5-13 15:9:25]Process 16188 exited with code 0
+Test Num : 900
+Inject fault at 0x600fffffffaed9a8(physical:0x10000b74c0d9a8)
+one bit flip(0x2030203020302032 -> 0x2030203020302132)
+16196 timeout
+[  2011-5-13 15:9:28]Process 16196 exited with code 0
+Test Num : 901
+Inject fault at 0x600fffffff97bdb0(physical:0x10000b77bebdb0)
+one bit flip(0x7c96f087 -> 0x7c96f086)
+16204 timeout
+[  2011-5-13 15:9:31]Process 16204 exited with code 0
+Test Num : 902
+Inject fault at 0x600fffffffc9d8e3(physical:0x10000b7958d8e3)
+one bit flip(0x81240000000000 -> 0x81240000000008)
+16212 timeout
+[  2011-5-13 15:9:34]Process 16212 exited with code 0
+Test Num : 903
+Inject fault at 0x600fffffffbff192(physical:0x10000b7630f192)
+one bit flip(0xf748200000000004 -> 0xf748200000000000)
+16220 timeout
+[  2011-5-13 15:9:37]Process 16220 exited with code 0
+Test Num : 904
+Inject fault at 0x600ffffffff7f6f9(physical:0x10000b66a5f6f9)
+one bit flip(0xc0200000000004e0 -> 0xc0200000000006e0)
+16228 timeout
+[  2011-5-13 15:9:40]Process 16228 exited with code 0
+Test Num : 905
+Inject fault at 0x600ffffffffbf6f4(physical:0x10000b7955f6f4)
+one bit flip(0x4e00800000000 -> 0x4e00800000010)
+16236 timeout
+[  2011-5-13 15:9:43]Process 16236 exited with code 0
+Test Num : 906
+Inject fault at 0x600fffffffd9cce5(physical:0x10000b79ebcce5)
+one bit flip(0x0 -> 0x20)
+16245 timeout
+[  2011-5-13 15:9:46]Process 16245 exited with code 0
+Test Num : 907
+Inject fault at 0x600fffffffe1ef5f(physical:0x10000b7c02ef5f)
+one bit flip(0x7271706f6c6a6968 -> 0x7271706f6c6ae968)
+16253 timeout
+[  2011-5-13 15:9:49]Process 16253 exited with code 0
+Test Num : 908
+Inject fault at 0x600fffffffb6c5a7(physical:0x10000b7980c5a7)
+one bit flip(0x0 -> 0x80)
+16261 timeout
+[  2011-5-13 15:9:52]Process 16261 exited with code 0
+Test Num : 909
+Inject fault at 0x600fffffff9cdbe5(physical:0x10000b7c8cdbe5)
+one bit flip(0x3020302030203020 -> 0x3020302030203000)
+16269 timeout
+[  2011-5-13 15:9:56]Process 16269 exited with code 0
+Test Num : 910
+Inject fault at 0x600ffffffff0d070(physical:0x10000b7cc5d070)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffffe)
+16277 timeout
+[  2011-5-13 15:9:59]Process 16277 exited with code 0
+Test Num : 911
+Inject fault at 0x600fffffff82eff1(physical:0x10000b7cc5eff1)
+one bit flip(0x0 -> 0x2)
+16285 timeout
+[  2011-5-13 15:10:2]Process 16285 exited with code 0
+Test Num : 912
+Inject fault at 0x600fffffffbfc4e2(physical:0x10000b7c9cc4e2)
+one bit flip(0x0 -> 0x4)
+16293 timeout
+[  2011-5-13 15:10:5]Process 16293 exited with code 0
+Test Num : 913
+Inject fault at 0x600fffffff88d02f(physical:0x10000b7dabd02f)
+one bit flip(0x47504700465ffff -> 0x475047004657fff)
+16302 timeout
+[  2011-5-13 15:10:8]Process 16302 exited with code 0
+Test Num : 914
+Inject fault at 0x600ffffffff7bb36(physical:0x10000b65a3bb36)
+one bit flip(0x0 -> 0x40)
+16310 timeout
+[ 2011-5-13 15:10:11]Process 16310 exited with code 0
+Test Num : 915
+Inject fault at 0x600fffffffcde23f(physical:0x10000b5feee23f)
+one bit flip(0xfffffffcde20020 -> 0xfffffffcde28020)
+16318 timeout
+[ 2011-5-13 15:10:14]Process 16318 exited with code 0
+Test Num : 916
+Inject fault at 0x600fffffffcdcf99(physical:0x10000b8044cf99)
+one bit flip(0x30b0306030102fb -> 0x30b0306030100fb)
+16326 timeout
+[ 2011-5-13 15:10:17]Process 16326 exited with code 0
+Test Num : 917
+Inject fault at 0x600fffffffadf965(physical:0x10000b65a3f965)
+one bit flip(0x200000 -> 0x200020)
+16334 timeout
+[ 2011-5-13 15:10:20]Process 16334 exited with code 0
+Test Num : 918
+Inject fault at 0x600ffffffff2e483(physical:0x10000b65a3e483)
+one bit flip(0x0 -> 0x8)
+16342 timeout
+[ 2011-5-13 15:10:23]Process 16342 exited with code 0
+Test Num : 919
+Inject fault at 0x600fffffffced208(physical:0x10000b8194d208)
+one bit flip(0x0 -> 0x100)
+16350 timeout
+[ 2011-5-13 15:10:27]Process 16350 exited with code 0
+Test Num : 920
+Inject fault at 0x600fffffffcae0d3(physical:0x10000b81d5e0d3)
+one bit flip(0x0 -> 0x8)
+16358 timeout
+[ 2011-5-13 15:10:30]Process 16358 exited with code 0
+Test Num : 921
+Inject fault at 0x600fffffffc9f02e(physical:0x10000b81b2f02e)
+one bit flip(0x10000 -> 0x14000)
+16366 timeout
+[ 2011-5-13 15:10:33]Process 16366 exited with code 0
+Test Num : 922
+Inject fault at 0x600fffffffded259(physical:0x10000b8249d259)
+one bit flip(0x0 -> 0x200)
+16374 timeout
+[ 2011-5-13 15:10:36]Process 16374 exited with code 0
+Test Num : 923
+Inject fault at 0x600fffffffa6ec4e(physical:0x10000b81d2ec4e)
+one bit flip(0xffffffff0000 -> 0xffffffff4000)
+16382 timeout
+[ 2011-5-13 15:10:39]Process 16382 exited with code 0
+Test Num : 924
+Inject fault at 0x600fffffffa5e3ca(physical:0x10000b820be3ca)
+one bit flip(0x0 -> 0x400)
+16390 timeout
+[ 2011-5-13 15:10:42]Process 16390 exited with code 0
+Test Num : 925
+Inject fault at 0x600fffffffdfde53(physical:0x10000b820cde53)
+one bit flip(0x3020302030203020 -> 0x3020302030203028)
+16398 timeout
+[ 2011-5-13 15:10:45]Process 16398 exited with code 0
+Test Num : 926
+Inject fault at 0x600fffffff9ff35f(physical:0x10000b830ef35f)
+one bit flip(0x0 -> 0x8000)
+16406 timeout
+[ 2011-5-13 15:10:48]Process 16406 exited with code 0
+Test Num : 927
+Inject fault at 0x600ffffffffcd088(physical:0x10000b82dad088)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffffeff)
+16414 timeout
+[ 2011-5-13 15:10:51]Process 16414 exited with code 0
+Test Num : 928
+Inject fault at 0x600fffffffb4e71f(physical:0x10000b82dbe71f)
+one bit flip(0x60 -> 0x8060)
+16422 timeout
+[ 2011-5-13 15:10:54]Process 16422 exited with code 0
+Test Num : 929
+Inject fault at 0x600ffffffff7e005(physical:0x10000b82f6e005)
+one bit flip(0x0 -> 0x20)
+16430 timeout
+[ 2011-5-13 15:10:58]Process 16430 exited with code 0
+Test Num : 930
+Inject fault at 0x600fffffff98ef30(physical:0x10000b7e47ef30)
+one bit flip(0x584b -> 0x584a)
+16439 timeout
+[  2011-5-13 15:11:1]Process 16439 exited with code 0
+Test Num : 931
+Inject fault at 0x600fffffffb5be5e(physical:0x10000b7e47be5e)
+one bit flip(0x0 -> 0x4000)
+16447 timeout
+[  2011-5-13 15:11:4]Process 16447 exited with code 0
+Test Num : 932
+Inject fault at 0x600fffffff83c5ed(physical:0x10000b7e47c5ed)
+one bit flip(0x0 -> 0x2000)
+16455 timeout
+[  2011-5-13 15:11:7]Process 16455 exited with code 0
+Test Num : 933
+Inject fault at 0x600fffffffb8d7c0(physical:0x10000b7e47d7c0)
+one bit flip(0x0 -> 0x1)
+16463 timeout
+[ 2011-5-13 15:11:10]Process 16463 exited with code 0
+Test Num : 934
+Inject fault at 0x600fffffff94f497(physical:0x10000b7e47f497)
+one bit flip(0x0 -> 0x80)
+16471 timeout
+[ 2011-5-13 15:11:13]Process 16471 exited with code 0
+Test Num : 935
+Inject fault at 0x600fffffffedc574(physical:0x10000b833ec574)
+one bit flip(0x0 -> 0x10)
+16479 timeout
+[ 2011-5-13 15:11:16]Process 16479 exited with code 0
+Test Num : 936
+Inject fault at 0x600fffffffcacbab(physical:0x10000b834acbab)
+one bit flip(0x0 -> 0x800)
+16487 timeout
+[ 2011-5-13 15:11:19]Process 16487 exited with code 0
+Test Num : 937
+Inject fault at 0x600fffffffb4f089(physical:0x10000b834af089)
+one bit flip(0x100000001000000 -> 0x100000001000200)
+16496 timeout
+[ 2011-5-13 15:11:22]Process 16496 exited with code 0
+Test Num : 938
+Inject fault at 0x600ffffffffbcfb6(physical:0x10000b834ccfb6)
+one bit flip(0x7103690364035f03 -> 0x7103690364035f43)
+16504 timeout
+[ 2011-5-13 15:11:25]Process 16504 exited with code 0
+Test Num : 939
+Inject fault at 0x600fffffff87ee1d(physical:0x10000b838bee1d)
+one bit flip(0x0 -> 0x2000)
+16512 timeout
+[ 2011-5-13 15:11:29]Process 16512 exited with code 0
+Test Num : 940
+Inject fault at 0x600fffffffc2d41e(physical:0x10000b7844d41e)
+one bit flip(0x0 -> 0x4000)
+16520 timeout
+[ 2011-5-13 15:11:32]Process 16520 exited with code 0
+Test Num : 941
+Inject fault at 0x600ffffffff3cc07(physical:0x10000b7844cc07)
+one bit flip(0x0 -> 0x80)
+16528 timeout
+[ 2011-5-13 15:11:35]Process 16528 exited with code 0
+Test Num : 942
+Inject fault at 0x600fffffff8ad6c9(physical:0x10000b5a12d6c9)
+one bit flip(0x0 -> 0x200)
+16536 timeout
+[ 2011-5-13 15:11:38]Process 16536 exited with code 0
+Test Num : 943
+Inject fault at 0x600fffffff8adacd(physical:0x10000b7844dacd)
+one bit flip(0x3020302030203020 -> 0x3020302030201020)
+16544 timeout
+[ 2011-5-13 15:11:41]Process 16544 exited with code 0
+Test Num : 944
+Inject fault at 0x600fffffffc7f970(physical:0x10000b7844f970)
+one bit flip(0xbd4cd30000000000 -> 0xbd4cd30000000001)
+16552 timeout
+[ 2011-5-13 15:11:44]Process 16552 exited with code 0
+Test Num : 945
+Inject fault at 0x600ffffffffcbac7(physical:0x10000b83a4bac7)
+one bit flip(0x0 -> 0x80)
+16560 timeout
+[ 2011-5-13 15:11:47]Process 16560 exited with code 0
+Test Num : 946
+Inject fault at 0x600fffffffcbdd48(physical:0x10000b83a4dd48)
+one bit flip(0x2030203020302030 -> 0x2030203020302130)
+16568 timeout
+[ 2011-5-13 15:11:50]Process 16568 exited with code 0
+Test Num : 947
+Inject fault at 0x600fffffffcbee7c(physical:0x10000b83a4ee7c)
+one bit flip(0xf539 -> 0xe539)
+16576 timeout
+[ 2011-5-13 15:11:53]Process 16576 exited with code 0
+Test Num : 948
+Inject fault at 0x600fffffffa8e4c4(physical:0x10000b83a4e4c4)
+one bit flip(0x0 -> 0x10)
+16584 timeout
+[ 2011-5-13 15:11:56]Process 16584 exited with code 0
+Test Num : 949
+Inject fault at 0x600fffffffc0df0a(physical:0x10000b83a4df0a)
+one bit flip(0x5b08000000000000 -> 0x5b08000000000400)
+16592 timeout
+[  2011-5-13 15:12:0]Process 16592 exited with code 0
+Test Num : 950
+Inject fault at 0x600fffffffc8dfe3(physical:0x10000b83a4dfe3)
+one bit flip(0x0 -> 0x8)
+16600 timeout
+[  2011-5-13 15:12:3]Process 16600 exited with code 0
+Test Num : 951
+Inject fault at 0x600fffffffe1bd7c(physical:0x10000b83a4bd7c)
+one bit flip(0x0 -> 0x1000)
+16608 timeout
+[  2011-5-13 15:12:6]Process 16608 exited with code 0
+Test Num : 952
+Inject fault at 0x600ffffffffabc1a(physical:0x10000b83a4bc1a)
+one bit flip(0x0 -> 0x400)
+16616 timeout
+[  2011-5-13 15:12:9]Process 16616 exited with code 0
+Test Num : 953
+Inject fault at 0x600fffffff95dbb0(physical:0x10000b84b2dbb0)
+one bit flip(0x2030203020302030 -> 0x2030203020302031)
+16624 timeout
+[ 2011-5-13 15:12:12]Process 16624 exited with code 0
+Test Num : 954
+Inject fault at 0x600fffffffb8c84e(physical:0x10000b82c4c84e)
+one bit flip(0x0 -> 0x4000)
+16633 timeout
+[ 2011-5-13 15:12:15]Process 16633 exited with code 0
+Test Num : 955
+Inject fault at 0x600fffffffe2e2ac(physical:0x10000b82c4e2ac)
+one bit flip(0x12020000000 -> 0x12020001000)
+16641 timeout
+[ 2011-5-13 15:12:18]Process 16641 exited with code 0
+Test Num : 956
+Inject fault at 0x600fffffffd5f2aa(physical:0x10000b886bf2aa)
+one bit flip(0x0 -> 0x400)
+16649 timeout
+[ 2011-5-13 15:12:21]Process 16649 exited with code 0
+Test Num : 957
+Inject fault at 0x600fffffffb7bcaa(physical:0x10000b88b1bcaa)
+one bit flip(0x1258000000000000 -> 0x1258000000000400)
+16657 timeout
+[ 2011-5-13 15:12:24]Process 16657 exited with code 0
+Test Num : 958
+Inject fault at 0x600fffffffdef4af(physical:0x10000b8985f4af)
+one bit flip(0x0 -> 0x8000)
+16665 timeout
+[ 2011-5-13 15:12:27]Process 16665 exited with code 0
+Test Num : 959
+Inject fault at 0x600fffffffd9cbea(physical:0x10000b8999cbea)
+one bit flip(0x0 -> 0x400)
+16673 timeout
+[ 2011-5-13 15:12:31]Process 16673 exited with code 0
+Test Num : 960
+Inject fault at 0x600fffffffdbeb14(physical:0x10000b899aeb14)
+one bit flip(0x0 -> 0x10)
+16681 timeout
+[ 2011-5-13 15:12:34]Process 16681 exited with code 0
+Test Num : 961
+Inject fault at 0x600fffffffbbddcd(physical:0x10000b5f7fddcd)
+one bit flip(0x7c96f087000000 -> 0x7c96f087002000)
+16690 timeout
+[ 2011-5-13 15:12:37]Process 16690 exited with code 0
+Test Num : 962
+Inject fault at 0x600fffffffddbb67(physical:0x10000b5f7fbb67)
+one bit flip(0x0 -> 0x80)
+16698 timeout
+[ 2011-5-13 15:12:40]Process 16698 exited with code 0
+Test Num : 963
+Inject fault at 0x600fffffffa4cc3a(physical:0x10000b5f7fcc3a)
+one bit flip(0x0 -> 0x400)
+16706 timeout
+[ 2011-5-13 15:12:43]Process 16706 exited with code 0
+Test Num : 964
+Inject fault at 0x600fffffff8ee7b1(physical:0x10000b8ab8e7b1)
+one bit flip(0x0 -> 0x2)
+16714 timeout
+[ 2011-5-13 15:12:46]Process 16714 exited with code 0
+Test Num : 965
+Inject fault at 0x600ffffffffad3c7(physical:0x10000b8a93d3c7)
+one bit flip(0x0 -> 0x80)
+16722 timeout
+[ 2011-5-13 15:12:49]Process 16722 exited with code 0
+Test Num : 966
+Inject fault at 0x600fffffffede682(physical:0x10000b8aaee682)
+one bit flip(0x0 -> 0x4)
+16730 timeout
+[ 2011-5-13 15:12:52]Process 16730 exited with code 0
+Test Num : 967
+Inject fault at 0x600fffffffccf249(physical:0x10000b8ac4f249)
+one bit flip(0x0 -> 0x200)
+16738 timeout
+[ 2011-5-13 15:12:55]Process 16738 exited with code 0
+Test Num : 968
+Inject fault at 0x600fffffffaae573(physical:0x10000b8ac4e573)
+one bit flip(0x2000000000 -> 0x2000000008)
+16746 timeout
+[ 2011-5-13 15:12:58]Process 16746 exited with code 0
+Test Num : 969
+Inject fault at 0x600fffffff86deab(physical:0x10000b8ac4deab)
+one bit flip(0x3020302030203020 -> 0x3020302030203820)
+16754 timeout
+[  2011-5-13 15:13:2]Process 16754 exited with code 0
+Test Num : 970
+Inject fault at 0x600fffffffc4d83e(physical:0x10000b8ac4d83e)
+one bit flip(0x600f -> 0x200f)
+16762 timeout
+[  2011-5-13 15:13:5]Process 16762 exited with code 0
+Test Num : 971
+Inject fault at 0x600fffffff8ce4ae(physical:0x10000b8ac4e4ae)
+one bit flip(0x0 -> 0x4000)
+16770 timeout
+[  2011-5-13 15:13:8]Process 16770 exited with code 0
+Test Num : 972
+Inject fault at 0x600fffffffdee8cc(physical:0x10000b8ac4e8cc)
+one bit flip(0x40000000 -> 0x40001000)
+16778 timeout
+[ 2011-5-13 15:13:11]Process 16778 exited with code 0
+Test Num : 973
+Inject fault at 0x600fffffffb5e57c(physical:0x10000b8ac4e57c)
+one bit flip(0x139b000000000 -> 0x139b000001000)
+16786 timeout
+[ 2011-5-13 15:13:14]Process 16786 exited with code 0
+Test Num : 974
+Inject fault at 0x600fffffffafe1e6(physical:0x10000b8ac4e1e6)
+one bit flip(0x6ef0000 -> 0x6ef0040)
+16794 timeout
+[ 2011-5-13 15:13:17]Process 16794 exited with code 0
+Test Num : 975
+Inject fault at 0x600fffffffecc233(physical:0x10000b8ac4c233)
+one bit flip(0x0 -> 0x8)
+16802 timeout
+[ 2011-5-13 15:13:20]Process 16802 exited with code 0
+Test Num : 976
+Inject fault at 0x600fffffff8fbe23(physical:0x10000b8ac4be23)
+one bit flip(0x0 -> 0x8)
+16810 timeout
+[ 2011-5-13 15:13:23]Process 16810 exited with code 0
+Test Num : 977
+Inject fault at 0x600fffffff87f852(physical:0x10000b8ac4f852)
+one bit flip(0x0 -> 0x4)
+16818 timeout
+[ 2011-5-13 15:13:26]Process 16818 exited with code 0
+Test Num : 978
+Inject fault at 0x600ffffffff5d032(physical:0x10000b8ac4d032)
+one bit flip(0x81047d0475047004 -> 0x81047d0475047000)
+16827 timeout
+[ 2011-5-13 15:13:29]Process 16827 exited with code 0
+Test Num : 979
+Inject fault at 0x600ffffffff5e74c(physical:0x10000b9078e74c)
+one bit flip(0x0 -> 0x1000)
+16835 timeout
+[ 2011-5-13 15:13:33]Process 16835 exited with code 0
+Test Num : 980
+Inject fault at 0x600fffffffd7d9c5(physical:0x10000b9082d9c5)
+one bit flip(0x2035373035203020 -> 0x2035373035203000)
+16843 timeout
+[ 2011-5-13 15:13:36]Process 16843 exited with code 0
+Test Num : 981
+Inject fault at 0x600fffffffa4dfe6(physical:0x10000b8ec7dfe6)
+one bit flip(0x0 -> 0x40)
+16851 timeout
+[ 2011-5-13 15:13:39]Process 16851 exited with code 0
+Test Num : 982
+Inject fault at 0x600fffffffbfdd9c(physical:0x10000b8ec7dd9c)
+one bit flip(0x1000000000000 -> 0x1000000001000)
+16859 timeout
+[ 2011-5-13 15:13:42]Process 16859 exited with code 0
+Test Num : 983
+Inject fault at 0x600fffffffbfbb85(physical:0x10000b9253bb85)
+one bit flip(0x0 -> 0x20)
+16867 timeout
+[ 2011-5-13 15:13:45]Process 16867 exited with code 0
+Test Num : 984
+Inject fault at 0x600fffffffa3ceab(physical:0x10000b92c5ceab)
+one bit flip(0xffffffffffffffff -> 0xfffffffffffff7ff)
+16875 timeout
+[ 2011-5-13 15:13:48]Process 16875 exited with code 0
+Test Num : 985
+Inject fault at 0x600fffffffbbd82a(physical:0x10000b9272d82a)
+one bit flip(0x0 -> 0x400)
+16884 timeout
+[ 2011-5-13 15:13:51]Process 16884 exited with code 0
+Test Num : 986
+Inject fault at 0x600fffffff83d8e1(physical:0x10000b929ed8e1)
+one bit flip(0x2400000000000000 -> 0x2400000000000002)
+16892 timeout
+[ 2011-5-13 15:13:54]Process 16892 exited with code 0
+Test Num : 987
+Inject fault at 0x600fffffffdbc1a8(physical:0x10000b9273c1a8)
+one bit flip(0x0 -> 0x100)
+16900 timeout
+[ 2011-5-13 15:13:57]Process 16900 exited with code 0
+Test Num : 988
+Inject fault at 0x600fffffffa2d713(physical:0x10000b94abd713)
+one bit flip(0x0 -> 0x8)
+16908 timeout
+[  2011-5-13 15:14:0]Process 16908 exited with code 0
+Test Num : 989
+Inject fault at 0x600fffffffcbd07b(physical:0x10000b94afd07b)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffffbf)
+16916 timeout
+[  2011-5-13 15:14:4]Process 16916 exited with code 0
+Test Num : 990
+Inject fault at 0x600fffffffcfca81(physical:0x10000b94c3ca81)
+one bit flip(0x0 -> 0x2)
+16924 timeout
+[  2011-5-13 15:14:7]Process 16924 exited with code 0
+Test Num : 991
+Inject fault at 0x600fffffffdae46b(physical:0x10000b94e7e46b)
+one bit flip(0x0 -> 0x800)
+16932 timeout
+[ 2011-5-13 15:14:10]Process 16932 exited with code 0
+Test Num : 992
+Inject fault at 0x600fffffff99d362(physical:0x10000b950cd362)
+one bit flip(0x0 -> 0x4)
+16940 timeout
+[ 2011-5-13 15:14:13]Process 16940 exited with code 0
+Test Num : 993
+Inject fault at 0x600fffffffddf864(physical:0x10000b950df864)
+one bit flip(0x0 -> 0x10)
+16948 timeout
+[ 2011-5-13 15:14:16]Process 16948 exited with code 0
+Test Num : 994
+Inject fault at 0x600fffffff98c564(physical:0x10000b9507c564)
+one bit flip(0x0 -> 0x10)
+16956 timeout
+[ 2011-5-13 15:14:19]Process 16956 exited with code 0
+Test Num : 995
+Inject fault at 0x600fffffffcad014(physical:0x10000b94bad014)
+one bit flip(0xffffffffffffffff -> 0xffffffffffffffef)
+16964 timeout
+[ 2011-5-13 15:14:22]Process 16964 exited with code 0
+Test Num : 996
+Inject fault at 0x600fffffff88d6d7(physical:0x10000b950ad6d7)
+one bit flip(0x0 -> 0x80)
+16972 timeout
+[ 2011-5-13 15:14:25]Process 16972 exited with code 0
+Test Num : 997
+Inject fault at 0x600fffffffd9bec8(physical:0x10000b9053bec8)
+one bit flip(0x0 -> 0x100)
+16980 timeout
+[ 2011-5-13 15:14:28]Process 16980 exited with code 0
+Test Num : 998
+Inject fault at 0x600ffffffff4d90c(physical:0x10000b9053d90c)
+one bit flip(0x34794b7a00000000 -> 0x34794b7a00001000)
+16988 timeout
+[ 2011-5-13 15:14:31]Process 16988 exited with code 0
+Test Num : 999
+Inject fault at 0x600fffffff84e82b(physical:0x10000b9053e82b)
+one bit flip(0x84e8f02000000000 -> 0x84e8f02000000010)
+16996 timeout
+[ 2011-5-13 15:14:35]Process 16996 exited with code 0
+Test Num : 1000
+Inject fault at 0x600fffffffc7f613(physical:0x10000b9053f613)
+one bit flip(0x0 -> 0x8)
+17004 timeout
+[ 2011-5-13 15:14:38]Process 17004 exited with code 0
+Test Num : 1001

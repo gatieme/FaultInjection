@@ -1,0 +1,18 @@
+#!/bin/bash
+#################################################
+# 
+# Inject into process data segment
+# Author: HIT CS HDMC team.
+# Create: 2011-5-16 10:17:45
+# 
+#################################################
+init=1
+if [ $# -ne 1 ]
+then echo 'Usage:'$0' number' && exit
+fi	
+
+for (( i = 0; i < $1; i++))
+do
+	echo -e "Test Num : $i"
+	./inject_sys_process $init stack
+done
