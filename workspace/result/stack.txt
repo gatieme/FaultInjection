@@ -1,0 +1,1097 @@
+Test Num : 0
+Inject fault at 0x7fff4c092819(physical:0x800000034651d819)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034651d000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034651d000
+word 0(0x2000000000000000 -> 0x0)
+19731 timeout
+[ 2016-1-26 23:32:25]Process 19731 exited with code 0
+Test Num : 1
+Inject fault at 0x7fff43cc3af0(physical:0x80000003545f3af0)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003545f3000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003545f3000
+word 0(0x40d636 -> 0x0)
+19754 timeout
+[ 2016-1-26 23:32:28]Process 19754 exited with code 0
+Test Num : 2
+Inject fault at 0x7fffb83fe651(physical:0x800000035f145651)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035f145000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035f145000
+word 0(0x2000000000000000 -> 0x0)
+[ 2016-1-26 23:32:29]Process 19770 termed with signal 11(SIGSEGV)
+Test Num : 3
+Inject fault at 0x7fffd12b44b2(physical:0x800000035adf44b2)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035adf4000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035adf4000
+word 0(0x1000000000000 -> 0x0)
+19778 timeout
+[ 2016-1-26 23:32:32]Process 19778 exited with code 0
+Test Num : 4
+Inject fault at 0x7fff7a642838(physical:0x8000000356e82838)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356e82000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356e82000
+word 0(0x402129 -> 0x0)
+19794 timeout
+[ 2016-1-26 23:32:35]Process 19794 exited with code 0
+Test Num : 5
+Inject fault at 0x7fffd8c96d7d(physical:0x8000000359344d7d)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000359344000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000359344000
+word 0(0x0 -> 0x0)
+19811 timeout
+[ 2016-1-26 23:32:38]Process 19811 exited with code 0
+Test Num : 6
+Inject fault at 0x7fff621d7061(physical:0x800000035fdf9061)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035fdf9000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035fdf9000
+word 0(0x0 -> 0x0)
+19827 timeout
+[ 2016-1-26 23:32:41]Process 19827 exited with code 0
+Test Num : 7
+Inject fault at 0x7fffabab5270(physical:0x8000000336688270)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000336688000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000336688000
+word 0(0xffffffffffffffff -> 0x0)
+19861 timeout
+[ 2016-1-26 23:32:44]Process 19861 exited with code 0
+Test Num : 8
+Inject fault at 0x7fffdce1a40f(physical:0x800000032422440f)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000324224000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000324224000
+word 0(0x0 -> 0x0)
+9041 timeout
+[ 2016-1-26 23:32:47]Process 9041 exited with code 0
+Test Num : 9
+Inject fault at 0x7fff04c78aea(physical:0x800000034fc59aea)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034fc59000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034fc59000
+word 0(0x0 -> 0x0)
+13639 timeout
+[ 2016-1-26 23:32:50]Process 13639 exited with code 0
+Test Num : 10
+Inject fault at 0x7fff89827de9(physical:0x800000033f2c9de9)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033f2c9000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033f2c9000
+word 0(0xd00000000000058 -> 0x0)
+18068 timeout
+[ 2016-1-26 23:32:53]Process 18068 exited with code 0
+Test Num : 11
+Inject fault at 0x7fff4112afa1(physical:0x8000000366b2efa1)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000366b2e000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000366b2e000
+word 0(0x0 -> 0x0)
+23570 timeout
+[ 2016-1-26 23:32:56]Process 23570 exited with code 0
+Test Num : 12
+Inject fault at 0x7fffdeff6c0a(physical:0x8000000330442c0a)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000330442000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000330442000
+word 0(0x6ce4000000376449 -> 0x0)
+29443 timeout
+[ 2016-1-26 23:32:59]Process 29443 exited with code 0
+Test Num : 13
+Inject fault at 0x7fff97704375(physical:0x80000003419b2375)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003419b2000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003419b2000
+word 0(0x5000000000000f5 -> 0x0)
+1801 timeout
+[  2016-1-26 23:33:2]Process 1801 exited with code 0
+Test Num : 14
+Inject fault at 0x7fff99e8bb97(physical:0x8000000350ffeb97)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000350ffe000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000350ffe000
+word 0(0x7271706f6c6a6968 -> 0x0)
+7342 timeout
+[  2016-1-26 23:33:5]Process 7342 exited with code 0
+Test Num : 15
+Inject fault at 0x7fff551581c5(physical:0x800000034b1cb1c5)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034b1cb000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034b1cb000
+word 0(0x1fadff60000000 -> 0x0)
+11046 timeout
+[  2016-1-26 23:33:8]Process 11046 exited with code 0
+Test Num : 16
+Inject fault at 0x7fff8f290e1a(physical:0x8000000351c87e1a)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000351c87000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000351c87000
+word 0(0x0 -> 0x0)
+15115 timeout
+[ 2016-1-26 23:33:11]Process 15115 exited with code 0
+Test Num : 17
+Inject fault at 0x7fff90590489(physical:0x8000000366d84489)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000366d84000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000366d84000
+word 0(0x64000000376449be -> 0x0)
+19206 timeout
+[ 2016-1-26 23:33:14]Process 19206 exited with code 0
+Test Num : 18
+Inject fault at 0x7fff4be6fae5(physical:0x800000033163aae5)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033163a000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033163a000
+word 0(0x6463625655545352 -> 0x0)
+30462 timeout
+[ 2016-1-26 23:33:17]Process 30462 exited with code 0
+Test Num : 19
+Inject fault at 0x7fffee35a607(physical:0x8000000327ac6607)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000327ac6000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000327ac6000
+word 0(0x17000 -> 0x0)
+24146 timeout
+[ 2016-1-26 23:33:20]Process 24146 exited with code 0
+Test Num : 20
+Inject fault at 0x7fff9e478e52(physical:0x8000000332c27e52)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000332c27000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000332c27000
+word 0(0x92d6000000376421 -> 0x0)
+29556 timeout
+[ 2016-1-26 23:33:23]Process 29556 exited with code 0
+Test Num : 21
+Inject fault at 0x7fffe84d8434(physical:0x80000003473be434)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003473be000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003473be000
+word 0(0x0 -> 0x0)
+1454 timeout
+[ 2016-1-26 23:33:26]Process 1454 exited with code 0
+Test Num : 22
+Inject fault at 0x7fff43ca3862(physical:0x8000000338184862)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000338184000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000338184000
+word 0(0x4a00000000376475 -> 0x0)
+8372 timeout
+[ 2016-1-26 23:33:29]Process 8372 exited with code 0
+Test Num : 23
+Inject fault at 0x7fff8e9dc8c8(physical:0x80000003677ab8c8)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003677ab000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003677ab000
+word 0(0x7fff8e9dc920 -> 0x0)
+14165 timeout
+[ 2016-1-26 23:33:32]Process 14165 termed with signal 11(SIGSEGV)
+Test Num : 24
+Inject fault at 0x7fff46eb05ef(physical:0x80000003368795ef)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000336879000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000336879000
+word 0(0x611ad800 -> 0x0)
+18159 timeout
+[ 2016-1-26 23:33:35]Process 18159 exited with code 0
+Test Num : 25
+Inject fault at 0x7fffe324f28d(physical:0x800000032d0b228d)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032d0b2000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032d0b2000
+word 0(0x7a000000 -> 0x0)
+21851 timeout
+[ 2016-1-26 23:33:39]Process 21851 exited with code 0
+Test Num : 26
+Inject fault at 0x7fff190cc661(physical:0x80000003474bc661)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003474bc000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003474bc000
+word 0(0x2000000000000000 -> 0x0)
+[ 2016-1-26 23:33:39]Process 24975 termed with signal 11(SIGSEGV)
+Test Num : 27
+Inject fault at 0x7fffe1123481(physical:0x800000033fc9a481)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033fc9a000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033fc9a000
+word 0(0x2000000000000000 -> 0x0)
+[ 2016-1-26 23:33:40]Process 30977 termed with signal 11(SIGSEGV)
+Test Num : 28
+Inject fault at 0x7fff5faae0f3(physical:0x8000000331f870f3)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000331f87000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000331f87000
+word 0(0x10000000000 -> 0x0)
+4729 timeout
+[ 2016-1-26 23:33:43]Process 4729 exited with code 0
+Test Num : 29
+Inject fault at 0x7fff6e176b09(physical:0x8000000335749b09)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000335749000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000335749000
+word 0(0x6a67666463624d4e -> 0x0)
+10369 timeout
+[ 2016-1-26 23:33:46]Process 10369 exited with code 0
+Test Num : 30
+Inject fault at 0x7fff7f24f865(physical:0x800000032e20a865)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032e20a000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032e20a000
+word 0(0x43647549e0000000 -> 0x0)
+8757 timeout
+[ 2016-1-26 23:33:49]Process 8757 exited with code 0
+Test Num : 31
+Inject fault at 0x7fff30cbf1ab(physical:0x800000033c9761ab)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033c976000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033c976000
+word 0(0xcbd66a00007fff30 -> 0x0)
+15295 timeout
+[ 2016-1-26 23:33:52]Process 15295 exited with code 0
+Test Num : 32
+Inject fault at 0x7fffd76b1b9c(physical:0x800000032cc67b9c)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032cc67000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032cc67000
+word 0(0xfae200000000037 -> 0x0)
+21250 timeout
+[ 2016-1-26 23:33:55]Process 21250 exited with code 0
+Test Num : 33
+Inject fault at 0x7fffc524c297(physical:0x800000034d11d297)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034d11d000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034d11d000
+word 0(0x100 -> 0x0)
+27101 timeout
+[ 2016-1-26 23:33:58]Process 27101 exited with code 0
+Test Num : 34
+Inject fault at 0x7fff9251cf9e(physical:0x800000034c729f9e)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034c729000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034c729000
+word 0(0x0 -> 0x0)
+32417 timeout
+[  2016-1-26 23:34:1]Process 32417 exited with code 0
+Test Num : 35
+Inject fault at 0x7fff1721c92d(physical:0x8000000356af592d)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356af5000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356af5000
+word 0(0xff1721c94000007f -> 0x0)
+5661 timeout
+[  2016-1-26 23:34:4]Process 5661 exited with code 0
+Test Num : 36
+Inject fault at 0x7fff048cd699(physical:0x8000000350c53699)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000350c53000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000350c53000
+word 0(0x8000000000ffffff -> 0x0)
+12548 timeout
+[  2016-1-26 23:34:7]Process 12548 exited with code 0
+Test Num : 37
+Inject fault at 0x7fff1ca7359b(physical:0x800000032dfdd59b)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032dfdd000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032dfdd000
+word 0(0x484e4b4d7a797675 -> 0x0)
+18746 timeout
+[ 2016-1-26 23:34:10]Process 18746 exited with code 0
+Test Num : 38
+Inject fault at 0x7fffd856fc55(physical:0x800000033a116c55)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033a116000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033a116000
+word 0(0xffd856fcb0000000 -> 0x0)
+24924 timeout
+[ 2016-1-26 23:34:13]Process 24924 exited with code 0
+Test Num : 39
+Inject fault at 0x7fff41153e42(physical:0x8000000328847e42)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000328847000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000328847000
+word 0(0xbe7500007fff4115 -> 0x0)
+30646 timeout
+[ 2016-1-26 23:34:16]Process 30646 exited with code 0
+Test Num : 40
+Inject fault at 0x7fffc282937a(physical:0x800000033080e37a)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033080e000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033080e000
+word 0(0x0 -> 0x0)
+3405 timeout
+[ 2016-1-26 23:34:19]Process 3405 exited with code 0
+Test Num : 41
+Inject fault at 0x7fff2733fd21(physical:0x800000031fd4ed21)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031fd4e000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031fd4e000
+word 0(0x40000000376400d1 -> 0x0)
+29685 timeout
+[ 2016-1-26 23:34:22]Process 29685 exited with code 0
+Test Num : 42
+Inject fault at 0x7fffc89f123e(physical:0x80000003655da23e)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003655da000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003655da000
+word 0(0x9fc0c89f13a80000 -> 0x0)
+29701 timeout
+[ 2016-1-26 23:34:25]Process 29701 exited with code 0
+Test Num : 43
+Inject fault at 0x7fff00a46c27(physical:0x80000002df897c27)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000002df897000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000002df897000
+word 0(0x7fff00a46bb000 -> 0x0)
+29724 timeout
+[ 2016-1-26 23:34:28]Process 29724 exited with code 0
+Test Num : 44
+Inject fault at 0x7fffe6516bb0(physical:0x8000000334da0bb0)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000334da0000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000334da0000
+word 0(0x0 -> 0x0)
+29751 timeout
+[ 2016-1-26 23:34:31]Process 29751 exited with code 0
+Test Num : 45
+Inject fault at 0x7fff25ae646b(physical:0x8000000353e9046b)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000353e90000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000353e90000
+word 0(0xae626000002ab2f0 -> 0x0)
+29765 timeout
+[ 2016-1-26 23:34:34]Process 29765 exited with code 0
+Test Num : 46
+Inject fault at 0x7fff66290e60(physical:0x8000000356b24e60)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356b24000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356b24000
+word 0(0x611ad8 -> 0x0)
+29774 timeout
+[ 2016-1-26 23:34:37]Process 29774 exited with code 0
+Test Num : 47
+Inject fault at 0x7fffb760c95a(physical:0x80000003520f995a)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003520f9000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003520f9000
+word 0(0xc92000002aea25e7 -> 0x0)
+29783 timeout
+[ 2016-1-26 23:34:40]Process 29783 exited with code 0
+Test Num : 48
+Inject fault at 0x7fff6ca4721c(physical:0x800000034ea3e21c)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034ea3e000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034ea3e000
+word 0(0x7976757473727170 -> 0x0)
+29798 timeout
+[ 2016-1-26 23:34:43]Process 29798 exited with code 0
+Test Num : 49
+Inject fault at 0x7fff861e1ce5(physical:0x8000000335f14ce5)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000335f14000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000335f14000
+word 0(0xff861e1912000000 -> 0x0)
+29806 timeout
+[ 2016-1-26 23:34:46]Process 29806 exited with code 0
+Test Num : 50
+Inject fault at 0x7fff9c67b47c(physical:0x800000031ea9447c)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031ea94000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031ea94000
+word 0(0x6421dc8000002b85 -> 0x0)
+29814 timeout
+[ 2016-1-26 23:34:49]Process 29814 exited with code 0
+Test Num : 51
+Inject fault at 0x7fffcb099f4e(physical:0x8000000320ce3f4e)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320ce3000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320ce3000
+word 0(0x376421cbc00000 -> 0x0)
+29822 timeout
+[ 2016-1-26 23:34:53]Process 29822 exited with code 0
+Test Num : 52
+Inject fault at 0x7fff3b214e1f(physical:0x80000002df859e1f)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000002df859000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000002df859000
+word 0(0x200 -> 0x0)
+29830 timeout
+[ 2016-1-26 23:34:56]Process 29830 exited with code 0
+Test Num : 53
+Inject fault at 0x7fff55dc9233(physical:0x8000000358b64233)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000358b64000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000358b64000
+word 0(0x0 -> 0x0)
+29845 timeout
+[ 2016-1-26 23:34:59]Process 29845 exited with code 0
+Test Num : 54
+Inject fault at 0x7fffd875accc(physical:0x8000000330369ccc)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000330369000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000330369000
+word 0(0xffffffff00000000 -> 0x0)
+29853 timeout
+[  2016-1-26 23:35:2]Process 29853 exited with code 0
+Test Num : 55
+Inject fault at 0x7fffc57be3c8(physical:0x800000035ade93c8)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035ade9000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035ade9000
+word 0(0x1f294af0 -> 0x0)
+29861 timeout
+[  2016-1-26 23:35:5]Process 29861 exited with code 0
+Test Num : 56
+Inject fault at 0x7fffd9bd98e4(physical:0x80000002df8978e4)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000002df897000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000002df897000
+word 0(0x0 -> 0x0)
+29869 timeout
+[  2016-1-26 23:35:8]Process 29869 exited with code 0
+Test Num : 57
+Inject fault at 0x7fff0469e184(physical:0x8000000347efd184)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000347efd000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000347efd000
+word 0(0x7fff -> 0x0)
+29877 timeout
+[ 2016-1-26 23:35:11]Process 29877 exited with code 0
+Test Num : 58
+Inject fault at 0x7fffffe18a98(physical:0x800000032a4a0a98)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032a4a0000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032a4a0000
+word 0(0x7fffffe18a20 -> 0x0)
+29892 timeout
+[ 2016-1-26 23:35:14]Process 29892 exited with code 0
+Test Num : 59
+Inject fault at 0x7fffac16b054(physical:0x8000000348d81054)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000348d81000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000348d81000
+word 0(0x37 -> 0x0)
+29900 timeout
+[ 2016-1-26 23:35:17]Process 29900 exited with code 0
+Test Num : 60
+Inject fault at 0x7fff485341cd(physical:0x80000003487061cd)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000348706000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000348706000
+word 0(0x4345444241007273 -> 0x0)
+29908 timeout
+[ 2016-1-26 23:35:20]Process 29908 exited with code 0
+Test Num : 61
+Inject fault at 0x7fffd13537cd(physical:0x80000003210b07cd)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003210b0000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003210b0000
+word 0(0x1aa9ef70000000 -> 0x0)
+29916 timeout
+[ 2016-1-26 23:35:23]Process 29916 exited with code 0
+Test Num : 62
+Inject fault at 0x7fff72680e47(physical:0x8000000320ca3e47)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320ca3000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320ca3000
+word 0(0x0 -> 0x0)
+29925 timeout
+[ 2016-1-26 23:35:26]Process 29925 exited with code 0
+Test Num : 63
+Inject fault at 0x7fff60a7f183(physical:0x800000031e81c183)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031e81c000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031e81c000
+word 0(0x611ad800000000fb -> 0x0)
+29940 timeout
+[ 2016-1-26 23:35:29]Process 29940 exited with code 0
+Test Num : 64
+Inject fault at 0x7fff9e6c570e(physical:0x800000035aaef70e)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035aaef000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035aaef000
+word 0(0x1000000000000 -> 0x0)
+29948 timeout
+[ 2016-1-26 23:35:32]Process 29948 exited with code 0
+Test Num : 65
+Inject fault at 0x7fff1603a52b(physical:0x8000000348a9452b)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000348a94000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000348a94000
+word 0(0x80c0a80000003764 -> 0x0)
+29956 timeout
+[ 2016-1-26 23:35:35]Process 29956 exited with code 0
+Test Num : 66
+Inject fault at 0x7fffaa24d2e7(physical:0x800000034b45f2e7)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034b45f000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034b45f000
+word 0(0x0 -> 0x0)
+29964 timeout
+[ 2016-1-26 23:35:38]Process 29964 exited with code 0
+Test Num : 67
+Inject fault at 0x7fffba2b9d56(physical:0x800000034664fd56)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034664f000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034664f000
+word 0(0x6463624d4e4b5754 -> 0x0)
+29972 timeout
+[ 2016-1-26 23:35:41]Process 29972 exited with code 0
+Test Num : 68
+Inject fault at 0x7fff19af38e0(physical:0x80000003315e08e0)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003315e0000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003315e0000
+word 0(0x19af3b88 -> 0x0)
+29988 timeout
+[ 2016-1-26 23:35:44]Process 29988 exited with code 0
+Test Num : 69
+Inject fault at 0x7fff9d1e29c6(physical:0x800000034a6ef9c6)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034a6ef000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034a6ef000
+word 0(0x3764a0d0100000 -> 0x0)
+29996 timeout
+[ 2016-1-26 23:35:47]Process 29996 exited with code 0
+Test Num : 70
+Inject fault at 0x7fff97110e28(physical:0x800000032ce80e28)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032ce80000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032ce80000
+word 0(0x0 -> 0x0)
+30004 timeout
+[ 2016-1-26 23:35:50]Process 30004 exited with code 0
+Test Num : 71
+Inject fault at 0x7fffc46dc9e4(physical:0x80000003566909e4)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356690000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000356690000
+word 0(0xc46dca4000000037 -> 0x0)
+30013 timeout
+[ 2016-1-26 23:35:53]Process 30013 termed with signal 11(SIGSEGV)
+Test Num : 72
+Inject fault at 0x7fff806ffd0e(physical:0x8000000346311d0e)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000346311000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000346311000
+word 0(0x2b41f42a0a980000 -> 0x0)
+30021 timeout
+[ 2016-1-26 23:35:56]Process 30021 exited with code 0
+Test Num : 73
+Inject fault at 0x7fff87e7737c(physical:0x800000035d17c37c)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035d17c000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035d17c000
+word 0(0x4096e000000037 -> 0x0)
+30037 timeout
+[ 2016-1-26 23:35:59]Process 30037 exited with code 0
+Test Num : 74
+Inject fault at 0x7ffff2ff706c(physical:0x800000032e14406c)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032e144000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000032e144000
+word 0(0x0 -> 0x0)
+30045 timeout
+[  2016-1-26 23:36:2]Process 30045 exited with code 0
+Test Num : 75
+Inject fault at 0x7fffcd8dc7cb(physical:0x800000034123e7cb)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034123e000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000034123e000
+word 0(0x484e4b4d7a797675 -> 0x0)
+30055 timeout
+[  2016-1-26 23:36:5]Process 30055 exited with code 0
+Test Num : 76
+Inject fault at 0x7fff8e419871(physical:0x800000031f8ff871)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031f8ff000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000031f8ff000
+word 0(0x100000001000000 -> 0x0)
+30064 timeout
+[  2016-1-26 23:36:8]Process 30064 exited with code 0
+Test Num : 77
+Inject fault at 0x7fff6db98348(physical:0x80000003530f9348)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003530f9000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003530f9000
+word 0(0x54 -> 0x0)
+30095 timeout
+[ 2016-1-26 23:36:11]Process 30095 exited with code 0
+Test Num : 78
+Inject fault at 0x7fffd2c7c0ac(physical:0x800000035fe770ac)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035fe77000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035fe77000
+word 0(0x0 -> 0x0)
+30111 timeout
+[ 2016-1-26 23:36:15]Process 30111 exited with code 0
+Test Num : 79
+Inject fault at 0x7fff5b7bb2cf(physical:0x800000033d6c42cf)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033d6c4000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033d6c4000
+word 0(0x7fff5b7bb3a400 -> 0x0)
+30120 timeout
+[ 2016-1-26 23:36:18]Process 30120 exited with code 0
+Test Num : 80
+Inject fault at 0x7ffff45e5015(physical:0x80000003a77c5015)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003a77c5000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003a77c5000
+word 0(0x611ad8000000 -> 0x0)
+30128 timeout
+[ 2016-1-26 23:36:21]Process 30128 exited with code 0
+Test Num : 81
+Inject fault at 0x7fff5116f547(physical:0x8000000320ce3547)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320ce3000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320ce3000
+word 0(0x0 -> 0x0)
+30137 timeout
+[ 2016-1-26 23:36:24]Process 30137 exited with code 0
+Test Num : 82
+Inject fault at 0x7fffcae16dd6(physical:0x8000000360464dd6)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000360464000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000360464000
+word 0(0x56a792780000 -> 0x0)
+30146 timeout
+[ 2016-1-26 23:36:27]Process 30146 exited with code 0
+Test Num : 83
+Inject fault at 0x7ffffeb6418c(physical:0x800000033080e18c)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033080e000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000033080e000
+word 0(0x7fff -> 0x0)
+30161 timeout
+[ 2016-1-26 23:36:30]Process 30161 exited with code 0
+Test Num : 84
+Inject fault at 0x7fff526ed85a(physical:0x800000034907585a)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000349075000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000349075000
+word 0(0x7574737271706f6c -> 0x0)
+30170 timeout
+[ 2016-1-26 23:36:33]Process 30170 exited with code 0
+Test Num : 85
+Inject fault at 0x7fff2a2da50d(physical:0x8000000360bc350d)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000360bc3000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000360bc3000
+word 0(0x0 -> 0x0)
+30179 timeout
+[ 2016-1-26 23:36:36]Process 30179 exited with code 0
+Test Num : 86
+Inject fault at 0x7fff50bc0da8(physical:0x8000000346014da8)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000346014000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000346014000
+word 0(0x3764754a00 -> 0x0)
+30680 timeout
+[ 2016-1-26 23:36:39]Process 30680 exited with code 0
+Test Num : 87
+Inject fault at 0x7fff5c52d141(physical:0x800000035c6a0141)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035c6a0000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035c6a0000
+word 0(0x0 -> 0x0)
+31703 timeout
+[ 2016-1-26 23:36:42]Process 31703 exited with code 0
+Test Num : 88
+Inject fault at 0x7ffff68f70de(physical:0x80000003612740de)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000361274000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000361274000
+word 0(0x10000 -> 0x0)
+31870 timeout
+[ 2016-1-26 23:36:45]Process 31870 exited with code 0
+Test Num : 89
+Inject fault at 0x7fffad67d6af(physical:0x800000035b4cc6af)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035b4cc000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:800000035b4cc000
+word 0(0x10000000000 -> 0x0)
+31965 timeout
+[ 2016-1-26 23:36:48]Process 31965 exited with code 0
+Test Num : 90
+Inject fault at 0x7fffc284f523(physical:0x8000000320e42523)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320e42000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320e42000
+word 0(0xecf10000000000 -> 0x0)
+32066 timeout
+[ 2016-1-26 23:36:51]Process 32066 exited with code 0
+Test Num : 91
+Inject fault at 0x7fff496df5f6(physical:0x8000000320c965f6)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320c96000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320c96000
+word 0(0x0 -> 0x0)
+32403 timeout
+[ 2016-1-26 23:36:54]Process 32403 exited with code 0
+Test Num : 92
+Inject fault at 0x7fffb11e76db(physical:0x8000000328d8d6db)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000328d8d000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000328d8d000
+word 0(0x100 -> 0x0)
+507 timeout
+[ 2016-1-26 23:36:57]Process 507 exited with code 0
+Test Num : 93
+Inject fault at 0x7fff76dd5340(physical:0x8000000335f26340)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000335f26000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000335f26000
+word 0(0x17a9f70 -> 0x0)
+623 timeout
+[  2016-1-26 23:37:0]Process 623 exited with code 0
+Test Num : 94
+Inject fault at 0x7fff926799be(physical:0x8000000357e3b9be)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000357e3b000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000357e3b000
+word 0(0x11a471f40000 -> 0x0)
+736 timeout
+[  2016-1-26 23:37:3]Process 736 exited with code 0
+Test Num : 95
+Inject fault at 0x7fff7283bdc1(physical:0x80000003545f3dc1)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003545f3000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:80000003545f3000
+word 0(0x0 -> 0x0)
+797 timeout
+[  2016-1-26 23:37:6]Process 797 exited with code 0
+Test Num : 96
+Inject fault at 0x7fffe167f6b0(physical:0x80000003451016b0)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000345101000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000345101000
+word 0(0x6 -> 0x0)
+845 timeout
+[  2016-1-26 23:37:9]Process 845 exited with code 0
+Test Num : 97
+Inject fault at 0x7fff1df8e267(physical:0x8000000330107267)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000330107000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000330107000
+word 0(0x0 -> 0x0)
+958 timeout
+[ 2016-1-26 23:37:12]Process 958 exited with code 0
+Test Num : 98
+Inject fault at 0x7fffd0a92d72(physical:0x8000000320c96d72)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320c96000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320c96000
+word 0(0xcbc0000000000000 -> 0x0)
+2822 timeout
+[ 2016-1-26 23:37:15]Process 2822 exited with code 0
+Test Num : 99
+Inject fault at 0x7fff9e7524fe(physical:0x8000000320bae4fe)
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320bae000
+lseek success:n:1052800
+read fail:n:-1,errno:1
+pa_base:8000000320bae000
+word 0(0x376480c0a00000 -> 0x0)
+3180 timeout
+[ 2016-1-26 23:37:18]Process 3180 exited with code 0
