@@ -509,71 +509,156 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
 /*
 *
 */
-int proc_write_pid(struct file *file,const char __user *buffer,unsigned long count,void * data)
+int proc_write_pid( struct file *file,
+                    const char __user *buffer,
+                    unsigned long count,
+                    void * data)
 {
 	int iRet;
 	char sPid[MAX_LINE];
 
-	if(count <= 0) { return FAIL; }
-	memset(sPid, '\0', sizeof(sPid));
-	iRet = copy_from_user(sPid,buffer,count);
-	if(iRet) { return FAIL; }
-	iRet = sscanf(sPid,"%d",&pid);
-	if(iRet != 1) { return FAIL; }
+	if(count <= 0)
+    {
+        return FAIL;
+    }
+
+    memset(sPid, '\0', sizeof(sPid));
+    /////////////////////////////////////////////////////////////////////
+    //
+    //  copy_from_user函数的目的是从用户空间拷贝数据到内核空间，
+    //  失败返回没有被拷贝的字节数，成功返回0.
+    //  这么简单的一个函数却含盖了许多关于内核方面的知识,
+    //  比如内核关于异常出错的处理.
+    //  从用户空间拷贝数据到内核中时必须很小心,
+    //  假如用户空间的数据地址是个非法的地址,或是超出用户空间的范围，
+    //  或是那些地址还没有被映射到，都可能对内核产生很大的影响，
+    //  如oops，或被造成系统安全的影响.
+    //  所以copy_from_user函数的功能就不只是从用户空间拷贝数据那样简单了，
+    //  他还要做一些指针检查连同处理这些问题的方法.
+    //
+    //  函数原型在[arch/i386/lib/usercopy.c]中
+    //  unsigned long
+    //  copy_from_user( void *to,
+    //                  const void __user *from,
+    //                  unsigned long n)
+    //
+    /////////////////////////////////////////////////////////////////////
+    //
+    //  将用户空间中, 地址buffr指向的count个数据拷贝到内核空间地址sPid中
+    iRet = copy_from_user(sPid, buffer, count);
+	if(iRet != 0)
+    {
+        dbginfo("Error when copy_from_user...\n");
+        return FAIL;
+    }
+
+    iRet = sscanf(sPid, "%d", &pid);        //  将读出来的数据sPid赋值给模块的全局变量pid
+	if(iRet != 1)
+    {
+        return FAIL;
+    }
 	dbginfo("Rcv pid:%d\n",pid);
-  return count;
+
+    return count;
 }
 
 /*
 *
 */
-int proc_read_virtualAddr(char * page,char **start, off_t off, int count, int * eof,void * data)
+int proc_read_virtualAddr(  char * page,
+                            char **start,
+                            off_t off,
+                            int count,
+                            int * eof,
+                            void * data)
 {
 	int iLen;
+
 	iLen = sprintf(page, "%lx", ack_va);
-	return iLen;
+
+
+    return iLen;
 }
 
 /*
 *
 */
-int proc_write_virtualAddr(struct file *file,const char *buffer,unsigned long count,void * data)
+int proc_write_virtualAddr( struct file *file,
+                            const char *buffer,
+                            unsigned long count,
+                            void * data)
 {
 	int iRet;
 	char sVa[MAX_LINE];
 
-	if(count <= 0) { return FAIL; }
-	memset(sVa, '\0', sizeof(sVa));
-	iRet = copy_from_user(sVa, buffer, count);
-	if(iRet) { return FAIL; }
-	iRet = sscanf(sVa,"%lx",&va);
-	if(iRet != 1) { return FAIL; }
+	if(count <= 0)
+    {
+        return FAIL;
+    }
+
+    memset(sVa, '\0', sizeof(sVa));
+
+    iRet = copy_from_user(sVa, buffer, count);
+	if(iRet)
+    {
+        return FAIL;
+    }
+
+    iRet = sscanf(sVa,"%lx",&va);
+	if(iRet != 1)
+    {
+        return FAIL;
+    }
+
 	dbginfo("Rcv virtual addr:0x%lx\n",va);
-	return count;
+
+    return count;
 }
 
 /*
 *
 */
-int proc_write_ctl(struct file *file,const char *buffer,unsigned long count,void * data)
+int proc_write_ctl( struct file *file,
+                    const char *buffer,
+                    unsigned long count,
+                    void * data)
 {
 	int iRet;
 	char sCtl[MAX_LINE];
 
-	if(count <= 0) { return FAIL; }
-	memset(sCtl, '\0', sizeof(sCtl));
-	iRet = copy_from_user(sCtl, buffer, count);
-	if(iRet) { return FAIL; }
-	iRet = sscanf(sCtl,"%d",&ctl);
-	if(iRet != 1) { return FAIL; }
-	do_request();
-	return count;
+	if(count <= 0)
+    {
+        return FAIL;
+    }
+
+    memset(sCtl, '\0', sizeof(sCtl));
+
+    iRet = copy_from_user(sCtl, buffer, count);
+	if(iRet)
+    {
+        return FAIL;
+    }
+
+    iRet = sscanf(sCtl,"%d",&ctl);
+	if(iRet != 1)
+    {
+        return FAIL;
+    }
+
+    do_request();
+
+    return count;
 }
 
 /*
 *
 */
-int proc_read_signal(char * page,char **start, off_t off, int count, int * eof,void * data)
+int proc_read_signal(   char * page,
+                        char **start,
+                        off_t off,
+                        int count,
+                        int * eof,
+                        void * data)
 {
 	int iLen;
 	iLen = sprintf(page, "%d", ack_signal);
@@ -583,19 +668,35 @@ int proc_read_signal(char * page,char **start, off_t off, int count, int * eof,v
 /*
 *
 */
-int proc_write_signal(struct file *file,const char *buffer,unsigned long count,void * data)
+int proc_write_signal(  struct file *file,
+                        const char *buffer,
+                        unsigned long count,
+                        void * data)
 {
 	int iRet;
 	char sSignal[MAX_LINE];
 
-	if(count <= 0) { return FAIL; }
-	memset(sSignal, '\0', sizeof(sSignal));
+	if(count <= 0)
+    {
+        return FAIL;
+    }
+
+    memset(sSignal, '\0', sizeof(sSignal));
 	iRet = copy_from_user(sSignal, buffer, count);
-	if(iRet) { return FAIL; }
-	iRet = sscanf(sSignal,"%d",&signal);
-	if(iRet != 1) { return FAIL; }
-	dbginfo("Rcv signal:%d\n",signal);
-	return count;
+	if(iRet)
+    {
+        return FAIL;
+    }
+
+    iRet = sscanf(sSignal,"%d",&signal);
+	if(iRet != 1)
+    {
+        return FAIL;
+    }
+
+    dbginfo("Rcv signal:%d\n",signal);
+
+    return count;
 }
 
 /*
@@ -663,20 +764,37 @@ int proc_write_memVal(struct file *file,const char *buffer,unsigned long count,v
 	int iRet;
 	char sMemVal[MAX_LINE];
 
-	if(count <= 0) { return FAIL; }
-	memset(sMemVal, '\0', sizeof(sMemVal));
+	if(count <= 0)
+    {
+        return FAIL;
+    }
+
+    memset(sMemVal, '\0', sizeof(sMemVal));
 	iRet = copy_from_user(sMemVal, buffer, count);
-	if(iRet) { return FAIL; }
-	iRet = sscanf(sMemVal,"%lx",&memVal);
-	if(iRet != 1) { return FAIL; }
-	dbginfo("Rcv memVal:0x%lx\n",memVal);
+	if(iRet)
+    {
+        return FAIL;
+    }
+
+    iRet = sscanf(sMemVal,"%lx",&memVal);
+	if(iRet != 1)
+    {
+        return FAIL;
+    }
+
+    dbginfo("Rcv memVal:0x%lx\n",memVal);
 	return count;
 }
 
 /*
 *
 */
-int proc_read_memVal(char * page,char **start, off_t off, int count, int * eof,void * data)
+int proc_read_memVal(   char * page,
+                        char **start,
+                        off_t off,
+                        int count,
+                        int * eof,
+                        void * data)
 {
 	int iLen;
 	iLen = sprintf(page, "%lx", memVal);
@@ -773,46 +891,59 @@ static int __init initME(void)
 	if(proc_pa == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
-		remove_proc_entry("pid", dir);
+
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("virtualAddr", dir);
 		remove_proc_entry("ctl", dir);
 		remove_proc_entry("memoryEngine", NULL);
-		return FAIL;
+
+        return FAIL;
 	}
+
 	proc_pa->read_proc = proc_read_pa;                  //  can read
 	proc_pa->write_proc = proc_write_pa;                //  can write
 
+
+    ///  create a file named "kFuncName" in direntory
 	proc_kFuncName = create_proc_entry("kFuncName", PERMISSION, dir);
 	if(proc_kFuncName == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
-		remove_proc_entry("pid", dir);
+
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("virtualAddr", dir);
 		remove_proc_entry("ctl", dir);
 		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("memoryEngine", NULL);
-		return FAIL;
-	}
-	proc_kFuncName->write_proc = proc_write_kFuncName;
 
+        return FAIL;
+	}
+	proc_kFuncName->write_proc = proc_write_kFuncName;  // write only
+
+
+    ///  create a file named "taskInfo" in direntory
 	proc_taskINfo = create_proc_entry("taskInfo", PERMISSION, dir);
 	if(proc_taskINfo == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
-		remove_proc_entry("pid", dir);
+
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("virtualAddr", dir);
 		remove_proc_entry("ctl", dir);
 		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("kFuncName", dir);
 		remove_proc_entry("memoryEngine", NULL);
-		return FAIL;
-	}
-	proc_taskINfo->read_proc = proc_read_taskInfo;
 
+        return FAIL;
+	}
+	proc_taskINfo->read_proc = proc_read_taskInfo;      // read only
+
+    ///  create a file named "memVal" in direntory
 	proc_val = create_proc_entry("memVal", PERMISSION, dir);
 	if(proc_val == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
+
 		remove_proc_entry("pid", dir);
 		remove_proc_entry("virtualAddr", dir);
 		remove_proc_entry("ctl", dir);
@@ -820,10 +951,12 @@ static int __init initME(void)
 		remove_proc_entry("kFuncName", dir);
 		remove_proc_entry("taskInfo", dir);
 		remove_proc_entry("memoryEngine", NULL);
-		return FAIL;
+
+        return FAIL;
 	}
-	proc_val->write_proc = proc_write_memVal;
-	proc_val->read_proc = proc_read_memVal;
+	proc_val->write_proc = proc_write_memVal;           // can write
+	proc_val->read_proc = proc_read_memVal;             // can read
+
 
 	ret = register_jprobe(&jprobe1);
 	if (ret < 0)
@@ -836,6 +969,8 @@ static int __init initME(void)
 	dbginfo("Memory engine module init\n");
 	return OK;
 }
+
+
 static int jforce_sig_info(int sig,struct siginfo *info,struct task_struct *t)
 {
     printk("MemSysFI: kernel is sending signal %d to process pid: %d, comm: %s\n",sig,t->pid,t->comm);
