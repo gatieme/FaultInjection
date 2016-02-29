@@ -439,7 +439,7 @@ struct vm_area_struct * getVMA(struct mm_struct *pMM,unsigned long va)
 /*
 *
 */
-pte_t * getPte(struct mm_struct *pMM,unsigned long va)
+pte_t * getPte(struct mm_struct *pMM, unsigned long va)
 {
 	pgd_t *pgd = NULL;
 	pmd_t *pmd = NULL;
