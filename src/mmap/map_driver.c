@@ -23,6 +23,21 @@
 
 #define MAPLEN (4096*10)
 
+
+/*
+ * 将代码从linux2.4移植到linux2.6.*
+ *
+ * ==A==
+ *  2.4内核中，模块自身通过 MOD_INC_USE_COUNT, MOD_DEC_USE_COUNT宏来管理自己被使用的计数。
+ *  2.6内核提供了更健壮、灵活的模块计数管理接口 try_module_get(&module), module_put(&module)
+ *  取代2.4中的模块使用计数管理宏；模块的使用计数不必由自身管理，
+ *  而且在管理模块使用计数时考虑到 SMP与PREEMPT机制的影响。
+ *
+ * ==B==
+ * em_map_reserve是2.4的函数  而到2.6被SetPageReserved取代
+ * */
+
+
 /* device open */
 int mapdrv_open(struct inode *inode,struct file *file);
 
@@ -122,7 +137,6 @@ volatile void *vaddr_to_kaddr(volatile void *address)
 
 static int  __init mapdrv_init(void)
 {
-
     unsigned long virt_addr;
     if ((major = register_chrdev(0, "mapdrv", &mapdrv_fops)) < 0)
     {
@@ -205,14 +219,27 @@ static void __exit mapdrv_exit(void)
 /* device open method */
 int mapdrv_open(struct inode *inode, struct file *file)
 {
-    MOD_INC_USE_COUNT;
+/*
+    the code in linux-2.4
+        MOD_INC_USE_COUNT;
+    use the next instead...
+        try_module_get(THIS_MODULE);
+*/
+    try_module_get(THIS_MODULE);
     return(0);
 }
 
 /* device close method */
 int mapdrv_release(struct inode *inode, struct file *file)
 {
-    MOD_DEC_USE_COUNT;
+    /*
+    the code in linux-2.4
+        MOD_DEC_USE_COUNT;
+    use the next instead
+        module_put(THIS_MODULE);
+    */
+    module_put(THIS_MODULE);
+
     return(0);
 }
 
@@ -256,13 +283,28 @@ void map_vopen(struct vm_area_struct *vma)
 {
   /* needed to prevent the unloading of the module while
   somebody still has memory mapped */
-     MOD_INC_USE_COUNT;
+//     MOD_INC_USE_COUNT;
+
+/*
+    the code in linux-2.4
+        MOD_INC_USE_COUNT;
+    use the next instead...
+        try_module_get(THIS_MODULE);
+*/
+    try_module_get(THIS_MODULE);
 }
 
 /* close handler form vm area */
 void map_vclose(struct vm_area_struct *vma)
 {
-     MOD_DEC_USE_COUNT;
+
+    /*
+    the code in linux-2.4
+        MOD_DEC_USE_COUNT;
+    use the next instead
+        module_put(THIS_MODULE);
+    */
+    module_put(THIS_MODULE);
 }
 
 /* page fault handler */
@@ -282,7 +324,7 @@ struct page *map_nopage(struct vm_area_struct *vma, unsigned long address, int w
     }
 
     /* increment the usage count of the page */
-    atomic_inc(&(virt_to_page(virt_addr)->count));
+    atomic_inc(&(virt_to_page(virt_addr)->_count));
     printk("map_drv: page fault for offset 0x%lx (kseg x%lx)\n",offset, virt_addr);
 
     return(virt_to_page(virt_addr));
