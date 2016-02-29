@@ -15,13 +15,13 @@ int main(void)
       exit(-1);
     }
   (char *)vadr = (char*)mmap(0, LEN, PROT_READ, MAP_SHARED, fd, 0);
-  
+
   if (vadr == MAP_FAILED)
   {
           perror("mmap");
           exit(-1);
   }
-  
+
   printf("%s\n",vadr);
   close(fd);
   return(0);
