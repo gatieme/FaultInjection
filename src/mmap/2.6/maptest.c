@@ -4,6 +4,9 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #define LEN (10*4096)
+
+
+
 int main(void)
 {
   int fd;

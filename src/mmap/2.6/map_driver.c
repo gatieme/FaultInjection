@@ -146,12 +146,12 @@ static int  __init mapdrv_init(void)
     }
 
     /* get a memory area that is only virtual contigous. */
-    vmalloc_area=vmalloc(MAPLEN/*+2*PAGE_SIZE*/);
+    vmalloc_area = vmalloc(MAPLEN/* + 2 * PAGE_SIZE*/);
 
 
-    for (virt_addr=(unsigned long)vmalloc_area;
-         virt_addr<(unsigned long)(&(vmalloc_area[MAPLEN/sizeof(int)]));
-         virt_addr+=PAGE_SIZE)
+    for (virt_addr = (unsigned long)vmalloc_area;
+         virt_addr < (unsigned long)(&(vmalloc_area[MAPLEN / sizeof(int)]));
+         virt_addr += PAGE_SIZE)
     {
         /*
             error: implicit declaration of function ‘mem_map_reserve’
@@ -175,7 +175,7 @@ static int  __init mapdrv_init(void)
     }
 
     /* set a hello message to kernel space for read by user */
-    strcpy((char*)vmalloc_area,"hello world from kernel space !");
+    strcpy((char*)vmalloc_area, "hello world from kernel space !");
 
 
     printk("vmalloc_area at 0x%p (phys 0x%lx)\n",
@@ -189,10 +189,12 @@ static int  __init mapdrv_init(void)
 
 static void __exit mapdrv_exit(void)
 {
-    unsigned long virt_addr;
+    unsigned long   virt_addr;
+
     /* unreserve all pages */
     for (virt_addr = (unsigned long)vmalloc_area;
-         virt_addr<(unsigned long)(&(vmalloc_area[MAPLEN/sizeof(int)]));virt_addr+=PAGE_SIZE)
+         virt_addr < (unsigned long)(&(vmalloc_area[MAPLEN / sizeof(int)]));
+         virt_addr += PAGE_SIZE)
     {
         /*
          *  error: implicit declaration of function ‘mem_map_unreserve’`.
@@ -207,13 +209,18 @@ static void __exit mapdrv_exit(void)
             ClearPageReserved(virt_to_page(vaddr_to_kaddr((void *)virt_addr)));
         */
         ClearPageReserved(virt_to_page(vaddr_to_kaddr((void *)virt_addr)));
-  }
-  /* and free the two areas */
-  if (vmalloc_area)
-    vfree(vmalloc_area);
- /* unregister the device */
-  unregister_chrdev(major, "mapdrv");
-  return;
+    }
+    /* and free the two areas */
+    if (vmalloc_area)
+    {
+        vfree(vmalloc_area);
+    }
+
+    /* unregister the device */
+    unregister_chrdev(major, "mapdrv");
+
+
+    return;
 
 }
 /* device open method */
