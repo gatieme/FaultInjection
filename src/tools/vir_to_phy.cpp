@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 	system(buff);
 
     bzero(buff, sizeof(buff));
-	sprintf(buff, "echo %d > /proc/memoryEngine/ctl",REQUEST_V2P);
+	sprintf(buff, "echo %d > /proc/memoryEngine/ctl", REQUEST_V2P);
 	system(buff);
 
 	//wait for ack signal
@@ -122,7 +122,8 @@ int main(int argc, char *argv[])
 		return FAIL;
 	}
 
-	do {
+	do
+    {
 		bzero(buff, sizeof(buff));
 		ret = read(procFile, buff, MAX_LINE);
 		if(ret == -1)
