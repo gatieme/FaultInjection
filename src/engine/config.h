@@ -22,6 +22,23 @@
 
 #define KERNEL_STACK
 
+
+
+
+
+
+
+//1GB = 2^10MB = 2^20KB = 2^30B
+// 128GB
+#define MEM_SIZE        30
+#define MEM_SIZE        ~(1 << MEM_SIZE)
+
+
+#define ARM_64
+//#define X86_64
+
+
+
 //#define  RW_VA_BY_KERNEL  //  以内核驱动的方式直接读写进程虚拟地址
 //#define  RW_PA_BY_KERNEL  //  以内核驱动的方式直接读写物理地址
 

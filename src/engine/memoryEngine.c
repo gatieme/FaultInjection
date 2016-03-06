@@ -545,8 +545,10 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
          *  2G以内的内存从CPU视角看, 在 0x8000000-0xffffffff物理地址范围
          *  2G以上的内存，在0x200000000物理地址之上
          */
-        dbginfo("origin physical address : 0x%lx\n", pa);
+#ifdef  ARM_64
+        dbginfo("[==arm64==]origin physical address : 0x%lx\n", pa);
         pa &= 0x00000003ffffffff;
+#endif
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
     }
     else
