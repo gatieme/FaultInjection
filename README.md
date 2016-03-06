@@ -23,9 +23,9 @@ MemoryFaultInjection
 
 | 目录 | 描述 | Creator | Contributiors |
 |:----:|:----:|:-------:|:-------------:|
-| injector | qianjun(钱军老师) | qianjun, fenggang, gatieme |
-| engine   | gatieme           | gatieme |
-| tools    | gatieme           | fenggang, gatieme |
+| injector | 故障注入工具的上层应用 | qianjun(钱军老师) | qianjun, fenggang, gatieme |
+| engine   | 故障注入工具的驱动层   | gatieme           | gatieme |
+| tools    | 故障注入的驱动接口层, 针对驱动实现的上层应用工具包 | gatieme           | fenggang, gatieme |
 
 
 ##构建过程
