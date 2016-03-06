@@ -2,11 +2,15 @@ MemoryFaultInjection
 =======
 
 
+
+
 #配置安装
 -------
 
 ##目录结构
 -------
+
+```cpp
 |-- LICENSE
 |-- README.md
 |-- src                       ====   源代码目录
@@ -15,9 +19,19 @@ MemoryFaultInjection
 |   |-- injector    应用程序 ====   故障注入工具的源码
 |   `-- tools       工具包   ====   实现的外部接口命令
 `-- workspace                 ====   测试目录
+```
+
+| 目录 | 描述 | Creator | Contributiors |
+|:----:|:----:|:-------:|:-------------:|
+| injector | qianjun(钱军老师) | qianjun, fenggang, gatieme |
+| engine   | gatieme           | gatieme |
+| tools    | gatieme           | fenggang, gatieme |
+
 
 ##构建过程
 -------
+
+
 在src目录下进行make后，会依次进入
 进入engine, injector, tools目录完成驱动, 应用程序和工具包的构建
 

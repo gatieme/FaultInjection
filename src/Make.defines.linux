@@ -10,7 +10,7 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-COMMIT="修复了一些警告问题..."
+COMMIT="增加了贡献墙..."
 #  github config
 GITHUB_COMMIT=$(COMMIT)
 
