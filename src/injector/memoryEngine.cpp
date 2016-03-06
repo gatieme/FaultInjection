@@ -235,9 +235,15 @@ int read_phy_mem(unsigned long pa, long *data)
     mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
     if(mapStart == MAP_FAILED)
 	{
+#ifdef DEBUG
 		dbgprint("Failed to mmap /dev/mem [0x%lx], errno : [%d, %s]\n", pa_base, errno, strerror(errno));
 		perror("Failed to mmap /dev/mem ");
-		close(memfd);
+#else
+        //srand(time(NULL));
+        //long data = rand( ) % 1000000000;
+        //printf("write data 0x%lx at 0x%lx success\n", *(unsigned long *)data, pa);
+#endif
+        close(memfd);
 		return FAIL;
 	}
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)

@@ -27,7 +27,7 @@ public class MemoryFI
     public String Inject(String location, String mode, String type, int time, int pid, String pname)
     {
         //  拼接运行字符串
-        String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type + " -time " + time  + " -timeout 3";
+        String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type + " --time " + time  + " --timeout 3";
         if(pid != -1)
         {
             cmd += " -p " + pid;

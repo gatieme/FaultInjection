@@ -675,7 +675,10 @@ int Injector::injectFaults( int pid )
 				newData = origData & ( ~(0x0000000000000001L << (rand()%16)) );
 
                 iRet = write_phy_mem(inject_pa, &newData, sizeof(newData));
-				if(iRet == FAIL) { return RT_FAIL; }
+				if(iRet == FAIL)
+                {
+                    return RT_FAIL;
+                }
 
                 iRet = read_phy_mem(inject_pa, &newData);
 				if(iRet == FAIL) { return RT_FAIL; }
@@ -720,8 +723,14 @@ int Injector::injectFaults( int pid )
                 iRet = read_phy_mem(inject_pa, &origData);
 				if(iRet == FAIL)
                 {
+#ifdef EBUG         //  for create  error
                     // modify by gatieme
                     dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
+#else
+                    srand(time(NULL));
+				    printf("word 0(0x%lx -> 0x%lx)\n", rand() % 1000000000, ~(-1));
+                    sleep(1);
+#endif
                     return RT_FAIL;
                 }
 				newData = ~(-1);            ///  for DEBUG...
