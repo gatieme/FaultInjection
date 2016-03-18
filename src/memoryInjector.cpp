@@ -30,20 +30,32 @@ Injector::~Injector()
 	faultTable.clear();
 }
 
+// init the Injector object use the system arg...
 Injector * Injector::initInjector( int argc, char **argv )
 {
-	Injector * pInjector = new Injector();
-	if( pInjector == NULL ) { return NULL; }
+	Injector * pInjector = new Injector( );
+	if ( pInjector == NULL)
+	{
+		return NULL;
+	}
+#ifdef DEBUG
+    printf("argc = %d", argc);
+    for(int i = 0; i < argc; i++)
+    {
+        printf("argv[%d] = %d", i, argv[i]);
+    }
+#endif
 
-	/// get arguments
+    /// get arguments
 	while(argc > 0)
 	{
 		argc--;
 		argv++;
 
-		if(strcmp(argv[0],"-c") == 0)
+		if(strcmp(argv[0], "-c") == 0)          //  -c to read the config file...
 		{
 			pInjector->faultTablePath = argv[1];
+
 			argv++;
 		}
 		else if(strcmp(argv[0],"-e") == 0)
@@ -54,7 +66,8 @@ Injector * Injector::initInjector( int argc, char **argv )
 		else if(strcmp(argv[0],"-p") == 0)
 		{
 			pInjector->targetPid = atoi(argv[1]);
-			printf("The pid of the process you want to inject is %s==%d", argv[1], pInjector->targetPid);
+
+            printf("The pid of the process you want to inject is %s==%d", argv[1], pInjector->targetPid);
 			break;
 		}
 		else
@@ -76,12 +89,21 @@ Injector * Injector::initInjector( int argc, char **argv )
 
 int Injector::initFaultTable( void )
 {
-	string line;
-	if( faultTablePath.empty() )
+    //  eg text random word_0 1 3
+    //  [0] text | data | stack
+    //  [1] random
+    //  [2] word_0 |
+    //  [3] 1
+    //  [4] 3
+
+    string line;
+
+    if( faultTablePath.empty() )
 	{
 		cerr << "Error:no existing fault table" << endl;
 		return RT_FAIL;
 	}
+
 	ifstream infile;
 	infile.open( faultTablePath.c_str(), ios::in );
 	if( !infile )

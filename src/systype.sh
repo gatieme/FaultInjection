@@ -1,33 +1,28 @@
-#########################################################################
-# File Name: systype.sh
-# Author: GatieMe
-# mail: ftcl@163.com
-# Created Time: Tue 26 Jan 2016 11:17:24 PM CST
-#########################################################################
-#!/bin/bash
+# (leading space required for Xenix /bin/sh)
 
+#
+# Determine the type of *ix operating system that we're
+# running on, and echo an appropriate value.
+# This script is intended to be used in Makefiles.
+# (This is a kludge.  Gotta be a better way.)
+#
 
 case `uname -s` in
 "FreeBSD")
-    PLATFORM="freebsd"
-    ;;
-
+	PLATFORM="freebsd"
+	;;
 "Linux")
-    PLATFORM="linux"
-    ;;
-
+	PLATFORM="linux"
+	;;
 "Darwin")
-    PLATFORM="macos"
-    ;;
-                        
+	PLATFORM="macos"
+	;;
 "SunOS")
-    PLATFORM="solaris"
-    ;;
-
+	PLATFORM="solaris"
+	;;
 *)
-    echo "Unknown platform" >&2
-    exit 1
+	echo "Unknown platform" >&2
+	exit 1
 esac
-
 echo $PLATFORM
 exit 0

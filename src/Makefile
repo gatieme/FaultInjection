@@ -4,9 +4,14 @@
 # Create: 2010-3-13 9:25:04
 # Last modified: 2010-6-16 15:49:14
 #
+ROOT=.
+PLATFORM=$(shell $(ROOT)/systype.sh)
+include $(ROOT)/Make.defines.$(PLATFORM)
+
+
 EXE = memInjector
 GCC	= g++
-CFLAG = -c -Wall  -I./
+CFLAG = -c -Wall $(DEFFLAGS) -I./ 
 LDFLAG = -g
 BIN = ../workspace
 ENGINE = ./memoryEngine
