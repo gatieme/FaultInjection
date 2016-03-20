@@ -38,8 +38,6 @@ public:
 	InjectorTool();
 	~InjectorTool();
 
-	string faultTablePath;
-	vector <memFault> faultTable;
 
 	int initFaultTable( void );
 	int startInjection( void );
@@ -47,9 +45,14 @@ public:
 	int procMonitor( int pid, int &data );
 
 protected :
-    Injector    *m_injector;             // the memory fault injector object
-    int         m_argc;                 // the count of the arguement
-    char        **m_argv;               // the arguement list
+
+    Injector            *m_injector;             // the memory fault injector object
+    int                 m_argc;                 // the count of the arguement
+    char                **m_argv;               // the arguement list
+
+    MemoryFault         m_memoryFault;
+    string              m_faultTablePath;
+	vector <memFault>   faultTable;
 };
 
 #endif	/* MEMORY_INJECTOR_H_ */
