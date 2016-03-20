@@ -13,19 +13,22 @@ EXE = memInjector
 GCC	= g++
 CFLAG = -c -Wall $(DEFFLAGS) -I./ 
 LDFLAG = -g
-BIN = $(ROOT)/workspace
-ENGINE = $(ROOT)/memoryEngine
+BIN = $(ROOT)/../workspace
+ENGINE = $(ROOT)/engine
 TOOLS  = $(ROOT)/tools
 
 all:memoryInjector.o memoryEngine.o memInjector.o ptrace.o
 	$(GCC) $(LDFLAG) -o $(EXE) $^
 #	make -C $(ENGINE)
 #	make -C $(TOOLS)
+
 .cpp.o:
 	$(GCC) $(CFLAG) $(LDFLAG) $<
+
 install:
 	cp memInjector $(BIN)/memInjector
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+
 clean:
 #	make -C $(ENGINE) clean
 #	make -C $(TOOLS) clean

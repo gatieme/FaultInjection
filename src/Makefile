@@ -2,8 +2,12 @@ ROOT=.
 PLATFORM=$(shell $(ROOT)/systype.sh)
 include $(ROOT)/Make.defines.$(PLATFORM)
 
-DIRS=memoryInjector memoryEngine tools
 
+
+DIRS=injector engine tools
+
+
+BIN=$(ROOT)/workspace
 
 all:
 	for i in $(DIRS); do \
@@ -14,3 +18,6 @@ clean:
 	for i in $(DIRS); do \
 		(cd $$i && echo "cleaning $$i" && $(MAKE) clean) || exit 1; \
 	done
+
+install :
+	cp 

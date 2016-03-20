@@ -1,1 +1,0 @@
-cmd_/home/chengjian/Work/GitHub/MemoryFaultInjection/src/memoryEngine/memoryEngine.ko := ld -m elf_x86_64 -r -o /home/chengjian/Work/GitHub/MemoryFaultInjection/src/memoryEngine/memoryEngine.ko /home/chengjian/Work/GitHub/MemoryFaultInjection/src/memoryEngine/memoryEngine.o /home/chengjian/Work/GitHub/MemoryFaultInjection/src/memoryEngine/memoryEngine.mod.o
