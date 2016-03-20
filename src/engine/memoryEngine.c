@@ -82,14 +82,17 @@ void do_request(void)
 	if(ctl == REQUEST_TASK_INFO)
 	{
 		dbginfo("Rcv request:Get task info\n");
-		memset(taskInfo,'\0',sizeof(taskInfo));
-		if(pid <= 0)
+
+        memset(taskInfo,'\0',sizeof(taskInfo));
+
+        if(pid <= 0)
 		{
 			ack_signal = ACK_TASK_INFO;
 			return;
 		}
 		task = findTaskByPid(pid);
-		if( task != NULL )
+
+        if( task != NULL )
 		{
 			getTaskInfo(task, taskInfo, sizeof(taskInfo));
 		}
@@ -353,11 +356,16 @@ static int handler_pre_kFunc(struct kprobe *p, struct pt_regs *regs)
 struct task_struct * findTaskByPid(pid_t pid)
 {
 	struct task_struct *task = NULL;
-	for_each_process(task)
+
+    //  Traversing the process in the system to find the PID
+    //  add by gatieme @2016-03-20
+    for_each_process(task)
 	{
 		if(task->pid == pid)
+        {
 			return task;
-	}
+	    }
+    }
 	return NULL;
 }
 
