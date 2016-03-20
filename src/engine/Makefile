@@ -12,10 +12,13 @@
 obj-m := memoryEngine.o
 all:
 	make -C /lib/modules/`uname -r`/build M=`pwd` modules
+
 install:
 	insmod memoryEngine.ko
+
 remove:
 	rmmod memoryEngine
+
 clean:
 	make -C /lib/modules/`uname -r`/build M=`pwd` clean
 	rm -f modules.order Module.symvers Module.markers

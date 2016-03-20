@@ -26,7 +26,7 @@ all:memoryInjector.o memoryEngine.o memInjector.o ptrace.o
 	$(GCC) $(CFLAG) $(LDFLAG) $<
 
 install:
-	cp memInjector $(BIN)/memInjector
+	cp ./memInjector $(BIN)/memInjector
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
 
 clean:
