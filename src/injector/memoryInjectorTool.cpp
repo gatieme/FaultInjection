@@ -30,87 +30,43 @@ InjectorTool::ReadFaultTable( int argc, char **argv )
 
     memFault faultTmp = {text_area, -1, word_0, 0, 0};  //  默认的信息
 
-    if( strcmp(argc[0], "-c") == 0 )
+    if( strcmp(argc[0], "-l") == 0 )
     {
         strtmp = argv[1];
 
-        if( strTmp == "text" || strTmp == "TEXT" )
-        {
-            faultTmp.location = text_area;
-	    }
-	    else if( strTmp == "data" || strTmp == "DATA" )
-	    {
-	        faultTmp.location = data_area;
-	    }
-		else if( strTmp == "stack" || strTmp == "STACK" )
+		if( faultTmp.SetLocation(argv[1]) == true )
 		{
 		    faultTmp.location = stack_area;
 		}
 		else
 		{
-		    cerr << "Error:undefined fault location" << endl;
+		    cerr << "Error:undefined fault location..." << endl;
 			return RT_FAIL;
 		}
     }
     else if ( strcmp(argv[0], "-m") == 0 )
     {
-
-		/// memory addr or random
-		strTmp.clear();
-		stream >> strTmp;
-		if( strTmp.empty() )
+		if( faultTmp.SetMode(argv[1]) == true )
 		{
-			cerr << "Error:fault table format errno" << endl;
-			return RT_FAIL;
-		}
-
-		if( strTmp == "random" || strTmp == "RANDOM" )
-		{
-			faultTmp.addr = -1;
+		    cout << "read the Mode : " <<argv[1] << endl;
 		}
 		else
 		{
-			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.addr );
-
-			if( iRet != 1 )
-            {
-                return RT_FAIL;
-            }
-		}
-
-		/// fault type: one_bit_flip, etc
-		strTmp.clear();
-		stream >> strTmp;
-		if( strTmp.empty() )
-		{
-			cerr << "Error:fault table format errno" << endl;
-
-            return RT_FAIL;
-		}
-		else if( strTmp == "one_bit_0" )
-		{
-			faultTmp.faultType = one_bit_0;
-		}
-		else if( strTmp == "one_bit_1" )
-		{
-			faultTmp.faultType = one_bit_1;
-		}
-		else if( strTmp == "one_bit_flip" )
-		{
-			faultTmp.faultType = one_bit_flip;
-		}
-
-		else if( strTmp == "word_0" )
-		{
-			faultTmp.faultType = word_0;
-		}
-		else if( strTmp == "page_0" )
-		{
-			faultTmp.faultType = page_0;
+		    cerr << "Error:undefined fault mode..." << endl;
+			return RT_FAIL;
 		}
     }
-	/// memory addr or random
-		strTmp.clear();
+    else if ( strcmp(argv[0], "-t") == 0 )
+    {
+		if( faultTmp.SetFaultType(argv[1]) == true )
+		{
+		    faultTmp.location = stack_area;
+		}
+		else
+		{
+		    cerr << "Error:undefined fault mode..." << endl;
+        }
+    }
 }
 
 
@@ -147,7 +103,6 @@ Injector * Injector::CreateInjector( int argc, char **argv )
             //  -l --location   stack|data|text
             //  -m --mode       random | address
             //  -t --type
-            //  -t --timeout
 			pInjector->faultTablePath = argv[1];
 
 			argv++;
@@ -164,6 +119,19 @@ Injector * Injector::CreateInjector( int argc, char **argv )
             printf("The pid of the process you want to inject is %s==%d", argv[1], pInjector->targetPid);
 			break;
 		}
+        else if(strcmp(argv[0], "-l") == 0)
+        {
+
+        }
+        else if(strcmp(argv[0], "-m") == 0)
+        {
+
+        }
+        else if(strcmp(argv[0], "-t") == 0)
+        {
+
+        }
+
 		else
 		{
 			printf("Unknown option: %s\n", argv[0]);

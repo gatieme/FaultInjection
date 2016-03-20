@@ -17,7 +17,7 @@ BIN = $(ROOT)/../workspace
 ENGINE = $(ROOT)/engine
 TOOLS  = $(ROOT)/tools
 
-all:main.o memoryInjector.o memoryEngine.o memInjector.o ptrace.o
+all:main.o memoryInjector.o memoryEngine.o  ptrace.o
 	$(GCC) $(LDFLAG) -o $(EXE) $^
 #	make -C $(ENGINE)
 #	make -C $(TOOLS)
