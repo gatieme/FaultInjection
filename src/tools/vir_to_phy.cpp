@@ -55,8 +55,8 @@ typedef struct procMMInfo
 #define REQUEST_KFUNC_VA		4		/// get kernel function's addr(kernel virtual address)
 #define REQUEST_READ_KFUNC	5		/// 请求读取内核函数起始地址内容
 #define REQUEST_WRITE_KFUNC	6		/// 请求改写内核函数起始地址内容
-/
-/#define REQUEST_WRITE				10 	/// 请求改写指定物理地址内容，改为用户态实现此功能
+
+//#define REQUEST_WRITE				10 	/// 请求改写指定物理地址内容，改为用户态实现此功能
 ///#define REQUEST_MEM					11	/// 请求获取全部物理内存信息
 ///#define REQUEST_ADDR_STOP		12	///
 

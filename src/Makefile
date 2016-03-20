@@ -1,33 +1,16 @@
-# Makefile for the memory fault injection engine.
-#
-# Author: HIT CS HDMC team.
-# Create: 2010-3-13 9:25:04
-# Last modified: 2010-6-16 15:49:14
-#
 ROOT=.
 PLATFORM=$(shell $(ROOT)/systype.sh)
 include $(ROOT)/Make.defines.$(PLATFORM)
 
+DIRS=memoryInjector memoryEngine tools
 
-EXE = memInjector
-GCC	= g++
-CFLAG = -c -Wall $(DEFFLAGS) -I./ 
-LDFLAG = -g
-BIN = ../workspace
-ENGINE = ./memoryEngine
-TOOLS  = ./tools
 
-all:memoryInjector.o memoryEngine.o memInjector.o ptrace.o
-	$(GCC) $(LDFLAG) -o $(EXE) $^
-	make -C $(ENGINE)
-#	make -C $(TOOLS)
-.cpp.o:
-	$(GCC) $(CFLAG) $(LDFLAG) $<
-install:
-	cp memInjector $(BIN)/memInjector
-	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+all:
+	for i in $(DIRS); do \
+		(cd $$i && echo "making $$i" && $(MAKE) ) || exit 1; \
+	done
+
 clean:
-	make -C $(ENGINE) clean
-#	make -C $(TOOLS) clean
-	rm *.o
-	rm $(EXE)
+	for i in $(DIRS); do \
+		(cd $$i && echo "cleaning $$i" && $(MAKE) clean) || exit 1; \
+	done

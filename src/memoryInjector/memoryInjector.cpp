@@ -101,7 +101,8 @@ int Injector::initFaultTable( void )
     if( faultTablePath.empty() )
 	{
 		cerr << "Error:no existing fault table" << endl;
-		return RT_FAIL;
+
+        return RT_FAIL;
 	}
 
 	ifstream infile;
@@ -109,13 +110,26 @@ int Injector::initFaultTable( void )
 	if( !infile )
 	{
 		cerr << "Error:unable to open file:" << faultTablePath << endl;
-		return RT_FAIL;
+
+        return RT_FAIL;
 	}
-	string strLine;
-	string strTmp;
+#ifdef DEBUG
+    else
+    {
+        std::cout <<"open the config file \"" <<faultTablePath <<"\" success..." <<std::endl;
+    }
+#endif // DEBUG
+
+    std::string strLine;
+    std::string strTmp;
 	memFault  faultTmp;
-	while( getline(infile,strLine,'\n') )
+
+	while( getline(infile, strLine, '\n') )
 	{
+#ifdef DEBUG
+        std::cout <<"read \"" <<strLine << <<"\"" <<std::endl;
+#endif // DEBUG
+
 		//bind istream to the strLine
 		istringstream stream(strLine);
 
@@ -145,7 +159,7 @@ int Injector::initFaultTable( void )
 			return RT_FAIL;
 		}
 
-		/// memory addr: or random
+		/// memory addr or random
 		strTmp.clear();
 		stream >> strTmp;
 		if( strTmp.empty() )
@@ -153,6 +167,7 @@ int Injector::initFaultTable( void )
 			cerr << "Error:fault table format errno" << endl;
 			return RT_FAIL;
 		}
+
 		if( strTmp == "random" || strTmp == "RANDOM" )
 		{
 			faultTmp.addr = -1;
@@ -160,7 +175,11 @@ int Injector::initFaultTable( void )
 		else
 		{
 			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.addr );
-			if( iRet != 1 ) { return RT_FAIL; }
+
+			if( iRet != 1 )
+            {
+                return RT_FAIL;
+            }
 		}
 
 		/// fault type: one_bit_flip, etc
@@ -169,7 +188,8 @@ int Injector::initFaultTable( void )
 		if( strTmp.empty() )
 		{
 			cerr << "Error:fault table format errno" << endl;
-			return RT_FAIL;
+
+            return RT_FAIL;
 		}
 		else if( strTmp == "one_bit_0" )
 		{
@@ -251,7 +271,8 @@ int Injector::initFaultTable( void )
 		/// how long fault exits, not support yet
 		strTmp.clear();
 		stream >> strTmp;
-		if( strTmp.empty() )
+
+        if( strTmp.empty() )
 		{
 			cerr << "Error:fault table format errno" << endl;
 			return RT_FAIL;
