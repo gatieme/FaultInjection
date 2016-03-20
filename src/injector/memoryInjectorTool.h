@@ -39,20 +39,33 @@ public:
 	~InjectorTool();
 
 
-	int initFaultTable( void );
-	int startInjection( void );
-	int injectFaults( int pid );
-	int procMonitor( int pid, int &data );
 
 protected :
 
+    //
+    //  故障注入工具
+    //
     Injector            *m_injector;             // the memory fault injector object
-    int                 m_argc;                 // the count of the arguement
-    char                **m_argv;               // the arguement list
 
-    MemoryFault         m_memoryFault;
+    int                 m_targetPid;      //  target is an existing process.
+    char                **m_exeArguments;
+
+
+    //
+    //  接收到的控制台参数
+    //
+    int                 m_argc;                  // the count of the arguement
+    char                **m_argv;                // the arguement list
+
+    //
+    //  使用-c指定故障注入表还是使用-l -m -t指定故障注入类型
+    //
+    bool                m_hasFaultTable;         // 如果使用了-c参数就使用注入表,此值为true
+    //  when m_hasFaultTable == false
+    MemoryFault         m_memoryFault;           //
+    //  when m_hasFaultTable == true
     string              m_faultTablePath;
-	vector <memFault>   faultTable;
+	vector <memFault>   m_faultTable;
 };
 
 #endif	/* MEMORY_INJECTOR_H_ */
