@@ -44,7 +44,7 @@ using namespace std;
 #define STACK_SIZE 0x1000 //define by fenggang
 
 //fault location
-typedef enum locations { 
+typedef enum locations {
 	text_area,
 	data_area,
 	stack_area, //add by fenggang, 2011-5-10
@@ -55,23 +55,23 @@ typedef enum types {
 	one_bit_0,
 	one_bit_1,
 	one_bit_flip,
-	
+
 	two_bit_0,
 	two_bit_1,
 	two_bit_flip,
-	
+
 	low_8_0,
 	low_8_1,
 	low_8_error,
-	
+
 	word_0,
 	word_1,
 	word_error,
-	
+
 	page_0,
 	page_1,
 	page_error
-	
+
 } type;
 
 
@@ -90,14 +90,15 @@ class Injector
 public:
 	Injector();
 	~Injector();
-	
-public:
+
 	string faultTablePath;
 	vector <memFault> faultTable;
-	int targetPid;		//target is an existing process.
+
+    int targetPid;		//  target is an existing process.
 	char **exeArguments;
-public:
-	static Injector * initInjector( int argc, char **argv );
+
+
+    static Injector * initInjector( int argc, char **argv );
 	int initFaultTable( void );
 	int startInjection( void );
 	int injectFaults( int pid );

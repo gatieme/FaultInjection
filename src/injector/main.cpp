@@ -8,6 +8,7 @@ int main(int argc,char **argv)
 		exit(RT_EXIT);
 	}
 	Injector * pInjector = Injector::initInjector(argc, argv);
+
 	if(pInjector == NULL)
 	{
 		cout << "initInjector return null" << endl;

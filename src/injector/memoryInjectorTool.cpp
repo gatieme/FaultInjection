@@ -7,37 +7,118 @@
 */
 #include <sys/wait.h>
 #include <signal.h>
-#include "memoryInjector.h"
 #include "memoryEngine.h"
+#include "memoryInjector.h"
+#include "memoryInjectorTool.h"
 
 
-static int childProcess;	//for cleanup
-static long inject_pa;
-static long newData;
-static long origData;
-
-static int signalPid;
-
-Injector::Injector()
+InjectorTool::InjectorTool()
 {
 	faultTablePath.clear();
 	targetPid = -1;
 	exeArguments = NULL;
 }
 
-Injector::~Injector()
+InjectorTool::~InjectorTool()
 {
 	faultTable.clear();
 }
 
+InjectorTool::ReadFaultTable( int argc, char **argv )
+{
+    std::string strTmp;
 
+    memFault faultTmp = {text_area, -1, word_0, 0, 0};  //  默认的信息
+
+    if( strcmp(argc[0], "-c") == 0 )
+    {
+        strtmp = argv[1];
+
+        if( strTmp == "text" || strTmp == "TEXT" )
+        {
+            faultTmp.location = text_area;
+	    }
+	    else if( strTmp == "data" || strTmp == "DATA" )
+	    {
+	        faultTmp.location = data_area;
+	    }
+		else if( strTmp == "stack" || strTmp == "STACK" )
+		{
+		    faultTmp.location = stack_area;
+		}
+		else
+		{
+		    cerr << "Error:undefined fault location" << endl;
+			return RT_FAIL;
+		}
+    }
+    else if ( strcmp(argv[0], "-m") == 0 )
+    {
+
+		/// memory addr or random
+		strTmp.clear();
+		stream >> strTmp;
+		if( strTmp.empty() )
+		{
+			cerr << "Error:fault table format errno" << endl;
+			return RT_FAIL;
+		}
+
+		if( strTmp == "random" || strTmp == "RANDOM" )
+		{
+			faultTmp.addr = -1;
+		}
+		else
+		{
+			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.addr );
+
+			if( iRet != 1 )
+            {
+                return RT_FAIL;
+            }
+		}
+
+		/// fault type: one_bit_flip, etc
+		strTmp.clear();
+		stream >> strTmp;
+		if( strTmp.empty() )
+		{
+			cerr << "Error:fault table format errno" << endl;
+
+            return RT_FAIL;
+		}
+		else if( strTmp == "one_bit_0" )
+		{
+			faultTmp.faultType = one_bit_0;
+		}
+		else if( strTmp == "one_bit_1" )
+		{
+			faultTmp.faultType = one_bit_1;
+		}
+		else if( strTmp == "one_bit_flip" )
+		{
+			faultTmp.faultType = one_bit_flip;
+		}
+
+		else if( strTmp == "word_0" )
+		{
+			faultTmp.faultType = word_0;
+		}
+		else if( strTmp == "page_0" )
+		{
+			faultTmp.faultType = page_0;
+		}
+    }
+	/// memory addr or random
+		strTmp.clear();
+}
 
 
 
 // create the Injector object use the system arg...
-Injector * Injector::initInjector( int argc, char **argv )
+Injector * Injector::CreateInjector( int argc, char **argv )
 {
-	Injector * pInjector = new Injector( );
+    Injector * pInjector = new Injector( );
 	if ( pInjector == NULL)
 	{
 		return NULL;
@@ -99,7 +180,6 @@ Injector * Injector::initInjector( int argc, char **argv )
 		delete( pInjector );
 		return NULL;
 	}
-	return pInjector;
 }
 
 int Injector::initFaultTable( void )
