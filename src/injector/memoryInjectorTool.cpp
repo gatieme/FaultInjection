@@ -367,6 +367,7 @@ int InjectorTool::startInjection( void )
 
 void InjectorTool::usage()
 {
+    printf("memoryFaultInjector v1.0.1\n");
     printf("Usage:\n");
     printf("\t./memInjector -c fault.conf -e program [arguments]\n");
     printf("\t./memInjector -c fault.conf -p pid\n");

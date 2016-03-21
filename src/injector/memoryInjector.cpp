@@ -37,23 +37,27 @@ Injector::Injector(
         int                     &targetPid,          //  故障注入的进程PID
         char                    **&program,          //  故障注入的进程名
         vector<MemoryFault>     &memoryFaultTable)   //  故障注入的注入表
-:   m_targetPid(targetPid),
-    m_exeArguments(program),
+:   //m_targetPid(targetPid),
+    //m_exeArguments(program),
     m_memoryFaultTable(memoryFaultTable)
 {
+    this->m_targetPid = targetPid;
+	this->m_exeArguments = program;
 	this->m_memoryFaultTablePath.clear();
 	//this->m_targetPid = -1;
-	//this->m_exeArguments = NULL;
+	this->m_exeArguments = program;
 }
 
 Injector::Injector(
         int     &targetPid,
         char    **&program,
         char    *&memoryFaultTablePath)
-:   m_targetPid(targetPid),
-    m_exeArguments(program),
+:   //m_targetPid(targetPid),
+    //m_exeArguments(program),
     m_memoryFaultTablePath(memoryFaultTablePath)
 {
+    this->m_targetPid = targetPid;
+	this->m_exeArguments = program;
 	if( this->initFaultTable() == RT_FAIL )
 	{
 		return ;
@@ -507,21 +511,21 @@ int Injector::injectFaults( int pid )
 				start_va = procInfo.start_code;
 				end_va = procInfo.end_code;
                 // add by gatieme @2016-01-23
-                printf("[%s, %d]--Inject TEXT segment\n", __FILE__, __LINE__, iRet);
+                printf("[%s, %d] %d --Inject TEXT segment\n", __FILE__, __LINE__, iRet);
             }
 			else if( this->m_memoryFaultTable[i].m_location == data_area )  //  data segment
 			{
 				start_va = procInfo.start_data;
 				end_va = procInfo.end_data;
 
-                printf("[%s, %d]--Inject DATA segment\n", __FILE__, __LINE__, iRet);
+                printf("[%s, %d] %d --Inject DATA segment\n", __FILE__, __LINE__, iRet);
 			}
 			else if( this->m_memoryFaultTable[i].m_location == stack_area ) // stack segment
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
 
-                printf("[%s, %d]--Inject STACK segment\n", __FILE__, __LINE__, iRet);
+                printf("[%s, %d] %d --Inject STACK segment\n", __FILE__, __LINE__, iRet);
 			}
 
 			/* add by gatieme
