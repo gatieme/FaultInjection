@@ -44,14 +44,16 @@ using namespace std;
 #define STACK_SIZE 0x1000 //define by fenggang
 
 //fault location
-typedef enum locations {
+typedef enum locations
+{
 	text_area,
 	data_area,
 	stack_area, //add by fenggang, 2011-5-10
 } pos;
 
 //fault type
-typedef enum types {
+typedef enum types
+{
 	one_bit_0,
 	one_bit_1,
 	one_bit_flip,

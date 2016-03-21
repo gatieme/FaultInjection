@@ -1,4 +1,5 @@
 #include "memoryInjector.h"
+#include "memoryInjectorTool.h"
 
 int main(int argc,char **argv)
 {
@@ -9,6 +10,7 @@ int main(int argc,char **argv)
 	}
 
     /// version 1.0.0
+
     Injector * pInjector = Injector::initInjector(argc, argv);
 
 	if(pInjector == NULL)
@@ -21,8 +23,14 @@ int main(int argc,char **argv)
 
     free(pInjector);
 
-    /// version 1.0.1
 
+    /// version 1.0.1
+/*
+    InjectorTool injectorTool;
+
+    injectorTool.initInjector(argc, argv);
+    injectorTool.startInjection();
+*/
 
     return 0;
 }

@@ -22,17 +22,18 @@ InjectorTool::InjectorTool()
 
 	this->m_faultTablePath.clear();
     this->m_hasFaultTable = false;
-    this->m_m_memoryFault = {text_area, -1, word_0, 0, 0};  //  默认的信息
+    this->m_memoryFault = {text_area, -1, word_0, 0, 0};  //  默认的信息
 }
 
 InjectorTool::~InjectorTool()
 {
-	faultTable.clear();
+    delete this->m_injector;
+	this->m_memoryFaultTable.clear();
 }
 
 
 // create the InjectorTool object use the system arg...
-InjectorTool * Injector::CreateInjector( int this->m_argc, char **argv )
+Injector * Injector::CreateInjector( int this->m_argc, char **argv )
 {
     this->m_argc = argc;
     this->m_argv = argv;
@@ -90,7 +91,7 @@ InjectorTool * Injector::CreateInjector( int this->m_argc, char **argv )
 		    }
 		    else
 		    {
-		        cerr << "Error:undefined fault location..." << endl;
+		        cerr << "Error, undefined fault location : " <<this->m_argv[1] << endl;
 			    return RT_FAIL;
 		    }
         }
@@ -102,7 +103,7 @@ InjectorTool * Injector::CreateInjector( int this->m_argc, char **argv )
 		    }
 		    else
 		    {
-		        cerr << "Error:undefined fault mode..." << endl;
+		        cerr << "Error, undefined fault mode : " this->m_argv[1] << endl;
 			    return RT_FAIL;
 		    }
         }
@@ -110,34 +111,43 @@ InjectorTool * Injector::CreateInjector( int this->m_argc, char **argv )
         {
 		    if( faultTmp.SetFaultType(this->m_argv[1]) == true )
 		    {
-		        faultTmp.location = stack_area;
-		    }
+		        cout << "read the Mode : " <<this->m_argv[1] << endl;
+            }
 		    else
 		    {
-		        cerr << "Error:undefined fault mode..." << endl;
+		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
             }
         }
     }
-    if( this->m_hasFaultTable == true )
-    {
-        if( pInjector->initFaultTable() == RT_FAIL )
-        {
-            delete( pInjector );
 
+    //  如果使用了-c参数指定了故障注入表
+    if( this->m_hasFaultTable == true )     //  读取故障植入表的信息
+    {
+        if( pInjector->initFaultTable() == RT_FAIL )    //  故障注入表会存入emoryFaultTable
+        {
+            cerr <<"Eror, init the faule table faild..." <<endl;
             return NULL;
         }
     }
     else
     {
         this->m_memoryFault = faultTmp;
+        this->m_memoryFaultTable.push_back(faultTmp);   //  同时将设置的配置参数存入memoryFaultTable
     }
 
-    InjectorTool * pInjector = new Injector(/*  在这里加上参数的信息  */);
+    //  依据配置参数创建注入工具
+    InjectorTool * pInjector = new Injector(
+            this->m_tragetPid,                          //  故障注入的进程号
+            this->m_exeArguments,                       //  故障注入的程序名
+            this->m_memoryFaultTable);                  //  故障注入的注入表
     if ( pInjectorTool == NULL)
 	{
 		return NULL;
 	}
+
     this->m_injector = pInjector;
+
+    return this->m_onjector;
 }
 
 
@@ -354,4 +364,17 @@ int InjectorTool::initFaultTable( void )
 int InjectorTool::startInjection( void )
 {
     return this->m_injector->startInjector( );
+}
+
+
+
+void InjectorTool::usage()
+{
+    printf("Usage:\n");
+    printf("\t./memInjector -c fault.conf -e program [arguments]\n");
+    printf("\t./memInjector -c fault.conf -p pid\n");
+    printf("Arguments:\n");
+    printf("\t1.fault description scripts.\n");
+    printf("\t2.workload, workload can be a executable program or a running
+
 }

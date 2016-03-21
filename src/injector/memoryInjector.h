@@ -87,15 +87,17 @@ typedef struct memoryFault
 
 class Injector
 {
-public:
-	Injector();
-	~Injector();
+public  :
 
-	string faultTablePath;
-	vector <memFault> faultTable;
+    Injector();
+    Injector( int targetPid,          //  故障注入的进程PID
+              char                **program,          //  故障注入的进程名
+              vector<memFault>    memoryFaultTable);
+    Injector( int     targetPid,
+              char    **program,
+              char    *memoryFaultTablePath);
 
-    int targetPid;		//  target is an existing process.
-	char **exeArguments;
+    ~Injector();
 
 
     static Injector * initInjector( int argc, char **argv );
@@ -111,6 +113,15 @@ public:
 	static void report(int signo);
 	/// static void restore(int signo);
 	void timeout(int sec,void(*func)(int));
+
+protected :
+
+	string              m_memoryFaultTablePath;
+	vector <memFault>   m_memoryFaultTable;
+
+    int                 m_targetPid;		//  target is an existing process.
+	char                **m_exeArguments;
+
 };
 
 #endif	/* MEMORY_INJECTOR_H_ */

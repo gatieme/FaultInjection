@@ -4,8 +4,8 @@
 *  Last modified: 2010-6-16 14:11:00
 */
 
-#ifndef MEMORY_INJECTOR_H_
-#define MEMORY_INJECTOR_H_
+#ifndef MEMORY_INJECTORTOOL_H_
+#define MEMORY_INJECTORTOOL_H_
 
 /*
 *	common header files
@@ -35,9 +35,9 @@ using namespace std;
 class InjectorTool
 {
 public:
-	InjectorTool();
-	~InjectorTool();
-
+	InjectorTool( );
+	~InjectorTool( );
+    void usage( );
 
 
 protected :
@@ -58,7 +58,8 @@ protected :
     char                **m_argv;                // the arguement list
 
     //
-    //  使用-c指定故障注入表还是使用-l -m -t指定故障注入类型
+    //  使用-c指定故障注入表
+    //  使用-l[注入位置] -m[模式, 随机还是地址] -t[]指定故障注入类型
     //
     bool                m_hasFaultTable;         // 如果使用了-c参数就使用注入表,此值为true
     //  when m_hasFaultTable == false
@@ -68,4 +69,4 @@ protected :
 	vector <memFault>   m_faultTable;
 };
 
-#endif	/* MEMORY_INJECTOR_H_ */
+#endif	/* MEMORY_INJECTORTOOL_H_ */

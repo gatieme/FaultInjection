@@ -20,49 +20,14 @@ static int signalPid;
 
 Injector::Injector()
 {
-	this->m_memoryFaultTablePath.clear();
-	this->m_targetPid = -1;
-	this->m_exeArguments = NULL;
-}
-/*
-
-string              m_memoryFaultTablePath;
-vector <memFault>   m_memoryFaultTable;
-
-int                 m_targetPid;        //  target is an existing proce
-char                **m_exeArguments;
-*/
-
-Injector::Injector(
-        int                 targetPid,          //  故障注入的进程PID
-        char                **program,          //  故障注入的进程名
-        vector<memFault>    memoryFaultTable)   //  故障注入的注入表
-:   m_targetPid(targetPid),
-    m_exeArguments(program),
-    m_memoryFaultTable(memoryFaultTable)
-{
-	this->m_memoryFaultTablePath.clear();
-	//this->m_targetPid = -1;
-	//this->m_exeArguments = NULL;
-}
-
-Injector::Injector(
-        int     targetPid,
-        char    **program,
-        char    *memoryFaultTablePath)
-:   m_targetPid(targetPid),
-    m_exeArguments(program),
-    m_memoryFaultTablePath(memoryFaultTablePath)
-{
-	if( this->initFaultTable() == RT_FAIL )
-	{
-		return ;
-	}
+	faultTablePath.clear();
+	targetPid = -1;
+	exeArguments = NULL;
 }
 
 Injector::~Injector()
 {
-	this->m_memoryFaultTable.clear();
+	faultTable.clear();
 }
 
 
@@ -102,20 +67,20 @@ Injector * Injector::initInjector( int argc, char **argv )
             //  -m --mode       random | address
             //  -t --type
             //  -t --timeout
-			pInjector->m_memoryFaultTablePath = argv[1];
+			pInjector->faultTablePath = argv[1];
 
 			argv++;
 		}
 		else if(strcmp(argv[0], "-e") == 0)
 		{
-			pInjector->m_exeArguments = argv + 1;
+			pInjector->exeArguments = argv + 1;
 			break;
 		}
 		else if(strcmp(argv[0], "-p") == 0)
 		{
-			pInjector->m_targetPid = atoi(argv[1]);
+			pInjector->targetPid = atoi(argv[1]);
 
-            printf("The pid of the process you want to inject is %s == %d", argv[1], pInjector->m_targetPid);
+            printf("The pid of the process you want to inject is %s==%d", argv[1], pInjector->targetPid);
 			break;
 		}
 		else
@@ -148,7 +113,7 @@ int Injector::initFaultTable( void )
 
     string line;
 
-    if( this->m_memoryFaultTablePath.empty() )
+    if( faultTablePath.empty() )
 	{
 		cerr << "Error:no existing fault table" << endl;
 
@@ -156,17 +121,17 @@ int Injector::initFaultTable( void )
 	}
 
 	ifstream infile;
-	infile.open( this->m_memoryFaultTablePath.c_str(), ios::in );
+	infile.open( faultTablePath.c_str(), ios::in );
 	if( !infile )
 	{
-		cerr << "Error:unable to open file:" << this->m_memoryFaultTablePath << endl;
+		cerr << "Error:unable to open file:" << faultTablePath << endl;
 
         return RT_FAIL;
 	}
 #ifdef DEBUG
     else
     {
-        std::cout <<"open the config file \"" <<this->m_memoryFaultTablePath <<"\" success..." <<std::endl;
+        std::cout <<"open the config file \"" <<faultTablePath <<"\" success..." <<std::endl;
     }
 #endif // DEBUG
 
@@ -340,7 +305,7 @@ int Injector::initFaultTable( void )
 		faultTmp.timeout = atoi( strTmp.c_str() );
 
 		//  add a fault into fault vector
-		this->m_memoryFaultTable.push_back( faultTmp );
+		faultTable.push_back( faultTmp );
 	}
 
 	infile.close();
@@ -353,42 +318,42 @@ int Injector::startInjection( void )
 	int data = 0;
 
 	//inject fault into an existing process
-	if( this->m_targetPid > 0 && this->m_exeArguments == NULL )
+	if( targetPid > 0 && exeArguments == NULL )
 	{
-		iRet = injectFaults( this->m_targetPid );
+		iRet = injectFaults( targetPid );
 		if( iRet != RT_OK ) { return RT_FAIL; }
 		return RT_OK;
 	}
-	if( this->m_targetPid > 10 && this->m_exeArguments == NULL )
+	if( targetPid > 10 && exeArguments == NULL )
 	{
 		//设置跟踪进程，等待子进程停止
-		signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号
-		iRet = ptraceAttach( this->m_targetPid );
+		signalPid = targetPid;		//用于给sigAlrm函数传递进程号
+		iRet = ptraceAttach( targetPid );
 		if( iRet == RT_FAIL ) { return RT_FAIL; }
 
 		do {
-			iRet = procMonitor( this->m_targetPid,data );
+			iRet = procMonitor( targetPid,data );
 			if( iRet == RT_FAIL ) { return RT_FAIL; }
 		} while( iRet == RUN );
 
 		//should be STOP
 		if( iRet != STOP )
 		{
-			writeResult( this->m_targetPid, iRet, data );	//exit or term
+			writeResult( targetPid, iRet, data );	//exit or term
 			return RT_FAIL;
 		}
 
 		//进行故障注入
-		iRet = injectFaults( this->m_targetPid );
+		iRet = injectFaults( targetPid );
 		if( iRet != RT_OK ) { return RT_FAIL; }
 
 		//继续执行
-		ptraceCont( this->m_targetPid );
+		ptraceCont( targetPid );
 
 		//跟踪继续执行后的子进程
 		while( 1 )
 		{
-			iRet = procMonitor( this->m_targetPid, data );
+			iRet = procMonitor( targetPid, data );
 			if( iRet == RT_FAIL ) { return RT_FAIL; }
 
 			if( iRet == RUN )
@@ -398,18 +363,18 @@ int Injector::startInjection( void )
 			else if( iRet == STOP )
 			{
 				if( data == SIGTRAP ){ data = 0; }
-				ptraceCont( this->m_targetPid, data );
+				ptraceCont( targetPid, data );
 			}
 			else //exit or term
 			{
-				writeResult( this->m_targetPid, iRet, data );
+				writeResult( targetPid, iRet, data );
 				break;
 			}
 		}
 		return RT_OK;
 	}
 	//inject fault into an excultable program
-	if( this->m_exeArguments != NULL && this->m_targetPid < 0 )
+	if( exeArguments != NULL && targetPid < 0 )
 	{
 		errno = 0;
 		pid_t child = fork();
@@ -475,10 +440,10 @@ int Injector::injectFaults( int pid )
 	long start_va, end_va;
 	unsigned long random_offset;
 
-	for( i = 0; i < this->m_memoryFaultTable.size( ); i++ )
+	for( i = 0; i < faultTable.size( ); i++ )
 	{
 		/// location
-		if( this->m_memoryFaultTable[i].addr == -1 )
+		if( faultTable[i].addr == -1 )
 		{
 			/// get proc information
 			bzero(&procInfo, sizeof(procInfo));
@@ -501,7 +466,7 @@ int Injector::injectFaults( int pid )
 				return RT_FAIL;
 			}
 
-			if( this->m_memoryFaultTable[i].location == text_area )       //  text segment
+			if( faultTable[i].location == text_area )       //  text segment
 			{
 
 				start_va = procInfo.start_code;
@@ -509,14 +474,14 @@ int Injector::injectFaults( int pid )
                 // add by gatieme @2016-01-23
                 printf("[%s, %d]--Inject TEXT segment\n", __FILE__, __LINE__, iRet);
             }
-			else if( this->m_memoryFaultTable[i].location == data_area )  //  data segment
+			else if( faultTable[i].location == data_area )  //  data segment
 			{
 				start_va = procInfo.start_data;
 				end_va = procInfo.end_data;
 
                 printf("[%s, %d]--Inject DATA segment\n", __FILE__, __LINE__, iRet);
 			}
-			else if( this->m_memoryFaultTable[i].location == stack_area ) // stack segment
+			else if( faultTable[i].location == stack_area ) // stack segment
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
@@ -555,7 +520,7 @@ int Injector::injectFaults( int pid )
 		}
 		else
 		{
-			inject_pa = this->m_memoryFaultTable[i].addr;
+			inject_pa = faultTable[i].addr;
 		}
 
 		if(inject_pa == -1)
@@ -570,8 +535,8 @@ int Injector::injectFaults( int pid )
             printf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
             return RT_FAIL;
         }
-        printf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].faultType);
-		switch( this->m_memoryFaultTable[i].faultType )
+        printf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, faultTable[i].faultType);
+		switch( faultTable[i].faultType )
 		{
 
 			case one_bit_0:
@@ -661,7 +626,7 @@ int Injector::injectFaults( int pid )
 		}
 
 		/// timeout to terminate child process
-		timeout( this->m_memoryFaultTable[i].timeout, report );
+		timeout( faultTable[i].timeout, report );
 
 	}
 	return RT_OK;
@@ -802,7 +767,7 @@ void Injector::startExe()
 	dup2(fd, STDOUT_FILENO);
 	dup2(fd, STDERR_FILENO);
 	close(fd);
-	execv( this->m_exeArguments[0], this->m_exeArguments );
+	execv( exeArguments[0], exeArguments );
 }
 
 void Injector::usage()
