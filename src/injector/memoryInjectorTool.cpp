@@ -13,32 +13,29 @@
 
 
 InjectorTool::InjectorTool()
+:   m_injector(NULL),             // the memory fault injector object
+    m_argc(0),                  // the count of the arguement
+    m_argv(NULL),                // the arguement list
+    m_hasFaultTable(false),
+    m_memoryFault(text_area, -1, word_0, 0, 0) //  默认的信息
 {
-    this->m_injector    = NULL;             // the memory fault injector object
-
-    this->m_argc        = 0;                  // the count of the arguement
-    this->m_argv        = NULL;                // the arguement list
-
-
-	this->m_faultTablePath.clear();
-    this->m_hasFaultTable = false;
-    this->m_memoryFault = {text_area, -1, word_0, 0, 0};  //  默认的信息
+	this->m_memoryFaultTablePath.clear();
 }
 
 InjectorTool::~InjectorTool()
 {
     delete this->m_injector;
-	this->m_memoryFaultTable.clear();
+	this->m_memoryFaultTablePath.clear();
 }
 
 
 // create the InjectorTool object use the system arg...
-Injector * Injector::CreateInjector( int this->m_argc, char **argv )
+Injector * InjectorTool::CreateInjector( int argc, char **argv )
 {
     this->m_argc = argc;
     this->m_argv = argv;
 
-    memFault faultTmp = {text_area, -1, word_0, 0, 0};  //  默认的信息
+    MemoryFault faultTmp(text_area, -1, word_0, 0, 0);  //  默认的信息
 
 #ifdef DEBUG
     printf("this->m_argc = %d", this->argc);
@@ -64,7 +61,7 @@ Injector * Injector::CreateInjector( int this->m_argc, char **argv )
             //  -l --location   stack|data|text
             //  -m --mode       random | address
             //  -t --type
-			this->faultTablePath = this->m_argv[1];
+			this->m_memoryFaultTablePath = this->m_argv[1];
 
             this->m_hasFaultTable = true;
 
@@ -80,19 +77,19 @@ Injector * Injector::CreateInjector( int this->m_argc, char **argv )
 		{
 			this->m_targetPid = atoi(this->m_argv[1]);
 
-            printf("The pid of the process you want to inject is %s==%d", this->m_argv[1], pInjectorTool->targetPid);
+            printf("The pid of the process you want to inject is %s==%d", this->m_argv[1], this->m_targetPid);
 			break;
 		}
-        else if( strcmp(this->m_argc[0], "-l") == 0 )
+        else if( strcmp(this->m_argv[0], "-l") == 0 )
         {
 		    if( faultTmp.SetLocation(this->m_argv[1]) == true )
 		    {
-		        faultTmp.location = stack_area;
+		        faultTmp.m_location = stack_area;
 		    }
 		    else
 		    {
 		        cerr << "Error, undefined fault location : " <<this->m_argv[1] << endl;
-			    return RT_FAIL;
+			    return NULL;
 		    }
         }
         else if ( strcmp(this->m_argv[0], "-m") == 0 )
@@ -103,8 +100,8 @@ Injector * Injector::CreateInjector( int this->m_argc, char **argv )
 		    }
 		    else
 		    {
-		        cerr << "Error, undefined fault mode : " this->m_argv[1] << endl;
-			    return RT_FAIL;
+		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
+			    return NULL;
 		    }
         }
         else if ( strcmp(this->m_argv[0], "-t") == 0 )
@@ -123,7 +120,7 @@ Injector * Injector::CreateInjector( int this->m_argc, char **argv )
     //  如果使用了-c参数指定了故障注入表
     if( this->m_hasFaultTable == true )     //  读取故障植入表的信息
     {
-        if( pInjector->initFaultTable() == RT_FAIL )    //  故障注入表会存入emoryFaultTable
+        if( this->initFaultTable() == RT_FAIL )    //  故障注入表会存入emoryFaultTable
         {
             cerr <<"Eror, init the faule table faild..." <<endl;
             return NULL;
@@ -136,18 +133,18 @@ Injector * Injector::CreateInjector( int this->m_argc, char **argv )
     }
 
     //  依据配置参数创建注入工具
-    InjectorTool * pInjector = new Injector(
-            this->m_tragetPid,                          //  故障注入的进程号
+    Injector * pInjector = new Injector(
+            this->m_targetPid,                          //  故障注入的进程号
             this->m_exeArguments,                       //  故障注入的程序名
             this->m_memoryFaultTable);                  //  故障注入的注入表
-    if ( pInjectorTool == NULL)
+    if ( pInjector == NULL)
 	{
 		return NULL;
 	}
 
     this->m_injector = pInjector;
 
-    return this->m_onjector;
+    return this->m_injector;
 }
 
 
@@ -162,7 +159,7 @@ int InjectorTool::initFaultTable( void )
 
     string line;
 
-    if( faultTablePath.empty() )
+    if( this->m_memoryFaultTablePath.empty() )
 	{
 		cerr << "Error:no existing fault table" << endl;
 
@@ -170,23 +167,23 @@ int InjectorTool::initFaultTable( void )
 	}
 
 	ifstream infile;
-	infile.open( faultTablePath.c_str(), ios::in );
+	infile.open( this->m_memoryFaultTablePath.c_str(), ios::in );
 	if( !infile )
 	{
-		cerr << "Error:unable to open file:" << faultTablePath << endl;
+		cerr << "Error:unable to open file:" << this->m_memoryFaultTablePath << endl;
 
         return RT_FAIL;
 	}
 #ifdef DEBUG
     else
     {
-        std::cout <<"open the config file \"" <<faultTablePath <<"\" success..." <<std::endl;
+        std::cout <<"open the config file \"" <<this->m_memoryFaultTablePath <<"\" success..." <<std::endl;
     }
 #endif // DEBUG
 
     std::string strLine;
     std::string strTmp;
-	memFault  faultTmp;
+	MemoryFault  faultTmp;
 
 	while( getline(infile, strLine, '\n') )
 	{
@@ -207,15 +204,15 @@ int InjectorTool::initFaultTable( void )
 		}
 		else if( strTmp == "text" || strTmp == "TEXT" )
 		{
-			faultTmp.location = text_area;
+			faultTmp.m_location = text_area;
 		}
 		else if( strTmp == "data" || strTmp == "DATA" )
 		{
-			faultTmp.location = data_area;
+			faultTmp.m_location = data_area;
 		}
 		else if( strTmp == "stack" || strTmp == "STACK" )
 		{
-			faultTmp.location = stack_area;
+			faultTmp.m_location = stack_area;
 		}
 		else
 		{
@@ -234,11 +231,11 @@ int InjectorTool::initFaultTable( void )
 
 		if( strTmp == "random" || strTmp == "RANDOM" )
 		{
-			faultTmp.addr = -1;
+			faultTmp.m_addr = -1;
 		}
 		else
 		{
-			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.addr );
+			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.m_addr );
 
 			if( iRet != 1 )
             {
@@ -257,24 +254,24 @@ int InjectorTool::initFaultTable( void )
 		}
 		else if( strTmp == "one_bit_0" )
 		{
-			faultTmp.faultType = one_bit_0;
+			faultTmp.m_faultType = one_bit_0;
 		}
 		else if( strTmp == "one_bit_1" )
 		{
-			faultTmp.faultType = one_bit_1;
+			faultTmp.m_faultType = one_bit_1;
 		}
 		else if( strTmp == "one_bit_flip" )
 		{
-			faultTmp.faultType = one_bit_flip;
+			faultTmp.m_faultType = one_bit_flip;
 		}
 
 		else if( strTmp == "word_0" )
 		{
-			faultTmp.faultType = word_0;
+			faultTmp.m_faultType = word_0;
 		}
 		else if( strTmp == "page_0" )
 		{
-			faultTmp.faultType = page_0;
+			faultTmp.m_faultType = page_0;
 		}
 /*
 		else if( strTmp == "two_bit_0" )
@@ -341,7 +338,7 @@ int InjectorTool::initFaultTable( void )
 			cerr << "Error:fault table format errno" << endl;
 			return RT_FAIL;
 		}
-		faultTmp.time = atoi( strTmp.c_str() );
+		faultTmp.m_time = atoi( strTmp.c_str() );
 
 		/// timeout
 		strTmp.clear();
@@ -351,10 +348,10 @@ int InjectorTool::initFaultTable( void )
 			cerr << "Error:fault table format errno" << endl;
 			return RT_FAIL;
 		}
-		faultTmp.timeout = atoi( strTmp.c_str() );
+		faultTmp.m_timeout = atoi( strTmp.c_str() );
 
 		//  add a fault into fault vector
-		this->m_faultTable.push_back( faultTmp );
+		this->m_memoryFaultTable.push_back( faultTmp );
 	}
 
 	infile.close();
@@ -363,7 +360,7 @@ int InjectorTool::initFaultTable( void )
 
 int InjectorTool::startInjection( void )
 {
-    return this->m_injector->startInjector( );
+    return this->m_injector->startInjection( );
 }
 
 
@@ -375,6 +372,6 @@ void InjectorTool::usage()
     printf("\t./memInjector -c fault.conf -p pid\n");
     printf("Arguments:\n");
     printf("\t1.fault description scripts.\n");
-    printf("\t2.workload, workload can be a executable program or a running
+    printf("\t2.workload, workload can be a executable program or a running process.\n");
 
 }

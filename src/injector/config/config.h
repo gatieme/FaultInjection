@@ -12,8 +12,8 @@
 
 
 
-#ifndef _CONFIG_H_INCLUDED
-#define _CONFIG_H_INCLUDED
+#ifndef __CONFIG_H_INCLUDED__
+#define __CONFIG_H_INCLUDED__
 
 
 

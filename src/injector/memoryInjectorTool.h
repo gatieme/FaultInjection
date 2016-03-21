@@ -30,7 +30,7 @@ using namespace std;
 
 #include "ptrace.h"
 #include "memoryInjector.h"
-
+#include "memoryFault.h"
 
 class InjectorTool
 {
@@ -39,7 +39,10 @@ public:
 	~InjectorTool( );
     void usage( );
 
-
+    int initFaultTable( int argc, char **argv );
+    int startInjection( );
+    Injector* CreateInjector( int argc, char **argv );
+    int initFaultTable( );
 protected :
 
     //
@@ -65,8 +68,8 @@ protected :
     //  when m_hasFaultTable == false
     MemoryFault         m_memoryFault;           //
     //  when m_hasFaultTable == true
-    string              m_faultTablePath;
-	vector <memFault>   m_faultTable;
+    string                  m_memoryFaultTablePath;
+	vector <MemoryFault>    m_memoryFaultTable;
 };
 
 #endif	/* MEMORY_INJECTORTOOL_H_ */

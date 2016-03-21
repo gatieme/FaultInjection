@@ -34,9 +34,9 @@ char                **m_exeArguments;
 */
 
 Injector::Injector(
-        int                 targetPid,          //  故障注入的进程PID
-        char                **program,          //  故障注入的进程名
-        vector<memFault>    memoryFaultTable)   //  故障注入的注入表
+        int                     &targetPid,          //  故障注入的进程PID
+        char                    **&program,          //  故障注入的进程名
+        vector<MemoryFault>     &memoryFaultTable)   //  故障注入的注入表
 :   m_targetPid(targetPid),
     m_exeArguments(program),
     m_memoryFaultTable(memoryFaultTable)
@@ -47,9 +47,9 @@ Injector::Injector(
 }
 
 Injector::Injector(
-        int     targetPid,
-        char    **program,
-        char    *memoryFaultTablePath)
+        int     &targetPid,
+        char    **&program,
+        char    *&memoryFaultTablePath)
 :   m_targetPid(targetPid),
     m_exeArguments(program),
     m_memoryFaultTablePath(memoryFaultTablePath)
@@ -172,7 +172,7 @@ int Injector::initFaultTable( void )
 
     std::string strLine;
     std::string strTmp;
-	memFault  faultTmp;
+	MemoryFault faultTmp;
 
 	while( getline(infile, strLine, '\n') )
 	{
@@ -193,15 +193,15 @@ int Injector::initFaultTable( void )
 		}
 		else if( strTmp == "text" || strTmp == "TEXT" )
 		{
-			faultTmp.location = text_area;
+			faultTmp.m_location = text_area;
 		}
 		else if( strTmp == "data" || strTmp == "DATA" )
 		{
-			faultTmp.location = data_area;
+			faultTmp.m_location = data_area;
 		}
 		else if( strTmp == "stack" || strTmp == "STACK" )
 		{
-			faultTmp.location = stack_area;
+			faultTmp.m_location = stack_area;
 		}
 		else
 		{
@@ -220,11 +220,11 @@ int Injector::initFaultTable( void )
 
 		if( strTmp == "random" || strTmp == "RANDOM" )
 		{
-			faultTmp.addr = -1;
+			faultTmp.m_addr = -1;
 		}
 		else
 		{
-			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.addr );
+			int iRet = sscanf( strTmp.c_str(), "%lx", &faultTmp.m_addr );
 
 			if( iRet != 1 )
             {
@@ -243,24 +243,24 @@ int Injector::initFaultTable( void )
 		}
 		else if( strTmp == "one_bit_0" )
 		{
-			faultTmp.faultType = one_bit_0;
+			faultTmp.m_faultType = one_bit_0;
 		}
 		else if( strTmp == "one_bit_1" )
 		{
-			faultTmp.faultType = one_bit_1;
+			faultTmp.m_faultType = one_bit_1;
 		}
 		else if( strTmp == "one_bit_flip" )
 		{
-			faultTmp.faultType = one_bit_flip;
+			faultTmp.m_faultType = one_bit_flip;
 		}
 
 		else if( strTmp == "word_0" )
 		{
-			faultTmp.faultType = word_0;
+			faultTmp.m_faultType = word_0;
 		}
 		else if( strTmp == "page_0" )
 		{
-			faultTmp.faultType = page_0;
+			faultTmp.m_faultType = page_0;
 		}
 /*
 		else if( strTmp == "two_bit_0" )
@@ -327,7 +327,7 @@ int Injector::initFaultTable( void )
 			cerr << "Error:fault table format errno" << endl;
 			return RT_FAIL;
 		}
-		faultTmp.time = atoi( strTmp.c_str() );
+		faultTmp.m_time = atoi( strTmp.c_str() );
 
 		/// timeout
 		strTmp.clear();
@@ -337,7 +337,7 @@ int Injector::initFaultTable( void )
 			cerr << "Error:fault table format errno" << endl;
 			return RT_FAIL;
 		}
-		faultTmp.timeout = atoi( strTmp.c_str() );
+		faultTmp.m_timeout = atoi( strTmp.c_str() );
 
 		//  add a fault into fault vector
 		this->m_memoryFaultTable.push_back( faultTmp );
@@ -478,7 +478,7 @@ int Injector::injectFaults( int pid )
 	for( i = 0; i < this->m_memoryFaultTable.size( ); i++ )
 	{
 		/// location
-		if( this->m_memoryFaultTable[i].addr == -1 )
+		if( this->m_memoryFaultTable[i].m_addr == -1 )
 		{
 			/// get proc information
 			bzero(&procInfo, sizeof(procInfo));
@@ -501,7 +501,7 @@ int Injector::injectFaults( int pid )
 				return RT_FAIL;
 			}
 
-			if( this->m_memoryFaultTable[i].location == text_area )       //  text segment
+			if( this->m_memoryFaultTable[i].m_location == text_area )       //  text segment
 			{
 
 				start_va = procInfo.start_code;
@@ -509,14 +509,14 @@ int Injector::injectFaults( int pid )
                 // add by gatieme @2016-01-23
                 printf("[%s, %d]--Inject TEXT segment\n", __FILE__, __LINE__, iRet);
             }
-			else if( this->m_memoryFaultTable[i].location == data_area )  //  data segment
+			else if( this->m_memoryFaultTable[i].m_location == data_area )  //  data segment
 			{
 				start_va = procInfo.start_data;
 				end_va = procInfo.end_data;
 
                 printf("[%s, %d]--Inject DATA segment\n", __FILE__, __LINE__, iRet);
 			}
-			else if( this->m_memoryFaultTable[i].location == stack_area ) // stack segment
+			else if( this->m_memoryFaultTable[i].m_location == stack_area ) // stack segment
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
@@ -555,7 +555,7 @@ int Injector::injectFaults( int pid )
 		}
 		else
 		{
-			inject_pa = this->m_memoryFaultTable[i].addr;
+			inject_pa = this->m_memoryFaultTable[i].m_addr;
 		}
 
 		if(inject_pa == -1)
@@ -570,8 +570,8 @@ int Injector::injectFaults( int pid )
             printf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
             return RT_FAIL;
         }
-        printf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].faultType);
-		switch( this->m_memoryFaultTable[i].faultType )
+        printf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
+		switch( this->m_memoryFaultTable[i].m_faultType )
 		{
 
 			case one_bit_0:
@@ -661,7 +661,7 @@ int Injector::injectFaults( int pid )
 		}
 
 		/// timeout to terminate child process
-		timeout( this->m_memoryFaultTable[i].timeout, report );
+		timeout( this->m_memoryFaultTable[i].m_timeout, report );
 
 	}
 	return RT_OK;

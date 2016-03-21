@@ -28,74 +28,20 @@
 using namespace std;
 
 #include "ptrace.h"
+#include "memoryFault.h"
 
-#define RT_OK		0
-#define RT_FAIL -1
-#define RT_EXIT 127
-
-//status of a process
-#define RUN		0
-#define STOP	1
-#define EXIT	2
-#define TERM	3
-
-#define PAGESIZE ( getpagesize() )
-
-#define STACK_SIZE 0x1000 //define by fenggang
-
-//fault location
-typedef enum locations {
-	text_area,
-	data_area,
-	stack_area, //add by fenggang, 2011-5-10
-} pos;
-
-//fault type
-typedef enum types {
-	one_bit_0,
-	one_bit_1,
-	one_bit_flip,
-
-	two_bit_0,
-	two_bit_1,
-	two_bit_flip,
-
-	low_8_0,
-	low_8_1,
-	low_8_error,
-
-	word_0,
-	word_1,
-	word_error,
-
-	page_0,
-	page_1,
-	page_error
-
-} type;
-
-
-/// fault
-typedef struct memoryFault
-{
-	pos location;
-	long addr;
-	type faultType;
-	int time;		//瞬时故障0，永久故障-1，正整数表示故障持续时钟周期
-	int timeout;
-} memFault, *pMemFault;
 
 class Injector
 {
 public  :
 
     Injector();
-    Injector( int targetPid,          //  故障注入的进程PID
-              char                **program,          //  故障注入的进程名
-              vector<memFault>    memoryFaultTable);
-    Injector( int     targetPid,
-              char    **program,
-              char    *memoryFaultTablePath);
+    Injector( int                   &targetPid,          //  故障注入的进程PID
+              char                  **&program,          //  故障注入的进程名
+              vector<MemoryFault>   &memoryFaultTable);
+    Injector( int     &targetPid,
+              char    **&program,
+              char    *&memoryFaultTablePath);
 
     ~Injector();
 
@@ -116,11 +62,11 @@ public  :
 
 protected :
 
-	string              m_memoryFaultTablePath;
-	vector <memFault>   m_memoryFaultTable;
+	string                 m_memoryFaultTablePath;
+	vector <MemoryFault>   m_memoryFaultTable;
 
-    int                 m_targetPid;		//  target is an existing process.
-	char                **m_exeArguments;
+    int                    m_targetPid;		//  target is an existing process.
+	char                   **m_exeArguments;
 
 };
 

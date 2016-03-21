@@ -1,11 +1,5 @@
-/*
-*  Author: HIT CS HDMC team.
-*  Create: 2010-3-13 9:20:04
-*  Last modified: 2010-6-16 14:11:00
-*/
-
-#ifndef MEMORY_INJECTOR_H_
-#define MEMORY_INJECTOR_H_
+#ifndef __MEMORY_FAULT_H__
+#define __MEMORY_FAULT_H__
 
 /*
 *	common header files
@@ -81,87 +75,32 @@ typedef enum types
 class MemoryFault
 {
 public :
-    explicit MemoryFault()
+    MemoryFault(pos location, long addr, type faulttype, int time, int timeout)
+    :m_location(location),
+     m_addr(addr),
+     m_faultType(faulttype),
+     m_time(time),
+     m_timeout(timeout)
+    {
+        this->m_location = data_area;
+    }
+
+    MemoryFault()
     :m_location(data_area),
      m_addr(-1),
      m_faultType(word_0),
      m_time(-1),
      m_timeout(-1)
     {
-        this->m_location = data_area
     }
 
-    inline bool SetLocation(std::string location)
-    {
-        if( location == "text" || location == "TEXT" )
-        {
-            this->m_location = text_area;
-        }
-        else if( location == "data" || location == "DATA" )
-        {
-            this->m_location = data_area;
-        }
-        else if( location == "stack" || location == "STACK" )
-        {
-            this->m_location = stack_area;
-        }
-        else
-        {
-            std::cerr << "Error:undefined fault location" <<std::endl;
+    bool SetLocation(std::string location);
 
-            return false;
-        }
-        return true;
-    }
+    bool SetMode(std::string mode);
 
-    inline bool SetAddr(std::string mode)
-    {
-        if( type == "random" || type == "RANDOM" )
-        {
-            this->.m_addr = -1;
-        }
-        else
-        {
-            int iRet = sscanf(this->m_location.c_str(), "%lx", &this->m_addr);
+    bool SetFaultType(std::string faulttype);
 
-            if( iRet != 1 )
-            {
-                return false;
-            }
-        }
-        return true;
-
-    }
-
-    inline bool SetFaultType(std::string faulttype)
-    {
-        if( strTmp == "one_bit_0" )
-        {
-            this->m_faultType = one_bit_0;
-        }
-        else if( strTmp == "one_bit_1" )
-        {
-            this->m_faultType = one_bit_1;
-        }
-        else if( strTmp == "one_bit_flip" )
-        {
-            this->m_faultType = one_bit_flip;
-        }
-        else if( strTmp == "word_0" )
-        {
-            this->m_faultType = word_0;
-        }
-        else if( strTmp == "page_0" )
-        {
-            this->m_faultType = page_0;
-        }
-        else
-        {
-            return false;
-        }
-        return true;
-    }
-protected:
+//protected:
 
     pos     m_location;
 
@@ -174,5 +113,7 @@ protected:
     int     m_timeout;
 
 
-}
+};
 
+
+#endif  //#define MEMORY_FAULT_H_
