@@ -111,16 +111,13 @@ int main(int argc, char * argv[])
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
-#ifdef DEBUG
-
+	/*
 	printf("PAGE_SIZE:0x%x\n",PAGE_SIZE);
 	printf("base:0x%lx\n",pa_base);
 	printf("offset:0x%lx\n",pa_offset);
 	printf("pa:0x%lx\n",pa);
-#endif  // #ifdef DEBUG
-
-	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa_base);
-	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+	*/
+	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
         printf("FILE = %s, Line = %d\n", __FILE__, __LINE__);
