@@ -75,6 +75,9 @@ typedef enum types
 class MemoryFault
 {
 public :
+    friend ostream& operator<<(ostream &out, const MemoryFault &memoryFault);
+
+public :
     MemoryFault(pos location, long addr, type faulttype, int time, int timeout)
     :m_location(location),
      m_addr(addr),

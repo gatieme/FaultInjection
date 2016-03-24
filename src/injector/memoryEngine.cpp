@@ -383,10 +383,12 @@ int write_phy_mem(unsigned long pa,void *data,int len)
     }
 #ifdef DEBUG
     //printf("write data 0x%lx\n", (*(unsigned long *)data));
+	printf("\n\nin func %s, line %d\n", __func__, __LINE__);
     printf("write data success\n");
 #endif      //  DEBUG
-    int temp = 0;
-    memcpy((void *)mapAddr, &temp, size);
+    //unsigned long temp = ~(-1);
+    print_all_byte(data, size);
+    memcpy((void *)mapAddr, data, size);
 
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
     {
@@ -486,4 +488,34 @@ int ReadLine(char *input,char *line)
 	}
 	memcpy(line,input,iLen);
 	return ++iLen;
+}
+
+
+
+/*
+ * addr  -=> 待打印的变量的首地址
+ * size  -=>·待打印的变量的大小
+ * return 成功返回打印的字节数
+ * */
+int print_all_byte(void *addr, int size)
+{
+    unsigned char *ptr = (unsigned char *)addr;
+    int print_bytes = 0;
+
+    if(ptr == NULL)
+    {
+        return -1;
+    }
+
+    while(print_bytes < size)
+    {
+        printf("%02x", *ptr);
+
+        ptr++;
+
+        print_bytes++;
+    }
+    printf("\n");
+
+    return print_bytes;
 }

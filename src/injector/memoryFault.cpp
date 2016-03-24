@@ -1,5 +1,43 @@
 #include "memoryFault.h"
 
+ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
+{
+    switch(memoryFault.m_location)
+    {
+        case text_area:
+        {
+            out <<"location :  text, ";
+            break;
+
+        }
+        case data_area:
+            out <<"location :  data, ";
+            break;
+
+        case stack_area:
+            out <<"location : stack, ";
+            break;
+    }
+    switch(memoryFault.m_addr)
+    {
+        case -1:
+        {
+            out <<"mode     : random, ";
+            break;
+        }
+    }
+    switch(memoryFault.m_faultType)
+    {
+        case one_bit_0:
+        case one_bit_1:
+        case one_bit_flip:
+        case word_0:
+        case page_0:
+            break;
+    }
+    return out;
+}
+
 bool MemoryFault::SetLocation(std::string location)
 {
     if( location == "text" || location == "TEXT" )

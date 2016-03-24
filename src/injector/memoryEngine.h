@@ -25,10 +25,10 @@ typedef struct procMMInfo
 	unsigned long exec;		//可执行内存映射
 	unsigned long stack;	//用户堆栈
 	unsigned long reserve;//保留区
-	
+
 	unsigned long def_flags;//
 	unsigned long nr_ptes;	//
-	
+
 	unsigned long start_code;	//代码段开始地址
 	unsigned long end_code;		//代码段结束地址
 	unsigned long start_data;	//数据段开始地址
@@ -86,5 +86,6 @@ int write_phy_mem(unsigned long pa,void *data,int len);
 int getTaskInfo(int pid, pTaskMMInfo taskInfo);
 int ReadLine(char *input,char *line);
 int write_page_0(unsigned long pa);
+int print_all_byte(void *addr, int size);
 
 #endif

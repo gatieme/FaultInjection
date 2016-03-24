@@ -347,7 +347,15 @@ int Injector::initFaultTable( void )
 		//  add a fault into fault vector
 		this->m_memoryFaultTable.push_back( faultTmp );
 	}
-
+#ifdef DEBUG
+    cout <<"list the Memory FaultTable..." <<endl;
+    for(vector<MemoryFault>::iterator iter = this->m_memoryFaultTable.begin( );
+        iter != this->m_memoryFaultTable.end( );
+        iter++)
+    {
+        cout <<*iter <<endl;
+    }
+#endif
 	infile.close();
 	return RT_OK;
 }
@@ -637,7 +645,11 @@ int Injector::injectFaults( int pid )
                     printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
-				newData = 0;
+				newData = ~(-1);            ///  for DEBUG...
+
+#ifdef BUGS         //  this is bug_1 find in 2016-03-24 by gatieme
+                printf("==BUG_1==, 0%lx -=> 0x%lx\n", origData, newData);
+#endif
 
                 iRet = write_phy_mem(inject_pa, &newData, sizeof(newData));
                 if(iRet == FAIL)
