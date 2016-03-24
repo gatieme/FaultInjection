@@ -194,7 +194,7 @@ long kern_func_virt_addr(const char *kFuncName)
 */
 
 extern int errno;
-int read_phy_mem(unsigned long pa,long *data)
+int read_phy_mem(unsigned long pa, long *data)
 {
 	int memfd;
 	int pageSize;
@@ -223,11 +223,13 @@ int read_phy_mem(unsigned long pa,long *data)
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
-
-	printf("PAGE_SIZE:0x%x\n",PAGE_SIZE);   // 4k = 0x1000
+#ifdef DEBUG
+	printf("\n\nin func %s, line %d\n", __func__, __LINE__);
+    printf("PAGE_SIZE:0x%x\n",PAGE_SIZE);   // 4k = 0x1000
 	printf("base:0x%lx\n",pa_base);
 	printf("offset:0x%lx\n",pa_offset);
 	printf("pa:0x%lx\n",pa);
+#endif
 
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa);
@@ -240,20 +242,22 @@ int read_phy_mem(unsigned long pa,long *data)
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
 		perror("Failed to mlock mmaped space");
-    do_mlock = 0;
-  }
-  do_mlock = 1;
+        do_mlock = 0;
+    }
+    do_mlock = 1;
 
-  mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
+    mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
-  //只读一个字节
-  memcpy( data, (void *)mapAddr, sizeof(data) );
-  //*data = *((char *)mapAddr);
-
-  if(munmap((void *)mapStart, PAGE_SIZE) != 0)
-  {
-  	perror("Failed to munmap /dev/mem");
-  }
+    //只读一个字节
+    memcpy( data, (void *)mapAddr, sizeof(data) );
+    //*data = *((char *)mapAddr);
+#ifdef DEBUG
+    printf("read data 0x%lx\n", (unsigned long)*data);
+#endif
+    if(munmap((void *)mapStart, PAGE_SIZE) != 0)
+    {
+  	    perror("Failed to munmap /dev/mem");
+    }
 	close(memfd);
 	return OK;
 }
@@ -344,6 +348,14 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
+#ifdef DEBUG
+	printf("\n\nin func %s, line %d\n", __func__, __LINE__);
+    printf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	printf("base:0x%lx\n", pa_base);
+	printf("offset:0x%lx\n", pa_offset);
+	printf("pa:0x%lx\n", pa);
+#endif
+
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
@@ -354,28 +366,32 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
 		perror("Failed to mlock mmaped space");
-    do_mlock = 0;
-  }
-  do_mlock = 1;
+        do_mlock = 0;
+    }
+    do_mlock = 1;
 
-  mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
+    mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
 	/// 不越过物理页面
-  if(len + pa_offset > PAGE_SIZE)
-  {
-  	size = PAGE_SIZE - pa_offset;
-  }
-  else
-  {
-  	size = len;
-  }
+    if(len + pa_offset > PAGE_SIZE)
+    {
+  	    size = PAGE_SIZE - pa_offset;
+    }
+    else
+    {
+  	    size = len;
+    }
+#ifdef DEBUG
+    //printf("write data 0x%lx\n", (*(unsigned long *)data));
+    printf("write data success\n");
+#endif      //  DEBUG
+    int temp = 0;
+    memcpy((void *)mapAddr, &temp, size);
 
-  memcpy((void *)mapAddr, data, size);
-
-  if(munmap((void *)mapStart, PAGE_SIZE) != 0)
-  {
-  	perror("Failed to munmap /dev/mem");
-  }
+    if(munmap((void *)mapStart, PAGE_SIZE) != 0)
+    {
+  	    perror("Failed to munmap /dev/mem");
+    }
 	close(memfd);
 	return OK;
 }

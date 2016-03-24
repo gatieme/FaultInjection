@@ -118,9 +118,10 @@ Injector * Injector::initInjector( int argc, char **argv )
 		else if(strcmp(argv[0], "-p") == 0)
 		{
 			pInjector->m_targetPid = atoi(argv[1]);
-
+#ifdef DEBUG
             printf("The pid of the process you want to inject is %s == %d", argv[1], pInjector->m_targetPid);
-			break;
+#endif
+            break;
 		}
 		else
 		{
@@ -181,7 +182,7 @@ int Injector::initFaultTable( void )
 	while( getline(infile, strLine, '\n') )
 	{
 #ifdef DEBUG
-        std::cout <<"read \"" <<strLine << <<"\"" <<std::endl;
+        std::cout <<"read \"" <<strLine <<"\"" <<std::endl;
 #endif // DEBUG
 
 		//bind istream to the strLine
@@ -627,13 +628,13 @@ int Injector::injectFaults( int pid )
 
             case word_0:
                 printf("FaultType = word_0\n");
-                printf("inject_pa=0x%lx\n", inject_pa);
+                printf("inject_pa = 0x%lx\n", inject_pa);
 
                 iRet = read_phy_mem(inject_pa, &origData);
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    printf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
+                    printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 				newData = 0;
@@ -642,7 +643,7 @@ int Injector::injectFaults( int pid )
                 if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    printf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
+                    printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 
@@ -650,15 +651,21 @@ int Injector::injectFaults( int pid )
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    printf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
+                    printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
+
 				printf("word 0(0x%lx -> 0x%lx)\n", origData, newData);
 				break;
+
 			case page_0:
 				iRet = write_page_0(inject_pa);
-				if(iRet == FAIL) { return RT_FAIL; }
-				printf("page 0\n");
+				if(iRet == FAIL)
+                {
+                    return RT_FAIL;
+                }
+
+                printf("page 0\n");
 				break;
 			default:
 				printf("Do not support yet.\n");

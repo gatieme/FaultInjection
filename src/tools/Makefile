@@ -1,9 +1,9 @@
 BIN = ../../workspace/
 
 
-target = getpinfo v2p readpa writepa devmem devkmem
+targets = getpinfo v2p readpa writepa devmem devkmem
 
-all:$(target)
+all:$(targets)
 
 	
 getpinfo: getTaskInfo.o
@@ -35,4 +35,4 @@ install:
 	cp inject_sys_process.sh $(BIN)
 clean:
 	rm *.o 
-	rm getpinfo v2p readpa writepa
+	rm $(targets)

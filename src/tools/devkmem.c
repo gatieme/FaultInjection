@@ -15,6 +15,11 @@
 
 int main(int argc, char* argv[])
 {
+    if(argc != 2)
+    {
+        printf("usage...");
+        exit(-1);
+    }
     int fd;
     char *mbase;
     char read_buf[10];
@@ -26,13 +31,16 @@ int main(int argc, char* argv[])
     unsigned int ptr = varAddr & ~(PAGE_MASK);
 
     fd = open(DEVKMEM, O_RDONLY);
-    if (fd == -1) {
+    if (fd == -1)
+    {
+        printf("%s %d", __func__, __LINE__);
         perror("open");
         exit(-1);
     }
 
     mbase = (char *)mmap(0, PAGE_SIZE, PROT_READ, MAP_SHARED,fd, (varAddr & PAGE_MASK));
-    if (mbase == MAP_FAILED) {
+    if (mbase == MAP_FAILED)
+    {
         printf("map failed %s\n",strerror(errno));
     }
 

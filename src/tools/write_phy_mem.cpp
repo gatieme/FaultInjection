@@ -22,10 +22,10 @@ typedef struct procMMInfo
 	unsigned long exec;		//可执行内存映射
 	unsigned long stack;	//用户堆栈
 	unsigned long reserve;//保留区
-	
+
 	unsigned long def_flags;//
 	unsigned long nr_ptes;	//
-	
+
 	unsigned long start_code;	//代码段开始地址
 	unsigned long end_code;		//代码段结束地址
 	unsigned long start_data;	//数据段开始地址
@@ -103,7 +103,7 @@ int main(int argc, char * argv[])
 		perror("Failed to open /dev/mem");
 		return FAIL;
 	}
-	
+
 	shift = 0;
 	pageSize = PAGE_SIZE;
 	while(pageSize > 0)
@@ -114,7 +114,7 @@ int main(int argc, char * argv[])
 	shift --;
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
-	
+
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
@@ -125,28 +125,28 @@ int main(int argc, char * argv[])
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
 		perror("Failed to mlock mmaped space");
-    do_mlock = 0;
-  }
-  do_mlock = 1;
-  
-  mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
+        do_mlock = 0;
+    }
+    do_mlock = 1;
+
+    mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
 	/// 不越过物理页面
-  if(len + pa_offset > PAGE_SIZE)
-  {
-  	size = PAGE_SIZE - pa_offset;
-  }
-  else 
-  {
-  	size = len;
-  }
-  
-  memcpy((void *)mapAddr, &data, size);
-	
-  if(munmap((void *)mapStart, PAGE_SIZE) != 0)
-  {
-  	perror("Failed to munmap /dev/mem");
-  }
+    if(len + pa_offset > PAGE_SIZE)
+    {
+  	    size = PAGE_SIZE - pa_offset;
+    }
+    else
+    {
+  	    size = len;
+    }
+
+    memcpy((void *)mapAddr, &data, size);
+
+    if(munmap((void *)mapStart, PAGE_SIZE) != 0)
+    {
+  	    perror("Failed to munmap /dev/mem");
+    }
 	close(memfd);
 	return OK;
 }

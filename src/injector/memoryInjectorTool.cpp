@@ -38,7 +38,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
     MemoryFault faultTmp(text_area, -1, word_0, 0, 0);  //  默认的信息
 
 #ifdef DEBUG
-    printf("this->m_argc = %d", this->argc);
+    printf("this->m_argc = %d", this->m_argc);
     for(int i = 0; i < this->m_argc; i++)
     {
         printf("this->m_argv[%d] = %d", i, this->m_argv[i]);
@@ -188,7 +188,7 @@ int InjectorTool::initFaultTable( void )
 	while( getline(infile, strLine, '\n') )
 	{
 #ifdef DEBUG
-        std::cout <<"read \"" <<strLine << <<"\"" <<std::endl;
+        std::cout <<"read \"" <<strLine <<"\"" <<std::endl;
 #endif // DEBUG
 
 		//bind istream to the strLine

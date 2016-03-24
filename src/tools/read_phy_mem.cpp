@@ -132,20 +132,20 @@ int main(int argc, char * argv[])
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
 		perror("Failed to mlock mmaped space");
-    do_mlock = 0;
-  }
-  do_mlock = 1;
+        do_mlock = 0;
+    }
+    do_mlock = 1;
 
-  mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
+    mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
-  //只读一个字节
-  memcpy( data, (void *)mapAddr, sizeof(data) );
-  //*data = *((char *)mapAddr);
+    //只读一个字节
+    memcpy( data, (void *)mapAddr, sizeof(data) );
+    //*data = *((char *)mapAddr);
 
-  if(munmap((void *)mapStart, PAGE_SIZE) != 0)
-  {
-  	perror("Failed to munmap /dev/mem");
-  }
+    if(munmap((void *)mapStart, PAGE_SIZE) != 0)
+    {
+  	    perror("Failed to munmap /dev/mem");
+    }
 	close(memfd);
 	printf("%lx\n", *data);
 	return OK;
