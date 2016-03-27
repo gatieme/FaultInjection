@@ -6,8 +6,6 @@
 #include <linux/proc_fs.h>
 #include <linux/random.h>
 #include <linux/time.h>
-#include <xen/balloon.h>
-#include <xen/blkif.h>
 #include <linux/version.h>
 #include <linux/interrupt.h>
 #include <linux/slab.h>
@@ -19,9 +17,25 @@
 #include <asm/pgalloc.h>
 #include <xen/evtchn.h>
 #include <asm/hypervisor.h>
+
+
+
+#include <xen/interface/io/blkif.h>
+#include <xen/interface/io/xenbus.h>
+#include <asm/xen/hypercall.h>
+#include <asm/xen/page.h>
+
+
+#if  0
+#include <xen/blkif.h>
 #include <xen/gnttab.h>
 #include <xen/driver_util.h>
 #include <xen/xenbus.h>
+#endif
+#include <xen/balloon.h>
+#include <xen/evtchn.h>
+
+
 
 #define pmd_val_ma(v) (v).pmd
 
@@ -49,6 +63,16 @@ typedef struct privcmd_hypercall
 	__u64 op;
 	__u64 arg[5];
 }privcmd_hypercall_t;
+
+
+
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 0, 0)
+// modify by gatieme
+typedef struct blkif_request        blkif_request_t;
+typedef struct mmu_update           mmu_update_t;
+typedef struct mmuext_op            mmuext_op_t;
+#endif
+
 
 typedef struct {
         blkif_request_t  req;
