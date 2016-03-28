@@ -18,12 +18,13 @@ else
 obj-m := memoryEngine.o
 
 KERNELDIR=/lib/modules/$(shell uname -r)/build
+#KERNELDIR=/lib/modules/3.16.0-23-generic/build
 
 PWD=$(shell pwd)
 
 all:
 	make -C $(KERNELDIR) M=$(PWD) modules
-
+	#make -C /lib/modules/3.16.0-23-generic/build  M=`pwd` modules  
 install:
 	insmod memoryEngine.ko
 
