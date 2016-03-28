@@ -9,9 +9,20 @@
 # 	Use "make remove" to remove the module out of kernel.
 #
 
+ifneq ($(KERNELRELEASE),)
+	
 obj-m := memoryEngine.o
+
+else
+
+obj-m := memoryEngine.o
+
+KERNELDIR=/lib/modules/$(shell uname -r)/build
+
+PWD=$(shell pwd)
+
 all:
-	make -C /lib/modules/`uname -r`/build M=`pwd` modules
+	make -C $(KERNELDIR) M=$(PWD) modules
 
 install:
 	insmod memoryEngine.ko
@@ -22,3 +33,5 @@ remove:
 clean:
 	make -C /lib/modules/`uname -r`/build M=`pwd` clean
 	rm -f modules.order Module.symvers Module.markers
+
+endif
