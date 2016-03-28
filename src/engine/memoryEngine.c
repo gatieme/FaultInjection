@@ -21,7 +21,7 @@ struct proc_dir_entry *proc_kFuncName = NULL;	    /// write only
 struct proc_dir_entry *proc_val = NULL;				/// rw
 struct proc_dir_entry *proc_signal = NULL;		    /// rw
 struct proc_dir_entry *proc_pa = NULL;				/// read only
-struct proc_dir_entry *proc_taskINfo = NULL;    	/// read only
+struct proc_dir_entry *proc_taskInfo = NULL;    	/// read only
 
 /*
 * proc node values
@@ -880,7 +880,9 @@ static int __init initME(void)
     if(proc_pid == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
+
         remove_proc_entry("memoryEngine", NULL);
+
         return FAIL;
 	}
 	proc_pid->write_proc = proc_write_pid;  /// write only
@@ -898,7 +900,9 @@ static int __init initME(void)
     if(proc_pid == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
+
         remove_proc_entry("memoryEngine", NULL);
+
         return FAIL;
 	}
 
@@ -913,7 +917,7 @@ static int __init initME(void)
 		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
 
         remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
+        remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
 	}
@@ -925,11 +929,11 @@ static int __init initME(void)
     static const struct file_operations va_fops =
     {
         .owner = THIS_MODULE,
-	    .read  = proc_read_virtualAddr;                 // can read
-	    .write = proc_write_virtualAddr;                // can write
+	    .read  = proc_read_virtualAddr,                 // can read
+	    .write = proc_write_virtualAddr,                // can write
     };
 
-    proc_va = proc_create("pid", PERMISSION, dir, va_fops);
+    proc_va = proc_create("virtualAddr", PERMISSION, dir, va_fops);
 
     if(proc_va == NULL)
 	{
@@ -952,33 +956,34 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
 
+		remove_proc_entry("virtualAddr", dir);
         remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
-		remove_proc_entry("virtualAddr", dir);
 
         return FAIL;
 	}
 
     proc_ctl->write_proc = proc_write_ctl;              // write only
 	proc_ctl->owner = THIS_MODULE;
+
 #else
 
     static const struct file_operations ctl_fops =
     {
         .owner = THIS_MODULE,
-	    //.read  = proc_read_ctl;                 // can read
+	    //.read  = proc_read_ctl,                 // can read
 	    .write = proc_write_ctl;                        // write only
     };
 
-    proc_ctl = proc_create("pid", PERMISSION, dir, ctl_fops);
+    proc_ctl = proc_create("ctl", PERMISSION, dir, ctl_fops);
 
     if(proc_ctl == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
 
+		remove_proc_entry("virtualAddr", dir);
         remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
-		remove_proc_entry("virtualAddr", dir);
 
         return FAIL;
 	}
@@ -989,13 +994,14 @@ static int __init initME(void)
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_signal = create_proc_entry("signal", PERMISSION, dir);
-	if(proc_signal == NULL)
+
+    if(proc_signal == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
 
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("virtualAddr", dir);
 		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
@@ -1005,6 +1011,26 @@ static int __init initME(void)
 	proc_signal->owner = THIS_MODULE;
 #else
 
+    static const struct file_operations signal_fops =
+    {
+        .owner = THIS_MODULE,
+	    //.read  = proc_read_ctl,                 // can read
+	    .write = proc_write_ctl,                        // write only
+    };
+
+    proc_signal = proc_create("signal", PERMISSION, dir, signal_fops);
+
+    if(proc_ctl == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/signal\n");
+
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+
+        return FAIL;
+	}
 #endif
 
     ///  create a file named "physicalAddr" in direntory
@@ -1014,9 +1040,11 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
 
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("virtualAddr", dir);
+
+		remove_proc_entry("signal", dir);
 		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
@@ -1026,49 +1054,122 @@ static int __init initME(void)
 	proc_pa->write_proc = proc_write_pa;                //  can write
 #else
 
+    static const struct file_operations pa_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_pa,                         // read only
+	    .write = proc_write_pa,                        // write only
+    };
+
+    proc_signal = proc_create("signal", PERMISSION, dir, signal_fops);
+
+    if(proc_signal == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/signal\n");
+
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+
+        return FAIL;
+    }
+
 #endif
 
 
     ///  create a file named "kFuncName" in direntory
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
-	proc_kFuncName = create_proc_entry("kFuncName", PERMISSION, dir);
+
+    proc_kFuncName = create_proc_entry("kFuncName", PERMISSION, dir);
 	if(proc_kFuncName == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
 
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("virtualAddr", dir);
-		remove_proc_entry("ctl", dir);
 		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
 	}
 	proc_kFuncName->write_proc = proc_write_kFuncName;  // write only
+
 #else
 
+    static const struct file_operations kFuncName_fops =
+    {
+        .owner = THIS_MODULE,
+	    //.read  = proc_read_kFuncName,                         // read only
+	    .write = proc_write_kFuncName,                        // write only
+    };
+
+    proc_kFuncName = proc_create("kFuncName", PERMISSION, dir, kFuncName_fops);
+
+    if(proc_kFuncName == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
+
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+
+        return FAIL;
+    }
 #endif
 
     ///  create a file named "taskInfo" in direntory
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
-	proc_taskINfo = create_proc_entry("taskInfo", PERMISSION, dir);
-	if(proc_taskINfo == NULL)
+
+    proc_taskInfo = create_proc_entry("taskInfo", PERMISSION, dir);
+	if(proc_taskInfo == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
 
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("virtualAddr", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("kFuncName", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
 	}
-	proc_taskINfo->read_proc = proc_read_taskInfo;      // read only
+	proc_taskInfo->read_proc = proc_read_taskInfo;      // read only
 
 #else
 
+    static const struct file_operations taskInfo_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_taskInfo,                    // read only
+	    //.write = proc_write_taskInfo,                        // write only
+    };
+
+    proc_taskInfo = proc_create("taskInfo", PERMISSION, dir, taskInfo_fops);
+
+    if(proc_taskInfo == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/taskIndfo\n");
+
+		remove_proc_entry("kFuncName", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+
+        return FAIL;
+	}
 #endif
 
 
@@ -1079,12 +1180,14 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
 
-		remove_proc_entry("pid", dir);
-		remove_proc_entry("virtualAddr", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("kFuncName", dir);
 		remove_proc_entry("taskInfo", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
 		remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
@@ -1094,6 +1197,31 @@ static int __init initME(void)
 
 
 #else
+
+    static const struct file_operations memVal_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_memVal,                    // read only
+	    //.write = proc_write_taskInfo,                        // write only
+    };
+
+    proc_memVal = proc_create("memVal", PERMISSION, dir, memVal_fops);
+
+    if(proc_memVal == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/memVal\n");
+
+		remove_proc_entry("kFuncName", dir);
+		remove_proc_entry("taskInfo", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("physicalAddr", dir);
+		remove_proc_entry("signal", dir);
+		remove_proc_entry("ctl", dir);
+		remove_proc_entry("virtualAddr", dir);
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+
+        return FAIL;
 
 #endif
 
