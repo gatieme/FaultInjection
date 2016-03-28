@@ -971,7 +971,7 @@ static int __init initME(void)
     static const struct file_operations ctl_fops =
     {
         .owner = THIS_MODULE,
-	    //.read  = proc_read_ctl,                 // can read
+	    //.read  = proc_read_ctl,                       // can read
 	    .write = proc_write_ctl;                        // write only
     };
 
