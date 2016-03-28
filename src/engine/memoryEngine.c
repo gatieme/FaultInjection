@@ -849,21 +849,64 @@ static int __init initME(void)
     /// error: dereferencing pointer to incomplete type
 	dir->owner = THIS_MODULE;
 
+
     /// create a file named "pid" in direntory
-	proc_pid = create_proc_entry("pid", PERMISSION, dir);
-	if(proc_pid == NULL)
+    /// modify by gatieme for system porting NeoKylin-linux-3.14/16
+    /*
+     *  ==
+     *  write in STACK_OVER_FLOW http://stackoverflow.com/questions/26808325/implicit-declaration-of-function-create-proc-entry
+     *  ==
+     *
+     *  proc filesystem has been refactored in 3.10,
+     *  the function `create_proc_entry` has been removed,
+     *  you should use the full featured `proc_create function` family.
+     *
+     *  Note that the signatures are different, you can find them in LXR
+     *  3.10 version: http://lxr.free-electrons.com/source/include/linux/proc_fs.h?v=3.10
+     *  3.9 version: http://lxr.free-electrons.com/source/include/linux/proc_fs.h?v=3.9
+     *
+     *  You can find greater explanation of using full featured /proc functions in the book Linux Device Drivers 4,
+     *  or, if you want shorter solution, check this link (https://github.com/jesstess/ldd4/blob/master/scull/main.c)
+     *  where you can see how the struct file_operations has been used. You do not have to setup to all fields of the struct.
+     *
+     *  but the function  remove_proc_remove, you can do nothing for it, becase there are tow function for it
+     *  static inline void proc_remove(struct proc_dir_entry *de) {}
+     *  #define remove_proc_entry(name, parent) do {} while (0)
+     */
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
+
+    proc_pid = create_proc_entry("pid", PERMISSION, dir);
+
+    if(proc_pid == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
-
         remove_proc_entry("memoryEngine", NULL);
-
         return FAIL;
 	}
 	proc_pid->write_proc = proc_write_pid;  /// write only
 	proc_pid->owner = THIS_MODULE;
+#else
+    static const struct file_operations pid_fops =
+    {
+        .owner = THIS_MODULE,
+       // .read = proc_write_read,
+        .write = proc_write_pid,          /*  write only  */
+    };
 
+    proc_pid = proc_create("pid", PERMISSION, dir, pid_fops);
+
+    if(proc_pid == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/pid\n");
+        remove_proc_entry("memoryEngine", NULL);
+        return FAIL;
+	}
+
+#endif
 
     /// create a file named "virtualAddr" in direntory
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
+
 	proc_va = create_proc_entry("virtualAddr", PERMISSION, dir);
 	if(proc_va == NULL)
 	{
@@ -878,23 +921,74 @@ static int __init initME(void)
 	proc_va->write_proc = proc_write_virtualAddr;       // can write
 	proc_va->owner = THIS_MODULE;
 
+#else
+    static const struct file_operations va_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_virtualAddr;                 // can read
+	    .write = proc_write_virtualAddr;                // can write
+    };
+
+    proc_va = proc_create("pid", PERMISSION, dir, va_fops);
+
+    if(proc_va == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
+
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+
+        return FAIL;
+	}
+
+
+#endif
+
     ///  create a file named "ctl" in direntory
-	proc_ctl = create_proc_entry("ctl", PERMISSION, dir);
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
+
+    proc_ctl = create_proc_entry("ctl", PERMISSION, dir);
 	if(proc_ctl == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
 
         remove_proc_entry("pid", dir);
-		remove_proc_entry("virtualAddr", dir);
 		remove_proc_entry("memoryEngine", NULL);
+		remove_proc_entry("virtualAddr", dir);
 
         return FAIL;
 	}
-	proc_ctl->write_proc = proc_write_ctl;              // write only
+
+    proc_ctl->write_proc = proc_write_ctl;              // write only
 	proc_ctl->owner = THIS_MODULE;
+#else
+
+    static const struct file_operations ctl_fops =
+    {
+        .owner = THIS_MODULE,
+	    //.read  = proc_read_ctl;                 // can read
+	    .write = proc_write_ctl;                        // write only
+    };
+
+    proc_ctl = proc_create("pid", PERMISSION, dir, ctl_fops);
+
+    if(proc_ctl == NULL)
+	{
+		dbginfo("Can't create /proc/memoryEngine/ctl\n");
+
+        remove_proc_entry("pid", dir);
+		remove_proc_entry("memoryEngine", NULL);
+		remove_proc_entry("virtualAddr", dir);
+
+        return FAIL;
+	}
+
+#endif
 
     ///  create a file named "signal" in direntory
-	proc_signal = create_proc_entry("signal", PERMISSION, dir);
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
+
+    proc_signal = create_proc_entry("signal", PERMISSION, dir);
 	if(proc_signal == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
@@ -909,8 +1003,12 @@ static int __init initME(void)
 	proc_signal->read_proc = proc_read_signal;          //  can read
 	proc_signal->write_proc = proc_write_signal;        //  can write
 	proc_signal->owner = THIS_MODULE;
+#else
+
+#endif
 
     ///  create a file named "physicalAddr" in direntory
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 	proc_pa = create_proc_entry("physicalAddr", PERMISSION, dir);
 	if(proc_pa == NULL)
 	{
@@ -926,9 +1024,13 @@ static int __init initME(void)
 
 	proc_pa->read_proc = proc_read_pa;                  //  can read
 	proc_pa->write_proc = proc_write_pa;                //  can write
+#else
+
+#endif
 
 
     ///  create a file named "kFuncName" in direntory
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 	proc_kFuncName = create_proc_entry("kFuncName", PERMISSION, dir);
 	if(proc_kFuncName == NULL)
 	{
@@ -943,9 +1045,12 @@ static int __init initME(void)
         return FAIL;
 	}
 	proc_kFuncName->write_proc = proc_write_kFuncName;  // write only
+#else
 
+#endif
 
     ///  create a file named "taskInfo" in direntory
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 	proc_taskINfo = create_proc_entry("taskInfo", PERMISSION, dir);
 	if(proc_taskINfo == NULL)
 	{
@@ -962,7 +1067,13 @@ static int __init initME(void)
 	}
 	proc_taskINfo->read_proc = proc_read_taskInfo;      // read only
 
+#else
+
+#endif
+
+
     ///  create a file named "memVal" in direntory
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 	proc_val = create_proc_entry("memVal", PERMISSION, dir);
 	if(proc_val == NULL)
 	{
@@ -980,6 +1091,12 @@ static int __init initME(void)
 	}
 	proc_val->write_proc = proc_write_memVal;           // can write
 	proc_val->read_proc = proc_read_memVal;             // can read
+
+
+#else
+
+#endif
+
 
 
 	ret = register_jprobe(&jprobe1);
