@@ -845,13 +845,14 @@ static int __init initME(void)
 		return FAIL;
 	}
 
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
     /// modify by gatieme for system porting NeoKylin-linux-3.14/16
     /// error: dereferencing pointer to incomplete type
 	dir->owner = THIS_MODULE;
+#endif
 
 
-    /// create a file named "pid" in direntory
-    /// modify by gatieme for system porting NeoKylin-linux-3.14/16
+    /// modify by gatieme for system porting NeoKylin-linux-3.14/16 @ 2016--03-28 20:08
     /*
      *  ==
      *  write in STACK_OVER_FLOW http://stackoverflow.com/questions/26808325/implicit-declaration-of-function-create-proc-entry
@@ -873,6 +874,8 @@ static int __init initME(void)
      *  static inline void proc_remove(struct proc_dir_entry *de) {}
      *  #define remove_proc_entry(name, parent) do {} while (0)
      */
+
+    /// create a file named "pid" in direntory
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_pid = create_proc_entry("pid", PERMISSION, dir);
@@ -895,7 +898,7 @@ static int __init initME(void)
         .write = proc_write_pid,          /*  write only  */
     };
 
-    proc_pid = proc_create("pid", PERMISSION, dir, pid_fops);
+    proc_pid = proc_create("pid", PERMISSION, dir, &pid_fops);
 
     if(proc_pid == NULL)
 	{
@@ -933,7 +936,7 @@ static int __init initME(void)
 	    .write = proc_write_virtualAddr,                // can write
     };
 
-    proc_va = proc_create("virtualAddr", PERMISSION, dir, va_fops);
+    proc_va = proc_create("virtualAddr", PERMISSION, dir, &va_fops);
 
     if(proc_va == NULL)
 	{
@@ -972,10 +975,10 @@ static int __init initME(void)
     {
         .owner = THIS_MODULE,
 	    //.read  = proc_read_ctl,                       // can read
-	    .write = proc_write_ctl;                        // write only
+	    .write = proc_write_ctl,                        // write only
     };
 
-    proc_ctl = proc_create("ctl", PERMISSION, dir, ctl_fops);
+    proc_ctl = proc_create("ctl", PERMISSION, dir, &ctl_fops);
 
     if(proc_ctl == NULL)
 	{
@@ -1018,7 +1021,7 @@ static int __init initME(void)
 	    .write = proc_write_ctl,                        // write only
     };
 
-    proc_signal = proc_create("signal", PERMISSION, dir, signal_fops);
+    proc_signal = proc_create("signal", PERMISSION, dir, &signal_fops);
 
     if(proc_ctl == NULL)
 	{
@@ -1061,7 +1064,7 @@ static int __init initME(void)
 	    .write = proc_write_pa,                        // write only
     };
 
-    proc_signal = proc_create("signal", PERMISSION, dir, signal_fops);
+    proc_signal = proc_create("signal", PERMISSION, dir, &pa_fops);
 
     if(proc_signal == NULL)
 	{
@@ -1107,7 +1110,7 @@ static int __init initME(void)
 	    .write = proc_write_kFuncName,                        // write only
     };
 
-    proc_kFuncName = proc_create("kFuncName", PERMISSION, dir, kFuncName_fops);
+    proc_kFuncName = proc_create("kFuncName", PERMISSION, dir, &kFuncName_fops);
 
     if(proc_kFuncName == NULL)
 	{
@@ -1153,7 +1156,7 @@ static int __init initME(void)
 	    //.write = proc_write_taskInfo,                        // write only
     };
 
-    proc_taskInfo = proc_create("taskInfo", PERMISSION, dir, taskInfo_fops);
+    proc_taskInfo = proc_create("taskInfo", PERMISSION, dir, &taskInfo_fops);
 
     if(proc_taskInfo == NULL)
 	{
@@ -1198,16 +1201,16 @@ static int __init initME(void)
 
 #else
 
-    static const struct file_operations memVal_fops =
+    static const struct file_operations val_fops =
     {
         .owner = THIS_MODULE,
-	    .read  = proc_read_memVal,                    // read only
-	    //.write = proc_write_taskInfo,                        // write only
+	    .read  = proc_read_memVal,                      // can read
+	    .write = proc_write_memVal,                     // can write
     };
 
-    proc_memVal = proc_create("memVal", PERMISSION, dir, memVal_fops);
+    proc_val = proc_create("memVal", PERMISSION, dir, &val_fops);
 
-    if(proc_memVal == NULL)
+    if(proc_val == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
 
@@ -1222,7 +1225,7 @@ static int __init initME(void)
 		remove_proc_entry("memoryEngine", NULL);
 
         return FAIL;
-
+    }
 #endif
 
 
@@ -1239,8 +1242,9 @@ static int __init initME(void)
 	return OK;
 }
 
-
-static int jforce_sig_info(int sig,struct siginfo *info,struct task_struct *t)
+/// modify by gatieme for system porting NeoKylin-linux-3.14/16 @ 2016--03-28 20:08
+// invalid storage class for function ¡®jforce_sig_info¡¯
+static int jforce_sig_info(int sig, struct siginfo *info, struct task_struct *t)
 {
     printk("MemSysFI: kernel is sending signal %d to process pid: %d, comm: %s\n",sig,t->pid,t->comm);
 /*
