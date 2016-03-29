@@ -402,7 +402,7 @@ static int julyregfi_init(void)
 	if(useit[do_fork_id])
     {
         jphyper[do_fork_id].entry = (kprobe_opcode_t *)my_do_fork;
-        jphyper[do_fork_id].kp.symbol_name="_do_fork";
+        jphyper[do_fork_id].kp.symbol_name="do_fork";
     }
 
     if(useit[do_timer_id])
