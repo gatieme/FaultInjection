@@ -32,5 +32,5 @@ install:
 clean:
 #	make -C $(ENGINE) clean
 #	make -C $(TOOLS) clean
-	rm *.o
-	rm $(EXE)
+	rm -rf *.o
+	rm -rf $(EXE)

@@ -1045,8 +1045,8 @@ static int __init initME(void)
     static const struct file_operations signal_fops =
     {
         .owner = THIS_MODULE,
-	    //.read  = proc_read_ctl,                 // can read
-	    .write = proc_write_signal,                        // write only
+	    //.read  = proc_read_ctl,                       // can read
+	    .write = proc_write_signal,                     // write only
     };
 
     proc_signal = proc_create("signal", PERMISSION, dir, &signal_fops);
