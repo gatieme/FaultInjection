@@ -172,7 +172,8 @@ void do_request(void)
 
 			//等待故障注入结束
 			dbginfo("start count\n");
-			int temp=0;
+			int temp = 0;
+
 			while(1)
 			{
 				if(count == -1)
@@ -256,40 +257,66 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_end, DELIMITER);
 
 	pVMA = pMM->mmap;
-	if(pVMA == NULL) { return OK; }
-	for(p=pVMA; p!=NULL; p=p->vm_next)
+	if(pVMA == NULL)
+    {
+        return OK;
+    }
+	for(p = pVMA; p != NULL; p = p->vm_next)
 	{
-		//起始地址
-		safe_sprintf(pData, length, info+strlen(info), "%lx %lx ", p->vm_start, p->vm_end);
-		//属性
+		//  起始地址
+		safe_sprintf(pData, length, info + strlen(info), "%lx %lx ", p->vm_start, p->vm_end);
+
+        //  属性
 		if(p->vm_flags & VM_READ)
-		{	safe_sprintf(pData, length, info+strlen(info), "r"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "r");
+        }
 		else
-		{	safe_sprintf(pData, length, info+strlen(info), "-"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "-");
+        }
 
 		if(p->vm_flags & VM_WRITE)
-		{	safe_sprintf(pData, length, info+strlen(info), "w"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "w");
+        }
 		else
-		{	safe_sprintf(pData, length, info+strlen(info), "-"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "-");
+        }
 
 		if(p->vm_flags & VM_EXEC)
-		{	safe_sprintf(pData, length, info+strlen(info), "x"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "x");
+        }
 		else
-		{	safe_sprintf(pData, length, info+strlen(info), "-"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "-");
+        }
 
 		if(p->vm_flags & VM_SHARED)
-		{	safe_sprintf(pData, length, info+strlen(info), "s"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "s");
+        }
 		else
-		{	safe_sprintf(pData, length, info+strlen(info), "p"); }
+		{
+            safe_sprintf(pData, length, info+strlen(info), "p");
+        }
 
-		//对应文件名
+		//  对应文件名
 		if(p->vm_file != NULL)
 		{
-			if(p->vm_file->f_dentry != NULL)
-			{
+            //  i find in linux-kernel-3.16
+            //  http://lxr.free-electrons.com/source/include/linux/fs.h?v=3.16#L827
+            //  struct path             f_path;
+            //  #define f_dentry        f_path.dentry
+//#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 19, 0)
+            if(p->vm_file->f_path.dentry != NULL)
+//#endif
+            {
 				safe_sprintf(pData, length, info+strlen(info), " ");
 				memset(file,'\0',sizeof(file));
-				for(pPath = p->vm_file->f_dentry; pPath != NULL; pPath = pPath->d_parent)
+				for(pPath = p->vm_file->f_path.dentry; pPath != NULL; pPath = pPath->d_parent)
 				{
 					if(strcmp(pPath->d_name.name,"/") != 0)
 					{
@@ -1012,18 +1039,19 @@ static int __init initME(void)
 	proc_signal->read_proc = proc_read_signal;          //  can read
 	proc_signal->write_proc = proc_write_signal;        //  can write
 	proc_signal->owner = THIS_MODULE;
+
 #else
 
     static const struct file_operations signal_fops =
     {
         .owner = THIS_MODULE,
 	    //.read  = proc_read_ctl,                 // can read
-	    .write = proc_write_ctl,                        // write only
+	    .write = proc_write_signal,                        // write only
     };
 
     proc_signal = proc_create("signal", PERMISSION, dir, &signal_fops);
 
-    if(proc_ctl == NULL)
+    if(proc_signal == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
 
@@ -1038,6 +1066,7 @@ static int __init initME(void)
 
     ///  create a file named "physicalAddr" in direntory
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
+
 	proc_pa = create_proc_entry("physicalAddr", PERMISSION, dir);
 	if(proc_pa == NULL)
 	{
@@ -1064,11 +1093,11 @@ static int __init initME(void)
 	    .write = proc_write_pa,                        // write only
     };
 
-    proc_signal = proc_create("signal", PERMISSION, dir, &pa_fops);
+    proc_pa = proc_create("physicalAddr", PERMISSION, dir, &pa_fops);
 
-    if(proc_signal == NULL)
+    if(proc_pa == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/signal\n");
+		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
 
 		remove_proc_entry("signal", dir);
 		remove_proc_entry("ctl", dir);
@@ -1086,7 +1115,8 @@ static int __init initME(void)
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_kFuncName = create_proc_entry("kFuncName", PERMISSION, dir);
-	if(proc_kFuncName == NULL)
+
+    if(proc_kFuncName == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
 
@@ -1125,13 +1155,15 @@ static int __init initME(void)
 
         return FAIL;
     }
+
 #endif
 
     ///  create a file named "taskInfo" in direntory
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_taskInfo = create_proc_entry("taskInfo", PERMISSION, dir);
-	if(proc_taskInfo == NULL)
+
+    if(proc_taskInfo == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
 
@@ -1164,7 +1196,6 @@ static int __init initME(void)
 
 		remove_proc_entry("kFuncName", dir);
 		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("signal", dir);
 		remove_proc_entry("ctl", dir);
 		remove_proc_entry("virtualAddr", dir);
@@ -1178,14 +1209,15 @@ static int __init initME(void)
 
     ///  create a file named "memVal" in direntory
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
-	proc_val = create_proc_entry("memVal", PERMISSION, dir);
-	if(proc_val == NULL)
+
+    proc_val = create_proc_entry("memVal", PERMISSION, dir);
+
+    if(proc_val == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
 
 		remove_proc_entry("kFuncName", dir);
 		remove_proc_entry("taskInfo", dir);
-		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("signal", dir);
 		remove_proc_entry("ctl", dir);
@@ -1195,7 +1227,8 @@ static int __init initME(void)
 
         return FAIL;
 	}
-	proc_val->write_proc = proc_write_memVal;           // can write
+
+    proc_val->write_proc = proc_write_memVal;           // can write
 	proc_val->read_proc = proc_read_memVal;             // can read
 
 
@@ -1216,7 +1249,6 @@ static int __init initME(void)
 
 		remove_proc_entry("kFuncName", dir);
 		remove_proc_entry("taskInfo", dir);
-		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("physicalAddr", dir);
 		remove_proc_entry("signal", dir);
 		remove_proc_entry("ctl", dir);
@@ -1329,7 +1361,7 @@ static void __exit exitME(void)
 
 module_init(initME);
 module_exit(exitME);
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("HIT CS HDMC team");
 MODULE_DESCRIPTION("Memory Engine Module.");
 
