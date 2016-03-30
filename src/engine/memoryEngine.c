@@ -316,9 +316,12 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
             {
 				safe_sprintf(pData, length, info+strlen(info), " ");
 				memset(file,'\0',sizeof(file));
-				for(pPath = p->vm_file->f_path.dentry; pPath != NULL; pPath = pPath->d_parent)
+				for(pPath = p->vm_file->f_path.dentry;
+                    pPath != NULL;
+                    pPath = pPath->d_parent)
 				{
-					if(strcmp(pPath->d_name.name,"/") != 0)
+
+                    if(strcmp(pPath->d_name.name, "/") != 0)
 					{
 						strcpy(file + strlen(file), pPath->d_name.name);
 						strcpy(file + strlen(file), "/");
@@ -1045,7 +1048,7 @@ static int __init initME(void)
     static const struct file_operations signal_fops =
     {
         .owner = THIS_MODULE,
-	    //.read  = proc_read_ctl,                       // can read
+	    .read  = proc_read_signal,                       // can read
 	    .write = proc_write_signal,                     // write only
     };
 
@@ -1084,6 +1087,7 @@ static int __init initME(void)
 
 	proc_pa->read_proc = proc_read_pa;                  //  can read
 	proc_pa->write_proc = proc_write_pa;                //  can write
+
 #else
 
     static const struct file_operations pa_fops =
