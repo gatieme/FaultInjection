@@ -34,5 +34,5 @@ install:
 	cp writepa $(BIN)
 	cp inject_sys_process.sh $(BIN)
 clean:
-	rm *.o 
-	rm $(targets)
+	rm -rf *.o 
+	rm -rf $(targets)
