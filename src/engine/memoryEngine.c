@@ -78,6 +78,7 @@ void do_request(void)
 	long kernel_va = 0;
 	int status;
 
+    int temp = 0;
 	/// get a task's memory map information
 	if(ctl == REQUEST_TASK_INFO)
 	{
@@ -170,9 +171,9 @@ void do_request(void)
 				return;
 			}
 
-			//等待故障注入结束
+			// 等待故障注入结束
 			dbginfo("start count\n");
-			int temp = 0;
+			temp = 0;
 
 			while(1)
 			{
