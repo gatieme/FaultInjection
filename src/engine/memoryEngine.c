@@ -712,8 +712,10 @@ int proc_read_signal(   char * page,
                         void * data)
 {
 	int iLen;
-	iLen = sprintf(page, "%d", ack_signal);
-	return iLen;
+
+    iLen = sprintf(page, "%d", ack_signal);
+
+    return iLen;
 }
 
 /*
@@ -1020,6 +1022,10 @@ static int __init initME(void)
 
         return FAIL;
 	}
+    else
+    {
+        dbginfo("Create /proc/memoryEngine/ctl success...\n");
+    }
 
 #endif
 
@@ -1049,7 +1055,7 @@ static int __init initME(void)
     {
         .owner = THIS_MODULE,
 	    .read  = proc_read_signal,                       // can read
-	    .write = proc_write_signal,                     // write only
+	    .write = proc_write_signal,                      // can write
     };
 
     proc_signal = proc_create("signal", PERMISSION, dir, &signal_fops);
@@ -1065,6 +1071,10 @@ static int __init initME(void)
 
         return FAIL;
 	}
+    else
+    {
+		dbginfo("Create /proc/memoryEngine/signal success\n");
+    }
 #endif
 
     ///  create a file named "physicalAddr" in direntory

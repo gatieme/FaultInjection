@@ -22,10 +22,10 @@ typedef struct procMMInfo
 	unsigned long exec;		//可执行内存映射
 	unsigned long stack;	//用户堆栈
 	unsigned long reserve;//保留区
-	
+
 	unsigned long def_flags;//
 	unsigned long nr_ptes;	//
-	
+
 	unsigned long start_code;	//代码段开始地址
 	unsigned long end_code;		//代码段结束地址
 	unsigned long start_data;	//数据段开始地址
@@ -78,30 +78,35 @@ typedef struct procMMInfo
 int ReadLine(char *input,char *line);
 int main(int argc, char * argv[])
 {
-	int pid;
-	pTaskMMInfo taskInfo;
-	int ret;
-	int count;
-	int procFile;
-	char buff[MAX_LINE];
-	char line[MAX_LINE];
-	unsigned long iLine;
-	int i;
+	int             pid;
+	pTaskMMInfo     taskInfo;
+	int             ret;
+	int             count;
+	int             procFile;
+	char            buff[MAX_LINE];
+	char            line[MAX_LINE];
+	unsigned long   iLine;
+	int             i;
+
 	if(argc != 2)
 	{
 		printf("Useage:./getTaskInfo pid\n");
 	}
-	pid = atoi(argv[1]);	
-	taskInfo = (pTaskMMInfo)malloc(sizeof(taskMMInfo));
+
+	pid = atoi(argv[1]);
+
+    taskInfo = (pTaskMMInfo)malloc(sizeof(taskMMInfo));
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/pid", pid);
 	system(buff);
-	
+    printf("%s\n", buff);
 	//send control word
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/ctl", REQUEST_TASK_INFO);
 	system(buff);
-	
+
+    printf("%s\n", buff);
+
 	//wait for ack signal
 	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
 	if(procFile == -1)
@@ -109,20 +114,28 @@ int main(int argc, char * argv[])
 		perror("Failed to open /proc/memoryEngine/signal");
 		return FAIL;
 	}
-	
-	do {
+    else
+    {
+        printf("success...");
+    }
+
+	do
+    {
 		bzero(buff, sizeof(buff));
 		ret = read(procFile, buff, MAX_LINE);
-		if(ret == -1)
+
+        if(ret == -1)
 		{
 			perror("Failed to read /proc/memoryEngine/signal");
 			return FAIL;
 		}
-	} while(atoi(buff) != ACK_TASK_INFO);
-	close(procFile);
-	
+
+	}while(atoi(buff) != ACK_TASK_INFO);
+
+    close(procFile);
+
 	//read task info
-	procFile = open("/proc/memoryEngine/taskInfo",O_RDONLY);
+	procFile = open("/proc/memoryEngine/taskInfo", O_RDONLY);
 	if(procFile == -1)
 	{
 		perror("Failed to open /proc/memoryEngine/taskInfo");
@@ -136,19 +149,19 @@ int main(int argc, char * argv[])
 		return FAIL;
 	}
 	close(procFile);
-	
-	//printf("%s",buff);	
-	
+
+	//printf("%s",buff);
+
 		//fill struct taskMMInfo
 	count = 0;
-	for(i=0; i<varCount; i++)
+	for(i = 0; i < varCount; i++)
 	{
-		bzero(line,sizeof(line));
-		count += ReadLine(buff+count,line);
-		sscanf(line,"%lx",&iLine);
+		bzero(line, sizeof(line));
+		count += ReadLine(buff + count, line);
+		sscanf(line, "%lx", &iLine);
 		memcpy((void *)((unsigned long)taskInfo + i * sizeof(unsigned long)),&iLine,sizeof(unsigned long));
 	}
-	for(i=0; i<varCount; i++)
+	for(i = 0; i < varCount; i++)
 	{
 		printf("0x%lx\n", *(unsigned long *)((unsigned long)taskInfo+i*sizeof(unsigned long)) );
 	}
