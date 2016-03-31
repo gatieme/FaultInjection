@@ -916,9 +916,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
 
-        remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_pid_failed;
 	}
 	proc_pid->write_proc = proc_write_pid;  /// write only
 	proc_pid->owner = THIS_MODULE;
@@ -936,9 +934,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
 
-        remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_pid_failed;
 	}
 
 #endif
@@ -951,10 +947,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
 
-        remove_proc_entry("pid", dir);
-        remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_va_failed;
 	}
 	proc_va->read_proc = proc_read_virtualAddr;         // can read
 	proc_va->write_proc = proc_write_virtualAddr;       // can write
@@ -974,10 +967,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
 
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_va_failed;
 	}
 
 
@@ -991,9 +981,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
 
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
+        goto create_ctl_failed;
 
         return FAIL;
 	}
@@ -1016,12 +1004,8 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
 
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
-	}
+	    goto create_ctl_failed;
+    }
     else
     {
         dbginfo("Create /proc/memoryEngine/ctl success...\n");
@@ -1038,12 +1022,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
 
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_signal_failed;
 	}
 	proc_signal->read_proc = proc_read_signal;          //  can read
 	proc_signal->write_proc = proc_write_signal;        //  can write
@@ -1064,12 +1043,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
 
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_signal_failed;
 	}
     else
     {
@@ -1085,14 +1059,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
 
-
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_pa_failed;
 	}
 
 	proc_pa->read_proc = proc_read_pa;                  //  can read
@@ -1113,13 +1080,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
 
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_pa_failed;
     }
 
 #endif
@@ -1134,15 +1095,9 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
 
-		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
+        goto create_kFuncName_failed;
 
-        return FAIL;
-	}
+    }
 	proc_kFuncName->write_proc = proc_write_kFuncName;  // write only
 
 #else
@@ -1160,14 +1115,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
 
-		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_kFuncName_failed;
     }
 
 #endif
@@ -1181,15 +1129,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
 
-		remove_proc_entry("kFuncName", dir);
-		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_taskInfo_failed;
 	}
 	proc_taskInfo->read_proc = proc_read_taskInfo;      // read only
 
@@ -1208,15 +1148,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/taskIndfo\n");
 
-		remove_proc_entry("kFuncName", dir);
-		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_taskInfo_failed;
 	}
 #endif
 
@@ -1230,16 +1162,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
 
-		remove_proc_entry("kFuncName", dir);
-		remove_proc_entry("taskInfo", dir);
-		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_val_failed;
 	}
 
     proc_val->write_proc = proc_write_memVal;           // can write
@@ -1261,20 +1184,9 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
 
-		remove_proc_entry("kFuncName", dir);
-		remove_proc_entry("taskInfo", dir);
-		remove_proc_entry("physicalAddr", dir);
-		remove_proc_entry("signal", dir);
-		remove_proc_entry("ctl", dir);
-		remove_proc_entry("virtualAddr", dir);
-        remove_proc_entry("pid", dir);
-		remove_proc_entry("memoryEngine", NULL);
-
-        return FAIL;
+        goto create_val_failed
     }
 #endif
-
-
 
 	ret = register_jprobe(&jprobe1);
 	if (ret < 0)
@@ -1286,6 +1198,35 @@ static int __init initME(void)
 
 	dbginfo("Memory engine module init\n");
 	return OK;
+
+
+//  remove the proc files
+create_val_failed    :
+    remove_proc_entry("kFuncName", dir);
+
+create_kFuncName_failed :
+    remove_proc_entry("taskInfo", dir);
+
+create_taskInfo_failed  :
+    remove_proc_entry("physicalAddr", dir);
+
+create_pa_failed        :
+    remove_proc_entry("signal", dir);
+
+create_signal_failed       :
+    remove_proc_entry("ctl", dir);
+
+create_ctl_failed        :
+    remove_proc_entry("virtualAddr", dir);
+
+create_va_failed       :
+    remove_proc_entry("pid", dir);
+
+create_pid_failed       :
+    remove_proc_entry("memoryEngine", NULL);
+
+    return FAIL;
+
 }
 
 /// modify by gatieme for system porting NeoKylin-linux-3.14/16 @ 2016--03-28 20:08
