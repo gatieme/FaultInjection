@@ -19,6 +19,8 @@ InjectorTool::InjectorTool()
     m_hasFaultTable(false),
     m_memoryFault(text_area, -1, word_0, 0, 0) //  默认的信息
 {
+    this->m_targetPid = -1;
+	this->m_exeArguments = NULL;
 	this->m_memoryFaultTablePath.clear();
 }
 
@@ -84,6 +86,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
         {
 		    if( faultTmp.SetLocation(this->m_argv[1]) == true )
 		    {
+		        cout << "read the Location : " <<this->m_argv[1] << endl;
 		        faultTmp.m_location = stack_area;
 		    }
 		    else
@@ -91,6 +94,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		        cerr << "Error, undefined fault location : " <<this->m_argv[1] << endl;
 			    return NULL;
 		    }
+            this->m_argv++;
         }
         else if ( strcmp(this->m_argv[0], "-m") == 0 )
         {
@@ -103,17 +107,19 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
 			    return NULL;
 		    }
+            this->m_argv++;
         }
         else if ( strcmp(this->m_argv[0], "-t") == 0 )
         {
 		    if( faultTmp.SetFaultType(this->m_argv[1]) == true )
 		    {
-		        cout << "read the Mode : " <<this->m_argv[1] << endl;
+		        cout << "read the Type : " <<this->m_argv[1] << endl;
             }
 		    else
 		    {
 		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
             }
+            this->m_argv++;
         }
     }
 

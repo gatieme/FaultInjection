@@ -9,7 +9,7 @@ import java.io.LineNumberReader;
 
 public class MemoryFI
 {
-    static String m_injector = "./memoryInjector";
+    static String m_injector = "top";
 
     /*
      *  -l --location   stack|data|text
@@ -23,9 +23,9 @@ public class MemoryFI
      * */
     public void Inject(String location, String mode, String type, int pid, String pname)
     {
-
         //  拼接运行字符串
         String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type;
+
         if(pid != -1)
         {
             cmd += " -p " + pid;
@@ -38,7 +38,7 @@ public class MemoryFI
 
         //  运行脚本
         String result = this.runCommand(new String[]{cmd, ""}, -1);
-        System.out.println(result);
+        System.out.println("RESULT : " + result);
     }
 
     /**

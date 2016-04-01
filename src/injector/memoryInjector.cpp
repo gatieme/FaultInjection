@@ -45,7 +45,7 @@ Injector::Injector(
 	this->m_exeArguments = program;
 	this->m_memoryFaultTablePath.clear();
 	//this->m_targetPid = -1;
-	this->m_exeArguments = program;
+	//this->m_exeArguments = program;
 }
 
 Injector::Injector(
@@ -364,12 +364,17 @@ int Injector::startInjection( void )
 {
 	int iRet;
 	int data = 0;
-
-	//inject fault into an existing process
+#ifdef DEBUG
+    cout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" pid = " <<this->m_targetPid <<endl;
+#endif
+    //inject fault into an existing process
 	if( this->m_targetPid > 0 && this->m_exeArguments == NULL )
 	{
 		iRet = injectFaults( this->m_targetPid );
-		if( iRet != RT_OK ) { return RT_FAIL; }
+		if( iRet != RT_OK )
+        {
+            return RT_FAIL;
+        }
 		return RT_OK;
 	}
 	if( this->m_targetPid > 10 && this->m_exeArguments == NULL )

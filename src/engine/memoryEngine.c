@@ -55,8 +55,8 @@ static struct kprobe kp_kFunc;
 
 struct jprobe jprobe1 =
 {
-    .entry				           = jforce_sig_info,
-    .kp =
+    .entry	= jforce_sig_info,
+    .kp     =
     {
         .symbol_name = "force_sig_info",
     },
@@ -198,6 +198,20 @@ void do_request(void)
 
 }
 
+struct dentry* file_entry(struct file *pfile)
+{
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 19, 0)
+
+    return pfile->f_path.dentry;
+
+#else
+
+    return pfile->f_dentry;
+
+#endif
+
+}
+
 /*
 *  get a task's memory map information
 */
@@ -311,13 +325,15 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
             //  http://lxr.free-electrons.com/source/include/linux/fs.h?v=3.16#L827
             //  struct path             f_path;
             //  #define f_dentry        f_path.dentry
-//#if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 19, 0)
-            if(p->vm_file->f_path.dentry != NULL)
-//#endif
+            struct dentry *den = file_entry(p->vm_file);
+
+            //if(p->vm_file->f_path.dentry != NULL)
+            if(den != NULL)
             {
 				safe_sprintf(pData, length, info+strlen(info), " ");
 				memset(file,'\0',sizeof(file));
-				for(pPath = p->vm_file->f_path.dentry;
+				//for(pPath = p->vm_file->f_path.dentry;
+				for(pPath = den;
                     pPath != NULL;
                     pPath = pPath->d_parent)
 				{
