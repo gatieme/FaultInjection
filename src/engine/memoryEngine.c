@@ -1201,7 +1201,7 @@ static int __init initME(void)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
 
-        goto create_val_failed
+        goto create_val_failed;
     }
 #endif
 
