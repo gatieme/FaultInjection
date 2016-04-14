@@ -1334,6 +1334,6 @@ static void __exit exitME(void)
 module_init(initME);
 module_exit(exitME);
 MODULE_LICENSE("Dual BSD/GPL");
-MODULE_AUTHOR("HIT CS HDMC team");
+MODULE_AUTHOR("Gatieme @ HIT CS HDMC team");
 MODULE_DESCRIPTION("Memory Engine Module.");
 

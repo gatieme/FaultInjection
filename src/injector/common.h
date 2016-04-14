@@ -47,4 +47,19 @@ using namespace std;
 //fault injection function pointers
 //typedef int (*INJECTFUNC)( int, long );
 
+//#define DEBUG
+
+
+//  for debug
+#ifdef DEBUG
+    #define dcout cout
+    #define dprintf(format, arg...) printf(format, ## arg)
+#else
+    #define dcout 0 && cout
+    #define dprintf(format, arg...) do {  } while (0)
+#endif
+
+
+
+
 #endif	/* _COMMON_H_ */

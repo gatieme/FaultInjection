@@ -370,6 +370,7 @@ int Injector::startInjection( void )
     //inject fault into an existing process
 	if( this->m_targetPid > 0 && this->m_exeArguments == NULL )
 	{
+        dcout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" pid = " <<this->m_targetPid <<endl;
 		iRet = injectFaults( this->m_targetPid );
 		if( iRet != RT_OK )
         {
@@ -379,12 +380,14 @@ int Injector::startInjection( void )
 	}
 	if( this->m_targetPid > 10 && this->m_exeArguments == NULL )
 	{
+        dcout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" pid = " <<this->m_targetPid <<endl;
 		//设置跟踪进程，等待子进程停止
 		signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号
 		iRet = ptraceAttach( this->m_targetPid );
 		if( iRet == RT_FAIL ) { return RT_FAIL; }
 
-		do {
+		do
+        {
 			iRet = procMonitor( this->m_targetPid,data );
 			if( iRet == RT_FAIL ) { return RT_FAIL; }
 		} while( iRet == RUN );
@@ -403,7 +406,7 @@ int Injector::startInjection( void )
 		//继续执行
 		ptraceCont( this->m_targetPid );
 
-		//跟踪继续执行后的子进程
+		//  跟踪继续执行后的子进程
 		while( 1 )
 		{
 			iRet = procMonitor( this->m_targetPid, data );
@@ -429,6 +432,8 @@ int Injector::startInjection( void )
 	//inject fault into an excultable program
 	if( this->m_exeArguments != NULL && this->m_targetPid < 0 )
 	{
+
+        dcout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" exe = " <<this->m_exeArguments <<", inject fault into an excultable program" <<endl;
 		errno = 0;
 		pid_t child = fork();
 		if( child < 0 )
@@ -493,6 +498,7 @@ int Injector::injectFaults( int pid )
 	long start_va, end_va;
 	unsigned long random_offset;
 
+    dcout <<"There are" <<this->m_memoryFaultTable.size() <<"works will be done in table" <<endl;
 	for( i = 0; i < this->m_memoryFaultTable.size( ); i++ )
 	{
 		/// location
@@ -525,21 +531,21 @@ int Injector::injectFaults( int pid )
 				start_va = procInfo.start_code;
 				end_va = procInfo.end_code;
                 // add by gatieme @2016-01-23
-                printf("[%s, %d] %d --Inject TEXT segment\n", __FILE__, __LINE__, iRet);
+                dprintf("[%s, %d] %d --Inject TEXT segment\n", __FILE__, __LINE__, iRet);
             }
 			else if( this->m_memoryFaultTable[i].m_location == data_area )  //  data segment
 			{
 				start_va = procInfo.start_data;
 				end_va = procInfo.end_data;
 
-                printf("[%s, %d] %d --Inject DATA segment\n", __FILE__, __LINE__, iRet);
+                dprintf("[%s, %d] %d --Inject DATA segment\n", __FILE__, __LINE__, iRet);
 			}
 			else if( this->m_memoryFaultTable[i].m_location == stack_area ) // stack segment
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
 
-                printf("[%s, %d] %d --Inject STACK segment\n", __FILE__, __LINE__, iRet);
+                dprintf("[%s, %d] %d --Inject STACK segment\n", __FILE__, __LINE__, iRet);
 			}
 
 			/* add by gatieme
@@ -566,10 +572,10 @@ int Injector::injectFaults( int pid )
 				random_offset = rand() % (end_va - start_va);
             //  Convert the virtual address [start_va + random_offset] to physics address [inject_pa]...
             inject_pa = virt_to_phys(pid, start_va + random_offset);
-            printf("[%s, %d]--Start  Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va);
-            printf("[%s, %d]--End    Virtual Address = 0x%lx\n", __FILE__, __LINE__, end_va);
-            printf("[%s, %d]--Inject Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va + random_offset);
-			printf("[%s, %d]--Inject Physics Address = 0x%lx\n", __FILE__, __LINE__, inject_pa);
+            dprintf("[%s, %d]--Start  Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va);
+            dprintf("[%s, %d]--End    Virtual Address = 0x%lx\n", __FILE__, __LINE__, end_va);
+            dprintf("[%s, %d]--Inject Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va + random_offset);
+			dprintf("[%s, %d]--Inject Physics Address = 0x%lx\n", __FILE__, __LINE__, inject_pa);
 		}
 		else
 		{
@@ -581,14 +587,14 @@ int Injector::injectFaults( int pid )
             return RT_FAIL;
         }
 
-		printf("Inject fault at virtual:0x%lx--(physical:0x%lx)\n", start_va + random_offset, inject_pa);
+		dprintf("Inject fault at virtual:0x%lx--(physical:0x%lx)\n", start_va + random_offset, inject_pa);
 
 		if(iRet == FAIL)
         {
-            printf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
+            dprintf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
             return RT_FAIL;
         }
-        printf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
+        dprintf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
 		switch( this->m_memoryFaultTable[i].m_faultType )
 		{
 
@@ -647,7 +653,7 @@ int Injector::injectFaults( int pid )
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 				newData = ~(-1);            ///  for DEBUG...
@@ -660,7 +666,7 @@ int Injector::injectFaults( int pid )
                 if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 
@@ -668,7 +674,7 @@ int Injector::injectFaults( int pid )
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    printf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 
@@ -682,7 +688,7 @@ int Injector::injectFaults( int pid )
                     return RT_FAIL;
                 }
 
-                printf("page 0\n");
+                dprintf("page 0\n");
 				break;
 			default:
 				printf("Do not support yet.\n");
