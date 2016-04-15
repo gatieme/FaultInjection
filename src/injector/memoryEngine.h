@@ -40,6 +40,7 @@ typedef struct procMMInfo
 	unsigned long arg_end;
 	unsigned long env_start;	//环境变量
 	unsigned long env_end;
+
 } taskMMInfo, *pTaskMMInfo;
 
 #define OK		0

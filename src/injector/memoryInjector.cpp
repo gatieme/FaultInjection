@@ -513,15 +513,21 @@ int Injector::injectFaults( int pid )
     dcout <<"There are" <<this->m_memoryFaultTable.size() <<"works will be done in table" <<endl;
 	for( i = 0; i < this->m_memoryFaultTable.size( ); i++ )
 	{
-        dcout <<this->m_memoryFaultTable[i] <<endl;
-		/// location
+        dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--" <<this->m_memoryFaultTable[i] <<endl;
+
+        /// location
+        dcout <<"==LOCATION==" <<endl;
 		if( this->m_memoryFaultTable[i].m_addr == -1 )
 		{
 			/// get proc information
 			bzero(&procInfo, sizeof(procInfo));
+            dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--" <<"bzero taskMMInfo success" <<endl;
 			iRet = getTaskInfo(pid, &procInfo);
+            dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--" <<"get taskMMInfo success" <<endl;
+
+#ifdef BUGS     //  BUG_2 found in 2016-04-15 15:44 by gatieme@HIT
 			//debug add by gatieme
-	        /*
+
 			printf("start_code\t\t%lx\n", procInfo.start_code);
 			printf("end_code\t\t%lx\n", procInfo.end_code);
 			printf("start_data\t\t%lx\n", procInfo.start_data);
@@ -530,7 +536,7 @@ int Injector::injectFaults( int pid )
 			printf("brk\t\t\t%lx\n", procInfo.brk);
 			printf("start_stack\t\t%lx\n", procInfo.start_stack);
 			return 0;
-			*/
+#endif
 			//debug
 			if(iRet == FAIL)
 			{
@@ -593,6 +599,7 @@ int Injector::injectFaults( int pid )
 		else
 		{
 			inject_pa = this->m_memoryFaultTable[i].m_addr;
+			dprintf("[%s, %d]--Inject Physics Address = 0x%lx\n", __FILE__, __LINE__, inject_pa);
 		}
 
 		if(inject_pa == -1)
@@ -607,6 +614,9 @@ int Injector::injectFaults( int pid )
             dprintf("Error [%s, %d]--, iRet =%d\n", __FILE__, __LINE__, iRet);
             return RT_FAIL;
         }
+
+
+
         dprintf("[%s, %d]--, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
 		switch( this->m_memoryFaultTable[i].m_faultType )
 		{

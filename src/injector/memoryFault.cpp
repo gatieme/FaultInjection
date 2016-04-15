@@ -89,14 +89,14 @@ bool MemoryFault::SetMode(std::string mode)
 {
     if( mode == "random" || mode == "RANDOM" )
     {
-    this->m_addr = -1;
+        this->m_addr = -1;
+        return true;
     }
     else
     {
-    std::cerr << "Error:undefined fault mode" <<std::endl;
+        std::cerr << "Error:undefined fault mode" <<std::endl;
 
-    return false;
-
+        return false;
     }
 /*
     else
