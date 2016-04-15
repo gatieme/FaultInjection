@@ -2,38 +2,61 @@
 
 ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
 {
+    out <<"location : ";
     switch(memoryFault.m_location)
     {
         case text_area:
         {
-            out <<"location :  text, ";
+            out <<"text, ";
             break;
 
         }
         case data_area:
-            out <<"location :  data, ";
+            out <<"data, ";
             break;
 
         case stack_area:
-            out <<"location : stack, ";
+            out <<"stack, ";
             break;
     }
+    out <<"mode : ";
     switch(memoryFault.m_addr)
     {
         case -1:
         {
-            out <<"mode     : random, ";
+            out <<"random, ";
             break;
         }
     }
+
+    out <<"type : ";
     switch(memoryFault.m_faultType)
     {
         case one_bit_0:
-        case one_bit_1:
-        case one_bit_flip:
-        case word_0:
-        case page_0:
+        {
+            out <<"one_bit_0, ";
             break;
+        }
+        case one_bit_1:
+        {
+            out <<"one_bit_1, ";
+            break;
+        }
+        case one_bit_flip:
+        {
+            out <<"one_bit_flip, ";
+            break;
+        }
+        case word_0:
+        {
+            out <<"word_0, ";
+            break;
+        }
+        case page_0:
+        {
+            out <<"page_0, ";
+            break;
+        }
     }
     return out;
 }

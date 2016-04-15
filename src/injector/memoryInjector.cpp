@@ -364,13 +364,11 @@ int Injector::startInjection( void )
 {
 	int iRet;
 	int data = 0;
-#ifdef DEBUG
-    cout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" pid = " <<this->m_targetPid <<endl;
-#endif
+
     //inject fault into an existing process
 	if( this->m_targetPid > 0 && this->m_exeArguments == NULL )
 	{
-        dcout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" pid = " <<this->m_targetPid <<endl;
+        dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--pid = " <<this->m_targetPid <<endl;
 		iRet = injectFaults( this->m_targetPid );
 		if( iRet != RT_OK )
         {
@@ -378,10 +376,12 @@ int Injector::startInjection( void )
         }
 		return RT_OK;
 	}
+
 	if( this->m_targetPid > 10 && this->m_exeArguments == NULL )
 	{
-        dcout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" pid = " <<this->m_targetPid <<endl;
-		//设置跟踪进程，等待子进程停止
+        dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--pid = " <<this->m_targetPid <<endl;
+
+        //设置跟踪进程，等待子进程停止
 		signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号
 		iRet = ptraceAttach( this->m_targetPid );
 		if( iRet == RT_FAIL ) { return RT_FAIL; }
@@ -399,41 +399,51 @@ int Injector::startInjection( void )
 			return RT_FAIL;
 		}
 
-		//进行故障注入
+		//  进行故障注入
 		iRet = injectFaults( this->m_targetPid );
 		if( iRet != RT_OK ) { return RT_FAIL; }
 
-		//继续执行
+		//  继续执行
 		ptraceCont( this->m_targetPid );
 
 		//  跟踪继续执行后的子进程
 		while( 1 )
 		{
 			iRet = procMonitor( this->m_targetPid, data );
-			if( iRet == RT_FAIL ) { return RT_FAIL; }
+			if( iRet == RT_FAIL )
+            {
+                return RT_FAIL;
+            }
 
 			if( iRet == RUN )
 			{
+                dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is still running" <<endl;
 				continue;
 			}
 			else if( iRet == STOP )
 			{
-				if( data == SIGTRAP ){ data = 0; }
+                dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is stop with singnal" <<endl;
+				if( data == SIGTRAP )
+                {
+                    data = 0;
+                }
 				ptraceCont( this->m_targetPid, data );
 			}
 			else //exit or term
 			{
+                dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is exit or term" <<endl;
 				writeResult( this->m_targetPid, iRet, data );
 				break;
 			}
 		}
 		return RT_OK;
 	}
+
 	//inject fault into an excultable program
 	if( this->m_exeArguments != NULL && this->m_targetPid < 0 )
 	{
 
-        dcout <<endl <<"FILE : "<<__FILE__  <<", LINE :"<<__LINE__ <<" exe = " <<this->m_exeArguments <<", inject fault into an excultable program" <<endl;
+        dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<*(this->m_exeArguments) <<", inject fault into an excultable program" <<endl;
 		errno = 0;
 		pid_t child = fork();
 		if( child < 0 )
@@ -463,12 +473,12 @@ int Injector::startInjection( void )
 				}
 				if( iRet == RUN )
 				{
-					/// cout << "process " << child << " running" << endl;
+                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments <<") is still running" <<endl;
 					continue;
 				}
 				else if( iRet == STOP )
 				{
-					/// cout << "process " << child << "stopped" << endl;
+                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments <<") is stoped" <<endl;
 					cleanup();
 					break;
 				}
@@ -476,11 +486,13 @@ int Injector::startInjection( void )
 				{
 					/// 写结果文件
 					cleanup();
+                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process is exit or term" <<endl;
 					writeResult( child, iRet, data );
 					break;
 				}
 			}
-			return RT_OK;
+
+            return RT_OK;
 		}
 	}
 
@@ -501,6 +513,7 @@ int Injector::injectFaults( int pid )
     dcout <<"There are" <<this->m_memoryFaultTable.size() <<"works will be done in table" <<endl;
 	for( i = 0; i < this->m_memoryFaultTable.size( ); i++ )
 	{
+        dcout <<this->m_memoryFaultTable[i] <<endl;
 		/// location
 		if( this->m_memoryFaultTable[i].m_addr == -1 )
 		{
@@ -591,10 +604,10 @@ int Injector::injectFaults( int pid )
 
 		if(iRet == FAIL)
         {
-            dprintf("Error File %s, Line = %d, iRet =%d\n", __FILE__, __LINE__, iRet);
+            dprintf("Error [%s, %d]--, iRet =%d\n", __FILE__, __LINE__, iRet);
             return RT_FAIL;
         }
-        dprintf("File %s, Line = %d, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
+        dprintf("[%s, %d]--, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
 		switch( this->m_memoryFaultTable[i].m_faultType )
 		{
 
@@ -653,7 +666,7 @@ int Injector::injectFaults( int pid )
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    dprintf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error [%s, %d]--, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 				newData = ~(-1);            ///  for DEBUG...
@@ -666,7 +679,7 @@ int Injector::injectFaults( int pid )
                 if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    dprintf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error [%s, %d]--, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 
@@ -674,7 +687,7 @@ int Injector::injectFaults( int pid )
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    dprintf("Error File %s, Line = %d, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error [%s, %d]--, iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 
@@ -698,6 +711,7 @@ int Injector::injectFaults( int pid )
 		timeout( this->m_memoryFaultTable[i].m_timeout, report );
 
 	}
+    dcout <<"return from " <<__func__ <<"now" <<endl;
 	return RT_OK;
 }
 

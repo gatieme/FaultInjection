@@ -72,14 +72,14 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		else if(strcmp(this->m_argv[0], "-e") == 0)
 		{
 			this->m_exeArguments = this->m_argv + 1;
-
+            dcout <<"The name of the process you want to inject is " <<this->m_argv[1] <<" == " <<*(this->m_exeArguments) <<endl;
             break;
 		}
 		else if(strcmp(this->m_argv[0], "-p") == 0)
 		{
 			this->m_targetPid = atoi(this->m_argv[1]);
 
-            printf("The pid of the process you want to inject is %s==%d", this->m_argv[1], this->m_targetPid);
+            dcout <<"The pid of the process you want to inject is " <<this->m_argv[1] <<" == " <<this->m_targetPid <<endl;
 			break;
 		}
         else if( strcmp(this->m_argv[0], "-l") == 0 )
