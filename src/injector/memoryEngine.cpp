@@ -428,7 +428,8 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 		return FAIL;
 	}
 
-	do {
+	do
+    {
 		bzero(buff, sizeof(buff));
 		ret = read(procFile, buff, MAX_LINE);
 		if(ret == -1)
@@ -459,7 +460,7 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 
 		//fill struct taskMMInfo
 		count = 0;
-		for(i=0; i<varCount; i++)
+		for(i = 0; i<varCount; i++)
 		{
 			bzero(line,sizeof(line));
 			count += ReadLine(buff+count,line);
