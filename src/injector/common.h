@@ -191,6 +191,7 @@ using namespace std;
 
         //printk without line and function name
         #define dprint(format,args...) printk(KERN_INFO format, ##args)
+        #define dprintk(format,args...) printk(KERN_INFO format, ##args)
 
 
     #else   //  userspace
@@ -199,7 +200,7 @@ using namespace std;
             //printf with line and function name
             #define dbgprint(format, args...) \
             printf("[%s,%d] : "format, __FILE__, __LINE__, ##args)
-            #define dbgcout cout <<"[" <<__FILE__ <<", " <<__LINE__ <<"] : "
+            #define dbgcout std::cout <<"[" <<__FILE__ <<", " <<__LINE__ <<"] : "
 
         #endif // __FILE__ && __LINE__
 
@@ -231,7 +232,7 @@ using namespace std;
 #define undprint(format, args...)
 
 #undef undbgcout
-#define dbgcout 0 && cout
+#define undbgcout 0 && cout
 
 
 #endif	/* _COMMON_H_ */

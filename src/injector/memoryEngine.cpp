@@ -2,6 +2,7 @@
 *	lib functions
 */
 #include "memoryEngine.h"
+#include "common.h"
 
 /*
 将内核空间的虚拟地址转换为物理地址
@@ -413,12 +414,15 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/pid", pid);
+    dbgprint("%s\n",buff);
 	system(buff);
 
 	//send control word
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/ctl", REQUEST_TASK_INFO);
-	system(buff);
+    dbgprint("%s\n",buff);
+	//return 0;
+    system(buff);           //  BUG002 error when write CTL
 
 	//wait for ack signal
 	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
@@ -437,10 +441,11 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 			perror("Failed to read /proc/memoryEngine/signal");
 			return FAIL;
 		}
+
 	} while(atoi(buff) != ACK_TASK_INFO);
 	close(procFile);
 
-	//read task info
+	//  read task info
 	procFile = open("/proc/memoryEngine/taskInfo",O_RDONLY);
 	if(procFile == -1)
 	{
@@ -456,23 +461,23 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 	}
 	close(procFile);
 
-	//printf("%s",buff);
+	dbgprint("%s",buff);
 
-		//fill struct taskMMInfo
-		count = 0;
-		for(i = 0; i<varCount; i++)
-		{
-			bzero(line,sizeof(line));
-			count += ReadLine(buff+count,line);
-			sscanf(line,"%lx",&iLine);
-			memcpy((void *)((unsigned long)taskInfo + i * sizeof(unsigned long)),&iLine,sizeof(unsigned long));
-		}
-		/*
-		for(i=0; i<varCount; i++)
-		{
-			printf("0x%lx\n", *(unsigned long *)((unsigned long)taskInfo+i*sizeof(unsigned long)) );
-		}
-		*/
+    //fill struct taskMMInfo
+	count = 0;
+	for(i = 0; i<varCount; i++)
+	{
+		bzero(line,sizeof(line));
+		count += ReadLine(buff+count,line);
+		sscanf(line,"%lx",&iLine);
+		memcpy((void *)((unsigned long)taskInfo + i * sizeof(unsigned long)),&iLine,sizeof(unsigned long));
+	}
+	/*
+	for(i=0; i<varCount; i++)
+	{
+		printf("0x%lx\n", *(unsigned long *)((unsigned long)taskInfo+i*sizeof(unsigned long)) );
+	}
+	*/
 
 	return OK;
 }

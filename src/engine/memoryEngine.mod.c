@@ -4,43 +4,46 @@
 
 MODULE_INFO(vermagic, VERMAGIC_STRING);
 
-__visible struct module __this_module
+struct module __this_module
 __attribute__((section(".gnu.linkonce.this_module"))) = {
-	.name = KBUILD_MODNAME,
-	.init = init_module,
+ .name = KBUILD_MODNAME,
+ .init = init_module,
 #ifdef CONFIG_MODULE_UNLOAD
-	.exit = cleanup_module,
+ .exit = cleanup_module,
 #endif
-	.arch = MODULE_ARCH_INIT,
 };
 
 static const struct modversion_info ____versions[]
-__used
+__attribute_used__
 __attribute__((section("__versions"))) = {
-	{ 0x846a1dd9, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0xbf7bf975, __VMLINUX_SYMBOL_STR(unregister_jprobe) },
-	{ 0xa8154d56, __VMLINUX_SYMBOL_STR(register_jprobe) },
-	{ 0xc5815b5d, __VMLINUX_SYMBOL_STR(remove_proc_entry) },
-	{ 0xe2ff8c, __VMLINUX_SYMBOL_STR(proc_create_data) },
-	{ 0x7b9f06a1, __VMLINUX_SYMBOL_STR(proc_mkdir) },
-	{ 0xe914e41e, __VMLINUX_SYMBOL_STR(strcpy) },
-	{ 0x28318305, __VMLINUX_SYMBOL_STR(snprintf) },
-	{ 0xe2d5255a, __VMLINUX_SYMBOL_STR(strcmp) },
-	{ 0xfd766812, __VMLINUX_SYMBOL_STR(unregister_kprobe) },
-	{ 0x1fb91136, __VMLINUX_SYMBOL_STR(register_kprobe) },
-	{ 0xf8e398fc, __VMLINUX_SYMBOL_STR(memstart_addr) },
-	{ 0x934f3292, __VMLINUX_SYMBOL_STR(init_task) },
-	{ 0x20c55ae0, __VMLINUX_SYMBOL_STR(sscanf) },
-	{ 0x98cf60b3, __VMLINUX_SYMBOL_STR(strlen) },
-	{ 0xfbc74f64, __VMLINUX_SYMBOL_STR(__copy_from_user) },
-	{ 0xdcb764ad, __VMLINUX_SYMBOL_STR(memset) },
-	{ 0x91715312, __VMLINUX_SYMBOL_STR(sprintf) },
-	{ 0x1b9aca3f, __VMLINUX_SYMBOL_STR(jprobe_return) },
-	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0x2f74e661, "struct_module" },
+	{ 0xe914e41e, "strcpy" },
+	{ 0xe2d5255a, "strcmp" },
+	{ 0xaf25400d, "snprintf" },
+	{ 0x9f4a0621, "unregister_kprobe" },
+	{ 0x9159868d, "register_kprobe" },
+	{ 0x6226b9fa, "machine_to_phys_mapping" },
+	{ 0xefe8e01c, "end_pfn" },
+	{ 0x3ee649bc, "machine_to_phys_order" },
+	{ 0x55526907, "xen_features" },
+	{ 0x859204af, "sscanf" },
+	{ 0x945bc6a7, "copy_from_user" },
+	{ 0xde0bdcff, "memset" },
+	{ 0x1d26aa98, "sprintf" },
+	{ 0x1d713c6a, "register_jprobe" },
+	{ 0x34b1a85, "create_proc_entry" },
+	{ 0x6a1a0ab2, "proc_mkdir" },
+	{ 0xc8739237, "unregister_jprobe" },
+	{ 0xcb23ecbc, "remove_proc_entry" },
+	{ 0x1b9aca3f, "jprobe_return" },
+	{ 0xdd132261, "printk" },
+	{ 0xea3d9a67, "init_task" },
 };
 
 static const char __module_depends[]
-__used
+__attribute_used__
 __attribute__((section(".modinfo"))) =
 "depends=";
 
+
+MODULE_INFO(srcversion, "1A51B9DA7A61011341C2698");
