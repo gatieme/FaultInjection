@@ -97,6 +97,10 @@ void do_request(void)
 		{
 			getTaskInfo(task, taskInfo, sizeof(taskInfo));
 		}
+        else
+		{
+			dbginfo("No such process\n");
+        }
 		ack_signal = ACK_TASK_INFO;
 
 		return;
@@ -234,6 +238,7 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 	if((pMM = pTask->mm) == NULL) { return FAIL; }
 
 	memset(pData, '\0', length);
+
 
 	//  前19个字段是关于进程内存信息的总体信息
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);
@@ -377,6 +382,8 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 
 		safe_sprintf(pData, length, info+strlen(info), "%c", DELIMITER);
 	}
+
+    dbginfo("get task info success...\n");
 	return OK;
 }
 
@@ -423,6 +430,7 @@ struct task_struct * findTaskByPid(pid_t pid)
 	{
 		if(task->pid == pid)
         {
+            dbginfo("find task by pid = %d\n", pid);
 			return task;
 	    }
     }

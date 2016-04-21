@@ -11,6 +11,7 @@
 *  common include header files
 */
 
+
 #include <linux/version.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
@@ -29,6 +30,9 @@
 #include <linux/kprobes.h>
 #include <asm/pgtable.h>
 #include <asm/page.h>
+
+#include "common.h"
+
 
 #define MAX_LINE		        256						/// max length of a line
 #define DELIMITER		        '\n'					/// the char is used to split the taskinfo
@@ -71,33 +75,6 @@
 ///#define REQUEST_WRITE		REQUEST_WRITE
 ///#define ACK_MEM				REQUEST_MEM
 ///#define ACK_ADDR_STOP		REQUEST_ADDR_STOP
-
-/*
-*		#define DEBUG		,dbginfo() will add more debug information into nomal printk.
-*		#define SILENCE ,dbginfo() will print nothing.
-*		Otherwise				,dbginfo() equals to printk.
-*/
-#ifdef __FUNCTION__
-#ifdef __LINE__
-	#ifdef DEBUG
-		//printk with line and function name
-		#define dbginfo(format,args...); \
-		printk(KERN_INFO "%s-L%d:"format, __FUNCTION__, __LINE__, ##args);
-	#elif defined SILENCE
-			#define dbginfo(format,args...);
-	#else								//printk normally
-			#define dbginfo(format,args...); printk(KERN_INFO format, ##args);
-	#endif
-#endif
-#endif
-
-/*
-*	safe sprintf
-* It will not be out of range.
-*/
-#define safe_sprintf(start, n, p, format, args...);	\
-	{ if( (p - start) < n ) { snprintf( (char *)p, (n - (p - start)), format, ##args ); } }
-
 
 /*
 *	utility functions

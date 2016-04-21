@@ -98,16 +98,16 @@ int main(int argc, char * argv[])
     taskInfo = (pTaskMMInfo)malloc(sizeof(taskMMInfo));
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/pid", pid);
-	system(buff);
     printf("%s\n", buff);
+	system(buff);
 	//send control word
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/ctl", REQUEST_TASK_INFO);
+    printf("%s\n", buff);
 	system(buff);
-
     printf("%s\n", buff);
 
-	//wait for ack signal
+    //wait for ack signal
 	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
 	if(procFile == -1)
 	{
