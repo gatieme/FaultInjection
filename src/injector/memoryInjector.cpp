@@ -549,6 +549,7 @@ int Injector::injectFaults( int pid )
 
 				start_va = procInfo.start_code;
 				end_va = procInfo.end_code;
+
                 // add by gatieme @2016-01-23
                 dprintf("[%s, %d] %d --Inject TEXT segment\n", __FILE__, __LINE__, iRet);
             }
