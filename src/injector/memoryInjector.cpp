@@ -458,12 +458,13 @@ int Injector::startInjection( void )
 		}
 		else	/// parent
 		{
-            dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<*(this->m_exeArguments) <<", pid = " <<child <<"inject fault into an excultable program" <<endl;
+            dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<*(this->m_exeArguments) <<", pid = " <<child <<" inject fault into an excultable program" <<endl;
 			childProcess = child;
 			//inject fault into physical memory address
 #ifdef BUGS     //  BUG_002
 
             dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--" <<"start inject child process pid = " <<child <<endl;
+            exit(0);
 #endif
 			iRet = injectFaults(child);
 			if( iRet == RT_FAIL ) { cleanup(); }
@@ -866,6 +867,8 @@ void Injector::startExe()
 	dup2(fd, STDOUT_FILENO);
 	dup2(fd, STDERR_FILENO);
 	close(fd);
+
+    dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<"inject fault into an excultable program" <<endl;
 	execv( this->m_exeArguments[0], this->m_exeArguments );
 }
 
