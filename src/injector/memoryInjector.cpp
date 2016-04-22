@@ -3,7 +3,10 @@
 *  Create: 2010-3-13 8:50:12
 *  Last modified: 2010-6-16 14:08:59
 *  Description:
-*  	Memory fault injection tool.
+*  Memory fault injection tool.
+*
+*
+*  over write by gatimeme @2016-03-28
 */
 #include <sys/wait.h>
 #include <signal.h>
@@ -365,8 +368,9 @@ int Injector::startInjection( void )
 	int iRet;
 	int data = 0;
 
-    //inject fault into an existing process
-	if( this->m_targetPid > 0 && this->m_exeArguments == NULL )
+    //inject fault into an existing proces
+    //  系统进程无法进行跟踪
+	if( this->m_targetPid > 0 && this->m_targetPid <= 10 && this->m_exeArguments == NULL )
 	{
         dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--pid = " <<this->m_targetPid <<endl;
 		iRet = injectFaults( this->m_targetPid );
@@ -376,8 +380,7 @@ int Injector::startInjection( void )
         }
 		return RT_OK;
 	}
-
-	if( this->m_targetPid > 10 && this->m_exeArguments == NULL )
+    else if( this->m_targetPid > 0 && this->m_exeArguments == NULL )    //  用户进程需要跟踪用户的状态
 	{
         dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--pid = " <<this->m_targetPid <<endl;
 
@@ -389,14 +392,17 @@ int Injector::startInjection( void )
 		do
         {
 			iRet = procMonitor( this->m_targetPid,data );
-			if( iRet == RT_FAIL ) { return RT_FAIL; }
-		} while( iRet == RUN );
+
+            if( iRet == RT_FAIL ) { return RT_FAIL; }
+
+        }while( iRet == RUN );
 
 		//should be STOP
 		if( iRet != STOP )
 		{
 			writeResult( this->m_targetPid, iRet, data );	//exit or term
-			return RT_FAIL;
+
+            return RT_FAIL;
 		}
 
 		//  进行故障注入
@@ -728,7 +734,7 @@ int Injector::injectFaults( int pid )
 		timeout( this->m_memoryFaultTable[i].m_timeout, report );
 
 	}
-    dcout <<"return from " <<__func__ <<"now" <<endl;
+    dcout <<"return from " <<__func__ <<" now" <<endl;
 	return RT_OK;
 }
 
