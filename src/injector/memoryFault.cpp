@@ -154,6 +154,10 @@ bool MemoryFault::SetFaultType(std::string faulttype)
     {
         this->m_faultType = word_0;
     }
+    else if( faulttype == "word_flip" )
+    {
+        this->m_faultType = word_flip;
+    }
     else if( faulttype == "page_0" )
     {
         this->m_faultType = page_0;
