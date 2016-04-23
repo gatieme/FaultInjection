@@ -532,7 +532,7 @@ static int mvmhyper_init(void)
 	{
 	    if(!useit[i])
             continue;
-		jphyper[i].kp.addr=0;
+		jphyper[i].kp.addr=(kprobe_opcode_t *) kallsyms_lookup_name(jphyper[i].kp.symbol_name);
 		if((ret=register_jprobe(&jphyper[i]))<0)
 		{
 			printk("Fortune: Error, register probe %d failed with return %d\n", i, ret);

@@ -281,6 +281,10 @@ int Injector::initFaultTable( void )
 		{
 			faultTmp.m_faultType = word_0;
 		}
+        else if( strTmp == "word_flip" )
+        {
+			faultTmp.m_faultType = word_flip;
+        }
 		else if( strTmp == "page_0" )
 		{
 			faultTmp.m_faultType = page_0;
