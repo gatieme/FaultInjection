@@ -309,7 +309,6 @@ int InjectorTool::initFaultTable( void )
 		{
 			faultTmp.m_faultType = one_bit_flip;
 		}
-
 		else if( strTmp == "word_0" )
 		{
 			faultTmp.m_faultType = word_0;

@@ -405,7 +405,7 @@ int Injector::startInjection( void )
      *  内核线程没有用户空间虚拟地址(mm== NULL, avtive_mm是上一个用户进程的虚拟地址)
      *  因此对内核线程的故障注入需要其他手段
      */
-	if( this->m_targetPid > 0 && this->m_exeArguments == NULL && is_kthread(this->m_targetPid))
+	if( this->m_targetPid >= 0 && this->m_exeArguments == NULL && is_kthread(this->m_targetPid))
 	{
         dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--KERNEL THREAD pid = " <<this->m_targetPid <<endl;
 		iRet = injectFaults( this->m_targetPid );
@@ -416,7 +416,7 @@ int Injector::startInjection( void )
         }
 		return RT_OK;
 	}
-    else if( this->m_targetPid > 0 && this->m_exeArguments == NULL )    //  用户进程需要跟踪用户的状态
+    else if( this->m_targetPid >= 0 && this->m_exeArguments == NULL )    //  用户进程需要跟踪用户的状态
 	{
         dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--USER PROCESS pid = " <<this->m_targetPid <<endl;
 
