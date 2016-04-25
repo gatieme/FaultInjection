@@ -141,11 +141,13 @@
 #ifdef DEBUG
 
     #ifdef __KERNEL__
-        #ifdef __FILE__ && __LINE__
+        #ifdef __FILE__
+        #ifdef __LINE__
             //printk with line and function name
             #define dbgprint(format, args...) \
             printk(KERN_INFO "[%s, %d] : "format, __FILE__, __LINE__, ##args)
-        #endif
+        #endif // __FILE__ && __LINE__
+        #endif // __FILE__ && __LINE__
 
         //printk without line and function name
         #define dprint(format,args...) printk(KERN_INFO format, ##args)
@@ -154,12 +156,14 @@
 
     #else   //  userspace
 
-        #ifdef __FILE__ && __LINE__
+        #ifdef __FILE__
+        #ifdef __LINE__
             //printf with line and function name
             #define dbgprint(format, args...) \
             printf("[%s,%d] : "format, __FILE__, __LINE__, ##args)
             #define dbgcout std::cout <<"[" <<__FILE__ <<", " <<__LINE__ <<"] : "
 
+        #endif // __FILE__ && __LINE__
         #endif // __FILE__ && __LINE__
 
             /* Debugging is on and we are in userspace. */
