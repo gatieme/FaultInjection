@@ -1,22 +1,17 @@
-ROOT=$(shell pwd)
-PLATFORM=$(shell $(ROOT)/systype.sh)
-include $(ROOT)/Make.defines.$(PLATFORM)
+#ROOT=.
+#PLATFORM=$(shell $(ROOT)/systype.sh)
+#include $(ROOT)/Make.defines.$(PLATFORM)
 
 
 
-DIRS=injector engine tools
+DIRS=src
 
 
-BIN=$(ROOT)/../workspace
-ENGINE=$(ROOT)/engine
-INJECTOR=$(ROOT)/injector
-TOOLS=$(ROOT)/tools
 
 all:
 	for i in $(DIRS); do \
-		(cd $$i && echo "making $$i" && $(MAKE) ) || exit 1; \
+		(cd $$i && echo "cleaning $$i" && $(MAKE)) || exit 1; \
 	done
-
 clean:
 	for i in $(DIRS); do \
 		(cd $$i && echo "cleaning $$i" && $(MAKE) clean) || exit 1; \
