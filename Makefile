@@ -1,11 +1,4 @@
-#ROOT=.
-#PLATFORM=$(shell $(ROOT)/systype.sh)
-#include $(ROOT)/Make.defines.$(PLATFORM)
-
-
-
 DIRS=src
-
 
 
 all:
