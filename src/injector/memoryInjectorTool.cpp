@@ -52,7 +52,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 	{
 		this->m_argc--;
 	    this->m_argv++;
-
+        dprintf("now m_argc = %d, m_argv[0] = %s, m_argv[1] = %s\n", m_argc, m_argv[0], m_argv[1]);
 		if(strcmp(this->m_argv[0], "-c") == 0)          //  -c to set the config file...
 		{
             //  you can see we read the config file in
