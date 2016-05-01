@@ -875,9 +875,13 @@ void Injector::startExe()
 	dup2(fd, STDERR_FILENO);
 	close(fd);
 
-    dcout <<endl <<"[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<"" <<endl;
-	//execv( this->m_exeArguments[0], this->m_exeArguments );
-	execv( "./top", NULL );
+    dcout <<endl <<"[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<endl;
+#ifdef BUGS
+    dcout <<endl <<"BUG002--[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<endl;
+#endif
+    //execv( this->m_exeArguments[0], NULL);
+    execv( this->m_exeArguments[0], this->m_exeArguments);
+	//execv( "./top", NULL );
 }
 
 void Injector::usage()

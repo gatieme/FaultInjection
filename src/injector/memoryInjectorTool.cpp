@@ -72,6 +72,9 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		else if(strcmp(this->m_argv[0], "-e") == 0)
 		{
 			this->m_exeArguments = this->m_argv + 1;
+#ifdef BUGS
+            dcout <<"BUG002--" <<this->m_argv[1] <<" == " <<*(this->m_exeArguments) <<endl;
+#endif
             dcout <<"The name of the process you want to inject is " <<this->m_argv[1] <<" == " <<*(this->m_exeArguments) <<endl;
             break;
 		}

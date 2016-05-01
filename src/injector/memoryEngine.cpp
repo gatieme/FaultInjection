@@ -461,7 +461,7 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 	}
 	close(procFile);
 
-	dbgprint("%s",buff);
+	dbgprint("%s\n",buff);
 
     //fill struct taskMMInfo
 	count = 0;

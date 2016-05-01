@@ -186,7 +186,7 @@ using namespace std;
         #ifdef __FILE__ && __LINE__
             //printk with line and function name
             #define dbgprint(format, args...) \
-            printk(KERN_INFO "[%s, %d] : "format, __FILE__, __LINE__, ##args)
+            printk(KERN_INFO "[%20s, %4d] : "format, __FILE__, __LINE__, ##args)
         #endif
 
         //printk without line and function name
@@ -199,8 +199,8 @@ using namespace std;
         #ifdef __FILE__ && __LINE__
             //printf with line and function name
             #define dbgprint(format, args...) \
-            printf("[%s,%d] : "format, __FILE__, __LINE__, ##args)
-            #define dbgcout std::cout <<"[" <<__FILE__ <<", " <<__LINE__ <<"] : "
+            printf("[%20s,%4d] : "format, __FILE__, __LINE__, ##args)
+            #define dbgcout std::cout <<"[" <<std::setw(20)<<__FILE__ <<", " <<std::setw(4)<<__LINE__ <<"] : "
 
         #endif // __FILE__ && __LINE__
 
