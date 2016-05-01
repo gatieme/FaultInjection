@@ -47,7 +47,20 @@ Injector::Injector(
     this->m_targetPid = targetPid;
 	this->m_exeArguments = program;
 	this->m_memoryFaultTablePath.clear();
-	//this->m_targetPid = -1;
+
+#ifdef BUGS     // bug002
+    if(m_exeArguments != NULL)
+    {
+        dcout <<"BUG002--exe " <<m_exeArguments[0] <<", address = " <<m_exeArguments <<endl;
+/*  dcout <<"The name of the process you want to inject is \"";
+    for(unsigned int i = 0; i < 5; i++)
+    {
+        dcout <<this->m_exeArguments[i] <<" ";
+    }
+    */
+    }
+#endif
+    //this->m_targetPid = -1;
 	//this->m_exeArguments = program;
 }
 
@@ -460,6 +473,9 @@ int Injector::startInjection( void )
 		else if( child == 0 )	/// child
 		{
             dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--child pid = " <<getpid( ) <<endl;
+#ifdef BUGS
+            dcout <<endl <<"BUG002--[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<", address = " <<this->m_exeArguments <<endl;
+#endif
 			startExe();
 			_exit( RT_EXIT );
 		}
@@ -471,7 +487,7 @@ int Injector::startInjection( void )
 #ifdef BUGS     //  BUG_002
 
             dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--" <<"start inject child process pid = " <<child <<endl;
-            exit(0);
+            //exit(0);
 #endif
 			iRet = injectFaults(child);
 			if( iRet == RT_FAIL ) { cleanup(); }
@@ -875,13 +891,13 @@ void Injector::startExe()
 	dup2(fd, STDERR_FILENO);
 	close(fd);
 
-    dcout <<endl <<"[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<endl;
-#ifdef BUGS
-    dcout <<endl <<"BUG002--[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<endl;
-#endif
-    //execv( this->m_exeArguments[0], NULL);
-    execv( this->m_exeArguments[0], this->m_exeArguments);
+    execv( this->m_exeArguments[0], NULL);
+    //execv( this->m_exeArguments[0], this->m_exeArguments);
 	//execv( "./top", NULL );
+
+    // the program should not reach here, or it means error occurs during execute the ls command.
+    perror("error execv : ");
+
 }
 
 void Injector::usage()

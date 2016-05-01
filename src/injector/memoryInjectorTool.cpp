@@ -67,15 +67,24 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 
             this->m_hasFaultTable = true;
 
+            this->m_argc--;
             this->m_argv++;
 		}
 		else if(strcmp(this->m_argv[0], "-e") == 0)
 		{
 			this->m_exeArguments = this->m_argv + 1;
 #ifdef BUGS
-            dcout <<"BUG002--" <<this->m_argv[1] <<" == " <<*(this->m_exeArguments) <<endl;
+            dcout <<endl <<"BUG002--[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<", address = " <<this->m_exeArguments <<endl;
 #endif
-            dcout <<"The name of the process you want to inject is " <<this->m_argv[1] <<" == " <<*(this->m_exeArguments) <<endl;
+            this->m_argc--;
+
+            dcout <<"The name of the process you want to inject is \"";
+            for(unsigned int i = 0; i < m_argc; i++)
+            {
+                dcout <<this->m_exeArguments[i] <<" ";
+            }
+            dcout <<"\"" <<endl;
+            //this->m_exeArguments[m_argc] = NULL;
             break;
 		}
 		else if(strcmp(this->m_argv[0], "-p") == 0)
@@ -83,6 +92,8 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 			this->m_targetPid = atoi(this->m_argv[1]);
 
             dcout <<"The pid of the process you want to inject is " <<this->m_argv[1] <<" == " <<this->m_targetPid <<endl;
+
+            //this->m_argc--;
 			break;
 		}
         else if( strcmp(this->m_argv[0], "-l") == 0 )
@@ -97,6 +108,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		        cerr << "Error, undefined fault location : " <<this->m_argv[1] << endl;
 			    return NULL;
 		    }
+            this->m_argc--;
             this->m_argv++;
         }
         else if ( strcmp(this->m_argv[0], "-m") == 0 )
@@ -110,6 +122,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
 			    return NULL;
 		    }
+            this->m_argc--;
             this->m_argv++;
         }
         else if ( strcmp(this->m_argv[0], "-t") == 0 )
@@ -122,10 +135,11 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		    {
 		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
             }
+            this->m_argc--;
             this->m_argv++;
         }
     }
-
+    dcout <<__LINE__ <<endl;
     //  如果使用了-c参数指定了故障注入表
     if( this->m_hasFaultTable == true )     //  读取故障植入表的信息
     {
