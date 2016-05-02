@@ -186,8 +186,12 @@ long kern_func_virt_addr(const char *kFuncName)
 	}
 	close(procFile);
 
-	if(sscanf(buff,"%lx",&virtualAddr) != 1) { return FAIL; }
-	return virtualAddr;
+	if(sscanf(buff,"%lx",&virtualAddr) != 1)
+    {
+        return FAIL;
+    }
+
+    return virtualAddr;
 }
 
 /*
@@ -224,19 +228,16 @@ int read_phy_mem(unsigned long pa, long *data)
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
-#ifdef DEBUG
-	printf("\n\nin func %s, line %d\n", __func__, __LINE__);
-    printf("PAGE_SIZE:0x%x\n",PAGE_SIZE);   // 4k = 0x1000
-	printf("base:0x%lx\n",pa_base);
-	printf("offset:0x%lx\n",pa_offset);
-	printf("pa:0x%lx\n",pa);
-#endif
+    dbgprint("PAGE_SIZE : 0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	dbgprint("base : 0x%lx\n", pa_base);
+	dbgprint("offset : 0x%lx\n", pa_offset);
+	dbgprint("pa : 0x%lx\n", pa);
 
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa);
 	if(mapStart == MAP_FAILED)
 	{
-		printf("Failed to mmap /dev/mem, errno = %d\n", errno);
+		perror("Failed to mmap /dev/mem : ");
 		close(memfd);
 		return FAIL;
 	}
@@ -461,7 +462,11 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 	}
 	close(procFile);
 
-	dbgprint("%s\n",buff);
+    dprintf("\n=====================SHOW THE BUFFER START=====================\n");
+    dprintf("[%s, %s, %d]\n", __FILE__, __func__, __LINE__);
+	dprintf("%s\n", buff);
+    dprintf("\n=====================SHOW THE BUFFER ENDED=====================\n");
+    dprintf("\n");
 
     //fill struct taskMMInfo
 	count = 0;

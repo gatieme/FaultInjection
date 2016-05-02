@@ -10,6 +10,8 @@
 */
 #include <sys/wait.h>
 #include <signal.h>
+
+#include "common.h"
 #include "memoryInjector.h"
 #include "memoryEngine.h"
 
@@ -406,11 +408,13 @@ int Injector::startInjection( void )
         {
 			iRet = procMonitor( this->m_targetPid,data );
 
+            dcout <<__LINE__ <<endl;
             if( iRet == RT_FAIL ) { return RT_FAIL; }
 
+            dcout <<__LINE__ <<endl;
         }while( iRet == RUN );
 
-		//should be STOP
+		// should be STOP
 		if( iRet != STOP )
 		{
 			writeResult( this->m_targetPid, iRet, data );	//exit or term
@@ -554,17 +558,16 @@ int Injector::injectFaults( int pid )
 			iRet = getTaskInfo(pid, &procInfo);
             dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--" <<"get taskMMInfo success" <<endl;
 
-#ifdef BUGS     //  BUG_2 found in 2016-04-15 15:44 by gatieme@HIT
-			//debug add by gatieme
-
-			printf("start_code\t\t%lx\n", procInfo.start_code);
-			printf("end_code\t\t%lx\n", procInfo.end_code);
-			printf("start_data\t\t%lx\n", procInfo.start_data);
-			printf("end_data\t\t%lx\n", procInfo.end_data);
-			printf("start_brk\t\t%lx\n", procInfo.start_brk);
-			printf("brk\t\t\t%lx\n", procInfo.brk);
-			printf("start_stack\t\t%lx\n", procInfo.start_stack);
-			return 0;
+#ifdef BUGS     //  BUG_3 found in 2016-05-12 13:27 by gatieme@HIT
+			//  debug add by gatieme
+            //  the address we get is wrong.
+            //  the all point to the same virtual address which is not does not belong to the process PID
+            //  so when we inject fault in this process we get "an process 8318 termed with signal 11(SIGSEGV)"
+            //  SIGSEGV--Signal Segmentation Violation  https://en.wikipedia.org/wiki/Segmentation_fault
+			printf("code : [%lx, %lx]\n", procInfo.start_code, procInfo.end_code);
+			printf("data : [%lx, %lx]\n", procInfo.start_data, procInfo.end_data);
+			printf(" brk : [%lx, %lx]\n", procInfo.start_brk, procInfo.brk);
+			printf("stack: %lx\n", procInfo.start_stack);
 #endif
 			//debug
 			if(iRet == FAIL)
@@ -580,21 +583,21 @@ int Injector::injectFaults( int pid )
 				end_va = procInfo.end_code;
 
                 // add by gatieme @2016-01-23
-                dprintf("[%s, %d] %d --Inject TEXT segment\n", __FILE__, __LINE__, iRet);
+                dprintf("[%s, %d] %d --Inject TEXT segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
             }
 			else if( this->m_memoryFaultTable[i].m_location == data_area )  //  data segment
 			{
 				start_va = procInfo.start_data;
 				end_va = procInfo.end_data;
 
-                dprintf("[%s, %d] %d --Inject DATA segment\n", __FILE__, __LINE__, iRet);
+                dprintf("[%s, %d] %d --Inject DATA segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
 			}
 			else if( this->m_memoryFaultTable[i].m_location == stack_area ) // stack segment
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
 
-                dprintf("[%s, %d] %d --Inject STACK segment\n", __FILE__, __LINE__, iRet);
+                dprintf("[%s, %d] %d --Inject STACK segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
 			}
 
 			/* add by gatieme
@@ -619,6 +622,7 @@ int Injector::injectFaults( int pid )
 				random_offset = 0;
 			else
 				random_offset = rand() % (end_va - start_va);
+
             //  Convert the virtual address [start_va + random_offset] to physics address [inject_pa]...
             inject_pa = virt_to_phys(pid, start_va + random_offset);
             dprintf("[%s, %d]--Start  Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va);
@@ -632,22 +636,22 @@ int Injector::injectFaults( int pid )
 			dprintf("[%s, %d]--Inject Physics Address = 0x%lx\n", __FILE__, __LINE__, inject_pa);
 		}
 
-		if(inject_pa == -1)
+        if(inject_pa == -1)
         {
             return RT_FAIL;
         }
 
-		dprintf("Inject fault at virtual:0x%lx--(physical:0x%lx)\n", start_va + random_offset, inject_pa);
+		dprintf("[%s, %d]--Inject fault at virtual:0x%lx--(physical:0x%lx)\n", __FILE__, __LINE__, start_va + random_offset, inject_pa);
 
 		if(iRet == FAIL)
         {
-            dprintf("Error [%s, %d]--, iRet =%d\n", __FILE__, __LINE__, iRet);
+            dprintf("Error [%s, %d]--iRet =%d\n", __FILE__, __LINE__, iRet);
             return RT_FAIL;
         }
 
 
 
-        dprintf("[%s, %d]--, iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
+        dprintf("[%s, %d]--iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
 		switch( this->m_memoryFaultTable[i].m_faultType )
 		{
 
@@ -773,6 +777,7 @@ int Injector::procMonitor( int pid, int &data )
 	}
 	else if( iRet == 0 )
 	{
+		dbgcout <<"process " <<pid <<"is RUNning" <<endl;
 		return RUN;
 	}
 	else if(iRet == pid)
@@ -780,25 +785,30 @@ int Injector::procMonitor( int pid, int &data )
 		if( WIFSTOPPED( status ) )
 		{
 			data = WSTOPSIG( status );
-			return STOP;
+		    dbgcout  <<"process " <<pid <<"is STOPped" <<endl;
+            return STOP;
 		}
 		else if( WIFEXITED( status ) )
 		{
 			data = WEXITSTATUS( status );
+		    dbgcout  <<"process " <<pid <<"has been EXIT" <<endl;
 			return EXIT;
 		}
 		else if( WIFSIGNALED( status ) )
 		{
 			data = WTERMSIG( status );
+		    dbgcout  <<"process " <<pid <<"has ben TERM" <<endl;
 			return TERM;
 		}
 		else
 		{
+            perror("unknown status");
 			return RT_FAIL;
 		}
 	}
 	else
-	{
+    {
+        dbgcout  <<"process " <<pid <<"isn't RUNning" <<endl;
 		return RT_FAIL;
 	}
 }

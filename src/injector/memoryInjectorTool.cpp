@@ -101,7 +101,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		    if( faultTmp.SetLocation(this->m_argv[1]) == true )
 		    {
 		        cout << "read the Location : " <<this->m_argv[1] << endl;
-		        faultTmp.m_location = stack_area;
+		        //faultTmp.m_location = stack_area;
 		    }
 		    else
 		    {

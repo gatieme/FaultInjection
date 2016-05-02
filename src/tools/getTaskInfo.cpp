@@ -202,7 +202,15 @@ int getTaskInfo(int pid)
 		printf("0x%lx\n", *(unsigned long *)((unsigned long)taskInfo+i*sizeof(unsigned long)) );
 	}
 
-	return OK;
+	printf("start_code\t\t%lx\n", taskInfo->start_code);
+	printf("end_code\t\t%lx\n", taskInfo->end_code);
+	printf("start_data\t\t%lx\n", taskInfo->start_data);
+	printf("end_data\t\t%lx\n", taskInfo->end_data);
+	printf("start_brk\t\t%lx\n", taskInfo->start_brk);
+	printf("brk\t\t\t%lx\n", taskInfo->brk);
+	printf("start_stack\t\t%lx\n", taskInfo->start_stack);
+
+    return OK;
 }
 
 /*
