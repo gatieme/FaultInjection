@@ -152,7 +152,7 @@ int getTaskInfo(int pid)
 	}
     else
     {
-        printf("success...");
+        printf("open success...");
     }
 
 	do
