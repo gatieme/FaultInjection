@@ -31,6 +31,8 @@ public:
 	    dup2(fd, STDERR_FILENO);
 	    close(fd);
 	    execv(m_exe[0], m_exe);
+        printf("command ls is not found, error code: %d(%s)", errno, strerror(errno));
+
     }
 };
 

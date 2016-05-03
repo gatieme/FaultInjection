@@ -228,10 +228,15 @@ int read_phy_mem(unsigned long pa, long *data)
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
-    dbgprint("PAGE_SIZE : 0x%x\n", PAGE_SIZE);   // 4k = 0x1000
-	dbgprint("base : 0x%lx\n", pa_base);
-	dbgprint("offset : 0x%lx\n", pa_offset);
-	dbgprint("pa : 0x%lx\n", pa);
+#ifdef DEBUG
+	printf("=====================\n");
+	printf("in func %s, line %d\n", __func__, __LINE__);
+    printf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	printf("base:0x%lx\n", pa_base);
+	printf("offset:0x%lx\n", pa_offset);
+	printf("pa:0x%lx\n", pa);
+	printf("=====================\n");
+#endif
 
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa);
@@ -253,9 +258,10 @@ int read_phy_mem(unsigned long pa, long *data)
     //只读一个字节
     memcpy( data, (void *)mapAddr, sizeof(data) );
     //*data = *((char *)mapAddr);
-#ifdef DEBUG
-    printf("read data 0x%lx\n", (unsigned long)*data);
-#endif
+
+    dbgprint("read data 0x%lx at 0x%lx success\n", (unsigned long)*data, pa);
+
+
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
     {
   	    perror("Failed to munmap /dev/mem");
@@ -351,11 +357,13 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	pa_offset = pa - pa_base;
 
 #ifdef DEBUG
-	printf("\n\nin func %s, line %d\n", __func__, __LINE__);
+	printf("=====================\n");
+	printf("in func %s, line %d\n", __func__, __LINE__);
     printf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
 	printf("base:0x%lx\n", pa_base);
 	printf("offset:0x%lx\n", pa_offset);
 	printf("pa:0x%lx\n", pa);
+	printf("=====================\n");
 #endif
 
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
@@ -383,13 +391,11 @@ int write_phy_mem(unsigned long pa,void *data,int len)
     {
   	    size = len;
     }
-#ifdef DEBUG
-    //printf("write data 0x%lx\n", (*(unsigned long *)data));
-	printf("\n\nin func %s, line %d\n", __func__, __LINE__);
-    printf("write data success\n");
-#endif      //  DEBUG
+
+    dbgprint("write data 0x%lx at 0x%lx success\n", *(unsigned long *)data, pa);
+
     //unsigned long temp = ~(-1);
-    print_all_byte(data, size);
+    //print_all_byte(data, size);
     memcpy((void *)mapAddr, data, size);
 
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)

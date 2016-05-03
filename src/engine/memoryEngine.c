@@ -248,6 +248,7 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);
 
+
 /// modify by gatieme for system porting NeoKylin-linux-3.14/16
 #if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
     //  error: ¡®struct mm_struct¡¯ has no member named ¡®reserved_vm¡¯
@@ -260,6 +261,7 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 #endif
 
     safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);
+
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER);
@@ -275,6 +277,7 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_end, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_start, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_end, DELIMITER);
+
 
 	pVMA = pMM->mmap;
 	if(pVMA == NULL)
@@ -304,6 +307,7 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 		{
             safe_sprintf(pData, length, info+strlen(info), "-");
         }
+
 
 		if(p->vm_flags & VM_EXEC)
 		{

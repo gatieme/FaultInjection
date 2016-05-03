@@ -103,7 +103,7 @@ Injector * Injector::initInjector( int argc, char **argv )
     printf("argc = %d", argc);
     for(int i = 0; i < argc; i++)
     {
-        printf("argv[%d] = %d", i, argv[i]);
+        printf("argv[%d] = %s", i, argv[i]);
     }
 #endif
 
@@ -625,6 +625,7 @@ int Injector::injectFaults( int pid )
 
             //  Convert the virtual address [start_va + random_offset] to physics address [inject_pa]...
             inject_pa = virt_to_phys(pid, start_va + random_offset);
+
             dprintf("[%s, %d]--Start  Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va);
             dprintf("[%s, %d]--End    Virtual Address = 0x%lx\n", __FILE__, __LINE__, end_va);
             dprintf("[%s, %d]--Inject Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va + random_offset);
@@ -638,6 +639,7 @@ int Injector::injectFaults( int pid )
 
         if(inject_pa == -1)
         {
+			dprintf("ERROR : [%s, %d]--Inject Physics Address = 0x%lx\n", __FILE__, __LINE__, inject_pa);
             return RT_FAIL;
         }
 
@@ -688,6 +690,7 @@ int Injector::injectFaults( int pid )
 				break;
 
             case one_bit_flip:
+
 				iRet = read_phy_mem(inject_pa, &origData);
 				if(iRet == FAIL) { return RT_FAIL; }
 
@@ -710,13 +713,13 @@ int Injector::injectFaults( int pid )
 				if(iRet == FAIL)
                 {
                     // modify by gatieme
-                    dprintf("Error [%s, %d]--, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
                     return RT_FAIL;
                 }
 				newData = ~(-1);            ///  for DEBUG...
 
 #ifdef BUGS         //  this is bug_1 find in 2016-03-24 by gatieme
-                printf("==BUG_1==, 0%lx -=> 0x%lx\n", origData, newData);
+                printf("==BUG_1== [%s, %d]--0x%lx -=> 0x%lx\n", __FILE__, __LINE__, rigData, newData);
 #endif
 
                 iRet = write_phy_mem(inject_pa, &newData, sizeof(newData));
@@ -901,9 +904,9 @@ void Injector::startExe()
 	dup2(fd, STDERR_FILENO);
 	close(fd);
 
-    execv( this->m_exeArguments[0], NULL);
+    //execv( this->m_exeArguments[0], NULL);
     //execv( this->m_exeArguments[0], this->m_exeArguments);
-	//execv( "./top", NULL );
+	execv( "./top", NULL );
 
     // the program should not reach here, or it means error occurs during execute the ls command.
     perror("error execv : ");

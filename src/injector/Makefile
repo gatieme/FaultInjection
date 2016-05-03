@@ -11,7 +11,7 @@ include $(ROOT)/Make.defines.$(PLATFORM)
 
 EXE = memInjector
 GCC	= g++
-CFLAG = -c -Wall $(DEFFLAGS) -I./  -DBUGS
+CFLAG = -c -Wall $(DEFFLAGS) -I./ 
 LDFLAG = -g
 BIN = $(ROOT)/../workspace
 ENGINE = $(ROOT)/engine
