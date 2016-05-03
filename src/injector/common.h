@@ -221,6 +221,7 @@ using namespace std;
     #define dprint(format, args...)
     #define dprintf(format, args...)
     #define dcout 0 && cout
+    #define dbgcout 0 && cout
 #endif
 
 /* PDEBUGG is a placeholder that makes it easy to "comment out" the debugging
