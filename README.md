@@ -111,7 +111,7 @@ sudo ln -s 2.6.32-573.18.1.el6.x86_64 2.6.32-504.el6.x86_64
 执行sudo ./memInjector -l stack -m random -t word_0 -p 1
 将进程1的栈区域某块地址随机清0的时候失败
 
-![bug-001](./bug-001.jpg)
+![bug-001](./src/bugs/bug-001.jpg)
 
 **问题定位**
 
@@ -129,7 +129,7 @@ sudo ln -s 2.6.32-573.18.1.el6.x86_64 2.6.32-504.el6.x86_64
 执行sudo ./memInjector -l stack -m random -t word_0 -e ls -al
 执行运行"ls -al"程序，对该程序栈区域某块地址随机清0的时候execv失败
 
-![bug-002](./bug-002.jpg)
+![bug-002](./src/bugs/bug-002.jpg)
 
 问题定位：
 系统执行"ls -al"的方式是通过fork子进程, 然后execv来执行的
@@ -148,4 +148,4 @@ workspace/hello
 sudo ./memInjector -l stack -m random -t word_0 -p `pidof hello`
 ```
 出现SIGSEGV
-![bug-003](./bug-003.jpg)
+![bug-003](./src/bugs/bug-003.jpg)
