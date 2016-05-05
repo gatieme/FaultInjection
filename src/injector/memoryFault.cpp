@@ -58,6 +58,8 @@ ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
             break;
         }
     }
+    out <<"time : " <<memoryFault.m_time;
+    out <<", timeout : " <<memoryFault.m_timeout;
     return out;
 }
 

@@ -241,12 +241,12 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 
 
 	//  前19个字段是关于进程内存信息的总体信息
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);   //dbgprint("%lx%c", pMM->total_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);  //dbgprint("%lx%c", pMM->locked_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);  //dbgprint("%lx%c", pMM->shared_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);    //dbgprint("%lx%c", pMM->exec_vm, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);   //dbgprint("%lx%c", pMM->stack_vm, DELIMITER);
 
 
 /// modify by gatieme for system porting NeoKylin-linux-3.14/16

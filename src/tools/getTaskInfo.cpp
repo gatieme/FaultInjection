@@ -76,7 +76,7 @@ typedef struct procMMInfo
 *	utility functions
 */
 int getTaskInfo(int pid);
-void startExe(char *exe);
+void startExe(char **exe);
 int ReadLine(char *input,char *line);
 
 int main(int argc, char * argv[])
@@ -85,7 +85,7 @@ int main(int argc, char * argv[])
     int             ret;
     char            args[MAX_LINE];
 
-	if(argc != 3)
+	if(argc < 3)
 	{
 		printf("Useage:./getTaskInfo [-p pid] | [ -e exefile]\n");
         exit(-1);
@@ -101,10 +101,15 @@ int main(int argc, char * argv[])
 	    }
 	    else if(pid == 0)	/// child
 	    {
-            printf("child pid = %d\n", getpid( ));
-		    startExe(argv[2]);
+            // printf("child pid = %d\n", getpid( ));
+		    startExe(argv+ 2);
+	        //execv(argv[2], argv + 2);
 		    _exit( -1 );
 	    }
+        else
+        {
+            printf("child pid = %d\n", pid);
+        }
     }
     else if(strcmp(argv[1], "-p") == 0)
     {
@@ -188,7 +193,7 @@ int getTaskInfo(int pid)
 
 	//printf("%s",buff);
 
-		//fill struct taskMMInfo
+	//fill struct taskMMInfo
 	count = 0;
 	for(i = 0; i < varCount; i++)
 	{
@@ -227,7 +232,7 @@ int ReadLine(char *input,char *line)
 	return ++iLen;
 }
 
-void startExe(char *exe)
+void startExe(char **exe)
 {
 	int fd;
 	if((fd = open("/dev/null", O_RDWR)) == -1)
@@ -239,5 +244,6 @@ void startExe(char *exe)
 	dup2(fd, STDERR_FILENO);
 	close(fd);
 
-	execv(exe, NULL);
+	execv(exe[0], exe);
+
 }

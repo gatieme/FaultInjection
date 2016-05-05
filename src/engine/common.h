@@ -224,7 +224,7 @@
 * It will not be out of range.
 */
 #define safe_sprintf(start, n, p, format, args...);	\
-	{ if( (p - start) < n ) { snprintf( (char *)p, (n - (p - start)), format, ##args ); }
+	{ if( (p - start) < n ) { snprintf( (char *)p, (n - (p - start)), format, ##args ); } }
 
 
 

@@ -16,7 +16,12 @@ int test()
 
     while(1)
 	{
-		printf("pid = %d, %d\t hello a's addr = %lx\tp addr = %lx\tp point addr = %lx\tq addr = %lx\tq point addr = %lx\n",getpid(), i, &a, &p, p, &q, q);
+		printf("pid = %d, %d, "
+               ", hello a's addr = %lx [%d]"
+               ", p addr = %lx[%d]"
+               ", p point addr = %lx q addr = %lx [%d]"
+               ", q point addr = %lx[%d]\n",
+                getpid( ), i, &a, a, &p, p, *p, &q, q, *q);
 		fprintf(fp, "pid = %d, %d\t hello a's addr = %lx\tp addr = %lx\tp point addr = %lx\tq addr = %lx\tq point addr = %lx\n",getpid(), i, &a, &p, p, &q, q);
 		fflush(fp);
 		sleep(1);

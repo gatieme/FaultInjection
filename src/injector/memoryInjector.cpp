@@ -103,7 +103,7 @@ Injector * Injector::initInjector( int argc, char **argv )
     printf("argc = %d", argc);
     for(int i = 0; i < argc; i++)
     {
-        printf("argv[%d] = %s", i, argv[i]);
+        printf("argv[%d] = %s\n", i, argv[i]);
     }
 #endif
 
@@ -408,10 +408,8 @@ int Injector::startInjection( void )
         {
 			iRet = procMonitor( this->m_targetPid,data );
 
-            dcout <<__LINE__ <<endl;
             if( iRet == RT_FAIL ) { return RT_FAIL; }
 
-            dcout <<__LINE__ <<endl;
         }while( iRet == RUN );
 
 		// should be STOP
@@ -440,7 +438,7 @@ int Injector::startInjection( void )
 
 			if( iRet == RUN )
 			{
-                dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is still running" <<endl;
+                //dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is still running" <<endl;
 				continue;
 			}
 			else if( iRet == STOP )
@@ -485,8 +483,8 @@ int Injector::startInjection( void )
 		}
 		else	/// parent
 		{
-            dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<*(this->m_exeArguments) <<", pid = " <<child <<" inject fault into an excultable program" <<endl;
 			childProcess = child;
+            dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<*(this->m_exeArguments) <<", pid = " <<childProcess <<" inject fault into an excultable program" <<endl;
             //inject fault into physical memory address
 #ifdef BUGS     //  BUG_002
 
@@ -506,19 +504,19 @@ int Injector::startInjection( void )
 				}
 				if( iRet == RUN )
 				{
-                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments <<") is still running" <<endl;
+                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments[0] <<") is still running" <<endl;
 					continue;
 				}
 				else if( iRet == STOP )
 				{
-                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments <<") is stoped" <<endl;
+                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments[0] <<") is stoped" <<endl;
 					cleanup();
 					break;
 				}
 				else /// exit or term
 				{
 					/// 写结果文件
-					cleanup();
+					cleanup( );
                     dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process is exit or term" <<endl;
 					writeResult( child, iRet, data );
 					break;
@@ -780,8 +778,9 @@ int Injector::procMonitor( int pid, int &data )
 	}
 	else if( iRet == 0 )
 	{
-		dbgcout <<"process " <<pid <<"is RUNning" <<endl;
-		return RUN;
+		//dbgcout <<"process " <<pid <<"is RUNning" <<endl;
+		//dcout <<".";
+        return RUN;
 	}
 	else if(iRet == pid)
 	{
@@ -905,8 +904,8 @@ void Injector::startExe()
 	close(fd);
 
     //execv( this->m_exeArguments[0], NULL);
-    //execv( this->m_exeArguments[0], this->m_exeArguments);
-	execv( "./top", NULL );
+    execv( this->m_exeArguments[0], this->m_exeArguments);
+	//execv("./top", NULL);
 
     // the program should not reach here, or it means error occurs during execute the ls command.
     perror("error execv : ");
@@ -971,6 +970,8 @@ void Injector::restore(int signo)
 	kill(childProcess, SIGALRM);
 }
 */
+
+
 void Injector::timeout(int sec, void(*func)(int))
 {
 	signal(SIGALRM, func);
