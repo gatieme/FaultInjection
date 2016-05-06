@@ -422,7 +422,11 @@ int Injector::startInjection( void )
 
 		//  进行故障注入
 		iRet = injectFaults( this->m_targetPid );
-		if( iRet != RT_OK ) { return RT_FAIL; }
+		if( iRet != RT_OK )
+        {
+            dbgcout <<"inject error..." <<endl;
+            return RT_FAIL;
+        }
 
 		//  继续执行
 		ptraceCont( this->m_targetPid );
@@ -556,7 +560,7 @@ int Injector::injectFaults( int pid )
 			iRet = getTaskInfo(pid, &procInfo);
             dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--" <<"get taskMMInfo success" <<endl;
 
-#ifdef BUGS     //  BUG_3 found in 2016-05-12 13:27 by gatieme@HIT
+//#ifdef BUGS     //  BUG_3 found in 2016-05-12 13:27 by gatieme@HIT
 			//  debug add by gatieme
             //  the address we get is wrong.
             //  the all point to the same virtual address which is not does not belong to the process PID
@@ -564,9 +568,9 @@ int Injector::injectFaults( int pid )
             //  SIGSEGV--Signal Segmentation Violation  https://en.wikipedia.org/wiki/Segmentation_fault
 			printf("code : [%lx, %lx]\n", procInfo.start_code, procInfo.end_code);
 			printf("data : [%lx, %lx]\n", procInfo.start_data, procInfo.end_data);
-			printf(" brk : [%lx, %lx]\n", procInfo.start_brk, procInfo.brk);
+			printf("heap : [%lx, %lx]\n", procInfo.start_brk, procInfo.brk);
 			printf("stack: %lx\n", procInfo.start_stack);
-#endif
+//#endif
 			//debug
 			if(iRet == FAIL)
 			{
@@ -597,22 +601,22 @@ int Injector::injectFaults( int pid )
 
                 dprintf("[%s, %d] %d --Inject STACK segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
 			}
-
-			/* add by gatieme
-			//printf("inject_va:\t%lx\n", start_va); //add by gatieme,
+            /*
+			// add by gatieme
+			printf("inject_va:\t%lx\n", start_va); //add by gatieme,
 			inject_pa = virt_to_phys(pid, start_va);
-			//printf("inject_pa:\t%lx\n", inject_pa); //add by gatieme,
+			printf("inject_pa:\t%lx\n", inject_pa); //add by gatieme,
 
 			printf("inject_va:\t%lx\n", end_va); //add by gatieme,
 			inject_pa = virt_to_phys(pid, end_va);
-			//printf("inject_pa:\t%lx\n", inject_pa); //add by gatieme,
+			printf("inject_pa:\t%lx\n", inject_pa); //add by gatieme,
 
 			srand( time( NULL ) );
 			random_offset = rand() % (end_va - start_va);
 			printf("inject_va:\t%lx\n", start_va + random_offset); //add by gatieme,
 			inject_pa = virt_to_phys(pid, start_va + random_offset);
 			printf("inject_pa:\t%lx\n", inject_pa); //add by gatieme,
-			//return 0;
+			return 0;
             */
 			/// random addr
 			srand( time( NULL ) );
@@ -628,7 +632,7 @@ int Injector::injectFaults( int pid )
             dprintf("[%s, %d]--End    Virtual Address = 0x%lx\n", __FILE__, __LINE__, end_va);
             dprintf("[%s, %d]--Inject Virtual Address = 0x%lx\n", __FILE__, __LINE__, start_va + random_offset);
 			dprintf("[%s, %d]--Inject Physics Address = 0x%lx\n", __FILE__, __LINE__, inject_pa);
-		}
+        }
 		else
 		{
 			inject_pa = this->m_memoryFaultTable[i].m_addr;
@@ -641,7 +645,7 @@ int Injector::injectFaults( int pid )
             return RT_FAIL;
         }
 
-		dprintf("[%s, %d]--Inject fault at virtual:0x%lx--(physical:0x%lx)\n", __FILE__, __LINE__, start_va + random_offset, inject_pa);
+		dprintf("[%s, %d]--Inject fault at pid:%d, virtual:0x%lx--(physical:0x%lx)\n", __FILE__, __LINE__, pid, start_va + random_offset, inject_pa);
 
 		if(iRet == FAIL)
         {
@@ -756,7 +760,7 @@ int Injector::injectFaults( int pid )
 		timeout( this->m_memoryFaultTable[i].m_timeout, report );
 
 	}
-    dcout <<"return from " <<__func__ <<" now" <<endl;
+    dbgcout <<"return from " <<__func__ <<" now" <<endl;
 	return RT_OK;
 }
 
@@ -957,8 +961,9 @@ void Injector::cleanup(void)
 void Injector::report(int signo)
 {
 	int iRet;
-	printf("%d timeout\n", childProcess);
-	cleanup();
+	printf("pid = %d timeout\n", childProcess);
+    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<childProcess <<") is still running" <<endl;
+	cleanup( );
 	iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
 }
 /*

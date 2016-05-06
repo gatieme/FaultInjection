@@ -37,7 +37,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
     this->m_argc = argc;
     this->m_argv = argv;
 
-    MemoryFault faultTmp(text_area, -1, word_0, 0, 0);  //  默认的信息
+    MemoryFault faultTmp(text_area, -1, word_0, 1, 3);  //  默认的信息
 
 #ifdef DEBUG
     printf("this->m_argc = %d\n", this->m_argc);

@@ -411,13 +411,13 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 */
 int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 {
-	int ret;
-	int count;
-	int procFile;
-	char buff[MAX_LINE];
-	char line[MAX_LINE];
-	unsigned long iLine;
-	int i;
+	int             ret;
+	int             count;
+	int             procFile;
+	char            buff[MAX_LINE];
+	char            line[MAX_LINE];
+	unsigned long   iLine;
+	int             i;
 
 	bzero(buff, sizeof(buff));
 	sprintf(buff,"echo %d > /proc/memoryEngine/pid", pid);
@@ -438,8 +438,9 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 		perror("Failed to open /proc/memoryEngine/signal");
 		return FAIL;
 	}
+    dbgprint("open proc/memoryEngine/signal success...\n");
 
-	do
+    do
     {
 		bzero(buff, sizeof(buff));
 		ret = read(procFile, buff, MAX_LINE);
@@ -476,7 +477,7 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 
     //fill struct taskMMInfo
 	count = 0;
-	for(i = 0; i<varCount; i++)
+	for(i = 0; i < varCount; i++)
 	{
 		bzero(line,sizeof(line));
 		count += ReadLine(buff+count,line);

@@ -19,23 +19,23 @@ using namespace std;
 
 typedef struct procMMInfo
 {
-	unsigned long total;	//进程地址空间大小
-	unsigned long locked;	//被锁住而无法换出的页面数
-	unsigned long shared;	//共享内存映射
-	unsigned long exec;		//可执行内存映射
-	unsigned long stack;	//用户堆栈
-	unsigned long reserve;//保留区
+	unsigned long total;	    //进程地址空间大小
+	unsigned long locked;	    //被锁住而无法换出的页面数
+	unsigned long shared;	    //共享内存映射
+	unsigned long exec;		    //可执行内存映射
+	unsigned long stack;	    //用户堆栈
+	unsigned long reserve;      //保留区
 
-	unsigned long def_flags;//
-	unsigned long nr_ptes;	//
+	unsigned long def_flags;    //
+	unsigned long nr_ptes;	    //
 
 	unsigned long start_code;	//代码段开始地址
 	unsigned long end_code;		//代码段结束地址
 	unsigned long start_data;	//数据段开始地址
 	unsigned long end_data;		//数据段结束地址
 	unsigned long start_brk;	//堆的起始地址
-	unsigned long brk;				//堆的当前最后地址
-	unsigned long start_stack;//用户堆栈的起始地址
+	unsigned long brk;			//堆的当前最后地址
+	unsigned long start_stack;  //用户堆栈的起始地址
 	unsigned long arg_start;	//命令行参数
 	unsigned long arg_end;
 	unsigned long env_start;	//环境变量

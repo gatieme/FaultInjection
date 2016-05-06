@@ -241,10 +241,10 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 
 
 	//  前19个字段是关于进程内存信息的总体信息
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);   //dbgprint("%lx%c", pMM->total_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);  //dbgprint("%lx%c", pMM->locked_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);  //dbgprint("%lx%c", pMM->shared_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);    //dbgprint("%lx%c", pMM->exec_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);   dprint("%lx%c", pMM->total_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);  dprint("%lx%c", pMM->locked_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);  dprint("%lx%c", pMM->shared_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);    dprint("%lx%c", pMM->exec_vm, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);   //dbgprint("%lx%c", pMM->stack_vm, DELIMITER);
 
@@ -257,12 +257,12 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
     //  struct mm_struct 也没有了reserved_mm字段
     //  struct vm_area_struct结构体中flag标志使用值 VM_RESERVED -=> (VM_DONTEXPAND | VM_DONTDUMP)
     //
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->reserved_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->reserved_vm, DELIMITER);dprint("%lx%c", pMM->reserved_vm, DELIMITER);
 #endif
 
-    safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);
+    safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER); dprintf("%lx%c", pMM->def_flags, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);   dprintf("%lx%c", pMM->nr_ptes, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_code, DELIMITER);

@@ -203,7 +203,7 @@ using namespace std;
             //printf with line and function name
             #define dbgprint(format, args...) \
             printf("[%20s,%4d] : "format, __FILE__, __LINE__, ##args)
-            #define dbgcout std::cout <<"[" <<std::setw(20)<<__FILE__ <<", " <<std::setw(4)<<__LINE__ <<"] : "
+            #define dbgcout std::cout <<"[" <<std::setw(20)<<__FILE__ <<"," <<std::setw(4)<<__LINE__ <<"] : "
         #endif  // end of #ifdef __LINE__
         #endif  // end of #ifdef __FILE__
 

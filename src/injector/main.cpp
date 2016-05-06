@@ -11,7 +11,7 @@ int main(int argc,char **argv)
 		Injector::usage();
 		exit(RT_EXIT);
     }
-
+/*
     /// version 1.0.0
     Injector * pInjector = Injector::initInjector(argc, argv);
 
@@ -24,16 +24,18 @@ int main(int argc,char **argv)
     pInjector->startInjection();
 
     free(pInjector);
+*/
 
 
 //    test( );
-/*
+
+
     /// version 1.0.1
     InjectorTool injectorTool;
 
     injectorTool.CreateInjector(argc, argv);
     injectorTool.startInjection();
-*/
+
     return 0;
 }
 
