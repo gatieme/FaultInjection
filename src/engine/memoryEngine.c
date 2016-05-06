@@ -93,7 +93,7 @@ void do_request(void)
 		}
 		task = findTaskByPid(pid);
 
-        dprintf("find task %p\n", task);
+        dprint("find task %p\n", task);
 
         if( task != NULL )
 		{
