@@ -239,7 +239,7 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 	if(pTask == NULL) { return FAIL; }
 	if((pMM = pTask->mm) == NULL)
     {
-        dprint("the task %d:%s isn't in memory...\n", pTask->pid, pTask->comm);
+        dprint("the task %d:%s a kernel thread[task->mm == NULL]...\n", pTask->pid, pTask->comm);
         return FAIL;
     }
 
