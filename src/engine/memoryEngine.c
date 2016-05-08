@@ -120,6 +120,7 @@ void do_request(void)
 		}
 		if( task->mm == NULL )
 		{
+            dprint("the task %d:%s a kernel thread[task->mm == NULL]...\n", task->pid, task->comm);
 			ack_pa = -1;
 			ack_signal = ACK_V2P;
 			return;
