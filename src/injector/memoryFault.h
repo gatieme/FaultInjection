@@ -103,6 +103,10 @@ public :
 
     bool SetFaultType(std::string faulttype);
 
+    bool SetTime(std::string faulttype);
+
+    bool SetTimeout(std::string faulttype);
+
 //protected:
 
     pos     m_location;

@@ -113,7 +113,20 @@ Injector * Injector::initInjector( int argc, char **argv )
 		argc--;
 		argv++;
 
-		if(strcmp(argv[0], "-c") == 0)          //  -c to set the config file...
+	    if(strcmp(argv[0], "-e") == 0)
+		{
+			pInjector->m_exeArguments = argv + 1;
+			break;
+		}
+		else if(strcmp(argv[0], "-p") == 0)
+		{
+			pInjector->m_targetPid = atoi(argv[1]);
+#ifdef DEBUG
+            printf("The pid of the process you want to inject is %s == %d", argv[1], pInjector->m_targetPid);
+#endif
+            break;
+		}
+        else if(strcmp(argv[0], "-c") == 0)          //  -c to set the config file...
 		{
             //  you can see we read the config file in
             //  int Injector::initFaultTable( void )
@@ -127,21 +140,8 @@ Injector * Injector::initInjector( int argc, char **argv )
 			pInjector->m_memoryFaultTablePath = argv[1];
 
 			argv++;
-		}
-		else if(strcmp(argv[0], "-e") == 0)
-		{
-			pInjector->m_exeArguments = argv + 1;
-			break;
-		}
-		else if(strcmp(argv[0], "-p") == 0)
-		{
-			pInjector->m_targetPid = atoi(argv[1]);
-#ifdef DEBUG
-            printf("The pid of the process you want to inject is %s == %d", argv[1], pInjector->m_targetPid);
-#endif
-            break;
-		}
-		else
+        }
+        else
 		{
 			printf("Unknown option: %s\n", argv[0]);
 			pInjector->usage();

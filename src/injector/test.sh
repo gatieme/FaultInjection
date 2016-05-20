@@ -9,4 +9,4 @@ sudo rmmod memoryEngine
 cd ../engine && make
 sudo insmod ./memoryEngine.ko
 cd ../injector
-sudo ./memInjector -l stack -m random -t word_0 -p 1
+sudo ./memInjector -l stack -m random -t word_0 --time 1 --timeout 3 -p 1

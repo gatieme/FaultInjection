@@ -144,3 +144,14 @@ bool MemoryFault::SetFaultType(std::string faulttype)
     }
     return true;
 }
+bool MemoryFault::SetTime(std::string timeStr)
+{
+    int time = atoi(timeStr.c_str( ));
+    this->m_time = time;
+}
+
+bool MemoryFault::SetTimeout(std::string timeoutStr)
+{
+    int timeout = atoi(timeoutStr.c_str( ));
+    this->m_timeout = timeout;
+}

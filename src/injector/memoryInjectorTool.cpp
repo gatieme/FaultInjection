@@ -47,41 +47,27 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
     }
 #endif
 
+    dprintf("now m_argc = %d, comm = %s\n", m_argc, m_argv[0]);
+	this->m_argc--;
+	this->m_argv++;
+
     /// get arguments
 	while(this->m_argc > 0)
 	{
-		this->m_argc--;
-	    this->m_argv++;
         dprintf("now m_argc = %d, m_argv[0] = %s, m_argv[1] = %s\n", m_argc, m_argv[0], m_argv[1]);
-		if(strcmp(this->m_argv[0], "-c") == 0)          //  -c to set the config file...
-		{
-            //  you can see we read the config file in
-            //  int InjectorTool::initFaultTable( void )
-            //
-            //  add by gatieme @
-            //  or you can use the
-            //  -l --location   stack|data|text
-            //  -m --mode       random | address
-            //  -t --type
-			this->m_memoryFaultTablePath = this->m_argv[1];
 
-            this->m_hasFaultTable = true;
-
-            this->m_argc--;
-            this->m_argv++;
-		}
-		else if(strcmp(this->m_argv[0], "-e") == 0)
+        if(strcmp(this->m_argv[0], "-e") == 0)
 		{
 			this->m_exeArguments = this->m_argv + 1;
 #ifdef BUGS
             dcout <<endl <<"BUG002--[" <<__FILE__  <<", " <<__func__ <<", "<<__LINE__ <<"]--exe = " <<this->m_exeArguments[0] <<", address = " <<this->m_exeArguments <<endl;
 #endif
-            this->m_argc--;
 
-            dcout <<"The name of the process you want to inject is \"";
-            for(unsigned int i = 0; i < m_argc; i++)
+            dcout <<"The process you want to inject : length = " <<argc - 1 <<", comm = \"";
+            for(int i = 0; i < m_argc - 1; i++)
             {
-                dcout <<this->m_exeArguments[i] <<" ";
+                i && dcout <<" ";
+                dcout <<this->m_exeArguments[i];
             }
             dcout <<"\"" <<endl;
             //this->m_exeArguments[m_argc] = NULL;
@@ -93,8 +79,24 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 
             dcout <<"The pid of the process you want to inject is " <<this->m_argv[1] <<" == " <<this->m_targetPid <<endl;
 
-            //this->m_argc--;
 			break;
+		}
+        else if(strcmp(this->m_argv[0], "-c") == 0)          //  -c to set the config file...
+		{
+            //  you can see we read the config file in
+            //  int InjectorTool::initFaultTable( void )
+            //
+            //  add by gatieme @
+            //  or you can use the
+            //  -l --location   stack|data|text
+            //  -m --mode       random | address
+            //  -t --type
+            //      --time      1
+            //      --timeout   3
+			this->m_memoryFaultTablePath = this->m_argv[1];
+
+            this->m_hasFaultTable = true;
+
 		}
         else if( strcmp(this->m_argv[0], "-l") == 0 )
         {
@@ -108,8 +110,6 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		        cerr << "Error, undefined fault location : " <<this->m_argv[1] << endl;
 			    return NULL;
 		    }
-            this->m_argc--;
-            this->m_argv++;
         }
         else if ( strcmp(this->m_argv[0], "-m") == 0 )
         {
@@ -122,8 +122,6 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
 			    return NULL;
 		    }
-            this->m_argc--;
-            this->m_argv++;
         }
         else if ( strcmp(this->m_argv[0], "-t") == 0 )
         {
@@ -135,11 +133,35 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
 		    {
 		        cerr << "Error, undefined fault mode : " <<this->m_argv[1] << endl;
             }
-            this->m_argc--;
-            this->m_argv++;
         }
+        else if( strcmp(this->m_argv[0], "--time") == 0)
+        {
+		    if( faultTmp.SetTime(this->m_argv[1]) == true )
+		    {
+		        cout << "read the Time : " <<this->m_argv[1] << endl;
+            }
+		    else
+		    {
+		        cerr << "Error, undefined fault time : " <<this->m_argv[1] << endl;
+            }
+        }
+        else if( strcmp(this->m_argv[0], "--timeout") == 0)
+        {
+		    if( faultTmp.SetTimeout(this->m_argv[1]) == true )
+		    {
+		        cout << "read the Time : " <<this->m_argv[1] << endl;
+            }
+		    else
+		    {
+		        cerr << "Error, undefined fault time : " <<this->m_argv[1] << endl;
+            }
+        }
+        this->m_argc -=2 ;
+        this->m_argv += 2;
     }
     dcout <<__LINE__ <<endl;
+    ///return 0;
+
     //  如果使用了-c参数指定了故障注入表
     if( this->m_hasFaultTable == true )     //  读取故障植入表的信息
     {
