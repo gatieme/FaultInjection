@@ -93,7 +93,7 @@ int main(int argc, char * argv[])
     if(strcmp(argv[1], "-e") == 0)
     {
 
-	    pid = fork();
+	    pid = vfork();
 	    if(pid < 0)
     	{
 	    	perror("fork");

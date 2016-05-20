@@ -913,7 +913,7 @@ static int __init initME(void)
 		return FAIL;
 	}
 
-#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
+#if LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 32)
     /// modify by gatieme for system porting NeoKylin-linux-3.14/16
     /// error: dereferencing pointer to incomplete type
 	dir->owner = THIS_MODULE;
@@ -955,7 +955,7 @@ static int __init initME(void)
         goto create_pid_failed;
 	}
 	proc_pid->write_proc = proc_write_pid;  /// write only
-	proc_pid->owner = THIS_MODULE;
+	//proc_pid->owner = THIS_MODULE;
 #else
     static const struct file_operations pid_fops =
     {
@@ -987,7 +987,7 @@ static int __init initME(void)
 	}
 	proc_va->read_proc = proc_read_virtualAddr;         // can read
 	proc_va->write_proc = proc_write_virtualAddr;       // can write
-	proc_va->owner = THIS_MODULE;
+	//proc_va->owner = THIS_MODULE;
 
 #else
     static const struct file_operations va_fops =
@@ -1023,7 +1023,7 @@ static int __init initME(void)
 	}
 
     proc_ctl->write_proc = proc_write_ctl;              // write only
-	proc_ctl->owner = THIS_MODULE;
+	//proc_ctl->owner = THIS_MODULE;
 
 #else
 
@@ -1062,7 +1062,7 @@ static int __init initME(void)
 	}
 	proc_signal->read_proc = proc_read_signal;          //  can read
 	proc_signal->write_proc = proc_write_signal;        //  can write
-	proc_signal->owner = THIS_MODULE;
+	//proc_signal->owner = THIS_MODULE;
 
 #else
 
@@ -1269,7 +1269,7 @@ create_pid_failed       :
 // invalid storage class for function ¡®jforce_sig_info¡¯
 static int jforce_sig_info(int sig, struct siginfo *info, struct task_struct *t)
 {
-    printk("MemSysFI: kernel is sending signal %d to process pid: %d, comm: %s\n",sig,t->pid,t->comm);
+    printk("MemSysFI: kernel is sending signal %d to process pid: %d, comm: %s\n", sig, t->pid, t->comm);
 /*
     if (f_inject == 'N')
     {
