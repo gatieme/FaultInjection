@@ -10,6 +10,57 @@
 
 
 
+
+int run_command(char *command, char *result)
+{
+    FILE *fstream = NULL;
+    char buff[81];
+
+    if((fstream = popen(command, "r")) == NULL)
+    {
+        perror("execute command failed : ");
+        return -1;
+    }
+
+    memset(buff, 0, sizeof(buff));
+    while(fgets(buff, sizeof(buff), fstream) != NULL)
+    {
+        //printf("%s\n",buff);
+        strcat(result, buff);
+    }
+    pclose(fstream);
+
+    return 0;
+}
+
+int is_kernel_thread(int pid)
+{
+    char command[81];
+    char pname[81];
+
+    memset(command, 0, 81);
+    memset(pname, 0, 81);
+
+    sprintf(command, "ps -p %d -o command=", pid);
+    run_command(command, pname);
+
+    printf("process PID : %d, command : %s\n", pid, pname);
+    if(pname[0] == '[')
+    {
+        printf("process %d is a kernel thread\n", pid);
+        return 1;
+    }
+    else if(pname[0] != '\0')
+    {
+        printf("process %d is a user process\n", pid);
+        return 0;
+    }
+    else
+    {
+        printf("no such process %d\n", pid);
+    }
+}
+
 /*
  * get the process ID of the parent of the process which you give
  *
@@ -44,59 +95,6 @@ int getcommand(int pid, char *result)
 
 
 
-int is_kernel_thread(int pid)
-{
-    char command[81];
-    char result[81];
-
-    memset(command, 0, 81);
-    memset(result, 0, 81);
-
-    sprintf(command, "ps -p %d -o command=", pid);
-    run_command(command, result);
-
-    printf("result : %s", result);
-    if(result[0] == '[')
-    {
-        printf("process %d is a kernel thread\n", pid);
-        return 1;
-    }
-    else
-    {
-        printf("process %d is a user process\n", pid);
-        return 0;
-    }
-}
-
-int run_command(char *command, char *result)
-{
-    FILE *fstream = NULL;
-    char buff[81];
-
-    if((fstream = popen(command, "r")) == NULL)
-    {
-        perror("execute command failed : ");
-        return -1;
-    }
-
-    memset(buff, 0, sizeof(buff));
-    while(fgets(buff, sizeof(buff), fstream) != NULL)
-    {
-        //printf("%s\n",buff);
-        strcat(result, buff);
-    }
-    pclose(fstream);
-
-    return 0;
-}
-
-int main()
-{
-
-    is_kernel_thread(2);
-
-}
-
 int test_popen(void)
 {
     FILE *fstream = NULL;
@@ -118,4 +116,18 @@ int test_popen(void)
     pclose(fstream);
 
     return 0;
+}
+
+
+
+int main(int argc, char *argv[])
+{
+    if(argc != 2)
+    {
+        printf("usage %s pid\n", argv[0]);
+        exit(-1);
+    }
+
+    is_kernel_thread(atoi(argv[1]));
+
 }

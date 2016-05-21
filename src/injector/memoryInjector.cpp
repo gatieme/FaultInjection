@@ -385,9 +385,9 @@ int Injector::startInjection( void )
 
     //inject fault into an existing proces
     //  系统进程无法进行跟踪
-	if( this->m_targetPid > 0 && this->m_targetPid <= 10 && this->m_exeArguments == NULL )
+	if( this->m_targetPid > 0 && this->m_exeArguments == NULL && is_kthread(this->m_targetPid))
 	{
-        dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--pid = " <<this->m_targetPid <<endl;
+        dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--KERNEL THREAD pid = " <<this->m_targetPid <<endl;
 		iRet = injectFaults( this->m_targetPid );
 		if( iRet != RT_OK )
         {
@@ -397,7 +397,7 @@ int Injector::startInjection( void )
 	}
     else if( this->m_targetPid > 0 && this->m_exeArguments == NULL )    //  用户进程需要跟踪用户的状态
 	{
-        dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--pid = " <<this->m_targetPid <<endl;
+        dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--USER PROCESS pid = " <<this->m_targetPid <<endl;
 
         //设置跟踪进程，等待子进程停止
 		signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号

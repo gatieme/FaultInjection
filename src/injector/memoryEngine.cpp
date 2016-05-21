@@ -538,3 +538,61 @@ int print_all_byte(void *addr, int size)
 
     return print_bytes;
 }
+
+
+/*  modify by gatieme
+ *
+ * */
+int run_command(char *command, char *result)
+{
+    FILE *fstream = NULL;
+    char buff[81];
+
+    if((fstream = popen(command, "r")) == NULL)
+    {
+        perror("execute command failed : ");
+        return -1;
+    }
+
+    memset(buff, 0, sizeof(buff));
+    while(fgets(buff, sizeof(buff), fstream) != NULL)
+    {
+        //printf("%s\n",buff);
+        strcat(result, buff);
+    }
+    pclose(fstream);
+
+    return 0;
+}
+
+/*  modify by gatieme @ 2016-05-21 16:12
+ *
+ */
+int is_kthread(int pid)
+{
+    char command[81];
+    char pname[81];
+
+    memset(command, 0, 81);
+    memset(pname, 0, 81);
+
+    sprintf(command, "ps -p %d -o command=", pid);
+    run_command(command, pname);
+
+    printf("process PID : %d, command : %s\n", pid, pname);
+    if(pname[0] == '[')
+    {
+        printf("process %d is a kernel thread\n", pid);
+        return 1;
+    }
+    else if(pname[0] != '\0')
+    {
+        printf("process %d is a user process\n", pid);
+        return 0;
+    }
+    else
+    {
+        printf("no such process %d\n", pid);
+    }
+}
+

@@ -1,11 +1,11 @@
 BIN = ../../workspace/
 
 
-targets = getpinfo v2p readpa writepa
+targets = getpinfo v2p readpa writepa iskthread
 
 all:$(targets)
 	cd ./memdev && make
-	
+
 getpinfo: getTaskInfo.o
 	g++ -o $@ $^
 v2p: vir_to_phy.o
@@ -14,6 +14,8 @@ readpa: read_phy_mem.o
 	g++ -o $@ $^
 writepa: write_phy_mem.o
 	g++ -o $@ $^
+iskthread: is_kernel_thread.o
+	gcc -o $@ $^
 
 %.o:%.cpp
 	g++ -o $@ -c $^
@@ -28,5 +30,5 @@ install:
 	cp writepa $(BIN)
 	cp inject_sys_process.sh $(BIN)
 clean:
-	rm -rf *.o 
+	rm -rf *.o
 	rm -rf $(targets)

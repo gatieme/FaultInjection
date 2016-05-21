@@ -88,5 +88,13 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo);
 int ReadLine(char *input,char *line);
 int write_page_0(unsigned long pa);
 int print_all_byte(void *addr, int size);
+int is_kthread(int pid);
+
+
+
+
+
+
+
 
 #endif
