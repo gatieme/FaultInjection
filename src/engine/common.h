@@ -219,12 +219,14 @@
 #endif
 #endif
 
+#define undbginfo(format,args...);
+
 /*
 *	safe sprintf
 * It will not be out of range.
 */
-#define safe_sprintf(start, n, p, format, args...);	\
-	{ if( (p - start) < n ) { snprintf( (char *)p, (n - (p - start)), format, ##args ); } }
+#define safe_sprintf(start, n, p, format, args...)	\
+	 (((p - start) < n )  && snprintf( (char *)p, (n - (p - start)), format, ##args ))
 
 
 

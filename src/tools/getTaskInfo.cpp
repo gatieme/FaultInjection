@@ -170,7 +170,8 @@ int getTaskInfo(int pid)
 			perror("Failed to read /proc/memoryEngine/signal");
 			return FAIL;
 		}
-
+        printf("buff = %s\n", buff);
+        getchar();
 	}while(atoi(buff) != ACK_TASK_INFO);
 
     close(procFile);

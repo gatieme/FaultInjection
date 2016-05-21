@@ -98,7 +98,8 @@ void do_request(void)
         if( task != NULL )
 		{
 			getTaskInfo(task, taskInfo, sizeof(taskInfo));
-		}
+		    dbginfo("%s", taskInfo);
+        }
         else
 		{
 			dbginfo("No such process\n");
@@ -248,12 +249,12 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 
 
 	//  前19个字段是关于进程内存信息的总体信息
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);   dbgprint("%lx%c", pMM->total_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);  dbgprint("%lx%c", pMM->locked_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);  dbgprint("%lx%c", pMM->shared_vm, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);    dbgprint("%lx%c", pMM->exec_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->total_vm, DELIMITER);   undbginfo("%lx%c", pMM->total_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->locked_vm, DELIMITER);  undbginfo("%lx%c", pMM->locked_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->shared_vm, DELIMITER);  undbginfo("%lx%c", pMM->shared_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->exec_vm, DELIMITER);    undbginfo("%lx%c", pMM->exec_vm, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);   dbgprint("%lx%c", pMM->stack_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->stack_vm, DELIMITER);   undbginfo("%lx%c", pMM->stack_vm, DELIMITER);
 
 
 /// modify by gatieme for system porting NeoKylin-linux-3.14/16
@@ -264,26 +265,26 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
     //  struct mm_struct 也没有了reserved_mm字段
     //  struct vm_area_struct结构体中flag标志使用值 VM_RESERVED -=> (VM_DONTEXPAND | VM_DONTDUMP)
     //
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->reserved_vm, DELIMITER);dbgprint("%lx%c", pMM->reserved_vm, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->reserved_vm, DELIMITER);undbginfo("%lx%c", pMM->reserved_vm, DELIMITER);
 #endif
 
-    safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);  dbgprint("%lx%c", pMM->def_flags, DELIMITER);
+    safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);  undbginfo("%lx%c", pMM->def_flags, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);    dbgprint("%lx%c", pMM->nr_ptes, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);    undbginfo("%lx%c", pMM->nr_ptes, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER); dbgprint("%lx%c", pMM->start_code, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_code, DELIMITER);   dbgprint("%lx%c", pMM->end_code, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_data, DELIMITER); dbgprint("%lx%c", pMM->start_data, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_data, DELIMITER);   dbgprint("%lx%c", pMM->end_data, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER); undbginfo("%lx%c", pMM->start_code, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_code, DELIMITER);   undbginfo("%lx%c", pMM->end_code, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_data, DELIMITER); undbginfo("%lx%c", pMM->start_data, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_data, DELIMITER);   undbginfo("%lx%c", pMM->end_data, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_brk, DELIMITER);  dbgprint("%lx%c", pMM->start_brk, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->brk, DELIMITER);        dbgprint("%lx%c", pMM->brk, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_stack, DELIMITER);dbgprint("%lx%c", pMM->start_stack, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_brk, DELIMITER);  undbginfo("%lx%c", pMM->start_brk, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->brk, DELIMITER);        undbginfo("%lx%c", pMM->brk, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_stack, DELIMITER);undbginfo("%lx%c", pMM->start_stack, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_start, DELIMITER);  dbgprint("%lx%c", pMM->arg_start, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_end, DELIMITER);    dbgprint("%lx%c", pMM->arg_end, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_start, DELIMITER);  dbgprint("%lx%c", pMM->env_start, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_end, DELIMITER);    dbgprint("%lx%c", pMM->env_end, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_start, DELIMITER);  undbginfo("%lx%c", pMM->arg_start, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_end, DELIMITER);    undbginfo("%lx%c", pMM->arg_end, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_start, DELIMITER);  undbginfo("%lx%c", pMM->env_start, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->env_end, DELIMITER);    undbginfo("%lx%c", pMM->env_end, DELIMITER);
 
 
 	pVMA = pMM->mmap;
@@ -297,42 +298,14 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 		safe_sprintf(pData, length, info + strlen(info), "%lx %lx ", p->vm_start, p->vm_end);
 
         //  属性
-		if(p->vm_flags & VM_READ)
-		{
-            safe_sprintf(pData, length, info+strlen(info), "r");
-        }
-		else
-		{
-            safe_sprintf(pData, length, info+strlen(info), "-");
-        }
+		(p->vm_flags & VM_READ)   ? safe_sprintf(pData, length, info+strlen(info), "r") : safe_sprintf(pData, length, info+strlen(info), "-");
 
-		if(p->vm_flags & VM_WRITE)
-		{
-            safe_sprintf(pData, length, info+strlen(info), "w");
-        }
-		else
-		{
-            safe_sprintf(pData, length, info+strlen(info), "-");
-        }
+		(p->vm_flags & VM_WRITE)  ? safe_sprintf(pData, length, info+strlen(info), "w") : safe_sprintf(pData, length, info+strlen(info), "-");
 
+		(p->vm_flags & VM_EXEC)   ? safe_sprintf(pData, length, info+strlen(info), "x") : safe_sprintf(pData, length, info+strlen(info), "-");
 
-		if(p->vm_flags & VM_EXEC)
-		{
-            safe_sprintf(pData, length, info+strlen(info), "x");
-        }
-		else
-		{
-            safe_sprintf(pData, length, info+strlen(info), "-");
-        }
+        (p->vm_flags & VM_SHARED) ? safe_sprintf(pData, length, info+strlen(info), "s") : safe_sprintf(pData, length, info+strlen(info), "p");
 
-		if(p->vm_flags & VM_SHARED)
-		{
-            safe_sprintf(pData, length, info+strlen(info), "s");
-        }
-		else
-		{
-            safe_sprintf(pData, length, info+strlen(info), "p");
-        }
 
 		//  对应文件名
 		if(p->vm_file != NULL)
@@ -748,7 +721,7 @@ int proc_read_signal(   char * page,
                         void * data)
 {
 	int iLen;
-
+    dbginfo("%d\n", ack_signal);
     iLen = sprintf(page, "%d", ack_signal);
 
     return iLen;
