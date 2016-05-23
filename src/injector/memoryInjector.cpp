@@ -403,9 +403,34 @@ int Injector::startInjection( void )
         dcout <<endl <<"[" <<__FILE__  <<", "<<__LINE__ <<"]--USER PROCESS pid = " <<this->m_targetPid <<endl;
 
         //设置跟踪进程，等待子进程停止
-		signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号
+        //bool ptraceFlag = true;
+        signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号
 		iRet = ptraceAttach( this->m_targetPid );
-		if( iRet == RT_FAIL ) { return RT_FAIL; }
+		if( iRet == RT_FAIL )
+        {
+//#ifdef TEST_PTRACE
+            //  某些系统内部的进程是无法被跟踪的, 返回信息如下
+            //  ptraceAttach error : : Operation not permitted
+            //  [          ptrace.cpp,  27] : ptraceAttach error : (29:Illegal seek)
+            //  因此我们这里判断, 无法跟踪的进程直接进行注入即可
+            //
+            //  查看是否可悲跟踪的简单方法 strace -p pid
+            if(errno == 29)
+            {
+                //ptraceFlag = false;
+		        iRet = injectFaults( this->m_targetPid );
+		        if( iRet != RT_OK )
+                {
+                    return RT_FAIL;
+                }
+		        return RT_OK;
+            }
+            else
+//#endif
+            {
+                return RT_FAIL;
+            }
+        }
 
 		do
         {
@@ -422,7 +447,6 @@ int Injector::startInjection( void )
 
             return RT_FAIL;
 		}
-
 		//  进行故障注入
 		iRet = injectFaults( this->m_targetPid );
 		if( iRet != RT_OK )
@@ -921,12 +945,19 @@ void Injector::startExe()
 
 void Injector::usage()
 {
-	printf("Usage:\n");
-	printf("\t./memInjector -c fault.conf -e program [arguments]\n");
-	printf("\t./memInjector -c fault.conf -p pid\n");
-	printf("Arguments:\n");
-	printf("\t1.fault description scripts.\n");
-	printf("\t2.workload, workload can be a executable program or a running process ID.\n");
+    printf("memoryFaultInjector v1.0.1\n");
+    printf("\t\n");
+    printf("Usage:\n");
+    printf("\t./memInjector -c fault.conf -e program [arguments]\n");
+    printf("\t./memInjector -c fault.conf -p pid\n");
+    printf("\t./memInjector -l location -m mode -t injecttype -time time -timeout timeout -p pid\n");
+    printf("\t\n");
+    printf("Arguments:\n");
+    printf("\t1.fault description scripts.\n");
+    printf("\t2.workload, workload can be a executable program or a running process.\n");
+    printf("\t\n");
+    printf("\t-c\tto set the config file or inject table, with [ location mode injecttype time timeout]\n");
+    printf("\t  \tit equal to -l location -m mode -t injecttype -time time -timeout timeout\n");
 }
 
 void Injector::writeResult( int pid, int status, int data )

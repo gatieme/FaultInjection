@@ -10,7 +10,8 @@ int ptraceTraceme()
 	ptrace(PTRACE_TRACEME,0,NULL,0);
 	if( errno != 0 )
 	{
-		perror( "ptraceTraceme" );
+		perror(  "ptraceTraceme error : " );
+		dbgprint("ptraceTraceme error : (%d:%s)\n", errno, strerror(errno));
 		return RT_FAIL;
 	}
 	return RT_OK;
@@ -22,8 +23,9 @@ int ptraceAttach(int pid)
 	ptrace(PTRACE_ATTACH,pid,NULL,0);
 	if( errno != 0 )
 	{
-		perror( "ptraceAttach" );
-		return RT_FAIL;
+		perror(  "ptraceAttach error : " );
+		dbgprint("ptraceAttach error : (%d:%s)\n", errno, strerror(errno));
+        return RT_FAIL;
 	}
 	return RT_OK;
 }
@@ -34,7 +36,8 @@ int ptraceCont(int pid)
 	ptrace(PTRACE_CONT,pid,0,0);
 	if( errno != 0 )
 	{
-		perror( "ptraceCont" );
+		perror(  "ptraceCont error : " );
+		dbgprint("ptraceCont error : (%d:%s)\n", errno, strerror(errno));
 		return RT_FAIL;
 	}
 	return RT_OK;
@@ -43,11 +46,12 @@ int ptraceCont(int pid)
 int ptraceCont(int pid,int sig)
 {
 	errno = 0;
-	
+
 	ptrace(PTRACE_CONT,pid,1,sig);
 	if( errno != 0 )
 	{
-		perror( "ptraceCont" );
+		perror(  "ptraceCont error : " );
+		dbgprint("ptraceCont error : (%d:%s)\n", errno, strerror(errno));
 		return RT_FAIL;
 	}
 	return RT_OK;
@@ -59,7 +63,8 @@ int ptraceStep(int pid,int sig)
 	ptrace(PTRACE_SINGLESTEP,pid,1,sig);
 	if( errno != 0 )
 	{
-		perror( "ptraceStep" );
+		perror(  "ptraceStep error : " );
+		dbgprint("ptraceStep error : (%d:%s)\n", errno, strerror(errno));
 		return RT_FAIL;
 	}
 	return RT_OK;
@@ -75,7 +80,8 @@ int ptraceGetReg( int pid, long offset, long &data )
 	data = ptrace( PTRACE_PEEKUSER, pid, offset, 0 );
 	if( data == -1 )
 	{
-		perror("ptrace");
+		perror(  "ptrace error : ");
+		dbgprint("ptrace error : (%d:%s)\n", errno, strerror(errno));
 		return RT_FAIL;
 	}
 	return RT_OK;
@@ -92,7 +98,8 @@ int ptraceSetReg( int pid, long offset, long data )
 	iRet = ptrace( PTRACE_POKEUSER, pid, offset, data );
 	if( iRet == -1 )
 	{
-		perror("ptrace");
+		perror(  "ptrace error : ");
+		dbgprint("ptrace error : (%d:%s)\n", errno, strerror(errno));
 		return RT_FAIL;
 	}
 	return RT_OK;

@@ -37,7 +37,7 @@ class InjectorTool
 public:
 	InjectorTool( );
 	~InjectorTool( );
-    void usage( );
+    static void usage( );
 
     int initFaultTable( int argc, char **argv );
     int startInjection( );

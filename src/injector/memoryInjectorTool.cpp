@@ -412,12 +412,5 @@ int InjectorTool::startInjection( void )
 
 void InjectorTool::usage()
 {
-    printf("memoryFaultInjector v1.0.1\n");
-    printf("Usage:\n");
-    printf("\t./memInjector -c fault.conf -e program [arguments]\n");
-    printf("\t./memInjector -c fault.conf -p pid\n");
-    printf("Arguments:\n");
-    printf("\t1.fault description scripts.\n");
-    printf("\t2.workload, workload can be a executable program or a running process.\n");
-
+    Injector::usage( );
 }

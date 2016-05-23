@@ -139,7 +139,7 @@ void do_request(void)
 	{
 		ack_pa = kv2p(va,&status);
 		if(pa == FAIL)
-		{
+        {
 			dbginfo("No physical address\n");
 		}
 		ack_signal = ACK_KV2P;
@@ -439,14 +439,20 @@ long v2p(struct mm_struct *pMM,unsigned long va,int *pStatus)
 
 /*
 *  convert kernel virtual address to physical address
+*
 */
 long kv2p(unsigned long va,int *pStatus)
 {
-	if(va < 0)
+    if(va < 0)
+    {
 		return FAIL;
-	if(__pa(va) >= 0)
+    }
+
+    if(__pa(va) >= 0)
+    {
 		return __pa(va);
-	return FAIL;
+    }
+    return FAIL;
 }
 
 /*
