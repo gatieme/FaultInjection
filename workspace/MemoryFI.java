@@ -21,7 +21,7 @@ public class MemoryFI
      *  pid = -1 时没使用pname
      *  pname = null时，使用pid
      * */
-    public void Inject(String location, String mode, String type, int pid, String pname)
+    public int Inject(String location, String mode, String type, int pid, String pname)
     {
         //  拼接运行字符串
         String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type;
@@ -38,7 +38,16 @@ public class MemoryFI
        // cmd = "ls -al";
         //  运行脚本
         String result = this.runCommand(cmd, -1);
-        System.out.println("RESULT : " + result);
+        //System.out.println("RESULT : " + result);
+
+        return GetResult(result);
+    }
+
+    public int GetResult(String result)
+    {
+
+        //System.out.println("RESULT : " + result);
+        return 0;
     }
 
     /**
@@ -162,6 +171,7 @@ public class MemoryFI
         MemoryFI mem = new MemoryFI();
         mem.TestRegex();
 
-        mem.Inject("stack", "random", "word_0", 1, null);
+        int result = mem.Inject("stack", "random", "word_0", 1, 3);
+        System.out.println("RESULT : " + result);
     }
 }
