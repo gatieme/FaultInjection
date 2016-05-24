@@ -9,7 +9,7 @@ import java.io.LineNumberReader;
 
 public class MemoryFI
 {
-    static String m_injector = "sudo ./memInjector";
+    static String m_injector = "sudo ../src/injector/memInjector";
 
     /*
      *  -l --location   stack|data|text
@@ -35,12 +35,12 @@ public class MemoryFI
         }
         System.out.println(cmd);
 
-       // cmd = "ls -al";
+        // cmd = "ls -al";
         //  运行脚本
         String result = this.runCommand(cmd, -1);
-        //System.out.println("RESULT : " + result);
+        System.out.println("RESULT : " + result);
 
-        return GetResult(result);
+        return 0;
     }
 
     public int GetResult(String result)
@@ -171,7 +171,7 @@ public class MemoryFI
         MemoryFI mem = new MemoryFI();
         mem.TestRegex();
 
-        int result = mem.Inject("stack", "random", "word_0", 1, 3);
+        int result = mem.Inject("stack", "random", "word_0", 1, "");
         System.out.println("RESULT : " + result);
     }
 }

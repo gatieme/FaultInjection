@@ -579,7 +579,7 @@ int is_kthread(int pid)
     sprintf(command, "ps -p %d -o command=", pid);
     run_command(command, pname);
 
-    printf("process PID : %d, command : %s\n", pid, pname);
+    printf("process PID : %d, command : %s", pid, pname);
     if(pname[0] == '[')
     {
         printf("process %d is a kernel thread\n", pid);

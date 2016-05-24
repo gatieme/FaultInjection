@@ -102,7 +102,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
         {
 		    if( faultTmp.SetLocation(this->m_argv[1]) == true )
 		    {
-		        cout << "read the Location : " <<this->m_argv[1] << endl;
+		        dcout << "read the Location : " <<this->m_argv[1] << endl;
 		        //faultTmp.m_location = stack_area;
 		    }
 		    else
@@ -115,7 +115,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
         {
 		    if( faultTmp.SetMode(this->m_argv[1]) == true )
 		    {
-		        cout << "read the Mode : " <<this->m_argv[1] << endl;
+		        dcout << "read the Mode : " <<this->m_argv[1] << endl;
 		    }
 		    else
 		    {
@@ -127,7 +127,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
         {
 		    if( faultTmp.SetFaultType(this->m_argv[1]) == true )
 		    {
-		        cout << "read the Type : " <<this->m_argv[1] << endl;
+		        dcout << "read the Type : " <<this->m_argv[1] << endl;
             }
 		    else
 		    {
@@ -138,7 +138,7 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
         {
 		    if( faultTmp.SetTime(this->m_argv[1]) == true )
 		    {
-		        cout << "read the Time : " <<this->m_argv[1] << endl;
+		        dcout << "read the Time : " <<this->m_argv[1] << endl;
             }
 		    else
 		    {
@@ -149,11 +149,11 @@ Injector * InjectorTool::CreateInjector( int argc, char **argv )
         {
 		    if( faultTmp.SetTimeout(this->m_argv[1]) == true )
 		    {
-		        cout << "read the Time : " <<this->m_argv[1] << endl;
+		        dcout << "read the Timeout : " <<this->m_argv[1] << endl;
             }
 		    else
 		    {
-		        cerr << "Error, undefined fault time : " <<this->m_argv[1] << endl;
+		        cerr << "Error, undefined fault timeout : " <<this->m_argv[1] << endl;
             }
         }
         this->m_argc -=2 ;
