@@ -23,7 +23,7 @@ int ptraceAttach(int pid)
 	ptrace(PTRACE_ATTACH,pid,NULL,0);
 	if( errno != 0 )
 	{
-		perror(  "ptraceAttach error : " );
+		//perror(  "ptraceAttach error : " );
 		dbgprint("ptraceAttach error : (%d:%s)\n", errno, strerror(errno));
         return RT_FAIL;
 	}

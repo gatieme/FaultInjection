@@ -415,7 +415,7 @@ int Injector::startInjection( void )
             //  因此我们这里判断, 无法跟踪的进程直接进行注入即可
             //
             //  查看是否可悲跟踪的简单方法 strace -p pid
-            if(errno == 29)
+            if(errno == 29 || errno == 1)
             {
                 //ptraceFlag = false;
 		        iRet = injectFaults( this->m_targetPid );
@@ -423,6 +423,7 @@ int Injector::startInjection( void )
                 {
                     return RT_FAIL;
                 }
+			    writeResult( this->m_targetPid, KT_RUN, 0 );	//exit or term
 		        return RT_OK;
             }
             else
@@ -575,8 +576,10 @@ int Injector::injectFaults( int pid )
     dcout <<"There are" <<this->m_memoryFaultTable.size() <<"works will be done in table" <<endl;
 	for( i = 0; i < this->m_memoryFaultTable.size( ); i++ )
 	{
-        dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--" <<this->m_memoryFaultTable[i] <<endl;
-
+/////////////////////
+        dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--";
+        cout <<this->m_memoryFaultTable[i] <<endl;
+/////////////////////
         /// location
         dcout <<"==LOCATION==" <<endl;
 		if( this->m_memoryFaultTable[i].m_addr == -1 )
@@ -735,8 +738,7 @@ int Injector::injectFaults( int pid )
 				break;
 
             case word_0:
-                printf("FaultType = word_0\n");
-                printf("inject_pa = 0x%lx\n", inject_pa);
+                printf("FaultType = word_0, inject_pa = 0x%lx\n", inject_pa);
 
                 iRet = read_phy_mem(inject_pa, &origData);
 				if(iRet == FAIL)
@@ -970,12 +972,19 @@ void Injector::writeResult( int pid, int status, int data )
 
 	if( status == EXIT )
 	{
-		cout   << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " exited with code " << data << endl;
+        //  [ 2016-5-24 18:39:48]Process 1 exited with code 0(EXIT)
+		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " exited with code " << data <<"(EXIT)"<< endl;
 	}
 	else if( status == TERM )
 	{
-		cout 	 << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " termed with signal " << data << "(" << nameSignal( data ) << ")"<< endl;
+        //  [ 2016-5-24 18:39:48]Process 1 term with signal 0(SIGNAL)
+		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " termed with signal " << data << "(" << nameSignal( data ) << ")"<< endl;
 	}
+    else if( status == KT_RUN )
+    {
+        //  [ 2016-5-24 18:39:48]Process 1 running with code 0(KT_RUN)
+		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(KT_RUN)" <<endl;
+    }
 }
 
 void Injector::cleanup(void)

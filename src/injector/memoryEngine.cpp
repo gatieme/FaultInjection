@@ -560,6 +560,13 @@ int run_command(char *command, char *result)
         //printf("%s\n",buff);
         strcat(result, buff);
     }
+    int i = strlen(result) - 1;
+    while(i >= 0 && IsSpace(result[i]) == true)
+    {
+        //printf("buff[%d] = %c, %d\n", i, result[i], result[i]);
+        result[i] = '\0';
+        i--;
+    }
     pclose(fstream);
 
     return 0;
@@ -579,15 +586,16 @@ int is_kthread(int pid)
     sprintf(command, "ps -p %d -o command=", pid);
     run_command(command, pname);
 
-    printf("process PID : %d, command : %s", pid, pname);
+
+    printf("process PID : %d, command : %s ", pid, pname);
     if(pname[0] == '[')
     {
-        printf("process %d is a kernel thread\n", pid);
+        printf("is a kernel thread\n");
         return 1;
     }
     else if(pname[0] != '\0')
     {
-        printf("process %d is a user process\n", pid);
+        printf("is a user process\n");
         return 0;
     }
     else

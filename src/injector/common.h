@@ -34,15 +34,15 @@ using namespace std;
 //return status
 #define RT_OK		0
 #define RT_FAIL		-1
-#define EXIT_ERR		127
+#define EXIT_ERR	127
 #define EXIT_OK		0
 
-//process status
-#define RUN		0
-#define STOP	1
-#define EXIT	2
-#define TERM	3
-
+// user process status
+#define RUN		    0
+#define STOP	    1
+#define EXIT	    2
+#define TERM	    3
+#define KT_RUN      4   /* some process you can't ptrace, example init(pid = 1)*/
 
 //fault injection function pointers
 //typedef int (*INJECTFUNC)( int, long );

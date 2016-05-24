@@ -4,8 +4,10 @@ import java.util.regex.Matcher;
 
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
+//import java.io.BufferedReader;
+//import java.io.InputStreamReader;
 
-//import java.lang.*;
+
 
 public class MemoryFI
 {
@@ -21,7 +23,7 @@ public class MemoryFI
      *  pid = -1 时没使用pname
      *  pname = null时，使用pid
      * */
-    public int Inject(String location, String mode, String type, int pid, String pname)
+    public String Inject(String location, String mode, String type, int pid, String pname)
     {
         //  拼接运行字符串
         String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type;
@@ -35,19 +37,30 @@ public class MemoryFI
         }
         System.out.println(cmd);
 
-        // cmd = "ls -al";
         //  运行脚本
         String result = this.runCommand(cmd, -1);
-        System.out.println("RESULT : " + result);
-
-        return 0;
-    }
-
-    public int GetResult(String result)
-    {
-
         //System.out.println("RESULT : " + result);
-        return 0;
+        String code = GetResult(result);
+        return code;
+    }
+    /*
+     *  从输出的结果中获取到指令的返回值序列
+     *
+     *  最后的返回串为如下类似的格式
+     *  [ 2016-5-24 18:39:48]Process 1 [ inject | exited | term ] sucesss with code 0(KT_RUN)
+     *
+     *  最后的返回码的信息如下
+     *  0(KT_RUN)
+     * */
+    public String GetResult(String result)
+    {
+        System.out.println("RESULT : " + result);
+        // [ 2016-5-24 18:39:48]Process 1 inject sucesss with code 0(KT_RUN)
+        int pos = result.lastIndexOf(" ");
+        String code = result.substring(pos + 1);        // 0(KT_RUN)
+
+        System.out.println("code : " + code);
+        return code;
     }
 
     /**
@@ -79,35 +92,33 @@ public class MemoryFI
                 {
                     rt = "1";
                 }
-
             }
             else
             {
-                System.out.println("start...");
                 InputStreamReader ir = new InputStreamReader(pos.getInputStream());
 
                 LineNumberReader input = new LineNumberReader(ir);
 
-                String ln="";
+                String line="";
 
-                while ((ln = input.readLine()) != null)
+                while ((line = input.readLine()) != null)
                 {
-
-                      buf.append(ln + "\n");
-
+                    System.out.println(line);
+                    buf.append(line + "\n");
                 }
                 /*
-                 * BufferedReader read = new BufferedReader(new InputStreamReader(in));
+                BufferedReader read = new BufferedReader(new InputStreamReader(pos));
                 String line = null;
-                while((line = read.readLine())!=null){
-                                System.out.printlnkk(line);
-                                */
+                while((line = read.readLine()) != null)
+                {
+                          System.out.println(line);
+                }
                 rt = buf.toString();
-
+                */
                 input.close( );
-
                 ir.close( );
 
+                return buf.toString();
             }
 
         }
@@ -167,11 +178,11 @@ public class MemoryFI
 
     public static void main(String argv[])
     {
-        System.out.println("Hello");
+        //System.out.println("Hello");
         MemoryFI mem = new MemoryFI();
-        mem.TestRegex();
+        //mem.TestRegex();
 
-        int result = mem.Inject("stack", "random", "word_0", 1, "");
+        String result = mem.Inject("stack", "random", "word_0", 1, "");
         System.out.println("RESULT : " + result);
     }
 }
