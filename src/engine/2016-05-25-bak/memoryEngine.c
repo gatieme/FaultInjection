@@ -923,7 +923,7 @@ static int __init initME(void)
      */
 
     /// create a file named "pid" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_pid = create_proc_entry("pid", PERMISSION, dir);
 
@@ -935,8 +935,7 @@ static int __init initME(void)
 	}
 	proc_pid->write_proc = proc_write_pid;  /// write only
 	//proc_pid->owner = THIS_MODULE;
-
-#elif defined PROC_CREATE
+#else
     static const struct file_operations pid_fops =
     {
         .owner = THIS_MODULE,
@@ -956,7 +955,7 @@ static int __init initME(void)
 #endif
 
     /// create a file named "virtualAddr" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
 	proc_va = create_proc_entry("virtualAddr", PERMISSION, dir);
 	if(proc_va == NULL)
@@ -969,7 +968,7 @@ static int __init initME(void)
 	proc_va->write_proc = proc_write_virtualAddr;       // can write
 	//proc_va->owner = THIS_MODULE;
 
-#elif defined PROC_CREATE
+#else
     static const struct file_operations va_fops =
     {
         .owner = THIS_MODULE,
@@ -990,7 +989,7 @@ static int __init initME(void)
 #endif
 
     ///  create a file named "ctl" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_ctl = create_proc_entry("ctl", PERMISSION, dir);
 	if(proc_ctl == NULL)
@@ -1005,7 +1004,7 @@ static int __init initME(void)
     proc_ctl->write_proc = proc_write_ctl;              // write only
 	//proc_ctl->owner = THIS_MODULE;
 
-#elif defined PROC_CREATE
+#else
 
     static const struct file_operations ctl_fops =
     {
@@ -1030,7 +1029,7 @@ static int __init initME(void)
 #endif
 
     ///  create a file named "signal" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_signal = create_proc_entry("signal", PERMISSION, dir);
 
@@ -1044,7 +1043,7 @@ static int __init initME(void)
 	proc_signal->write_proc = proc_write_signal;        //  can write
 	//proc_signal->owner = THIS_MODULE;
 
-#elif defined PROC_CREATE
+#else
 
     static const struct file_operations signal_fops =
     {
@@ -1068,7 +1067,7 @@ static int __init initME(void)
 #endif
 
     ///  create a file named "physicalAddr" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
 	proc_pa = create_proc_entry("physicalAddr", PERMISSION, dir);
 	if(proc_pa == NULL)
@@ -1081,7 +1080,7 @@ static int __init initME(void)
 	proc_pa->read_proc = proc_read_pa;                  //  can read
 	proc_pa->write_proc = proc_write_pa;                //  can write
 
-#elif defined PROC_CREATE
+#else
 
     static const struct file_operations pa_fops =
     {
@@ -1103,7 +1102,7 @@ static int __init initME(void)
 
 
     ///  create a file named "kFuncName" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_kFuncName = create_proc_entry("kFuncName", PERMISSION, dir);
 
@@ -1116,7 +1115,7 @@ static int __init initME(void)
     }
 	proc_kFuncName->write_proc = proc_write_kFuncName;  // write only
 
-#elif defined PROC_CREATE
+#else
 
     static const struct file_operations kFuncName_fops =
     {
@@ -1137,7 +1136,7 @@ static int __init initME(void)
 #endif
 
     ///  create a file named "taskInfo" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_taskInfo = create_proc_entry("taskInfo", PERMISSION, dir);
 
@@ -1149,7 +1148,7 @@ static int __init initME(void)
 	}
 	proc_taskInfo->read_proc = proc_read_taskInfo;      // read only
 
-#elif defined PROC_CREATE
+#else
 
     static const struct file_operations taskInfo_fops =
     {
@@ -1170,7 +1169,7 @@ static int __init initME(void)
 
 
     ///  create a file named "memVal" in direntory
-#ifdef CREATE_PROC_ENTRY
+#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 10, 0)
 
     proc_val = create_proc_entry("memVal", PERMISSION, dir);
 
@@ -1185,7 +1184,7 @@ static int __init initME(void)
 	proc_val->read_proc = proc_read_memVal;             // can read
 
 
-#elif defined PROC_CREATE
+#else
 
     static const struct file_operations val_fops =
     {

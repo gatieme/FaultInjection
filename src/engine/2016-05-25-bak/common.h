@@ -230,13 +230,4 @@
 
 
 
-//#if LINUX_VERSION_CODE < KERNEL_VERSION(2, 4, 0)
-
-//    #define CREATE_PROC_ENTRY
-
-//#else
-
-    #define PROC_CREATE
-//#endif
-
 #endif	/* _COMMON_H_ */
