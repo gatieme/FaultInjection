@@ -229,8 +229,41 @@
 	 (((p - start) < n )  && snprintf( (char *)p, (n - (p - start)), format, ##args ))
 
 
-
-#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 8, 0)
+/*
+ * 3.10以后内核的proc文件
+ * 废弃了原来的create_proc_entry接口
+ * 3.9      http://lxr.free-electrons.com/ident?v=3.9&i=create_proc_entry
+ * 2.10     http://lxr.free-electrons.com/ident?v=3.10;i=create_proc_entry
+ *
+ * 而引入了
+ * 1.   proc_create创建proc文件,
+ * 2.   seq_file(Sequence file：序列文件)接口
+ * 3.   signal_file接口
+ *
+ * **proc_create创建proc文件**
+ * 使用proc_create需要关联file_operations
+ * 首先要调用创建proc文件的函数，需要绑定flie_operations
+ *
+ * ***seq_file接口操作proc文件*
+ * http://blog.chinaunix.net/uid-28253945-id-3382865.html
+ * 由于procfs的默认操作函数只使用一页的缓存，
+ * 在处理较大的proc文件时就有点麻烦，
+ * 并且在输出一系列结构体中的数据时也比较不灵活，
+ * 需要自己在read_proc函数中实现迭代，容易出现Bug。
+ * 所以内核黑客们对一些/proc代码做了研究，抽象出共性，
+ * 最终形成了seq_file（Sequence file：序列文件）接口。
+ * 这个接口提供了一套简单的函数来解决以上proc接口编程时存在的问题，
+ * 使得编程更加容易，降低了Bug出现的机会。
+ * 在需要创建一个由一系列数据顺序组合而成的虚拟文件或一个较大的虚拟文件时，
+ * 推荐使用seq_file接口。
+ *
+ *
+ * 但是我个人认为，并不是只有procfs才可以使用这个seq_file接口，
+ * 因为其实seq_file是实现的是一个操作函数集，这个函数集并不是与proc绑定的，
+ * 同样可以用在其他的地方。
+ *
+ **/
+#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 10, 0)
 
     #define CREATE_PROC_ENTRY
 
