@@ -52,6 +52,25 @@ long            new_pa_data;                        /// the new data you want wr
 
 extern struct proc_dir_entry    *proc_pa;				/// read only
 extern unsigned long            pa;					                /// physical Addreess
+extern unsigned long            ack_pa;			                    /// physical Address
+
+
+
+MODULE_LICENSE("Dual BSD/GPL");
+
+MODULE_AUTHOR("Gatieme @ HIT CS HDMC team");
+
+MODULE_DESCRIPTION("Memory Engine Physical Address Module.");
+
+/*
+*
+*/
+int proc_read_pa(char * page,char **start, off_t off, int count, int * eof,void * data)
+{
+	int iLen;
+	iLen = sprintf(page, "%lx", ack_pa);
+	return iLen;
+}
 
 /*
 *

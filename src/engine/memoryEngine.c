@@ -48,6 +48,34 @@ long            new_pa_data;                        /// the new data you want wr
 
 int             faultInterval;
 
+
+/*
+ * export
+ *
+ */
+EXPORT_SYMBOL(pa);
+EXPORT_SYMBOL(taskInfo);
+EXPORT_SYMBOL(ctl);
+EXPORT_SYMBOL(ack_va);
+EXPORT_SYMBOL(do_request);
+EXPORT_SYMBOL(memVal);
+EXPORT_SYMBOL(signal);
+EXPORT_SYMBOL(va);
+EXPORT_SYMBOL(ack_signal);
+EXPORT_SYMBOL(kFuncName);
+EXPORT_SYMBOL(pid);
+
+/*
+ * static function
+ *
+ * for warning: ¡®jforce_sig_info¡¯ declared ¡®static¡¯ but never defined
+ */
+static int handler_pre_kFunc(struct kprobe *p, struct pt_regs *regs);
+
+static int jforce_sig_info(int sig,struct siginfo *info,struct task_struct *t);
+
+
+
 /*
 *	kprobe
 */
@@ -69,14 +97,6 @@ static int count = 0;
 static long orig_code = 0;
 
 
-/*
- * static function
- *
- * for warning: ¡®jforce_sig_info¡¯ declared ¡®static¡¯ but never defined
- */
-static int handler_pre_kFunc(struct kprobe *p, struct pt_regs *regs);
-
-static int jforce_sig_info(int sig,struct siginfo *info,struct task_struct *t);
 
 /*
 *  process the request
@@ -605,6 +625,7 @@ static int __init initME(void)
 		dbginfo("Can't create /proc/memoryEngine/\n");
 		return FAIL;
 	}
+    dbginfo("PROC_MKDIR ");
     printk("Create /proc/memoryEngine success...\n");
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 32)
@@ -671,7 +692,7 @@ static int __init initME(void)
 	}
     dbginfo("PROC_CREATE ");
 #endif
-    printk("create /proc/memoryEngine/pid success...\n");
+    printk("Create /proc/memoryEngine/pid success...\n");
 
     /// create a file named "virtualAddr" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -706,7 +727,7 @@ static int __init initME(void)
     }
     dbginfo("PROC_CREATE ");
 #endif
-    printk("create /proc/memoryEngine/virtualAddr success...\n");
+    printk("Create /proc/memoryEngine/virtualAddr success...\n");
 
 
    ///  create a file named "ctl" in direntory
@@ -745,7 +766,7 @@ static int __init initME(void)
     }
     dbginfo("PROC_CREATE ");
 #endif
-    printk("create /proc/memoryEngine/ctl success...\n");
+    printk("Create /proc/memoryEngine/ctl success...\n");
 
     ///  create a file named "signal" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -889,8 +910,9 @@ static int __init initME(void)
 
         goto create_taskInfo_failed;
 	}
+    dbginfo("PROC_CREATE ");
 #endif
-    dbginfo("Create /proc/memoryEngine/taskInfo success\n");
+    printk("Create /proc/memoryEngine/taskInfo success\n");
 
     ///  create a file named "memVal" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1059,7 +1081,10 @@ static void __exit exitME(void)
 
 module_init(initME);
 module_exit(exitME);
+
 MODULE_LICENSE("Dual BSD/GPL");
+
 MODULE_AUTHOR("Gatieme @ HIT CS HDMC team");
+
 MODULE_DESCRIPTION("Memory Engine Module.");
 

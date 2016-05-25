@@ -110,12 +110,37 @@ int proc_write_ctl(struct file *file,const char *buffer,unsigned long count,void
 int proc_read_signal(char * page,char **start, off_t off, int count, int * eof,void * data);
 int proc_write_signal(struct file *file,const char *buffer,unsigned long count,void * data);
 
+/*
+ * physical address module
+ *
+ */
 int proc_read_pa(char * page,char **start, off_t off, int count, int * eof,void * data);
+int proc_write_pa(struct file *file,const char *buffer,unsigned long count,void * data);
+
+/*
+ *  kFuncName module
+ *
+ */
+int proc_write_kFuncName(struct file *file,const char *buffer,unsigned long count,void * data);
+
+/*
+ *  taskInfo module
+ *
+ */
+int proc_read_taskInfo(char * page,char **start, off_t off, int count, int * eof,void * data);
+
+/*
+ *  memVal module
+ *
+ */
+int proc_read_memVal(char * page, char **start, off_t off, int count, int * eof, void * data);
+int proc_write_memVal(struct file *file,const char *buffer,unsigned long count,void * data);
 
 
 
 /*
 *  process the request
+*
 */
 void do_request(void);
 

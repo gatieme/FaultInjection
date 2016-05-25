@@ -17,7 +17,7 @@ ifneq ($(KERNELRELEASE),)
 #EXTRA_CFLAGS  += $(C_FLAGS) $(CFG_INC) $(CFG_INC)  
 
 
-MODULE_NAME := memoryEngine
+MODULE_NAME := memory-engine
 
 RESMAIN_CORE_OBJS := memoryEngine.o 
 RESMAIN_GLUE_OBJS := ctl.o	physicalAddr.o	signal.o		\
@@ -25,8 +25,8 @@ RESMAIN_GLUE_OBJS := ctl.o	physicalAddr.o	signal.o		\
 					 memVal.o	pid.o	taskInfo.o
 
 
-memoryEngine-objs := $(RESMAIN_GLUE_OBJS) $(RESMAIN_CORE_OBJS)   
-obj-m := memoryEngine.o
+memory-engine-objs := $(RESMAIN_GLUE_OBJS) $(RESMAIN_CORE_OBJS)   
+obj-m := memory-engine.o
 
 else
 
