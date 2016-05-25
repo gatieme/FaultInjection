@@ -15,7 +15,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>         //exit
-#include <linux/a.out.h>    //nlist
+//#include <linux/a.out.h>    //nlist
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>

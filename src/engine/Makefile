@@ -17,8 +17,8 @@ else
 
 obj-m := memoryEngine.o
 
-KERNELDIR=/lib/modules/$(shell uname -r)/build
-#KERNELDIR ?= /home/gatieme/Work/Kernel/linux-headers-3.14-desktop
+#KERNELDIR=/lib/modules/$(shell uname -r)/build
+KERNELDIR ?= /home/gatieme/Work/Kernel/linux-headers-3.14-desktop
 PWD=$(shell pwd)
 
 all:

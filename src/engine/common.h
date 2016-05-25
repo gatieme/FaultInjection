@@ -225,9 +225,17 @@
 *	safe sprintf
 * It will not be out of range.
 */
-#define safe_sprintf(start, n, p, format, args...)	\
-	 (((p - start) < n )  && snprintf( (char *)p, (n - (p - start)), format, ##args ))
-
+/*
+#define safe_sprintf(start, n, p, format, args...);                     \
+    {                                                                   \
+        if( (p - start) < n )                                           \
+        {                                                               \
+            snprintf( (char *)p, (n - (p - start)), format, ##args );   \
+        }                                                               \
+    }
+*/
+#define safe_sprintf(start, n, p, format, args...)                      \
+	(((p - start) < n )  && snprintf( (char *)p, (n - (p - start)), format, ##args ))
 
 /*
  * 3.10以后内核的proc文件
@@ -265,11 +273,18 @@
  **/
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3, 10, 0)
 
-    #define CREATE_PROC_ENTRY
+    #define     CREATE_PROC_ENTRY
+    #warning    "use create_proc_entry in " #LINUX_VERSION_CODE
 
 #else
 
     #define PROC_CREATE
+    #warning    "use proc_create in " #LINUX_VERSION_CODE
+
 #endif
+
+//#ifndef CREATE_PROC_ENTRY || PROC_CREATE
+//#error "error"
+//#endif
 
 #endif	/* _COMMON_H_ */
