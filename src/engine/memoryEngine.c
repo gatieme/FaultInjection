@@ -891,6 +891,7 @@ static int __init initME(void)
 		dbginfo("Can't create /proc/memoryEngine/\n");
 		return FAIL;
 	}
+    dbginfo("Create /proc/memoryEngine success...\n");
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 32)
     /// modify by gatieme for system porting NeoKylin-linux-3.14/16
@@ -954,6 +955,7 @@ static int __init initME(void)
 	}
 
 #endif
+   dbginfo("create /proc/memoryEngine/pid success...\n");
 
     /// create a file named "virtualAddr" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -984,12 +986,12 @@ static int __init initME(void)
 		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
 
         goto create_va_failed;
-	}
-
-
+    }
 #endif
+    dbginfo("create /proc/memoryEngine/virtualAddr success...\n");
 
-    ///  create a file named "ctl" in direntory
+
+   ///  create a file named "ctl" in direntory
 #ifdef CREATE_PROC_ENTRY
 
     proc_ctl = create_proc_entry("ctl", PERMISSION, dir);
@@ -1022,12 +1024,8 @@ static int __init initME(void)
 
 	    goto create_ctl_failed;
     }
-    else
-    {
-        dbginfo("Create /proc/memoryEngine/ctl success...\n");
-    }
-
 #endif
+    dbginfo("create /proc/memoryEngine/ctl success...\n");
 
     ///  create a file named "signal" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1061,11 +1059,9 @@ static int __init initME(void)
 
         goto create_signal_failed;
 	}
-    else
-    {
-		dbginfo("Create /proc/memoryEngine/signal success\n");
-    }
 #endif
+    dbginfo("Create /proc/memoryEngine/signal success\n");
+
 
     ///  create a file named "physicalAddr" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1100,6 +1096,7 @@ static int __init initME(void)
     }
 
 #endif
+    dbginfo("Create /proc/memoryEngine/physicalAddr success\n");
 
 
     ///  create a file named "kFuncName" in direntory
@@ -1133,8 +1130,8 @@ static int __init initME(void)
 
         goto create_kFuncName_failed;
     }
-
 #endif
+	dbginfo("Create /proc/memoryEngine/kFuncName success\n");
 
     ///  create a file named "taskInfo" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1162,12 +1159,12 @@ static int __init initME(void)
 
     if(proc_taskInfo == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/taskIndfo\n");
+		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
 
         goto create_taskInfo_failed;
 	}
 #endif
-
+    dbginfo("Create /proc/memoryEngine/taskInfo success\n");
 
     ///  create a file named "memVal" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1203,8 +1200,9 @@ static int __init initME(void)
         goto create_val_failed;
     }
 #endif
+    dbginfo("Create /proc/memoryEngine/memVal success\n");
 
-	ret = register_jprobe(&jprobe1);
+    ret = register_jprobe(&jprobe1);
 	if (ret < 0)
 	{
 		printk("register_jprobe jprobe1 failed, returned %d\n", ret);
@@ -1325,7 +1323,8 @@ static void __exit exitME(void)
 	remove_proc_entry("taskInfo", dir);
 	remove_proc_entry("memVal", dir);
 	remove_proc_entry("memoryEngine", NULL);
-	unregister_jprobe(&jprobe1);
+
+    unregister_jprobe(&jprobe1);
 	printk("jprobe at %p unregistered.\n",	jprobe1.kp.addr);
 	dbginfo("Memory engine module exit\n");
 }
