@@ -57,13 +57,16 @@ EXPORT_SYMBOL(pa);
 EXPORT_SYMBOL(taskInfo);
 EXPORT_SYMBOL(ctl);
 EXPORT_SYMBOL(ack_va);
-EXPORT_SYMBOL(do_request);
 EXPORT_SYMBOL(memVal);
 EXPORT_SYMBOL(signal);
 EXPORT_SYMBOL(va);
 EXPORT_SYMBOL(ack_signal);
 EXPORT_SYMBOL(kFuncName);
 EXPORT_SYMBOL(pid);
+
+EXPORT_SYMBOL(do_request);
+
+
 
 /*
  * static function
