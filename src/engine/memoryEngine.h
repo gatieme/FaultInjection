@@ -79,8 +79,6 @@
 /*
 *	utility functions
 */
-static int handler_pre_kFunc(struct kprobe *p, struct pt_regs *regs);
-
 struct task_struct *findTaskByPid(pid_t pid);
 
 long v2p(struct mm_struct *pMM,unsigned long va,int *pStatus);
@@ -114,8 +112,12 @@ int proc_write_signal(struct file *file,const char *buffer,unsigned long count,v
 
 int proc_read_pa(char * page,char **start, off_t off, int count, int * eof,void * data);
 
-static int jforce_sig_info(int sig,struct siginfo *info,struct task_struct *t);
+
+
+/*
+*  process the request
+*/
+void do_request(void);
 
 
 #endif
-

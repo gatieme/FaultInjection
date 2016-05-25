@@ -9,20 +9,39 @@
 # 	Use "make remove" to remove the module out of kernel.
 #
 
+
+
 ifneq ($(KERNELRELEASE),)
 
+#CFG_FLAGS += -O2  -I./
+#EXTRA_CFLAGS  += $(C_FLAGS) $(CFG_INC) $(CFG_INC)  
+
+
+MODULE_NAME := memoryEngine
+
+RESMAIN_CORE_OBJS := memoryEngine.o 
+RESMAIN_GLUE_OBJS := ctl.o	physicalAddr.o	signal.o		\
+					 virtualAddr.o 		kFuncName.o			\
+					 memVal.o	pid.o	taskInfo.o
+
+
+memoryEngine-objs := $(RESMAIN_GLUE_OBJS) $(RESMAIN_CORE_OBJS)   
 obj-m := memoryEngine.o
 
 else
 
-obj-m := memoryEngine.o
-
-#KERNELDIR=/lib/modules/$(shell uname -r)/build
+KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 KERNELDIR ?= /home/gatieme/Work/Kernel/linux-headers-3.14-desktop
-PWD=$(shell pwd)
+PWD := $(shell pwd)
 
-all:
+modules:
 	make -C $(KERNELDIR) M=$(PWD) modules
+
+modules_install:
+	make -C $(KERNELDIR) M=$(PWD) modules_install
+
+clean:
+
 install:
 	insmod memoryEngine.ko
 
@@ -30,7 +49,12 @@ remove:
 	rmmod memoryEngine
 
 clean:
-	make -C /lib/modules/`uname -r`/build M=`pwd` clean
+	make -C $(KERNELDIR) M=$(PWD) clean
 	rm -f modules.order Module.symvers Module.markers
+.PHNOY:
+	modules modules_install clean
 
-endif
+
+
+endif  
+  
