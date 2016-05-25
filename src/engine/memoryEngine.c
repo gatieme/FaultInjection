@@ -891,7 +891,7 @@ static int __init initME(void)
 		dbginfo("Can't create /proc/memoryEngine/\n");
 		return FAIL;
 	}
-    dbginfo("Create /proc/memoryEngine success...\n");
+    printk("Create /proc/memoryEngine success...\n");
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 32)
     /// modify by gatieme for system porting NeoKylin-linux-3.14/16
@@ -937,6 +937,8 @@ static int __init initME(void)
 	proc_pid->write_proc = proc_write_pid;  /// write only
 	//proc_pid->owner = THIS_MODULE;
 
+    dbginfo("CREATE_PROC_ENTRY ");
+
 #elif defined PROC_CREATE
     static const struct file_operations pid_fops =
     {
@@ -953,9 +955,9 @@ static int __init initME(void)
 
         goto create_pid_failed;
 	}
-
+    dbginfo("PROC_CREATE ");
 #endif
-   dbginfo("create /proc/memoryEngine/pid success...\n");
+    printk("create /proc/memoryEngine/pid success...\n");
 
     /// create a file named "virtualAddr" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -971,6 +973,7 @@ static int __init initME(void)
 	proc_va->write_proc = proc_write_virtualAddr;       // can write
 	//proc_va->owner = THIS_MODULE;
 
+    dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
     static const struct file_operations va_fops =
     {
@@ -987,8 +990,9 @@ static int __init initME(void)
 
         goto create_va_failed;
     }
+    dbginfo("PROC_CREATE ");
 #endif
-    dbginfo("create /proc/memoryEngine/virtualAddr success...\n");
+    printk("create /proc/memoryEngine/virtualAddr success...\n");
 
 
    ///  create a file named "ctl" in direntory
@@ -1007,6 +1011,7 @@ static int __init initME(void)
     proc_ctl->write_proc = proc_write_ctl;              // write only
 	//proc_ctl->owner = THIS_MODULE;
 
+    dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
     static const struct file_operations ctl_fops =
@@ -1024,8 +1029,9 @@ static int __init initME(void)
 
 	    goto create_ctl_failed;
     }
+    dbginfo("PROC_CREATE ");
 #endif
-    dbginfo("create /proc/memoryEngine/ctl success...\n");
+    printk("create /proc/memoryEngine/ctl success...\n");
 
     ///  create a file named "signal" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1042,6 +1048,7 @@ static int __init initME(void)
 	proc_signal->write_proc = proc_write_signal;        //  can write
 	//proc_signal->owner = THIS_MODULE;
 
+    dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
     static const struct file_operations signal_fops =
@@ -1059,8 +1066,9 @@ static int __init initME(void)
 
         goto create_signal_failed;
 	}
+    dbginfo("PROC_CREATE ");
 #endif
-    dbginfo("Create /proc/memoryEngine/signal success\n");
+    printk("Create /proc/memoryEngine/signal success\n");
 
 
     ///  create a file named "physicalAddr" in direntory
@@ -1077,6 +1085,7 @@ static int __init initME(void)
 	proc_pa->read_proc = proc_read_pa;                  //  can read
 	proc_pa->write_proc = proc_write_pa;                //  can write
 
+    dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
     static const struct file_operations pa_fops =
@@ -1094,9 +1103,9 @@ static int __init initME(void)
 
         goto create_pa_failed;
     }
-
+    dbginfo("PROC_CREATE ");
 #endif
-    dbginfo("Create /proc/memoryEngine/physicalAddr success\n");
+    printk("Create /proc/memoryEngine/physicalAddr success\n");
 
 
     ///  create a file named "kFuncName" in direntory
@@ -1113,6 +1122,7 @@ static int __init initME(void)
     }
 	proc_kFuncName->write_proc = proc_write_kFuncName;  // write only
 
+    dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
     static const struct file_operations kFuncName_fops =
@@ -1130,8 +1140,9 @@ static int __init initME(void)
 
         goto create_kFuncName_failed;
     }
+    dbginfo("PROC_CREATE ");
 #endif
-	dbginfo("Create /proc/memoryEngine/kFuncName success\n");
+	printk("Create /proc/memoryEngine/kFuncName success\n");
 
     ///  create a file named "taskInfo" in direntory
 #ifdef CREATE_PROC_ENTRY
@@ -1146,6 +1157,7 @@ static int __init initME(void)
 	}
 	proc_taskInfo->read_proc = proc_read_taskInfo;      // read only
 
+    dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
     static const struct file_operations taskInfo_fops =
@@ -1181,6 +1193,7 @@ static int __init initME(void)
     proc_val->write_proc = proc_write_memVal;           // can write
 	proc_val->read_proc = proc_read_memVal;             // can read
 
+    dbginfo("CREATE_PROC_ENTRY ");
 
 #elif defined PROC_CREATE
 
@@ -1199,8 +1212,9 @@ static int __init initME(void)
 
         goto create_val_failed;
     }
+    dbginfo("PROC_CREATE ");
 #endif
-    dbginfo("Create /proc/memoryEngine/memVal success\n");
+    printk("Create /proc/memoryEngine/memVal success\n");
 
     ret = register_jprobe(&jprobe1);
 	if (ret < 0)

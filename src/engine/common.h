@@ -287,4 +287,9 @@
 //#error "error"
 //#endif
 
+#define NAME_TO_STR(name)   (#name)
+
+
+
+
 #endif	/* _COMMON_H_ */
