@@ -27,7 +27,7 @@ long kern_virt_to_phys(unsigned long va)
 	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/signal");
+		perror("Failed to open /proc/memoryEngine/signal ");
 		return FAIL;
 	}
 
@@ -36,7 +36,7 @@ long kern_virt_to_phys(unsigned long va)
 		ret = read(procFile, buff, MAX_LINE);
 		if(ret == -1)
 		{
-			perror("Failed to read /proc/memoryEngine/signal");
+			perror("Failed to read /proc/memoryEngine/signal ");
 			return FAIL;
 		}
 	} while(atoi(buff) != ACK_KV2P);
@@ -46,14 +46,14 @@ long kern_virt_to_phys(unsigned long va)
 	procFile = open("/proc/memoryEngine/physicalAddr",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/physicalAddr");
+		perror("Failed to open /proc/memoryEngine/physicalAddr ");
 		return FAIL;
 	}
 	bzero(buff, sizeof(buff));
 	ret = read(procFile, buff, MAX_LINE);
 	if(ret == -1)
 	{
-		perror("Failed to read /proc/memoryEngine/physicalAddr");
+		perror("Failed to read /proc/memoryEngine/physicalAddr ");
 		return FAIL;
 	}
 	close(procFile);
@@ -95,7 +95,7 @@ long virt_to_phys(int pid, unsigned long va)
 	procFile = open("/proc/memoryEngine/signal", O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/signal");
+		perror("Failed to open /proc/memoryEngine/signal ");
 		return FAIL;
 	}
 
@@ -106,7 +106,7 @@ long virt_to_phys(int pid, unsigned long va)
         ret = read(procFile, buff, MAX_LINE);
 		if(ret == -1)
 		{
-			perror("Failed to read /proc/memoryEngine/signal");
+			perror("Failed to read /proc/memoryEngine/signal ");
 			return FAIL;
 		}
 
@@ -117,14 +117,14 @@ long virt_to_phys(int pid, unsigned long va)
 	procFile = open("/proc/memoryEngine/physicalAddr",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/physicalAddr");
+		perror("Failed to open /proc/memoryEngine/physicalAddr ");
 		return FAIL;
 	}
 	bzero(buff, sizeof(buff));
 	ret = read(procFile, buff, MAX_LINE);
 	if(ret == -1)
 	{
-		perror("Failed to read /proc/memoryEngine/physicalAddr");
+		perror("Failed to read /proc/memoryEngine/physicalAddr ");
 		return FAIL;
 	}
 	close(procFile);
@@ -155,7 +155,7 @@ long kern_func_virt_addr(const char *kFuncName)
 	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/signal");
+		perror("Failed to open /proc/memoryEngine/signal ");
 		return FAIL;
 	}
 
@@ -164,7 +164,7 @@ long kern_func_virt_addr(const char *kFuncName)
 		ret = read(procFile, buff, MAX_LINE);
 		if(ret == -1)
 		{
-			perror("Failed to read /proc/memoryEngine/signal");
+			perror("Failed to read /proc/memoryEngine/signal ");
 			return FAIL;
 		}
 	} while(atoi(buff) != ACK_KFUNC_VA);
@@ -174,14 +174,14 @@ long kern_func_virt_addr(const char *kFuncName)
 	procFile = open("/proc/memoryEngine/virtualAddr",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/virtualAddr");
+		perror("Failed to open /proc/memoryEngine/virtualAddr ");
 		return FAIL;
 	}
 	bzero(buff, sizeof(buff));
 	ret = read(procFile, buff, MAX_LINE);
 	if(ret == -1)
 	{
-		perror("Failed to read /proc/memoryEngine/virtualAddr");
+		perror("Failed to read /proc/memoryEngine/virtualAddr ");
 		return FAIL;
 	}
 	close(procFile);
@@ -213,7 +213,7 @@ int read_phy_mem(unsigned long pa, long *data)
 	memfd = open("/dev/mem", O_RDWR | O_SYNC);
 	if(memfd == -1)
 	{
-		perror("Failed to open /dev/mem");
+		perror("Failed to open /dev/mem ");
 		return FAIL;
 	}
 
@@ -228,27 +228,28 @@ int read_phy_mem(unsigned long pa, long *data)
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
-#ifdef DEBUG
-	printf("=====================\n");
-	printf("in func %s, line %d\n", __func__, __LINE__);
-    printf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
-	printf("base:0x%lx\n", pa_base);
-	printf("offset:0x%lx\n", pa_offset);
-	printf("pa:0x%lx\n", pa);
-	printf("=====================\n");
-#endif
+//#ifdef DEBUG
+	dprintf("=====================\n");
+	dprintf("in func %s, line %d\n", __func__, __LINE__);
+    dprintf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	dprintf("base:0x%lx\n", pa_base);
+	dprintf("offset:0x%lx\n", pa_offset);
+	dprintf("pa:0x%lx\n", pa);
+	dprintf("=====================\n");
+//#endif
 
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa);
 	if(mapStart == MAP_FAILED)
 	{
-		perror("Failed to mmap /dev/mem : ");
+		dbgprint("Failed to mmap /dev/mem, errno : [%d, %s]\n", errno, strerror(errno));
+		perror("Failed to mmap /dev/mem ");
 		close(memfd);
 		return FAIL;
 	}
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
-		perror("Failed to mlock mmaped space");
+		perror("Failed to mlock mmaped space ");
         do_mlock = 0;
     }
     do_mlock = 1;
@@ -264,7 +265,7 @@ int read_phy_mem(unsigned long pa, long *data)
 
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
     {
-  	    perror("Failed to munmap /dev/mem");
+  	    perror("Failed to munmap /dev/mem ");
     }
 	close(memfd);
 	return OK;
@@ -282,7 +283,7 @@ int write_page_0(unsigned long pa)
 	memfd = open("/dev/mem", O_RDWR | O_SYNC);
 	if(memfd == -1)
 	{
-		perror("Failed to open /dev/mem");
+		perror("Failed to open /dev/mem ");
 		return FAIL;
 	}
 
@@ -302,13 +303,14 @@ int write_page_0(unsigned long pa)
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
-		perror("Failed to mmap /dev/mem");
+		perror("Failed to mmap /dev/mem ");
+		dbgprint("Failed to mmap /dev/mem, errno : [%d, %s]\n", errno, strerror(errno));
 		close(memfd);
 		return FAIL;
 	}
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
-		perror("Failed to mlock mmaped space");
+		perror("Failed to mlock mmaped space ");
     do_mlock = 0;
   }
   do_mlock = 1;
@@ -317,7 +319,7 @@ int write_page_0(unsigned long pa)
 
   if(munmap((void *)mapStart, PAGE_SIZE) != 0)
   {
-  	perror("Failed to munmap /dev/mem");
+  	perror("Failed to munmap /dev/mem ");
   }
 	close(memfd);
 	return OK;
@@ -341,7 +343,7 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	memfd = open("/dev/mem", O_RDWR | O_SYNC);
 	if(memfd == -1)
 	{
-		perror("Failed to open /dev/mem");
+		perror("Failed to open /dev/mem ");
 		return FAIL;
 	}
 
@@ -369,13 +371,14 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
-		perror("Failed to mmap /dev/mem");
+		perror("Failed to mmap /dev/mem ");
+		dbgprint("Failed to mmap /dev/mem, errno : [%d, %s]\n", errno, strerror(errno));
 		close(memfd);
 		return FAIL;
 	}
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
-		perror("Failed to mlock mmaped space");
+		perror("Failed to mlock mmaped space ");
         do_mlock = 0;
     }
     do_mlock = 1;
@@ -400,7 +403,7 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
     {
-  	    perror("Failed to munmap /dev/mem");
+  	    perror("Failed to munmap /dev/mem ");
     }
 	close(memfd);
 	return OK;
@@ -435,7 +438,7 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/signal");
+		perror("Failed to open /proc/memoryEngine/signal ");
 		return FAIL;
 	}
     dbgprint("open proc/memoryEngine/signal success...\n");
@@ -446,7 +449,7 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 		ret = read(procFile, buff, MAX_LINE);
 		if(ret == -1)
 		{
-			perror("Failed to read /proc/memoryEngine/signal");
+			perror("Failed to read /proc/memoryEngine/signal ");
 			return FAIL;
 		}
         dbgprint("%s\n", buff);
@@ -458,14 +461,14 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 	procFile = open("/proc/memoryEngine/taskInfo",O_RDONLY);
 	if(procFile == -1)
 	{
-		perror("Failed to open /proc/memoryEngine/taskInfo");
+		perror("Failed to open /proc/memoryEngine/taskInfo ");
 		return FAIL;
 	}
 	bzero(buff, sizeof(buff));
 	ret = read(procFile, buff, MAX_LINE);
 	if(ret == -1)
 	{
-		perror("Failed to read /proc/memoryEngine/taskInfo");
+		perror("Failed to read /proc/memoryEngine/taskInfo ");
 		return FAIL;
 	}
 	close(procFile);
@@ -550,7 +553,7 @@ int run_command(char *command, char *result)
 
     if((fstream = popen(command, "r")) == NULL)
     {
-        perror("execute command failed : ");
+        perror("execute command failed ");
         return -1;
     }
 
