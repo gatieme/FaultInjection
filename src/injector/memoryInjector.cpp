@@ -677,7 +677,7 @@ int Injector::injectFaults( int pid )
             return RT_FAIL;
         }
 
-		dprintf("[%s, %d]--");
+		dprintf("[%s, %d]--", __FILE__, __LINE__);
 		printf("Inject fault at pid:%d, virtual:0x%lx--(physical:0x%lx)\n", pid, start_va + random_offset, inject_pa);
 
 		if(iRet == FAIL)

@@ -122,8 +122,8 @@ int main(int argc, char * argv[])
 	printf("pa          :   0x%lx\n",pa);
 //#endif  // #ifdef DEBUG
 
-	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa_base);
-	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa_base);
+	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
         printf("FILE = %s, Line = %d\n", __FILE__, __LINE__);

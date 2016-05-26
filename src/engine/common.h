@@ -277,7 +277,7 @@
 	#ifdef DEBUG
 		//printk with line and function name
 		#define dbginfo(format,args...); \
-		printk(KERN_INFO"MemFI-[%s, %d] : "format, __FUNCTION__, __LINE__, ##args);
+		printk(KERN_INFO"PMFI-[%s, %d] : "format, __FUNCTION__, __LINE__, ##args);
 	#elif defined SILENCE
 			#define dbginfo(format,args...);
 	#else								//printk normally

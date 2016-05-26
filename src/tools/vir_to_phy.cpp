@@ -153,7 +153,10 @@ int main(int argc, char *argv[])
 	}
 	close(procFile);
 
-	if(sscanf(buff,"%lx",&physicalAddr) != 1) { return FAIL; }
+	if(sscanf(buff, "%lx", &physicalAddr) != 1)
+    {
+        return FAIL;
+    }
 	printf("%lx\n", physicalAddr);
 	return 0;
 }
