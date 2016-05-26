@@ -90,7 +90,9 @@ int main(int argc, char * argv[])
 	if(argc != 2)
 	{
 		printf("Useage:./read_phy_mem phy_addr\n");
-	}
+	    exit(-1);
+    }
+
 	sscanf(argv[1], "%lx", &pa);
 	data = (long*)malloc(sizeof(long));
 	memfd = open("/dev/mem", O_RDWR | O_SYNC);
@@ -99,6 +101,7 @@ int main(int argc, char * argv[])
 		perror("Failed to open /dev/mem");
 		return FAIL;
 	}
+    printf("open /dev/mem success...\n");
 
 	shift = 0;
 	pageSize = PAGE_SIZE;
@@ -111,13 +114,13 @@ int main(int argc, char * argv[])
 	pa_base = (pa >> shift) << shift;
 	pa_offset = pa - pa_base;
 
-#ifdef DEBUG
+//#ifdef DEBUG
 
-	printf("PAGE_SIZE:0x%x\n",PAGE_SIZE);
-	printf("base:0x%lx\n",pa_base);
-	printf("offset:0x%lx\n",pa_offset);
-	printf("pa:0x%lx\n",pa);
-#endif  // #ifdef DEBUG
+	printf("PAGE_SIZE   :   0x%lx\n",PAGE_SIZE);
+	printf("base        :   0x%lx\n",pa_base);
+	printf("offset      :   0x%lx\n",pa_offset);
+	printf("pa          :   0x%lx\n",pa);
+//#endif  // #ifdef DEBUG
 
 	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa_base);
 	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
@@ -129,11 +132,14 @@ int main(int argc, char * argv[])
         close(memfd);
 		return FAIL;
 	}
-	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
+    printf("Mmap /dev/mem success...\n");
+
+    if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
 		perror("Failed to mlock mmaped space");
         do_mlock = 0;
     }
+    printf("mlock mmaped space success...\n");
     do_mlock = 1;
 
     mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
@@ -146,7 +152,10 @@ int main(int argc, char * argv[])
     {
   	    perror("Failed to munmap /dev/mem");
     }
-	close(memfd);
-	printf("%lx\n", *data);
+    printf("munmap /dev/mem success...\n");
+
+    close(memfd);
+
+    printf("%lx\n", *data);
 	return OK;
 }
