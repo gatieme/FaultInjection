@@ -5,8 +5,8 @@
 #########################################################################
 #!/bin/bash
 
-sudo rmmod memoryEngine
+sudo rmmod memory-engine
 cd ../engine && make
-sudo insmod ./memoryEngine.ko
+sudo insmod ./memory-engine.ko
 cd ../injector
 sudo ./memInjector -l stack -m random -t word_0 --time 1 --timeout 3 -p 1

@@ -573,8 +573,8 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     pgd = pgd_offset(pMM, va);
-    dprint("pgd_tmp = 0x%p\n", pgd);
-    dprint("pgd_val(*pgd_tmp) = 0x%lx\n", pgd_val(*pgd));
+    dprint("pgd = 0x%p\n", pgd);
+    dprint("pgd_val(*pgd) = 0x%lx\n", pgd_val(*pgd));
     if(pgd_none(*pgd))
     {
         printk(KERN_INFO"Not mapped in pgd.\n");
@@ -582,8 +582,8 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     pud = pud_offset(pgd, va);
-    dprint("pud_tmp = 0x%p\n", pud);
-    dprint("pud_val(*pud_tmp) = 0x%lx\n", pud_val(*pud));
+    dprint("pud = 0x%p\n", pud);
+    dprint("pud_val(*pud) = 0x%lx\n", pud_val(*pud));
     if(pud_none(*pud))
     {
         printk(KERN_INFO"Not mapped in pud.\n");
@@ -591,8 +591,8 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     pmd = pmd_offset(pud, va);
-    dprint("pmd_tmp = 0x%p\n", pmd);
-    dprint("pmd_val(*pmd_tmp) = 0x%lx\n", pmd_val(*pmd));
+    dprint("pmd = 0x%p\n", pmd);
+    dprint("pmd_val(*pmd) = 0x%lx\n", pmd_val(*pmd));
     if(pmd_none(*pmd))
     {
         printk(KERN_INFO"Not mapped in pmd.\n");
@@ -600,10 +600,30 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     /*  在这里，把原来的pte_offset_map( )改成了pte_offset_kernel  */
-    pte = pte_offset_kernel(pmd, va);
+    /*  pte_offset_kernel(dir, addr)
+     *
+     *  Yields the linear address of the Page Table that corresponds
+     *  to the linear address addr mapped by the Page Middle Directory dir.
+     *  Used only on the master kernel page tables.
+     *
+     *  pte_offset_map(dir, addr)
+     *
+     *  Receives as parameters a pointer dir to a Page Middle Directory
+     *  entry and a linear address addr;
+     *  it yields the linear address of the entry in the Page Table
+     *  that corresponds to the linear address addr.
+     *  If the Page Table is kept in high memory,
+     *  the kernel establishes a temporary kernel mapping,
+     *  to be released by means of pte_unmap.
+     *  The macros pte_offset_map_nested and pte_unmap_nested are identical,
+     *  but they use a different temporary kernel mapping.
+     */
+    pte = pte_offset_map(pmd, va);
 
-    dprint("pte_tmp = 0x%p\n",pte);
-    dprint("pte_val(*pte_tmp) = 0x%lx\n",pte_val(*pte));
+    //pte = pte_offset_kernel(pmd, va);
+    dprint("pte = 0x%p\n", pte);
+    dprint("pte_val(*pte) = 0x%lx\n", pte_val(*pte));
+    dprint("*ppte = 0x%lx\n", pte_val(pte[-PTRS_PER_PTE]));
     if(pte_none(*pte))
     {
         printk(KERN_INFO"Not mapped in pte.\n");
@@ -615,7 +635,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
         printk(KERN_INFO"pte not in RAM.\n");
         return NULL;
     }
-
+    pte_unmap(pte);
     return pte;
 }
 
