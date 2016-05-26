@@ -598,8 +598,10 @@ int Injector::injectFaults( int pid )
             //  SIGSEGV--Signal Segmentation Violation  https://en.wikipedia.org/wiki/Segmentation_fault
 			printf("code : [%lx, %lx]\n", procInfo.start_code, procInfo.end_code);
 			printf("data : [%lx, %lx]\n", procInfo.start_data, procInfo.end_data);
+            //  heap从低地址向高地址扩展，做内存管理相对要简单些。
+            //  stack从高地址向低地址扩展，这样栈空间的起始位置就能确定下来，动态的调整栈空间大小也不需要移动栈内的数据。
 			printf("heap : [%lx, %lx]\n", procInfo.start_brk, procInfo.brk);
-			printf("stack: %lx\n", procInfo.start_stack);
+			printf("stack: [%lx, %lx]\n", procInfo.start_stack - STACK_SIZE, procInfo.start_stack);
 //#endif
 			//debug
 			if(iRet == FAIL)
@@ -675,7 +677,8 @@ int Injector::injectFaults( int pid )
             return RT_FAIL;
         }
 
-		dprintf("[%s, %d]--Inject fault at pid:%d, virtual:0x%lx--(physical:0x%lx)\n", __FILE__, __LINE__, pid, start_va + random_offset, inject_pa);
+		dprintf("[%s, %d]--");
+		printf("Inject fault at pid:%d, virtual:0x%lx--(physical:0x%lx)\n", pid, start_va + random_offset, inject_pa);
 
 		if(iRet == FAIL)
         {
@@ -738,7 +741,7 @@ int Injector::injectFaults( int pid )
 				break;
 
             case word_0:
-                printf("FaultType = word_0, inject_pa = 0x%lx\n", inject_pa);
+                dprintf("FaultType = word_0, inject_pa = 0x%lx\n", inject_pa);
 
                 iRet = read_phy_mem(inject_pa, &origData);
 				if(iRet == FAIL)
