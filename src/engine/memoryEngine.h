@@ -102,8 +102,8 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length);
 */
 int proc_write_pid(struct file *file,const char __user *buffer,unsigned long count,void * data);
 
-int proc_read_virtualAddr(char * page,char **start, off_t off, int count, int * eof,void * data);
-int proc_write_virtualAddr(struct file *file,const char *buffer,unsigned long count,void * data);
+int proc_read_va(char * page,char **start, off_t off, int count, int * eof,void * data);
+int proc_write_va(struct file *file,const char *buffer,unsigned long count,void * data);
 
 int proc_write_ctl(struct file *file,const char *buffer,unsigned long count,void * data);
 
