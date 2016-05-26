@@ -721,8 +721,8 @@ static int __init initME(void)
 
         goto create_va_failed;
 	}
-	proc_va->read_proc = proc_read_virtualAddr;         // can read
-	proc_va->write_proc = proc_write_virtualAddr;       // can write
+	proc_va->read_proc = proc_read_va;         // can read
+	proc_va->write_proc = proc_write_va;       // can write
 	//proc_va->owner = THIS_MODULE;
 
     dbginfo("CREATE_PROC_ENTRY ");
