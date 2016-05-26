@@ -467,8 +467,8 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 	if(pte != NULL)
 	{
 		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
-        dbginfo("virt_addr 0x%lx in RAM is 0x%lx t .\n", va, pa);
-        dbginfo("contect in 0x%lx is 0x%lx\n", pa, *(unsigned long *)((char *)pa + PAGE_OFFSET));
+        //dbginfo("virt_addr 0x%lx in RAM is 0x%lx t .\n", va, pa);
+        //dbginfo("contect in 0x%lx is 0x%lx\n", pa, *(unsigned long *)((char *)pa + PAGE_OFFSET));
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
 	}
     else
@@ -616,9 +616,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
         return NULL;
     }
 
-
     return pte;
-
 }
 
 
