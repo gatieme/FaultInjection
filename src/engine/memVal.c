@@ -20,7 +20,7 @@ struct proc_dir_entry *proc_ctl = NULL;				/// write only
 struct proc_dir_entry *proc_kFuncName = NULL;	    /// write only
 struct proc_dir_entry *proc_val = NULL;				/// rw
 struct proc_dir_entry *proc_signal = NULL;		    /// rw
-struct proc_dir_entry *proc_pa = NULL;				/// read only
+struct proc_dir_entry *proc_memVal = NULL;				/// read only
 struct proc_dir_entry *proc_taskInfo = NULL;    	/// read only
 */
 
@@ -36,7 +36,7 @@ int             signal;								/// signal
 char            kFuncName[MAX_LINE];                /// kFuncName
 long            memVal;							    /// memVal
 
-unsigned long   ack_pa;			                    /// physical Address
+unsigned long   ack_memVal;			                    /// physical Address
 unsigned long   ack_va;			                    /// virtual  Address
 int             ack_signal;						    /// signal
 int             ret;                                /// return value
@@ -45,8 +45,8 @@ char            taskInfo[PAGE_SIZE];	            /// taskInfo
 ///////////////////////////////////////////////
 
 unsigned long   userspace_phy_mem;                  /// user space physical memory
-long            orig_pa_data;                       /// origin data of the physics memory
-long            new_pa_data;                        /// the new data you want write to physics memory
+long            orig_memVal_data;                       /// origin data of the physics memory
+long            new_memVal_data;                        /// the new data you want write to physics memory
 
 int             faultInterval;
 */
@@ -87,6 +87,11 @@ int proc_write_memVal(struct file *file,const char *buffer,unsigned long count,v
 	return count;
 }
 
+
+
+#ifndef  PROC_SEQ_FILE_OPERATIONS
+
+
 /*
 *
 */
@@ -102,3 +107,46 @@ int proc_read_memVal(   char * page,
 	return iLen;
 }
 
+
+const struct file_operations proc_val_fops =
+{
+    .owner = THIS_MODULE,
+    .read  = proc_read_memVal,                      // can read
+	.write = proc_write_memVal,                     // can write
+};
+
+
+#else
+
+// seq_operations -> show
+static int seq_show_memVal(struct seq_file *m, void *v)
+{
+	char buf[MAX_LINE];
+	int ret = 0;
+    dbginfo("%lx\n", memVal);
+	ret = sprintf(buf, "%lx", memVal);
+
+	seq_printf(m, "%s", buf);
+
+	return 0; //!! must be 0, or will show nothing T.T
+}
+
+
+// seq_operations -> open
+static int proc_open_memVal(struct inode *inode, struct file *file)
+{
+	return single_open(file, seq_show_memVal, NULL);
+}
+
+const struct file_operations proc_val_fops =
+{
+	.owner		= THIS_MODULE,
+	.open		= proc_open_memVal,
+	.read		= seq_read,
+	.write 		= proc_write_memVal,
+	.llseek		= seq_lseek,
+	.release	= single_release,
+};
+
+
+#endif

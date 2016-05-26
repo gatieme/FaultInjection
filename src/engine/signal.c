@@ -55,22 +55,7 @@ int             faultInterval;
 extern struct proc_dirnentry    *proc_signal;		    /// rw
 extern int                      ack_signal;						    /// signal
 extern int                      signal;								/// signal
-/*
-*
-*/
-int proc_read_signal(   char * page,
-                        char **start,
-                        off_t off,
-                        int count,
-                        int * eof,
-                        void * data)
-{
-	int iLen;
-    dbginfo("%d\n", ack_signal);
-    iLen = sprintf(page, "%d", ack_signal);
 
-    return iLen;
-}
 
 /*
 *
@@ -105,4 +90,66 @@ int proc_write_signal(  struct file *file,
 
     return count;
 }
+
+#ifndef  PROC_SEQ_FILE_OPERATIONS
+
+/*
+*
+*/
+int proc_read_signal(   char * page,
+                        char **start,
+                        off_t off,
+                        int count,
+                        int * eof,
+                        void * data)
+{
+	int iLen;
+    dbginfo("%d\n", ack_signal);
+    iLen = sprintf(page, "%d", ack_signal);
+
+    return iLen;
+}
+
+const struct file_operations proc_signal_fops =
+{
+    .owner = THIS_MODULE,
+    .read  = proc_read_signal,                       // can read
+	.write = proc_write_signal,                      // can write
+};
+
+
+
+#else
+
+// seq_operations -> show
+static int seq_show_signal(struct seq_file *m, void *v)
+{
+	char buf[MAX_LINE];
+	int ret = 0;
+    dbginfo("%d\n", ack_signal);
+	ret = sprintf(buf, "%lx", ack_signal);
+
+	seq_printf(m, "%s", buf);
+
+	return 0; //!! must be 0, or will show nothing T.T
+}
+
+
+// seq_operations -> open
+static int proc_open_signal(struct inode *inode, struct file *file)
+{
+	return single_open(file, seq_show_signal, NULL);
+}
+
+const struct file_operations proc_signal_fops =
+{
+	.owner		= THIS_MODULE,
+	.open		= proc_open_signal,
+	.read		= seq_read,
+	.write 		= proc_write_signal,
+	.llseek		= seq_lseek,
+	.release	= single_release,
+};
+
+#endif
 

@@ -85,3 +85,9 @@ int proc_write_ctl( struct file *file,
     return count;
 }
 
+const struct file_operations proc_ctl_fops =
+{
+    .owner = THIS_MODULE,
+    //.read  = proc_read_ctl,                       // can read
+    .write = proc_write_ctl,                        // write only
+};

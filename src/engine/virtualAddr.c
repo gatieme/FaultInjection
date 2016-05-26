@@ -20,7 +20,7 @@ struct proc_dir_entry *proc_ctl = NULL;				/// write only
 struct proc_dir_entry *proc_kFuncName = NULL;	    /// write only
 struct proc_dir_entry *proc_val = NULL;				/// rw
 struct proc_dir_entry *proc_signal = NULL;		    /// rw
-struct proc_dir_entry *proc_pa = NULL;				/// read only
+struct proc_dir_entry *proc_va = NULL;				/// read only
 struct proc_dir_entry *proc_taskInfo = NULL;    	/// read only
 */
 
@@ -37,7 +37,7 @@ int             signal;								/// signal
 char            kFuncName[MAX_LINE];                /// kFuncName
 long            memVal;							    /// memVal
 
-unsigned long   ack_pa;			                    /// physical Address
+unsigned long   ack_va;			                    /// physical Address
 unsigned long   ack_va;			                    /// virtual  Address
 int             ack_signal;						    /// signal
 int             ret;                                /// return value
@@ -46,8 +46,8 @@ char            taskInfo[PAGE_SIZE];	            /// taskInfo
 ///////////////////////////////////////////////
 
 unsigned long   userspace_phy_mem;                  /// user space physical memory
-long            orig_pa_data;                       /// origin data of the physics memory
-long            new_pa_data;                        /// the new data you want write to physics memory
+long            orig_va_data;                       /// origin data of the physics memory
+long            new_va_data;                        /// the new data you want write to physics memory
 
 int             faultInterval;
 */
@@ -57,28 +57,11 @@ int             faultInterval;
 extern struct proc_dir_entry    *proc_va;				/// write only
 extern unsigned long            ack_va;			                    /// virtual  Address
 extern unsigned long            va;					                /// virtual  Address
-/*
-*
-*/
-int proc_read_virtualAddr(  char * page,
-                            char **start,
-                            off_t off,
-                            int count,
-                            int * eof,
-                            void * data)
-{
-	int iLen;
-
-	iLen = sprintf(page, "%lx", ack_va);
-
-
-    return iLen;
-}
 
 /*
 *
 */
-int proc_write_virtualAddr( struct file *file,
+int proc_write_va( struct file *file,
                             const char *buffer,
                             unsigned long count,
                             void * data)
@@ -110,3 +93,64 @@ int proc_write_virtualAddr( struct file *file,
     return count;
 }
 
+#ifndef  PROC_SEQ_FILE_OPERATIONS
+
+/*
+*
+*/
+int proc_read_va(  char * page,
+                            char **start,
+                            off_t off,
+                            int count,
+                            int * eof,
+                            void * data)
+{
+	int iLen;
+
+	iLen = sprintf(page, "%lx", ack_va);
+
+
+    return iLen;
+}
+
+const struct file_operations va_fops =
+{
+    .owner = THIS_MODULE,
+	.read  = proc_read_va,                 // can read
+	.write = proc_write_va,                // can write
+};
+
+#else
+
+// seq_operations -> show
+static int seq_show_va(struct seq_file *m, void *v)
+{
+    char buf[MAX_LINE];
+	int ret = 0;
+
+	ret = sprintf(buf, "%lx", ack_va);
+	seq_printf(m, "%s", buf);
+
+
+    //seq_printf(m , "%lx", ack_va)
+	return 0; //!! must be 0, or will show nothing T.T
+}
+
+
+// seq_operations -> open
+static int proc_open_va(struct inode *inode, struct file *file)
+{
+	return single_open(file, seq_show_va, NULL);
+}
+
+const struct file_operations proc_va_fops =
+{
+	.owner		= THIS_MODULE,
+	.open		= proc_open_va,
+	.read		= seq_read,
+	.write 		= proc_write_va,
+	.llseek		= seq_lseek,
+	.release	= single_release,
+};
+
+#endif

@@ -171,8 +171,9 @@ int getTaskInfo(int pid)
 			return FAIL;
 		}
         printf("buff = %s\n", buff);
-        getchar();
-	}while(atoi(buff) != ACK_TASK_INFO);
+        //getchar();
+
+    }while(atoi(buff) != ACK_TASK_INFO);
 
     close(procFile);
 

@@ -288,9 +288,11 @@
 
 #else
 
-    #define PROC_CREATE
+    #define     PROC_CREATE
     #warning    "use proc_create in " #LINUX_VERSION_CODE
-
+    #define     PROC_SEQ_FILE_OPERATIONS
+    #include <linux/proc_fs.h>
+    #include <linux/seq_file.h>
 #endif
 
 //#ifndef CREATE_PROC_ENTRY || PROC_CREATE

@@ -75,3 +75,11 @@ int proc_write_kFuncName(struct file *file,const char *buffer,unsigned long coun
 	return count;
 }
 
+
+
+const struct file_operations proc_kFuncName_fops =
+{
+    .owner = THIS_MODULE,
+    //.read  = proc_read_kFuncName,                         // read only
+	.write = proc_write_kFuncName,                        // write only
+};

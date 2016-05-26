@@ -104,17 +104,17 @@ int main(int argc, char *argv[])
 	// send control word
 	bzero(buff, sizeof(buff));
 	sprintf(buff, "echo %d > /proc/memoryEngine/pid", pid);
-	printf("%s", buff);
+	printf("%s\n", buff);
     system(buff);
 
     bzero(buff, sizeof(buff));
 	sprintf(buff, "echo %lx > /proc/memoryEngine/virtualAddr", va);
-	printf("%s", buff);
+	printf("%s\n", buff);
 	system(buff);
 
     bzero(buff, sizeof(buff));
 	sprintf(buff, "echo %d > /proc/memoryEngine/ctl", REQUEST_V2P);
-	printf("%s", buff);
+	printf("%s\n", buff);
 	system(buff);
 
 	//wait for ack signal

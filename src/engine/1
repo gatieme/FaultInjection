@@ -20,7 +20,7 @@ struct proc_dir_entry *proc_ctl = NULL;				/// write only
 struct proc_dir_entry *proc_kFuncName = NULL;	    /// write only
 struct proc_dir_entry *proc_val = NULL;				/// rw
 struct proc_dir_entry *proc_signal = NULL;		    /// rw
-struct proc_dir_entry *proc_pa = NULL;				/// rw
+struct proc_dir_entry *proc_pa = NULL;				/// read only
 struct proc_dir_entry *proc_taskInfo = NULL;    	/// read only
 
 /*
@@ -606,22 +606,8 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
 }
 
 
-/*
- * file_operations
- * RW read and write
- * RO read only
- * WO write only
- */
-extern const struct file_operations proc_pa_fops;        /*  RW in physicalAddress.c */
-extern const struct file_operations proc_va_fops;        /*  RW in virtualAddress.c  */
-extern const struct file_operations proc_signal_fops;    /*  RW in signal.c          */
-extern const struct file_operations proc_val_fops;       /*  RW in memVal.c          */
 
-extern const struct file_operations proc_taskInfo_fops;  /*  RO in taskInfo.c        */
-
-extern const struct file_operations proc_kFuncName_fops; /*  WO in taskInfo.c        */
-extern const struct file_operations proc_pid_fops;       /*  WO in pid.c        */
-extern const struct file_operations proc_ctl_fops;       /*  WO in ctl.c        */
+extern static const struct file_operations proc_pa_fops;
 
 /*
 *  init memory fault injection module
@@ -686,7 +672,6 @@ static int __init initME(void)
     if(proc_pid == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
-        ret = FAIL;
 
         goto create_pid_failed;
 	}
@@ -696,13 +681,18 @@ static int __init initME(void)
     dbginfo("CREATE_PROC_ENTRY ");
 
 #elif defined PROC_CREATE
+    static const struct file_operations pid_fops =
+    {
+        .owner = THIS_MODULE,
+       // .read = proc_write_read,
+        .write = proc_write_pid,          /*  write only  */
+    };
 
-    proc_pid = proc_create("pid", PERMISSION, dir, &proc_pid_fops);
+    proc_pid = proc_create("pid", PERMISSION, dir, &pid_fops);
 
     if(proc_pid == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/pid\n");
-        ret = FAIL;
 
         goto create_pid_failed;
 	}
@@ -717,7 +707,6 @@ static int __init initME(void)
 	if(proc_va == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
-        ret = FAIL;
 
         goto create_va_failed;
 	}
@@ -727,13 +716,18 @@ static int __init initME(void)
 
     dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
+    static const struct file_operations va_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_virtualAddr,                 // can read
+	    .write = proc_write_virtualAddr,                // can write
+    };
 
-    proc_va = proc_create("virtualAddr", PERMISSION, dir, &proc_va_fops);
+    proc_va = proc_create("virtualAddr", PERMISSION, dir, &va_fops);
 
     if(proc_va == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
-        ret = FAIL;
 
         goto create_va_failed;
     }
@@ -749,10 +743,10 @@ static int __init initME(void)
 	if(proc_ctl == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
-        ret = FAIL;
 
         goto create_ctl_failed;
 
+        return FAIL;
 	}
 
     proc_ctl->write_proc = proc_write_ctl;              // write only
@@ -761,12 +755,18 @@ static int __init initME(void)
     dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
-    proc_ctl = proc_create("ctl", PERMISSION, dir, &proc_ctl_fops);
+    static const struct file_operations ctl_fops =
+    {
+        .owner = THIS_MODULE,
+	    //.read  = proc_read_ctl,                       // can read
+	    .write = proc_write_ctl,                        // write only
+    };
+
+    proc_ctl = proc_create("ctl", PERMISSION, dir, &ctl_fops);
 
     if(proc_ctl == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/ctl\n");
-        ret = FAIL;
 
 	    goto create_ctl_failed;
     }
@@ -782,7 +782,6 @@ static int __init initME(void)
     if(proc_signal == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
-        ret = FAIL;
 
         goto create_signal_failed;
 	}
@@ -793,12 +792,18 @@ static int __init initME(void)
     dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
-    proc_signal = proc_create("signal", PERMISSION, dir, &proc_signal_fops);
+    static const struct file_operations signal_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_signal,                       // can read
+	    .write = proc_write_signal,                      // can write
+    };
+
+    proc_signal = proc_create("signal", PERMISSION, dir, &signal_fops);
 
     if(proc_signal == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/signal\n");
-        ret = FAIL;
 
         goto create_signal_failed;
 	}
@@ -814,7 +819,6 @@ static int __init initME(void)
 	if(proc_pa == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
-        ret = FAIL;
 
         goto create_pa_failed;
 	}
@@ -830,7 +834,6 @@ static int __init initME(void)
     if(proc_pa == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
-        ret = FAIL;
 
         goto create_pa_failed;
     }
@@ -847,7 +850,6 @@ static int __init initME(void)
     if(proc_kFuncName == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
-        ret = FAIL;
 
         goto create_kFuncName_failed;
 
@@ -857,12 +859,18 @@ static int __init initME(void)
     dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
-    proc_kFuncName = proc_create("kFuncName", PERMISSION, dir, &proc_kFuncName_fops);
+    static const struct file_operations kFuncName_fops =
+    {
+        .owner = THIS_MODULE,
+	    //.read  = proc_read_kFuncName,                         // read only
+	    .write = proc_write_kFuncName,                        // write only
+    };
+
+    proc_kFuncName = proc_create("kFuncName", PERMISSION, dir, &kFuncName_fops);
 
     if(proc_kFuncName == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
-        ret = FAIL;
 
         goto create_kFuncName_failed;
     }
@@ -877,8 +885,7 @@ static int __init initME(void)
 
     if(proc_taskInfo == NULL)
 	{
-	    dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
-        ret = FAIL;
+		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
 
         goto create_taskInfo_failed;
 	}
@@ -887,12 +894,18 @@ static int __init initME(void)
     dbginfo("CREATE_PROC_ENTRY ");
 #elif defined PROC_CREATE
 
-    proc_taskInfo = proc_create("taskInfo", PERMISSION, dir, &proc_taskInfo_fops);
+    static const struct file_operations taskInfo_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_taskInfo,                    // read only
+	    //.write = proc_write_taskInfo,                        // write only
+    };
+
+    proc_taskInfo = proc_create("taskInfo", PERMISSION, dir, &taskInfo_fops);
 
     if(proc_taskInfo == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
-        ret = FAIL;
 
         goto create_taskInfo_failed;
 	}
@@ -908,7 +921,6 @@ static int __init initME(void)
     if(proc_val == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
-		ret = FAIL;
 
         goto create_val_failed;
 	}
@@ -920,12 +932,18 @@ static int __init initME(void)
 
 #elif defined PROC_CREATE
 
-    proc_val = proc_create("memVal", PERMISSION, dir, &proc_val_fops);
+    static const struct file_operations val_fops =
+    {
+        .owner = THIS_MODULE,
+	    .read  = proc_read_memVal,                      // can read
+	    .write = proc_write_memVal,                     // can write
+    };
+
+    proc_val = proc_create("memVal", PERMISSION, dir, &val_fops);
 
     if(proc_val == NULL)
 	{
 		dbginfo("Can't create /proc/memoryEngine/memVal\n");
-        ret = FAIL;
 
         goto create_val_failed;
     }
@@ -937,22 +955,16 @@ static int __init initME(void)
 	if (ret < 0)
 	{
 		printk("register_jprobe jprobe1 failed, returned %d\n", ret);
-        ret = FAIL;
-
-        goto register_jprobe_failed;
+		return ret;
 	}
 	printk("Planted jprobe at force_sig_info: %p\n", jprobe1.kp.addr);
 
 	dbginfo("Memory engine module init\n");
-
-    return OK;
+	return OK;
 
 
 //  remove the proc files
-register_jprobe_failed  :
-    remove_proc_entry("memVal", dir);
-
-create_val_failed       :
+create_val_failed    :
     remove_proc_entry("kFuncName", dir);
 
 create_kFuncName_failed :
@@ -964,19 +976,19 @@ create_taskInfo_failed  :
 create_pa_failed        :
     remove_proc_entry("signal", dir);
 
-create_signal_failed    :
+create_signal_failed       :
     remove_proc_entry("ctl", dir);
 
-create_ctl_failed       :
+create_ctl_failed        :
     remove_proc_entry("virtualAddr", dir);
 
-create_va_failed        :
+create_va_failed       :
     remove_proc_entry("pid", dir);
 
 create_pid_failed       :
     remove_proc_entry("memoryEngine", NULL);
 
-    return ret;
+    return FAIL;
 
 }
 
@@ -1052,31 +1064,14 @@ static int jforce_sig_info(int sig, struct siginfo *info, struct task_struct *t)
 static void __exit exitME(void)
 {
 	remove_proc_entry("pid", dir);
-    printk("Remove /proc/memoryEngine/pid success\n");
-
-    remove_proc_entry("virtualAddr", dir);
-    printk("Remove /proc/memoryEngine/virtualAddr success\n");
-
+	remove_proc_entry("virtualAddr", dir);
 	remove_proc_entry("ctl", dir);
-    printk("Remove /proc/memoryEngine/ctl success\n");
-
-    remove_proc_entry("signal", dir);
-    printk("Remove /proc/memoryEngine/signal success\n");
-
-    remove_proc_entry("physicalAddr", dir);
-    printk("Remove /proc/memoryEngine/physicalAddr success\n");
-
-    remove_proc_entry("kFuncName", dir);
-    printk("Remove /proc/memoryEngine/kFuncName success\n");
-
+	remove_proc_entry("signal", dir);
+	remove_proc_entry("physicalAddr", dir);
+	remove_proc_entry("kFuncName", dir);
 	remove_proc_entry("taskInfo", dir);
-    printk("Remove /proc/memoryEngine/taskinfo success\n");
-
-    remove_proc_entry("memVal", dir);
-    printk("Remove /proc/memoryEngine/memVal success\n");
-
-    remove_proc_entry("memoryEngine", NULL);
-    printk("Remove /proc/memoryEngine success\n");
+	remove_proc_entry("memVal", dir);
+	remove_proc_entry("memoryEngine", NULL);
 
     unregister_jprobe(&jprobe1);
 	printk("jprobe at %p unregistered.\n",	jprobe1.kp.addr);

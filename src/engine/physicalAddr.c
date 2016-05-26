@@ -65,16 +65,6 @@ MODULE_DESCRIPTION("Memory Engine Physical Address Module.");
 /*
 *
 */
-int proc_read_pa(char * page,char **start, off_t off, int count, int * eof,void * data)
-{
-	int iLen;
-	iLen = sprintf(page, "%lx", ack_pa);
-	return iLen;
-}
-
-/*
-*
-*/
 int proc_write_pa(struct file *file,const char *buffer,unsigned long count,void * data)
 {
 	int iRet;
@@ -89,3 +79,56 @@ int proc_write_pa(struct file *file,const char *buffer,unsigned long count,void 
 	dbginfo("Rcv pa:0x%lx\n",pa);
 	return count;
 }
+
+#ifndef  PROC_SEQ_FILE_OPERATIONS
+/*
+*
+*/
+int proc_read_pa(char * page,char **start, off_t off, int count, int * eof,void * data)
+{
+	int iLen;
+    dbginfo("%d\n", ack_pa);
+	iLen = sprintf(page, "%lx", ack_pa);
+	return iLen;
+}
+
+const struct file_operations proc_pa_fops =
+{
+    .owner = THIS_MODULE,
+    .read  = proc_read_pa,                         // read
+	.write = proc_write_pa,                        // write
+};
+
+#else
+
+// seq_operations -> show
+static int seq_show_pa(struct seq_file *m, void *v)
+{
+	char buf[MAX_LINE];
+	int ret = 0;
+    dbginfo("%d\n", ack_pa);
+	ret = sprintf(buf, "%lx", ack_pa);
+
+	seq_printf(m, "%s", buf);
+
+	return 0; //!! must be 0, or will show nothing T.T
+}
+
+
+// seq_operations -> open
+static int proc_open_pa(struct inode *inode, struct file *file)
+{
+	return single_open(file, seq_show_pa, NULL);
+}
+
+const struct file_operations proc_pa_fops =
+{
+	.owner		= THIS_MODULE,
+	.open		= proc_open_pa,
+	.read		= seq_read,
+	.write 		= proc_write_pa,
+	.llseek		= seq_lseek,
+	.release	= single_release,
+};
+
+#endif

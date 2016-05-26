@@ -111,3 +111,9 @@ int proc_write_pid( struct file *file,
     return count;
 }
 
+const struct file_operations proc_pid_fops =
+{
+    .owner = THIS_MODULE,
+    // .read = proc_write_read,
+    .write = proc_write_pid,          /*  write only  */
+};
