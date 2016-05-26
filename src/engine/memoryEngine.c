@@ -457,17 +457,25 @@ struct task_struct * findTaskByPid(pid_t pid)
 /*
 * convert a process's linear address to physical address
 */
-long v2p(struct mm_struct *pMM,unsigned long va,int *pStatus)
+long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 {
 	pte_t *pte = NULL;
-	unsigned long phyaddress = FAIL;
-
+	unsigned long pa = FAIL;
+    //dbginfo("");
 	pte = getPte(pMM, va);
+    //dbginfo("");
 	if(pte != NULL)
 	{
-		phyaddress = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
+		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
+        dbginfo("virt_addr 0x%lx in RAM is 0x%lx t .\n", va, pa);
+        dbginfo("contect in 0x%lx is 0x%lx\n", pa, *(unsigned long *)((char *)pa + PAGE_OFFSET));
+        dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
 	}
-	return phyaddress;
+    else
+    {
+        dbginfo("virtual : 0x%lx to physical address error\n", va);
+    }
+	return pa;
 }
 
 /*
@@ -541,25 +549,78 @@ struct vm_area_struct * getVMA(struct mm_struct *pMM,unsigned long va)
 pte_t * getPte(struct mm_struct *pMM, unsigned long va)
 {
 	pgd_t *pgd = NULL;
-	pmd_t *pmd = NULL;
 	pud_t *pud = NULL;
+	pmd_t *pmd = NULL;
 	pte_t *pte = NULL;
 
-	///get the pdg entry pointer
-	pgd =  pgd_offset(pMM, va);
-	if(pgd_none(*pgd)) { return NULL; }
+    dprint("PGDIR_SHIFT = %d\n",  PGDIR_SHIFT);
+    dprint("PUD_SHIFT = %d\n",    PUD_SHIFT);
+    dprint("PMD_SHIFT = %d\n",    PMD_SHIFT);
+    dprint("PAGE_SHIFT = %d\n",   PAGE_SHIFT);
 
-	pud = pud_offset(pgd,va);
-	if(pud_none(*pud)) { return NULL; }
+    dprint("PTRS_PER_PGD = %d\n", PTRS_PER_PGD);
+    dprint("PTRS_PER_PUD = %d\n", PTRS_PER_PUD);
+    dprint("PTRS_PER_PMD = %d\n", PTRS_PER_PMD);
+    dprint("PTRS_PER_PTE = %d\n", PTRS_PER_PTE);
 
-	pmd = pmd_offset(pud,va);
-	if(pmd_none(*pmd)) { return NULL; }
+    printk("PAGE_MASK = 0x%lx\n", PAGE_MASK);
 
-	pte = pte_offset_kernel(pmd,va);
-	if(pte_none(*pte)) { return NULL; }
-	if(!pte_present(*pte)) { return NULL; }
-	return pte;
+    /*  判断给出的地址va是否合法(va < vm_end)  */
+    if(!find_vma(pMM, va))
+    {
+        printk(KERN_INFO"virt_addr 0x%lx not available.\n", va);
+        return NULL;
+    }
+
+    pgd = pgd_offset(pMM, va);
+    dprint("pgd_tmp = 0x%p\n", pgd);
+    dprint("pgd_val(*pgd_tmp) = 0x%lx\n", pgd_val(*pgd));
+    if(pgd_none(*pgd))
+    {
+        printk(KERN_INFO"Not mapped in pgd.\n");
+        return NULL;
+    }
+
+    pud = pud_offset(pgd, va);
+    dprint("pud_tmp = 0x%p\n", pud);
+    dprint("pud_val(*pud_tmp) = 0x%lx\n", pud_val(*pud));
+    if(pud_none(*pud))
+    {
+        printk(KERN_INFO"Not mapped in pud.\n");
+        return NULL;
+    }
+
+    pmd = pmd_offset(pud, va);
+    dprint("pmd_tmp = 0x%p\n", pmd);
+    dprint("pmd_val(*pmd_tmp) = 0x%lx\n", pmd_val(*pmd));
+    if(pmd_none(*pmd))
+    {
+        printk(KERN_INFO"Not mapped in pmd.\n");
+        return NULL;
+    }
+
+    /*  在这里，把原来的pte_offset_map( )改成了pte_offset_kernel  */
+    pte = pte_offset_kernel(pmd, va);
+
+    dprint("pte_tmp = 0x%p\n",pte);
+    dprint("pte_val(*pte_tmp) = 0x%lx\n",pte_val(*pte));
+    if(pte_none(*pte))
+    {
+        printk(KERN_INFO"Not mapped in pte.\n");
+        return NULL;
+    }
+
+    if(!pte_present(*pte))
+    {
+        printk(KERN_INFO"pte not in RAM.\n");
+        return NULL;
+    }
+
+
+    return pte;
+
 }
+
 
 /*
 *
@@ -591,7 +652,9 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
 {
 	pte_t *pte = NULL;
 	pte_t ret;
+    //dbginfo("");
 	pte = getPte(pMM, va);
+    //dbginfo("");
 	if( pte == NULL ) { return FAIL; }
 	if(flags > 0)
 	{

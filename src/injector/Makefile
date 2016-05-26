@@ -29,6 +29,10 @@ install:
 	cp ./memInjector $(BIN)/memInjector
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
 
+debug :
+	make clean
+	make DEBUG=y
+
 clean:
 #	make -C $(ENGINE) clean
 #	make -C $(TOOLS) clean

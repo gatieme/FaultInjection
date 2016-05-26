@@ -116,7 +116,7 @@ int main(int argc, char * argv[])
 
 //#ifdef DEBUG
 
-	printf("PAGE_SIZE   :   0x%lx\n",PAGE_SIZE);
+	printf("PAGE_SIZE   :   0x%x\n",PAGE_SIZE);
 	printf("base        :   0x%lx\n",pa_base);
 	printf("offset      :   0x%lx\n",pa_offset);
 	printf("pa          :   0x%lx\n",pa);
