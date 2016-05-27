@@ -65,7 +65,7 @@ MODULE_DESCRIPTION("Memory Engine Physical Address Module.");
 /*
 *
 */
-int proc_write_pa(struct file *file,const char *buffer,unsigned long count,void * data)
+int proc_write_pa(struct file *file, const char *buffer, unsigned long count, void * data)
 {
 	int iRet;
 	char sPa[MAX_LINE];

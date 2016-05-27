@@ -79,8 +79,8 @@ int proc_write_ctl( struct file *file,
     {
         return FAIL;
     }
-
-    do_request();
+    dbginfo("Rcv ctl : %d\n", ctl)
+    do_request( );
 
     return count;
 }

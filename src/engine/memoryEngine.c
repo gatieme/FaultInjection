@@ -156,7 +156,6 @@ void do_request(void)
         /*
          *  modify by gatieme @ 2016-05-27
          *  the kernel thread which run in kernel space have no user space
-         *
          *  */
         if( task->mm == NULL )
 		{
@@ -177,7 +176,7 @@ void do_request(void)
 	/// convert kernel virtual address to physical address
 	else if(ctl == REQUEST_KV2P)
 	{
-		ack_pa = kv2p(va,&status);
+		ack_pa = kv2p(va, &status);
 		if(pa == FAIL)
         {
 			dbginfo("No physical address\n");
@@ -249,14 +248,22 @@ void do_request(void)
     *  FOR     read and write physical address in kernel
     *
     *  #define REQUEST_READ_PA		10	    /// 请求获取全部物理内存信息
-    *  #define REQUEST_WRITE_PA	11 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
+    *  #define REQUEST_WRITE_PA	    11 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
     *  #define REQUEST_MEM			12	    /// 请求获取全部物理内存信息
     *  #define REQUEST_ADDR_STOP	13	    ///
     */
     else if(ctl == REQUEST_READ_PA)
     {
-        /*  get the physical address  */
-		kernel_va = readpa(phy);
+        /*  get the physical address
+         *
+         *  REQUEST
+         *  echo physical > /proc/memoryEngine/physicalAddress
+         *  echo 11 > /proc/memoryEngine/ctl
+         *
+         *  ACK
+         *  cat /proc/memoryEngine/memVal
+         *  */
+		kernel_va = readpa(pa);
 		memVal = *((long *)kernel_va);
 		ack_signal = ACK_READ_PA;
     }
@@ -736,7 +743,9 @@ unsigned long readpa(unsigned long pa)
 
     void volatile *mapStart = (void volatile *)kmap(pa);*/
 
+    dbginfo("");
     unsigned long va = phys_to_virt(pa);
+    dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
     memcpy(data, va, sizeof(data));
     return data;
 }
