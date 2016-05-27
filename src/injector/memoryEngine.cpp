@@ -231,18 +231,22 @@ int read_phy_mem(unsigned long pa, long *data)
 //#ifdef DEBUG
 	dprintf("=====================\n");
 	dprintf("in func %s, line %d\n", __func__, __LINE__);
-    dprintf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
-	dprintf("base:0x%lx\n", pa_base);
-	dprintf("offset:0x%lx\n", pa_offset);
-	dprintf("pa:0x%lx\n", pa);
+    dprintf("PAGE_SIZE  : 0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	dprintf("base       : 0x%lx\n", pa_base);
+	dprintf("offset     : 0x%lx\n", pa_offset);
+	dprintf("pa         : 0x%lx\n", pa);
 	dprintf("=====================\n");
 //#endif
 
-	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
-	//mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, memfd, pa);
+#ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
+	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, 0xF000);
+#else
+    mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+#endif
+    //mapStart = (void volatile *)mmap(0, 0xff, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
 	if(mapStart == MAP_FAILED)
 	{
-		dbgprint("Failed to mmap /dev/mem, errno : [%d, %s]\n", errno, strerror(errno));
+		dbgprint("Failed to mmap /dev/mem [0x%lx], errno : [%d, %s]\n", pa_base, errno, strerror(errno));
 		perror("Failed to mmap /dev/mem ");
 		close(memfd);
 		return FAIL;
@@ -252,14 +256,19 @@ int read_phy_mem(unsigned long pa, long *data)
 		perror("Failed to mlock mmaped space ");
         do_mlock = 0;
     }
+    dbgprint("mlock mmaped space success...\n");
+
     do_mlock = 1;
 
     mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
+    dbgprint("mapstart = 0x%lx, mapAddr = 0x%lx\n", mapStart, mapAddr);
 
     //只读一个字节
-    memcpy( data, (void *)mapAddr, sizeof(data) );
-    //*data = *((char *)mapAddr);
-
+    if(memcpy( data, (void *)mapAddr, sizeof(data) ) == NULL)
+    {
+        //*data = *((char *)mapAddr);
+        perror("Memcpy eroor ");
+    }
     dbgprint("read data 0x%lx at 0x%lx success\n", (unsigned long)*data, pa);
 
 
@@ -300,8 +309,12 @@ int write_page_0(unsigned long pa)
 	printf("base:0x%lx\n",pa_base);
 
 
-	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
-	if(mapStart == MAP_FAILED)
+#ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
+	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, 0xF000);
+#else
+    mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+#endif
+    if(mapStart == MAP_FAILED)
 	{
 		perror("Failed to mmap /dev/mem ");
 		dbgprint("Failed to mmap /dev/mem, errno : [%d, %s]\n", errno, strerror(errno));
@@ -368,7 +381,11 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	printf("=====================\n");
 #endif
 
-	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+#ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
+    mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, 0xF000);
+#else
+    mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+#endif
 	if(mapStart == MAP_FAILED)
 	{
 		perror("Failed to mmap /dev/mem ");

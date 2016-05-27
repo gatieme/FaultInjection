@@ -42,7 +42,8 @@ using namespace std;
 #define STOP	    1
 #define EXIT	    2
 #define TERM	    3
-#define KT_RUN      4   /* some process you can't ptrace, example init(pid = 1)*/
+#define KT_RUN      4   /* some process you can't ptrace, example init(pid = 1)  */
+#define TIME_OUT    5   /* timeout   */
 
 //fault injection function pointers
 //typedef int (*INJECTFUNC)( int, long );
@@ -147,7 +148,9 @@ using namespace std;
 
 
 
-//#define DEBUG
+#define DEBUG
+//#define MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
+
 
 /**
  * Macros to help with debugging. Set SCULL_DEBUG to 1 enable

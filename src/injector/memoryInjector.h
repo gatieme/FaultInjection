@@ -51,9 +51,9 @@ public  :
 	int startInjection( void );
 	int injectFaults( int pid );
 	int procMonitor( int pid, int &data );
-	char * nameSignal( int signo );
+	static char * nameSignal( int signo );
 	void startExe();
-	void writeResult( int pid, int status, int data );
+	static void writeResult( int pid, int status, int data );
 	static void usage();
 	static void cleanup(void);
 	static void report(int signo);

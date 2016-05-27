@@ -988,6 +988,11 @@ void Injector::writeResult( int pid, int status, int data )
         //  [ 2016-5-24 18:39:48]Process 1 running with code 0(KT_RUN)
 		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(KT_RUN)" <<endl;
     }
+    else if( status == TIME_OUT)
+    {
+        //  [ 2016-5-24 18:39:48]Process 1 running with code 0(TIME_OUT)
+		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(TIME_OUT)" <<endl;
+    }
 }
 
 void Injector::cleanup(void)
@@ -1009,7 +1014,8 @@ void Injector::report(int signo)
 	int iRet;
 	printf("pid = %d timeout\n", childProcess);
     dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<childProcess <<") is still running" <<endl;
-	cleanup( );
+	writeResult(childProcess, TIME_OUT, 0);
+    cleanup( );
 	iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
 }
 /*

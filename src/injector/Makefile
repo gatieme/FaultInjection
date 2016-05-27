@@ -33,6 +33,9 @@ debug :
 	make clean
 	make DEBUG=y
 
+test:
+	sudo ./memInjector -l stack -m random -t word_0 --time 1 --timeout 3 -p 1
+
 clean:
 #	make -C $(ENGINE) clean
 #	make -C $(TOOLS) clean

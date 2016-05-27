@@ -53,20 +53,22 @@
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3, 10, 0)
 
     #define     CREATE_PROC_ENTRY
-    #warning    "use create_proc_entry in " #LINUX_VERSION_CODE
+//    #warning    "use create_proc_entry in " #LINUX_VERSION_CODE
 
 #else
 
     #define     PROC_CREATE
-    #warning    "use proc_create in " #LINUX_VERSION_CODE
+//    #warning    "use proc_create in " #LINUX_VERSION_CODE
     #define     PROC_SEQ_FILE_OPERATIONS
     #include <linux/proc_fs.h>
     #include <linux/seq_file.h>
 #endif
 
-//#ifndef CREATE_PROC_ENTRY || PROC_CREATE
-//#error "error"
-//#endif
+#if defined(CREATE_PROC_ENTRY) || defined(PROC_CREATE)
+
+#else
+    #error "you must define one of CREATE_PROC_ENTRY and PROC_CREATE"
+#endif
 
 #define NAME_TO_STR(name)   (#name)
 

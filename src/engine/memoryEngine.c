@@ -475,6 +475,7 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
     {
         dbginfo("virtual : 0x%lx to physical address error\n", va);
     }
+    //printk("==========0x%lx\n", virt_to_phys(va));
 	return pa;
 }
 
