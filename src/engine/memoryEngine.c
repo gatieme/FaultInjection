@@ -34,6 +34,7 @@ int             signal;								/// signal
 char            kFuncName[MAX_LINE];                /// kFuncName
 long            memVal;							    /// memVal
 
+unsigned long   kernel_va = 0;
 unsigned long   ack_pa;			                    /// physical Address
 unsigned long   ack_va;			                    /// virtual  Address
 int             ack_signal;						    /// signal
@@ -107,8 +108,7 @@ static long orig_code = 0;
 void do_request(void)
 {
 	struct task_struct *task = NULL;
-	unsigned long pa = 0;
-	long kernel_va = 0;
+	//unsigned long pa = 0;
 	int status;
 
     int temp = 0;
