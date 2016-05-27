@@ -57,9 +57,7 @@ extern unsigned long            ack_pa;			                    /// physical Addre
 
 
 MODULE_LICENSE("Dual BSD/GPL");
-
 MODULE_AUTHOR("Gatieme @ HIT CS HDMC team");
-
 MODULE_DESCRIPTION("Memory Engine Physical Address Module.");
 
 /*

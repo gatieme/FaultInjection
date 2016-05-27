@@ -743,7 +743,7 @@ unsigned long readpa(unsigned long pa)
 
     void volatile *mapStart = (void volatile *)kmap(pa);*/
 
-    dbginfo("");
+    dbginfo("physical : 0x%lx\n", pa);
     unsigned long va = phys_to_virt(pa);
     dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
     memcpy(data, va, sizeof(data));
