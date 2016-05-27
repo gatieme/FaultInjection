@@ -44,7 +44,7 @@ modules_install:
 clean:
 
 insmod:
-	sudo insmod $(MODULE_NAME)
+	sudo insmod $(MODULE_NAME).ko
 
 reinsmod:
 	sudo rmmod $(MODULE_NAME)

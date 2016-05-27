@@ -116,7 +116,7 @@ unsigned long readpa(unsigned long pa);
 
 /*
  * map an virtual memory space `vma` to the kernel space `buffer`
- *
+ */
 /*
 *	proc entry function
 */
