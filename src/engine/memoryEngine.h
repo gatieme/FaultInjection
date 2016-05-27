@@ -53,28 +53,36 @@
 /*
 *	request command
 */
-#define REQUEST_TASK_INFO		1		/// get a task's memory map information
+#define REQUEST_TASK_INFO   	1		/// get a task's memory map information
 #define REQUEST_V2P				2		/// convert a process's linear address to physical address
-#define REQUEST_KV2P			3		/// convert kernel virtual address to physical address
-#define REQUEST_KFUNC_VA		4		/// get kernel function's addr(kernel virtual address)
+#define REQUEST_KV2P		    3		/// convert kernel virtual address to physical address
+#define REQUEST_KFUNC_VA	    4		/// get kernel function's addr(kernel virtual address)
 #define REQUEST_READ_KFUNC	    5		/// 请求读取内核函数起始地址内容
 #define REQUEST_WRITE_KFUNC	    6		/// 请求改写内核函数起始地址内容
-///#define REQUEST_WRITE				10 	/// 请求改写指定物理地址内容，改为用户态实现此功能
-///#define REQUEST_MEM					11	/// 请求获取全部物理内存信息
-///#define REQUEST_ADDR_STOP		12	///
+
+#ifndef USER_SPACE_MMAP
+    #define REQUEST_READ_PA		10	    /// 请求获取全部物理内存信息
+    #define REQUEST_WRITE_PA	11 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
+    #define REQUEST_MEM			12	    /// 请求获取全部物理内存信息
+    #define REQUEST_ADDR_STOP	13	    ///
+#endif
 
 /*
 *	ack signals
 */
-#define ACK_TASK_INFO			REQUEST_TASK_INFO
-#define ACK_V2P					REQUEST_V2P
-#define ACK_KV2P				REQUEST_KV2P
-#define ACK_KFUNC_VA			REQUEST_KFUNC_VA
-#define ACK_READ_KFUNC		    REQUEST_READ_KFUNC
-#define ACK_WRITE_KFUNC		    REQUEST_WRITE_KFUNC
-///#define REQUEST_WRITE		REQUEST_WRITE
-///#define ACK_MEM				REQUEST_MEM
-///#define ACK_ADDR_STOP		REQUEST_ADDR_STOP
+#define ACK_TASK_INFO		    REQUEST_TASK_INFO
+#define ACK_V2P				   	REQUEST_V2P
+#define ACK_KV2P			    REQUEST_KV2P
+#define ACK_KFUNC_VA		    REQUEST_KFUNC_VA
+#define ACK_READ_KFUNC	        REQUEST_READ_KFUNC
+#define ACK_WRITE_KFUNC	        REQUEST_WRITE_KFUNC
+
+#ifndef USER_SPACE_MMAP
+    #define ACK_READ_PA         REQUEST_READ_PA
+    #define ACK_WRITE_PA        REQUEST_MEM_PA
+    #define ACK_MEM             REQUEST_MEM
+    #define ACK_ADDR_STOP       REQUEST_ADDR_STOP
+#endif
 
 /*
 *	utility functions
@@ -97,6 +105,18 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags);
 
 int getTaskInfo(struct task_struct *pTask, char *pData, int length);
 
+/* MODIFY gatieme @ 2016-005-27 19:50
+ * FOR read and write physical in kernel space
+ */
+unsigned long writepa(unsigned long pa);
+
+unsigned long readpa(unsigned long pa);
+
+
+
+/*
+ * map an virtual memory space `vma` to the kernel space `buffer`
+ *
 /*
 *	proc entry function
 */

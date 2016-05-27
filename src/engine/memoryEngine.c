@@ -152,13 +152,20 @@ void do_request(void)
 			ack_signal = ACK_V2P;
 			return;
 		}
-		if( task->mm == NULL )
+
+        /*
+         *  modify by gatieme @ 2016-05-27
+         *  the kernel thread which run in kernel space have no user space
+         *
+         *  */
+        if( task->mm == NULL )
 		{
             dprint("the task %d:%s a kernel thread[task->mm == NULL]...\n", task->pid, task->comm);
 			ack_pa = -1;
 			ack_signal = ACK_V2P;
 			return;
 		}
+
 		ack_pa = v2p(task->mm,va,&status);
 		if(ack_pa == FAIL)
 		{
@@ -236,7 +243,27 @@ void do_request(void)
 		dbginfo("Success to inject MTTR fault\n");
 		return;
 	}
-
+    /*
+    *
+    *  MODIFY  by gatieme @ 2016-05-26 19:39
+    *  FOR     read and write physical address in kernel
+    *
+    *  #define REQUEST_READ_PA		10	    /// 请求获取全部物理内存信息
+    *  #define REQUEST_WRITE_PA	11 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
+    *  #define REQUEST_MEM			12	    /// 请求获取全部物理内存信息
+    *  #define REQUEST_ADDR_STOP	13	    ///
+    */
+    else if(ctl == REQUEST_READ_PA)
+    {
+        /*  get the physical address  */
+		kernel_va = readpa(phy);
+		memVal = *((long *)kernel_va);
+		ack_signal = ACK_READ_PA;
+    }
+    else if(ctl == REQUEST_WRITE_PA)
+    {
+        /*  */
+    }
 }
 
 struct dentry* file_entry(struct file *pfile)
@@ -686,6 +713,85 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
 	else { return FAIL;	}
 	return OK;
 }
+
+/*
+ *  how to read and write
+ *  a physical address or
+ *  a virtual address of user process
+ *  in kernel space
+ *
+ *  way 1
+ *  map the physical address to kernel space, so that we can read and write
+ *  see mmap, kmap or remap_pfn_range
+ *
+ *  way 2
+ *  see copy_from_user
+ *
+ */
+unsigned long readpa(unsigned long pa)
+{
+    unsigned long data = FAIL;
+
+    /*unsigned long addr = (char *)kmap(pa);
+
+    void volatile *mapStart = (void volatile *)kmap(pa);*/
+
+    unsigned long va = phys_to_virt(pa);
+    memcpy(data, va, sizeof(data));
+    return data;
+}
+
+unsigned long writepa(unsigned long pa)
+{
+
+}
+
+
+
+/*
+ * map an virtual memory space `vma` to the kernel space `buffer`
+ *
+ */
+unsigned long map_vma_to_kernel(unsigned char *buffer, struct vm_area_struct *vma)
+{
+    unsigned long page;
+    unsigned char i;
+    unsigned long start = (unsigned long)vma->vm_start;
+    unsigned long end =  (unsigned long)vma->vm_end;
+
+    unsigned long size = (unsigned long)(vma->vm_end - vma->vm_start);
+
+
+    //  得到物理地址
+    page = virt_to_phys(buffer);
+
+    //  将用户空间的一个vma虚拟内存区映射到以page开始的一段连续物理页面上
+    if(remap_pfn_range(vma, start, page>>PAGE_SHIFT, size, PAGE_SHARED))    //第三个参数是页帧号，由物理地址右移PAGE_SHIFT得到
+    {
+        return -1;
+    }
+
+    return page;
+}
+
+unsigned long readva(struct vm_area_struct *vma)
+{
+    static unsigned char *buffer = NULL;
+    unsigned long page = FAIL;
+    unsigned long data = FAIL;
+
+    page = map_vma_to_kernel(buffer, vma);
+
+    memcpy(vma, buffer, sizeof(unsigned long));
+
+    return data;
+}
+
+
+
+
+
+
 
 
 /*
