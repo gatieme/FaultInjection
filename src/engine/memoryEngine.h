@@ -63,8 +63,10 @@
 #ifndef USER_SPACE_MMAP
     #define REQUEST_READ_PA		10	    /// 请求获取全部物理内存信息
     #define REQUEST_WRITE_PA	11 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
-    #define REQUEST_MEM			12	    /// 请求获取全部物理内存信息
-    #define REQUEST_ADDR_STOP	13	    ///
+    #define REQUEST_READ_VA		12	    /// 请求获取全部物理内存信息
+    #define REQUEST_WRITE_VA	13 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
+    #define REQUEST_MEM			14	    /// 请求获取全部物理内存信息
+    #define REQUEST_ADDR_STOP	15	    ///
 #endif
 
 /*
@@ -80,6 +82,8 @@
 #ifndef USER_SPACE_MMAP
     #define ACK_READ_PA         REQUEST_READ_PA
     #define ACK_WRITE_PA        REQUEST_MEM_PA
+    #define ACK_READ_VA         REQUEST_READ_VA
+    #define ACK_WRITE_VA        REQUEST_MEM_VA
     #define ACK_MEM             REQUEST_MEM
     #define ACK_ADDR_STOP       REQUEST_ADDR_STOP
 #endif

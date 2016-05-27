@@ -165,7 +165,7 @@ void do_request(void)
 			return;
 		}
 
-		ack_pa = v2p(task->mm,va,&status);
+		ack_pa = v2p(task->mm, va, &status);
 		if(ack_pa == FAIL)
 		{
 			dbginfo("No physical address\n");
@@ -744,7 +744,7 @@ unsigned long readpa(unsigned long pa)
     void volatile *mapStart = (void volatile *)kmap(pa);*/
 
     dbginfo("physical : 0x%lx\n", pa);
-    unsigned long va = phys_to_virt(pa);
+    unsigned long va = phys_to_virt(pa);        // error
     dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
     memcpy(data, va, sizeof(data));
     return data;
