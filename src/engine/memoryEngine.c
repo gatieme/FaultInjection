@@ -588,10 +588,10 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
 	pmd_t *pmd = NULL;
 	pte_t *pte = NULL;
 
-    dprint("PGDIR_SHIFT = %d\n",  PGDIR_SHIFT);
-    dprint("PUD_SHIFT = %d\n",    PUD_SHIFT);
-    dprint("PMD_SHIFT = %d\n",    PMD_SHIFT);
-    dprint("PAGE_SHIFT = %d\n",   PAGE_SHIFT);
+    dprint("PGDIR_SHIFT  = %d\n",  PGDIR_SHIFT);
+    dprint("PUD_SHIFT    = %d\n",    PUD_SHIFT);
+    dprint("PMD_SHIFT    = %d\n",    PMD_SHIFT);
+    dprint("PAGE_SHIFT   = %d\n",   PAGE_SHIFT);
 
     dprint("PTRS_PER_PGD = %d\n", PTRS_PER_PGD);
     dprint("PTRS_PER_PUD = %d\n", PTRS_PER_PUD);
@@ -737,16 +737,19 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
  */
 unsigned long readpa(unsigned long pa)
 {
-    unsigned long data = FAIL;
-
-    /*unsigned long addr = (char *)kmap(pa);
-
-    void volatile *mapStart = (void volatile *)kmap(pa);*/
-
+    unsigned long   data = FAIL;
+    unsigned long   pa_base = pa << PAGE_SHIFT;
+    unsigned long   pa_offset = pa - pa_base;
+    struct page     *pa_page = mem_map + pa_base;
+    void volatile *mapStart = (void volatile *)kmap(pa_page);
+    dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
+    /*
+     *
     dbginfo("physical : 0x%lx\n", pa);
     unsigned long va = phys_to_virt(pa);        // error
     dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
     memcpy(data, va, sizeof(data));
+    */
     return data;
 }
 
