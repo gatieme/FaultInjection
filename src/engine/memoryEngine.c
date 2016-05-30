@@ -144,7 +144,9 @@ void do_request(void)
 	/// convert a process's linear address to physical address
 	else if(ctl == REQUEST_V2P)
 	{
-		task = findTaskByPid(pid);
+		dbginfo("Rcv request: virtual address to physical address\n");
+
+        task = findTaskByPid(pid);
 		if( task == NULL )
 		{
 			dbginfo("No such process\n");
@@ -152,7 +154,6 @@ void do_request(void)
 			ack_signal = ACK_V2P;
 			return;
 		}
-
         /*
          *  modify by gatieme @ 2016-05-27
          *  the kernel thread which run in kernel space have no user space
@@ -263,8 +264,7 @@ void do_request(void)
          *  ACK
          *  cat /proc/memoryEngine/memVal
          *  */
-		kernel_va = readpa(pa);
-		memVal = *((long *)kernel_va);
+		memVal = readpa(pa);
 		ack_signal = ACK_READ_PA;
     }
     else if(ctl == REQUEST_WRITE_PA)
@@ -587,7 +587,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
 	pud_t *pud = NULL;
 	pmd_t *pmd = NULL;
 	pte_t *pte = NULL;
-
+    /*
     dprint("PGDIR_SHIFT  = %d\n",  PGDIR_SHIFT);
     dprint("PUD_SHIFT    = %d\n",    PUD_SHIFT);
     dprint("PMD_SHIFT    = %d\n",    PMD_SHIFT);
@@ -599,6 +599,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     dprint("PTRS_PER_PTE = %d\n", PTRS_PER_PTE);
 
     printk("PAGE_MASK = 0x%lx\n", PAGE_MASK);
+    */
 
     /*  判断给出的地址va是否合法(va < vm_end)  */
     if(!find_vma(pMM, va))
@@ -608,8 +609,8 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     pgd = pgd_offset(pMM, va);
-    dprint("pgd = 0x%p\n", pgd);
-    dprint("pgd_val(*pgd) = 0x%lx\n", pgd_val(*pgd));
+    //dprint("pgd = 0x%p\n", pgd);
+    //dprint("pgd_val(*pgd) = 0x%lx\n", pgd_val(*pgd));
     if(pgd_none(*pgd))
     {
         printk(KERN_INFO"Not mapped in pgd.\n");
@@ -617,8 +618,8 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     pud = pud_offset(pgd, va);
-    dprint("pud = 0x%p\n", pud);
-    dprint("pud_val(*pud) = 0x%lx\n", pud_val(*pud));
+    //dprint("pud = 0x%p\n", pud);
+    //dprint("pud_val(*pud) = 0x%lx\n", pud_val(*pud));
     if(pud_none(*pud))
     {
         printk(KERN_INFO"Not mapped in pud.\n");
@@ -626,8 +627,8 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     }
 
     pmd = pmd_offset(pud, va);
-    dprint("pmd = 0x%p\n", pmd);
-    dprint("pmd_val(*pmd) = 0x%lx\n", pmd_val(*pmd));
+    //dprint("pmd = 0x%p\n", pmd);
+    //dprint("pmd_val(*pmd) = 0x%lx\n", pmd_val(*pmd));
     if(pmd_none(*pmd))
     {
         printk(KERN_INFO"Not mapped in pmd.\n");
@@ -656,9 +657,9 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     pte = pte_offset_map(pmd, va);
 
     //pte = pte_offset_kernel(pmd, va);
-    dprint("pte = 0x%p\n", pte);
-    dprint("pte_val(*pte) = 0x%lx\n", pte_val(*pte));
-    dprint("*ppte = 0x%lx\n", pte_val(pte[-PTRS_PER_PTE]));
+    //dprint("pte = 0x%p\n", pte);
+    //dprint("pte_val(*pte) = 0x%lx\n", pte_val(*pte));
+    //dprint("*ppte = 0x%lx\n", pte_val(pte[-PTRS_PER_PTE]));
     if(pte_none(*pte))
     {
         printk(KERN_INFO"Not mapped in pte.\n");
@@ -742,7 +743,16 @@ unsigned long readpa(unsigned long pa)
     unsigned long   pa_offset = pa - pa_base;
     struct page     *pa_page = mem_map + pa_base;
     void volatile *mapStart = (void volatile *)kmap(pa_page);
-    dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
+    dbginfo("physical address 0x%lx to kernel address 0x%lx\n", pa, va, data);
+    if(mapStart == NULL)
+    {
+        dbginfo("kmap error\n");
+    }
+    else
+    {
+        memcpy(&data, mapStart + pa_offset, sizeof(unsigned long));
+        dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, va, data);
+    }
     /*
      *
     dbginfo("physical : 0x%lx\n", pa);

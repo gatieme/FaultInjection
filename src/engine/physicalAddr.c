@@ -104,10 +104,10 @@ static int seq_show_pa(struct seq_file *m, void *v)
 {
 	char buf[MAX_LINE];
 	int ret = 0;
-    dbginfo("%d\n", ack_pa);
+    dbginfo("0x%lx\n", ack_pa);
 	ret = sprintf(buf, "%lx", ack_pa);
 
-	seq_printf(m, "%s", buf);
+	seq_printf(m, "0x%lx", buf);
 
 	return 0; //!! must be 0, or will show nothing T.T
 }
