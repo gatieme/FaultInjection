@@ -761,8 +761,8 @@ unsigned long readpa(unsigned long pa)
     mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
     //只读一个字节
-    memcpy(&data, (void *)mapAddr, sizeof(data));
-    //*data = *((char *)mapAddr);
+    //memcpy(&data, (void *)mapAddr, sizeof(data));
+    data = *((unsigned  *)mapAddr);
 
     //if(unkmap((void *)mapStart, PAGE_SIZE) != 0)
    // {
