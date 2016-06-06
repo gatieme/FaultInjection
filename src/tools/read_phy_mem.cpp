@@ -78,7 +78,7 @@ typedef struct procMMInfo
 int main(int argc, char * argv[])
 {
 	unsigned long pa;
-	long *data;
+	long data;
 	int memfd;
 	int pageSize;
 	int shift;
@@ -94,7 +94,7 @@ int main(int argc, char * argv[])
     }
 
 	sscanf(argv[1], "%lx", &pa);
-	data = (long*)malloc(sizeof(long));
+	//data = (long*)malloc(sizeof(long));
 	memfd = open("/dev/mem", O_RDWR | O_SYNC);
 	if(memfd == -1)
 	{
@@ -145,7 +145,7 @@ int main(int argc, char * argv[])
     mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
     //只读一个字节
-    memcpy( data, (void *)mapAddr, sizeof(data) );
+    memcpy(&data, (void *)mapAddr, sizeof(data) );
     //*data = *((char *)mapAddr);
 
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
@@ -156,6 +156,6 @@ int main(int argc, char * argv[])
 
     close(memfd);
 
-    printf("%lx\n", *data);
+    printf("data = %lx\n", data);
 	return OK;
 }
