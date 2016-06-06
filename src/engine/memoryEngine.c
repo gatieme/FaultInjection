@@ -738,7 +738,6 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
  */
 unsigned long readpa(unsigned long pa)
 {
-
     unsigned long   data = FAIL;
     unsigned long   pa_base = pa << PAGE_SHIFT;
     unsigned long   pa_offset = pa - pa_base;
