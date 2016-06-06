@@ -752,11 +752,6 @@ unsigned long readpa(unsigned long pa)
     {
         dbginfo("kmap error\n");
     }
-    else
-    {
-        //memcpy(&data, mapStart + pa_offset, sizeof(unsigned long));
-        dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, va, data);
-    }
 
     mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
 
