@@ -738,7 +738,7 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
  */
 unsigned long readpa(unsigned long pa)
 {
-    /*
+
     unsigned long   data = FAIL;
     unsigned long   pa_base = pa << PAGE_SHIFT;
     unsigned long   pa_offset = pa - pa_base;
@@ -751,10 +751,10 @@ unsigned long readpa(unsigned long pa)
     }
     else
     {
-        memcpy(&data, mapStart + pa_offset, sizeof(unsigned long));
+        //memcpy(&data, mapStart + pa_offset, sizeof(unsigned long));
         dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, va, data);
     }
-    */
+
 
     /*
     unsigned long   data = FAIL;
@@ -763,11 +763,15 @@ unsigned long readpa(unsigned long pa)
     dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
     memcpy(data, va, sizeof(data));
     */
+
+    /*
     unsigned long data = FAIL;
     unsigned long virtaddr = ioremap(pa, PAGE_SIZE);
-    iounmap(virtaddr);
+    dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, virtaddr, data);
     memcpy(data, virtaddr, sizeof(data));
     dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, virtaddr, data);
+    iounmap(virtaddr);
+    */
 
     return data;
 }
