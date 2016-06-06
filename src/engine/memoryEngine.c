@@ -738,12 +738,13 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
  */
 unsigned long readpa(unsigned long pa)
 {
+    /*
     unsigned long   data = FAIL;
     unsigned long   pa_base = pa << PAGE_SHIFT;
     unsigned long   pa_offset = pa - pa_base;
     struct page     *pa_page = mem_map + pa_base;
-    void volatile *mapStart = (void volatile *)kmap(pa_page);
-    dbginfo("physical address 0x%lx to kernel address 0x%lx\n", pa, va, data);
+    void volatile   *mapStart = (void volatile *)kmap(pa_page);
+    dbginfo("physical address 0x%lx to kernel address 0x%lx\n", pa, mapStart);
     if(mapStart == NULL)
     {
         dbginfo("kmap error\n");
@@ -753,13 +754,21 @@ unsigned long readpa(unsigned long pa)
         memcpy(&data, mapStart + pa_offset, sizeof(unsigned long));
         dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, va, data);
     }
+    */
+
     /*
-     *
+    unsigned long   data = FAIL;
     dbginfo("physical : 0x%lx\n", pa);
     unsigned long va = phys_to_virt(pa);        // error
     dbginfo("physical address 0x%lx to kernel address %lx\n", pa, va);
     memcpy(data, va, sizeof(data));
     */
+    unsigned long data = FAIL;
+    unsigned long virtaddr = ioremap(pa, PAGE_SIZE);
+    iounmap(virtaddr);
+    memcpy(data, virtaddr, sizeof(data));
+    dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, virtaddr, data);
+
     return data;
 }
 
