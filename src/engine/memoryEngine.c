@@ -743,7 +743,10 @@ unsigned long readpa(unsigned long pa)
     unsigned long   pa_base = pa << PAGE_SHIFT;
     unsigned long   pa_offset = pa - pa_base;
     struct page     *pa_page = mem_map + pa_base;
-    void volatile   *mapStart = (void volatile *)kmap(pa_page);
+	void volatile   *mapStart = NULL;
+	void volatile   *mapAddr = NULL;
+
+    mapStart = (void volatile *)kmap(pa_page);
     dbginfo("physical address 0x%lx to kernel address 0x%lx\n", pa, mapStart);
     if(mapStart == NULL)
     {
@@ -755,6 +758,16 @@ unsigned long readpa(unsigned long pa)
         dbginfo("physical address 0x%lx to kernel address 0x%lx, data 0x%lx\n", pa, va, data);
     }
 
+    mapAddr = (void volatile *)((unsigned long)mapStart + pa_offset);
+
+    //只读一个字节
+    memcpy(&data, (void *)mapAddr, sizeof(data));
+    //*data = *((char *)mapAddr);
+
+    //if(unkmap((void *)mapStart, PAGE_SIZE) != 0)
+   // {
+  	 //   //perror("Failed to munmap /dev/mem");
+   // }
 
     /*
     unsigned long   data = FAIL;
