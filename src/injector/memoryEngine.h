@@ -13,6 +13,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+
 #include <iostream>
 #include <exception>
 using namespace std;
@@ -46,9 +47,13 @@ typedef struct procMMInfo
 #define OK		0
 #define FAIL	1
 
-#define PAGE_SIZE 65536
+
+#define PAGE_SIZE 4096UL    // or 65536
+#define PAGE_MASK (PAGE_SIZE - 1)
+
 #define MAX_LINE	PAGE_SIZE
 #define varCount	19
+
 
 /*
 *	request command

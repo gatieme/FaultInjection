@@ -273,6 +273,7 @@ void do_request(void)
     }
     else if(ctl == REQUEST_READ_VA)     /*  == 12  */
     {
+        might_fault();
         memVal = *((unsigned long *)va);
         ack_signal = ACK_READ_VA;
     }

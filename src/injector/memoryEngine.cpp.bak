@@ -202,6 +202,8 @@ extern int errno;
 int read_phy_mem(unsigned long pa, long *data)
 {
 	int memfd;
+	int pageSize;
+	int shift;
 	int do_mlock;
 	void volatile *mapStart;
 	void volatile *mapAddr;
@@ -215,25 +217,34 @@ int read_phy_mem(unsigned long pa, long *data)
 		return FAIL;
 	}
 
+	shift = 0;
+	pageSize = PAGE_SIZE;
+	while(pageSize > 0)
+	{
+		pageSize = pageSize >> 1;
+		shift ++;
+	}
+	shift --;
+	pa_base = (pa >> shift) << shift;
+	pa_offset = pa - pa_base;
+
 //#ifdef DEBUG
+	dprintf("=====================\n");
+	dprintf("in func %s, line %d\n", __func__, __LINE__);
+    dprintf("PAGE_SIZE  : 0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	dprintf("base       : 0x%lx\n", pa_base);
+	dprintf("offset     : 0x%lx\n", pa_offset);
+	dprintf("pa         : 0x%lx\n", pa);
+	dprintf("=====================\n");
 //#endif
 
 #ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
-    dprintf("use MMAP_INVALID_ARGUMENT\n");
-    pa >>= 32;
-#endif
-    pa_base = pa & ~PAGE_MASK;
-    pa_offset = pa - pa_base;
-    dprintf("=====================\n");
-	dprintf("in func %s, line %d\n", __func__, __LINE__);
-    dprintf("map_size   : 0x%x\n",  PAGE_SIZE);
-	dprintf("pa         : 0x%lx\n", pa);
-	dprintf("base       : 0x%lx\n", pa_base);
-	dprintf("offset     : 0x%lx\n", pa_offset);
-	dprintf("=====================\n");
-
+    map_base = mmap(0, MAP_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED, fd, pa & ~MAP_MASK);
+#else
     mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
-    if(mapStart == MAP_FAILED)
+#endif
+    //mapStart = (void volatile *)mmap(0, 0xff, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+	if(mapStart == MAP_FAILED)
 	{
 		dbgprint("Failed to mmap /dev/mem [0x%lx], errno : [%d, %s]\n", pa_base, errno, strerror(errno));
 		perror("Failed to mmap /dev/mem ");
@@ -277,7 +288,6 @@ int write_page_0(unsigned long pa)
 	int do_mlock;
 	void volatile *mapStart;
 	unsigned long pa_base;
-	unsigned long pa_offset;
 
 	memfd = open("/dev/mem", O_RDWR | O_SYNC);
 	if(memfd == -1)
@@ -286,21 +296,24 @@ int write_page_0(unsigned long pa)
 		return FAIL;
 	}
 
+	shift = 0;
+	pageSize = PAGE_SIZE;
+	while(pageSize > 0)
+	{
+		pageSize = pageSize >> 1;
+		shift ++;
+	}
+	shift --;
+	pa_base = (pa >> shift) << shift;
+
+	printf("base:0x%lx\n",pa_base);
+
 
 #ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
-    pa >>= 32;
-#endif
-    pa_base = pa & ~PAGE_MASK;
-    pa_offset = pa - pa_base;
-    dprintf("=====================\n");
-	dprintf("in func %s, line %d\n", __func__, __LINE__);
-    dprintf("map_size   : 0x%x\n",  PAGE_SIZE);
-	dprintf("pa         : 0x%lx\n", pa);
-	dprintf("base       : 0x%lx\n", pa_base);
-	dprintf("offset     : 0x%lx\n", pa_offset);
-	dprintf("=====================\n");
-
+	mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, 0xF000);
+#else
     mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+#endif
     if(mapStart == MAP_FAILED)
 	{
 		perror("Failed to mmap /dev/mem ");
@@ -331,6 +344,8 @@ int write_page_0(unsigned long pa)
 int write_phy_mem(unsigned long pa,void *data,int len)
 {
 	int memfd;
+	int pageSize;
+	int shift;
 	int size;
 	int do_mlock;
 	void volatile *mapStart;
@@ -345,22 +360,32 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 		return FAIL;
 	}
 
+	shift = 0;
+	pageSize = PAGE_SIZE;
+	while(pageSize > 0)
+	{
+		pageSize = pageSize >> 1;
+		shift ++;
+	}
+	shift --;
+	pa_base = (pa >> shift) << shift;
+	pa_offset = pa - pa_base;
 
-#ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
-    pa >>= 32;
+#ifdef DEBUG
+	printf("=====================\n");
+	printf("in func %s, line %d\n", __func__, __LINE__);
+    printf("PAGE_SIZE:0x%x\n", PAGE_SIZE);   // 4k = 0x1000
+	printf("base:0x%lx\n", pa_base);
+	printf("offset:0x%lx\n", pa_offset);
+	printf("pa:0x%lx\n", pa);
+	printf("=====================\n");
 #endif
 
-    pa_base = pa & ~PAGE_MASK;
-    pa_offset = pa - pa_base;
-    dprintf("=====================\n");
-	dprintf("in func %s, line %d\n", __func__, __LINE__);
-    dprintf("map_size   : 0x%x\n",  PAGE_SIZE);
-	dprintf("pa         : 0x%lx\n", pa);
-	dprintf("base       : 0x%lx\n", pa_base);
-	dprintf("offset     : 0x%lx\n", pa_offset);
-	dprintf("=====================\n");
-
+#ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
+    mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, 0xF000);
+#else
     mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
+#endif
 	if(mapStart == MAP_FAILED)
 	{
 		perror("Failed to mmap /dev/mem ");
