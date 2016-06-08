@@ -83,7 +83,7 @@
     #define ACK_READ_PA         REQUEST_READ_PA
     #define ACK_WRITE_PA        REQUEST_MEM_PA
     #define ACK_READ_VA         REQUEST_READ_VA
-    #define ACK_WRITE_VA        REQUEST_MEM_VA
+    #define ACK_WRITE_VA        REQUEST_WRITE_VA
     #define ACK_MEM             REQUEST_MEM
     #define ACK_ADDR_STOP       REQUEST_ADDR_STOP
 #endif

@@ -273,12 +273,12 @@ void do_request(void)
     }
     else if(ctl == REQUEST_READ_VA)     /*  == 12  */
     {
-        memVal = *(va);
+        memVal = *((unsigned long *)va);
         ack_signal = ACK_READ_VA;
     }
     else if(ctl == REQUEST_WRITE_VA)    /*  == 13  */
     {
-        *va = memVal;
+        *(unsigned long *)va = memVal;
         ack_signal = ACK_WRITE_VA;
     }
 }
