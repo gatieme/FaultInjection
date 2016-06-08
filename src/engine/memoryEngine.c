@@ -253,7 +253,7 @@ void do_request(void)
     *  #define REQUEST_MEM			12	    /// 请求获取全部物理内存信息
     *  #define REQUEST_ADDR_STOP	13	    ///
     */
-    else if(ctl == REQUEST_READ_PA)
+    else if(ctl == REQUEST_READ_PA)     /*  == 10  */
     {
         /*  get the physical address
          *
@@ -267,9 +267,19 @@ void do_request(void)
 		memVal = readpa(pa);
 		ack_signal = ACK_READ_PA;
     }
-    else if(ctl == REQUEST_WRITE_PA)
+    else if(ctl == REQUEST_WRITE_PA)    /*  == 11  */
     {
         /*  */
+    }
+    else if(ctl == REQUEST_READ_VA)     /*  == 12  */
+    {
+        memVal = *(va);
+        ack_signal = ACK_READ_VA;
+    }
+    else if(ctl == REQUEST_WRITE_VA)    /*  == 13  */
+    {
+        *va = memVal;
+        ack_signal = ACK_WRITE_VA;
     }
 }
 
