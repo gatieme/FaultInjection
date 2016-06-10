@@ -10,19 +10,24 @@ int test()
 	int *q = NULL;
 	p = (int *)malloc(sizeof (int));
 	q = (int *)malloc(sizeof (int));
-	int FD;
+	*p = 1;
+    *q = 2;
+    int FD;
 	FILE* fp = fopen("hello.txt", "a+");
 	int i = 0;
 
     while(1)
 	{
 		printf("pid = %d, %d, "
-               ", hello a's addr = %lx [%d]"
-               ", p addr = %lx[%d]"
-               ", p point addr = %lx q addr = %lx [%d]"
-               ", q point addr = %lx[%d]\n",
+               ", hello a's addr = 0x%lx [%d]"
+               ", p point addr = 0x%lx q addr = 0x%lx [%d]"
+               ", q point addr = 0x%lx q addr = 0x%lx [%d]\n",
                 getpid( ), i, &a, a, &p, p, *p, &q, q, *q);
-		fprintf(fp, "pid = %d, %d\t hello a's addr = %lx\tp addr = %lx\tp point addr = %lx\tq addr = %lx\tq point addr = %lx\n",getpid(), i, &a, &p, p, &q, q);
+		fprintf(fp, "pid = %d, %d, "
+               ", hello a's addr = 0x%lx [%d]"
+               ", p point addr = 0x%lx q addr = 0x%lx [%d]"
+               ", q point addr = 0x%lx q addr = 0x%lx [%d]\n",
+                getpid( ), i, &a, a, &p, p, *p, &q, q, *q);
 		fflush(fp);
 		sleep(1);
 		i++;
