@@ -85,7 +85,7 @@ int proc_write_pa(struct file *file, const char *buffer, unsigned long count, vo
 int proc_read_pa(char * page,char **start, off_t off, int count, int * eof,void * data)
 {
 	int iLen;
-    dbginfo("%d\n", ack_pa);
+    dbginfo("0x%lx\n", ack_pa);
 	iLen = sprintf(page, "%lx", ack_pa);
 	return iLen;
 }
