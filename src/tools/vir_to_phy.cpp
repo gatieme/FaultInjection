@@ -157,6 +157,6 @@ int main(int argc, char *argv[])
     {
         return FAIL;
     }
-	printf("%lx\n", physicalAddr);
+	printf("0x%lx\n", physicalAddr);
 	return 0;
 }
