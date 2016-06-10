@@ -125,14 +125,16 @@ const struct file_operations va_fops =
 // seq_operations -> show
 static int seq_show_va(struct seq_file *m, void *v)
 {
+    /*
     char buf[MAX_LINE];
 	int ret = 0;
 
 	ret = sprintf(buf, "%lx", ack_va);
 	seq_printf(m, "%s", buf);
+    */
 
+    seq_printf(m , "%lx", ack_va);
 
-    //seq_printf(m , "%lx", ack_va)
 	return 0; //!! must be 0, or will show nothing T.T
 }
 

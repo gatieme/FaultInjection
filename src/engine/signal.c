@@ -124,12 +124,16 @@ const struct file_operations proc_signal_fops =
 // seq_operations -> show
 static int seq_show_signal(struct seq_file *m, void *v)
 {
-	char buf[MAX_LINE];
+    /*
+    char buf[MAX_LINE];
 	int ret = 0;
     dbginfo("%d\n", ack_signal);
 	ret = sprintf(buf, "%lx", ack_signal);
-
 	seq_printf(m, "%s", buf);
+    */
+
+    dbginfo("%d\n", ack_signal);
+	seq_printf(m, "%lx", ack_signal);
 
 	return 0; //!! must be 0, or will show nothing T.T
 }

@@ -121,12 +121,17 @@ const struct file_operations proc_val_fops =
 // seq_operations -> show
 static int seq_show_memVal(struct seq_file *m, void *v)
 {
+    /*
 	char buf[MAX_LINE];
 	int ret = 0;
     dbginfo("%lx\n", memVal);
-	ret = sprintf(buf, "%lx", memVal);
 
-	seq_printf(m, "%s", buf);
+    ret = sprintf(buf, "%lx", memVal);
+    seq_printf(m, "%s", buf);
+    */
+
+    dbginfo("%lx\n", memVal);
+    seq_printf(m, "%lx", memVal);
 
 	return 0; //!! must be 0, or will show nothing T.T
 }

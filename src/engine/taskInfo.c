@@ -85,10 +85,12 @@ const struct file_operations taskInfo_fops =
 // seq_operations -> show
 static int seq_show_taskInfo(struct seq_file *m, void *v)
 {
-	//char buf[MAX_LINE];
+	/*
+    char buf[MAX_LINE];
 	int ret = 0;
 
-    //ret = sprintf(buf, "%ls", ack_taskInfo);
+    ret = sprintf(buf, "%ls", ack_taskInfo);
+    */
 
 	seq_printf(m, "%s", taskInfo);
 
