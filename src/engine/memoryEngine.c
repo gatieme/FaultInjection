@@ -513,9 +513,11 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 	{
 		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
         //dbginfo("virt_addr 0x%lx in RAM is 0x%lx t .\n", va, pa);
-        //dbginfo("contect in 0x%lx is 0x%lx\n", pa, *(unsigned long *)((char *)pa + PAGE_OFFSET));
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
-	}
+        //dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, (pte_val(*pte) & PAGE_MASK & 0x0fffffffffffffff) );
+        //unsigned long kva = __va(pa); error
+        //dbginfo("data = 0x%lx", *(unsigned long *)kva);
+    }
     else
     {
         dbginfo("virtual : 0x%lx to physical address error\n", va);
@@ -827,9 +829,9 @@ unsigned long map_vma_to_kernel(unsigned char *buffer, struct vm_area_struct *vm
     return page;
 }
 
-unsigned long readva(struct vm_area_struct *vma)
+unsigned long readva(int pid, unsigned long va)
 {
-    static unsigned char *buffer = NULL;
+    /*static unsigned char *buffer = NULL;
     unsigned long page = FAIL;
     unsigned long data = FAIL;
 
@@ -837,7 +839,12 @@ unsigned long readva(struct vm_area_struct *vma)
 
     memcpy(vma, buffer, sizeof(unsigned long));
 
-    return data;
+    return data;*/
+    struct task_struct  *ptask = findTaskByPid(pid);
+    struct mm_struct    *mm = ptask->mm;
+    int len = PAGE_SIZE;
+    //result = get_user_page(ptask, patsk->mm, va & PAGE_MASK, 1, 1, 0)
+    return len;
 }
 
 
