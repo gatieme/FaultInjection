@@ -1,7 +1,7 @@
 RESULT_DIR=RESULT
 mkdir -p $RESULT_DIR
 
-for (( NUM = 400; NUM <= 1000; NUM += 50 ))
+for (( NUM = 100; NUM <= 1000; NUM += 50 ))
 do
     mkdir -p $RESULT_DIR/$NUM
     echo "positions        types         non   sigalrm   sigsegv   sigill   sigbus" >> $RESULT_DIR/$NUM/result.log

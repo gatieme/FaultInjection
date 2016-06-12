@@ -72,7 +72,7 @@ long test()
     {
         //int s1 = a, s2 = *p;
         //printf("===%ld %ld====", s1, s2);
-       /* printf("pid = %5d, times = %4ld, a's addr = %p [(physical : 0x%lx) : 0x%lx\n"
+        /*printf("pid = %5d, times = %4ld, a's addr = %p [(physical : 0x%lx) : 0x%lx\n"
                "p point's addr = %p q's addr = %p [(physical : 0x%lx) : 0x%lx]\n",
                 getpid( ), i,
                 &a, a_phy_addr, (volatile unsigned long)a,
