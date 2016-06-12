@@ -11,7 +11,7 @@ PLATFORM=$(shell $(SRC)/systype.sh)
 include $(SRC)/Make.defines.$(PLATFORM)
 include $(SRC)/Make.readme
 
-DIRS=$(MEMOEY_SRC) $(PTRACE_SRC) $(UNIXBENCH_SRC)
+DIRS=$(MEMORY_SRC) $(PTRACE_SRC) $(UNIXBENCH_SRC)
 
 
 MAKE_DIR=make -C

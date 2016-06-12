@@ -262,7 +262,7 @@ double:
 	$(CC) -o $(PROGDIR)/double ${CFLAGS} ${OPTON} -Ddatum=double $(SRCDIR)/arith.c
 
 install	:
-	$(CP) ./unixBench/pgms/arithoh ../workload/arithoh
+	#$(CP) ./unixBench/pgms/arithoh ../workload/arithoh
 	#$(CP) ./unixBench/pgms/context1 ../workload/context1
 	#$(CP) ./unixBench/pgms/dhry2 ../workload/dhry2
 	#$(CP) ./unixBench/pgms/dhry2reg ../workload/dhry2reg

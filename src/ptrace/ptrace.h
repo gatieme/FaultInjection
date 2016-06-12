@@ -7,8 +7,12 @@
 
 #include <sys/ptrace.h>
 #include <asm/ptrace_offsets.h>	//define PT_F32,etc
-#include "common.h"
 
+#include <sys/uio.h>
+#include <elf.h>
+#include <sys/user.h>
+#include <asm/ptrace.h>
+#include "common.h"
 //control
 extern int ptraceTraceme();
 extern int ptraceAttach( int pid );
