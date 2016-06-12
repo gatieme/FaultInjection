@@ -27,6 +27,10 @@ ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
             out <<"random, ";
             break;
         }
+        default :
+        {
+            out <<"physical : " <<m_addr;
+        }
     }
 
     out <<"type : ";
@@ -96,23 +100,15 @@ bool MemoryFault::SetMode(std::string mode)
     }
     else
     {
-        std::cerr << "Error:undefined fault mode" <<std::endl;
-
-        return false;
-    }
-/*
-    else
-    {
         int iRet = sscanf(this->m_location.c_str(), "%lx", &this->m_addr);
 
         if( iRet != 1 )
         {
             return false;
         }
+        return true;
     }
 
-*/
-    return true;
 
 }
 

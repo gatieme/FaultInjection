@@ -384,11 +384,11 @@ int write_phy_mem(unsigned long pa,void *data,int len)
   	    size = len;
     }
 
-    dbgprint("write data 0x%lx at 0x%lx success\n", *(unsigned long *)data, pa);
 
     //unsigned long temp = ~(-1);
     //print_all_byte(data, size);
     memcpy((void *)mapAddr, data, size);
+    dbgprint("write data 0x%lx at 0x%lx success\n", *(unsigned long *)data, pa);
 
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
     {

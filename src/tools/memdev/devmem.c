@@ -101,7 +101,7 @@ int main(int argc, char **argv) {
 			fprintf(stderr, "Illegal data type '%c'.\n", access_type);
 			exit(2);
 	}
-    printf("Value at address 0x%X (%p): 0x%X\n", target, virt_addr, read_result);
+    printf("Value at address 0x%x (%p): 0x%x\n", target, virt_addr, read_result);
     fflush(stdout);
 
 	if(argc > 3)
@@ -121,7 +121,7 @@ int main(int argc, char **argv) {
 				read_result = *((unsigned long *) virt_addr);
 				break;
 		}
-		printf("Written 0x%X; readback 0x%X\n", writeval, read_result);
+		printf("Written 0x%x; readback 0x%x\n", writeval, read_result);
 		fflush(stdout);
 	}
 
