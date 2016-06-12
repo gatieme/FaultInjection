@@ -29,7 +29,7 @@ ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
         }
         default :
         {
-            out <<"physical : " <<m_addr;
+            out <<"physical : " <<memoryFault.m_addr;
         }
     }
 
@@ -100,7 +100,7 @@ bool MemoryFault::SetMode(std::string mode)
     }
     else
     {
-        int iRet = sscanf(this->m_location.c_str(), "%lx", &this->m_addr);
+        int iRet = sscanf(mode.c_str(), "%lx", &this->m_addr);
 
         if( iRet != 1 )
         {
