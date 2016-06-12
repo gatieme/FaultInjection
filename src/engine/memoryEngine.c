@@ -513,10 +513,8 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 	{
 		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
         //dbginfo("virt_addr 0x%lx in RAM is 0x%lx t .\n", va, pa);
+        pa &= 0x00000000ffffffff;
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
-        //dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, (pte_val(*pte) & PAGE_MASK & 0x0fffffffffffffff) );
-        //unsigned long kva = __va(pa); error
-        //dbginfo("data = 0x%lx", *(unsigned long *)kva);
     }
     else
     {

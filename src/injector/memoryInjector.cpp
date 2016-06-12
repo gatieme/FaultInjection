@@ -596,12 +596,12 @@ int Injector::injectFaults( int pid )
             //  the all point to the same virtual address which is not does not belong to the process PID
             //  so when we inject fault in this process we get "an process 8318 termed with signal 11(SIGSEGV)"
             //  SIGSEGV--Signal Segmentation Violation  https://en.wikipedia.org/wiki/Segmentation_fault
-			printf("code : [%lx, %lx]\n", procInfo.start_code, procInfo.end_code);
-			printf("data : [%lx, %lx]\n", procInfo.start_data, procInfo.end_data);
+			printf("code : [0x%lx, 0x%lx]\n", procInfo.start_code, procInfo.end_code);
+			printf("data : [0x%lx, 0x%lx]\n", procInfo.start_data, procInfo.end_data);
             //  heap从低地址向高地址扩展，做内存管理相对要简单些。
             //  stack从高地址向低地址扩展，这样栈空间的起始位置就能确定下来，动态的调整栈空间大小也不需要移动栈内的数据。
-			printf("heap : [%lx, %lx]\n", procInfo.start_brk, procInfo.brk);
-			printf("stack: [%lx, %lx]\n", procInfo.start_stack - STACK_SIZE, procInfo.start_stack);
+			printf("heap : [0x%lx, 0x%lx]\n", procInfo.start_brk, procInfo.brk);
+			printf("stack: [0x%lx, 0x%lx]\n", procInfo.start_stack - STACK_SIZE, procInfo.start_stack);
 //#endif
 			//debug
 			if(iRet == FAIL)
@@ -617,21 +617,21 @@ int Injector::injectFaults( int pid )
 				end_va = procInfo.end_code;
 
                 // add by gatieme @2016-01-23
-                dprintf("[%s, %d] %d --Inject TEXT segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
+                dprintf("[%s, %d] %d --Inject TEXT segment, [0x%lx, 0x%lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
             }
 			else if( this->m_memoryFaultTable[i].m_location == data_area )  //  data segment
 			{
 				start_va = procInfo.start_data;
 				end_va = procInfo.end_data;
 
-                dprintf("[%s, %d] %d --Inject DATA segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
+                dprintf("[%s, %d] %d --Inject DATA segment, [0x%lx, 0x%lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
 			}
 			else if( this->m_memoryFaultTable[i].m_location == stack_area ) // stack segment
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
 
-                dprintf("[%s, %d] %d --Inject STACK segment, [%lx, %lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
+                dprintf("[%s, %d] %d --Inject STACK segment, [0x%lx, 0x%lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
 			}
             /*
 			// add by gatieme

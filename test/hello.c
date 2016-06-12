@@ -21,7 +21,7 @@ int main()
 #define    PFN_PRESENT_FLAG  (((uint64_t)1)<<63)
 
 
-int mem_addr_vir2phy(unsigned long vir)
+unsigned long mem_addr_vir2phy(unsigned long vir)
 {
     int fd;
     int page_size=getpagesize();
@@ -67,30 +67,25 @@ int test()
 {
     int a = 10;
     int *p = NULL;
-    int *q = NULL;
     p = (int *)malloc(sizeof (int));
-    q = (int *)malloc(sizeof (int));
     *p = 1;
-    *q = 2;
-    int FD;
+    unsigned long p_phy_addr = mem_addr_vir2phy(p);
+    unsigned long a_phy_addr = mem_addr_vir2phy(&a);
     FILE* fp = fopen("hello.txt", "a+");
     int i = 0;
 
     while(1)
     {
-        printf("pid = %d, %d\n"
-               "a's addr = 0x%lx [%d]\n"
-               "p point addr = 0x%lx q addr = 0x%lx [0x%lx : %d]\n"
-               "q point addr = 0x%lx q addr = 0x%lx [0x%lx : %d]\n",
+        printf("pid = %d, %d, a's addr = 0x%lx [0x%lx : %d]\n"
+               "p point addr = 0x%lx q's addr = 0x%lx [0x%lx : %d]\n",
                 getpid( ), i,
-                &a, a,
-                &p, p, mem_addr_vir2phy(p), *p,
-                &q, q, mem_addr_vir2phy(q), *q);
-        fprintf(fp, "pid = %d, %d, "
-               ", hello a's addr = 0x%lx [%d]"
-               ", p point addr = 0x%lx q addr = 0x%lx [%d]"
-               ", q point addr = 0x%lx q addr = 0x%lx [%d]\n",
-                getpid( ), i, &a, a, &p, p, *p, &q, q, *q);
+                &a, a_phy_addr, a,
+                &p, p, p_phy_addr, *p);
+        fprintf(fp, "pid = %d, %d, a's addr = 0x%lx [0x%lx : %d]"
+               ", p point addr = 0x%lx q's addr = 0x%lx [0x%lx : %d]\n",
+                getpid( ), i,
+                &a, a_phy_addr, a,
+                &p, p, p_phy_addr, *p);
         fflush(fp);
         sleep(1);
         i++;

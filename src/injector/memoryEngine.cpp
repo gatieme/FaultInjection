@@ -346,9 +346,6 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	}
 
 
-#ifdef MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
-    pa >>= 32;
-#endif
 
     pa_base = pa & ~PAGE_MASK;
     pa_offset = pa - pa_base;
