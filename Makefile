@@ -1,4 +1,4 @@
-COMMIT="完善了makefile和目录结构(memfi+ptracefi)..."
+COMMIT="完善了脚本, 修复了ptrace的bug..."
 
 github:
 	git add -A

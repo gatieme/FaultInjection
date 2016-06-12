@@ -1,0 +1,2800 @@
+PT_F33-1_bit_flip-400 Test Num : 1
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126684 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[   2016-6-12 16:1:4]Process 19754 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 2
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126730 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[   2016-6-12 16:1:4]Process 19756 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 3
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126886 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19758 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 4
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126842 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19760 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 5
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126870 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19762 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 6
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126847 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19764 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 7
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19766 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 8
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126878 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19768 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 9
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126893 microseconds
+Fault on PT_F33(0X0 -> 0X4000000)
+[   2016-6-12 16:1:5]Process 19770 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 10
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126866 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19772 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 11
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126828 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19774 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 12
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126980 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19776 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 13
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126903 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19778 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 14
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19780 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 15
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19782 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 16
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126895 microseconds
+Fault on PT_F33(0X0 -> 0X20000000000)
+[   2016-6-12 16:1:6]Process 19784 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 17
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126874 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19786 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 18
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116835 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19788 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 19
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126864 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19790 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 20
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126883 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19792 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 21
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126927 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19794 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 22
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126876 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19796 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 23
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19798 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 24
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116889 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[   2016-6-12 16:1:7]Process 19800 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 25
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126920 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19802 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 26
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126882 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19804 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 27
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126974 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19806 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 28
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126899 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19808 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 29
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126936 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19810 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 30
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126898 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19812 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 31
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000)
+[   2016-6-12 16:1:8]Process 19814 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 32
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126867 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19816 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 33
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126868 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19818 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 34
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126861 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19820 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 35
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126877 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19822 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 36
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126890 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19824 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 37
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126959 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19826 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 38
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[   2016-6-12 16:1:9]Process 19828 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 39
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126926 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19830 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 40
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126854 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19832 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 41
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126904 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19834 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 42
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126891 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19836 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 43
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126890 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19838 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 44
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126974 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19840 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 45
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126919 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:10]Process 19842 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 46
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126927 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19844 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 47
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126842 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19846 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 48
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126891 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19848 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 49
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126933 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19850 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 50
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126883 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19852 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 51
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126855 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19854 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 52
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126890 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:11]Process 19856 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 53
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126925 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19858 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 54
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126904 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19860 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 55
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126896 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19862 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 56
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126886 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19864 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 57
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126883 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19866 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 58
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126856 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19868 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 59
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126889 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:12]Process 19870 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 60
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116890 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000)
+[  2016-6-12 16:1:13]Process 19872 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 61
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126912 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19874 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 62
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126905 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19876 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 63
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126941 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19878 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 64
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126829 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19880 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 65
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126919 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19882 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 66
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126946 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19884 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 67
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X2000000)
+[  2016-6-12 16:1:13]Process 19886 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 68
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126842 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19888 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 69
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126916 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19890 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 70
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19892 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 71
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126840 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19894 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 72
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126867 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19896 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 73
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126916 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19898 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 74
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126900 microseconds
+Fault on PT_F33(0X0 -> 0X1)
+[  2016-6-12 16:1:14]Process 19900 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 75
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126896 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19902 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 76
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126869 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19904 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 77
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126929 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19906 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 78
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19908 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 79
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126869 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19910 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 80
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116939 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19912 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 81
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126921 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:15]Process 19914 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 82
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126896 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19916 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 83
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126904 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19918 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 84
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19920 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 85
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126883 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19922 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 86
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126934 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19924 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 87
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19926 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 88
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126900 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:16]Process 19928 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 89
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126927 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19930 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 90
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126937 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19932 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 91
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126863 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19934 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 92
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126911 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19936 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 93
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19938 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 94
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126898 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19940 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 95
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+120913 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:17]Process 19942 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 96
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126863 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19944 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 97
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19946 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 98
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126905 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19948 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 99
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19950 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 100
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126853 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19952 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 101
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126932 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19954 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 102
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126935 microseconds
+Fault on PT_F33(0X0 -> 0X80000000000000)
+[  2016-6-12 16:1:18]Process 19956 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 103
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19958 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 104
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126875 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19960 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 105
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126908 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19962 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 106
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126928 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19964 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 107
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126855 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19966 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 108
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126880 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19968 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 109
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126903 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19970 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 110
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127004 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:19]Process 19972 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 111
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126867 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19974 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 112
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126880 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19976 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 113
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126932 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19978 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 114
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126915 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19980 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 115
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19982 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 116
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126889 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19984 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 117
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116911 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000000000)
+[  2016-6-12 16:1:20]Process 19986 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 118
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126920 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 19988 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 119
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116865 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 19990 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 120
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126876 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 19992 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 121
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126855 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 19994 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 122
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126885 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 19996 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 123
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126951 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 19998 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 124
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126890 microseconds
+Fault on PT_F33(0X0 -> 0X4000000000000)
+[  2016-6-12 16:1:21]Process 20000 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 125
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126904 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20002 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 126
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20004 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 127
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126891 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20006 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 128
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126889 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20008 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 129
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126905 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20010 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 130
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20012 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 131
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126911 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:22]Process 20014 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 132
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126911 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20016 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 133
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126879 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20018 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 134
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20020 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 135
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126861 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20022 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 136
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126906 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20024 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 137
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20026 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 138
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126955 microseconds
+Fault on PT_F33(0X0 -> 0X2000000000)
+[  2016-6-12 16:1:23]Process 20028 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 139
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126961 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20030 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 140
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126848 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20032 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 141
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126898 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20034 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 142
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20036 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 143
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126898 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20038 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 144
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126896 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20040 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 145
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126906 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:24]Process 20042 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 146
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126906 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20044 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 147
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20046 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 148
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20048 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 149
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20050 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 150
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20052 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 151
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126931 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20054 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 152
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126831 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20056 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 153
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126905 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000)
+[  2016-6-12 16:1:25]Process 20058 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 154
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126930 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20060 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 155
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126928 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20062 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 156
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126924 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20064 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 157
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126858 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20066 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 158
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126994 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20068 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 159
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126906 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20070 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 160
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126902 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000)
+[  2016-6-12 16:1:26]Process 20072 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 161
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126885 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20074 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 162
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126941 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20076 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 163
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126918 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20078 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 164
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116877 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20080 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 165
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126862 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20082 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 166
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126976 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20084 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 167
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X40000000000)
+[  2016-6-12 16:1:27]Process 20086 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 168
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20088 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 169
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20090 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 170
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126934 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20092 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 171
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20094 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 172
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126881 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20096 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 173
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126935 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20098 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 174
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126913 microseconds
+Fault on PT_F33(0X0 -> 0X1000000)
+[  2016-6-12 16:1:28]Process 20100 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 175
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20102 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 176
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116897 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20104 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 177
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126873 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20106 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 178
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126870 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20108 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 179
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20110 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 180
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20112 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 181
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:29]Process 20114 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 182
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126933 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20116 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 183
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126936 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20118 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 184
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126886 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20120 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 185
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126881 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20122 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 186
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126967 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20124 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 187
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126885 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20126 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 188
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X800000000)
+[  2016-6-12 16:1:30]Process 20128 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 189
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20130 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 190
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20132 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 191
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126909 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20134 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 192
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126855 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20136 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 193
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126827 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20138 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 194
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126903 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20140 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 195
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126933 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20142 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 196
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126883 microseconds
+Fault on PT_F33(0X0 -> 0X800000000000000)
+[  2016-6-12 16:1:31]Process 20144 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 197
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126952 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20146 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 198
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126920 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20148 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 199
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126918 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20150 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 200
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20152 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 201
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126948 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20154 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 202
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126920 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20156 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 203
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126926 microseconds
+Fault on PT_F33(0X0 -> 0X400000)
+[  2016-6-12 16:1:32]Process 20158 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 204
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126882 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20160 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 205
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126825 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20162 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 206
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126881 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20164 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 207
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126913 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20166 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 208
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126879 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20168 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 209
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126898 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20170 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 210
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126909 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:33]Process 20172 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 211
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126908 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20174 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 212
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126867 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20176 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 213
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126856 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20178 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 214
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126974 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20180 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 215
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126904 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20182 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 216
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126862 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20184 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 217
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126943 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[  2016-6-12 16:1:34]Process 20186 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 218
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126866 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20188 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 219
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20190 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 220
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126917 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20192 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 221
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126866 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20194 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 222
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20196 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 223
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126919 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20198 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 224
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X10000000)
+[  2016-6-12 16:1:35]Process 20200 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 225
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126866 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20202 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 226
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126909 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20204 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 227
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20206 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 228
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126892 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20208 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 229
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126837 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20210 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 230
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126907 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20212 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 231
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126993 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000000)
+[  2016-6-12 16:1:36]Process 20214 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 232
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126872 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20216 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 233
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126905 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20218 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 234
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126986 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20220 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 235
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126874 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20222 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 236
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126851 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20224 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 237
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126895 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20226 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 238
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126930 microseconds
+Fault on PT_F33(0X0 -> 0X4)
+[  2016-6-12 16:1:37]Process 20228 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 239
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126904 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20230 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 240
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126845 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20232 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 241
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126913 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20234 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 242
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126929 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20236 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 243
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20238 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 244
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126972 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20240 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 245
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126873 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20242 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 246
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126882 microseconds
+Fault on PT_F33(0X0 -> 0X8000000000)
+[  2016-6-12 16:1:38]Process 20244 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 247
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126934 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20246 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 248
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126878 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20248 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 249
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126909 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20250 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 250
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126902 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20252 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 251
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126996 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20254 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 252
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126868 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20256 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 253
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126852 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:39]Process 20258 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 254
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126938 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20260 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 255
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126926 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20262 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 256
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126878 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20264 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 257
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126847 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20266 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 258
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20268 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 259
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126923 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20270 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 260
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126852 microseconds
+Fault on PT_F33(0X0 -> 0X200000)
+[  2016-6-12 16:1:40]Process 20272 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 261
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126896 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20274 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 262
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126941 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20276 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 263
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126929 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20278 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 264
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20280 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 265
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126849 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20282 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 266
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126886 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20284 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 267
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126970 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:41]Process 20286 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 268
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126843 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20288 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 269
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126889 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20290 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 270
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126897 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20292 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 271
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126925 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20294 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 272
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20296 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 273
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126834 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20298 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 274
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126925 microseconds
+Fault on PT_F33(0X0 -> 0X20000000)
+[  2016-6-12 16:1:42]Process 20300 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 275
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126892 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20302 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 276
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126869 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20304 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 277
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126880 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20306 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 278
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126979 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20308 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 279
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126969 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20310 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 280
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126894 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20312 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 281
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X80000)
+[  2016-6-12 16:1:43]Process 20314 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 282
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20316 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 283
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126941 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20318 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 284
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+118567 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20320 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 285
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126919 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20322 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 286
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126973 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20324 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 287
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126939 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20326 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 288
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116880 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20328 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 289
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X4000)
+[  2016-6-12 16:1:44]Process 20330 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 290
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126961 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20332 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 291
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126919 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20334 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 292
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126834 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20336 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 293
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126870 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20338 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 294
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126871 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20340 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 295
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126903 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20342 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 296
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126867 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000)
+[  2016-6-12 16:1:45]Process 20344 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 297
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126959 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20346 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 298
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126907 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20348 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 299
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126945 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20350 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 300
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126854 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20352 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 301
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126879 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20354 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 302
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126886 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20356 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 303
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126883 microseconds
+Fault on PT_F33(0X0 -> 0X100000000000000)
+[  2016-6-12 16:1:46]Process 20358 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 304
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126876 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20360 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 305
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126917 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20362 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 306
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126915 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20364 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 307
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126907 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20366 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 308
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126906 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20368 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 309
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20370 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 310
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:47]Process 20372 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 311
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126942 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20374 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 312
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126863 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20376 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 313
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126895 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20378 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 314
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20380 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 315
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126915 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20382 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 316
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20384 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 317
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126923 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:48]Process 20386 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 318
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126915 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20388 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 319
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126922 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20390 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 320
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126877 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20392 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 321
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126943 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20394 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 322
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126810 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20396 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 323
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126864 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20398 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 324
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126869 microseconds
+Fault on PT_F33(0X0 -> 0X10)
+[  2016-6-12 16:1:49]Process 20400 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 325
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126856 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20402 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 326
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126928 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20404 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 327
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126935 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20406 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 328
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126913 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20408 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 329
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126899 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20410 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 330
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126900 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20412 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 331
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126921 microseconds
+Fault on PT_F33(0X0 -> 0X8)
+[  2016-6-12 16:1:50]Process 20414 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 332
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126805 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20416 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 333
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126859 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20418 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 334
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126893 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20420 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 335
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126926 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20422 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 336
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126954 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20424 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 337
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126857 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20426 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 338
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126878 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20428 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 339
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+116890 microseconds
+Fault on PT_F33(0X0 -> 0X80)
+[  2016-6-12 16:1:51]Process 20430 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 340
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126919 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20432 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 341
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126975 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20434 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 342
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126972 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20436 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 343
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127000 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20438 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 344
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126982 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20440 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 345
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20442 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 346
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126798 microseconds
+Fault on PT_F33(0X0 -> 0X20)
+[  2016-6-12 16:1:52]Process 20444 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 347
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126882 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20446 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 348
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127019 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20448 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 349
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126936 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20450 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 350
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127013 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20452 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 351
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126997 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20454 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 352
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126987 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20456 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 353
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126830 microseconds
+Fault on PT_F33(0X0 -> 0X40)
+[  2016-6-12 16:1:53]Process 20458 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 354
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126877 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20460 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 355
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126993 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20462 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 356
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126969 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20464 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 357
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126991 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20466 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 358
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127001 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20468 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 359
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126972 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20470 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 360
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126976 microseconds
+Fault on PT_F33(0X0 -> 0X10000000000000)
+[  2016-6-12 16:1:54]Process 20472 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 361
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126931 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20474 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 362
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126858 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20476 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 363
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126998 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20478 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 364
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127015 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20480 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 365
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126964 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20482 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 366
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126979 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20484 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 367
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127016 microseconds
+Fault on PT_F33(0X0 -> 0X800000)
+[  2016-6-12 16:1:55]Process 20486 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 368
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+127012 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20488 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 369
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126927 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20490 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 370
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20492 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 371
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126903 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20494 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 372
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126995 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20496 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 373
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126960 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20498 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 374
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126970 microseconds
+Fault on PT_F33(0X0 -> 0X400000000000)
+[  2016-6-12 16:1:56]Process 20500 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 375
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126833 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20502 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 376
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126884 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20504 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 377
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126950 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20506 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 378
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126889 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20508 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 379
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126893 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20510 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 380
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126914 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20512 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 381
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:57]Process 20514 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 382
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126862 microseconds
+Fault on PT_F33(0X0 -> 0X200000000000)
+[  2016-6-12 16:1:58]Process 20516 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 383
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126880 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20518 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 384
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126929 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20520 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 385
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126877 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20522 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 386
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126877 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20524 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 387
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126964 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20526 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 388
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126865 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20528 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 389
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126850 microseconds
+Fault on PT_F33(0X0 -> 0X8000)
+[  2016-6-12 16:1:58]Process 20530 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 390
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126873 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20532 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 391
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126924 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20534 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 392
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126895 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20536 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 393
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126854 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20538 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 394
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126979 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20540 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 395
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126889 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20542 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 396
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126887 microseconds
+Fault on PT_F33(0X0 -> 0X400)
+[  2016-6-12 16:1:59]Process 20544 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 397
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126862 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[   2016-6-12 16:2:0]Process 20546 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 398
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126849 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[   2016-6-12 16:2:0]Process 20548 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 399
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126597 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[   2016-6-12 16:2:0]Process 20550 termed with signal 4(SIGILL)
+PT_F33-1_bit_flip-400 Test Num : 400
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+126830 microseconds
+Fault on PT_F33(0X0 -> 0X1000000000000000)
+[   2016-6-12 16:2:0]Process 20552 termed with signal 4(SIGILL)

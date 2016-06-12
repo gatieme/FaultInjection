@@ -16,7 +16,7 @@ do
                 echo -e "$POS-$TYPE-$NUM Test Num : $i"
                 echo -e "$POS-$TYPE-$NUM Test Num : $i" >> $RESULT_DIR/$NUM/$POS/$POS-$TYPE-$NUM.log
 	            #../bin/hello &
-                ../bin/injector --step 100000 --mode microsecond --pos $POS --type $TYPE -e ../bin/hello >> $RESULT_DIR/$NUM/$POS/$POS-$TYPE-$NUM.log
+                ../bin/ptrace/injector --step 100000 --mode microsecond --pos $POS --type $TYPE -e ../bin/ptrace/hello >> $RESULT_DIR/$NUM/$POS/$POS-$TYPE-$NUM.log
             done
             python ./readlog.py -p $POS -t $TYPE -n $NUM >> $RESULT_DIR/$NUM/result.log
         done

@@ -1,0 +1,60 @@
+PT_F39-2_bit_1-400 Test Num : 1
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126456 microseconds
+Fault on PT_F39(0X0 -> 0X2002000000)
+[ 2016-6-12 16:38:42]Process 20530 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 2
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126629 microseconds
+Fault on PT_F39(0X0 -> 0X2002000000)
+[ 2016-6-12 16:38:42]Process 20532 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 3
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+116835 microseconds
+Fault on PT_F39(0X0 -> 0X2002000000)
+[ 2016-6-12 16:38:42]Process 20534 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 4
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126838 microseconds
+Fault on PT_F39(0X0 -> 0X4000100000)
+[ 2016-6-12 16:38:43]Process 20536 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 5
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126855 microseconds
+Fault on PT_F39(0X0 -> 0X4000100000)
+[ 2016-6-12 16:38:43]Process 20538 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 6
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126846 microseconds
+Fault on PT_F39(0X0 -> 0X4000100000)
+[ 2016-6-12 16:38:43]Process 20540 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 7
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126865 microseconds
+Fault on PT_F39(0X0 -> 0X4000100000)
+[ 2016-6-12 16:38:43]Process 20542 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 8
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)
+126895 microseconds
+Fault on PT_F39(0X0 -> 0X4000100000)
+[ 2016-6-12 16:38:43]Process 20544 termed with signal 4(SIGILL)
+PT_F39-2_bit_1-400 Test Num : 9
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F39(112), type = 2_bit_1(8)

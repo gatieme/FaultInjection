@@ -78,7 +78,7 @@ int ptraceGetReg( int pid, long offset, long &data )
     io.iov_base = &regs;
     io.iov_len = sizeof(regs);
 
-     data = ptrace( PTRACE_GETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
+    data = ptrace( PTRACE_GETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
 #else
 	//ptrace( PTRACE_POKEUSER, pid, offset, 20);
     data = ptrace( PTRACE_PEEKUSER, pid, offset, 0 );
@@ -100,41 +100,35 @@ int ptraceSetReg( int pid, long offset, long data )
 		return RT_FAIL;
 	}
 #ifdef BUILD_FOR_ARM
-    //  write here
-    if( offset >= PT_F32 || offset <= PT_F62)
-        offset = offset/65536;
+    //  write
     struct user_pt_regs regs;
     struct iovec io;
     io.iov_base = &regs;
     io.iov_len = sizeof(regs);
     ptrace(PTRACE_GETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
-    ptrace(PTRACE_POKETEXT, pid, regs.pc, data);
-    if ( offset >= PT_F32 || offset <= PT_F62)
-           offset = offset/65536;
-    ptrace(PTRACE_POKETEXT,pid,regs.regs[offset],data);
-    iRet = ptrace(PTRACE_SETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
-    if ( offset >= PT_F32 || offset <= PT_F62)
+    if ( offset >= PT_F32 && offset <= PT_F62)
     {
-           offset = offset/65536;
+           offset = offset/16;
            ptrace(PTRACE_POKETEXT,pid,regs.regs[offset],data);
            iRet = ptrace(PTRACE_SETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
     }
-    if ( offset == PT_F63)
+    else if ( offset == PT_F63)
     {
            ptrace(PTRACE_POKETEXT,pid,regs.pc,data);
            iRet = ptrace(PTRACE_SETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
     }
-    if ( offset == PT_F64)
+    else if ( offset == PT_F64)
     {
            ptrace(PTRACE_POKETEXT,pid,regs.sp,data);
            iRet = ptrace(PTRACE_SETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
     }
-    if ( offset == PT_F65)
+    else if ( offset == PT_F65)
     {
            ptrace(PTRACE_POKETEXT,pid,regs.pstate,data);
            iRet = ptrace(PTRACE_SETREGSET, pid, (void*)NT_PRSTATUS, (void*)&io);
     }
-
+    else
+           iRet = ptrace(PTRACE_POKEUSER, pid, offset, data);
 
 
 #else

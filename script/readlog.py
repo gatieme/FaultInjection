@@ -78,8 +78,10 @@ def getCode(positions, types, data) :
                 sigill += 1
             elif item[3] == "SIGSEGV"   :
                 sigsegv += 1
-            elif items[3] == "SIGBUS"   :
+            elif item[3] == "SIGBUS"   :
                 sigbus += 1
+            else :
+                print item[3]
         #print "SIGSEGV", sigsegv_exception
         #print "SIGILL", sigill_exception
         #print "SIGALRM", sigalrm_exception
