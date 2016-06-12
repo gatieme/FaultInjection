@@ -1,0 +1,116 @@
+Inject fault at 0x400000000000b841(physical:0x10010096b1b841)
+word 0(0x39871c0030 -> 0x0)
+[  2011-5-11 2:27:31]Process 4683 termed with signal 4(SIGILL)
+Inject fault at 0x400000000000ca55(physical:0x1001009bd6ca55)
+word 0(0x1c0000200000014 -> 0x0)
+4691 timeout
+[  2011-5-11 2:27:34]Process 4691 exited with code 0
+Inject fault at 0x4000000000005df7(physical:0x10010095d85df7)
+word 0(0xffc8780000020000 -> 0x0)
+4699 timeout
+[  2011-5-11 2:27:37]Process 4699 exited with code 0
+Inject fault at 0x400000000000af36(physical:0x1001009b90af36)
+word 0(0x4008804200f80010 -> 0x0)
+[  2011-5-11 2:27:37]Process 4707 termed with signal 4(SIGILL)
+Inject fault at 0x400000000000af36(physical:0x100100958daf36)
+word 0(0x4008804200f80010 -> 0x0)
+[  2011-5-11 2:27:38]Process 4715 termed with signal 4(SIGILL)
+Inject fault at 0x4000000000005d30(physical:0x10010095c35d30)
+word 0(0x10104600780b -> 0x0)
+4723 timeout
+[  2011-5-11 2:27:41]Process 4723 exited with code 0
+Inject fault at 0x4000000000018952(physical:0x10010095828952)
+word 0(0x9788ffffffffffff -> 0x0)
+4737 timeout
+[  2011-5-11 2:27:44]Process 4737 exited with code 0
+Inject fault at 0x40000000000193df(physical:0x10010095e293df)
+word 0(0x4ae61 -> 0x0)
+4745 timeout
+[  2011-5-11 2:27:47]Process 4745 exited with code 0
+Inject fault at 0x4000000000006d86(physical:0x10010095e26d86)
+word 0(0x4005c04200a00010 -> 0x0)
+4753 timeout
+[  2011-5-11 2:27:50]Process 4753 exited with code 0
+Inject fault at 0x4000000000010728(physical:0x1001009bb60728)
+word 0(0x547001c0000200 -> 0x0)
+4761 timeout
+[  2011-5-11 2:27:53]Process 4761 exited with code 0
+Inject fault at 0x400000000000f7a0(physical:0x1001009bb6f7a0)
+word 0(0x10101c00700b -> 0x0)
+4769 timeout
+[  2011-5-11 2:27:56]Process 4769 exited with code 0
+Inject fault at 0x40000000000024da(physical:0x100100961424da)
+word 0(0x780b008000600003 -> 0x0)
+4777 timeout
+[  2011-5-11 2:27:59]Process 4777 exited with code 0
+Inject fault at 0x400000000000f0b6(physical:0x1001009bdaf0b6)
+word 0(0x2030bc02f0 -> 0x0)
+4785 timeout
+[   2011-5-11 2:28:2]Process 4785 exited with code 0
+Inject fault at 0x4000000000001c98(physical:0x10010095841c98)
+word 0(0x48ffff5000000200 -> 0x0)
+4793 timeout
+[   2011-5-11 2:28:5]Process 4793 exited with code 0
+Inject fault at 0x4000000000015e1a(physical:0x10010095b15e1a)
+word 0(0x2020000073257325 -> 0x0)
+4801 timeout
+[   2011-5-11 2:28:8]Process 4801 exited with code 0
+Inject fault at 0x4000000000019002(physical:0x1001009bd49002)
+word 0(0xa5b8400000000000 -> 0x0)
+4809 timeout
+[  2011-5-11 2:28:11]Process 4809 exited with code 0
+Inject fault at 0x400000000001434b(physical:0x100100948f434b)
+word 0(0x1101158ff0de803 -> 0x0)
+4817 timeout
+[  2011-5-11 2:28:14]Process 4817 exited with code 0
+Inject fault at 0x4000000000019838(physical:0x1001009bd19838)
+word 0(0x3d20 -> 0x0)
+4825 timeout
+[  2011-5-11 2:28:17]Process 4825 exited with code 0
+Inject fault at 0x400000000000badf(physical:0x1001009bd1badf)
+word 0(0x241a03f078094a -> 0x0)
+4834 timeout
+[  2011-5-11 2:28:20]Process 4834 exited with code 0
+Inject fault at 0x4000000000017661(physical:0x10010096b97661)
+word 0(0x6261206f74202771 -> 0x0)
+4849 timeout
+[  2011-5-11 2:28:23]Process 4849 exited with code 0
+Inject fault at 0x4000000000005309(physical:0x10010096b95309)
+word 0(0xb00040000004200 -> 0x0)
+4857 timeout
+[  2011-5-11 2:28:26]Process 4857 exited with code 0
+Inject fault at 0x400000000000d207(physical:0x10010095b1d207)
+word 0(0x4200342003082 -> 0x0)
+4865 timeout
+[  2011-5-11 2:28:29]Process 4865 exited with code 0
+Inject fault at 0x4000000000002a01(physical:0x100100953b2a01)
+word 0(0x3c4100241402e078 -> 0x0)
+4873 timeout
+[  2011-5-11 2:28:32]Process 4873 exited with code 0
+Inject fault at 0x40000000000106eb(physical:0x1001009b7f06eb)
+word 0(0x2078090004000000 -> 0x0)
+4881 timeout
+[  2011-5-11 2:28:35]Process 4881 exited with code 0
+Inject fault at 0x400000000000b6bf(physical:0x1001009b7fb6bf)
+word 0(0xf000010000001000 -> 0x0)
+[  2011-5-11 2:28:36]Process 4889 termed with signal 4(SIGILL)
+Inject fault at 0x400000000000bb10(physical:0x1001009b9bbb10)
+word 0(0x7860000100000010 -> 0x0)
+4897 timeout
+[  2011-5-11 2:28:39]Process 4897 exited with code 0
+Inject fault at 0x4000000000013422(physical:0x100100960a3422)
+word 0(0x20387801e41803d0 -> 0x0)
+4905 timeout
+[  2011-5-11 2:28:42]Process 4905 exited with code 0
+Inject fault at 0x4000000000003e12(physical:0x100100960a3e12)
+word 0(0x80002001c8000000 -> 0x0)
+4913 timeout
+[  2011-5-11 2:28:45]Process 4913 exited with code 0
+Inject fault at 0x40000000000104ea(physical:0x10010096a204ea)
+word 0(0x301180307201e000 -> 0x0)
+4921 timeout
+[  2011-5-11 2:28:48]Process 4921 exited with code 0
+Inject fault at 0x4000000000002e70(physical:0x10010096a22e70)
+word 0(0x8870101020007009 -> 0x0)
+4929 timeout
+[  2011-5-11 2:28:51]Process 4929 exited with code 0

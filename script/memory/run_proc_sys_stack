@@ -1,0 +1,22 @@
+#!/bin/bash
+#################################################
+# 
+# Inject process text segment
+# Author: HIT CS HDMC team.
+# Create: 2010-6-17 10:14:33
+# Last modified: 2010-6-17 10:14:42
+# 
+#################################################
+if [ $# -ne 1 ]
+then echo 'Usage:'$0' number' && exit
+fi
+
+for (( i = 0; i < $1; i++))
+do
+	#\cp /usr/bin/top ./top 
+	#./memInjector -c conf/text -e ./top
+	echo -e "Test Num : $i"
+	./memInjector -c conf/stack -p 1
+	sleep 15
+done
+

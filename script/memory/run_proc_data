@@ -1,0 +1,20 @@
+#!/bin/bash
+#################################################
+# 
+# Inject into process data segment
+# Author: HIT CS HDMC team.
+# Create: 2010-6-17 10:17:45
+# Last modified: 2010-6-17 10:17:47
+# 
+#################################################
+if [ $# -ne 1 ]
+then echo 'Usage:'$0' number' && exit
+fi	
+
+for (( i = 0; i < $1; i++))
+do
+	echo -e "Test Num : $i"
+	\cp /usr/bin/top ./top 
+	./memInjector -c conf/data -e ./top
+done
+
