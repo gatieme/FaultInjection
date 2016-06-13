@@ -140,9 +140,9 @@ int main(int argc, char * argv[])
     {
   	    size = len;
     }
-
+    printf("before write, data at 0x%lx : 0x%lx\n", pa, *(unsigned long *)mapAddr);
     memcpy((void *)mapAddr, &data, size);
-
+    printf("after  write, data at 0x%lx : 0x%lx\n", pa, *(unsigned long *)mapAddr);
     if(munmap((void *)mapStart, PAGE_SIZE) != 0)
     {
   	    perror("Failed to munmap /dev/mem");

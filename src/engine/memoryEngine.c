@@ -499,6 +499,8 @@ struct task_struct * findTaskByPid(pid_t pid)
 	return NULL;
 }
 
+
+#define PHYADDR_MASK
 /*
 * convert a process's linear address to physical address
 */
@@ -512,8 +514,8 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 	if(pte != NULL)
 	{
 		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
-        //dbginfo("virt_addr 0x%lx in RAM is 0x%lx t .\n", va, pa);
-        pa &= 0x00000000ffffffff;
+        dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
+        pa &= 0x00000001ffffffff;
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
     }
     else
