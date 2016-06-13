@@ -18,7 +18,7 @@ iskthread: is_kernel_thread.o
 	gcc -o $@ $^
 
 hello:hello.o
-	gcc -o %@ $^
+	gcc -o $@ $^
 
 %.o:%.cpp
 	g++ -o $@ -c $^
