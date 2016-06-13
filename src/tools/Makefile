@@ -1,7 +1,7 @@
 BIN = ../../workspace/
 
 
-targets = getpinfo v2p readpa writepa iskthread
+targets = getpinfo v2p readpa writepa iskthread hello
 
 all:$(targets)
 	cd ./memdev && make
@@ -16,6 +16,9 @@ writepa: write_phy_mem.o
 	g++ -o $@ $^
 iskthread: is_kernel_thread.o
 	gcc -o $@ $^
+
+hello:hello.o
+	gcc -o %@ $^
 
 %.o:%.cpp
 	g++ -o $@ -c $^
