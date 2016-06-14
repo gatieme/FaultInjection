@@ -441,7 +441,7 @@ int getTaskInfo(int pid, pTaskMMInfo taskInfo)
 			perror("Failed to read /proc/memoryEngine/signal ");
 			return FAIL;
 		}
-        dbgprint("%s\n", buff);
+        //dbgprint("%s\n", buff);
 
 	} while(atoi(buff) != ACK_TASK_INFO);
 	close(procFile);
