@@ -222,7 +222,6 @@ int read_phy_mem(unsigned long pa, long *data)
     dprintf("use MMAP_INVALID_ARGUMENT\n");
     pa >>= 32;
 #endif
-    pa = 0x2e5dec430;
     pa_base = pa & ~PAGE_MASK;
     pa_offset = pa - pa_base;
     dprintf("=====================\n");
