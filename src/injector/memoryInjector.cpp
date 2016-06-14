@@ -686,8 +686,6 @@ int Injector::injectFaults( int pid )
             return RT_FAIL;
         }
 
-
-
         dprintf("[%s, %d]--iRet =%d, fauletype = %d\n", __FILE__, __LINE__, iRet, this->m_memoryFaultTable[i].m_faultType);
 		switch( this->m_memoryFaultTable[i].m_faultType )
 		{
