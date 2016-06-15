@@ -1598,3 +1598,17 @@ step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
 Fault on PT_F33(0X0 -> 0X80000000000)
 timeout now but the process is still running...
 [ 2016-6-12 20:11:37]Process 7545 termed with signal 14(SIGALRM)
+PT_F33-1_bit_flip-100 Test Num : 1
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+120718 microseconds
+Fault on PT_F33(0X0 -> 0X40000000)
+timeout now but the process is still running...
+[ 2016-6-15 16:15:21]Process 30314 termed with signal 14(SIGALRM)
+PT_F33-1_bit_flip-100 Test Num : 2
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F33(16), type = 1_bit_flip(3)
+124298 microseconds
+Fault on PT_F33(0X0 -> 0X200)
