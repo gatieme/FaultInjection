@@ -1,4 +1,4 @@
-RESULT_DIR=RESULT
+RESULT_DIR=./memory/RESULT
 mkdir -p $RESULT_DIR
 
 for (( NUM = 100; NUM <= 1000; NUM += 50 ))

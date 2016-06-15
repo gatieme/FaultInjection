@@ -1,0 +1,800 @@
+PT_F36-1_bit_flip-100 Test Num : 1
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+119289 microseconds
+Fault on PT_F36(0X0 -> 0X10000)
+timeout now but the process is still running...
+[ 2016-6-12 21:40:44]Process 11136 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 2
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126033 microseconds
+Fault on PT_F36(0X0 -> 0X80000)
+timeout now but the process is still running...
+[ 2016-6-12 21:40:48]Process 11138 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 3
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125682 microseconds
+Fault on PT_F36(0X0 -> 0X8000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:40:51]Process 11140 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 4
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125745 microseconds
+Fault on PT_F36(0X0 -> 0X200000)
+timeout now but the process is still running...
+[ 2016-6-12 21:40:54]Process 11142 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 5
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115705 microseconds
+Fault on PT_F36(0X0 -> 0X40000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:40:57]Process 11144 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 6
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125865 microseconds
+Fault on PT_F36(0X0 -> 0X1000)
+timeout now but the process is still running...
+[  2016-6-12 21:41:0]Process 11146 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 7
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125704 microseconds
+Fault on PT_F36(0X0 -> 0X80000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:41:3]Process 11148 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 8
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125816 microseconds
+Fault on PT_F36(0X0 -> 0X20)
+timeout now but the process is still running...
+[  2016-6-12 21:41:6]Process 11150 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 9
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125938 microseconds
+Fault on PT_F36(0X0 -> 0X10000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:10]Process 11152 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 10
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125317 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:13]Process 11154 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 11
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125812 microseconds
+Fault on PT_F36(0X0 -> 0X8000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:16]Process 11156 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 12
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125828 microseconds
+Fault on PT_F36(0X0 -> 0X10000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:19]Process 11158 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 13
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126008 microseconds
+Fault on PT_F36(0X0 -> 0X10000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:22]Process 11160 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 14
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125883 microseconds
+Fault on PT_F36(0X0 -> 0X2000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:25]Process 11162 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 15
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126063 microseconds
+Fault on PT_F36(0X0 -> 0X1000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:29]Process 11164 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 16
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125801 microseconds
+Fault on PT_F36(0X0 -> 0X8000000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:32]Process 11166 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 17
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125811 microseconds
+Fault on PT_F36(0X0 -> 0X2000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:35]Process 11168 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 18
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125986 microseconds
+Fault on PT_F36(0X0 -> 0X20000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:38]Process 11170 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 19
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125694 microseconds
+Fault on PT_F36(0X0 -> 0X2000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:41]Process 11172 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 20
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125766 microseconds
+Fault on PT_F36(0X0 -> 0X40000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:44]Process 11174 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 21
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125845 microseconds
+Fault on PT_F36(0X0 -> 0X400000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:47]Process 11176 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 22
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125910 microseconds
+Fault on PT_F36(0X0 -> 0X4)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:51]Process 11178 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 23
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125860 microseconds
+Fault on PT_F36(0X0 -> 0X1000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:54]Process 11180 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 24
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125879 microseconds
+Fault on PT_F36(0X0 -> 0X8)
+timeout now but the process is still running...
+[ 2016-6-12 21:41:57]Process 11182 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 25
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125815 microseconds
+Fault on PT_F36(0X0 -> 0X1000000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:42:0]Process 11184 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 26
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125880 microseconds
+Fault on PT_F36(0X0 -> 0X40000)
+timeout now but the process is still running...
+[  2016-6-12 21:42:3]Process 11186 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 27
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125828 microseconds
+Fault on PT_F36(0X0 -> 0X1000000)
+timeout now but the process is still running...
+[  2016-6-12 21:42:6]Process 11188 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 28
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125956 microseconds
+Fault on PT_F36(0X0 -> 0X200)
+timeout now but the process is still running...
+[  2016-6-12 21:42:9]Process 11190 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 29
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125781 microseconds
+Fault on PT_F36(0X0 -> 0X100)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:13]Process 11192 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 30
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125907 microseconds
+Fault on PT_F36(0X0 -> 0X1000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:16]Process 11194 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 31
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125810 microseconds
+Fault on PT_F36(0X0 -> 0X8000000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:19]Process 11196 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 32
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125890 microseconds
+Fault on PT_F36(0X0 -> 0X8000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:22]Process 11198 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 33
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125851 microseconds
+Fault on PT_F36(0X0 -> 0X200)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:25]Process 11200 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 34
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125847 microseconds
+Fault on PT_F36(0X0 -> 0X200000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:28]Process 11202 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 35
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126045 microseconds
+Fault on PT_F36(0X0 -> 0X40000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:32]Process 11204 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 36
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126038 microseconds
+Fault on PT_F36(0X0 -> 0X1)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:35]Process 11206 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 37
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115912 microseconds
+Fault on PT_F36(0X0 -> 0X800)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:38]Process 11208 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 38
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125689 microseconds
+Fault on PT_F36(0X0 -> 0X8)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:41]Process 11210 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 39
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125839 microseconds
+Fault on PT_F36(0X0 -> 0X800000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:44]Process 11212 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 40
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125973 microseconds
+Fault on PT_F36(0X0 -> 0X4000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:47]Process 11214 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 41
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125811 microseconds
+Fault on PT_F36(0X0 -> 0X20000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:50]Process 11216 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 42
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125848 microseconds
+Fault on PT_F36(0X0 -> 0X800)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:54]Process 11218 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 43
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125836 microseconds
+Fault on PT_F36(0X0 -> 0X20)
+timeout now but the process is still running...
+[ 2016-6-12 21:42:57]Process 11220 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 44
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116010 microseconds
+Fault on PT_F36(0X0 -> 0X8000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:43:0]Process 11222 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 45
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115750 microseconds
+Fault on PT_F36(0X0 -> 0X8)
+timeout now but the process is still running...
+[  2016-6-12 21:43:3]Process 11224 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 46
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115963 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:43:6]Process 11226 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 47
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116024 microseconds
+Fault on PT_F36(0X0 -> 0X100000000)
+timeout now but the process is still running...
+[  2016-6-12 21:43:9]Process 11228 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 48
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115992 microseconds
+Fault on PT_F36(0X0 -> 0X10000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:12]Process 11230 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 49
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115911 microseconds
+Fault on PT_F36(0X0 -> 0X80)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:16]Process 11232 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 50
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125346 microseconds
+Fault on PT_F36(0X0 -> 0X100000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:19]Process 11234 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 51
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125912 microseconds
+Fault on PT_F36(0X0 -> 0X100000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:22]Process 11236 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 52
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125961 microseconds
+Fault on PT_F36(0X0 -> 0X40000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:25]Process 11238 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 53
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115942 microseconds
+Fault on PT_F36(0X0 -> 0X8000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:28]Process 11240 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 54
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116068 microseconds
+Fault on PT_F36(0X0 -> 0X400000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:31]Process 11242 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 55
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116032 microseconds
+Fault on PT_F36(0X0 -> 0X800)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:34]Process 11244 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 56
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126045 microseconds
+Fault on PT_F36(0X0 -> 0X8000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:38]Process 11246 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 57
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125930 microseconds
+Fault on PT_F36(0X0 -> 0X200)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:41]Process 11248 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 58
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125400 microseconds
+Fault on PT_F36(0X0 -> 0X2000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:44]Process 11250 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 59
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125816 microseconds
+Fault on PT_F36(0X0 -> 0X10000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:47]Process 11252 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 60
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125847 microseconds
+Fault on PT_F36(0X0 -> 0X80000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:50]Process 11254 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 61
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125931 microseconds
+Fault on PT_F36(0X0 -> 0X40)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:53]Process 11256 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 62
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115980 microseconds
+Fault on PT_F36(0X0 -> 0X100000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:43:56]Process 11258 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 63
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115926 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:44:0]Process 11260 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 64
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115998 microseconds
+Fault on PT_F36(0X0 -> 0X200000000)
+timeout now but the process is still running...
+[  2016-6-12 21:44:3]Process 11262 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 65
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115819 microseconds
+Fault on PT_F36(0X0 -> 0X4000)
+timeout now but the process is still running...
+[  2016-6-12 21:44:6]Process 11264 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 66
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116025 microseconds
+Fault on PT_F36(0X0 -> 0X4000000)
+timeout now but the process is still running...
+[  2016-6-12 21:44:9]Process 11266 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 67
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115876 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:12]Process 11268 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 68
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116037 microseconds
+Fault on PT_F36(0X0 -> 0X10000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:15]Process 11270 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 69
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116337 microseconds
+Fault on PT_F36(0X0 -> 0X800000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:18]Process 11272 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 70
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116032 microseconds
+Fault on PT_F36(0X0 -> 0X2000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:22]Process 11274 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 71
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115964 microseconds
+Fault on PT_F36(0X0 -> 0X100000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:25]Process 11276 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 72
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115978 microseconds
+Fault on PT_F36(0X0 -> 0X400)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:28]Process 11278 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 73
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115866 microseconds
+Fault on PT_F36(0X0 -> 0X100000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:31]Process 11280 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 74
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116288 microseconds
+Fault on PT_F36(0X0 -> 0X200000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:34]Process 11282 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 75
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116075 microseconds
+Fault on PT_F36(0X0 -> 0X100000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:37]Process 11284 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 76
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116235 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:40]Process 11286 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 77
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115974 microseconds
+Fault on PT_F36(0X0 -> 0X40000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:44]Process 11288 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 78
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125878 microseconds
+Fault on PT_F36(0X0 -> 0X20000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:47]Process 11290 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 79
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125822 microseconds
+Fault on PT_F36(0X0 -> 0X8000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:50]Process 11292 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 80
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125882 microseconds
+Fault on PT_F36(0X0 -> 0X400000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:53]Process 11294 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 81
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125958 microseconds
+Fault on PT_F36(0X0 -> 0X400000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:56]Process 11296 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 82
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125986 microseconds
+Fault on PT_F36(0X0 -> 0X2000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:44:59]Process 11298 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 83
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115361 microseconds
+Fault on PT_F36(0X0 -> 0X1000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:45:2]Process 11300 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 84
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115838 microseconds
+Fault on PT_F36(0X0 -> 0X40000)
+timeout now but the process is still running...
+[  2016-6-12 21:45:6]Process 11317 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 85
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+115999 microseconds
+Fault on PT_F36(0X0 -> 0X1000000000000000)
+timeout now but the process is still running...
+[  2016-6-12 21:45:9]Process 11319 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 86
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125894 microseconds
+Fault on PT_F36(0X0 -> 0X2000000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:12]Process 11321 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 87
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125830 microseconds
+Fault on PT_F36(0X0 -> 0X10)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:15]Process 11323 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 88
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125836 microseconds
+Fault on PT_F36(0X0 -> 0X100)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:18]Process 11325 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 89
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125741 microseconds
+Fault on PT_F36(0X0 -> 0X800000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:21]Process 11327 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 90
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125880 microseconds
+Fault on PT_F36(0X0 -> 0X1000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:24]Process 11329 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 91
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125787 microseconds
+Fault on PT_F36(0X0 -> 0X20000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:28]Process 11331 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 92
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125794 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:31]Process 11333 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 93
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125920 microseconds
+Fault on PT_F36(0X0 -> 0X400000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:34]Process 11335 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 94
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+126097 microseconds
+Fault on PT_F36(0X0 -> 0X20000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:37]Process 11337 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 95
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125800 microseconds
+Fault on PT_F36(0X0 -> 0X4000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:40]Process 11339 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 96
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116181 microseconds
+Fault on PT_F36(0X0 -> 0X80000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:43]Process 11341 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 97
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125902 microseconds
+Fault on PT_F36(0X0 -> 0X40000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:46]Process 11343 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 98
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125928 microseconds
+Fault on PT_F36(0X0 -> 0X800000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:50]Process 11345 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 99
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+116670 microseconds
+Fault on PT_F36(0X0 -> 0X4000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:53]Process 11347 termed with signal 14(SIGALRM)
+PT_F36-1_bit_flip-100 Test Num : 100
+Inject into an exculetable program ../bin/ptrace/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F36(64), type = 1_bit_flip(3)
+125976 microseconds
+Fault on PT_F36(0X0 -> 0X2000000000000000)
+timeout now but the process is still running...
+[ 2016-6-12 21:45:56]Process 11349 termed with signal 14(SIGALRM)

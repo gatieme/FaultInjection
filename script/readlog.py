@@ -69,7 +69,7 @@ def getCode(positions, types, data) :
 
         #print myItems
         for item in myItems     :
-            print item
+            #print item
             if item[3] == "TIMEOUT":
                 non += 1
             elif item[3] == "SIGALRM"   :
@@ -113,13 +113,14 @@ if __name__ == "__main__" :
         exit(0)
 
     parser = argparse.ArgumentParser( )
+    parser.add_argument("-u", "--user", dest = "user", help = "Who you want to read...")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
     parser.add_argument("-p", "--position", dest = "positions", help = "The file you want to read...")
     parser.add_argument("-t", "--type", dest = "types", help = "The file you want to read...")
     parser.add_argument("-n", "--num", dest = "numbers", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    resultfile = "./RESULT/" + args.numbers + "/" +args.positions + "/" + args.positions + "-" + args.types + "-" + args.numbers + ".log"
+    resultfile = "./" + args.user + "/RESULT/" + args.numbers + "/" +args.positions + "/" + args.positions + "-" + args.types + "-" + args.numbers + ".log"
 
     #print resultfile
     resultdata = readFile(resultfile)
