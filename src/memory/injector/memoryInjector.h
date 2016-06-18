@@ -60,6 +60,7 @@ public  :
 	static void report(int signo);
 	/// static void restore(int signo);
 	void timeout(int sec,void(*func)(int));
+    static void handleSigchld(int signo);
 
 protected :
 

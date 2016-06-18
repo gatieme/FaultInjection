@@ -1072,7 +1072,8 @@ void Injector::cleanup(void)
 	int iRet = kill(childProcess, 0);
 	if(iRet != -1)
 	{
-		iRet = kill(childProcess, SIGTERM);
+		iRet = kill(childProcess, SIGKILL);
+		//iRet = kill(childProcess, SIGTERM);
 		if(iRet < 0)
 		{
 			perror("kill");
@@ -1091,6 +1092,7 @@ void Injector::report(int signo)
 #endif
     cleanup( );
     writeResult(childProcess, TIME_OUT, 0);
+    handleSigchld(SIGCHLD);
     exit(0);
 
     //iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
@@ -1110,4 +1112,21 @@ void Injector::timeout(int sec, void(*func)(int))
 {
 	signal(SIGALRM, func);
 	alarm(sec);
+}
+
+void Injector::handleSigchld(int signo)
+{
+    pid_t   pid;
+    int     state = -1;
+
+    //cout <<__LINE__ <<"waitpid..." <<endl;
+    while((pid = waitpid(-1, &state, WNOHANG)) < 0)
+    {
+        cout <<__LINE__ <<"waitpid..." <<endl;
+    }
+    //cout <<__LINE__ <<"waitpid..." <<endl;
+    //cout <<"parent pid = " <<getpid( ) <<endl;
+    //cout <<"parent ppid = " <<getppid( ) <<endl;;
+    //cout <<"child process exited with status" << state <<endl;
+    return;
 }
