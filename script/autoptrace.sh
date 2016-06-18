@@ -1,7 +1,7 @@
 RESULT_DIR=./ptrace/RESULT
 mkdir -p $RESULT_DIR
 
-for (( NUM = 10; NUM <= 10; NUM += 50 ))
+for (( NUM = 5; NUM <= 10; NUM += 5 ))
 do
     mkdir -p $RESULT_DIR/$NUM
     echo "positions        types         non   sigalrm   sigsegv   sigill   sigbus" >> $RESULT_DIR/$NUM/result.log
