@@ -148,7 +148,7 @@ using namespace std;
 
 
 
-#define DEBUG
+//#define DEBUG
 //#define MMAP_INVALID_ARGUMENT /*    invalid argument    when mmap   */
 
 

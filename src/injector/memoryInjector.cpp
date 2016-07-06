@@ -596,12 +596,12 @@ int Injector::injectFaults( int pid )
             //  the all point to the same virtual address which is not does not belong to the process PID
             //  so when we inject fault in this process we get "an process 8318 termed with signal 11(SIGSEGV)"
             //  SIGSEGV--Signal Segmentation Violation  https://en.wikipedia.org/wiki/Segmentation_fault
-			printf("code : [0x%lx, 0x%lx]\n", procInfo.start_code, procInfo.end_code);
-			printf("data : [0x%lx, 0x%lx]\n", procInfo.start_data, procInfo.end_data);
+			dprintf("code : [0x%lx, 0x%lx]\n", procInfo.start_code, procInfo.end_code);
+			dprintf("data : [0x%lx, 0x%lx]\n", procInfo.start_data, procInfo.end_data);
             //  heap从低地址向高地址扩展，做内存管理相对要简单些。
             //  stack从高地址向低地址扩展，这样栈空间的起始位置就能确定下来，动态的调整栈空间大小也不需要移动栈内的数据。
-			printf("heap : [0x%lx, 0x%lx]\n", procInfo.start_brk, procInfo.brk);
-			printf("stack: [0x%lx, 0x%lx]\n", procInfo.start_stack - STACK_SIZE, procInfo.start_stack);
+			dprintf("heap : [0x%lx, 0x%lx]\n", procInfo.start_brk, procInfo.brk);
+			dprintf("stack: [0x%lx, 0x%lx]\n", procInfo.start_stack - STACK_SIZE, procInfo.start_stack);
 //#endif
 			//debug
 			if(iRet == FAIL)

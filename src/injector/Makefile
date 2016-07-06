@@ -27,7 +27,7 @@ all:main.o  memoryFault.o memoryInjectorTool.o memoryInjector.o memoryEngine.o  
 
 install:
 	cp ./memInjector $(BIN)/memInjector
-	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+	cp $(ENGINE)/memory-engine.ko $(BIN)/memory-engine.ko
 
 debug :
 	make clean

@@ -683,6 +683,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
         printk(KERN_INFO"pte not in RAM.\n");
         return NULL;
     }
+
     pte_unmap(pte);
     return pte;
 }
