@@ -32,5 +32,5 @@ install :
 github:
 	cd $(ROOT)/.. 
 	git add -A
-	git commit -m @$(COMMIT)
+	git commit -m "$(COMMIT)"
 	git push origin master
