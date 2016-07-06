@@ -1,4 +1,5 @@
-DIRS=src
+SRC=src
+DIRS=$(SRC)
 
 
 all:
@@ -16,3 +17,6 @@ install :
 #	done
 	cp $(INJECTOR)/memInjector $(BIN)/memInjector
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+
+github:
+	cd $(SRC) && make github
