@@ -30,4 +30,7 @@ install :
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
 
 github:
-	cd .. && git add -A && git commit -m $(COMMIT) && git push origin master
+	cd .. 
+	git add -A
+	git commit -m $(COMMIT)
+	git push origin master
