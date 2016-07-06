@@ -30,7 +30,7 @@ install :
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
 
 github:
-	make clean && echo "clean all target"
+	make clean 
 	cd $(ROOT)/.. 
 	git add -A
 	git commit -m $(GITHUB_COMMIT)

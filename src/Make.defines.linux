@@ -10,9 +10,13 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
+
+#  github config
 GITHUB_COMMIT="$(COMMIT)"
 
 
+
+#  complier config
 CC=gcc
 COMPILE.c=$(CC) $(CFLAGS) $(CPPFLAGS) -c
 LINK.c=$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)
@@ -24,6 +28,7 @@ RANLIB=echo
 AR=ar
 AWK=awk
 LIBAPUE=
+ 
 
 
 # Common temp files to delete from each directory.
