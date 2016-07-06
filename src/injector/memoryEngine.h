@@ -25,7 +25,10 @@ typedef struct procMMInfo
 	unsigned long shared;	    //共享内存映射
 	unsigned long exec;		    //可执行内存映射
 	unsigned long stack;	    //用户堆栈
-	unsigned long reserve;      //保留区
+#if 0
+//#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
+    unsigned long reserve;//保留区
+#endif
 
 	unsigned long def_flags;    //
 	unsigned long nr_ptes;	    //

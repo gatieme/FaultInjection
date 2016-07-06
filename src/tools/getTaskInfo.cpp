@@ -20,9 +20,11 @@ typedef struct procMMInfo
 	unsigned long locked;	//被锁住而无法换出的页面数
 	unsigned long shared;	//共享内存映射
 	unsigned long exec;		//可执行内存映射
-	unsigned long stack;	//用户堆栈
-	unsigned long reserve;//保留区
-
+    unsigned long stack;	//用户堆栈
+#if 0
+//#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
+    unsigned long reserve;//保留区
+#endif
 	unsigned long def_flags;//
 	unsigned long nr_ptes;	//
 
@@ -147,9 +149,8 @@ int getTaskInfo(int pid)
 	sprintf(buff,"echo %d > /proc/memoryEngine/ctl", REQUEST_TASK_INFO);
     printf("%s\n", buff);
 	system(buff);
-
     //wait for ack signal
-	procFile = open("/proc/memoryEngine/signal",O_RDONLY);
+	procFile = open("/proc/memoryEngine/signal", O_RDONLY);
 	if(procFile == -1)
 	{
 		perror("Failed to open /proc/memoryEngine/signal");
