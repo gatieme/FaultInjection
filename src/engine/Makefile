@@ -9,6 +9,8 @@
 # 	Use "make remove" to remove the module out of kernel.
 #
 ROOT=..
+#PLATFORM=$(shell $(ROOT)/systype.sh)
+#include $(ROOT)/Make.defines.$(PLATFORM)
 
 
 ifneq ($(KERNELRELEASE),)
