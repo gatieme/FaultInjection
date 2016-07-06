@@ -5,6 +5,8 @@
 # Last modified: 2010-6-16 15:49:14
 #
 ROOT=..
+ENGINE=$(ROOT)/..
+
 PLATFORM=$(shell $(ROOT)/systype.sh)
 include $(ROOT)/Make.defines.$(PLATFORM)
 
@@ -46,6 +48,14 @@ clean:
 	rm -rf $(EXE)
 
 
+github:
+	cd $(ROOT) && make github
+
+insmod:
+	cd $(ENGINE) && make insmod
+
+reinsmod:
+	cd $(ENGINE) && make reinsmod
 
 #  Modify by gatieme for  **stack smashing detected** when execute.
 #  http://blog.csdn.net/qustdjx/article/details/8022474

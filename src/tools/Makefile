@@ -1,4 +1,6 @@
-BIN = ../../workspace/
+ROOT=..
+ENGINE=$(ROOT)/engine
+BIN = $(ROOT)/../workspace
 
 
 targets = getpinfo v2p readpa writepa iskthread hello
@@ -35,3 +37,12 @@ install:
 clean:
 	rm -rf *.o
 	rm -rf $(targets)
+
+github:
+	cd $(ROOT) && make github
+
+insmod:
+	cd $(ENGINE) && make insmod
+
+reinsmod:
+	cd $(ENGINE) && make reinsmod
