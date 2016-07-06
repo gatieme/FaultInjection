@@ -28,3 +28,6 @@ install :
 #	done
 	cp $(INJECTOR)/memInjector $(BIN)/memInjector
 	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+
+github:
+	cd .. && git add -A && git commit -m $(COMMIT) && git push origin master

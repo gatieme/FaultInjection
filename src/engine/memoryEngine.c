@@ -131,7 +131,7 @@ void do_request(void)
         if( task != NULL )
 		{
 			getTaskInfo(task, taskInfo, sizeof(taskInfo));
-		    dbginfo("%s", taskInfo);
+		    //dbginfo("%s", taskInfo);
         }
         else
 		{
@@ -344,20 +344,21 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
     //  struct vm_area_struct结构体中flag标志使用值 VM_RESERVED -=> (VM_DONTEXPAND | VM_DONTDUMP)
     //
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->reserved_vm, DELIMITER);undbginfo("%lx%c", pMM->reserved_vm, DELIMITER);
+#else
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", 0x00, DELIMITER);undbginfo("0x00", 0x00, DELIMITER);
 #endif
-
     safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->def_flags, DELIMITER);  undbginfo("%lx%c", pMM->def_flags, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->nr_ptes, DELIMITER);    undbginfo("%lx%c", pMM->nr_ptes, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER); undbginfo("%lx%c", pMM->start_code, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_code, DELIMITER);   undbginfo("%lx%c", pMM->end_code, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_data, DELIMITER); undbginfo("%lx%c", pMM->start_data, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_data, DELIMITER);   undbginfo("%lx%c", pMM->end_data, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_code, DELIMITER); dbginfo("stack code  : %lx%c", pMM->start_code, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_code, DELIMITER);   dbginfo("end code    : %lx%c", pMM->end_code, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_data, DELIMITER); dbginfo("start_data  : %lx%c", pMM->start_data, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->end_data, DELIMITER);   dbginfo("end_data    : %lx%c", pMM->end_data, DELIMITER);
 
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_brk, DELIMITER);  undbginfo("%lx%c", pMM->start_brk, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->brk, DELIMITER);        undbginfo("%lx%c", pMM->brk, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_stack, DELIMITER);undbginfo("%lx%c", pMM->start_stack, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_brk, DELIMITER);  dbginfo("start_brk   : %lx%c", pMM->start_brk, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->brk, DELIMITER);        dbginfo("brk         : %lx%c", pMM->brk, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_stack, DELIMITER);dbginfo("start stack :%lx%c", pMM->start_stack, DELIMITER);
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_start, DELIMITER);  undbginfo("%lx%c", pMM->arg_start, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_end, DELIMITER);    undbginfo("%lx%c", pMM->arg_end, DELIMITER);
@@ -514,12 +515,12 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 	if(pte != NULL)
 	{
 		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
-        pa &= 0x00000000ffffffff;
+        pa &= 0x00000001ffffffff;
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
     }
     else
     {
-        dbginfo("virtual : 0x%lx to physical address error\n", va);
+        //dbginfo("virtual : 0x%lx to physical address error\n", va);
     }
     //printk("==========0x%lx\n", virt_to_phys(va));
 	return pa;

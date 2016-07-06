@@ -25,10 +25,9 @@ typedef struct procMMInfo
 	unsigned long shared;	    //共享内存映射
 	unsigned long exec;		    //可执行内存映射
 	unsigned long stack;	    //用户堆栈
-#if 0
 //#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
     unsigned long reserve;//保留区
-#endif
+//#endif
 
 	unsigned long def_flags;    //
 	unsigned long nr_ptes;	    //
@@ -51,7 +50,8 @@ typedef struct procMMInfo
 #define FAIL	1
 
 
-#define PAGE_SIZE 4096UL    // or 65536
+//#define PAGE_SIZE 4096UL   // or 65536
+#define PAGE_SIZE 65536
 #define PAGE_MASK (PAGE_SIZE - 1)
 
 #define MAX_LINE	PAGE_SIZE
