@@ -3,14 +3,15 @@ PLATFORM=$(shell $(ROOT)/systype.sh)
 include $(ROOT)/Make.defines.$(PLATFORM)
 
 
-
-DIRS=injector engine tools
-
-
+# director config
 BIN=$(ROOT)/../workspace
 ENGINE=$(ROOT)/engine
 INJECTOR=$(ROOT)/injector
 TOOLS=$(ROOT)/tools
+
+DIRS=$(ENGINE) $(INJECTOR) $(TOOLS)
+
+
 
 all:
 	for i in $(DIRS); do \
@@ -35,3 +36,9 @@ github:
 	git add -A
 	git commit -m $(GITHUB_COMMIT)
 	git push origin master
+
+insmod:
+	cd $(ENGINE)&& make insmod
+
+reinsmod:
+	cd $(ENGINE)&& make reinsmod

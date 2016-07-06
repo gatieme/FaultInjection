@@ -8,7 +8,7 @@
 # 	Use "make install" to load it into kernel.
 # 	Use "make remove" to remove the module out of kernel.
 #
-
+ROOT=..
 
 
 ifneq ($(KERNELRELEASE),)
@@ -41,7 +41,7 @@ modules:
 modules_install:
 	make -C $(KERNELDIR) M=$(PWD) modules_install
 
-clean:
+
 
 insmod:
 	sudo insmod $(MODULE_NAME).ko
@@ -49,6 +49,9 @@ insmod:
 reinsmod:
 	sudo rmmod $(MODULE_NAME)
 	sudo insmod $(MODULE_NAME).ko
+
+github:
+	cd $(ROOT) && make github
 
 rmmod:
 	sudo rmmod $(MODULE_NAME)
@@ -59,6 +62,7 @@ test :
 clean:
 	make -C $(KERNELDIR) M=$(PWD) clean
 	rm -f modules.order Module.symvers Module.markers
+
 .PHNOY:
 	modules modules_install clean
 
