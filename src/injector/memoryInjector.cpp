@@ -435,7 +435,7 @@ int Injector::startInjection( void )
 
 		do
         {
-			iRet = procMonitor( this->m_targetPid,data );
+			iRet = procMonitor( this->m_targetPid, data );
 
             if( iRet == RT_FAIL ) { return RT_FAIL; }
 
@@ -445,7 +445,6 @@ int Injector::startInjection( void )
 		if( iRet != STOP )
 		{
 			writeResult( this->m_targetPid, iRet, data );	//exit or term
-
             return RT_FAIL;
 		}
 		//  进行故障注入
@@ -460,40 +459,11 @@ int Injector::startInjection( void )
 		ptraceCont( this->m_targetPid );
 
 		//  跟踪继续执行后的子进程
-		while( 1 )
-		{
-			iRet = procMonitor( this->m_targetPid, data );
-			if( iRet == RT_FAIL )
-            {
-                return RT_FAIL;
-            }
-
-			if( iRet == RUN )
-			{
-                //dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is still running" <<endl;
-				continue;
-			}
-			else if( iRet == STOP )
-			{
-                dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is stop with singnal" <<endl;
-				if( data == SIGTRAP )
-                {
-                    data = 0;
-                }
-				ptraceCont( this->m_targetPid, data );
-			}
-			else //exit or term
-			{
-                dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<this->m_targetPid <<") is exit or term" <<endl;
-				writeResult( this->m_targetPid, iRet, data );
-				break;
-			}
-		}
-		return RT_OK;
+        iRet = waitingProcMonitor(this->m_targetPid, data);
+        return iRet;
 	}
-
 	//inject fault into an excultable program
-	if( this->m_exeArguments != NULL && this->m_targetPid < 0 )
+    else if( this->m_exeArguments != NULL && this->m_targetPid < 0 )
 	{
 
         dcout <<endl <<"["<<__FILE__  <<", "<<__LINE__ <<"]--exe = " <<*(this->m_exeArguments) <<", inject fault into an excultable program" <<endl;
@@ -525,37 +495,9 @@ int Injector::startInjection( void )
 #endif
 			iRet = injectFaults(child);
 			if( iRet == RT_FAIL ) { cleanup(); }
+            iRet = waitingProcMonitor(child, data);
 
-			while(1)
-			{
-				iRet = procMonitor( child, data );
-				if(iRet == RT_FAIL)
-				{
-					cleanup();
-					return RT_FAIL;
-				}
-				if( iRet == RUN )
-				{
-                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments[0] <<") is still running" <<endl;
-					continue;
-				}
-				else if( iRet == STOP )
-				{
-                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (EXE = " <<this->m_exeArguments[0] <<") is stoped" <<endl;
-					cleanup();
-					break;
-				}
-				else /// exit or term
-				{
-					/// 写结果文件
-					cleanup( );
-                    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process is exit or term" <<endl;
-					writeResult( child, iRet, data );
-					break;
-				}
-			}
-
-            return RT_OK;
+            return iRet;
 		}
 	}
 
@@ -612,7 +554,6 @@ int Injector::injectFaults( int pid )
 
 			if( this->m_memoryFaultTable[i].m_location == text_area )       //  text segment
 			{
-
 				start_va = procInfo.start_code;
 				end_va = procInfo.end_code;
 
@@ -849,6 +790,43 @@ int Injector::procMonitor( int pid, int &data )
 	}
 }
 
+int Injector::waitingProcMonitor(int pid, int &data)
+{
+    int iRet = 0;
+	//  跟踪继续执行后的子进程
+	while( 1 )
+	{
+		iRet = procMonitor( pid, data );
+		if( iRet == RT_FAIL )
+        {
+            return RT_FAIL;
+        }
+
+		if( iRet == RUN )
+		{
+#if 0
+            dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<pid <<") is still running" <<endl;
+#endif
+            continue;
+		}
+		else if( iRet == STOP )
+		{
+            dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<pid <<") is stop with singnal" <<endl;
+			if( data == SIGTRAP )
+            {
+                data = 0;
+            }
+			ptraceCont( pid, data );
+		}
+		else //exit or term
+		{
+            dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<pid <<") is exit or term" <<endl;
+			writeResult( pid, iRet, data );
+			break;
+        }
+    }
+}
+
 char * Injector::nameSignal( int signo )
 {
 	if( signo >= SIGRTMIN && signo <= SIGRTMAX )
@@ -1011,10 +989,12 @@ void Injector::report(int signo)
 {
 	int iRet;
 	printf("pid = %d timeout\n", childProcess);
+#if 0
     dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<childProcess <<") is still running" <<endl;
-	writeResult(childProcess, TIME_OUT, 0);
+#endif
+    writeResult(childProcess, TIME_OUT, 0);
     cleanup( );
-	iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
+	//iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
 }
 /*
 void Injector::restore(int signo)
