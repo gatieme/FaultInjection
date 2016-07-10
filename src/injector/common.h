@@ -42,8 +42,9 @@ using namespace std;
 #define STOP	    1
 #define EXIT	    2
 #define TERM	    3
-#define KT_RUN      4   /* some process you can't ptrace, example init(pid = 1)  */
-#define TIME_OUT    5   /* timeout   */
+#define KT_RUN      4   /* kernel thread is still running  */
+#define RUN         5   /* user process is still running */
+#define TIME_OUT    6   /* timeout   */
 
 //fault injection function pointers
 //typedef int (*INJECTFUNC)( int, long );

@@ -510,7 +510,7 @@ int Injector::startInjection( void )
 int Injector::injectFaults( int pid )
 {
 	int iRet;
-	unsigned int i;
+	unsigned int i, j;
 	taskMMInfo procInfo;
 	long start_va, end_va;
 	unsigned long random_offset;
@@ -522,6 +522,10 @@ int Injector::injectFaults( int pid )
         dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--";
         cout <<this->m_memoryFaultTable[i] <<endl;
 /////////////////////
+		/// random addr
+		srand( time( NULL ) );
+        for(j = 0; j < this->m_memoryFaultTable[i].m_time; j++)
+        {
         /// location
         dcout <<"==LOCATION==" <<endl;
 		if( this->m_memoryFaultTable[i].m_addr == -1 )
@@ -591,13 +595,11 @@ int Injector::injectFaults( int pid )
 			printf("inject_pa:\t%lx\n", inject_pa); //add by gatieme,
 			return 0;
             */
-			/// random addr
-			srand( time( NULL ) );
 			if(end_va == start_va)
 				random_offset = 0;
 			else
 				random_offset = rand() % (end_va - start_va);
-
+            //printf("=======%ld %ld=======\n", random_offset, end_va - start_va);
             //  Convert the virtual address [start_va + random_offset] to physics address [inject_pa]...
             inject_pa = virt_to_phys(pid, start_va + random_offset);
 
@@ -618,6 +620,10 @@ int Injector::injectFaults( int pid )
             return RT_FAIL;
         }
 
+        if(this->m_memoryFaultTable[i].m_time > 1)
+        {
+            printf("TIME = %d, ", j + 1);
+        }
 		dprintf("[%s, %d]--", __FILE__, __LINE__);
 		printf("Inject fault at pid:%d, virtual:0x%lx--(physical:0x%lx)\n", pid, start_va + random_offset, inject_pa);
 
@@ -726,10 +732,10 @@ int Injector::injectFaults( int pid )
 			default:
 				printf("Do not support yet.\n");
 		}
-
+        writeResult(pid, RUN, 0);
 		/// timeout to terminate child process
 		timeout( this->m_memoryFaultTable[i].m_timeout, report );
-
+        }
 	}
     dbgcout <<"return from " <<__func__ <<" now" <<endl;
 	return RT_OK;
@@ -963,6 +969,11 @@ void Injector::writeResult( int pid, int status, int data )
     {
         //  [ 2016-5-24 18:39:48]Process 1 running with code 0(KT_RUN)
 		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(KT_RUN)" <<endl;
+    }
+    else if( status == RUN )
+    {
+        //  [ 2016-5-24 18:39:48]Process 1 running with code 0(RUN)
+		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(RUN)" <<endl;
     }
     else if( status == TIME_OUT)
     {
