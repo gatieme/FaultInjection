@@ -242,7 +242,8 @@ void do_request(void)
 		ack_signal = ACK_WRITE_KFUNC;
 		dbginfo("Success to inject MTTR fault\n");
 		return;
-	}
+    }
+#ifdef RW_PA_BY_KERNEL
     /*
     *
     *  MODIFY  by gatieme @ 2016-05-26 19:39
@@ -271,6 +272,8 @@ void do_request(void)
     {
         /*  */
     }
+#endif
+#ifdef RW_VA_BY_KERNEL
     else if(ctl == REQUEST_READ_VA)     /*  == 12  */
     {
         might_fault();
@@ -282,6 +285,7 @@ void do_request(void)
         *(unsigned long *)va = memVal;
         ack_signal = ACK_WRITE_VA;
     }
+#endif
 }
 
 struct dentry* file_entry(struct file *pfile)

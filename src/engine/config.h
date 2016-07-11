@@ -59,4 +59,19 @@
 //    #warning    "use create_proc_entry in " #LINUX_VERSION_CODE
 
 #else
+    #define     PROC_CREATE
+//    #warning    "use proc_create in " #LINUX_VERSION_CODE
+    #define     PROC_SEQ_FILE_OPERATIONS
+    #include <linux/proc_fs.h>
+    #include <linux/seq_file.h>
+#endif
+
+#if defined(CREATE_PROC_ENTRY) || defined(PROC_CREATE)
+
+#else
+    #error "you must define one of CREATE_PROC_ENTRY and PROC_CREATE"
+#endif
+
+
+
 #endif	/* _CONFIG_H_ */
