@@ -39,12 +39,9 @@ debug :
 	make DEBUG=y
 
 #ifeq ($(EXE),$(wildcard $(EXE)))
+#EXISTED=$(wildcard $(EXE))
+#ifeq ("$(EXIST)","")
 test:
-	EXIST = $(shell if [ -f $(EXE) ]; then echo "exist"; else echo "notexist"; fi;)
-	echo $(EXIST)
-	ifeq ($(EXIST), "notexist")
-		make
-	endif
 	sudo ./memInjector -l stack -m random -t word_0 --time 10 --timeout 3 -e ../tools/hello
 
 clean:
