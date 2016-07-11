@@ -736,6 +736,8 @@ int setPageFlags(struct mm_struct *pMM,unsigned long va,int *pStatus,int flags)
 	return OK;
 }
 
+
+#if 0
 /*
  *  how to read and write
  *  a physical address or
@@ -803,14 +805,13 @@ unsigned long writepa(unsigned long pa)
 }
 
 
-
 /*
  * map an virtual memory space `vma` to the kernel space `buffer`
  *
  */
 unsigned long map_vma_to_kernel(unsigned char *buffer, struct vm_area_struct *vma)
 {
-    unsigned long page;
+    unsigned long page, status;
     unsigned char i;
     unsigned long start = (unsigned long)vma->vm_start;
     unsigned long end =  (unsigned long)vma->vm_end;
@@ -819,7 +820,8 @@ unsigned long map_vma_to_kernel(unsigned char *buffer, struct vm_area_struct *vm
 
 
     //  得到物理地址
-    page = virt_to_phys(buffer);
+    //  error: implicit declaration of function ‘virt_to_phys’
+    page = kv2p(buffer, &status);
 
     //  将用户空间的一个vma虚拟内存区映射到以page开始的一段连续物理页面上
     if(remap_pfn_range(vma, start, page>>PAGE_SHIFT, size, PAGE_SHARED))    //第三个参数是页帧号，由物理地址右移PAGE_SHIFT得到
@@ -848,7 +850,7 @@ unsigned long readva(int pid, unsigned long va)
     return len;
 }
 
-
+#endif
 
 
 

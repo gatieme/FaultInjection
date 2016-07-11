@@ -60,14 +60,19 @@
 #define REQUEST_READ_KFUNC	    5		/// 请求读取内核函数起始地址内容
 #define REQUEST_WRITE_KFUNC	    6		/// 请求改写内核函数起始地址内容
 
-#ifndef USER_SPACE_MMAP
+#if defined(RW_pA_BY_KERNEL)
     #define REQUEST_READ_PA		10	    /// 请求获取全部物理内存信息
     #define REQUEST_WRITE_PA	11 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
+#endif
+
+#if defined(RW_VA_KERNEL)
     #define REQUEST_READ_VA		12	    /// 请求获取全部物理内存信息
     #define REQUEST_WRITE_VA	13 	    /// 请求改写指定物理地址内容，改为用户态实现此功能
-    #define REQUEST_MEM			14	    /// 请求获取全部物理内存信息
-    #define REQUEST_ADDR_STOP	15	    ///
 #endif
+
+
+#define REQUEST_MEM			14	    /// 请求获取全部物理内存信息
+#define REQUEST_ADDR_STOP	15	    ///
 
 /*
 *	ack signals
@@ -79,14 +84,18 @@
 #define ACK_READ_KFUNC	        REQUEST_READ_KFUNC
 #define ACK_WRITE_KFUNC	        REQUEST_WRITE_KFUNC
 
-#ifndef USER_SPACE_MMAP
+#if defined(RW_pA_BY_KERNEL)
     #define ACK_READ_PA         REQUEST_READ_PA
     #define ACK_WRITE_PA        REQUEST_MEM_PA
+#endif
+
+#if defined(RW_VA_KERNEL)
     #define ACK_READ_VA         REQUEST_READ_VA
     #define ACK_WRITE_VA        REQUEST_WRITE_VA
-    #define ACK_MEM             REQUEST_MEM
-    #define ACK_ADDR_STOP       REQUEST_ADDR_STOP
 #endif
+
+#define ACK_MEM             REQUEST_MEM
+#define ACK_ADDR_STOP       REQUEST_ADDR_STOP
 
 /*
 *	utility functions
