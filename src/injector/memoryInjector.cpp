@@ -732,7 +732,7 @@ int Injector::injectFaults( int pid )
 			default:
 				printf("Do not support yet.\n");
 		}
-        writeResult(pid, RUN, 0);
+        //writeResult(pid, RUN, 0);
 		/// timeout to terminate child process
 		timeout( this->m_memoryFaultTable[i].m_timeout, report );
         }
