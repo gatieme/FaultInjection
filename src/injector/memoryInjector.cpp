@@ -394,6 +394,7 @@ int Injector::startInjection( void )
 		iRet = injectFaults( this->m_targetPid );
 		if( iRet != RT_OK )
         {
+			writeResult( this->m_targetPid, KT_RUN, 0);	//exit or term
             return RT_FAIL;
         }
 		return RT_OK;
@@ -423,7 +424,7 @@ int Injector::startInjection( void )
                 {
                     return RT_FAIL;
                 }
-			    writeResult( this->m_targetPid, KT_RUN, 0 );	//exit or term
+			    writeResult( this->m_targetPid, RUN, 0 );	//exit or term
 		        return RT_OK;
             }
             else
@@ -980,7 +981,7 @@ void Injector::writeResult( int pid, int status, int data )
     else if( status == TIME_OUT)
     {
         //  [ 2016-5-24 18:39:48]Process 1 running with code 0(TIME_OUT)
-		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(TIME_OUT)" <<endl;
+		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(TIME_OUT/RUN)" <<endl;
     }
 }
 
