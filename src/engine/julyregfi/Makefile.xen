@@ -1,0 +1,29 @@
+$(obj)/%.s: $(src)/%-xen.c FORCE
+	$(call if_changed_dep,cc_s_c)
+
+$(obj)/%.i: $(src)/%-xen.c FORCE
+	$(call if_changed_dep,cc_i_c)
+
+$(obj)/%.symtypes : $(src)/%-xen.c FORCE
+	$(call cmd,cc_symtypes_c)
+
+$(obj)/%.o: $(src)/%-xen.c FORCE
+	$(call cmd,force_checksrc)
+	$(call cmd,force_check_kmsg)
+	$(call if_changed_rule,cc_o_c)
+
+$(xen-single-used-m): $(obj)/%.o: $(src)/%-xen.c FORCE
+	$(call cmd,force_checksrc)
+	$(call cmd,force_check_kmsg)
+	$(call if_changed_rule,cc_o_c)
+	@{ echo $(@:.o=.ko); echo $@; } > $(MODVERDIR)/$(@F:.o=.mod)
+
+$(obj)/%.lst: $(src)/%-xen.c FORCE
+	$(call if_changed_dep,cc_lst_c)
+
+$(obj)/%.s: $(src)/%-xen.S FORCE
+	$(call if_changed_dep,as_s_S)
+
+$(obj)/%.o: $(src)/%-xen.S FORCE
+	$(call if_changed_dep,as_o_S)
+
