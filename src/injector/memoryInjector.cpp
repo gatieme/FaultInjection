@@ -827,10 +827,12 @@ int Injector::waitingProcMonitor(int pid, int &data)
 		else //exit or term
 		{
             dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<pid <<") is exit or term" <<endl;
-			writeResult( pid, iRet, data );
+		//	writeResult( pid, iRet, data );
 			break;
         }
     }
+    dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<pid <<") writrresult" <<endl;
+	writeResult( pid, iRet, data );
 }
 
 char * Injector::nameSignal( int signo )

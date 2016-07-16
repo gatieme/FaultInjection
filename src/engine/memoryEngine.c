@@ -519,7 +519,7 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 	if(pte != NULL)
 	{
 		pa = (pte_val(*pte) & PAGE_MASK) | (va & ~PAGE_MASK);
-        pa &= 0x00000001ffffffff;
+        pa &= 0x00000001ffffff00;
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
     }
     else
