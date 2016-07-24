@@ -983,6 +983,7 @@ void Injector::writeResult( int pid, int status, int data )
         //  [ 2016-5-24 18:39:48]Process 1 running with code 0(TIME_OUT)
 		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(TIME_OUT/RUN)" <<endl;
     }
+    exit(0);
 }
 
 void Injector::cleanup(void)

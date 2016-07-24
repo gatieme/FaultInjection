@@ -10,7 +10,7 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-
+COMMIT="writeReuslt后程序直接退出..."
 #  github config
 GITHUB_COMMIT="$(COMMIT)"
 
