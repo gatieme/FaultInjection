@@ -113,7 +113,6 @@
 
 
 
-#define DEBUG
 
 /**
  * Macros to help with debugging. Set SCULL_DEBUG to 1 enable
@@ -149,12 +148,13 @@
 #ifdef DEBUG
 
     #ifdef __KERNEL__
-        #ifdef __FILE__
-        #ifdef __LINE__
+
+        #warning "compile in kernel..."
+
+        #if defined(__FILE__) && defined(__LINE__)
             //printk with line and function name
             #define dbgprint(format, args...) \
             printk(KERN_INFO "[%s, %d] : "format, __FILE__, __LINE__, ##args)
-        #endif // __FILE__ && __LINE__
         #endif // __FILE__ && __LINE__
 
         //printk without line and function name
@@ -164,14 +164,14 @@
 
     #else   //  userspace
 
-        #ifdef __FILE__
-        #ifdef __LINE__
+        #warning "compile in userspace..."
+
+        #if defined(__FILE__) && defined(__LINE__)
             //printf with line and function name
             #define dbgprint(format, args...) \
             printf("[%s,%d] : "format, __FILE__, __LINE__, ##args)
             #define dbgcout std::cout <<"[" <<__FILE__ <<", " <<__LINE__ <<"] : "
 
-        #endif // __FILE__ && __LINE__
         #endif // __FILE__ && __LINE__
 
             /* Debugging is on and we are in userspace. */
@@ -213,8 +213,7 @@
 */
 
 
-#ifdef __FUNCTION__
-#ifdef __LINE__
+#if defined(__FILE__) && defined(__LINE__)
 	#ifdef DEBUG
 		//printk with line and function name
 		#define dbginfo(format,args...); \
@@ -224,7 +223,6 @@
 	#else								//printk normally
 			#define dbginfo(format,args...); printk(KERN_INFO format, ##args);
 	#endif
-#endif
 #endif
 
 #define undbginfo(format,args...);
@@ -244,7 +242,6 @@
 */
 #define safe_sprintf(start, n, p, format, args...)                      \
 	(((p - start) < n )  && snprintf( (char *)p, (n - (p - start)), format, ##args ))
-
 
 
 

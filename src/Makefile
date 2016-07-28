@@ -12,11 +12,21 @@ TOOLS=$(ROOT)/tools
 DIRS=$(ENGINE) $(INJECTOR) $(TOOLS)
 
 
+MAKE_DIR=make -C
 
-all:
-	for i in $(DIRS); do \
-		(cd $$i && echo "making $$i" && $(MAKE) ) || exit 1; \
-	done
+SUBDIRS=$(DIRS)
+
+.PHONY:all $(SUBDIRS)
+
+all: $(SUBDIRS)
+
+$(SUBDIRS):
+		$(MAKE_DIR) $@
+
+#all	:
+#	for i in $(DIRS); do \
+#		(cd $$i && echo "making $$i" && $(MAKE) ) || exit 1; \
+#	done
 
 clean:
 	for i in $(DIRS); do \
