@@ -35,7 +35,11 @@ using namespace std;
 
 #define PAGESIZE ( getpagesize() )
 
+//  use ulimit -s to see for detail(KB)
+//  0x1000 = 2^12B = 4KB
+//  8192KB = 8MB = 2^3MB = 2^13KB = 2^23B = 0x800000
 #define STACK_SIZE 0x1000 //define by fenggang
+//#define STACK_SIZE 0x800000 //define by gatieme
 
 //fault location
 typedef enum locations

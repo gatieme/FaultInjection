@@ -10,7 +10,7 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-COMMIT="飞腾上的内存编址不是连续的, 2G以内的内存从CPU视角看, 在 0x8000000-0xffffffff物理地址范围, 2G以上的内存，在0x200000000物理地址之上"
+COMMIT="修复了退出后子程序仍然运行的bug, 在report中exit(0)"
 #  github config
 GITHUB_COMMIT=$(COMMIT)
 

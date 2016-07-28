@@ -983,7 +983,8 @@ void Injector::writeResult( int pid, int status, int data )
         //  [ 2016-5-24 18:39:48]Process 1 running with code 0(TIME_OUT)
 		cout << '[' << setw(19) << timeStamp.str() << ']' << "Process " << pid << " running with code " <<data <<"(TIME_OUT/RUN)" <<endl;
     }
-    exit(0);
+    //  用户进TIME_OUT后会被终止, 而终止后, 会写入两个结果TIME_OUT/RUN以及被终止
+    // exit(0);
 }
 
 void Injector::cleanup(void)
@@ -1004,12 +1005,15 @@ void Injector::report(int signo)
 {
 	int iRet;
 	printf("pid = %d timeout\n", childProcess);
+
 #if 0
     dcout <<"[" <<__FILE__ <<", " <<__LINE__ <<"]--The process (PID = " <<childProcess <<") is still running" <<endl;
 #endif
-    writeResult(childProcess, TIME_OUT, 0);
     cleanup( );
-	//iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
+    writeResult(childProcess, TIME_OUT, 0);
+    exit(0);
+
+    //iRet = write_phy_mem(inject_pa, &origData, sizeof(origData));
 }
 /*
 void Injector::restore(int signo)
