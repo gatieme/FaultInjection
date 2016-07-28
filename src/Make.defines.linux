@@ -10,9 +10,9 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-COMMIT="writeReuslt后程序直接退出..."
+COMMIT="飞腾上的内存编址不是连续的, 2G以内的内存从CPU视角看, 在 0x8000000-0xffffffff物理地址范围, 2G以上的内存，在0x200000000物理地址之上"
 #  github config
-GITHUB_COMMIT="$(COMMIT)"
+GITHUB_COMMIT=$(COMMIT)
 
 
 

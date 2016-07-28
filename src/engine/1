@@ -33,8 +33,8 @@ obj-m := memory-engine.o
 else
 
 MODULE_NAME := memory-engine
-KERNELDIR ?= /lib/modules/$(shell uname -r)/build
-#KERNELDIR ?= /home/gatieme/Work/Kernel/
+#KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+KERNELDIR ?= /home/gatieme/Work/Kernel/
 PWD := $(shell pwd)
 
 modules:
