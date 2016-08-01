@@ -10,7 +10,7 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-COMMIT="增加了对进程内核栈的故障注入, 可以使用宏KERNEL_STACK开始..."
+COMMIT="修复了一些警告问题..."
 #  github config
 GITHUB_COMMIT=$(COMMIT)
 

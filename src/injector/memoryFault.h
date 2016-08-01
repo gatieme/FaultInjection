@@ -51,6 +51,7 @@ typedef enum locations
 	data_area,
 	stack_area,         //  add by fenggang @ 2011-05-10
     kstack_area,        //  add by gatieme  @ 2016-07-30
+    MAX_AREA
 } pos;
 
 //fault type

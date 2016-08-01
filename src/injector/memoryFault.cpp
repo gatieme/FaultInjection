@@ -5,20 +5,34 @@ ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
     out <<"location : ";
     switch(memoryFault.m_location)
     {
-        case text_area:
+        case text_area      :
         {
             out <<"text, ";
             break;
 
         }
-        case data_area:
+        case data_area      :
+        {
             out <<"data, ";
             break;
-
-        case stack_area:
+        }
+        case stack_area     :
+        {
             out <<"stack, ";
             break;
+        }
+        case kstack_area    :
+        {
+            out <<"kernel stack, ";
+            break;
+        }
+        default             :
+        {
+            out <<"unknown location, ";
+            break;
+        }
     }
+
     out <<"mode : ";
     switch(memoryFault.m_addr)
     {

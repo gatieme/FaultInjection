@@ -48,7 +48,7 @@ using namespace std;
 #define EXIT	    2
 #define TERM	    3
 #define KT_RUN      4   /* kernel thread is still running  */
-#define RUN         5   /* user process is still running */
+#define UP_RUN         5   /* user process is still running */
 #define TIME_OUT    6   /* timeout   */
 
 //fault injection function pointers
