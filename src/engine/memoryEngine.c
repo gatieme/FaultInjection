@@ -362,7 +362,14 @@ int getTaskInfo(struct task_struct *pTask, char *pData, int length)
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_brk, DELIMITER);  dbginfo("start_brk   : %lx%c", pMM->start_brk, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->brk, DELIMITER);        dbginfo("brk         : %lx%c", pMM->brk, DELIMITER);
-	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_stack, DELIMITER);dbginfo("start stack :%lx%c", pMM->start_stack, DELIMITER);
+	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->start_stack, DELIMITER);dbginfo("start stack : %lx%c", pMM->start_stack, DELIMITER);
+
+#if defined(KERNEL_STACK)   /*  add by gatieme @ 2016-07-30 15:18   */
+    safe_sprintf(pData, length, info+strlen(info), "%lx%c", pTask->stack, DELIMITER);    dbginfo("task->stack : %lx%c", pTask->stack, DELIMITER);
+    safe_sprintf(pData, length, info+strlen(info), "%lx%c", ((unsigned long )pTask->stack) + sizeof(struct thread_info), DELIMITER);
+    safe_sprintf(pData, length, info+strlen(info), "%lx%c", ((unsigned long )pTask->stack) + sizeof(union thread_union), DELIMITER);
+    dbginfo("kernel stack          : [0x%lx, 0x%lx]\n",((unsigned long)pTask->stack) + sizeof(struct thread_info), (unsigned long)(pTask->stack) + sizeof(union thread_union));
+#endif
 
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_start, DELIMITER);  undbginfo("%lx%c", pMM->arg_start, DELIMITER);
 	safe_sprintf(pData, length, info+strlen(info), "%lx%c", pMM->arg_end, DELIMITER);    undbginfo("%lx%c", pMM->arg_end, DELIMITER);
@@ -505,7 +512,9 @@ struct task_struct * findTaskByPid(pid_t pid)
 }
 
 
-#define PHYADDR_MASK
+
+
+//  #define PHYADDR_MASK
 /*
 * convert a process's linear address to physical address
 */
@@ -513,6 +522,15 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 {
 	pte_t *pte = NULL;
 	unsigned long pa = FAIL;
+
+
+    if(va > PAGE_OFFSET)
+    {
+        dbginfo("virtual address(0x%lx) is in kernel space", va);
+        pa = kv2p(va, pStatus);
+        return pa;
+    }
+    dbginfo("virtual address(0x%lx) is in user space", va);
     //dbginfo("");
 	pte = getPte(pMM, va);
     //dbginfo("");
@@ -539,7 +557,7 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 *  convert kernel virtual address to physical address
 *
 */
-long kv2p(unsigned long va,int *pStatus)
+long kv2p(unsigned long va, int *pStatus)
 {
     if(va < 0)
     {

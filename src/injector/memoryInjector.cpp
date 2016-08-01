@@ -549,7 +549,11 @@ int Injector::injectFaults( int pid )
             //  stack从高地址向低地址扩展，这样栈空间的起始位置就能确定下来，动态的调整栈空间大小也不需要移动栈内的数据。
 			dprintf("heap : [0x%lx, 0x%lx]\n", procInfo.start_brk, procInfo.brk);
 			dprintf("stack: [0x%lx, 0x%lx]\n", procInfo.start_stack - STACK_SIZE, procInfo.start_stack);
-//#endif
+#ifdef KERNEL_STACK
+
+			dprintf("kstack: [0x%lx, 0x%lx]\n", procInfo.start_kstack, procInfo.end_kstack);
+#endif
+            //#endif
 			//debug
 			if(iRet == FAIL)
 			{
@@ -576,6 +580,13 @@ int Injector::injectFaults( int pid )
 			{
 				start_va = procInfo.start_stack - STACK_SIZE;
 				end_va = procInfo.start_stack;
+
+                dprintf("[%s, %d] %d --Inject STACK segment, [0x%lx, 0x%lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
+			}
+			else if( this->m_memoryFaultTable[i].m_location == kstack_area ) // kstack segment
+			{
+				start_va = procInfo.start_kstack;
+				end_va = procInfo.end_kstack;
 
                 dprintf("[%s, %d] %d --Inject STACK segment, [0x%lx, 0x%lx]\n", __FILE__, __LINE__, iRet, start_va, end_va);
 			}

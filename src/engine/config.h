@@ -7,6 +7,10 @@
 
 #define DEBUG
 
+
+
+#define KERNEL_STACK
+
 //#define  RW_VA_BY_KERNEL  //  以内核驱动的方式直接读写进程虚拟地址
 //#define  RW_PA_BY_KERNEL  //  以内核驱动的方式直接读写物理地址
 

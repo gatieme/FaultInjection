@@ -26,7 +26,7 @@ typedef struct procMMInfo
 	unsigned long exec;		    //可执行内存映射
 	unsigned long stack;	    //用户堆栈
 //#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
-    unsigned long reserve;//保留区
+    unsigned long reserve;      //保留区
 //#endif
 
 	unsigned long def_flags;    //
@@ -39,12 +39,30 @@ typedef struct procMMInfo
 	unsigned long start_brk;	//堆的起始地址
 	unsigned long brk;			//堆的当前最后地址
 	unsigned long start_stack;  //用户堆栈的起始地址
-	unsigned long arg_start;	//命令行参数
+#ifdef KERNEL_STACK
+    unsigned long kstack;       //内核栈的起始地址(栈由高向低扩展)
+    unsigned long start_kstack;       //内核栈的起始地址(栈由高向低扩展)
+    unsigned long end_kstack;       //内核栈的起始地址(栈由高向低扩展)
+#endif
+    unsigned long arg_start;	//命令行参数
 	unsigned long arg_end;
 	unsigned long env_start;	//环境变量
 	unsigned long env_end;
 
 } taskMMInfo, *pTaskMMInfo;
+
+// procMMInfo结构体中的成员数目, 由于都是unsigned long格式,
+// 因此可以使用sizeof直接计算
+#define varCount	(sizeof(struct procMMInfo)/sizeof(unsigned long))
+/*
+#ifdef KERNEL_STACK
+#define varcount    22
+#else
+#define varcount    19
+#endif
+*/
+
+
 
 #define OK		0
 #define FAIL	1
@@ -55,7 +73,6 @@ typedef struct procMMInfo
 #define PAGE_MASK (PAGE_SIZE - 1)
 
 #define MAX_LINE	PAGE_SIZE
-#define varCount	19
 
 
 /*

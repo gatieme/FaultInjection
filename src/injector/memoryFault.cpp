@@ -81,6 +81,10 @@ bool MemoryFault::SetLocation(std::string location)
     {
         this->m_location = stack_area;
     }
+    else if( location == "kstack" || location == "KSTACK" )
+    {
+        this->m_location = kstack_area;
+    }
     else
     {
         std::cerr << "Error:undefined fault location" <<std::endl;

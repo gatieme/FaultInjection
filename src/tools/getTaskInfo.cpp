@@ -14,6 +14,13 @@
 #include <exception>
 using namespace std;
 
+#define     KERNEL_STACK
+
+
+#define     STACK_SIZE   0X1000
+
+
+
 typedef struct procMMInfo
 {
 	unsigned long total;	//进程地址空间大小
@@ -21,23 +28,28 @@ typedef struct procMMInfo
 	unsigned long shared;	//共享内存映射
 	unsigned long exec;		//可执行内存映射
     unsigned long stack;	//用户堆栈
-#if 0
-//#if LINUX_VERSION_CODE <= KERNEL_VERSION(3, 7, 0)
+
     unsigned long reserve;//保留区
-#endif
 	unsigned long def_flags;//
 	unsigned long nr_ptes;	//
-
 	unsigned long start_code;	//代码段开始地址
 	unsigned long end_code;		//代码段结束地址
-	unsigned long start_data;	//数据段开始地址
+
+    unsigned long start_data;	//数据段开始地址
 	unsigned long end_data;		//数据段结束地址
 	unsigned long start_brk;	//堆的起始地址
 	unsigned long brk;				//堆的当前最后地址
 	unsigned long start_stack;//用户堆栈的起始地址
-	unsigned long arg_start;	//命令行参数
-	unsigned long arg_end;
-	unsigned long env_start;	//环境变量
+
+#ifdef KERNEL_STACK
+    unsigned long kstack;       //  内核栈即thread_info的地址
+    unsigned long start_kstack; //  kstack + sizeof(struct thread_info)
+    unsigned long end_kstack;   //  kstack + sizeof(union thread_union)
+#endif
+    unsigned long arg_start;	//命令行参数
+    unsigned long arg_end;
+
+    unsigned long env_start;	//环境变量
 	unsigned long env_end;
 } taskMMInfo, *pTaskMMInfo;
 
@@ -46,7 +58,18 @@ typedef struct procMMInfo
 
 #define PAGE_SIZE 65536
 #define MAX_LINE	PAGE_SIZE
-#define varCount	19
+
+
+// procMMInfo结构体中的成员数目, 由于都是unsigned long格式,
+// 因此可以使用sizeof直接计算
+#define varCount	(sizeof(struct procMMInfo)/sizeof(unsigned long))
+/*
+#ifdef KERNEL_STACK
+#define varcount    22
+#else
+#define varcount    19
+#endif
+
 
 /*
 *	request command
@@ -210,6 +233,7 @@ int getTaskInfo(int pid)
 		printf("0x%lx\n", *(unsigned long *)((unsigned long)taskInfo+i*sizeof(unsigned long)) );
 	}
 
+    /*
 	printf("start_code\t\t%lx\n", taskInfo->start_code);
 	printf("end_code\t\t%lx\n", taskInfo->end_code);
 	printf("start_data\t\t%lx\n", taskInfo->start_data);
@@ -217,7 +241,18 @@ int getTaskInfo(int pid)
 	printf("start_brk\t\t%lx\n", taskInfo->start_brk);
 	printf("brk\t\t\t%lx\n", taskInfo->brk);
 	printf("start_stack\t\t%lx\n", taskInfo->start_stack);
+    */
+	printf("code    : [0x%lx, 0x%lx]\n", taskInfo->start_code, taskInfo->end_code);
+	printf("data    : [0x%lx, 0x%lx]\n", taskInfo->start_data, taskInfo->end_data);
+            //  heap从低地址向高地址扩展，做内存管理相对要简单些。
+            //  stack从高地址向低地址扩展，这样栈空间的起始位置就能确定下来，动态的调整栈空间大小也不需要移动栈内的数据。
+	printf("heap    : [0x%lx, 0x%lx]\n", taskInfo->start_brk, taskInfo->brk);
+	printf("stack   : [0x%lx, 0x%lx]\n", taskInfo->start_stack - STACK_SIZE, taskInfo->start_stack);
 
+#ifdef KERNEL_STACK
+    printf("ksatck  : 0x%lx\n", taskInfo->kstack);
+	printf("kstack  : [0x%lx, 0x%lx]\n", taskInfo->start_kstack, taskInfo->end_kstack);
+#endif
     return OK;
 }
 

@@ -41,12 +41,16 @@ using namespace std;
 #define STACK_SIZE 0x1000 //define by fenggang
 //#define STACK_SIZE 0x800000 //define by gatieme
 
+
+#define KSTACK_SIZE 0x1000
+
 //fault location
 typedef enum locations
 {
 	text_area,
 	data_area,
-	stack_area, //add by fenggang, 2011-5-10
+	stack_area,         //  add by fenggang @ 2011-05-10
+    kstack_area,        //  add by gatieme  @ 2016-07-30
 } pos;
 
 //fault type

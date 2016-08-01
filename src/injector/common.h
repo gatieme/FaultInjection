@@ -25,7 +25,12 @@
 #include <sstream>
 #include <vector>
 #include <string>
+
+#include "config.h"
+
 using namespace std;
+
+
 
 #define MAX_FAULT 256
 #define MAX_LENGTH_ARGUMENT 128

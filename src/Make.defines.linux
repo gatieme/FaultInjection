@@ -10,7 +10,7 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-COMMIT="修改了engine/comm.h中宏定义的方式为\#if defined(DEFINES)"
+COMMIT="增加了对进程内核栈的故障注入, 可以使用宏KERNEL_STACK开始..."
 #  github config
 GITHUB_COMMIT=$(COMMIT)
 
