@@ -118,14 +118,13 @@ public :
 
 //protected:
 
+    //  故障注入的位置
     pos     m_location;
-
     long    m_addr;     //  addr = -1, 时候表示选取随机进行故障注入
 
+    //  故障注入类型[包括 故障类型, 注入次数, 超时阀值]
     type    m_faultType;
-
-    int     m_time;		//瞬时故障0，永久故障-1，正整数表示故障持续时钟周期
-
+    int     m_time;		//  瞬时故障0，永久故障-1，正整数表示故障持续时钟周期
     int     m_timeout;
 
 

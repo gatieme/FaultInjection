@@ -378,6 +378,19 @@ int Injector::initFaultTable( void )
 	return RT_OK;
 }
 
+
+//  开始进行故障注入,
+//  startInjtection是最顶层的故障注入处理模块
+//  它会调用injectFaults完成故障注入,
+//  而后者则通过读取故障注入表的每一项一次进行故障注入
+//
+//  startInject的处理流程吐下
+//
+//  如果是对某个已经存在的进程(依据进程号)进行故障注入,
+//  则通过ptrace中断程序的运行, 然后用injectFault读取故障注入表进行故障注入
+//
+//  如果是对某个可执行程序进行故障注入
+//  则先fork启动子进程, 再ptrace中断子进程, 然后用injectFault读取故障注入表进行故障注入
 int Injector::startInjection( void )
 {
 	int iRet;
@@ -506,8 +519,9 @@ int Injector::startInjection( void )
 	return RT_FAIL;
 }
 
-//RT_FAIL,进程已经结束
-//RT_OK,进程没有结束
+//  安装故障注入表的设定, 对表中每一项按照要求进行故障注入
+//  RT_FAIL,进程已经结束
+//  RT_OK,进程没有结束
 int Injector::injectFaults( int pid )
 {
 	int iRet;
@@ -951,7 +965,10 @@ void Injector::usage()
     printf("Usage:\n");
     printf("\t./memInjector -c fault.conf -e program [arguments]\n");
     printf("\t./memInjector -c fault.conf -p pid\n");
-    printf("\t./memInjector -l location -m mode -t injecttype -time time -timeout timeout -p pid\n");
+    printf("\t./memInjector -t injecttype -time time -timeout timeout -l location -m mode -p pid\n");
+#if 0
+    printf("\t./memInjector -t injecttype -time time -timeout timeout -p physical_address\n");
+#endif
     printf("\t\n");
     printf("Arguments:\n");
     printf("\t1.fault description scripts.\n");
