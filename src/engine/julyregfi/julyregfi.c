@@ -170,7 +170,7 @@ long my_do_fork(unsigned long clone_flags,unsigned long stack_start,struct pt_re
 	return 0;
 }
 
-void scan_fi()
+void scan_fi(void)
 {
     struct task_struct *task,*p,*q;
     struct pt_regs *regs;
@@ -310,23 +310,26 @@ static int julyregfi_init(void)
 {
 	int ret;
 	printk("julyregfi init.\n");
+
 	if(useit[do_fork_id])
     {
-        jphyper[do_fork_id].entry = (kprobe_opcode_t *) my_do_fork;
+        jphyper[do_fork_id].entry = (kprobe_opcode_t *)my_do_fork;
         jphyper[do_fork_id].kp.symbol_name="do_fork";
     }
+
     if(useit[do_timer_id])
     {
-        jphyper[do_timer_id].entry = (kprobe_opcode_t *) period_scanfi;
+        jphyper[do_timer_id].entry = (kprobe_opcode_t *)period_scanfi;
         jphyper[do_timer_id].kp.symbol_name="do_timer";
     }
+
     printk("Fortune: Begin register.\n");
-	for(i=0;i<jpnum;++i)
+	for(i = 0; i < jpnum; ++i)
 	{
 	    if(!useit[i])
             continue;
 		jphyper[i].kp.addr=0;
-		if((ret=register_jprobe(&jphyper[i]))<0)
+		if((ret=register_jprobe(&jphyper[i])) < 0)
 		{
 			printk("Fortune: Error, register probe %d failed with return %d\n", i, ret);
 			return -1;
@@ -344,15 +347,38 @@ static int julyregfi_init(void)
 		printk("Fortune: Can't create /proc/julyregfi\n");
 		return -1;
 	}
-	proc_aim = create_proc_entry("aim", PERMISSION, dir);
-	if(proc_aim == NULL)
+
+#ifdef CREATE_PROC_ENTRY
+    proc_aim = create_proc_entry("aim", PERMISSION, dir);
+
+    if(proc_aim == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/aim\n");
 		remove_proc_entry("julyregfi", NULL);
 		return -1;
 	}
-	proc_aim->read_proc = proc_read_aim;
+
+    proc_aim->read_proc = proc_read_aim;
 	proc_aim->write_proc = proc_write_aim;
+
+#elif defined PROC_CREATE
+    const struct file_operations proc_aim_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_aim,                       // can read
+        .write = proc_write_aim,                        // write only
+    };
+    proc_aim = proc_create("aim", PERMISSION, dir, &proc_aim_fops);
+    if(proc_aim == NULL)
+	{
+		printk("Fortune: Can't create /proc/julyregfi/aim\n");
+		remove_proc_entry("julyregfi", NULL);
+		return -1;
+	}
+#endif
+
+
+#ifdef CREATE_PROC_ENTRY
 	proc_fault = create_proc_entry("fault", PERMISSION, dir);
 	if(proc_fault == NULL)
 	{
@@ -363,7 +389,28 @@ static int julyregfi_init(void)
 	}
 	proc_fault->read_proc = proc_read_fault;
 	proc_fault->write_proc = proc_write_fault;
-	proc_time = create_proc_entry("time", PERMISSION, dir);
+
+#elif defined PROC_CREATE
+    const struct file_operations proc_fault_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_fault,                       // can read
+        .write = proc_write_fault,                        // write only
+    };
+    proc_fault = proc_create("fault", PERMISSION, dir, &proc_fault_fops);
+	if(proc_fault == NULL)
+	{
+		printk("Fortune: Can't create /proc/julyregfi/fault\n");
+		remove_proc_entry("aim",dir);
+		remove_proc_entry("julyregfi", NULL);
+		return -1;
+	}
+#endif
+
+
+
+#ifdef CREATE_PROC_ENTRY
+    proc_time = create_proc_entry("time", PERMISSION, dir);
 	if(proc_time == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/time\n");
@@ -374,7 +421,28 @@ static int julyregfi_init(void)
 	}
 	proc_time->read_proc = proc_read_time;
 	proc_time->write_proc = proc_write_time;
-	proc_id = create_proc_entry("id", PERMISSION, dir);
+#elif defined PROC_CREATE
+    const struct file_operations proc_time_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_time,                       // can read
+        .write = proc_write_time,                        // write only
+    };
+    proc_time = proc_create("time", PERMISSION, dir, &proc_time_fops);
+	if(proc_time == NULL)
+	{
+		printk("Fortune: Can't create /proc/julyregfi/time\n");
+		remove_proc_entry("aim",dir);
+		remove_proc_entry("fault",dir);
+		remove_proc_entry("julyregfi", NULL);
+		return -1;
+	}
+#endif
+
+
+
+#ifdef CREATE_PROC_ENTRY
+    proc_id = create_proc_entry("id", PERMISSION, dir);
 	if(proc_id == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/id\n");
@@ -386,7 +454,29 @@ static int julyregfi_init(void)
 	}
 	proc_id->read_proc = proc_read_id;
 	proc_id->write_proc = proc_write_id;
-	proc_signal = create_proc_entry("signal", PERMISSION, dir);
+#elif defined PROC_CREATE
+    const struct file_operations proc_id_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_id,                       // can read
+        .write = proc_write_id,                        // write only
+    };
+    proc_id = proc_create("id", PERMISSION, dir, &proc_id_fops);
+	if(proc_id == NULL)
+	{
+		printk("Fortune: Can't create /proc/julyregfi/id\n");
+		remove_proc_entry("aim", dir);
+		remove_proc_entry("fault", dir);
+		remove_proc_entry("time", dir);
+		remove_proc_entry("julyregfi", NULL);
+		return -1;
+	}
+#endif
+
+
+
+#ifdef CREATE_PROC_ENTRY
+    proc_signal = create_proc_entry("signal", PERMISSION, dir);
 	if(proc_signal == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/signal\n");
@@ -399,6 +489,25 @@ static int julyregfi_init(void)
 	}
 	proc_signal->read_proc = proc_read_signal;
 	proc_signal->write_proc = proc_write_signal;
+#elif defined PROC_CREATE
+    const struct file_operations proc_signal_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_signal,                       // can read
+        .write = proc_write_signal,                        // write only
+    };
+    proc_signal = proc_create("id", PERMISSION, dir, &proc_signal_fops);
+	if(proc_signal == NULL)
+	{
+		printk("Fortune: Can't create /proc/julyregfi/signal\n");
+		remove_proc_entry("aim", dir);
+		remove_proc_entry("fault", dir);
+		remove_proc_entry("time", dir);
+		remove_proc_entry("id", dir);
+		remove_proc_entry("julyregfi", NULL);
+	}
+#endif
+
 	printk("Fortune: Create /proc/julyregfi done.\n");
 	return 0;
 }
