@@ -37,11 +37,12 @@ public class MemoryFI
             cmd += " -e " + pname;
         }
         System.out.println(cmd);
+        return 0;
 
         //  运行脚本
-        //String result = this.runCommand(cmd, -1);
+        String result = this.runCommand(cmd, -1);
         //System.out.println("RESULT : " + result);
-        //String code = GetResult(result);
+        String code = GetResult(result);
         return code;
     }
     /*
@@ -181,7 +182,7 @@ public class MemoryFI
     {
         //System.out.println("Hello");
         MemoryFI mem = new MemoryFI();
-        //mem.TestRegex();
+        mem.TestRegex();
 
         String result = mem.Inject("stack", "random", "word_0", 1, null);
         System.out.println("RESULT : " + result);
