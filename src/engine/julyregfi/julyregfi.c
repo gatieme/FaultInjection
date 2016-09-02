@@ -57,7 +57,7 @@ void change_reg(struct my_pt_regs *regs)
     getrando(32);
     if(fault & 1)
     {
-        printk("Fortune: change reg ax from 0x%lx to ",regs->ax);
+        printk("Fortune: change reg ax from 0x%lx to ", regs->ax);
         regs->ax ^= (1 << rando);
         printk("0x%lx\n",regs->ax);
     }
@@ -161,9 +161,22 @@ void change_reg(struct my_pt_regs *regs)
 
 long my_do_fork(unsigned long clone_flags,unsigned long stack_start,struct pt_regs *regs,unsigned long stack_size,int __user *parent_tidptr,int __user *child_tidptr)
 {
-	if((!(aim & 1)) || signal == 0) jprobe_return();
+	if((!(aim & 1)) || signal == 0)
+        jprobe_return();
 	printk("Fortune: here.\n");
-	if(time!=-1) {if(time>0) --time; else {signal=0;printk("Done.\n");fork_count=0;jprobe_return();return 0;}}
+	if(time!=-1)
+    {
+        if(time > 0)
+            --time;
+        else
+        {
+            signal = 0;
+            printk("Done.\n");
+            fork_count = 0;
+            jprobe_return();
+        return 0;
+        }
+    }
 	printk("Fortune: do_fork from %s fork_count %d\n",current->comm,++fork_count);
 	//change_reg(regs);
 	jprobe_return();
@@ -175,14 +188,31 @@ void scan_fi(void)
     struct task_struct *task,*p,*q;
     struct pt_regs *regs;
     struct list_head *pos;
-    task=&init_task;
+    task = &init_task;
+
+    printk("Fortune: scan_fi to %s(pid %d) \n", p->comm, p->pid);
     list_for_each(pos,&task->tasks)
     {
-        if(time!=-1) {if(time>0) --time; else {signal=0;printk("Done.\n");scan_count=0;jprobe_return();return;}}
-        p=list_entry(pos, struct task_struct, tasks);
-        printk("Fortune: scan_fi to %s(pid %d) count %d\n",p->comm,p->pid,++scan_count);
-        regs = task_pt_regs(p);
-        change_reg(regs);
+        if(time!=-1)
+        {
+            if(time > 0)
+                --time;
+            else
+            {
+                signal = 0;
+                printk("Done.\n");
+                scan_count = 0;
+                jprobe_return();
+                return;
+            }
+        }
+
+        p = list_entry(pos, struct task_struct, tasks);
+        printk("Fortune: scan_fi to %s(pid %d) count %d\n", p->comm, p->pid, ++scan_count);
+
+        /*pt_regs * */regs = task_pt_regs(p);
+        change_reg(/*my_pt_regs * */regs);
+
         list_for_each(pos,&p->tasks)
         {
             if(time!=-1) {if(time>0) --time; else {signal=0;printk("Done.\n");scan_count=0;jprobe_return();return;}}
@@ -214,14 +244,26 @@ int proc_read_aim(char * page,char **start, off_t off, int count, int * eof,void
 int proc_write_aim(struct file *file,const char *buffer,unsigned long count,void * data)
 {
 	int iRet;
-	if(count <= 0) { return -1; }
+	if(count <= 0)
+    {
+        return -1;
+    }
 	memset(temp, '\0', sizeof(temp));
 	iRet = copy_from_user(temp, buffer, count);
-	if(iRet) { return -1; }
+	if(iRet)
+    {
+        return -1;
+    }
+
 	iRet = sscanf(temp,"%d",&aim);
-	if(iRet != 1) { return -1; }
+
+	if(iRet != 1)
+    {
+        return -1;
+    }
 	printk("Fortune: write aim:%d\n",aim);
-	return count;
+
+    return count;
 }
 
 int proc_read_fault(char * page,char **start, off_t off, int count, int * eof,void * data)
