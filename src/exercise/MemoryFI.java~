@@ -4,15 +4,12 @@ import java.util.regex.Matcher;
 
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
-//import java.io.BufferedReader;
-//import java.io.InputStreamReader;
 
-
+//import java.lang.*;
 
 public class MemoryFI
 {
-//static String m_injector = "sudo ../src/injector/memInjectoraa";
-    static String m_injector = "ls";
+    static String m_injector = "./memoryInjector";
 
     /*
      *  -l --location   stack|data|text
@@ -24,10 +21,11 @@ public class MemoryFI
      *  pid = -1 时没使用pname
      *  pname = null时，使用pid
      * */
-    public String Inject(String location, String mode, String type, int pid, String pname)
+    public void Inject(String location, String mode, String type, int pid, String pname)
     {
+
         //  拼接运行字符串
-        String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type + " -timeout 3";
+        String  cmd = m_injector + " -l " + location + " -m " + mode + " -t " + type;
         if(pid != -1)
         {
             cmd += " -p " + pid;
@@ -39,29 +37,8 @@ public class MemoryFI
         System.out.println(cmd);
 
         //  运行脚本
-        //String result = this.runCommand(cmd, -1);
-        //System.out.println("RESULT : " + result);
-        //String code = GetResult(result);
-        return code;
-    }
-    /*
-     *  从输出的结果中获取到指令的返回值序列
-     *
-     *  最后的返回串为如下类似的格式
-     *  [ 2016-5-24 18:39:48]Process 1 [ inject | exited | term ] sucesss with code 0(KT_RUN)
-     *
-     *  最后的返回码的信息如下
-     *  0(KT_RUN)
-     * */
-    public String GetResult(String result)
-    {
-        System.out.println("RESULT : " + result);
-        // [ 2016-5-24 18:39:48]Process 1 inject sucesss with code 0(KT_RUN)
-        int pos = result.lastIndexOf(" ");
-        String code = result.substring(pos + 1);        // 0(KT_RUN)
-
-        System.out.println("code : " + code);
-        return code;
+        String result = this.runCommand(new String[]{cmd, ""}, -1);
+        System.out.println(result);
     }
 
     /**
@@ -72,7 +49,7 @@ public class MemoryFI
     *   int tp = 1 返回执行结果  非1 返回命令执行后的输出
     *
     **/
-    public String runCommand(String cmd, int tp)
+    public String runCommand(String[] cmd, int tp)
     {
 
         StringBuffer buf = new StringBuffer(1000);
@@ -93,33 +70,35 @@ public class MemoryFI
                 {
                     rt = "1";
                 }
+
             }
             else
             {
+                System.out.println("start...");
                 InputStreamReader ir = new InputStreamReader(pos.getInputStream());
 
                 LineNumberReader input = new LineNumberReader(ir);
 
-                String line="";
+                String ln="";
 
-                while ((line = input.readLine()) != null)
+                while ((ln = input.readLine()) != null)
                 {
-                    System.out.println(line);
-                    buf.append(line + "\n");
+
+                      buf.append(ln + "\n");
+
                 }
                 /*
-                BufferedReader read = new BufferedReader(new InputStreamReader(pos));
+                 * BufferedReader read = new BufferedReader(new InputStreamReader(in));
                 String line = null;
-                while((line = read.readLine()) != null)
-                {
-                          System.out.println(line);
-                }
+                while((line = read.readLine())!=null){
+                                System.out.printlnkk(line);
+                                */
                 rt = buf.toString();
-                */
+
                 input.close( );
+
                 ir.close( );
 
-                return buf.toString();
             }
 
         }
@@ -127,7 +106,6 @@ public class MemoryFI
         {
 
             rt = e.toString();
-            System.out.println("IOException:" + rt);
         }
         catch (Exception e)
         {
@@ -179,11 +157,10 @@ public class MemoryFI
 
     public static void main(String argv[])
     {
-        //System.out.println("Hello");
+        System.out.println("Hello");
         MemoryFI mem = new MemoryFI();
-        //mem.TestRegex();
+        mem.TestRegex();
 
-        String result = mem.Inject("stack", "random", "word_0", 1, null);
-        System.out.println("RESULT : " + result);
+        mem.Inject("stack", "random", "word_0", 1, null);
     }
 }

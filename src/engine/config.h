@@ -1,7 +1,18 @@
 /*
-*  Author: HIT CS HDMC team.
-*  Last modified by zhaozhilong: 2010-1-14
+*  Author: gatieme @ HIT CS HDMC team.
+*  Create: 2016-3-12 8:50
+*  Last modified: 2010-6-13 14:06:20
+*  Description:
+*
+*   Our project was completed in 2010 @ v1.0.0
+*   This module is create by gatieme @2015-11-29
+*
+*  	Memory fault injection engine running as a kernel module.
+*	This module will create "/proc/memoryEngine/" directory and 9 proc nodes.
+*   Write paramenters and request to these proc nodes and read the output from related proc node.
 */
+
+
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 

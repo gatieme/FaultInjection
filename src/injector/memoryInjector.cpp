@@ -1,7 +1,7 @@
 /*
 *  Author: HIT CS HDMC team.
 *  Create: 2010-3-13 8:50:12
-*  Last modified: 2010-6-16 14:08:59
+*  Last modified: 2016-6-16 14:08:59
 *  Description:
 *  Memory fault injection tool.
 *
@@ -418,6 +418,8 @@ int Injector::startInjection( void )
 
         //设置跟踪进程，等待子进程停止
         //bool ptraceFlag = true;
+		childProcess = -1;
+
         signalPid = this->m_targetPid;		//用于给sigAlrm函数传递进程号
 		iRet = ptraceAttach( this->m_targetPid );
 		if( iRet == RT_FAIL )
@@ -458,6 +460,7 @@ int Injector::startInjection( void )
 		// should be STOP
 		if( iRet != STOP )
 		{
+            //dbgcout <<"test.." <<endl;
 			writeResult( this->m_targetPid, iRet, data );	//exit or term
             return RT_FAIL;
 		}
@@ -757,7 +760,7 @@ int Injector::injectFaults( int pid )
 				break;
 			default:
 				printf("Do not support yet.\n");
-		}
+		    }
         //writeResult(pid, RUN, 0);
 		/// timeout to terminate child process
 		timeout( this->m_memoryFaultTable[i].m_timeout, report );
@@ -1017,6 +1020,10 @@ void Injector::writeResult( int pid, int status, int data )
 
 void Injector::cleanup(void)
 {
+    if(childProcess == -1)
+    {
+        return;
+    }
 	int iRet = kill(childProcess, 0);
 	if(iRet != -1)
 	{
