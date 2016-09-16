@@ -723,13 +723,13 @@ int Injector::injectFaults( int pid )
                 iRet = read_phy_mem(inject_pa, &origData);
 				if(iRet == FAIL)
                 {
-#ifdef EBUG         //  for create  error
-                    // modify by gatieme
-                    dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
-#else
+#if defined(FOR_MISS_MMAP)
                     srand(time(NULL));
 				    printf("word 0(0x%lx -> 0x%lx)\n", rand() % 1000000000, ~(-1));
                     sleep(1);
+#else               //  for create  error
+                    // modify by gatieme
+                    dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
 #endif
                     return RT_FAIL;
                 }

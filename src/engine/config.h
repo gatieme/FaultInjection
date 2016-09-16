@@ -16,8 +16,8 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
-#define DEBUG
-
+//#define DEBUG
+#define SILENCE
 
 
 #define KERNEL_STACK

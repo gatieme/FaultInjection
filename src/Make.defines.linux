@@ -10,7 +10,7 @@ else
 DEFFLAGS=-DRELEASE -DLINUX
 endif
 
-COMMIT="增加了贡献墙..."
+COMMIT="增加了MMAP机制下的readme描述..."
 #  github config
 GITHUB_COMMIT=$(COMMIT)
 

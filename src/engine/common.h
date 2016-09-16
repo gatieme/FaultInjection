@@ -220,7 +220,7 @@
 		printk(KERN_INFO"PMFI-[%s, %d] : "format, __FUNCTION__, __LINE__, ##args);
 	#elif defined SILENCE
 			#define dbginfo(format,args...);
-	#else								//printk normally
+	#elif defined NORMAL						//printk normally
 			#define dbginfo(format,args...); printk(KERN_INFO format, ##args);
 	#endif
 #endif

@@ -532,11 +532,11 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
 
     if(va > PAGE_OFFSET)
     {
-        dbginfo("virtual address(0x%lx) is in kernel space", va);
+        //dbginfo("virtual address(0x%lx) is in kernel space", va);
         pa = kv2p(va, pStatus);
         return pa;
     }
-    dbginfo("virtual address(0x%lx) is in user space", va);
+    //dbginfo("virtual address(0x%lx) is in user space", va);
     //dbginfo("");
 	pte = getPte(pMM, va);
     //dbginfo("");
@@ -548,7 +548,7 @@ long v2p(struct mm_struct *pMM, unsigned long va, int *pStatus)
          *  2G以上的内存，在0x200000000物理地址之上
          */
 #ifdef  ARM_64
-        dbginfo("[==arm64==]origin physical address : 0x%lx\n", pa);
+        //dbginfo("[==arm64==]origin physical address : 0x%lx\n", pa);
         pa &= 0x00000003ffffffff;
 #endif
         dbginfo("virtual : 0x%lx--(physical : 0x%lx)\n", va, pa);
@@ -652,7 +652,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     /*  判断给出的地址va是否合法(va < vm_end)  */
     if(!find_vma(pMM, va))
     {
-        printk(KERN_INFO"virt_addr 0x%lx not available.\n", va);
+        dbginfo(KERN_INFO "virt_addr 0x%lx not available.\n", va);
         return NULL;
     }
 
@@ -661,7 +661,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     //dprint("pgd_val(*pgd) = 0x%lx\n", pgd_val(*pgd));
     if(pgd_none(*pgd))
     {
-        printk(KERN_INFO"Not mapped in pgd.\n");
+        dbginfo(KERN_INFO "Not mapped in pgd.\n");
         return NULL;
     }
 
@@ -670,7 +670,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     //dprint("pud_val(*pud) = 0x%lx\n", pud_val(*pud));
     if(pud_none(*pud))
     {
-        printk(KERN_INFO"Not mapped in pud.\n");
+        dbginfo(KERN_INFO "Not mapped in pud.\n");
         return NULL;
     }
 
@@ -679,7 +679,7 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     //dprint("pmd_val(*pmd) = 0x%lx\n", pmd_val(*pmd));
     if(pmd_none(*pmd))
     {
-        printk(KERN_INFO"Not mapped in pmd.\n");
+        dbginfo(KERN_INFO "Not mapped in pmd.\n");
         return NULL;
     }
 
@@ -710,13 +710,13 @@ pte_t * getPte(struct mm_struct *pMM, unsigned long va)
     //dprint("*ppte = 0x%lx\n", pte_val(pte[-PTRS_PER_PTE]));
     if(pte_none(*pte))
     {
-        printk(KERN_INFO"Not mapped in pte.\n");
+        dbginfo(KERN_INFO "Not mapped in pte.\n");
         return NULL;
     }
 
     if(!pte_present(*pte))
     {
-        printk(KERN_INFO"pte not in RAM.\n");
+        dbginfo(KERN_INFO "pte not in RAM.\n");
         return NULL;
     }
 
@@ -928,7 +928,7 @@ static int __init initME(void)
     dir = proc_mkdir("memoryEngine", NULL);
 	if(dir == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/\n");
+		printk("Can't create /proc/memoryEngine/\n");
 		return FAIL;
 	}
     dbginfo("PROC_MKDIR ");
@@ -971,7 +971,7 @@ static int __init initME(void)
 
     if(proc_pid == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/pid\n");
+		printk("Can't create /proc/memoryEngine/pid\n");
         ret = FAIL;
 
         goto create_pid_failed;
@@ -987,7 +987,7 @@ static int __init initME(void)
 
     if(proc_pid == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/pid\n");
+		printk("Can't create /proc/memoryEngine/pid\n");
         ret = FAIL;
 
         goto create_pid_failed;
@@ -1002,7 +1002,7 @@ static int __init initME(void)
 	proc_va = create_proc_entry("virtualAddr", PERMISSION, dir);
 	if(proc_va == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
+		printk("Can't create /proc/memoryEngine/virtualAddr\n");
         ret = FAIL;
 
         goto create_va_failed;
@@ -1018,7 +1018,7 @@ static int __init initME(void)
 
     if(proc_va == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/virtualAddr\n");
+		printk("Can't create /proc/memoryEngine/virtualAddr\n");
         ret = FAIL;
 
         goto create_va_failed;
@@ -1034,7 +1034,7 @@ static int __init initME(void)
     proc_ctl = create_proc_entry("ctl", PERMISSION, dir);
 	if(proc_ctl == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/ctl\n");
+		printk("Can't create /proc/memoryEngine/ctl\n");
         ret = FAIL;
 
         goto create_ctl_failed;
@@ -1051,7 +1051,7 @@ static int __init initME(void)
 
     if(proc_ctl == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/ctl\n");
+		printk("Can't create /proc/memoryEngine/ctl\n");
         ret = FAIL;
 
 	    goto create_ctl_failed;
@@ -1067,7 +1067,7 @@ static int __init initME(void)
 
     if(proc_signal == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/signal\n");
+		printk("Can't create /proc/memoryEngine/signal\n");
         ret = FAIL;
 
         goto create_signal_failed;
@@ -1083,7 +1083,7 @@ static int __init initME(void)
 
     if(proc_signal == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/signal\n");
+		printk("Can't create /proc/memoryEngine/signal\n");
         ret = FAIL;
 
         goto create_signal_failed;
@@ -1099,7 +1099,7 @@ static int __init initME(void)
 	proc_pa = create_proc_entry("physicalAddr", PERMISSION, dir);
 	if(proc_pa == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
+		printk("Can't create /proc/memoryEngine/physicalAddr\n");
         ret = FAIL;
 
         goto create_pa_failed;
@@ -1115,7 +1115,7 @@ static int __init initME(void)
 
     if(proc_pa == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/physicalAddr\n");
+		printk("Can't create /proc/memoryEngine/physicalAddr\n");
         ret = FAIL;
 
         goto create_pa_failed;
@@ -1132,7 +1132,7 @@ static int __init initME(void)
 
     if(proc_kFuncName == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
+		printk("Can't create /proc/memoryEngine/kFuncName\n");
         ret = FAIL;
 
         goto create_kFuncName_failed;
@@ -1147,7 +1147,7 @@ static int __init initME(void)
 
     if(proc_kFuncName == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/kFuncName\n");
+		printk("Can't create /proc/memoryEngine/kFuncName\n");
         ret = FAIL;
 
         goto create_kFuncName_failed;
@@ -1163,7 +1163,7 @@ static int __init initME(void)
 
     if(proc_taskInfo == NULL)
 	{
-	    dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
+	    printk("Can't create /proc/memoryEngine/taskInfo\n");
         ret = FAIL;
 
         goto create_taskInfo_failed;
@@ -1177,7 +1177,7 @@ static int __init initME(void)
 
     if(proc_taskInfo == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/taskInfo\n");
+		printk("Can't create /proc/memoryEngine/taskInfo\n");
         ret = FAIL;
 
         goto create_taskInfo_failed;
@@ -1193,7 +1193,7 @@ static int __init initME(void)
 
     if(proc_val == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/memVal\n");
+		printk("Can't create /proc/memoryEngine/memVal\n");
 		ret = FAIL;
 
         goto create_val_failed;
@@ -1210,7 +1210,7 @@ static int __init initME(void)
 
     if(proc_val == NULL)
 	{
-		dbginfo("Can't create /proc/memoryEngine/memVal\n");
+		printk("Can't create /proc/memoryEngine/memVal\n");
         ret = FAIL;
 
         goto create_val_failed;
@@ -1229,7 +1229,7 @@ static int __init initME(void)
 	}
 	printk("Planted jprobe at force_sig_info: %p\n", jprobe1.kp.addr);
 
-	dbginfo("Memory engine module init\n");
+	printk("Memory engine module init\n");
 
     return OK;
 
@@ -1366,7 +1366,7 @@ static void __exit exitME(void)
 
     unregister_jprobe(&jprobe1);
 	printk("jprobe at %p unregistered.\n",	jprobe1.kp.addr);
-	dbginfo("Memory engine module exit\n");
+	printk("Memory engine module exit\n");
 }
 
 module_init(initME);
