@@ -6,7 +6,10 @@
 #define _CONFIG_H_
 
 //#define DEBUG
+//#define FOR_MISS_MMAP
 
+
+#define RW_ADDR_MMAP      /*  通过mmap /dev/mem来实现  */
 
 
 #define KERNEL_STACK

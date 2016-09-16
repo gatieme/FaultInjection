@@ -275,6 +275,8 @@ void do_request(void)
     else if(ctl == REQUEST_WRITE_PA)    /*  == 11  */
     {
         /*  */
+		writepa(pa, memVal);
+		ack_signal = ACK_WRITE_PA;
     }
 #endif
 #ifdef RW_VA_BY_KERNEL

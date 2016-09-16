@@ -194,6 +194,7 @@ long kern_func_virt_addr(const char *kFuncName)
     return virtualAddr;
 }
 
+#if   defined(RW_ADDR_MMAP)      /*  通过mmap /dev/mem来实现  */
 /*
 *	读取物理内存地址内容
 */
@@ -235,13 +236,14 @@ int read_phy_mem(unsigned long pa, long *data)
     mapStart = (void volatile *)mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_LOCKED, memfd, pa_base);
     if(mapStart == MAP_FAILED)
 	{
-#ifdef DEBUG
-		dbgprint("Failed to mmap /dev/mem [0x%lx], errno : [%d, %s]\n", pa_base, errno, strerror(errno));
-		perror("Failed to mmap /dev/mem ");
-#else
+
+#ifdef FOR_MISS_MMAP
         //srand(time(NULL));
         //long data = rand( ) % 1000000000;
         //printf("write data 0x%lx at 0x%lx success\n", *(unsigned long *)data, pa);
+#else
+		dbgprint("Failed to mmap /dev/mem [0x%lx], errno : [%d, %s]\n", pa_base, errno, strerror(errno));
+		perror("Failed to mmap /dev/mem ");
 #endif
         close(memfd);
 		return FAIL;
@@ -317,17 +319,17 @@ int write_page_0(unsigned long pa)
 	if(mlock((void *)mapStart, PAGE_SIZE) == -1)
 	{
 		perror("Failed to mlock mmaped space ");
-    do_mlock = 0;
-  }
-  do_mlock = 1;
+        do_mlock = 0;
+    }
+    do_mlock = 1;
 
-  memset((void *)mapStart, '0', PAGE_SIZE);
+    memset((void *)mapStart, '0', PAGE_SIZE);
 
-  if(munmap((void *)mapStart, PAGE_SIZE) != 0)
-  {
-  	perror("Failed to munmap /dev/mem ");
-  }
-	close(memfd);
+    if(munmap((void *)mapStart, PAGE_SIZE) != 0)
+    {
+  	    perror("Failed to munmap /dev/mem ");
+    }
+    close(memfd);
 	return OK;
 }
 
@@ -404,6 +406,83 @@ int write_phy_mem(unsigned long pa,void *data,int len)
 	close(memfd);
 	return OK;
 }
+
+#elif defined(RW_ADDR_PROC)     /*  通过proc/pid来实现       */
+
+/*
+*	读取物理内存地址内容
+*/
+extern int errno;
+int read_phy_mem(unsigned long pa, long *data)
+{
+
+}
+
+int write_page_0(unsigned long pa)
+{
+
+}
+/*
+*	改写物理内存地址，不会越过一个物理页面
+*/
+int write_phy_mem(unsigned long pa,void *data,int len)
+{
+
+}
+
+
+
+#elif defined(RW_ADDR_KERNEL)   /*  通过kernel驱动的方式来实现*/
+
+
+
+
+
+#endif
+
+
+/*
+ * 向进程pid的虚拟地址virt_addr进行读写
+ * 将该地址的原来数据保存在origin_data
+ * 并将数据write_mask标记的数据写入到虚拟地址中
+ * */
+int write_virt_mem_mask(
+        unsigned long pid, unsigned long va, /*  进程pid的虚拟地址virt_addr  */
+        long *origin_data,                          /*  地址读出的源数据  */
+        long *new_data, long write_mask)            /*  待写入的数据与对应的mask信息  */
+{
+    int iRet = 0;
+    unsigned long pa;
+    pa = virt_to_phys(pid, va);
+    dprintf("[%s, %d]--Inject Physics Address = 0x%lx(0x%lx)\n", __FILE__, __LINE__, pa, va);
+
+    iRet = read_phy_mem(pa, origin_data);
+    if(iRet == FAIL)
+    {
+        dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
+        return RT_FAIL;
+    }
+
+    *new_data = ((*origin_data) & write_mask);
+
+    iRet = write_phy_mem(pa, new_data, sizeof(new_data));
+    if(iRet == FAIL)
+    {
+        dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
+        return RT_FAIL;
+    }
+
+    iRet = read_phy_mem(pa, new_data);
+	if(iRet == FAIL)
+    {
+        dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
+        return RT_FAIL;
+    }
+
+	printf("(0x%lx -> 0x%lx)\n", *origin_data, *new_data);
+
+}
+
 
 /*
 *
