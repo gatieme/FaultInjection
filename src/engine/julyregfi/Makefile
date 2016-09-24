@@ -12,7 +12,7 @@ insmod :
 	sudo insmod ./julyregfi.ko
 
 
-rmmmod :
+rmmod :
 	sudo rmmod julyregfi
 
 reinsmod :

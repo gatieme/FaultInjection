@@ -355,45 +355,6 @@ int proc_write_signal(struct file *file,const char *buffer,unsigned long count,v
 
 static struct jprobe jphyper[jpnum];
 
-
-#ifdef PROC_CREATE
-    static const struct file_operations proc_aim_fops =
-    {
-        .owner = THIS_MODULE,
-        .read  = proc_read_aim,                       // can read
-        .write = proc_write_aim,                        // write only
-    };
-
-    static const struct file_operations proc_fault_fops =
-    {
-        .owner = THIS_MODULE,
-        .read  = proc_read_fault,                       // can read
-        .write = proc_write_fault,                        // write only
-    };
-
-    static const struct file_operations proc_time_fops =
-    {
-        .owner = THIS_MODULE,
-        .read  = proc_read_time,                       // can read
-        .write = proc_write_time,                        // write only
-    };
-
-    static const struct file_operations proc_id_fops =
-    {
-        .owner = THIS_MODULE,
-        .read  = proc_read_id,                       // can read
-        .write = proc_write_id,                        // write only
-    };
-
-    static const struct file_operations proc_signal_fops =
-    {
-        .owner = THIS_MODULE,
-        .read  = proc_read_signal,                       // can read
-        .write = proc_write_signal,                        // write only
-    };
-
-#endif
-
 static int julyregfi_init(void)
 {
 	int ret;
@@ -450,6 +411,12 @@ static int julyregfi_init(void)
 	proc_aim->write_proc = proc_write_aim;
 
 #elif defined PROC_CREATE
+    static const struct file_operations proc_aim_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_aim,                       // can read
+        .write = proc_write_aim,                        // write only
+    };
     proc_aim = proc_create("aim", PERMISSION, dir, &proc_aim_fops);
     if(proc_aim == NULL)
 	{
@@ -473,6 +440,12 @@ static int julyregfi_init(void)
 	proc_fault->write_proc = proc_write_fault;
 
 #elif defined PROC_CREATE
+    static const struct file_operations proc_fault_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_fault,                       // can read
+        .write = proc_write_fault,                        // write only
+    };
     proc_fault = proc_create("fault", PERMISSION, dir, &proc_fault_fops);
 	if(proc_fault == NULL)
 	{
@@ -498,6 +471,12 @@ static int julyregfi_init(void)
 	proc_time->read_proc = proc_read_time;
 	proc_time->write_proc = proc_write_time;
 #elif defined PROC_CREATE
+    static const struct file_operations proc_time_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_time,                       // can read
+        .write = proc_write_time,                        // write only
+    };
     proc_time = proc_create("time", PERMISSION, dir, &proc_time_fops);
 	if(proc_time == NULL)
 	{
@@ -525,6 +504,12 @@ static int julyregfi_init(void)
 	proc_id->read_proc = proc_read_id;
 	proc_id->write_proc = proc_write_id;
 #elif defined PROC_CREATE
+    static const struct file_operations proc_id_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_id,                       // can read
+        .write = proc_write_id,                        // write only
+    };
     proc_id = proc_create("id", PERMISSION, dir, &proc_id_fops);
 	if(proc_id == NULL)
 	{
@@ -554,7 +539,13 @@ static int julyregfi_init(void)
 	proc_signal->read_proc = proc_read_signal;
 	proc_signal->write_proc = proc_write_signal;
 #elif defined PROC_CREATE
-    proc_signal = proc_create("signal", PERMISSION, dir, &proc_signal_fops);
+    static const struct file_operations proc_signal_fops =
+    {
+        .owner = THIS_MODULE,
+        .read  = proc_read_signal,                       // can read
+        .write = proc_write_signal,                        // write only
+    };
+    proc_signal = proc_create("id", PERMISSION, dir, &proc_signal_fops);
 	if(proc_signal == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/signal\n");
