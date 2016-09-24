@@ -356,7 +356,7 @@ static int julyregfi_init(void)
 	if(useit[do_fork_id])
     {
         jphyper[do_fork_id].entry = (kprobe_opcode_t *)my_do_fork;
-        jphyper[do_fork_id].kp.symbol_name="do_fork";
+        jphyper[do_fork_id].kp.symbol_name="_do_fork";
     }
 
     if(useit[do_timer_id])
@@ -456,8 +456,8 @@ static int julyregfi_init(void)
 	if(proc_time == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/time\n");
-		remove_proc_entry("aim",dir);
 		remove_proc_entry("fault",dir);
+		remove_proc_entry("aim",dir);
 		remove_proc_entry("julyregfi", NULL);
 		return -1;
 	}
@@ -474,8 +474,8 @@ static int julyregfi_init(void)
 	if(proc_time == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/time\n");
-		remove_proc_entry("aim",dir);
 		remove_proc_entry("fault",dir);
+		remove_proc_entry("aim",dir);
 		remove_proc_entry("julyregfi", NULL);
 		return -1;
 	}
@@ -488,9 +488,9 @@ static int julyregfi_init(void)
 	if(proc_id == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/id\n");
-		remove_proc_entry("aim", dir);
-		remove_proc_entry("fault", dir);
 		remove_proc_entry("time", dir);
+		remove_proc_entry("fault", dir);
+		remove_proc_entry("aim", dir);
 		remove_proc_entry("julyregfi", NULL);
 		return -1;
 	}
@@ -507,9 +507,9 @@ static int julyregfi_init(void)
 	if(proc_id == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/id\n");
-		remove_proc_entry("aim", dir);
-		remove_proc_entry("fault", dir);
 		remove_proc_entry("time", dir);
+		remove_proc_entry("fault", dir);
+		remove_proc_entry("aim", dir);
 		remove_proc_entry("julyregfi", NULL);
 		return -1;
 	}
@@ -522,10 +522,10 @@ static int julyregfi_init(void)
 	if(proc_signal == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/signal\n");
-		remove_proc_entry("aim", dir);
+		remove_proc_entry("id", dir);
 		remove_proc_entry("fault", dir);
 		remove_proc_entry("time", dir);
-		remove_proc_entry("id", dir);
+		remove_proc_entry("aim", dir);
 		remove_proc_entry("julyregfi", NULL);
 		return -1;
 	}
@@ -542,11 +542,12 @@ static int julyregfi_init(void)
 	if(proc_signal == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi/signal\n");
-		remove_proc_entry("aim", dir);
+		remove_proc_entry("id", dir);
 		remove_proc_entry("fault", dir);
 		remove_proc_entry("time", dir);
-		remove_proc_entry("id", dir);
+		remove_proc_entry("aim", dir);
 		remove_proc_entry("julyregfi", NULL);
+		return -1;
 	}
 #endif
 
