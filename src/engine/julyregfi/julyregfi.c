@@ -429,7 +429,9 @@ static int julyregfi_init(void)
 		}
 		printk("Fortune: Planted probe at %p, change %s\n", jphyper[i].kp.addr, jphyper[i].kp.symbol_name);
 	}
-	dir = proc_mkdir("julyregfi", NULL);
+
+
+    dir = proc_mkdir("julyregfi", NULL);
 	if(dir == NULL)
 	{
 		printk("Fortune: Can't create /proc/julyregfi\n");
@@ -566,7 +568,6 @@ static int julyregfi_init(void)
 		return -1;
 	}
 #endif
-
 	printk("Fortune: Create /proc/julyregfi done.\n");
 	return 0;
 }
