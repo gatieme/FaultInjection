@@ -6,6 +6,7 @@
 #include <linux/proc_fs.h>
 #include <linux/random.h>
 
+#include <linux/version.h>
 
 
 
@@ -402,7 +403,11 @@ static int julyregfi_init(void)
 	if(useit[do_fork_id])
     {
         jphyper[do_fork_id].entry = (kprobe_opcode_t *)my_do_fork;
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 2, 0)
         jphyper[do_fork_id].kp.symbol_name="do_fork";
+#else
+        jphyper[do_fork_id].kp.symbol_name="_do_fork";
+#endif
     }
 
     if(useit[do_timer_id])
