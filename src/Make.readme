@@ -1,0 +1,9 @@
+# Common make definitions, customized for each platform
+
+# Definitions required in all program directories to compile and link
+# C programs using gcc.
+
+GITHUB_TAG=v1.0.0
+
+GITHUB_COMMIT="Relase version 1.0.0"
+

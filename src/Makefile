@@ -1,6 +1,7 @@
 ROOT=$(shell pwd)
 PLATFORM=$(shell $(ROOT)/systype.sh)
 include $(ROOT)/Make.defines.$(PLATFORM)
+include $(ROOT)/Make.readme
 
 
 # director config
@@ -42,7 +43,7 @@ install :
 
 github:
 	make clean
-	cd $(ROOT)/.. 
+	cd $(ROOT)/..
 	git add -A
 	git commit -m $(GITHUB_COMMIT)
 	git push origin master
