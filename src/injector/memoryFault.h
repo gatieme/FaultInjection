@@ -71,7 +71,8 @@ typedef enum types
 
 	word_0,
 	word_1,
-	word_error,
+    word_flip,
+    word_error,
 
 	page_0,
 	page_1,

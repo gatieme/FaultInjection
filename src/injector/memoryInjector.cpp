@@ -758,7 +758,39 @@ int Injector::injectFaults( int pid )
 				printf("word 0(0x%lx -> 0x%lx)\n", origData, newData);
 				break;
 
-			case page_0:
+            case word_flip  :
+
+                dprintf("FaultType = word_flip, inject_pa = 0x%lx\n", inject_pa);
+
+                iRet = read_phy_mem(inject_pa, &origData);
+				if(iRet == FAIL)
+                {
+                    // modify by gatieme
+                    dprintf("Error [%s, %d]--iRet = %d\n", __FILE__, __LINE__, iRet);
+                    return RT_FAIL;
+                }
+				newData = ~origData;
+
+                iRet = write_phy_mem(inject_pa, &newData, sizeof(newData));
+                if(iRet == FAIL)
+                {
+                    // modify by gatieme
+                    dprintf("Error [%s, %d]--, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    return RT_FAIL;
+                }
+
+                iRet = read_phy_mem(inject_pa, &newData);
+				if(iRet == FAIL)
+                {
+                    // modify by gatieme
+                    dprintf("Error [%s, %d]--, iRet = %d\n", __FILE__, __LINE__, iRet);
+                    return RT_FAIL;
+                }
+
+				printf("word flip(0x%lx -> 0x%lx)\n", origData, newData);
+				break;
+
+            case page_0:
 				iRet = write_page_0(inject_pa);
 				if(iRet == FAIL)
                 {

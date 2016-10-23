@@ -70,6 +70,12 @@ ostream& operator<<(ostream &out, const MemoryFault &memoryFault)
             out <<"word_0, ";
             break;
         }
+        case word_flip:
+        {
+            out <<"word_flip, ";
+            break;
+
+        }
         case page_0:
         {
             out <<"page_0, ";
