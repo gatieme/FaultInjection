@@ -1,0 +1,2131 @@
+PT_F40-2_bit_1-300 Test Num : 1
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100078 microseconds
+Fault on PT_F40(0X7f9c153d7ee0 -> 0X10007f9c153d7ee0)
+[2016-10-27 20:20:49]Process 10486 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 2
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101121 microseconds
+Fault on PT_F40(0X7fa61d489ee0 -> 0X10007fa61d489ee0)
+[2016-10-27 20:20:49]Process 10488 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 3
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100972 microseconds
+Fault on PT_F40(0X7f356b8eaee0 -> 0X10007f356b8eaee0)
+[2016-10-27 20:20:49]Process 10491 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 4
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101319 microseconds
+Fault on PT_F40(0X7f4ae2d29ee0 -> 0X10007f4ae2d29ee0)
+[2016-10-27 20:20:49]Process 10493 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 5
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100982 microseconds
+Fault on PT_F40(0X7fedd0c7aee0 -> 0X10007fedd0c7aee0)
+[2016-10-27 20:20:49]Process 10495 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 6
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100117 microseconds
+Fault on PT_F40(0X7fc67028eee0 -> 0X10007fc67028eee0)
+[2016-10-27 20:20:49]Process 10497 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 7
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101300 microseconds
+Fault on PT_F40(0X7f54854ffee0 -> 0X10007f54854ffee0)
+[2016-10-27 20:20:49]Process 10499 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 8
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100896 microseconds
+Fault on PT_F40(0X7f01bf254ee0 -> 0X10007f01bf254ee0)
+[2016-10-27 20:20:49]Process 10501 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 9
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101210 microseconds
+Fault on PT_F40(0X7f6b14043ee0 -> 0X10007f6b14043ee0)
+[2016-10-27 20:20:49]Process 10503 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 10
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100074 microseconds
+Fault on PT_F40(0X7fe88c419ee0 -> 0X7fe88c419ee0)
+timeout now but the process is still running...
+[2016-10-27 20:20:53]Process 10505 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 11
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101004 microseconds
+Fault on PT_F40(0X7f7fda3dfee0 -> 0X7f7fda3dfef0)
+[2016-10-27 20:20:53]Process 10507 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 12
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100978 microseconds
+Fault on PT_F40(0X7f4926da2ee0 -> 0X7f4926da2ef0)
+[2016-10-27 20:20:53]Process 10509 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 13
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101018 microseconds
+Fault on PT_F40(0X7f3fd5254ee0 -> 0X7f3fd5254ef0)
+[2016-10-27 20:20:53]Process 10511 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 14
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101467 microseconds
+Fault on PT_F40(0X7fb53e6a5ee0 -> 0X7fb53e6a5ef0)
+[2016-10-27 20:20:53]Process 10513 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 15
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100107 microseconds
+Fault on PT_F40(0X7ff96af01ee0 -> 0X7ff96af01ef0)
+[2016-10-27 20:20:53]Process 10515 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 16
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101381 microseconds
+Fault on PT_F40(0X7f3706c45ee0 -> 0X7f3706c45ef0)
+[2016-10-27 20:20:53]Process 10517 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 17
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101022 microseconds
+Fault on PT_F40(0X7f3214f6fee0 -> 0X7f3214f6fef0)
+[2016-10-27 20:20:53]Process 10519 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 18
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101064 microseconds
+Fault on PT_F40(0X7f8e38209ee0 -> 0X7f8e38209ef0)
+[2016-10-27 20:20:53]Process 10521 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 19
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100097 microseconds
+Fault on PT_F40(0X7f837b0cbee0 -> 0X807f837b0cbee0)
+[2016-10-27 20:20:54]Process 10523 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 20
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101586 microseconds
+Fault on PT_F40(0X7f53d5e42ee0 -> 0X807f53d5e42ee0)
+[2016-10-27 20:20:54]Process 10525 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 21
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101227 microseconds
+Fault on PT_F40(0X7f46f7083ee0 -> 0X807f46f7083ee0)
+[2016-10-27 20:20:54]Process 10527 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 22
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101470 microseconds
+Fault on PT_F40(0X7f26c3cd8ee0 -> 0X807f26c3cd8ee0)
+[2016-10-27 20:20:54]Process 10529 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 23
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101166 microseconds
+Fault on PT_F40(0X7f7577574ee0 -> 0X807f7777574ee0)
+[2016-10-27 20:20:54]Process 10531 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 24
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101704 microseconds
+Fault on PT_F40(0X7f7b6bd37ee0 -> 0X807f7b6bd37ee0)
+[2016-10-27 20:20:54]Process 10533 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 25
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100992 microseconds
+Fault on PT_F40(0X7fb066023ee0 -> 0X807fb266023ee0)
+[2016-10-27 20:20:54]Process 10535 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 26
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101225 microseconds
+Fault on PT_F40(0X7f1eaabb0ee0 -> 0X807f1eaabb0ee0)
+[2016-10-27 20:20:54]Process 10537 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 27
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101318 microseconds
+Fault on PT_F40(0X7f3dec97aee0 -> 0X807f3fec97aee0)
+[2016-10-27 20:20:54]Process 10539 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 28
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101197 microseconds
+Fault on PT_F40(0X7fa4f7ed6ee0 -> 0X27fa4f7ed6ee0)
+[2016-10-27 20:20:55]Process 10541 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 29
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101320 microseconds
+Fault on PT_F40(0X7f3576ddaee0 -> 0X27f3576ddaee0)
+[2016-10-27 20:20:55]Process 10543 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 30
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101115 microseconds
+Fault on PT_F40(0X7f77cd160ee0 -> 0X27f77cd160ee0)
+[2016-10-27 20:20:55]Process 10545 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 31
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100863 microseconds
+Fault on PT_F40(0X7ff8013e4ee0 -> 0X27ff8413e4ee0)
+[2016-10-27 20:20:55]Process 10547 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 32
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100074 microseconds
+Fault on PT_F40(0X7f13d748cee0 -> 0X27f13d748cee0)
+[2016-10-27 20:20:55]Process 10549 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 33
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100983 microseconds
+Fault on PT_F40(0X7f5340e64ee0 -> 0X27f5340e64ee0)
+[2016-10-27 20:20:55]Process 10551 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 34
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101298 microseconds
+Fault on PT_F40(0X7ff893423ee0 -> 0X27ff8d3423ee0)
+[2016-10-27 20:20:55]Process 10553 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 35
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101279 microseconds
+Fault on PT_F40(0X7f24b3f03ee0 -> 0X27f24f3f03ee0)
+[2016-10-27 20:20:55]Process 10555 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 36
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101177 microseconds
+Fault on PT_F40(0X7f733f888ee0 -> 0X27f737f888ee0)
+[2016-10-27 20:20:55]Process 10557 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 37
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101483 microseconds
+Fault on PT_F40(0X7facac54bee0 -> 0X7facac54bee0)
+timeout now but the process is still running...
+[2016-10-27 20:20:59]Process 10559 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 38
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101163 microseconds
+Fault on PT_F40(0X7f7ed376fee0 -> 0X2007f7ed376fee0)
+[2016-10-27 20:20:59]Process 10561 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 39
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101630 microseconds
+Fault on PT_F40(0X7f5fc6976ee0 -> 0X2007f5fc6976ee0)
+[2016-10-27 20:20:59]Process 10563 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 40
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101571 microseconds
+Fault on PT_F40(0X7fc38bb7cee0 -> 0X2007fc38bb7cee0)
+[2016-10-27 20:20:59]Process 10565 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 41
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101211 microseconds
+Fault on PT_F40(0X7f60da522ee0 -> 0X2007f60da522ee0)
+[2016-10-27 20:20:59]Process 10567 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 42
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100091 microseconds
+Fault on PT_F40(0X7f7a7f6fbee0 -> 0X2007f7a7f6fbee0)
+[2016-10-27 20:20:59]Process 10569 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 43
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101105 microseconds
+Fault on PT_F40(0X7fad53bf8ee0 -> 0X2007fed53bf8ee0)
+[2016-10-27 20:20:59]Process 10571 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 44
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100123 microseconds
+Fault on PT_F40(0X7f636b8b8ee0 -> 0X2007f636b8b8ee0)
+[2016-10-27 20:20:59]Process 10573 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 45
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101615 microseconds
+Fault on PT_F40(0X7f24b1d25ee0 -> 0X2007f64b1d25ee0)
+[2016-10-27 20:20:59]Process 10575 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 46
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101071 microseconds
+Fault on PT_F40(0X7f443e776ee0 -> 0X7f443e776ee0)
+timeout now but the process is still running...
+[ 2016-10-27 20:21:3]Process 10577 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 47
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101196 microseconds
+Fault on PT_F40(0X7f3b8c811ee0 -> 0X7f3b8c811ee0)
+timeout now but the process is still running...
+[ 2016-10-27 20:21:6]Process 10581 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 48
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101187 microseconds
+Fault on PT_F40(0X7ff567b5eee0 -> 0X4107ff567b5eee0)
+[ 2016-10-27 20:21:6]Process 10583 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 49
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100074 microseconds
+Fault on PT_F40(0X7fc46935dee0 -> 0X4107fc46935dee0)
+[ 2016-10-27 20:21:6]Process 10585 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 50
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101068 microseconds
+Fault on PT_F40(0X7f096d7c9ee0 -> 0X4107f096d7c9ee0)
+[ 2016-10-27 20:21:6]Process 10587 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 51
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101053 microseconds
+Fault on PT_F40(0X7fc20e02eee0 -> 0X4107fc20e02eee0)
+[ 2016-10-27 20:21:6]Process 10589 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 52
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101000 microseconds
+Fault on PT_F40(0X7f7087036ee0 -> 0X4107f7087036ee0)
+[ 2016-10-27 20:21:6]Process 10591 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 53
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101104 microseconds
+Fault on PT_F40(0X7fa65efe3ee0 -> 0X4107fa65efe3ee0)
+[ 2016-10-27 20:21:6]Process 10593 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 54
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101229 microseconds
+Fault on PT_F40(0X7f95441cbee0 -> 0X4107f95441cbee0)
+[ 2016-10-27 20:21:6]Process 10595 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 55
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101207 microseconds
+Fault on PT_F40(0X7f2686843ee0 -> 0X2000ff2686843ee0)
+[ 2016-10-27 20:21:7]Process 10597 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 56
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101355 microseconds
+Fault on PT_F40(0X7f75353ddee0 -> 0X2000ff75353ddee0)
+[ 2016-10-27 20:21:7]Process 10599 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 57
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101162 microseconds
+Fault on PT_F40(0X7fb2961f2ee0 -> 0X2000ffb2961f2ee0)
+[ 2016-10-27 20:21:7]Process 10601 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 58
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101125 microseconds
+Fault on PT_F40(0X7fe59f4c2ee0 -> 0X2000ffe59f4c2ee0)
+[ 2016-10-27 20:21:7]Process 10603 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 59
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101661 microseconds
+Fault on PT_F40(0X7f6968e7cee0 -> 0X2000ff6968e7cee0)
+[ 2016-10-27 20:21:7]Process 10605 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 60
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101141 microseconds
+Fault on PT_F40(0X7fd9f240eee0 -> 0X2000ffd9f240eee0)
+[ 2016-10-27 20:21:7]Process 10607 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 61
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101004 microseconds
+Fault on PT_F40(0X7f8d36542ee0 -> 0X2000ff8d36542ee0)
+[ 2016-10-27 20:21:7]Process 10609 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 62
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101097 microseconds
+Fault on PT_F40(0X7f291ca68ee0 -> 0X2000ff291ca68ee0)
+[ 2016-10-27 20:21:7]Process 10611 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 63
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101143 microseconds
+Fault on PT_F40(0X7f189a7bfee0 -> 0X2000ff189a7bfee0)
+[ 2016-10-27 20:21:7]Process 10613 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 64
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101064 microseconds
+Fault on PT_F40(0X7f238935aee0 -> 0X807f238935eee0)
+[ 2016-10-27 20:21:8]Process 10615 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 65
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101093 microseconds
+Fault on PT_F40(0X7f9ede585ee0 -> 0X807f9ede585ee0)
+[ 2016-10-27 20:21:8]Process 10617 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 66
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101072 microseconds
+Fault on PT_F40(0X7f988ffeaee0 -> 0X807f988ffeeee0)
+[ 2016-10-27 20:21:8]Process 10619 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 67
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101016 microseconds
+Fault on PT_F40(0X7f0450df0ee0 -> 0X807f0450df4ee0)
+[ 2016-10-27 20:21:8]Process 10621 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 68
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100167 microseconds
+Fault on PT_F40(0X7f1adf5adee0 -> 0X807f1adf5adee0)
+[ 2016-10-27 20:21:8]Process 10623 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 69
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100949 microseconds
+Fault on PT_F40(0X7f4bcb836ee0 -> 0X807f4bcb836ee0)
+[ 2016-10-27 20:21:8]Process 10625 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 70
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100077 microseconds
+Fault on PT_F40(0X7f364b8feee0 -> 0X807f364b8feee0)
+[ 2016-10-27 20:21:8]Process 10627 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 71
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100995 microseconds
+Fault on PT_F40(0X7efdb0072ee0 -> 0X807efdb0076ee0)
+[ 2016-10-27 20:21:8]Process 10629 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 72
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101040 microseconds
+Fault on PT_F40(0X7f3933195ee0 -> 0X807f3933195ee0)
+[ 2016-10-27 20:21:8]Process 10631 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 73
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100999 microseconds
+Fault on PT_F40(0X7f1a6344fee0 -> 0X7f1a6344fee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:12]Process 10633 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 74
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100935 microseconds
+Fault on PT_F40(0X7febbad4aee0 -> 0X7febbed4aee8)
+[2016-10-27 20:21:12]Process 10635 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 75
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101030 microseconds
+Fault on PT_F40(0X7f86dea20ee0 -> 0X7f86dea20ee8)
+timeout now but the process is still running...
+[2016-10-27 20:21:15]Process 10637 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 76
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101110 microseconds
+Fault on PT_F40(0X7fd096ac8ee0 -> 0X7fd096fc8ee0)
+[2016-10-27 20:21:15]Process 10639 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 77
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101116 microseconds
+Fault on PT_F40(0X7f05027ddee0 -> 0X7f05027ddee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:18]Process 10641 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 78
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101236 microseconds
+Fault on PT_F40(0X7f5a64c4eee0 -> 0Xff5a64c4eee0)
+[2016-10-27 20:21:18]Process 10643 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 79
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101231 microseconds
+Fault on PT_F40(0X7f33f2e63ee0 -> 0Xff33f2e63ee0)
+[2016-10-27 20:21:18]Process 10645 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 80
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100097 microseconds
+Fault on PT_F40(0X7f0c95574ee0 -> 0Xff0c95574ee0)
+[2016-10-27 20:21:18]Process 10647 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 81
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101473 microseconds
+Fault on PT_F40(0X7efe101a3ee0 -> 0Xfefe101a3ee0)
+[2016-10-27 20:21:18]Process 10649 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 82
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101256 microseconds
+Fault on PT_F40(0X7f4cc3887ee0 -> 0X7f4cc3887ee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:22]Process 10651 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 83
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101518 microseconds
+Fault on PT_F40(0X7fb8dff1cee0 -> 0X7fb8dff1cee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:25]Process 10653 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 84
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101205 microseconds
+Fault on PT_F40(0X7f0376b8fee0 -> 0X7f0376b8fee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:28]Process 10655 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 85
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101171 microseconds
+Fault on PT_F40(0X7fa55ea15ee0 -> 0X7fa55ea15ee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:31]Process 10657 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 86
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100110 microseconds
+Fault on PT_F40(0X7f452a70cee0 -> 0X7f452a70cee2)
+timeout now but the process is still running...
+[2016-10-27 20:21:34]Process 10659 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 87
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101205 microseconds
+Fault on PT_F40(0X7f643dbcaee0 -> 0X7f643dbcaee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:37]Process 10661 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 88
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101227 microseconds
+Fault on PT_F40(0X7f0d0a43aee0 -> 0X7f0f0a43eee0)
+[2016-10-27 20:21:37]Process 10663 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 89
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100103 microseconds
+Fault on PT_F40(0X7fdfb032aee0 -> 0X7fdfb032eee0)
+[2016-10-27 20:21:37]Process 10665 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 90
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101206 microseconds
+Fault on PT_F40(0X7f89884a6ee0 -> 0X7f8b884a6ee0)
+[2016-10-27 20:21:37]Process 10667 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 91
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101149 microseconds
+Fault on PT_F40(0X7f9ca213eee0 -> 0X807f9ca213eee0)
+[2016-10-27 20:21:38]Process 10670 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 92
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100099 microseconds
+Fault on PT_F40(0X7f1205257ee0 -> 0X807f1285257ee0)
+[2016-10-27 20:21:38]Process 10681 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 93
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101135 microseconds
+Fault on PT_F40(0X7fc0e9993ee0 -> 0X807fc0e9993ee0)
+[2016-10-27 20:21:38]Process 10688 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 94
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101312 microseconds
+Fault on PT_F40(0X7f4033837ee0 -> 0X807f40b3837ee0)
+[2016-10-27 20:21:38]Process 10690 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 95
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101296 microseconds
+Fault on PT_F40(0X7febae554ee0 -> 0X807febae554ee0)
+[2016-10-27 20:21:38]Process 10692 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 96
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100187 microseconds
+Fault on PT_F40(0X7f5681765ee0 -> 0X807f5681765ee0)
+[2016-10-27 20:21:38]Process 10694 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 97
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101169 microseconds
+Fault on PT_F40(0X7feec0616ee0 -> 0X807feec0616ee0)
+[2016-10-27 20:21:38]Process 10696 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 98
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101193 microseconds
+Fault on PT_F40(0X7fb8ae880ee0 -> 0X807fb8ae880ee0)
+[2016-10-27 20:21:38]Process 10698 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 99
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100166 microseconds
+Fault on PT_F40(0X7f4d54d37ee0 -> 0X807f4dd4d37ee0)
+[2016-10-27 20:21:38]Process 10700 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 100
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101683 microseconds
+Fault on PT_F40(0X7fb32a47bee0 -> 0X7fb72a47bee8)
+[2016-10-27 20:21:39]Process 10702 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 101
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100126 microseconds
+Fault on PT_F40(0X7f795dac9ee0 -> 0X7f7d5dac9ee8)
+[2016-10-27 20:21:39]Process 10704 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 102
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101163 microseconds
+Fault on PT_F40(0X7f4c4ad70ee0 -> 0X7f4c4ad70ee8)
+timeout now but the process is still running...
+[2016-10-27 20:21:42]Process 10706 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 103
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101017 microseconds
+Fault on PT_F40(0X7fb09973fee0 -> 0X2007fb09977fee0)
+[2016-10-27 20:21:42]Process 10708 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 104
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101025 microseconds
+Fault on PT_F40(0X7fe70c649ee0 -> 0X2007fe70c649ee0)
+[2016-10-27 20:21:42]Process 10710 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 105
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101120 microseconds
+Fault on PT_F40(0X7f6960f5aee0 -> 0X2007f6960f5aee0)
+[2016-10-27 20:21:42]Process 10712 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 106
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101191 microseconds
+Fault on PT_F40(0X7ff22d2f7ee0 -> 0X2007ff22d2f7ee0)
+[2016-10-27 20:21:42]Process 10714 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 107
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101017 microseconds
+Fault on PT_F40(0X7f8c95703ee0 -> 0X2007f8c95743ee0)
+[2016-10-27 20:21:42]Process 10716 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 108
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101148 microseconds
+Fault on PT_F40(0X7fa7b51d6ee0 -> 0X2007fa7b51d6ee0)
+[2016-10-27 20:21:42]Process 10718 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 109
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100094 microseconds
+Fault on PT_F40(0X7fef22192ee0 -> 0X1007fef22192ee0)
+[2016-10-27 20:21:43]Process 10720 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 110
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101099 microseconds
+Fault on PT_F40(0X7f27c76d9ee0 -> 0X1007f27c76d9ee0)
+[2016-10-27 20:21:43]Process 10722 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 111
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101037 microseconds
+Fault on PT_F40(0X7f8d3a639ee0 -> 0X1007f8d3a639ee0)
+[2016-10-27 20:21:43]Process 10724 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 112
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101282 microseconds
+Fault on PT_F40(0X7ff913170ee0 -> 0X1007ff913170ee0)
+[2016-10-27 20:21:43]Process 10726 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 113
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101063 microseconds
+Fault on PT_F40(0X7ff6448abee0 -> 0X1007ff6448abee0)
+[2016-10-27 20:21:43]Process 10729 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 114
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100964 microseconds
+Fault on PT_F40(0X7f5708dc0ee0 -> 0X1007f5708dc0ee0)
+[2016-10-27 20:21:43]Process 10731 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 115
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101098 microseconds
+Fault on PT_F40(0X7f04fd229ee0 -> 0X1007f04fd229ee0)
+[2016-10-27 20:21:43]Process 10733 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 116
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100959 microseconds
+Fault on PT_F40(0X7f271794bee0 -> 0X1007f271794bee0)
+[2016-10-27 20:21:43]Process 10735 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 117
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100879 microseconds
+Fault on PT_F40(0X7f4bde282ee0 -> 0X1007f4bde282ee0)
+[2016-10-27 20:21:43]Process 10737 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 118
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100990 microseconds
+Fault on PT_F40(0X7f8cd0a51ee0 -> 0X7f8cd0a51ee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:47]Process 10739 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 119
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100919 microseconds
+Fault on PT_F40(0X7f9eb01c6ee0 -> 0Xff9eb01c6ee0)
+[2016-10-27 20:21:47]Process 10741 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 120
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100988 microseconds
+Fault on PT_F40(0X7f22dba87ee0 -> 0Xff22dba87ee0)
+[2016-10-27 20:21:47]Process 10743 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 121
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100924 microseconds
+Fault on PT_F40(0X7f3d00c78ee0 -> 0Xff3d00c78ee0)
+[2016-10-27 20:21:47]Process 10745 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 122
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101341 microseconds
+Fault on PT_F40(0X7fd44c921ee0 -> 0Xffd44c921ee0)
+[2016-10-27 20:21:47]Process 10747 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 123
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101182 microseconds
+Fault on PT_F40(0X7f864e32cee0 -> 0Xff864e32cee0)
+[2016-10-27 20:21:47]Process 10749 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 124
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100981 microseconds
+Fault on PT_F40(0X7f7f5b08eee0 -> 0Xff7f5b08eee0)
+[2016-10-27 20:21:47]Process 10751 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 125
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101069 microseconds
+Fault on PT_F40(0X7fd12e5a2ee0 -> 0Xffd12e5a2ee0)
+[2016-10-27 20:21:47]Process 10753 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 126
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100960 microseconds
+Fault on PT_F40(0X7fbb69232ee0 -> 0Xffbb69232ee0)
+[2016-10-27 20:21:47]Process 10755 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 127
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101073 microseconds
+Fault on PT_F40(0X7fc1ad8ecee0 -> 0X7fc1ad8ecee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:51]Process 10757 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 128
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100993 microseconds
+Fault on PT_F40(0X7f9edca95ee0 -> 0X1007f9edca9dee0)
+[2016-10-27 20:21:51]Process 10761 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 129
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101440 microseconds
+Fault on PT_F40(0X7f9400c69ee0 -> 0X1007f9400c69ee0)
+[2016-10-27 20:21:51]Process 10763 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 130
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101246 microseconds
+Fault on PT_F40(0X7f3a8b56eee0 -> 0X1007f3a8b56eee0)
+[2016-10-27 20:21:51]Process 10765 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 131
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101076 microseconds
+Fault on PT_F40(0X7feaf22dcee0 -> 0X1007feaf22dcee0)
+[2016-10-27 20:21:51]Process 10767 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 132
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100986 microseconds
+Fault on PT_F40(0X7fef97206ee0 -> 0X1007fef9720eee0)
+[2016-10-27 20:21:51]Process 10769 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 133
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101230 microseconds
+Fault on PT_F40(0X7f9b4b79eee0 -> 0X1007f9b4b79eee0)
+[2016-10-27 20:21:51]Process 10771 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 134
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101115 microseconds
+Fault on PT_F40(0X7febe89c7ee0 -> 0X1007febe89cfee0)
+[2016-10-27 20:21:51]Process 10773 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 135
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101144 microseconds
+Fault on PT_F40(0X7f22a3633ee0 -> 0X1007f22a363bee0)
+[2016-10-27 20:21:51]Process 10775 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 136
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101020 microseconds
+Fault on PT_F40(0X7f67773dfee0 -> 0X1007f67773dfee0)
+[2016-10-27 20:21:51]Process 10777 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 137
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101043 microseconds
+Fault on PT_F40(0X7f34a1da6ee0 -> 0X7f74a1da6ee0)
+[2016-10-27 20:21:52]Process 10779 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 138
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100966 microseconds
+Fault on PT_F40(0X7f0cff6d6ee0 -> 0X7f4cff6d6ee0)
+[2016-10-27 20:21:52]Process 10781 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 139
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101305 microseconds
+Fault on PT_F40(0X7f0c7426aee0 -> 0X7f4c7426aee0)
+[2016-10-27 20:21:52]Process 10783 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 140
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101122 microseconds
+Fault on PT_F40(0X7f21c2a6cee0 -> 0X7f61c2a6cee0)
+[2016-10-27 20:21:52]Process 10785 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 141
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101038 microseconds
+Fault on PT_F40(0X7f2fc3454ee0 -> 0X7f6fc3454ee0)
+[2016-10-27 20:21:52]Process 10787 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 142
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100104 microseconds
+Fault on PT_F40(0X7f56e5025ee0 -> 0X7f56e5025ee0)
+timeout now but the process is still running...
+[2016-10-27 20:21:55]Process 10789 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 143
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101082 microseconds
+Fault on PT_F40(0X7fd64331cee0 -> 0X20007fd74331cee0)
+[2016-10-27 20:21:55]Process 10791 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 144
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101273 microseconds
+Fault on PT_F40(0X7fdaee9cfee0 -> 0X20007fdbee9cfee0)
+[2016-10-27 20:21:55]Process 10793 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 145
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100150 microseconds
+Fault on PT_F40(0X7f114c875ee0 -> 0X20007f114c875ee0)
+[2016-10-27 20:21:55]Process 10795 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 146
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101435 microseconds
+Fault on PT_F40(0X7f94c3736ee0 -> 0X20017f94c3736ee0)
+[2016-10-27 20:21:56]Process 10797 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 147
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101493 microseconds
+Fault on PT_F40(0X7fa12ab00ee0 -> 0X20017fa12ab00ee0)
+[2016-10-27 20:21:56]Process 10799 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 148
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101338 microseconds
+Fault on PT_F40(0X7f18f4777ee0 -> 0X20017f18f4777ee0)
+[2016-10-27 20:21:56]Process 10801 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 149
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100125 microseconds
+Fault on PT_F40(0X7fa8c1daeee0 -> 0X20017fa8c1daeee0)
+[2016-10-27 20:21:56]Process 10803 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 150
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101117 microseconds
+Fault on PT_F40(0X7f50563dbee0 -> 0X20017f50563dbee0)
+[2016-10-27 20:21:56]Process 10805 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 151
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100121 microseconds
+Fault on PT_F40(0X7f220bb37ee0 -> 0X20017f220bb37ee0)
+[2016-10-27 20:21:56]Process 10807 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 152
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101366 microseconds
+Fault on PT_F40(0X7fcc00766ee0 -> 0X20017fcc00766ee0)
+[2016-10-27 20:21:56]Process 10809 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 153
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101257 microseconds
+Fault on PT_F40(0X7fa677500ee0 -> 0X20017fa677500ee0)
+[2016-10-27 20:21:56]Process 10811 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 154
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101106 microseconds
+Fault on PT_F40(0X7fb9ad7b8ee0 -> 0X20017fb9ad7b8ee0)
+[2016-10-27 20:21:56]Process 10813 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 155
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101220 microseconds
+Fault on PT_F40(0X7f6498861ee0 -> 0X7f6498861ee0)
+timeout now but the process is still running...
+[ 2016-10-27 20:22:0]Process 10815 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 156
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101030 microseconds
+Fault on PT_F40(0X7fbf2b20eee0 -> 0X1ffbf2b20eee0)
+[ 2016-10-27 20:22:0]Process 10817 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 157
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101176 microseconds
+Fault on PT_F40(0X7f203d491ee0 -> 0X1ff203d491ee0)
+[ 2016-10-27 20:22:0]Process 10819 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 158
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101045 microseconds
+Fault on PT_F40(0X7fcf1030dee0 -> 0X1ffcf1030dee0)
+[ 2016-10-27 20:22:0]Process 10821 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 159
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101126 microseconds
+Fault on PT_F40(0X7f4fef7cbee0 -> 0X1ff4fef7cbee0)
+[ 2016-10-27 20:22:0]Process 10823 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 160
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101367 microseconds
+Fault on PT_F40(0X7fdc3cfedee0 -> 0X1ffdc3cfedee0)
+[ 2016-10-27 20:22:0]Process 10825 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 161
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100964 microseconds
+Fault on PT_F40(0X7fd1eb08dee0 -> 0X1ffd1eb08dee0)
+[ 2016-10-27 20:22:0]Process 10827 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 162
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100080 microseconds
+Fault on PT_F40(0X7f38f6ba4ee0 -> 0X1ff38f6ba4ee0)
+[ 2016-10-27 20:22:0]Process 10829 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 163
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101186 microseconds
+Fault on PT_F40(0X7f7dfe0b6ee0 -> 0X1ff7dfe0b6ee0)
+[ 2016-10-27 20:22:0]Process 10831 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 164
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100087 microseconds
+Fault on PT_F40(0X7f981b0edee0 -> 0X7fb81b0edee0)
+[ 2016-10-27 20:22:1]Process 10833 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 165
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101113 microseconds
+Fault on PT_F40(0X7f7a7730cee0 -> 0X7f7a7730cee0)
+timeout now but the process is still running...
+[ 2016-10-27 20:22:4]Process 10835 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 166
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101144 microseconds
+Fault on PT_F40(0X7ff626e6cee0 -> 0X7ff626e6cee0)
+timeout now but the process is still running...
+[ 2016-10-27 20:22:7]Process 10837 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 167
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100880 microseconds
+Fault on PT_F40(0X7f3840e97ee0 -> 0X7fb840e97ee0)
+[ 2016-10-27 20:22:7]Process 10839 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 168
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101041 microseconds
+Fault on PT_F40(0X7f21f3995ee0 -> 0X7fb1f3995ee0)
+[ 2016-10-27 20:22:7]Process 10841 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 169
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101260 microseconds
+Fault on PT_F40(0X7fe7f4211ee0 -> 0X7ff7f4211ee0)
+[ 2016-10-27 20:22:7]Process 10843 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 170
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100993 microseconds
+Fault on PT_F40(0X7f1b0be6aee0 -> 0X7f9b0be6aee0)
+[ 2016-10-27 20:22:7]Process 10845 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 171
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101149 microseconds
+Fault on PT_F40(0X7fccf808dee0 -> 0X7fdcf808dee0)
+[ 2016-10-27 20:22:7]Process 10847 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 172
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100972 microseconds
+Fault on PT_F40(0X7fa26d918ee0 -> 0X7fb26d918ee0)
+[ 2016-10-27 20:22:7]Process 10849 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 173
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101135 microseconds
+Fault on PT_F40(0X7f012ae67ee0 -> 0X7f012ae67ee2)
+timeout now but the process is still running...
+[2016-10-27 20:22:11]Process 10851 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 174
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101105 microseconds
+Fault on PT_F40(0X7f6d75269ee0 -> 0X7f6df5269ee0)
+[2016-10-27 20:22:11]Process 10853 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 175
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101372 microseconds
+Fault on PT_F40(0X7f92b041aee0 -> 0X7f92b041aee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:14]Process 10855 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 176
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101279 microseconds
+Fault on PT_F40(0X7f9b2f71aee0 -> 0X30007f9b2f71aee0)
+[2016-10-27 20:22:14]Process 10857 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 177
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101510 microseconds
+Fault on PT_F40(0X7ffa7c70fee0 -> 0X30007ffa7c70fee0)
+[2016-10-27 20:22:14]Process 10859 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 178
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100912 microseconds
+Fault on PT_F40(0X7f696f562ee0 -> 0X30007f696f562ee0)
+[2016-10-27 20:22:14]Process 10861 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 179
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100895 microseconds
+Fault on PT_F40(0X7ffb22069ee0 -> 0X30007ffb22069ee0)
+[2016-10-27 20:22:14]Process 10863 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 180
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100923 microseconds
+Fault on PT_F40(0X7fd40bccaee0 -> 0X30007fd40bccaee0)
+[2016-10-27 20:22:14]Process 10865 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 181
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100939 microseconds
+Fault on PT_F40(0X7faca7d36ee0 -> 0X30007faca7d36ee0)
+[2016-10-27 20:22:14]Process 10867 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 182
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101045 microseconds
+Fault on PT_F40(0X7fe72cc9aee0 -> 0X7fe72cc9aee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:18]Process 10869 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 183
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101200 microseconds
+Fault on PT_F40(0X7fd6b6282ee0 -> 0X7ff6b6682ee0)
+[2016-10-27 20:22:18]Process 10871 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 184
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100085 microseconds
+Fault on PT_F40(0X7fed6ed23ee0 -> 0X7fed6ed23ee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:21]Process 10873 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 185
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101187 microseconds
+Fault on PT_F40(0X7fe92a6f5ee0 -> 0X20007fe92a6f5ee0)
+[2016-10-27 20:22:21]Process 10875 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 186
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101033 microseconds
+Fault on PT_F40(0X7ff1f3339ee0 -> 0X20007ff1f3339ee0)
+[2016-10-27 20:22:21]Process 10877 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 187
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101096 microseconds
+Fault on PT_F40(0X7f52d6668ee0 -> 0X20007f52d6668ee0)
+[2016-10-27 20:22:21]Process 10879 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 188
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101025 microseconds
+Fault on PT_F40(0X7f195ed94ee0 -> 0X20007f195ef94ee0)
+[2016-10-27 20:22:21]Process 10881 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 189
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101143 microseconds
+Fault on PT_F40(0X7f2689946ee0 -> 0X20007f2689b46ee0)
+[2016-10-27 20:22:21]Process 10883 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 190
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101105 microseconds
+Fault on PT_F40(0X7f5f35c67ee0 -> 0X20007f5f35e67ee0)
+[2016-10-27 20:22:21]Process 10885 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 191
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101222 microseconds
+Fault on PT_F40(0X7f3a3c67bee0 -> 0X7f3a3c67bee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:25]Process 10887 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 192
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101045 microseconds
+Fault on PT_F40(0X7fb7893f8ee0 -> 0X1007fb7893f8ee0)
+[2016-10-27 20:22:25]Process 10889 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 193
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101682 microseconds
+Fault on PT_F40(0X7f4a63d4bee0 -> 0X1007f4b63d4bee0)
+[2016-10-27 20:22:25]Process 10891 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 194
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101042 microseconds
+Fault on PT_F40(0X7f3d69b93ee0 -> 0X1007f3d69b93ee0)
+[2016-10-27 20:22:25]Process 10893 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 195
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101643 microseconds
+Fault on PT_F40(0X7f015c9ffee0 -> 0X1007f015c9ffee0)
+[2016-10-27 20:22:25]Process 10895 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 196
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101226 microseconds
+Fault on PT_F40(0X7f4b795c2ee0 -> 0X1007f4b795c2ee0)
+[2016-10-27 20:22:25]Process 10897 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 197
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101159 microseconds
+Fault on PT_F40(0X7f4ab07abee0 -> 0X1007f4bb07abee0)
+[2016-10-27 20:22:25]Process 10899 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 198
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100973 microseconds
+Fault on PT_F40(0X7f5a14ef1ee0 -> 0X1007f5b14ef1ee0)
+[2016-10-27 20:22:25]Process 10901 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 199
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101187 microseconds
+Fault on PT_F40(0X7fe161029ee0 -> 0X1007fe161029ee0)
+[2016-10-27 20:22:25]Process 10903 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 200
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101111 microseconds
+Fault on PT_F40(0X7f1c1e84dee0 -> 0X7f1c1e84dee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:29]Process 10905 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 201
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101281 microseconds
+Fault on PT_F40(0X7f34d4105ee0 -> 0X37f34d4105ee0)
+[2016-10-27 20:22:29]Process 10907 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 202
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101229 microseconds
+Fault on PT_F40(0X7fb533c2eee0 -> 0X37fb533c2eee0)
+[2016-10-27 20:22:29]Process 10909 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 203
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101618 microseconds
+Fault on PT_F40(0X7fb891b70ee0 -> 0X37fb891b70ee0)
+[2016-10-27 20:22:29]Process 10911 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 204
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101294 microseconds
+Fault on PT_F40(0X7f64d5028ee0 -> 0X37f64d5028ee0)
+[2016-10-27 20:22:29]Process 10913 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 205
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101094 microseconds
+Fault on PT_F40(0X7f8001526ee0 -> 0X37f8001526ee0)
+[2016-10-27 20:22:29]Process 10915 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 206
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101100 microseconds
+Fault on PT_F40(0X7ff449fbdee0 -> 0X37ff449fbdee0)
+[2016-10-27 20:22:29]Process 10917 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 207
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101048 microseconds
+Fault on PT_F40(0X7fcf13f7bee0 -> 0X37fcf13f7bee0)
+[2016-10-27 20:22:29]Process 10919 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 208
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100077 microseconds
+Fault on PT_F40(0X7fbab4153ee0 -> 0X37fbab4153ee0)
+[2016-10-27 20:22:29]Process 10921 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 209
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101140 microseconds
+Fault on PT_F40(0X7fb8001fcee0 -> 0X7fba001fcee0)
+[2016-10-27 20:22:30]Process 10923 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 210
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101216 microseconds
+Fault on PT_F40(0X7f3a849c1ee0 -> 0X7f3a849c1ee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:33]Process 10925 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 211
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101058 microseconds
+Fault on PT_F40(0X7f3eb14bbee0 -> 0X40007f3eb14bbee0)
+[2016-10-27 20:22:33]Process 10927 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 212
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101172 microseconds
+Fault on PT_F40(0X7f191b34dee0 -> 0X40007f191b34dee0)
+[2016-10-27 20:22:33]Process 10930 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 213
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100997 microseconds
+Fault on PT_F40(0X7f2fc796eee0 -> 0X40007f2fc796fee0)
+[2016-10-27 20:22:33]Process 10932 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 214
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100095 microseconds
+Fault on PT_F40(0X7f030fa6cee0 -> 0X40007f030fa6dee0)
+[2016-10-27 20:22:33]Process 10934 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 215
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101205 microseconds
+Fault on PT_F40(0X7f29a8adbee0 -> 0X40007f29a8adbee0)
+[2016-10-27 20:22:33]Process 10936 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 216
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101151 microseconds
+Fault on PT_F40(0X7f2fa16aeee0 -> 0X40007f2fa16afee0)
+[2016-10-27 20:22:33]Process 10938 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 217
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101107 microseconds
+Fault on PT_F40(0X7f1f5cff0ee0 -> 0X40007f1f5cff1ee0)
+[2016-10-27 20:22:33]Process 10940 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 218
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100995 microseconds
+Fault on PT_F40(0X7f957393cee0 -> 0X7f9d73d3cee0)
+[2016-10-27 20:22:34]Process 10942 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 219
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100972 microseconds
+Fault on PT_F40(0X7f8173f9fee0 -> 0X7f8973f9fee0)
+[2016-10-27 20:22:34]Process 10944 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 220
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101494 microseconds
+Fault on PT_F40(0X7f7eb8fffee0 -> 0X7f7eb8fffee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:37]Process 10946 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 221
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101243 microseconds
+Fault on PT_F40(0X7f1dab046ee0 -> 0X7f1dab046ee1)
+[2016-10-27 20:22:37]Process 10948 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 222
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101222 microseconds
+Fault on PT_F40(0X7fbbfddeeee0 -> 0X7fbbfddeeee1)
+[2016-10-27 20:22:37]Process 10950 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 223
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101131 microseconds
+Fault on PT_F40(0X7f7ba6697ee0 -> 0X7f7ba6697ee1)
+[2016-10-27 20:22:37]Process 10952 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 224
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100106 microseconds
+Fault on PT_F40(0X7ff7d8dd4ee0 -> 0X7ff7d8dd4ee1)
+[2016-10-27 20:22:37]Process 10954 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 225
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100370 microseconds
+Fault on PT_F40(0X7f4ead136ee0 -> 0X7f4ead136ee1)
+[2016-10-27 20:22:37]Process 10956 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 226
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101263 microseconds
+Fault on PT_F40(0X7fb620cf9ee0 -> 0X7fb620cfdee1)
+[2016-10-27 20:22:37]Process 10958 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 227
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101175 microseconds
+Fault on PT_F40(0X7f32c44d7ee0 -> 0X7f32c4cd7fe0)
+[2016-10-27 20:22:38]Process 10960 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 228
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101100 microseconds
+Fault on PT_F40(0X7fd6af71cee0 -> 0X7fd6aff1cfe0)
+[2016-10-27 20:22:38]Process 10962 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 229
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101279 microseconds
+Fault on PT_F40(0X7f6615332ee0 -> 0X7f6615b32fe0)
+[2016-10-27 20:22:38]Process 10964 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 230
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100376 microseconds
+Fault on PT_F40(0X7f6ab4005ee0 -> 0X7f6ab4805fe0)
+[2016-10-27 20:22:38]Process 10966 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 231
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101273 microseconds
+Fault on PT_F40(0X7fda7a8a9ee0 -> 0X7fda7a8a9fe0)
+[2016-10-27 20:22:38]Process 10968 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 232
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100107 microseconds
+Fault on PT_F40(0X7fe5c838bee0 -> 0X7fe5c8b8bfe0)
+[2016-10-27 20:22:38]Process 10970 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 233
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101604 microseconds
+Fault on PT_F40(0X7f4ba0abcee0 -> 0X7f4ba0abcfe0)
+[2016-10-27 20:22:38]Process 10972 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 234
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101110 microseconds
+Fault on PT_F40(0X7fabd66a2ee0 -> 0X7fabd6ea2fe0)
+[2016-10-27 20:22:38]Process 10974 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 235
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101127 microseconds
+Fault on PT_F40(0X7f5c5993dee0 -> 0X7f5c5993dfe0)
+[2016-10-27 20:22:38]Process 10976 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 236
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101069 microseconds
+Fault on PT_F40(0X7fc684b79ee0 -> 0X7fc694f79ee0)
+[2016-10-27 20:22:39]Process 10978 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 237
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101126 microseconds
+Fault on PT_F40(0X7f2c0d323ee0 -> 0X7f2c1d723ee0)
+[2016-10-27 20:22:39]Process 10980 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 238
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100977 microseconds
+Fault on PT_F40(0X7f7676a65ee0 -> 0X7f7676e65ee0)
+[2016-10-27 20:22:39]Process 10984 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 239
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101021 microseconds
+Fault on PT_F40(0X7f0ee881bee0 -> 0X7f0ef8c1bee0)
+[2016-10-27 20:22:39]Process 10986 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 240
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101060 microseconds
+Fault on PT_F40(0X7f56c2f9fee0 -> 0X7f56d2f9fee0)
+[2016-10-27 20:22:39]Process 10988 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 241
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101436 microseconds
+Fault on PT_F40(0X7f93ee27eee0 -> 0X7f93fe67eee0)
+[2016-10-27 20:22:39]Process 10990 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 242
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101407 microseconds
+Fault on PT_F40(0X7f43a1ce6ee0 -> 0X7f43b1ce6ee0)
+[2016-10-27 20:22:39]Process 10992 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 243
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101060 microseconds
+Fault on PT_F40(0X7f34fcc12ee0 -> 0X7f34fcc12ee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:42]Process 10994 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 244
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100216 microseconds
+Fault on PT_F40(0X7f9a8a995ee0 -> 0X7f9a8b995ee0)
+[2016-10-27 20:22:42]Process 10996 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 245
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101697 microseconds
+Fault on PT_F40(0X7f614d6baee0 -> 0X7f614d6bbfe0)
+[2016-10-27 20:22:43]Process 10998 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 246
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101073 microseconds
+Fault on PT_F40(0X7f4d07482ee0 -> 0X7f4d07483fe0)
+[2016-10-27 20:22:43]Process 11000 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 247
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100093 microseconds
+Fault on PT_F40(0X7fbc56dc1ee0 -> 0X7fbc56dc1fe0)
+[2016-10-27 20:22:43]Process 11002 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 248
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101157 microseconds
+Fault on PT_F40(0X7f1eb41bdee0 -> 0X7f1eb41bdfe0)
+[2016-10-27 20:22:43]Process 11004 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 249
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101025 microseconds
+Fault on PT_F40(0X7f1a941ffee0 -> 0X7f1a941fffe0)
+[2016-10-27 20:22:43]Process 11006 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 250
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100999 microseconds
+Fault on PT_F40(0X7f2bd1106ee0 -> 0X7f2bd1107fe0)
+[2016-10-27 20:22:43]Process 11008 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 251
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101224 microseconds
+Fault on PT_F40(0X7f62fdb36ee0 -> 0X7f62fdb37fe0)
+[2016-10-27 20:22:43]Process 11010 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 252
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100085 microseconds
+Fault on PT_F40(0X7fcb1ddc1ee0 -> 0X7fcb1ddc1fe0)
+[2016-10-27 20:22:43]Process 11012 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 253
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101377 microseconds
+Fault on PT_F40(0X7efcc5bbcee0 -> 0X7efcc5bbdfe0)
+[2016-10-27 20:22:43]Process 11014 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 254
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101176 microseconds
+Fault on PT_F40(0X7fedabfc9ee0 -> 0X87fedabfc9ee0)
+[2016-10-27 20:22:44]Process 11016 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 255
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101044 microseconds
+Fault on PT_F40(0X7f7be6fd4ee0 -> 0X87f7be6fd4ee0)
+[2016-10-27 20:22:44]Process 11018 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 256
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101177 microseconds
+Fault on PT_F40(0X7f68119d2ee0 -> 0X87f68139d2ee0)
+[2016-10-27 20:22:44]Process 11020 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 257
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100088 microseconds
+Fault on PT_F40(0X7f31f3858ee0 -> 0X87f31f3858ee0)
+[2016-10-27 20:22:44]Process 11022 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 258
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101600 microseconds
+Fault on PT_F40(0X7f368fa38ee0 -> 0X87f368fa38ee0)
+[2016-10-27 20:22:44]Process 11024 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 259
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101182 microseconds
+Fault on PT_F40(0X7f9fbce6bee0 -> 0X87f9fbee6bee0)
+[2016-10-27 20:22:44]Process 11026 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 260
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101476 microseconds
+Fault on PT_F40(0X7f45af3cbee0 -> 0X87f45af3cbee0)
+[2016-10-27 20:22:44]Process 11028 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 261
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101682 microseconds
+Fault on PT_F40(0X7f8caf8deee0 -> 0X87f8caf8deee0)
+[2016-10-27 20:22:44]Process 11030 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 262
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101173 microseconds
+Fault on PT_F40(0X7f312e7ffee0 -> 0X87f312e7ffee0)
+[2016-10-27 20:22:44]Process 11032 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 263
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101150 microseconds
+Fault on PT_F40(0X7fb287c8aee0 -> 0X7fb2c7c8bee0)
+[2016-10-27 20:22:45]Process 11034 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 264
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101178 microseconds
+Fault on PT_F40(0X7f817af25ee0 -> 0X7f817af25ee0)
+timeout now but the process is still running...
+[2016-10-27 20:22:48]Process 11036 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 265
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101140 microseconds
+Fault on PT_F40(0X7f21cf4b9ee0 -> 0X7f21cf4b9fe0)
+[2016-10-27 20:22:48]Process 11038 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 266
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101115 microseconds
+Fault on PT_F40(0X7f8373d54ee0 -> 0X7f8373d54fe0)
+[2016-10-27 20:22:48]Process 11040 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 267
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101189 microseconds
+Fault on PT_F40(0X7f1065a01ee0 -> 0X7f1065a01fe0)
+[2016-10-27 20:22:48]Process 11042 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 268
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101522 microseconds
+Fault on PT_F40(0X7f70008aaee0 -> 0X7f70008aafe0)
+[2016-10-27 20:22:48]Process 11044 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 269
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101167 microseconds
+Fault on PT_F40(0X7f70a9462ee0 -> 0X7f70a9462fe0)
+[2016-10-27 20:22:48]Process 11046 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 270
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101149 microseconds
+Fault on PT_F40(0X7f864ebdcee0 -> 0X7f864ebdcfe0)
+[2016-10-27 20:22:48]Process 11048 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 271
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101204 microseconds
+Fault on PT_F40(0X7fc0cf1eeee0 -> 0X7fc0cf1eefe0)
+[2016-10-27 20:22:48]Process 11050 termed with signal 4(SIGILL)
+PT_F40-2_bit_1-300 Test Num : 272
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101356 microseconds
+Fault on PT_F40(0X7f1e1f60aee0 -> 0X87f1e1f60aee0)
+[2016-10-27 20:22:49]Process 11052 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 273
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101245 microseconds
+Fault on PT_F40(0X7fb201f09ee0 -> 0X87fb205f09ee0)
+[2016-10-27 20:22:49]Process 11054 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 274
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101413 microseconds
+Fault on PT_F40(0X7f05ce1a2ee0 -> 0X87f05ce1a2ee0)
+[2016-10-27 20:22:49]Process 11056 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 275
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100127 microseconds
+Fault on PT_F40(0X7fc4a4344ee0 -> 0X87fc4a4344ee0)
+[2016-10-27 20:22:49]Process 11059 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 276
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101323 microseconds
+Fault on PT_F40(0X7f96dfd46ee0 -> 0X87f96dfd46ee0)
+[2016-10-27 20:22:49]Process 11061 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 277
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101048 microseconds
+Fault on PT_F40(0X7fe937e6dee0 -> 0X87fe937e6dee0)
+[2016-10-27 20:22:49]Process 11063 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 278
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101140 microseconds
+Fault on PT_F40(0X7fda60a7fee0 -> 0X87fda64a7fee0)
+[2016-10-27 20:22:49]Process 11065 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 279
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100971 microseconds
+Fault on PT_F40(0X7f889d693ee0 -> 0X87f889d693ee0)
+[2016-10-27 20:22:49]Process 11067 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 280
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101069 microseconds
+Fault on PT_F40(0X7ff88edb6ee0 -> 0X87ff88edb6ee0)
+[2016-10-27 20:22:49]Process 11069 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 281
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100168 microseconds
+Fault on PT_F40(0X7f31a771cee0 -> 0X7f31a771cee8)
+timeout now but the process is still running...
+[2016-10-27 20:22:53]Process 11071 termed with signal 14(SIGALRM)
+PT_F40-2_bit_1-300 Test Num : 282
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101051 microseconds
+Fault on PT_F40(0X7f9bb65a4ee0 -> 0X8007f9bb65a4ee0)
+[2016-10-27 20:22:53]Process 11073 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 283
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101152 microseconds
+Fault on PT_F40(0X7f227aee9ee0 -> 0X8007f2a7aee9ee0)
+[2016-10-27 20:22:53]Process 11075 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 284
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100092 microseconds
+Fault on PT_F40(0X7fdd4c7d9ee0 -> 0X8007fdd4c7d9ee0)
+[2016-10-27 20:22:53]Process 11077 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 285
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101058 microseconds
+Fault on PT_F40(0X7f935c1f5ee0 -> 0X8007f9b5c1f5ee0)
+[2016-10-27 20:22:53]Process 11079 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 286
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101189 microseconds
+Fault on PT_F40(0X7fe4045e0ee0 -> 0X8007fec045e0ee0)
+[2016-10-27 20:22:53]Process 11081 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 287
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101351 microseconds
+Fault on PT_F40(0X7f54ea846ee0 -> 0X8007f5cea846ee0)
+[2016-10-27 20:22:53]Process 11083 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 288
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101305 microseconds
+Fault on PT_F40(0X7fa7f69d1ee0 -> 0X8007faff69d1ee0)
+[2016-10-27 20:22:53]Process 11085 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 289
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101317 microseconds
+Fault on PT_F40(0X7f1872794ee0 -> 0X8007f1872794ee0)
+[2016-10-27 20:22:53]Process 11087 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 290
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101008 microseconds
+Fault on PT_F40(0X7f2ba7571ee0 -> 0X10007f2ba7571ee0)
+[2016-10-27 20:22:54]Process 11089 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 291
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101602 microseconds
+Fault on PT_F40(0X7f21dab3aee0 -> 0X10007f21dab3aee0)
+[2016-10-27 20:22:54]Process 11091 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 292
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100088 microseconds
+Fault on PT_F40(0X7efcab76bee0 -> 0X10007efcab76bee0)
+[2016-10-27 20:22:54]Process 11093 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 293
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101162 microseconds
+Fault on PT_F40(0X7f99e38a9ee0 -> 0X10007f99e38a9ee0)
+[2016-10-27 20:22:54]Process 11095 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 294
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101237 microseconds
+Fault on PT_F40(0X7f863b8abee0 -> 0X10007f86bb8abee0)
+[2016-10-27 20:22:54]Process 11097 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 295
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101175 microseconds
+Fault on PT_F40(0X7f906208eee0 -> 0X10007f90e208eee0)
+[2016-10-27 20:22:54]Process 11099 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 296
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+100107 microseconds
+Fault on PT_F40(0X7f7c08e22ee0 -> 0X10007f7c88e22ee0)
+[2016-10-27 20:22:54]Process 11101 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 297
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101074 microseconds
+Fault on PT_F40(0X7fd8404efee0 -> 0X10007fd8c04efee0)
+[2016-10-27 20:22:54]Process 11103 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 298
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101070 microseconds
+Fault on PT_F40(0X7f7e7fd29ee0 -> 0X10007f7effd29ee0)
+[2016-10-27 20:22:54]Process 11105 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 299
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101199 microseconds
+Fault on PT_F40(0X7f71a46cbee0 -> 0X87f71a46cbee0)
+[2016-10-27 20:22:55]Process 11107 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_1-300 Test Num : 300
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = 2_bit_1(8)
+101130 microseconds
+Fault on PT_F40(0X7f3d4929fee0 -> 0X87f3d492dfee0)
+[2016-10-27 20:22:55]Process 11109 termed with signal 11(SIGSEGV)

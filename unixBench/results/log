@@ -1,0 +1,19 @@
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28.10-4b5 #1 SMP Mon Jan 4 18:41:37 CST 2010 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: Sun Jan 10 09:03:09 GMT 2010
+|   0 interactive users.
+|   09:03:09 up 17 min,  0 users,  load average: 0.00, 0.05, 0.14
+|  lrwxrwxrwx 1 root root 4 Sep 18 03:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  50791296  65293224  44% /
+
+Terminated during iteration 1
+Dhrystone 2 using register variables|  no measured results|
+
+**************************
+* Benchmark Aborted .... *
+**************************
+
+  0 interactive users.
+
+End Benchmark Run (Sun Jan 10 09:03:13 GMT 2010) ....

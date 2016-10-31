@@ -1,0 +1,2450 @@
+PT_F40-plus_5-350 Test Num : 1
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100080 microseconds
+Fault on PT_F40(0X7f37de109ee0 -> 0X7f37de109ee5)
+[2016-10-27 21:55:21]Process 25769 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 2
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101025 microseconds
+Fault on PT_F40(0X7fcd865c2ee0 -> 0X7fcd865c2ee5)
+[2016-10-27 21:55:21]Process 25771 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 3
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101847 microseconds
+Fault on PT_F40(0X7f59483ccee0 -> 0X7f59483ccee5)
+[2016-10-27 21:55:22]Process 25773 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 4
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101058 microseconds
+Fault on PT_F40(0X7fe07f571ee0 -> 0X7fe07f571ee5)
+[2016-10-27 21:55:22]Process 25775 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 5
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101914 microseconds
+Fault on PT_F40(0X7fdb19504ee0 -> 0X7fdb19504ee5)
+[2016-10-27 21:55:22]Process 25777 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 6
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100121 microseconds
+Fault on PT_F40(0X7fd57dbb0ee0 -> 0X7fd57dbb0ee5)
+[2016-10-27 21:55:22]Process 25779 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 7
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100110 microseconds
+Fault on PT_F40(0X7f205557eee0 -> 0X7f205557eee5)
+[2016-10-27 21:55:22]Process 25781 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 8
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101278 microseconds
+Fault on PT_F40(0X7f6430a17ee0 -> 0X7f6430a17ee5)
+[2016-10-27 21:55:22]Process 25783 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 9
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101056 microseconds
+Fault on PT_F40(0X7fb391592ee0 -> 0X7fb391592ee5)
+[2016-10-27 21:55:22]Process 25785 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 10
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101092 microseconds
+Fault on PT_F40(0X7fb7ea97cee0 -> 0X7fb7ea97cee5)
+[2016-10-27 21:55:22]Process 25787 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 11
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101415 microseconds
+Fault on PT_F40(0X7f4191c6bee0 -> 0X7f4191c6bee5)
+[2016-10-27 21:55:22]Process 25789 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 12
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101336 microseconds
+Fault on PT_F40(0X7f8afdab6ee0 -> 0X7f8afdab6ee5)
+[2016-10-27 21:55:23]Process 25791 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 13
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101687 microseconds
+Fault on PT_F40(0X7f6598abaee0 -> 0X7f6598abaee5)
+[2016-10-27 21:55:23]Process 25793 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 14
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100108 microseconds
+Fault on PT_F40(0X7ff4f4732ee0 -> 0X7ff4f4732ee5)
+[2016-10-27 21:55:23]Process 25795 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 15
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101279 microseconds
+Fault on PT_F40(0X7f800f5b9ee0 -> 0X7f800f5b9ee5)
+[2016-10-27 21:55:23]Process 25797 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 16
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101674 microseconds
+Fault on PT_F40(0X7f4aaa4d6ee0 -> 0X7f4aaa4d6ee5)
+[2016-10-27 21:55:23]Process 25799 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 17
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101388 microseconds
+Fault on PT_F40(0X7ff04794cee0 -> 0X7ff04794cee5)
+[2016-10-27 21:55:23]Process 25801 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 18
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100152 microseconds
+Fault on PT_F40(0X7f18f8f99ee0 -> 0X7f18f8f99ee5)
+[2016-10-27 21:55:23]Process 25803 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 19
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100093 microseconds
+Fault on PT_F40(0X7fbc144e8ee0 -> 0X7fbc144e8ee5)
+[2016-10-27 21:55:23]Process 25805 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 20
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101141 microseconds
+Fault on PT_F40(0X7fa0630f3ee0 -> 0X7fa0630f3ee5)
+[2016-10-27 21:55:23]Process 25807 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 21
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101000 microseconds
+Fault on PT_F40(0X7fedfac65ee0 -> 0X7fedfac65ee5)
+[2016-10-27 21:55:24]Process 25809 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 22
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100966 microseconds
+Fault on PT_F40(0X7f341bc8fee0 -> 0X7f341bc8fee5)
+[2016-10-27 21:55:24]Process 25811 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 23
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100921 microseconds
+Fault on PT_F40(0X7f793fd09ee0 -> 0X7f793fd09ee5)
+[2016-10-27 21:55:24]Process 25813 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 24
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100995 microseconds
+Fault on PT_F40(0X7fe854fd0ee0 -> 0X7fe854fd0ee5)
+[2016-10-27 21:55:24]Process 25815 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 25
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101059 microseconds
+Fault on PT_F40(0X7fbd3df82ee0 -> 0X7fbd3df82ee5)
+[2016-10-27 21:55:24]Process 25817 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 26
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101090 microseconds
+Fault on PT_F40(0X7ff08a59aee0 -> 0X7ff08a59aee5)
+[2016-10-27 21:55:24]Process 25819 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 27
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101414 microseconds
+Fault on PT_F40(0X7f423c42cee0 -> 0X7f423c42cee5)
+[2016-10-27 21:55:24]Process 25821 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 28
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101024 microseconds
+Fault on PT_F40(0X7fc6df40fee0 -> 0X7fc6df40fee5)
+[2016-10-27 21:55:24]Process 25823 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 29
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101116 microseconds
+Fault on PT_F40(0X7f9e00635ee0 -> 0X7f9e00635ee5)
+[2016-10-27 21:55:24]Process 25825 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 30
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101507 microseconds
+Fault on PT_F40(0X7fd65695aee0 -> 0X7fd65695aee5)
+[2016-10-27 21:55:25]Process 25827 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 31
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101323 microseconds
+Fault on PT_F40(0X7f1bc58ddee0 -> 0X7f1bc58ddee5)
+[2016-10-27 21:55:25]Process 25829 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 32
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101104 microseconds
+Fault on PT_F40(0X7f121aac6ee0 -> 0X7f121aac6ee5)
+[2016-10-27 21:55:25]Process 25831 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 33
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100094 microseconds
+Fault on PT_F40(0X7fb4b75f3ee0 -> 0X7fb4b75f3ee5)
+[2016-10-27 21:55:25]Process 25833 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 34
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101147 microseconds
+Fault on PT_F40(0X7fbd7fc1fee0 -> 0X7fbd7fc1fee5)
+[2016-10-27 21:55:25]Process 25835 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 35
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101667 microseconds
+Fault on PT_F40(0X7f791f0efee0 -> 0X7f791f0efee5)
+[2016-10-27 21:55:25]Process 25837 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 36
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101310 microseconds
+Fault on PT_F40(0X7f6a53360ee0 -> 0X7f6a53360ee5)
+[2016-10-27 21:55:25]Process 25839 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 37
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100961 microseconds
+Fault on PT_F40(0X7fa5b9b93ee0 -> 0X7fa5b9b93ee5)
+[2016-10-27 21:55:25]Process 25841 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 38
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100976 microseconds
+Fault on PT_F40(0X7f8590950ee0 -> 0X7f8590950ee5)
+[2016-10-27 21:55:25]Process 25843 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 39
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101376 microseconds
+Fault on PT_F40(0X7f1aab768ee0 -> 0X7f1aab768ee5)
+[2016-10-27 21:55:26]Process 25845 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 40
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101018 microseconds
+Fault on PT_F40(0X7f6c7c69cee0 -> 0X7f6c7c69cee5)
+[2016-10-27 21:55:26]Process 25847 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 41
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101280 microseconds
+Fault on PT_F40(0X7ff4da48cee0 -> 0X7ff4da48cee5)
+[2016-10-27 21:55:26]Process 25849 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 42
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101634 microseconds
+Fault on PT_F40(0X7f462780eee0 -> 0X7f462780eee5)
+[2016-10-27 21:55:26]Process 25851 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 43
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101495 microseconds
+Fault on PT_F40(0X7fc30e59eee0 -> 0X7fc30e59eee5)
+[2016-10-27 21:55:26]Process 25853 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 44
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101679 microseconds
+Fault on PT_F40(0X7f587fcd5ee0 -> 0X7f587fcd5ee5)
+[2016-10-27 21:55:26]Process 25855 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 45
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101659 microseconds
+Fault on PT_F40(0X7fddf0790ee0 -> 0X7fddf0790ee5)
+[2016-10-27 21:55:26]Process 25857 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 46
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100091 microseconds
+Fault on PT_F40(0X7f2f2f36bee0 -> 0X7f2f2f36bee5)
+[2016-10-27 21:55:26]Process 25859 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 47
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101236 microseconds
+Fault on PT_F40(0X7fef5c50eee0 -> 0X7fef5c50eee5)
+[2016-10-27 21:55:26]Process 25861 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 48
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101344 microseconds
+Fault on PT_F40(0X7fc1563baee0 -> 0X7fc1563baee5)
+[2016-10-27 21:55:27]Process 25863 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 49
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101222 microseconds
+Fault on PT_F40(0X7fea1a6feee0 -> 0X7fea1a6feee5)
+[2016-10-27 21:55:27]Process 25865 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 50
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101612 microseconds
+Fault on PT_F40(0X7f28df5b9ee0 -> 0X7f28df5b9ee5)
+[2016-10-27 21:55:27]Process 25867 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 51
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101259 microseconds
+Fault on PT_F40(0X7f2d1bf5fee0 -> 0X7f2d1bf5fee5)
+[2016-10-27 21:55:27]Process 25869 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 52
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101213 microseconds
+Fault on PT_F40(0X7f19b504aee0 -> 0X7f19b504aee5)
+[2016-10-27 21:55:27]Process 25871 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 53
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100158 microseconds
+Fault on PT_F40(0X7f3f6cbc9ee0 -> 0X7f3f6cbc9ee5)
+[2016-10-27 21:55:27]Process 25873 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 54
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101556 microseconds
+Fault on PT_F40(0X7f17be306ee0 -> 0X7f17be306ee5)
+[2016-10-27 21:55:27]Process 25875 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 55
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101369 microseconds
+Fault on PT_F40(0X7fc282143ee0 -> 0X7fc282143ee5)
+[2016-10-27 21:55:27]Process 25877 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 56
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101269 microseconds
+Fault on PT_F40(0X7f1c29fdfee0 -> 0X7f1c29fdfee5)
+[2016-10-27 21:55:27]Process 25879 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 57
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+102029 microseconds
+Fault on PT_F40(0X7f6ab8045ee0 -> 0X7f6ab8045ee5)
+[2016-10-27 21:55:28]Process 25881 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 58
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101370 microseconds
+Fault on PT_F40(0X7f7361664ee0 -> 0X7f7361664ee5)
+[2016-10-27 21:55:28]Process 25883 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 59
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101368 microseconds
+Fault on PT_F40(0X7f1168a37ee0 -> 0X7f1168a37ee5)
+[2016-10-27 21:55:28]Process 25885 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 60
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101183 microseconds
+Fault on PT_F40(0X7f3d78ba9ee0 -> 0X7f3d78ba9ee5)
+[2016-10-27 21:55:28]Process 25887 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 61
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101193 microseconds
+Fault on PT_F40(0X7fc599d6eee0 -> 0X7fc599d6eee5)
+[2016-10-27 21:55:28]Process 25889 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 62
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101181 microseconds
+Fault on PT_F40(0X7f2c02605ee0 -> 0X7f2c02605ee5)
+[2016-10-27 21:55:28]Process 25891 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 63
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101239 microseconds
+Fault on PT_F40(0X7fadb37d3ee0 -> 0X7fadb37d3ee5)
+[2016-10-27 21:55:28]Process 25893 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 64
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101473 microseconds
+Fault on PT_F40(0X7f5098d7cee0 -> 0X7f5098d7cee5)
+[2016-10-27 21:55:28]Process 25895 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 65
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101357 microseconds
+Fault on PT_F40(0X7fe33d8c1ee0 -> 0X7fe33d8c1ee5)
+[2016-10-27 21:55:28]Process 25897 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 66
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101733 microseconds
+Fault on PT_F40(0X7f14feb17ee0 -> 0X7f14feb17ee5)
+[2016-10-27 21:55:29]Process 25899 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 67
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101276 microseconds
+Fault on PT_F40(0X7fc9050d4ee0 -> 0X7fc9050d4ee5)
+[2016-10-27 21:55:29]Process 25901 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 68
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101618 microseconds
+Fault on PT_F40(0X7f74138bbee0 -> 0X7f74138bbee5)
+[2016-10-27 21:55:29]Process 25903 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 69
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101597 microseconds
+Fault on PT_F40(0X7f9027950ee0 -> 0X7f9027950ee5)
+[2016-10-27 21:55:29]Process 25905 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 70
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101208 microseconds
+Fault on PT_F40(0X7f9a0d37eee0 -> 0X7f9a0d37eee5)
+[2016-10-27 21:55:29]Process 25907 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 71
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101191 microseconds
+Fault on PT_F40(0X7fe7faf83ee0 -> 0X7fe7faf83ee5)
+[2016-10-27 21:55:29]Process 25909 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 72
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101548 microseconds
+Fault on PT_F40(0X7f49647f5ee0 -> 0X7f49647f5ee5)
+[2016-10-27 21:55:29]Process 25911 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 73
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101114 microseconds
+Fault on PT_F40(0X7fc40fceeee0 -> 0X7fc40fceeee5)
+[2016-10-27 21:55:29]Process 25913 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 74
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100108 microseconds
+Fault on PT_F40(0X7f3a25473ee0 -> 0X7f3a25473ee5)
+[2016-10-27 21:55:29]Process 25915 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 75
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100163 microseconds
+Fault on PT_F40(0X7fe17b2eaee0 -> 0X7fe17b2eaee5)
+[2016-10-27 21:55:30]Process 25917 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 76
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101452 microseconds
+Fault on PT_F40(0X7ff01edc4ee0 -> 0X7ff01edc4ee5)
+[2016-10-27 21:55:30]Process 25919 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 77
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101119 microseconds
+Fault on PT_F40(0X7fded3748ee0 -> 0X7fded3748ee5)
+[2016-10-27 21:55:30]Process 25921 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 78
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101500 microseconds
+Fault on PT_F40(0X7f581cf01ee0 -> 0X7f581cf01ee5)
+[2016-10-27 21:55:30]Process 25923 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 79
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101506 microseconds
+Fault on PT_F40(0X7f058ae56ee0 -> 0X7f058ae56ee5)
+[2016-10-27 21:55:30]Process 25925 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 80
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100245 microseconds
+Fault on PT_F40(0X7f6043173ee0 -> 0X7f6043173ee5)
+[2016-10-27 21:55:30]Process 25927 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 81
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101299 microseconds
+Fault on PT_F40(0X7f8b594b8ee0 -> 0X7f8b594b8ee5)
+[2016-10-27 21:55:30]Process 25929 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 82
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101648 microseconds
+Fault on PT_F40(0X7fa5c510bee0 -> 0X7fa5c510bee5)
+[2016-10-27 21:55:30]Process 25931 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 83
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101468 microseconds
+Fault on PT_F40(0X7f14dcb32ee0 -> 0X7f14dcb32ee5)
+[2016-10-27 21:55:30]Process 25933 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 84
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101703 microseconds
+Fault on PT_F40(0X7ff35070bee0 -> 0X7ff35070bee5)
+[2016-10-27 21:55:31]Process 25935 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 85
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101618 microseconds
+Fault on PT_F40(0X7fef4cf49ee0 -> 0X7fef4cf49ee5)
+[2016-10-27 21:55:31]Process 25937 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 86
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100119 microseconds
+Fault on PT_F40(0X7f1d8a10cee0 -> 0X7f1d8a10cee5)
+[2016-10-27 21:55:31]Process 25939 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 87
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101376 microseconds
+Fault on PT_F40(0X7fda2038fee0 -> 0X7fda2038fee5)
+[2016-10-27 21:55:31]Process 25941 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 88
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101398 microseconds
+Fault on PT_F40(0X7f5a961e2ee0 -> 0X7f5a961e2ee5)
+[2016-10-27 21:55:31]Process 25943 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 89
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101059 microseconds
+Fault on PT_F40(0X7f58ca4c0ee0 -> 0X7f58ca4c0ee5)
+[2016-10-27 21:55:31]Process 25945 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 90
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101430 microseconds
+Fault on PT_F40(0X7f4d0eaa5ee0 -> 0X7f4d0eaa5ee5)
+[2016-10-27 21:55:31]Process 25947 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 91
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101190 microseconds
+Fault on PT_F40(0X7f70e282fee0 -> 0X7f70e282fee5)
+[2016-10-27 21:55:31]Process 25949 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 92
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101046 microseconds
+Fault on PT_F40(0X7fbb0d030ee0 -> 0X7fbb0d030ee5)
+[2016-10-27 21:55:31]Process 25951 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 93
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101032 microseconds
+Fault on PT_F40(0X7f9b8e57eee0 -> 0X7f9b8e57eee5)
+[2016-10-27 21:55:32]Process 25953 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 94
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101283 microseconds
+Fault on PT_F40(0X7f87ad64aee0 -> 0X7f87ad64aee5)
+[2016-10-27 21:55:32]Process 25955 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 95
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101153 microseconds
+Fault on PT_F40(0X7faf9464dee0 -> 0X7faf9464dee5)
+[2016-10-27 21:55:32]Process 25957 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 96
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101230 microseconds
+Fault on PT_F40(0X7fc56155bee0 -> 0X7fc56155bee5)
+[2016-10-27 21:55:32]Process 25959 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 97
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101173 microseconds
+Fault on PT_F40(0X7f68ea017ee0 -> 0X7f68ea017ee5)
+[2016-10-27 21:55:32]Process 25961 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 98
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100121 microseconds
+Fault on PT_F40(0X7f1c7a7fbee0 -> 0X7f1c7a7fbee5)
+[2016-10-27 21:55:32]Process 25963 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 99
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100908 microseconds
+Fault on PT_F40(0X7f72db332ee0 -> 0X7f72db332ee5)
+[2016-10-27 21:55:32]Process 25965 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 100
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101356 microseconds
+Fault on PT_F40(0X7f62a2a34ee0 -> 0X7f62a2a34ee5)
+[2016-10-27 21:55:32]Process 25967 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 101
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100105 microseconds
+Fault on PT_F40(0X7fdf32abdee0 -> 0X7fdf32abdee5)
+[2016-10-27 21:55:32]Process 25969 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 102
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100974 microseconds
+Fault on PT_F40(0X7f7614863ee0 -> 0X7f7614863ee5)
+[2016-10-27 21:55:33]Process 25971 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 103
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100952 microseconds
+Fault on PT_F40(0X7fad0fd30ee0 -> 0X7fad0fd30ee5)
+[2016-10-27 21:55:33]Process 25973 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 104
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100975 microseconds
+Fault on PT_F40(0X7fbe083faee0 -> 0X7fbe083faee5)
+[2016-10-27 21:55:33]Process 25975 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 105
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101194 microseconds
+Fault on PT_F40(0X7f7f7aa3eee0 -> 0X7f7f7aa3eee5)
+[2016-10-27 21:55:33]Process 25977 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 106
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101041 microseconds
+Fault on PT_F40(0X7ff2a7eecee0 -> 0X7ff2a7eecee5)
+[2016-10-27 21:55:33]Process 25979 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 107
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101450 microseconds
+Fault on PT_F40(0X7f6057203ee0 -> 0X7f6057203ee5)
+[2016-10-27 21:55:33]Process 25981 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 108
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101047 microseconds
+Fault on PT_F40(0X7f3bed9bdee0 -> 0X7f3bed9bdee5)
+[2016-10-27 21:55:33]Process 25983 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 109
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101315 microseconds
+Fault on PT_F40(0X7f3ae2519ee0 -> 0X7f3ae2519ee5)
+[2016-10-27 21:55:33]Process 25985 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 110
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101289 microseconds
+Fault on PT_F40(0X7f0c1c042ee0 -> 0X7f0c1c042ee5)
+[2016-10-27 21:55:33]Process 25987 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 111
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101101 microseconds
+Fault on PT_F40(0X7f7b5ccb5ee0 -> 0X7f7b5ccb5ee5)
+[2016-10-27 21:55:34]Process 25989 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 112
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101270 microseconds
+Fault on PT_F40(0X7fdace64eee0 -> 0X7fdace64eee5)
+[2016-10-27 21:55:34]Process 25991 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 113
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100975 microseconds
+Fault on PT_F40(0X7f5646aa8ee0 -> 0X7f5646aa8ee5)
+[2016-10-27 21:55:34]Process 25993 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 114
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101084 microseconds
+Fault on PT_F40(0X7fea67763ee0 -> 0X7fea67763ee5)
+[2016-10-27 21:55:34]Process 25995 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 115
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101479 microseconds
+Fault on PT_F40(0X7fdc09b34ee0 -> 0X7fdc09b34ee5)
+[2016-10-27 21:55:34]Process 25997 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 116
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101058 microseconds
+Fault on PT_F40(0X7f52de726ee0 -> 0X7f52de726ee5)
+[2016-10-27 21:55:34]Process 25999 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 117
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101321 microseconds
+Fault on PT_F40(0X7f41892bfee0 -> 0X7f41892bfee5)
+[2016-10-27 21:55:34]Process 26001 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 118
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101284 microseconds
+Fault on PT_F40(0X7f22eaaa3ee0 -> 0X7f22eaaa3ee5)
+[2016-10-27 21:55:34]Process 26003 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 119
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101140 microseconds
+Fault on PT_F40(0X7f9a5d749ee0 -> 0X7f9a5d749ee5)
+[2016-10-27 21:55:34]Process 26005 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 120
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101133 microseconds
+Fault on PT_F40(0X7fbb0d515ee0 -> 0X7fbb0d515ee5)
+[2016-10-27 21:55:35]Process 26007 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 121
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101515 microseconds
+Fault on PT_F40(0X7f01fdd64ee0 -> 0X7f01fdd64ee5)
+[2016-10-27 21:55:35]Process 26009 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 122
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101650 microseconds
+Fault on PT_F40(0X7febe3f4bee0 -> 0X7febe3f4bee5)
+[2016-10-27 21:55:35]Process 26011 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 123
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101325 microseconds
+Fault on PT_F40(0X7f7e956f8ee0 -> 0X7f7e956f8ee5)
+[2016-10-27 21:55:35]Process 26013 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 124
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101388 microseconds
+Fault on PT_F40(0X7fdce8663ee0 -> 0X7fdce8663ee5)
+[2016-10-27 21:55:35]Process 26015 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 125
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101382 microseconds
+Fault on PT_F40(0X7f82a217dee0 -> 0X7f82a217dee5)
+[2016-10-27 21:55:35]Process 26017 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 126
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101636 microseconds
+Fault on PT_F40(0X7f1b4bcfcee0 -> 0X7f1b4bcfcee5)
+[2016-10-27 21:55:35]Process 26019 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 127
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100110 microseconds
+Fault on PT_F40(0X7f2378780ee0 -> 0X7f2378780ee5)
+[2016-10-27 21:55:35]Process 26021 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 128
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101617 microseconds
+Fault on PT_F40(0X7fd88882fee0 -> 0X7fd88882fee5)
+[2016-10-27 21:55:35]Process 26023 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 129
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101246 microseconds
+Fault on PT_F40(0X7f924af7dee0 -> 0X7f924af7dee5)
+[2016-10-27 21:55:36]Process 26025 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 130
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101151 microseconds
+Fault on PT_F40(0X7fc62d852ee0 -> 0X7fc62d852ee5)
+[2016-10-27 21:55:36]Process 26027 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 131
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101188 microseconds
+Fault on PT_F40(0X7f18db82bee0 -> 0X7f18db82bee5)
+[2016-10-27 21:55:36]Process 26029 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 132
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101352 microseconds
+Fault on PT_F40(0X7fa3dab40ee0 -> 0X7fa3dab40ee5)
+[2016-10-27 21:55:36]Process 26031 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 133
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101237 microseconds
+Fault on PT_F40(0X7fded0358ee0 -> 0X7fded0358ee5)
+[2016-10-27 21:55:36]Process 26033 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 134
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100124 microseconds
+Fault on PT_F40(0X7fdd422aaee0 -> 0X7fdd422aaee5)
+[2016-10-27 21:55:36]Process 26035 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 135
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101231 microseconds
+Fault on PT_F40(0X7fcd39459ee0 -> 0X7fcd39459ee5)
+[2016-10-27 21:55:36]Process 26037 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 136
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101633 microseconds
+Fault on PT_F40(0X7ff2722d7ee0 -> 0X7ff2722d7ee5)
+[2016-10-27 21:55:36]Process 26039 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 137
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101354 microseconds
+Fault on PT_F40(0X7f3021b43ee0 -> 0X7f3021b43ee5)
+[2016-10-27 21:55:36]Process 26041 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 138
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101205 microseconds
+Fault on PT_F40(0X7f2013383ee0 -> 0X7f2013383ee5)
+[2016-10-27 21:55:37]Process 26043 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 139
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100101 microseconds
+Fault on PT_F40(0X7f5f920a1ee0 -> 0X7f5f920a1ee5)
+[2016-10-27 21:55:37]Process 26045 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 140
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101145 microseconds
+Fault on PT_F40(0X7f940300eee0 -> 0X7f940300eee5)
+[2016-10-27 21:55:37]Process 26047 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 141
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101050 microseconds
+Fault on PT_F40(0X7fe748d34ee0 -> 0X7fe748d34ee5)
+[2016-10-27 21:55:37]Process 26049 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 142
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101270 microseconds
+Fault on PT_F40(0X7f2ebf684ee0 -> 0X7f2ebf684ee5)
+[2016-10-27 21:55:37]Process 26051 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 143
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101233 microseconds
+Fault on PT_F40(0X7f64b29c5ee0 -> 0X7f64b29c5ee5)
+[2016-10-27 21:55:37]Process 26053 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 144
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101083 microseconds
+Fault on PT_F40(0X7ffa8a173ee0 -> 0X7ffa8a173ee5)
+[2016-10-27 21:55:37]Process 26055 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 145
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100975 microseconds
+Fault on PT_F40(0X7f6f48d59ee0 -> 0X7f6f48d59ee5)
+[2016-10-27 21:55:37]Process 26057 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 146
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100100 microseconds
+Fault on PT_F40(0X7fe3f8763ee0 -> 0X7fe3f8763ee5)
+[2016-10-27 21:55:37]Process 26059 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 147
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101057 microseconds
+Fault on PT_F40(0X7f3fcb629ee0 -> 0X7f3fcb629ee5)
+[2016-10-27 21:55:38]Process 26061 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 148
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101159 microseconds
+Fault on PT_F40(0X7fea51f42ee0 -> 0X7fea51f42ee5)
+[2016-10-27 21:55:38]Process 26063 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 149
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101011 microseconds
+Fault on PT_F40(0X7f09eb4abee0 -> 0X7f09eb4abee5)
+[2016-10-27 21:55:38]Process 26065 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 150
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100989 microseconds
+Fault on PT_F40(0X7fa9f7a1cee0 -> 0X7fa9f7a1cee5)
+[2016-10-27 21:55:38]Process 26067 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 151
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101168 microseconds
+Fault on PT_F40(0X7ff98cfccee0 -> 0X7ff98cfccee5)
+[2016-10-27 21:55:38]Process 26069 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 152
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101229 microseconds
+Fault on PT_F40(0X7fc62503cee0 -> 0X7fc62503cee5)
+[2016-10-27 21:55:38]Process 26071 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 153
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101197 microseconds
+Fault on PT_F40(0X7eff2e92cee0 -> 0X7eff2e92cee5)
+[2016-10-27 21:55:38]Process 26073 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 154
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101077 microseconds
+Fault on PT_F40(0X7f26ebeceee0 -> 0X7f26ebeceee5)
+[2016-10-27 21:55:38]Process 26075 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 155
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101119 microseconds
+Fault on PT_F40(0X7f259ab4bee0 -> 0X7f259ab4bee5)
+[2016-10-27 21:55:38]Process 26077 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 156
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101075 microseconds
+Fault on PT_F40(0X7fbdba41dee0 -> 0X7fbdba41dee5)
+[2016-10-27 21:55:39]Process 26079 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 157
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101445 microseconds
+Fault on PT_F40(0X7f23c5750ee0 -> 0X7f23c5750ee5)
+[2016-10-27 21:55:39]Process 26081 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 158
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101285 microseconds
+Fault on PT_F40(0X7f4539242ee0 -> 0X7f4539242ee5)
+[2016-10-27 21:55:39]Process 26083 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 159
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101427 microseconds
+Fault on PT_F40(0X7fe2d8b00ee0 -> 0X7fe2d8b00ee5)
+[2016-10-27 21:55:39]Process 26085 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 160
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101307 microseconds
+Fault on PT_F40(0X7f7533627ee0 -> 0X7f7533627ee5)
+[2016-10-27 21:55:39]Process 26087 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 161
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101119 microseconds
+Fault on PT_F40(0X7f19c0dafee0 -> 0X7f19c0dafee5)
+[2016-10-27 21:55:39]Process 26089 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 162
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101111 microseconds
+Fault on PT_F40(0X7fc9b431cee0 -> 0X7fc9b431cee5)
+[2016-10-27 21:55:39]Process 26091 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 163
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101173 microseconds
+Fault on PT_F40(0X7fbfcda11ee0 -> 0X7fbfcda11ee5)
+[2016-10-27 21:55:39]Process 26093 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 164
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101007 microseconds
+Fault on PT_F40(0X7fdf778deee0 -> 0X7fdf778deee5)
+[2016-10-27 21:55:39]Process 26095 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 165
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101154 microseconds
+Fault on PT_F40(0X7ff256551ee0 -> 0X7ff256551ee5)
+[2016-10-27 21:55:40]Process 26097 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 166
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101239 microseconds
+Fault on PT_F40(0X7f5df71a1ee0 -> 0X7f5df71a1ee5)
+[2016-10-27 21:55:40]Process 26099 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 167
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100278 microseconds
+Fault on PT_F40(0X7fd882105ee0 -> 0X7fd882105ee5)
+[2016-10-27 21:55:40]Process 26101 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 168
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101036 microseconds
+Fault on PT_F40(0X7ff53132dee0 -> 0X7ff53132dee5)
+[2016-10-27 21:55:40]Process 26103 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 169
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101139 microseconds
+Fault on PT_F40(0X7fae097a2ee0 -> 0X7fae097a2ee5)
+[2016-10-27 21:55:40]Process 26105 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 170
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101009 microseconds
+Fault on PT_F40(0X7f039980dee0 -> 0X7f039980dee5)
+[2016-10-27 21:55:40]Process 26107 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 171
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101255 microseconds
+Fault on PT_F40(0X7f57e13f8ee0 -> 0X7f57e13f8ee5)
+[2016-10-27 21:55:40]Process 26109 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 172
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101081 microseconds
+Fault on PT_F40(0X7f0bc78d6ee0 -> 0X7f0bc78d6ee5)
+[2016-10-27 21:55:40]Process 26111 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 173
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101165 microseconds
+Fault on PT_F40(0X7fdc4a2caee0 -> 0X7fdc4a2caee5)
+[2016-10-27 21:55:40]Process 26113 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 174
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101132 microseconds
+Fault on PT_F40(0X7fe50b6e3ee0 -> 0X7fe50b6e3ee5)
+[2016-10-27 21:55:41]Process 26115 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 175
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101036 microseconds
+Fault on PT_F40(0X7f979e9b6ee0 -> 0X7f979e9b6ee5)
+[2016-10-27 21:55:41]Process 26117 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 176
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101132 microseconds
+Fault on PT_F40(0X7fca8f991ee0 -> 0X7fca8f991ee5)
+[2016-10-27 21:55:41]Process 26119 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 177
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101182 microseconds
+Fault on PT_F40(0X7f5e96f25ee0 -> 0X7f5e96f25ee5)
+[2016-10-27 21:55:41]Process 26121 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 178
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100086 microseconds
+Fault on PT_F40(0X7fdfbb568ee0 -> 0X7fdfbb568ee5)
+[2016-10-27 21:55:41]Process 26123 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 179
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101160 microseconds
+Fault on PT_F40(0X7f1eb8063ee0 -> 0X7f1eb8063ee5)
+[2016-10-27 21:55:41]Process 26125 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 180
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101010 microseconds
+Fault on PT_F40(0X7fbff2653ee0 -> 0X7fbff2653ee5)
+[2016-10-27 21:55:41]Process 26127 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 181
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101038 microseconds
+Fault on PT_F40(0X7f11d3325ee0 -> 0X7f11d3325ee5)
+[2016-10-27 21:55:41]Process 26129 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 182
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101017 microseconds
+Fault on PT_F40(0X7fba994c4ee0 -> 0X7fba994c4ee5)
+[2016-10-27 21:55:41]Process 26131 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 183
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101137 microseconds
+Fault on PT_F40(0X7f338e133ee0 -> 0X7f338e133ee5)
+[2016-10-27 21:55:42]Process 26133 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 184
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101345 microseconds
+Fault on PT_F40(0X7efda2b78ee0 -> 0X7efda2b78ee5)
+[2016-10-27 21:55:42]Process 26135 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 185
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101476 microseconds
+Fault on PT_F40(0X7f966771dee0 -> 0X7f966771dee5)
+[2016-10-27 21:55:42]Process 26137 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 186
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100297 microseconds
+Fault on PT_F40(0X7f36fca4cee0 -> 0X7f36fca4cee5)
+[2016-10-27 21:55:42]Process 26139 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 187
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101102 microseconds
+Fault on PT_F40(0X7f807dfb9ee0 -> 0X7f807dfb9ee5)
+[2016-10-27 21:55:42]Process 26141 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 188
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101016 microseconds
+Fault on PT_F40(0X7f48d8614ee0 -> 0X7f48d8614ee5)
+[2016-10-27 21:55:42]Process 26143 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 189
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101080 microseconds
+Fault on PT_F40(0X7f3790105ee0 -> 0X7f3790105ee5)
+[2016-10-27 21:55:42]Process 26145 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 190
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101286 microseconds
+Fault on PT_F40(0X7fd6f91c0ee0 -> 0X7fd6f91c0ee5)
+[2016-10-27 21:55:42]Process 26147 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 191
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101043 microseconds
+Fault on PT_F40(0X7f6b80df4ee0 -> 0X7f6b80df4ee5)
+[2016-10-27 21:55:42]Process 26149 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 192
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101017 microseconds
+Fault on PT_F40(0X7ff7fb8c5ee0 -> 0X7ff7fb8c5ee5)
+[2016-10-27 21:55:43]Process 26151 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 193
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101118 microseconds
+Fault on PT_F40(0X7fb9cce7eee0 -> 0X7fb9cce7eee5)
+[2016-10-27 21:55:43]Process 26153 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 194
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101244 microseconds
+Fault on PT_F40(0X7ff4c324cee0 -> 0X7ff4c324cee5)
+[2016-10-27 21:55:43]Process 26155 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 195
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101092 microseconds
+Fault on PT_F40(0X7fe10e575ee0 -> 0X7fe10e575ee5)
+[2016-10-27 21:55:43]Process 26157 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 196
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100122 microseconds
+Fault on PT_F40(0X7f7febcfdee0 -> 0X7f7febcfdee5)
+[2016-10-27 21:55:43]Process 26159 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 197
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101060 microseconds
+Fault on PT_F40(0X7fc8580f3ee0 -> 0X7fc8580f3ee5)
+[2016-10-27 21:55:43]Process 26161 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 198
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100950 microseconds
+Fault on PT_F40(0X7f1bd8693ee0 -> 0X7f1bd8693ee5)
+[2016-10-27 21:55:43]Process 26163 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 199
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101149 microseconds
+Fault on PT_F40(0X7f15addc9ee0 -> 0X7f15addc9ee5)
+[2016-10-27 21:55:43]Process 26165 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 200
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101550 microseconds
+Fault on PT_F40(0X7fc833fa1ee0 -> 0X7fc833fa1ee5)
+[2016-10-27 21:55:43]Process 26167 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 201
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101009 microseconds
+Fault on PT_F40(0X7fadc27a3ee0 -> 0X7fadc27a3ee5)
+[2016-10-27 21:55:44]Process 26169 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 202
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100927 microseconds
+Fault on PT_F40(0X7f3ea3c40ee0 -> 0X7f3ea3c40ee5)
+[2016-10-27 21:55:44]Process 26171 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 203
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101055 microseconds
+Fault on PT_F40(0X7f98379a3ee0 -> 0X7f98379a3ee5)
+[2016-10-27 21:55:44]Process 26173 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 204
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101398 microseconds
+Fault on PT_F40(0X7fb215249ee0 -> 0X7fb215249ee5)
+[2016-10-27 21:55:44]Process 26175 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 205
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101337 microseconds
+Fault on PT_F40(0X7fc8741aaee0 -> 0X7fc8741aaee5)
+[2016-10-27 21:55:44]Process 26177 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 206
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101158 microseconds
+Fault on PT_F40(0X7fe0122e1ee0 -> 0X7fe0122e1ee5)
+[2016-10-27 21:55:44]Process 26179 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 207
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101144 microseconds
+Fault on PT_F40(0X7f30b9c04ee0 -> 0X7f30b9c04ee5)
+[2016-10-27 21:55:44]Process 26181 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 208
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101142 microseconds
+Fault on PT_F40(0X7f4b51fcaee0 -> 0X7f4b51fcaee5)
+[2016-10-27 21:55:44]Process 26183 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 209
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100082 microseconds
+Fault on PT_F40(0X7faa1020aee0 -> 0X7faa1020aee5)
+[2016-10-27 21:55:44]Process 26185 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 210
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101092 microseconds
+Fault on PT_F40(0X7f614a39cee0 -> 0X7f614a39cee5)
+[2016-10-27 21:55:45]Process 26187 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 211
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101134 microseconds
+Fault on PT_F40(0X7fcea5256ee0 -> 0X7fcea5256ee5)
+[2016-10-27 21:55:45]Process 26189 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 212
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100417 microseconds
+Fault on PT_F40(0X7fd640114ee0 -> 0X7fd640114ee5)
+[2016-10-27 21:55:45]Process 26191 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 213
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101377 microseconds
+Fault on PT_F40(0X7f2450c41ee0 -> 0X7f2450c41ee5)
+[2016-10-27 21:55:45]Process 26193 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 214
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101316 microseconds
+Fault on PT_F40(0X7f5d8202fee0 -> 0X7f5d8202fee5)
+[2016-10-27 21:55:45]Process 26195 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 215
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101781 microseconds
+Fault on PT_F40(0X7ff674cc0ee0 -> 0X7ff674cc0ee5)
+[2016-10-27 21:55:45]Process 26197 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 216
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101042 microseconds
+Fault on PT_F40(0X7f66ade0bee0 -> 0X7f66ade0bee5)
+[2016-10-27 21:55:45]Process 26199 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 217
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101240 microseconds
+Fault on PT_F40(0X7fc626dd2ee0 -> 0X7fc626dd2ee5)
+[2016-10-27 21:55:45]Process 26201 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 218
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101568 microseconds
+Fault on PT_F40(0X7f063397aee0 -> 0X7f063397aee5)
+[2016-10-27 21:55:45]Process 26203 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 219
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101233 microseconds
+Fault on PT_F40(0X7f23e9348ee0 -> 0X7f23e9348ee5)
+[2016-10-27 21:55:46]Process 26205 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 220
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101630 microseconds
+Fault on PT_F40(0X7f17d9c6cee0 -> 0X7f17d9c6cee5)
+[2016-10-27 21:55:46]Process 26207 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 221
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101196 microseconds
+Fault on PT_F40(0X7f1bbb001ee0 -> 0X7f1bbb001ee5)
+[2016-10-27 21:55:46]Process 26209 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 222
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101553 microseconds
+Fault on PT_F40(0X7f84d7b13ee0 -> 0X7f84d7b13ee5)
+[2016-10-27 21:55:46]Process 26211 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 223
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101209 microseconds
+Fault on PT_F40(0X7f5c29bb3ee0 -> 0X7f5c29bb3ee5)
+[2016-10-27 21:55:46]Process 26213 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 224
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101458 microseconds
+Fault on PT_F40(0X7f326e897ee0 -> 0X7f326e897ee5)
+[2016-10-27 21:55:46]Process 26215 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 225
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+102051 microseconds
+Fault on PT_F40(0X7fc62ddc1ee0 -> 0X7fc62ddc1ee5)
+[2016-10-27 21:55:46]Process 26217 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 226
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101063 microseconds
+Fault on PT_F40(0X7f6f2d173ee0 -> 0X7f6f2d173ee5)
+[2016-10-27 21:55:46]Process 26219 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 227
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101243 microseconds
+Fault on PT_F40(0X7ffa0ecc4ee0 -> 0X7ffa0ecc4ee5)
+[2016-10-27 21:55:46]Process 26221 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 228
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101068 microseconds
+Fault on PT_F40(0X7f8651129ee0 -> 0X7f8651129ee5)
+[2016-10-27 21:55:47]Process 26223 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 229
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101373 microseconds
+Fault on PT_F40(0X7ff1e668dee0 -> 0X7ff1e668dee5)
+[2016-10-27 21:55:47]Process 26225 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 230
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101612 microseconds
+Fault on PT_F40(0X7f025d1ccee0 -> 0X7f025d1ccee5)
+[2016-10-27 21:55:47]Process 26227 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 231
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100147 microseconds
+Fault on PT_F40(0X7f0a7b4dfee0 -> 0X7f0a7b4dfee5)
+[2016-10-27 21:55:47]Process 26229 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 232
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101002 microseconds
+Fault on PT_F40(0X7fe7f3a22ee0 -> 0X7fe7f3a22ee5)
+[2016-10-27 21:55:47]Process 26231 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 233
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101011 microseconds
+Fault on PT_F40(0X7fe93e618ee0 -> 0X7fe93e618ee5)
+[2016-10-27 21:55:47]Process 26233 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 234
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101484 microseconds
+Fault on PT_F40(0X7ff9df72bee0 -> 0X7ff9df72bee5)
+[2016-10-27 21:55:47]Process 26235 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 235
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101173 microseconds
+Fault on PT_F40(0X7f716139cee0 -> 0X7f716139cee5)
+[2016-10-27 21:55:47]Process 26237 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 236
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101335 microseconds
+Fault on PT_F40(0X7f7dc2fa9ee0 -> 0X7f7dc2fa9ee5)
+[2016-10-27 21:55:47]Process 26239 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 237
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101197 microseconds
+Fault on PT_F40(0X7f168db91ee0 -> 0X7f168db91ee5)
+[2016-10-27 21:55:48]Process 26241 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 238
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101168 microseconds
+Fault on PT_F40(0X7fd1ea23fee0 -> 0X7fd1ea23fee5)
+[2016-10-27 21:55:48]Process 26243 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 239
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101203 microseconds
+Fault on PT_F40(0X7f61a0536ee0 -> 0X7f61a0536ee5)
+[2016-10-27 21:55:48]Process 26245 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 240
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101174 microseconds
+Fault on PT_F40(0X7fcc190f6ee0 -> 0X7fcc190f6ee5)
+[2016-10-27 21:55:48]Process 26247 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 241
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101228 microseconds
+Fault on PT_F40(0X7f7943485ee0 -> 0X7f7943485ee5)
+[2016-10-27 21:55:48]Process 26249 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 242
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101177 microseconds
+Fault on PT_F40(0X7fb97ed0eee0 -> 0X7fb97ed0eee5)
+[2016-10-27 21:55:48]Process 26251 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 243
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101149 microseconds
+Fault on PT_F40(0X7fc86f51aee0 -> 0X7fc86f51aee5)
+[2016-10-27 21:55:48]Process 26253 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 244
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101143 microseconds
+Fault on PT_F40(0X7f025f6f8ee0 -> 0X7f025f6f8ee5)
+[2016-10-27 21:55:48]Process 26255 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 245
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101130 microseconds
+Fault on PT_F40(0X7f88d7017ee0 -> 0X7f88d7017ee5)
+[2016-10-27 21:55:48]Process 26257 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 246
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101255 microseconds
+Fault on PT_F40(0X7f00aceaeee0 -> 0X7f00aceaeee5)
+[2016-10-27 21:55:49]Process 26259 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 247
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101132 microseconds
+Fault on PT_F40(0X7f37642d3ee0 -> 0X7f37642d3ee5)
+[2016-10-27 21:55:49]Process 26261 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 248
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101483 microseconds
+Fault on PT_F40(0X7fbd4b577ee0 -> 0X7fbd4b577ee5)
+[2016-10-27 21:55:49]Process 26263 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 249
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101080 microseconds
+Fault on PT_F40(0X7fd1106bdee0 -> 0X7fd1106bdee5)
+[2016-10-27 21:55:49]Process 26265 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 250
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101292 microseconds
+Fault on PT_F40(0X7f1a9da04ee0 -> 0X7f1a9da04ee5)
+[2016-10-27 21:55:49]Process 26267 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 251
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101167 microseconds
+Fault on PT_F40(0X7f7cfe3ddee0 -> 0X7f7cfe3ddee5)
+[2016-10-27 21:55:49]Process 26269 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 252
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101108 microseconds
+Fault on PT_F40(0X7ff4993baee0 -> 0X7ff4993baee5)
+[2016-10-27 21:55:49]Process 26271 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 253
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101156 microseconds
+Fault on PT_F40(0X7efd4c7a6ee0 -> 0X7efd4c7a6ee5)
+[2016-10-27 21:55:49]Process 26273 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 254
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101505 microseconds
+Fault on PT_F40(0X7f92cd14cee0 -> 0X7f92cd14cee5)
+[2016-10-27 21:55:49]Process 26275 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 255
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101354 microseconds
+Fault on PT_F40(0X7ffa57e55ee0 -> 0X7ffa57e55ee5)
+[2016-10-27 21:55:50]Process 26277 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 256
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101234 microseconds
+Fault on PT_F40(0X7fd5b8eefee0 -> 0X7fd5b8eefee5)
+[2016-10-27 21:55:50]Process 26279 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 257
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101467 microseconds
+Fault on PT_F40(0X7f0413c0aee0 -> 0X7f0413c0aee5)
+[2016-10-27 21:55:50]Process 26281 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 258
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101069 microseconds
+Fault on PT_F40(0X7f567e95eee0 -> 0X7f567e95eee5)
+[2016-10-27 21:55:50]Process 26283 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 259
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101123 microseconds
+Fault on PT_F40(0X7f2fcbec2ee0 -> 0X7f2fcbec2ee5)
+[2016-10-27 21:55:50]Process 26285 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 260
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101150 microseconds
+Fault on PT_F40(0X7f0046379ee0 -> 0X7f0046379ee5)
+[2016-10-27 21:55:50]Process 26287 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 261
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101138 microseconds
+Fault on PT_F40(0X7f30db724ee0 -> 0X7f30db724ee5)
+[2016-10-27 21:55:50]Process 26289 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 262
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101238 microseconds
+Fault on PT_F40(0X7f75add69ee0 -> 0X7f75add69ee5)
+[2016-10-27 21:55:50]Process 26291 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 263
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101155 microseconds
+Fault on PT_F40(0X7fe542cb9ee0 -> 0X7fe542cb9ee5)
+[2016-10-27 21:55:50]Process 26293 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 264
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101830 microseconds
+Fault on PT_F40(0X7f39e9d24ee0 -> 0X7f39e9d24ee5)
+[2016-10-27 21:55:51]Process 26295 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 265
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101398 microseconds
+Fault on PT_F40(0X7f832ee78ee0 -> 0X7f832ee78ee5)
+[2016-10-27 21:55:51]Process 26297 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 266
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101364 microseconds
+Fault on PT_F40(0X7f31eb797ee0 -> 0X7f31eb797ee5)
+[2016-10-27 21:55:51]Process 26299 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 267
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101070 microseconds
+Fault on PT_F40(0X7f4779e9bee0 -> 0X7f4779e9bee5)
+[2016-10-27 21:55:51]Process 26301 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 268
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100179 microseconds
+Fault on PT_F40(0X7f0608e1fee0 -> 0X7f0608e1fee5)
+[2016-10-27 21:55:51]Process 26303 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 269
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101551 microseconds
+Fault on PT_F40(0X7fe07a17fee0 -> 0X7fe07a17fee5)
+[2016-10-27 21:55:51]Process 26305 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 270
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101233 microseconds
+Fault on PT_F40(0X7fe76e890ee0 -> 0X7fe76e890ee5)
+[2016-10-27 21:55:51]Process 26307 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 271
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101224 microseconds
+Fault on PT_F40(0X7fd53bba0ee0 -> 0X7fd53bba0ee5)
+[2016-10-27 21:55:51]Process 26309 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 272
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101318 microseconds
+Fault on PT_F40(0X7f74a0edbee0 -> 0X7f74a0edbee5)
+[2016-10-27 21:55:51]Process 26311 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 273
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100130 microseconds
+Fault on PT_F40(0X7f4707d4aee0 -> 0X7f4707d4aee5)
+[2016-10-27 21:55:52]Process 26313 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 274
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101583 microseconds
+Fault on PT_F40(0X7fe9224deee0 -> 0X7fe9224deee5)
+[2016-10-27 21:55:52]Process 26315 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 275
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101285 microseconds
+Fault on PT_F40(0X7f5ac1022ee0 -> 0X7f5ac1022ee5)
+[2016-10-27 21:55:52]Process 26317 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 276
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101203 microseconds
+Fault on PT_F40(0X7f12e2b83ee0 -> 0X7f12e2b83ee5)
+[2016-10-27 21:55:52]Process 26319 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 277
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101843 microseconds
+Fault on PT_F40(0X7fe9e2634ee0 -> 0X7fe9e2634ee5)
+[2016-10-27 21:55:52]Process 26321 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 278
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101209 microseconds
+Fault on PT_F40(0X7fb319229ee0 -> 0X7fb319229ee5)
+[2016-10-27 21:55:52]Process 26323 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 279
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100113 microseconds
+Fault on PT_F40(0X7fdf94a98ee0 -> 0X7fdf94a98ee5)
+[2016-10-27 21:55:52]Process 26325 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 280
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101409 microseconds
+Fault on PT_F40(0X7fcb5ee4dee0 -> 0X7fcb5ee4dee5)
+[2016-10-27 21:55:52]Process 26327 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 281
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101244 microseconds
+Fault on PT_F40(0X7ff3da97aee0 -> 0X7ff3da97aee5)
+[2016-10-27 21:55:52]Process 26329 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 282
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101084 microseconds
+Fault on PT_F40(0X7ff729952ee0 -> 0X7ff729952ee5)
+[2016-10-27 21:55:53]Process 26331 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 283
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101451 microseconds
+Fault on PT_F40(0X7f73f39bfee0 -> 0X7f73f39bfee5)
+[2016-10-27 21:55:53]Process 26333 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 284
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101477 microseconds
+Fault on PT_F40(0X7fa5ad3e9ee0 -> 0X7fa5ad3e9ee5)
+[2016-10-27 21:55:53]Process 26335 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 285
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101107 microseconds
+Fault on PT_F40(0X7f129532aee0 -> 0X7f129532aee5)
+[2016-10-27 21:55:53]Process 26337 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 286
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101289 microseconds
+Fault on PT_F40(0X7fbb57956ee0 -> 0X7fbb57956ee5)
+[2016-10-27 21:55:53]Process 26339 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 287
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101624 microseconds
+Fault on PT_F40(0X7f885d9e1ee0 -> 0X7f885d9e1ee5)
+[2016-10-27 21:55:53]Process 26341 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 288
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101016 microseconds
+Fault on PT_F40(0X7f8511b53ee0 -> 0X7f8511b53ee5)
+[2016-10-27 21:55:53]Process 26343 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 289
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101218 microseconds
+Fault on PT_F40(0X7f2015dc8ee0 -> 0X7f2015dc8ee5)
+[2016-10-27 21:55:53]Process 26345 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 290
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101486 microseconds
+Fault on PT_F40(0X7fbe03de3ee0 -> 0X7fbe03de3ee5)
+[2016-10-27 21:55:53]Process 26347 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 291
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101582 microseconds
+Fault on PT_F40(0X7fe49d70bee0 -> 0X7fe49d70bee5)
+[2016-10-27 21:55:54]Process 26349 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 292
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101038 microseconds
+Fault on PT_F40(0X7fbb7625cee0 -> 0X7fbb7625cee5)
+[2016-10-27 21:55:54]Process 26351 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 293
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101580 microseconds
+Fault on PT_F40(0X7fbc33faaee0 -> 0X7fbc33faaee5)
+[2016-10-27 21:55:54]Process 26353 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 294
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101083 microseconds
+Fault on PT_F40(0X7f5cb0949ee0 -> 0X7f5cb0949ee5)
+[2016-10-27 21:55:54]Process 26355 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 295
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100212 microseconds
+Fault on PT_F40(0X7ff0eb88aee0 -> 0X7ff0eb88aee5)
+[2016-10-27 21:55:54]Process 26357 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 296
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101316 microseconds
+Fault on PT_F40(0X7ff779230ee0 -> 0X7ff779230ee5)
+[2016-10-27 21:55:54]Process 26359 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 297
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101163 microseconds
+Fault on PT_F40(0X7f9fe39feee0 -> 0X7f9fe39feee5)
+[2016-10-27 21:55:54]Process 26361 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 298
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101203 microseconds
+Fault on PT_F40(0X7f7afb8ddee0 -> 0X7f7afb8ddee5)
+[2016-10-27 21:55:54]Process 26363 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 299
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101324 microseconds
+Fault on PT_F40(0X7f2b54f5bee0 -> 0X7f2b54f5bee5)
+[2016-10-27 21:55:54]Process 26365 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 300
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101523 microseconds
+Fault on PT_F40(0X7f40345d6ee0 -> 0X7f40345d6ee5)
+[2016-10-27 21:55:55]Process 26367 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 301
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101636 microseconds
+Fault on PT_F40(0X7f6f46998ee0 -> 0X7f6f46998ee5)
+[2016-10-27 21:55:55]Process 26369 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 302
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101592 microseconds
+Fault on PT_F40(0X7fd883d6cee0 -> 0X7fd883d6cee5)
+[2016-10-27 21:55:55]Process 26371 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 303
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101220 microseconds
+Fault on PT_F40(0X7f68f6619ee0 -> 0X7f68f6619ee5)
+[2016-10-27 21:55:55]Process 26373 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 304
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101484 microseconds
+Fault on PT_F40(0X7f66e4fc8ee0 -> 0X7f66e4fc8ee5)
+[2016-10-27 21:55:55]Process 26375 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 305
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101208 microseconds
+Fault on PT_F40(0X7f737201eee0 -> 0X7f737201eee5)
+[2016-10-27 21:55:55]Process 26377 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 306
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101961 microseconds
+Fault on PT_F40(0X7fe0f3905ee0 -> 0X7fe0f3905ee5)
+[2016-10-27 21:55:55]Process 26379 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 307
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101311 microseconds
+Fault on PT_F40(0X7fc6ab564ee0 -> 0X7fc6ab564ee5)
+[2016-10-27 21:55:55]Process 26381 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 308
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101255 microseconds
+Fault on PT_F40(0X7f4ddece0ee0 -> 0X7f4ddece0ee5)
+[2016-10-27 21:55:55]Process 26383 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 309
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101256 microseconds
+Fault on PT_F40(0X7f7bd059aee0 -> 0X7f7bd059aee5)
+[2016-10-27 21:55:56]Process 26385 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 310
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101267 microseconds
+Fault on PT_F40(0X7f7571b91ee0 -> 0X7f7571b91ee5)
+[2016-10-27 21:55:56]Process 26387 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 311
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101333 microseconds
+Fault on PT_F40(0X7f631172aee0 -> 0X7f631172aee5)
+[2016-10-27 21:55:56]Process 26389 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 312
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101331 microseconds
+Fault on PT_F40(0X7f4e2107eee0 -> 0X7f4e2107eee5)
+[2016-10-27 21:55:56]Process 26391 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 313
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101209 microseconds
+Fault on PT_F40(0X7f4ab2ce2ee0 -> 0X7f4ab2ce2ee5)
+[2016-10-27 21:55:56]Process 26393 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 314
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101106 microseconds
+Fault on PT_F40(0X7f692a067ee0 -> 0X7f692a067ee5)
+[2016-10-27 21:55:56]Process 26395 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 315
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101245 microseconds
+Fault on PT_F40(0X7f639a7b4ee0 -> 0X7f639a7b4ee5)
+[2016-10-27 21:55:56]Process 26397 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 316
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100234 microseconds
+Fault on PT_F40(0X7f0f78b38ee0 -> 0X7f0f78b38ee5)
+[2016-10-27 21:55:56]Process 26399 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 317
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101333 microseconds
+Fault on PT_F40(0X7f4c44811ee0 -> 0X7f4c44811ee5)
+[2016-10-27 21:55:56]Process 26401 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 318
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101820 microseconds
+Fault on PT_F40(0X7fa566239ee0 -> 0X7fa566239ee5)
+[2016-10-27 21:55:57]Process 26403 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 319
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101223 microseconds
+Fault on PT_F40(0X7f9f0c615ee0 -> 0X7f9f0c615ee5)
+[2016-10-27 21:55:57]Process 26405 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 320
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101280 microseconds
+Fault on PT_F40(0X7f2a1803dee0 -> 0X7f2a1803dee5)
+[2016-10-27 21:55:57]Process 26407 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 321
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101900 microseconds
+Fault on PT_F40(0X7fdf710d8ee0 -> 0X7fdf710d8ee5)
+[2016-10-27 21:55:57]Process 26409 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 322
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101313 microseconds
+Fault on PT_F40(0X7f70bdaa1ee0 -> 0X7f70bdaa1ee5)
+[2016-10-27 21:55:57]Process 26411 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 323
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101194 microseconds
+Fault on PT_F40(0X7ff1c7654ee0 -> 0X7ff1c7654ee5)
+[2016-10-27 21:55:57]Process 26413 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 324
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101306 microseconds
+Fault on PT_F40(0X7f6f0eab2ee0 -> 0X7f6f0eab2ee5)
+[2016-10-27 21:55:57]Process 26415 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 325
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100240 microseconds
+Fault on PT_F40(0X7f05b22c0ee0 -> 0X7f05b22c0ee5)
+[2016-10-27 21:55:57]Process 26417 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 326
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101149 microseconds
+Fault on PT_F40(0X7ff500897ee0 -> 0X7ff500897ee5)
+[2016-10-27 21:55:57]Process 26419 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 327
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101684 microseconds
+Fault on PT_F40(0X7f2017122ee0 -> 0X7f2017122ee5)
+[2016-10-27 21:55:58]Process 26421 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 328
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101008 microseconds
+Fault on PT_F40(0X7fd337fdfee0 -> 0X7fd337fdfee5)
+[2016-10-27 21:55:58]Process 26423 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 329
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101152 microseconds
+Fault on PT_F40(0X7f20210eaee0 -> 0X7f20210eaee5)
+[2016-10-27 21:55:58]Process 26425 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 330
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101532 microseconds
+Fault on PT_F40(0X7fcc1d996ee0 -> 0X7fcc1d996ee5)
+[2016-10-27 21:55:58]Process 26427 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 331
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100110 microseconds
+Fault on PT_F40(0X7fbce48daee0 -> 0X7fbce48daee5)
+[2016-10-27 21:55:58]Process 26429 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 332
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101474 microseconds
+Fault on PT_F40(0X7f70a31e7ee0 -> 0X7f70a31e7ee5)
+[2016-10-27 21:55:58]Process 26431 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 333
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101529 microseconds
+Fault on PT_F40(0X7f6ed5869ee0 -> 0X7f6ed5869ee5)
+[2016-10-27 21:55:58]Process 26433 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 334
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101287 microseconds
+Fault on PT_F40(0X7fdf4b397ee0 -> 0X7fdf4b397ee5)
+[2016-10-27 21:55:58]Process 26435 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 335
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101494 microseconds
+Fault on PT_F40(0X7f2b22152ee0 -> 0X7f2b22152ee5)
+[2016-10-27 21:55:58]Process 26437 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 336
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100102 microseconds
+Fault on PT_F40(0X7f2e10b17ee0 -> 0X7f2e10b17ee5)
+[2016-10-27 21:55:59]Process 26439 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 337
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101268 microseconds
+Fault on PT_F40(0X7f6917101ee0 -> 0X7f6917101ee5)
+[2016-10-27 21:55:59]Process 26441 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 338
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101218 microseconds
+Fault on PT_F40(0X7f60b3853ee0 -> 0X7f60b3853ee5)
+[2016-10-27 21:55:59]Process 26443 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 339
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101389 microseconds
+Fault on PT_F40(0X7f0568687ee0 -> 0X7f0568687ee5)
+[2016-10-27 21:55:59]Process 26445 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 340
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101240 microseconds
+Fault on PT_F40(0X7f721da7cee0 -> 0X7f721da7cee5)
+[2016-10-27 21:55:59]Process 26447 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 341
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101155 microseconds
+Fault on PT_F40(0X7f978409fee0 -> 0X7f978409fee5)
+[2016-10-27 21:55:59]Process 26449 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 342
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101125 microseconds
+Fault on PT_F40(0X7f28cce37ee0 -> 0X7f28cce37ee5)
+[2016-10-27 21:55:59]Process 26451 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 343
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101656 microseconds
+Fault on PT_F40(0X7f2ead600ee0 -> 0X7f2ead600ee5)
+[2016-10-27 21:55:59]Process 26453 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 344
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101240 microseconds
+Fault on PT_F40(0X7f6f8f3f7ee0 -> 0X7f6f8f3f7ee5)
+[2016-10-27 21:55:59]Process 26455 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 345
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100141 microseconds
+Fault on PT_F40(0X7f5f1dd12ee0 -> 0X7f5f1dd12ee5)
+[ 2016-10-27 21:56:0]Process 26457 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 346
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101162 microseconds
+Fault on PT_F40(0X7ff2fb714ee0 -> 0X7ff2fb714ee5)
+[ 2016-10-27 21:56:0]Process 26459 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 347
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101302 microseconds
+Fault on PT_F40(0X7fe25c613ee0 -> 0X7fe25c613ee5)
+[ 2016-10-27 21:56:0]Process 26461 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 348
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+101308 microseconds
+Fault on PT_F40(0X7ff2bf6f5ee0 -> 0X7ff2bf6f5ee5)
+[ 2016-10-27 21:56:0]Process 26463 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 349
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100079 microseconds
+Fault on PT_F40(0X7f1d49ce3ee0 -> 0X7f1d49ce3ee5)
+[ 2016-10-27 21:56:0]Process 26465 termed with signal 4(SIGILL)
+PT_F40-plus_5-350 Test Num : 350
+Inject into an exculetable program ../bin/hello
+There are 1 faults will be injected in faulttable...
+step|misrosec = 100000, unit = m, position = PT_F40(128), type = plus_5(16)
+100069 microseconds
+Fault on PT_F40(0X7f9c62081ee0 -> 0X7f9c62081ee5)
+[ 2016-10-27 21:56:0]Process 26467 termed with signal 4(SIGILL)

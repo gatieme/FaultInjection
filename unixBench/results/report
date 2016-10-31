@@ -1,0 +1,53 @@
+
+  BYTE UNIX Benchmarks (Version 4.0.1)
+  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+  Start Benchmark Run: 2009年 12月 16日 星期三 05:06:03 EST
+   0 interactive users.
+   05:06:03 up  1:50,  0 users,  load average: 7.86, 8.25, 7.99
+  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+  /bin/sh: symbolic link to `bash'
+  /dev/sda2            122402496  27051388  89033132  24% /
+Dhrystone 2 using register variables     2751002.4 lps   (10 secs, 10 samples)
+Arithmetic Test (type = double)          105387.7 lps   (10 secs, 10 samples)
+System Call Overhead                     694241.7 lps   (10 secs, 10 samples)
+Pipe Throughput                          430535.1 lps   (10 secs, 10 samples)
+Pipe-based Context Switching               no measured results
+Process Creation                          10593.6 lps   (30 secs, 3 samples)
+Execl Throughput                           2507.3 lps   (29 secs, 3 samples)
+File Read 1024 bufsize 2000 maxblocks    761768.0 KBps  (30 secs, 3 samples)
+File Write 1024 bufsize 2000 maxblocks   270646.0 KBps  (30 secs, 3 samples)
+File Copy 1024 bufsize 2000 maxblocks    191617.0 KBps  (30 secs, 3 samples)
+File Read 256 bufsize 500 maxblocks      216996.0 KBps  (30 secs, 3 samples)
+File Write 256 bufsize 500 maxblocks      79042.0 KBps  (30 secs, 3 samples)
+File Copy 256 bufsize 500 maxblocks       54876.0 KBps  (30 secs, 3 samples)
+File Read 4096 bufsize 8000 maxblocks    1242815.0 KBps  (30 secs, 3 samples)
+File Write 4096 bufsize 8000 maxblocks   426854.0 KBps  (30 secs, 3 samples)
+File Copy 4096 bufsize 8000 maxblocks    216401.0 KBps  (30 secs, 3 samples)
+Shell Scripts (1 concurrent)               1154.1 lpm   (60 secs, 3 samples)
+Shell Scripts (8 concurrent)                374.7 lpm   (60 secs, 3 samples)
+Shell Scripts (16 concurrent)               247.0 lpm   (60 secs, 3 samples)
+Arithmetic Test (type = short)           114635.1 lps   (10 secs, 3 samples)
+Arithmetic Test (type = int)              91652.1 lps   (10 secs, 3 samples)
+Arithmetic Test (type = long)            140268.7 lps   (10 secs, 3 samples)
+Arithmetic Test (type = float)           119123.5 lps   (10 secs, 3 samples)
+Arithoh                                  33693053.3 lps   (10 secs, 3 samples)
+C Compiler Throughput                       311.4 lpm   (60 secs, 3 samples)
+Dc: sqrt(2) to 99 decimal places          99348.4 lpm   (30 secs, 3 samples)
+Recursion Test--Tower of Hanoi            20644.2 lps   (20 secs, 3 samples)
+
+
+                     INDEX VALUES            
+TEST                                        BASELINE     RESULT      INDEX
+
+Arithmetic Test (type = double)              29820.0   105387.7       35.3
+Dhrystone 2 using register variables        116700.0  2751002.4      235.7
+Execl Throughput                                43.0     2507.3      583.1
+File Copy 1024 bufsize 2000 maxblocks         3960.0   191617.0      483.9
+File Copy 256 bufsize 500 maxblocks           1655.0    54876.0      331.6
+File Copy 4096 bufsize 8000 maxblocks         5800.0   216401.0      373.1
+Pipe Throughput                              12440.0   430535.1      346.1
+Process Creation                               126.0    10593.6      840.8
+Shell Scripts (8 concurrent)                     6.0      374.7      624.5
+System Call Overhead                         15000.0   694241.7      462.8
+                                                                 =========
+     FINAL SCORE                                                     345.8

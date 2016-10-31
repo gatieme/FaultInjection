@@ -1,0 +1,46 @@
+The BYTE Unix benchmarks that we published in March, 1990, we
+expected that they fill our needs for several years. It was only a
+few months before we started to see that UNIX workstation performance
+was going to make the benchmark design questionable. The design flaw
+was that the benchmarks timed a fixed number of loops; if there were
+to few loops, the times were too small to be reliable. Perhaps we
+could have increased the number of loops and been safe for another
+few years (months?). But with IBM's introduction of the RS/6000, it
+became obvious that we needed to redesign our benchmarks.
+
+Now the work on version 3 is complete. The new design increases in
+precision on faster workstations because we turned everything
+upside-down: we count loops for a fixed amount of time. There are
+some additional benefits, the amount of time for running the suite is
+relative predictable (about an hour). 
+
+Since new benchmarks mean new baselines and indexes, we reevaluated
+these elements as well. Though the Everex Step 386/33 is still a very
+contemporary machine, the operating system that we were using for the
+baseline (SCO Xenix 386 version 2.3.1). We were tempted to use the
+new HP 9000 Series 700 as the baseline, but so few machines are in
+that league that the index would be very strange. Instead, we have
+taken the conservative approach: a popular machine.  The new baseline
+machine is the Sun Microsystems [TOM, please fill in configuration],
+the baseline for this month's roundup of SPARC clones.
+
+We also changed which benchmark tests are used to generate the new
+index: 
+ * a double precision arithmetic performance test
+ * Dhrystone 2 without register variables 
+ * Spawning a process (!M!execl()!EM!)
+ * File copy throughput in five seconds
+ * Pipe-based context switching
+ * The shell script with 8 concurrent scripts running
+
+Instead of just summing the indexes of each of these tests to get the
+overall index, we are using the average. This means that the baseline
+value is 1 instead of six.
+
+As always, the BYTE Unix benchmarks are freely available from BIX and
+on the Usenet. Version 3 automatically configures to System V and BSD
+Unix systems. It also includes scripts for generating the indexes.
+Thanks to the many users who sent use reports and suggestions for
+Version 2, BYTE and you have a much better set of tools for
+benchmarking UNIX systems.
+

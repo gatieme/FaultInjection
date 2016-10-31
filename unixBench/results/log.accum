@@ -1,0 +1,318 @@
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: 2009年 12月 11日 星期五 14:22:12 EST
+|   0 interactive users.
+|   14:22:12 up  9:45,  0 users,  load average: 2.12, 2.32, 2.16
+|  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  21570736  94513784  19% /
+
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: 2009年 12月 11日 星期五 14:25:16 EST
+|   0 interactive users.
+|   14:25:16 up  9:48,  0 users,  load average: 2.90, 2.63, 2.31
+|  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  21571504  94513016  19% /
+
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: 2009年 12月 11日 星期五 14:26:04 EST
+|   0 interactive users.
+|   14:26:04 up  9:49,  0 users,  load average: 2.87, 2.66, 2.33
+|  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  21571700  94512820  19% /
+
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: 2009年 12月 11日 星期五 14:27:26 EST
+|   0 interactive users.
+|   14:27:26 up  9:50,  0 users,  load average: 3.04, 2.76, 2.39
+|  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  21572036  94512484  19% /
+
+
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: 2009年 12月 11日 星期五 14:52:10 EST
+|   0 interactive users.
+|   14:52:10 up 10:15,  0 users,  load average: 2.37, 2.69, 2.72
+|  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  21578092  94506428  19% /
+
+Dhrystone 2 using register variables|10.0|lps|2772037.6|2772018.2|10
+
+Arithmetic Test (type = double)|10.0|lps|213875.8|213874.3|10
+
+System Call Overhead|10.0|lps|603562.4|603559.4|10
+
+Pipe Throughput|10.0|lps|325398.0|325338.7|10
+
+Pipe-based Context Switching|  no measured results|
+
+Process Creation|30.0|lps|11943.5|11943.5|3
+
+Execl Throughput|29.7|lps|2787.6|2787.6|3
+
+File Read 1024 bufsize 2000 maxblocks|30|KBps|598844|598844|3
+File Write 1024 bufsize 2000 maxblocks|30|KBps|230377|230372|3
+File Copy 1024 bufsize 2000 maxblocks|30|KBps|158483|158480|3
+
+File Read 256 bufsize 500 maxblocks|30|KBps|165944|165943|3
+File Write 256 bufsize 500 maxblocks|30|KBps|60355|60352|3
+File Copy 256 bufsize 500 maxblocks|30|KBps|43367|43367|3
+
+File Read 4096 bufsize 8000 maxblocks|30|KBps|1678930|1678911|3
+File Write 4096 bufsize 8000 maxblocks|30|KBps|641244|641205|3
+File Copy 4096 bufsize 8000 maxblocks|30|KBps|332823|332082|3
+
+1.0005
+1.00017
+1
+Shell Scripts (1 concurrent)|60.0|lpm|2602.4|2602.3|3
+1
+1
+1
+Shell Scripts (8 concurrent)|60.0|lpm|374.7|374.6|3
+1
+1
+1
+Shell Scripts (16 concurrent)|60.0|lpm|192.0|192.0|3
+
+Arithmetic Test (type = short)|10.0|lps|272616.8|272616.8|3
+
+Arithmetic Test (type = int)|10.0|lps|226039.3|226038.5|3
+
+Arithmetic Test (type = long)|10.0|lps|200233.8|200233.6|3
+
+Arithmetic Test (type = float)|10.0|lps|230577.0|230576.9|3
+
+Arithoh|10.0|lps|77710893.3|77710885.4|3
+
+1.00033
+1.0005
+1
+C Compiler Throughput|60.0|lpm|515.5|515.4|3
+
+0.5
+0.5
+0.5
+Dc: sqrt(2) to 99 decimal places|30.0|lpm|110114.7|110114.0|3
+
+Recursion Test--Tower of Hanoi|20.0|lps|54673.6|54673.3|3
+
+End Benchmark Run: 2009年 12月 11日 星期五 19:14:27 EST
+  0 interactive users.
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28ftcl #1 SMP Fri Sep 18 00:15:22 EDT 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: 2009年 12月 16日 星期三 05:06:03 EST
+|   0 interactive users.
+|   05:06:03 up  1:50,  0 users,  load average: 7.86, 8.25, 7.99
+|  lrwxrwxrwx 1 root root 4 09-17 22:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  27051388  89033132  24% /
+
+Dhrystone 2 using register variables|10.0|lps|2974450.3|2751002.4|10
+
+Arithmetic Test (type = double)|10.0|lps|107438.3|105387.7|10
+
+System Call Overhead|10.0|lps|723999.0|694241.7|10
+
+Pipe Throughput|10.0|lps|430559.0|430535.1|10
+
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Pipe-based Context Switching|  no measured results|
+
+Process Creation|30.0|lps|10593.7|10593.6|3
+
+Execl Throughput|29.6|lps|2507.4|2507.3|3
+
+File Read 1024 bufsize 2000 maxblocks|30|KBps|761777|761768|3
+File Write 1024 bufsize 2000 maxblocks|30|KBps|271511|270646|3
+File Copy 1024 bufsize 2000 maxblocks|30|KBps|191654|191617|3
+
+File Read 256 bufsize 500 maxblocks|30|KBps|216996|216996|3
+File Write 256 bufsize 500 maxblocks|30|KBps|79044|79042|3
+File Copy 256 bufsize 500 maxblocks|30|KBps|54885|54876|3
+
+File Read 4096 bufsize 8000 maxblocks|30|KBps|1298250|1242815|3
+File Write 4096 bufsize 8000 maxblocks|30|KBps|439111|426854|3
+File Copy 4096 bufsize 8000 maxblocks|30|KBps|216428|216401|3
+
+1
+1
+1
+Shell Scripts (1 concurrent)|60.0|lpm|1155.0|1154.1|3
+1
+1
+1
+Shell Scripts (8 concurrent)|60.0|lpm|375.0|374.7|3
+1
+1
+1
+Shell Scripts (16 concurrent)|60.0|lpm|247.0|247.0|3
+
+Arithmetic Test (type = short)|10.0|lps|119125.0|114635.1|3
+
+Arithmetic Test (type = int)|10.0|lps|95746.1|91652.1|3
+
+Arithmetic Test (type = long)|10.0|lps|141543.9|140268.7|3
+
+Arithmetic Test (type = float)|10.0|lps|124847.6|119123.5|3
+
+Arithoh|10.0|lps|33855441.8|33693053.3|3
+
+1
+1
+1
+C Compiler Throughput|60.0|lpm|311.7|311.4|3
+
+0.5
+0.5
+0.5
+Dc: sqrt(2) to 99 decimal places|30.0|lpm|99817.3|99348.4|3
+
+Recursion Test--Tower of Hanoi|20.0|lps|21703.5|20644.2|3
+
+End Benchmark Run: 2009年 12月 16日 星期三 11:18:51 EST
+  0 interactive users.
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28-k2_os-4 #1 SMP Tue Oct 27 10:42:35 CST 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: Thu Dec 24 15:51:49 GMT 2009
+|   0 interactive users.
+|   15:51:49 up 9 min,  0 users,  load average: 2.02, 1.85, 1.04
+|  lrwxrwxrwx 1 root root 4 Sep 18 03:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  34124800  81959720  30% /
+
+Dhrystone 2 using register variables|10.0|lps|3665353.7|3665348.8|10
+
+Arithmetic Test (type = double)|10.0|lps|282392.7|282392.4|10
+
+System Call Overhead|10.0|lps|798521.4|798520.2|10
+
+Pipe Throughput|10.0|lps|426351.2|426347.4|10
+
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Pipe-based Context Switching|  no measured results|
+
+Process Creation|30.0|lps|8589.3|8587.6|3
+
+Execl Throughput|29.5|lps|2168.4|2168.4|3
+
+File Read 1024 bufsize 2000 maxblocks|30|KBps|794225|794205|3
+File Write 1024 bufsize 2000 maxblocks|30|KBps|248222|248222|3
+File Copy 1024 bufsize 2000 maxblocks|30|KBps|179519|179510|3
+
+File Read 256 bufsize 500 maxblocks|30|KBps|209685|209682|3
+File Write 256 bufsize 500 maxblocks|30|KBps|64294|64293|3
+File Copy 256 bufsize 500 maxblocks|30|KBps|48305|48305|3
+
+File Read 4096 bufsize 8000 maxblocks|30|KBps|2461943|2460795|3
+File Write 4096 bufsize 8000 maxblocks|30|KBps|814933|814510|3
+File Copy 4096 bufsize 8000 maxblocks|30|KBps|440340|440075|3
+
+1
+1
+1
+Shell Scripts (1 concurrent)|60.0|lpm|3399.3|3399.2|3
+1
+1
+0
+1
+1
+1
+Shell Scripts (16 concurrent)|60.0|lpm|664.0|664.0|3
+
+Arithmetic Test (type = short)|10.0|lps|359775.7|359775.7|3
+
+Arithmetic Test (type = int)|10.0|lps|297363.4|297355.7|3
+
+Arithmetic Test (type = long)|10.0|lps|264122.7|264122.7|3
+
+|  BYTE UNIX Benchmarks (Version 4.0.1)
+|  System -- Linux rx6600 2.6.28-k2_os-4 #1 SMP Tue Oct 27 10:42:35 CST 2009 ia64 ia64 ia64 GNU/Linux
+|  Start Benchmark Run: Mon Dec 28 12:10:38 GMT 2009
+|   0 interactive users.
+|   12:10:39 up 19 min,  0 users,  load average: 2.06, 1.99, 1.44
+|  lrwxrwxrwx 1 root root 4 Sep 18 03:45 /bin/sh -> bash
+|  /bin/sh: symbolic link to `bash'
+|  /dev/sda2            122402496  37282704  78801816  33% /
+
+Dhrystone 2 using register variables|10.0|lps|3665697.3|3665693.9|10
+
+Arithmetic Test (type = double)|10.0|lps|281399.4|281397.1|10
+
+System Call Overhead|10.0|lps|788495.2|788482.7|10
+
+Pipe Throughput|10.0|lps|426107.2|426104.0|10
+
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Master sync error: expect 1, got 0
+Pipe-based Context Switching|  no measured results|
+
+Process Creation|30.0|lps|8454.3|8454.2|3
+
+Execl Throughput|29.1|lps|2216.7|2216.7|3
+
+File Read 1024 bufsize 2000 maxblocks|30|KBps|794052|794052|3
+File Write 1024 bufsize 2000 maxblocks|30|KBps|243866|243848|3
+File Copy 1024 bufsize 2000 maxblocks|30|KBps|182647|182643|3
+
+File Read 256 bufsize 500 maxblocks|30|KBps|209844|209840|3
+File Write 256 bufsize 500 maxblocks|30|KBps|64261|64258|3
+File Copy 256 bufsize 500 maxblocks|30|KBps|48145|48145|3
+
+File Read 4096 bufsize 8000 maxblocks|30|KBps|2385870|2385197|3
+File Write 4096 bufsize 8000 maxblocks|30|KBps|716089|715746|3
+File Copy 4096 bufsize 8000 maxblocks|30|KBps|425006|424897|3
+
+1.00017
+1
+1
+Shell Scripts (1 concurrent)|60.0|lpm|3514.8|3514.7|3
+1
+1
+1
+Shell Scripts (8 concurrent)|60.0|lpm|769.3|0.0|3
+1
+1
+1
+Shell Scripts (16 concurrent)|60.0|lpm|656.7|656.6|3
+
+Arithmetic Test (type = short)|10.0|lps|358473.2|358470.7|3
+
+Arithmetic Test (type = int)|10.0|lps|297250.9|297249.6|3
+
+Arithmetic Test (type = long)|10.0|lps|263328.7|263325.6|3
+
+Arithmetic Test (type = float)|10.0|lps|304066.0|304066.0|3
+
+Arithoh|10.0|lps|102570691.8|102570681.6|3
+
+1
+1
+1.00017
+C Compiler Throughput|60.0|lpm|621.0|620.9|3
+

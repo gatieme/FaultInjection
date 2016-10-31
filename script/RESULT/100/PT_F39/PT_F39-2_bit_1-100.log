@@ -1,0 +1,900 @@
+PT_F39-2_bit_1-100 Test Num : 1
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101125 microseconds
+Fault on PT_F39(0X7ffcbcf13720 -> 0X7ffcbcf13720)
+3000074 microseconds
+timeout
+[ 2016-10-27 9:27:58]Process 22047 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 2
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100939 microseconds
+Fault on PT_F39(0X7ffc765af5b0 -> 0X7ffc765af5b8)
+3000081 microseconds
+timeout
+[  2016-10-27 9:28:1]Process 22049 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 3
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100948 microseconds
+Fault on PT_F39(0X7ffef21010f0 -> 0X7ffef21110f0)
+3000080 microseconds
+timeout
+[  2016-10-27 9:28:4]Process 22051 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 4
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101013 microseconds
+Fault on PT_F39(0X7ffc4c80e870 -> 0X8007ffc4c80e870)
+3000081 microseconds
+timeout
+[  2016-10-27 9:28:8]Process 22053 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 5
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101273 microseconds
+Fault on PT_F39(0X7ffe5a059830 -> 0X7ffe5a059831)
+3000087 microseconds
+timeout
+[ 2016-10-27 9:28:11]Process 22055 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 6
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101358 microseconds
+Fault on PT_F39(0X7ffcfdcd6ad0 -> 0X107ffcfded6ad0)
+3000083 microseconds
+timeout
+[ 2016-10-27 9:28:14]Process 22057 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 7
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101476 microseconds
+Fault on PT_F39(0X7ffd252fbd90 -> 0X7ffde52fbd90)
+3000086 microseconds
+timeout
+[ 2016-10-27 9:28:17]Process 22063 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 8
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100962 microseconds
+Fault on PT_F39(0X7fff680d5a80 -> 0X40007fff680d5a80)
+3000100 microseconds
+timeout
+[ 2016-10-27 9:28:20]Process 22091 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 9
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101427 microseconds
+Fault on PT_F39(0X7ffce1f1e020 -> 0X4007ffce1f1e020)
+3000069 microseconds
+timeout
+[ 2016-10-27 9:28:23]Process 22093 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 10
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101111 microseconds
+Fault on PT_F39(0X7ffe73d268c0 -> 0X7ffe73d268c0)
+3000122 microseconds
+timeout
+[ 2016-10-27 9:28:26]Process 22095 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 11
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101049 microseconds
+Fault on PT_F39(0X7ffcbff4c810 -> 0X87ffcbff4c810)
+3000101 microseconds
+timeout
+[ 2016-10-27 9:28:29]Process 22103 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 12
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101147 microseconds
+Fault on PT_F39(0X7fff3f2c2c50 -> 0X27fff3f2c2c50)
+3000106 microseconds
+timeout
+[ 2016-10-27 9:28:33]Process 22110 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 13
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101305 microseconds
+Fault on PT_F39(0X7ffe5e949390 -> 0X10027ffe5e949390)
+3000110 microseconds
+timeout
+[ 2016-10-27 9:28:36]Process 22112 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 14
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101140 microseconds
+Fault on PT_F39(0X7ffd5c1315f0 -> 0X7ffd5c1315f0)
+3000112 microseconds
+timeout
+[ 2016-10-27 9:28:39]Process 22114 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 15
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101301 microseconds
+Fault on PT_F39(0X7ffc40bdabc0 -> 0X7ffe40bdabc0)
+3000082 microseconds
+timeout
+[ 2016-10-27 9:28:42]Process 22121 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 16
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100093 microseconds
+Fault on PT_F39(0X7ffd93df9b20 -> 0X7ffd93df9b20)
+3000084 microseconds
+timeout
+[ 2016-10-27 9:28:45]Process 22132 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 17
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101076 microseconds
+Fault on PT_F39(0X7ffc570b4770 -> 0X407ffc570b4770)
+3000075 microseconds
+timeout
+[ 2016-10-27 9:28:48]Process 22134 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 18
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101029 microseconds
+Fault on PT_F39(0X7ffcc1470350 -> 0X27ffcc1470350)
+3000097 microseconds
+timeout
+[ 2016-10-27 9:28:51]Process 22136 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 19
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101164 microseconds
+Fault on PT_F39(0X7fff84ccaff0 -> 0X7fff85ccaff0)
+3000083 microseconds
+timeout
+[ 2016-10-27 9:28:54]Process 22143 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 20
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101102 microseconds
+Fault on PT_F39(0X7ffe6623f700 -> 0X20007ffe6623f700)
+3000074 microseconds
+timeout
+[ 2016-10-27 9:28:57]Process 22145 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 21
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101067 microseconds
+Fault on PT_F39(0X7ffe347357f0 -> 0X7ffe347357f0)
+3000083 microseconds
+timeout
+[  2016-10-27 9:29:1]Process 22147 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 22
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101022 microseconds
+Fault on PT_F39(0X7ffff600baf0 -> 0X207ffff600baf0)
+3000063 microseconds
+timeout
+[  2016-10-27 9:29:4]Process 22153 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 23
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101048 microseconds
+Fault on PT_F39(0X7ffe0e900ae0 -> 0X10007ffe0e900ae0)
+3000072 microseconds
+timeout
+[  2016-10-27 9:29:7]Process 22157 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 24
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101178 microseconds
+Fault on PT_F39(0X7ffede7de4d0 -> 0X207ffede7de4d0)
+3000165 microseconds
+timeout
+[ 2016-10-27 9:29:10]Process 22168 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 25
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100065 microseconds
+Fault on PT_F39(0X7ffe49d63410 -> 0X27ffe49d63410)
+3000110 microseconds
+timeout
+[ 2016-10-27 9:29:13]Process 22170 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 26
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101170 microseconds
+Fault on PT_F39(0X7ffc3cfaad60 -> 0X7ffc3dfaad60)
+3000078 microseconds
+timeout
+[ 2016-10-27 9:29:16]Process 22172 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 27
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101000 microseconds
+Fault on PT_F39(0X7ffedd75ddf0 -> 0Xfffedf75ddf0)
+3000098 microseconds
+timeout
+[ 2016-10-27 9:29:19]Process 22174 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 28
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100962 microseconds
+Fault on PT_F39(0X7ffdb3ed7440 -> 0X27ffdb3ed7448)
+3000080 microseconds
+timeout
+[ 2016-10-27 9:29:22]Process 22176 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 29
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101077 microseconds
+Fault on PT_F39(0X7ffd00215ed0 -> 0X7ffd00255ed4)
+3000070 microseconds
+timeout
+[ 2016-10-27 9:29:25]Process 22183 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 30
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101030 microseconds
+Fault on PT_F39(0X7ffd7169b3b0 -> 0X4007ffd7169b3b0)
+3000070 microseconds
+timeout
+[ 2016-10-27 9:29:29]Process 22198 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 31
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100124 microseconds
+Fault on PT_F39(0X7ffc13f5e100 -> 0X407ffd13f5e100)
+3000099 microseconds
+timeout
+[ 2016-10-27 9:29:32]Process 22205 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 32
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101348 microseconds
+Fault on PT_F39(0X7ffd58fc7360 -> 0X7ffd58fc7360)
+3000128 microseconds
+timeout
+[ 2016-10-27 9:29:35]Process 22207 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 33
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101336 microseconds
+Fault on PT_F39(0X7ffe0a557f10 -> 0X47ffe0a557f10)
+3000069 microseconds
+timeout
+[ 2016-10-27 9:29:38]Process 22209 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 34
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101078 microseconds
+Fault on PT_F39(0X7ffe7e6ec5d0 -> 0X7ffe7e6ec5d0)
+3000072 microseconds
+timeout
+[ 2016-10-27 9:29:41]Process 22211 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 35
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101009 microseconds
+Fault on PT_F39(0X7ffe884f9b90 -> 0X4007ffe884f9b90)
+3000098 microseconds
+timeout
+[ 2016-10-27 9:29:44]Process 22223 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 36
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101109 microseconds
+Fault on PT_F39(0X7ffd11536990 -> 0X7ffd11536990)
+3000060 microseconds
+timeout
+[ 2016-10-27 9:29:47]Process 22255 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 37
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101074 microseconds
+Fault on PT_F39(0X7ffde4936480 -> 0X7ffdf4936580)
+3000088 microseconds
+timeout
+[ 2016-10-27 9:29:50]Process 22269 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 38
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101099 microseconds
+Fault on PT_F39(0X7ffe906d5920 -> 0X7ffe906d5920)
+3000078 microseconds
+timeout
+[ 2016-10-27 9:29:53]Process 22271 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 39
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100065 microseconds
+Fault on PT_F39(0X7fff40361740 -> 0X7fff40365740)
+3000065 microseconds
+timeout
+[ 2016-10-27 9:29:57]Process 22273 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 40
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101052 microseconds
+Fault on PT_F39(0X7ffc1e4864f0 -> 0X7ffc1e4866f0)
+3000081 microseconds
+timeout
+[  2016-10-27 9:30:0]Process 22275 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 41
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101088 microseconds
+Fault on PT_F39(0X7ffd95c323f0 -> 0X807ffd95c323f0)
+3000101 microseconds
+timeout
+[  2016-10-27 9:30:3]Process 22277 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 42
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101112 microseconds
+Fault on PT_F39(0X7ffe32cde020 -> 0X47ffe32cde020)
+3000183 microseconds
+timeout
+[  2016-10-27 9:30:6]Process 22279 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 43
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100085 microseconds
+Fault on PT_F39(0X7ffc52366e90 -> 0X7ffc52366e90)
+3000096 microseconds
+timeout
+[  2016-10-27 9:30:9]Process 22281 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 44
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101092 microseconds
+Fault on PT_F39(0X7ffc712292d0 -> 0X7ffc752292d0)
+3000068 microseconds
+timeout
+[ 2016-10-27 9:30:12]Process 22283 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 45
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100930 microseconds
+Fault on PT_F39(0X7fff924b6820 -> 0X40007fff924be820)
+3000074 microseconds
+timeout
+[ 2016-10-27 9:30:15]Process 22285 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 46
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101526 microseconds
+Fault on PT_F39(0X7ffe3c128b30 -> 0X107ffe3c128b30)
+3000104 microseconds
+timeout
+[ 2016-10-27 9:30:18]Process 22287 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 47
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101131 microseconds
+Fault on PT_F39(0X7ffd8c1330a0 -> 0X7ffd8c1330a0)
+3000085 microseconds
+timeout
+[ 2016-10-27 9:30:21]Process 22289 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 48
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101269 microseconds
+Fault on PT_F39(0X7ffeb6021230 -> 0X7ffeb6c21230)
+3000053 microseconds
+timeout
+[ 2016-10-27 9:30:25]Process 22291 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 49
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101109 microseconds
+Fault on PT_F39(0X7ffde27faa00 -> 0X7ffde27faa00)
+3000058 microseconds
+timeout
+[ 2016-10-27 9:30:28]Process 22300 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 50
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100076 microseconds
+Fault on PT_F39(0X7ffe12e545d0 -> 0X107ffe12e545d0)
+3000068 microseconds
+timeout
+[ 2016-10-27 9:30:31]Process 22306 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 51
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101149 microseconds
+Fault on PT_F39(0X7ffd2a92be70 -> 0X407ffd2a92be70)
+3000088 microseconds
+timeout
+[ 2016-10-27 9:30:34]Process 22318 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 52
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100984 microseconds
+Fault on PT_F39(0X7fffff1abcc0 -> 0X7fffff1abcc0)
+3000082 microseconds
+timeout
+[ 2016-10-27 9:30:37]Process 22320 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 53
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101824 microseconds
+Fault on PT_F39(0X7fff3b1f7550 -> 0Xffff3b1f7550)
+3000089 microseconds
+timeout
+[ 2016-10-27 9:30:40]Process 22322 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 54
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101473 microseconds
+Fault on PT_F39(0X7fff27a878c0 -> 0X7fff27a878d0)
+3000104 microseconds
+timeout
+[ 2016-10-27 9:30:43]Process 22324 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 55
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101327 microseconds
+Fault on PT_F39(0X7fff5b634dc0 -> 0X7fff5b634dc0)
+3000077 microseconds
+timeout
+[ 2016-10-27 9:30:46]Process 22327 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 56
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100927 microseconds
+Fault on PT_F39(0X7ffd3ba5bfb0 -> 0X7ffd3ba5bfb0)
+3000090 microseconds
+timeout
+[ 2016-10-27 9:30:49]Process 22330 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 57
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100988 microseconds
+Fault on PT_F39(0X7ffe8fe8e730 -> 0X8007ffe8fe8ef30)
+3000093 microseconds
+timeout
+[ 2016-10-27 9:30:53]Process 22334 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 58
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100108 microseconds
+Fault on PT_F39(0X7fffbe08e780 -> 0X7fffbe08e780)
+3000117 microseconds
+timeout
+[ 2016-10-27 9:30:56]Process 22336 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 59
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100975 microseconds
+Fault on PT_F39(0X7fffc5730f50 -> 0X7fffc5770f50)
+3000089 microseconds
+timeout
+[ 2016-10-27 9:30:59]Process 22339 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 60
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101209 microseconds
+Fault on PT_F39(0X7ffc7a38c250 -> 0X30007ffc7a38c250)
+3000100 microseconds
+timeout
+[  2016-10-27 9:31:2]Process 22341 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 61
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101484 microseconds
+Fault on PT_F39(0X7fff9178c690 -> 0X7fff917cc690)
+3000118 microseconds
+timeout
+[  2016-10-27 9:31:5]Process 22343 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 62
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101023 microseconds
+Fault on PT_F39(0X7ffd335b2580 -> 0X20807ffd335b2580)
+3000146 microseconds
+timeout
+[  2016-10-27 9:31:8]Process 22345 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 63
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101161 microseconds
+Fault on PT_F39(0X7ffe0e880c50 -> 0X7ffe0e882c50)
+3000144 microseconds
+timeout
+[ 2016-10-27 9:31:11]Process 22347 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 64
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101364 microseconds
+Fault on PT_F39(0X7fffe1e25c70 -> 0X7fffe1e25c70)
+3000086 microseconds
+timeout
+[ 2016-10-27 9:31:14]Process 22349 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 65
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101350 microseconds
+Fault on PT_F39(0X7fffe616c430 -> 0X47fffe616c470)
+3000101 microseconds
+timeout
+[ 2016-10-27 9:31:17]Process 22351 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 66
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101041 microseconds
+Fault on PT_F39(0X7fff402e8d30 -> 0X7fff422e8d32)
+3000089 microseconds
+timeout
+[ 2016-10-27 9:31:21]Process 22353 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 67
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101057 microseconds
+Fault on PT_F39(0X7fff7a5e3c60 -> 0X87fff7a5e3c60)
+3000084 microseconds
+timeout
+[ 2016-10-27 9:31:24]Process 22355 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 68
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101196 microseconds
+Fault on PT_F39(0X7ffc9dc288b0 -> 0X2007ffc9dc288b0)
+3000089 microseconds
+timeout
+[ 2016-10-27 9:31:27]Process 22357 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 69
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101319 microseconds
+Fault on PT_F39(0X7ffff75e1510 -> 0X27ffff75e1514)
+3000095 microseconds
+timeout
+[ 2016-10-27 9:31:30]Process 22360 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 70
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100073 microseconds
+Fault on PT_F39(0X7ffd560376a0 -> 0X10007ffd562376a0)
+3000072 microseconds
+timeout
+[ 2016-10-27 9:31:33]Process 22363 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 71
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101172 microseconds
+Fault on PT_F39(0X7ffd0ce38080 -> 0X7ffd0ce38080)
+3000085 microseconds
+timeout
+[ 2016-10-27 9:31:36]Process 22366 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 72
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100998 microseconds
+Fault on PT_F39(0X7ffea1b23010 -> 0X20007ffea1b23210)
+3000123 microseconds
+timeout
+[ 2016-10-27 9:31:39]Process 22368 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 73
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101326 microseconds
+Fault on PT_F39(0X7ffecd611800 -> 0X1007ffecd611800)
+3000114 microseconds
+timeout
+[ 2016-10-27 9:31:42]Process 22370 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 74
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101115 microseconds
+Fault on PT_F39(0X7ffd97fe0fb0 -> 0X7ffd9ffe8fb0)
+3000104 microseconds
+timeout
+[ 2016-10-27 9:31:45]Process 22381 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 75
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101568 microseconds
+Fault on PT_F39(0X7fffdc47acf0 -> 0X7fffdc47bcf0)
+3000133 microseconds
+timeout
+[ 2016-10-27 9:31:49]Process 22383 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 76
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100962 microseconds
+Fault on PT_F39(0X7ffe3566b990 -> 0X8007ffe3566b990)
+3000078 microseconds
+timeout
+[ 2016-10-27 9:31:52]Process 22385 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 77
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100978 microseconds
+Fault on PT_F39(0X7ffca0c34100 -> 0X20007ffca0c34100)
+3000182 microseconds
+timeout
+[ 2016-10-27 9:31:55]Process 22394 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 78
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101186 microseconds
+Fault on PT_F39(0X7ffd199591d0 -> 0X7ffd1995b1d0)
+3000080 microseconds
+timeout
+[ 2016-10-27 9:31:58]Process 22398 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 79
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100082 microseconds
+Fault on PT_F39(0X7ffe16d998c0 -> 0X7ffe16f998c0)
+3000306 microseconds
+timeout
+[  2016-10-27 9:32:1]Process 22400 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 80
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101044 microseconds
+Fault on PT_F39(0X7ffeba351200 -> 0X7ffefa351200)
+3000096 microseconds
+timeout
+[  2016-10-27 9:32:4]Process 22403 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 81
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100918 microseconds
+Fault on PT_F39(0X7ffcd6ad7bc0 -> 0X7ffdd6ad7bc0)
+3000062 microseconds
+timeout
+[  2016-10-27 9:32:7]Process 22406 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 82
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101174 microseconds
+Fault on PT_F39(0X7ffef2887a20 -> 0X2807ffef2887a20)
+3000197 microseconds
+timeout
+[ 2016-10-27 9:32:10]Process 22424 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 83
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101013 microseconds
+Fault on PT_F39(0X7fff036083b0 -> 0X20007fff036083b0)
+3000160 microseconds
+timeout
+[ 2016-10-27 9:32:13]Process 22427 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 84
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101102 microseconds
+Fault on PT_F39(0X7ffc231b0b60 -> 0X7ffc331b0b60)
+3000091 microseconds
+timeout
+[ 2016-10-27 9:32:17]Process 22438 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 85
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100947 microseconds
+Fault on PT_F39(0X7ffe76e8bbc0 -> 0X17ffe76e8bbc0)
+3000143 microseconds
+timeout
+[ 2016-10-27 9:32:20]Process 22442 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 86
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101250 microseconds
+Fault on PT_F39(0X7ffd2dd8dbe0 -> 0X7ffd6dd8dfe0)
+3000147 microseconds
+timeout
+[ 2016-10-27 9:32:23]Process 22446 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 87
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101029 microseconds
+Fault on PT_F39(0X7ffee94899c0 -> 0X407ffee94899c0)
+3000182 microseconds
+timeout
+[ 2016-10-27 9:32:26]Process 22448 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 88
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101039 microseconds
+Fault on PT_F39(0X7ffe2ac78b70 -> 0X7ffe2acf8b70)
+3000096 microseconds
+timeout
+[ 2016-10-27 9:32:29]Process 22451 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 89
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101117 microseconds
+Fault on PT_F39(0X7fff74934fa0 -> 0X7fff7493cfa0)
+3000085 microseconds
+timeout
+[ 2016-10-27 9:32:32]Process 22475 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 90
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100972 microseconds
+Fault on PT_F39(0X7ffc52d3ab40 -> 0X7ffc52d3afc0)
+3000083 microseconds
+timeout
+[ 2016-10-27 9:32:35]Process 22477 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 91
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101010 microseconds
+Fault on PT_F39(0X7ffd00865c00 -> 0X87ffd00865c00)
+3000088 microseconds
+timeout
+[ 2016-10-27 9:32:38]Process 22481 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 92
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101355 microseconds
+Fault on PT_F39(0X7ffc5841f540 -> 0X7ffc5841f540)
+3000065 microseconds
+timeout
+[ 2016-10-27 9:32:42]Process 22488 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 93
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+100883 microseconds
+Fault on PT_F39(0X7fff78050c00 -> 0X37fff78050c00)
+3000068 microseconds
+timeout
+[ 2016-10-27 9:32:45]Process 22490 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 94
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101096 microseconds
+Fault on PT_F39(0X7ffc1a8a6470 -> 0X47ffc1a8a6470)
+3000088 microseconds
+timeout
+[ 2016-10-27 9:32:48]Process 22492 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 95
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101010 microseconds
+Fault on PT_F39(0X7ffd427e3e80 -> 0X27ffd427e3e80)
+3000117 microseconds
+timeout
+[ 2016-10-27 9:32:51]Process 22502 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 96
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101062 microseconds
+Fault on PT_F39(0X7ffda4656360 -> 0X7ffda4656360)
+3000079 microseconds
+timeout
+[ 2016-10-27 9:32:54]Process 22519 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 97
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101006 microseconds
+Fault on PT_F39(0X7ffee67fa4f0 -> 0X7ffee67fa4f0)
+3000131 microseconds
+timeout
+[ 2016-10-27 9:32:57]Process 22522 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 98
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101547 microseconds
+Fault on PT_F39(0X7ffdd2f88f00 -> 0X7ffdd6f88f10)
+3000174 microseconds
+timeout
+[  2016-10-27 9:33:0]Process 22524 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 99
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101155 microseconds
+Fault on PT_F39(0X7ffe99718920 -> 0X20007ffe99718d20)
+3000104 microseconds
+timeout
+[  2016-10-27 9:33:3]Process 22526 termed with signal 14(SIGALRM)
+PT_F39-2_bit_1-100 Test Num : 100
+Inject into ../bin/hello
+----- Type : 2_bit_1 Pos : PT_F39 -----
+There are 1 faults will be injected in faulttable...
+101070 microseconds
+Fault on PT_F39(0X7fff926a75a0 -> 0X407fff926a75a0)
+3000095 microseconds
+timeout
+[  2016-10-27 9:33:6]Process 22530 termed with signal 14(SIGALRM)

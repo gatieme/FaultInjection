@@ -1,0 +1,900 @@
+PT_F38-8_low_error-100 Test Num : 1
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101250 microseconds
+Fault on PT_F38(0X0 -> 0Xd3)
+3000093 microseconds
+timeout
+[ 2016-10-27 8:30:54]Process 18728 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 2
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101080 microseconds
+Fault on PT_F38(0X0 -> 0Xee)
+3000109 microseconds
+timeout
+[ 2016-10-27 8:30:57]Process 18730 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 3
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100077 microseconds
+Fault on PT_F38(0X0 -> 0Xe5)
+3000078 microseconds
+timeout
+[  2016-10-27 8:31:0]Process 18732 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 4
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101056 microseconds
+Fault on PT_F38(0X0 -> 0X52)
+3000063 microseconds
+timeout
+[  2016-10-27 8:31:3]Process 18734 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 5
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100964 microseconds
+Fault on PT_F38(0X0 -> 0Xa)
+3000063 microseconds
+timeout
+[  2016-10-27 8:31:7]Process 18736 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 6
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100985 microseconds
+Fault on PT_F38(0X0 -> 0X4c)
+3000070 microseconds
+timeout
+[ 2016-10-27 8:31:10]Process 18738 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 7
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100998 microseconds
+Fault on PT_F38(0X0 -> 0Xa8)
+3000183 microseconds
+timeout
+[ 2016-10-27 8:31:13]Process 18740 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 8
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101015 microseconds
+Fault on PT_F38(0X0 -> 0X86)
+3000086 microseconds
+timeout
+[ 2016-10-27 8:31:16]Process 18742 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 9
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101129 microseconds
+Fault on PT_F38(0X0 -> 0X34)
+3000065 microseconds
+timeout
+[ 2016-10-27 8:31:19]Process 18744 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 10
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101062 microseconds
+Fault on PT_F38(0X0 -> 0X89)
+3000061 microseconds
+timeout
+[ 2016-10-27 8:31:22]Process 18746 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 11
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101070 microseconds
+Fault on PT_F38(0X0 -> 0Xe3)
+3000076 microseconds
+timeout
+[ 2016-10-27 8:31:25]Process 18748 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 12
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101228 microseconds
+Fault on PT_F38(0X0 -> 0X26)
+3000067 microseconds
+timeout
+[ 2016-10-27 8:31:28]Process 18750 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 13
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100894 microseconds
+Fault on PT_F38(0X0 -> 0Xcd)
+3000085 microseconds
+timeout
+[ 2016-10-27 8:31:31]Process 18752 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 14
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100387 microseconds
+Fault on PT_F38(0X0 -> 0X4d)
+3000123 microseconds
+timeout
+[ 2016-10-27 8:31:35]Process 18754 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 15
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100074 microseconds
+Fault on PT_F38(0X0 -> 0Xc6)
+3000256 microseconds
+timeout
+[ 2016-10-27 8:31:38]Process 18756 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 16
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100997 microseconds
+Fault on PT_F38(0X0 -> 0X20)
+3000075 microseconds
+timeout
+[ 2016-10-27 8:31:41]Process 18758 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 17
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100072 microseconds
+Fault on PT_F38(0X0 -> 0X41)
+3000060 microseconds
+timeout
+[ 2016-10-27 8:31:44]Process 18760 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 18
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100982 microseconds
+Fault on PT_F38(0X0 -> 0X19)
+3000070 microseconds
+timeout
+[ 2016-10-27 8:31:47]Process 18762 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 19
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100983 microseconds
+Fault on PT_F38(0X0 -> 0X30)
+3000107 microseconds
+timeout
+[ 2016-10-27 8:31:50]Process 18764 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 20
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101094 microseconds
+Fault on PT_F38(0X0 -> 0X3b)
+3000089 microseconds
+timeout
+[ 2016-10-27 8:31:53]Process 18766 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 21
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101345 microseconds
+Fault on PT_F38(0X0 -> 0X1d)
+3000072 microseconds
+timeout
+[ 2016-10-27 8:31:56]Process 18768 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 22
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101050 microseconds
+Fault on PT_F38(0X0 -> 0X59)
+3000102 microseconds
+timeout
+[ 2016-10-27 8:31:59]Process 18770 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 23
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101168 microseconds
+Fault on PT_F38(0X0 -> 0X93)
+3000081 microseconds
+timeout
+[  2016-10-27 8:32:3]Process 18772 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 24
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101304 microseconds
+Fault on PT_F38(0X0 -> 0Xcf)
+3000075 microseconds
+timeout
+[  2016-10-27 8:32:6]Process 18774 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 25
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101313 microseconds
+Fault on PT_F38(0X0 -> 0Xbb)
+3000112 microseconds
+timeout
+[  2016-10-27 8:32:9]Process 18776 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 26
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101018 microseconds
+Fault on PT_F38(0X0 -> 0X9)
+3000079 microseconds
+timeout
+[ 2016-10-27 8:32:12]Process 18778 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 27
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100106 microseconds
+Fault on PT_F38(0X0 -> 0Xfd)
+3000074 microseconds
+timeout
+[ 2016-10-27 8:32:15]Process 18780 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 28
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100991 microseconds
+Fault on PT_F38(0X0 -> 0X5e)
+3000099 microseconds
+timeout
+[ 2016-10-27 8:32:18]Process 18782 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 29
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101062 microseconds
+Fault on PT_F38(0X0 -> 0X37)
+3000049 microseconds
+timeout
+[ 2016-10-27 8:32:21]Process 18784 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 30
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101031 microseconds
+Fault on PT_F38(0X0 -> 0X2f)
+3000069 microseconds
+timeout
+[ 2016-10-27 8:32:24]Process 18786 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 31
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100983 microseconds
+Fault on PT_F38(0X0 -> 0Xae)
+3000128 microseconds
+timeout
+[ 2016-10-27 8:32:28]Process 18788 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 32
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100245 microseconds
+Fault on PT_F38(0X0 -> 0Xc4)
+3000092 microseconds
+timeout
+[ 2016-10-27 8:32:31]Process 18790 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 33
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101032 microseconds
+Fault on PT_F38(0X0 -> 0X1c)
+3000077 microseconds
+timeout
+[ 2016-10-27 8:32:34]Process 18792 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 34
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101062 microseconds
+Fault on PT_F38(0X0 -> 0X1a)
+3000069 microseconds
+timeout
+[ 2016-10-27 8:32:37]Process 18794 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 35
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101101 microseconds
+Fault on PT_F38(0X0 -> 0X37)
+3000083 microseconds
+timeout
+[ 2016-10-27 8:32:40]Process 18796 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 36
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100157 microseconds
+Fault on PT_F38(0X0 -> 0Xc9)
+3000064 microseconds
+timeout
+[ 2016-10-27 8:32:43]Process 18798 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 37
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100090 microseconds
+Fault on PT_F38(0X0 -> 0X22)
+3000086 microseconds
+timeout
+[ 2016-10-27 8:32:46]Process 18819 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 38
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100083 microseconds
+Fault on PT_F38(0X0 -> 0X7a)
+3000077 microseconds
+timeout
+[ 2016-10-27 8:32:49]Process 18822 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 39
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101158 microseconds
+Fault on PT_F38(0X0 -> 0X78)
+3000067 microseconds
+timeout
+[ 2016-10-27 8:32:52]Process 18826 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 40
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101029 microseconds
+Fault on PT_F38(0X0 -> 0X2)
+3000086 microseconds
+timeout
+[ 2016-10-27 8:32:56]Process 18828 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 41
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100076 microseconds
+Fault on PT_F38(0X0 -> 0Xbc)
+3000080 microseconds
+timeout
+[ 2016-10-27 8:32:59]Process 18831 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 42
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100996 microseconds
+Fault on PT_F38(0X0 -> 0X66)
+3000107 microseconds
+timeout
+[  2016-10-27 8:33:2]Process 18833 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 43
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100076 microseconds
+Fault on PT_F38(0X0 -> 0X1)
+3000078 microseconds
+timeout
+[  2016-10-27 8:33:5]Process 18835 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 44
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101001 microseconds
+Fault on PT_F38(0X0 -> 0X5)
+3000093 microseconds
+timeout
+[  2016-10-27 8:33:8]Process 18838 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 45
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101103 microseconds
+Fault on PT_F38(0X0 -> 0Xe3)
+3000092 microseconds
+timeout
+[ 2016-10-27 8:33:11]Process 18841 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 46
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101352 microseconds
+Fault on PT_F38(0X0 -> 0Xf1)
+3000125 microseconds
+timeout
+[ 2016-10-27 8:33:14]Process 18843 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 47
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101607 microseconds
+Fault on PT_F38(0X0 -> 0X29)
+3000081 microseconds
+timeout
+[ 2016-10-27 8:33:17]Process 18846 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 48
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101028 microseconds
+Fault on PT_F38(0X0 -> 0X29)
+3000072 microseconds
+timeout
+[ 2016-10-27 8:33:20]Process 18848 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 49
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100964 microseconds
+Fault on PT_F38(0X0 -> 0Xdd)
+3000079 microseconds
+timeout
+[ 2016-10-27 8:33:24]Process 18850 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 50
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100100 microseconds
+Fault on PT_F38(0X0 -> 0X87)
+3000092 microseconds
+timeout
+[ 2016-10-27 8:33:27]Process 18852 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 51
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101111 microseconds
+Fault on PT_F38(0X0 -> 0Xbc)
+3000068 microseconds
+timeout
+[ 2016-10-27 8:33:30]Process 18855 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 52
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101140 microseconds
+Fault on PT_F38(0X0 -> 0Xf5)
+3000084 microseconds
+timeout
+[ 2016-10-27 8:33:33]Process 18857 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 53
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100984 microseconds
+Fault on PT_F38(0X0 -> 0X68)
+3000146 microseconds
+timeout
+[ 2016-10-27 8:33:36]Process 18859 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 54
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100975 microseconds
+Fault on PT_F38(0X0 -> 0X38)
+3000059 microseconds
+timeout
+[ 2016-10-27 8:33:39]Process 18861 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 55
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101255 microseconds
+Fault on PT_F38(0X0 -> 0X5c)
+3000080 microseconds
+timeout
+[ 2016-10-27 8:33:42]Process 18868 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 56
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100949 microseconds
+Fault on PT_F38(0X0 -> 0X6f)
+3000067 microseconds
+timeout
+[ 2016-10-27 8:33:45]Process 18870 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 57
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100088 microseconds
+Fault on PT_F38(0X0 -> 0X29)
+3000098 microseconds
+timeout
+[ 2016-10-27 8:33:48]Process 18873 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 58
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101108 microseconds
+Fault on PT_F38(0X0 -> 0Xed)
+3000138 microseconds
+timeout
+[ 2016-10-27 8:33:52]Process 18875 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 59
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101369 microseconds
+Fault on PT_F38(0X0 -> 0Xec)
+3000093 microseconds
+timeout
+[ 2016-10-27 8:33:55]Process 18877 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 60
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100898 microseconds
+Fault on PT_F38(0X0 -> 0Xad)
+3000133 microseconds
+timeout
+[ 2016-10-27 8:33:58]Process 18879 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 61
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101469 microseconds
+Fault on PT_F38(0X0 -> 0Xa3)
+3000061 microseconds
+timeout
+[  2016-10-27 8:34:1]Process 18881 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 62
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100899 microseconds
+Fault on PT_F38(0X0 -> 0Xfa)
+3000073 microseconds
+timeout
+[  2016-10-27 8:34:4]Process 18883 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 63
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100088 microseconds
+Fault on PT_F38(0X0 -> 0X70)
+3000096 microseconds
+timeout
+[  2016-10-27 8:34:7]Process 18887 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 64
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101102 microseconds
+Fault on PT_F38(0X0 -> 0Xb5)
+3000085 microseconds
+timeout
+[ 2016-10-27 8:34:10]Process 18889 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 65
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101096 microseconds
+Fault on PT_F38(0X0 -> 0Xe3)
+3000072 microseconds
+timeout
+[ 2016-10-27 8:34:13]Process 18893 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 66
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101035 microseconds
+Fault on PT_F38(0X0 -> 0X70)
+3000117 microseconds
+timeout
+[ 2016-10-27 8:34:16]Process 18902 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 67
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101183 microseconds
+Fault on PT_F38(0X0 -> 0Xbf)
+3000072 microseconds
+timeout
+[ 2016-10-27 8:34:20]Process 18911 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 68
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100933 microseconds
+Fault on PT_F38(0X0 -> 0X50)
+3000080 microseconds
+timeout
+[ 2016-10-27 8:34:23]Process 18913 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 69
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100975 microseconds
+Fault on PT_F38(0X0 -> 0Xa2)
+3000119 microseconds
+timeout
+[ 2016-10-27 8:34:26]Process 18915 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 70
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101237 microseconds
+Fault on PT_F38(0X0 -> 0X6a)
+3000064 microseconds
+timeout
+[ 2016-10-27 8:34:29]Process 18917 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 71
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100974 microseconds
+Fault on PT_F38(0X0 -> 0X92)
+3000051 microseconds
+timeout
+[ 2016-10-27 8:34:32]Process 18919 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 72
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100973 microseconds
+Fault on PT_F38(0X0 -> 0X4b)
+3000233 microseconds
+timeout
+[ 2016-10-27 8:34:35]Process 18921 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 73
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101203 microseconds
+Fault on PT_F38(0X0 -> 0X1a)
+3000076 microseconds
+timeout
+[ 2016-10-27 8:34:38]Process 18923 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 74
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101000 microseconds
+Fault on PT_F38(0X0 -> 0X1c)
+3000069 microseconds
+timeout
+[ 2016-10-27 8:34:41]Process 18926 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 75
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101032 microseconds
+Fault on PT_F38(0X0 -> 0X4a)
+3000094 microseconds
+timeout
+[ 2016-10-27 8:34:44]Process 18928 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 76
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101058 microseconds
+Fault on PT_F38(0X0 -> 0X56)
+3000070 microseconds
+timeout
+[ 2016-10-27 8:34:48]Process 18930 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 77
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101074 microseconds
+Fault on PT_F38(0X0 -> 0X9e)
+3000111 microseconds
+timeout
+[ 2016-10-27 8:34:51]Process 18933 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 78
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101008 microseconds
+Fault on PT_F38(0X0 -> 0X17)
+3000070 microseconds
+timeout
+[ 2016-10-27 8:34:54]Process 18937 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 79
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100975 microseconds
+Fault on PT_F38(0X0 -> 0X80)
+3000095 microseconds
+timeout
+[ 2016-10-27 8:34:57]Process 18939 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 80
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101109 microseconds
+Fault on PT_F38(0X0 -> 0X98)
+3000058 microseconds
+timeout
+[  2016-10-27 8:35:0]Process 18941 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 81
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101011 microseconds
+Fault on PT_F38(0X0 -> 0Xc3)
+3000071 microseconds
+timeout
+[  2016-10-27 8:35:3]Process 18944 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 82
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101100 microseconds
+Fault on PT_F38(0X0 -> 0Xa2)
+3000067 microseconds
+timeout
+[  2016-10-27 8:35:6]Process 18947 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 83
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101047 microseconds
+Fault on PT_F38(0X0 -> 0X4c)
+3000064 microseconds
+timeout
+[  2016-10-27 8:35:9]Process 18950 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 84
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100932 microseconds
+Fault on PT_F38(0X0 -> 0Xa9)
+3000127 microseconds
+timeout
+[ 2016-10-27 8:35:12]Process 18952 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 85
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101035 microseconds
+Fault on PT_F38(0X0 -> 0Xa5)
+3000067 microseconds
+timeout
+[ 2016-10-27 8:35:16]Process 18955 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 86
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100141 microseconds
+Fault on PT_F38(0X0 -> 0X98)
+3000075 microseconds
+timeout
+[ 2016-10-27 8:35:19]Process 18957 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 87
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101455 microseconds
+Fault on PT_F38(0X0 -> 0X85)
+3000065 microseconds
+timeout
+[ 2016-10-27 8:35:22]Process 18960 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 88
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101011 microseconds
+Fault on PT_F38(0X0 -> 0Xf5)
+3000068 microseconds
+timeout
+[ 2016-10-27 8:35:25]Process 18962 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 89
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101075 microseconds
+Fault on PT_F38(0X0 -> 0X17)
+3000076 microseconds
+timeout
+[ 2016-10-27 8:35:28]Process 18964 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 90
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100957 microseconds
+Fault on PT_F38(0X0 -> 0Xeb)
+3000066 microseconds
+timeout
+[ 2016-10-27 8:35:31]Process 18966 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 91
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100991 microseconds
+Fault on PT_F38(0X0 -> 0X57)
+3000109 microseconds
+timeout
+[ 2016-10-27 8:35:34]Process 18968 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 92
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101143 microseconds
+Fault on PT_F38(0X0 -> 0X6)
+3000116 microseconds
+timeout
+[ 2016-10-27 8:35:37]Process 18972 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 93
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100079 microseconds
+Fault on PT_F38(0X0 -> 0Xb2)
+3000080 microseconds
+timeout
+[ 2016-10-27 8:35:40]Process 18975 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 94
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100969 microseconds
+Fault on PT_F38(0X0 -> 0X99)
+3000084 microseconds
+timeout
+[ 2016-10-27 8:35:44]Process 18977 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 95
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101101 microseconds
+Fault on PT_F38(0X0 -> 0Xd4)
+3000107 microseconds
+timeout
+[ 2016-10-27 8:35:47]Process 18980 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 96
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+100959 microseconds
+Fault on PT_F38(0X0 -> 0Xf1)
+3000102 microseconds
+timeout
+[ 2016-10-27 8:35:50]Process 18982 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 97
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101232 microseconds
+Fault on PT_F38(0X0 -> 0X9b)
+3000070 microseconds
+timeout
+[ 2016-10-27 8:35:53]Process 18985 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 98
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101046 microseconds
+Fault on PT_F38(0X0 -> 0X3c)
+3000072 microseconds
+timeout
+[ 2016-10-27 8:35:56]Process 18987 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 99
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101037 microseconds
+Fault on PT_F38(0X0 -> 0X6)
+3000075 microseconds
+timeout
+[ 2016-10-27 8:35:59]Process 18989 termed with signal 14(SIGALRM)
+PT_F38-8_low_error-100 Test Num : 100
+Inject into ../bin/hello
+----- Type : 8_low_error Pos : PT_F38 -----
+There are 1 faults will be injected in faulttable...
+101146 microseconds
+Fault on PT_F38(0X0 -> 0X4b)
+3000110 microseconds
+timeout
+[  2016-10-27 8:36:2]Process 19016 termed with signal 14(SIGALRM)

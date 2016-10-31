@@ -1,0 +1,1200 @@
+PT_F40-2_bit_flip-150 Test Num : 1
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101084 microseconds
+Fault on PT_F40(0X7fe8d38e6ee0 -> 0X17fe8d38e6ef0)
+18 microseconds
+[ 2016-10-27 11:9:12]Process 7893 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 2
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101574 microseconds
+Fault on PT_F40(0X7fc640b07ee0 -> 0X17fc640b07ef0)
+11 microseconds
+[ 2016-10-27 11:9:12]Process 7895 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 3
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101128 microseconds
+Fault on PT_F40(0X7fcd3efb3ee0 -> 0X17fcd3efb3ef0)
+12 microseconds
+[ 2016-10-27 11:9:12]Process 7897 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 4
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100923 microseconds
+Fault on PT_F40(0X7fe6da1aaee0 -> 0X17fe6da1aaef0)
+13 microseconds
+[ 2016-10-27 11:9:12]Process 7906 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 5
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100994 microseconds
+Fault on PT_F40(0X7f27f19f5ee0 -> 0X17f27f19f5ef0)
+14 microseconds
+[ 2016-10-27 11:9:12]Process 7908 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 6
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101236 microseconds
+Fault on PT_F40(0X7f4c02b7aee0 -> 0X17f4c02b7aef0)
+13 microseconds
+[ 2016-10-27 11:9:12]Process 7910 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 7
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101387 microseconds
+Fault on PT_F40(0X7f0a9e03bee0 -> 0X7f0a9e039ea0)
+36 microseconds
+[ 2016-10-27 11:9:13]Process 7912 termed with signal 4(SIGILL)
+PT_F40-2_bit_flip-150 Test Num : 8
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100090 microseconds
+Fault on PT_F40(0X7f8326a8fee0 -> 0X7f8326a8dea0)
+31 microseconds
+[ 2016-10-27 11:9:13]Process 7914 termed with signal 4(SIGILL)
+PT_F40-2_bit_flip-150 Test Num : 9
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101117 microseconds
+Fault on PT_F40(0X7f4773163ee0 -> 0X7f4773161ea0)
+29 microseconds
+[ 2016-10-27 11:9:13]Process 7916 termed with signal 4(SIGILL)
+PT_F40-2_bit_flip-150 Test Num : 10
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100924 microseconds
+Fault on PT_F40(0X7f84e500aee0 -> 0X7f84e5008ea0)
+25 microseconds
+[ 2016-10-27 11:9:13]Process 7925 termed with signal 4(SIGILL)
+PT_F40-2_bit_flip-150 Test Num : 11
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100975 microseconds
+Fault on PT_F40(0X7f7485882ee0 -> 0X7f7485880ea0)
+30 microseconds
+[ 2016-10-27 11:9:13]Process 7927 termed with signal 4(SIGILL)
+PT_F40-2_bit_flip-150 Test Num : 12
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101029 microseconds
+Fault on PT_F40(0X7f03a5050ee0 -> 0X7f03a5052ea0)
+18 microseconds
+[ 2016-10-27 11:9:13]Process 7929 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 13
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100340 microseconds
+Fault on PT_F40(0X7f43b841dee0 -> 0X7f43b841fea0)
+28 microseconds
+[ 2016-10-27 11:9:13]Process 7931 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 14
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100070 microseconds
+Fault on PT_F40(0X7f5bfd9ecee0 -> 0X7f5bfd9eeea0)
+28 microseconds
+[ 2016-10-27 11:9:13]Process 7933 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 15
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100084 microseconds
+Fault on PT_F40(0X7f4959e64ee0 -> 0X7f4959e66ea0)
+17 microseconds
+[ 2016-10-27 11:9:13]Process 7942 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 16
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100891 microseconds
+Fault on PT_F40(0X7fe494526ee0 -> 0X7fe49c526ee2)
+15 microseconds
+[ 2016-10-27 11:9:14]Process 7944 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 17
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100988 microseconds
+Fault on PT_F40(0X7f6f65b2cee0 -> 0X7f6f6db2cee2)
+23 microseconds
+[ 2016-10-27 11:9:14]Process 7946 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 18
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100115 microseconds
+Fault on PT_F40(0X7eff505a4ee0 -> 0X7eff585a4ee2)
+17 microseconds
+[ 2016-10-27 11:9:14]Process 7948 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 19
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101198 microseconds
+Fault on PT_F40(0X7ffa02b8dee0 -> 0X7ffa0ab8dee2)
+14 microseconds
+[ 2016-10-27 11:9:14]Process 7950 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 20
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101377 microseconds
+Fault on PT_F40(0X7f024134cee0 -> 0X7f024934cee2)
+20 microseconds
+[ 2016-10-27 11:9:14]Process 7959 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 21
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100863 microseconds
+Fault on PT_F40(0X7fa0302f6ee0 -> 0X7fa0382f6ee2)
+16 microseconds
+[ 2016-10-27 11:9:14]Process 7961 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 22
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101072 microseconds
+Fault on PT_F40(0X7f42bc7ceee0 -> 0X7f42b47ceee2)
+17 microseconds
+[ 2016-10-27 11:9:14]Process 7963 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 23
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101408 microseconds
+Fault on PT_F40(0X7fbf661d6ee0 -> 0X7fbf6e1d6ee2)
+13 microseconds
+[ 2016-10-27 11:9:14]Process 7965 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 24
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101322 microseconds
+Fault on PT_F40(0X7f72be15aee0 -> 0X7f72b615aee2)
+12 microseconds
+[ 2016-10-27 11:9:14]Process 7967 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 25
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101105 microseconds
+Fault on PT_F40(0X7fa7c9114ee0 -> 0X7fa3c9114ce0)
+15 microseconds
+[ 2016-10-27 11:9:15]Process 7976 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 26
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101207 microseconds
+Fault on PT_F40(0X7f5b2f279ee0 -> 0X7f5f2f279ce0)
+13 microseconds
+[ 2016-10-27 11:9:15]Process 7978 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 27
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100907 microseconds
+Fault on PT_F40(0X7fdb0a9abee0 -> 0X7fdf0a9abce0)
+19 microseconds
+[ 2016-10-27 11:9:15]Process 7980 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 28
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101219 microseconds
+Fault on PT_F40(0X7f34a10ecee0 -> 0X7f30a10ecce0)
+19 microseconds
+[ 2016-10-27 11:9:15]Process 7982 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 29
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100923 microseconds
+Fault on PT_F40(0X7fab0a119ee0 -> 0X7faf0a119ce0)
+15 microseconds
+[ 2016-10-27 11:9:15]Process 7984 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 30
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100966 microseconds
+Fault on PT_F40(0X7f9c249a9ee0 -> 0X7f98249a9ce0)
+21 microseconds
+[ 2016-10-27 11:9:15]Process 7993 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 31
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100237 microseconds
+Fault on PT_F40(0X7f3a8e225ee0 -> 0X7f3e8e225ce0)
+15 microseconds
+[ 2016-10-27 11:9:15]Process 7995 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 32
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100902 microseconds
+Fault on PT_F40(0X7efc09f6eee0 -> 0X7ef809f6ece0)
+21 microseconds
+[ 2016-10-27 11:9:15]Process 7997 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 33
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100974 microseconds
+Fault on PT_F40(0X7f9f67ad0ee0 -> 0X7f9b67ad0ce0)
+13 microseconds
+[ 2016-10-27 11:9:15]Process 7999 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 34
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101001 microseconds
+Fault on PT_F40(0X7f484a7eaee0 -> 0X10007d484a7eaee0)
+11 microseconds
+[ 2016-10-27 11:9:16]Process 8001 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 35
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101372 microseconds
+Fault on PT_F40(0X7faea7b6cee0 -> 0X10007daea7b6cee0)
+13 microseconds
+[ 2016-10-27 11:9:16]Process 8010 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 36
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100989 microseconds
+Fault on PT_F40(0X7fbc1a013ee0 -> 0X10007dbc1a013ee0)
+16 microseconds
+[ 2016-10-27 11:9:16]Process 8012 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 37
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100177 microseconds
+Fault on PT_F40(0X7fc684e39ee0 -> 0X10007dc684e39ee0)
+14 microseconds
+[ 2016-10-27 11:9:16]Process 8014 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 38
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101038 microseconds
+Fault on PT_F40(0X7f563cb90ee0 -> 0X10007d563cb90ee0)
+13 microseconds
+[ 2016-10-27 11:9:16]Process 8016 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 39
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100088 microseconds
+Fault on PT_F40(0X7f8acb55fee0 -> 0X10007d8acb55fee0)
+15 microseconds
+[ 2016-10-27 11:9:16]Process 8021 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 40
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100992 microseconds
+Fault on PT_F40(0X7f6bcd34bee0 -> 0X10007d6bcd34bee0)
+18 microseconds
+[ 2016-10-27 11:9:16]Process 8027 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 41
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100942 microseconds
+Fault on PT_F40(0X7f8d762f4ee0 -> 0X10007d8d762f4ee0)
+10 microseconds
+[ 2016-10-27 11:9:16]Process 8029 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 42
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100892 microseconds
+Fault on PT_F40(0X7fc8580f1ee0 -> 0X10007dc8580f1ee0)
+11 microseconds
+[ 2016-10-27 11:9:16]Process 8031 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 43
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101002 microseconds
+Fault on PT_F40(0X7fd6af0dfee0 -> 0X107ff6af0dfee0)
+10 microseconds
+[ 2016-10-27 11:9:17]Process 8033 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 44
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101014 microseconds
+Fault on PT_F40(0X7fe0c8f2aee0 -> 0X107fc0c8f2aee0)
+10 microseconds
+[ 2016-10-27 11:9:17]Process 8035 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 45
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101094 microseconds
+Fault on PT_F40(0X7f45842b9ee0 -> 0X107f65842b9ee0)
+14 microseconds
+[ 2016-10-27 11:9:17]Process 8044 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 46
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101080 microseconds
+Fault on PT_F40(0X7fa3fb848ee0 -> 0X107f83fb848ee0)
+16 microseconds
+[ 2016-10-27 11:9:17]Process 8046 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 47
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101055 microseconds
+Fault on PT_F40(0X7f83cebfbee0 -> 0X107fa3cebfbee0)
+12 microseconds
+[ 2016-10-27 11:9:17]Process 8048 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 48
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101115 microseconds
+Fault on PT_F40(0X7f38b984cee0 -> 0X107f18b984cee0)
+11 microseconds
+[ 2016-10-27 11:9:17]Process 8050 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 49
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101214 microseconds
+Fault on PT_F40(0X7fa300b92ee0 -> 0X107f8300b92ee0)
+18 microseconds
+[ 2016-10-27 11:9:17]Process 8055 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 50
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101139 microseconds
+Fault on PT_F40(0X7fb2cd4eeee0 -> 0X107f92cd4eeee0)
+18 microseconds
+[ 2016-10-27 11:9:17]Process 8061 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 51
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101453 microseconds
+Fault on PT_F40(0X7f75fab0dee0 -> 0X107f55fab0dee0)
+18 microseconds
+[ 2016-10-27 11:9:17]Process 8063 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 52
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101298 microseconds
+Fault on PT_F40(0X7fb84f55cee0 -> 0X27fb84f55eee0)
+11 microseconds
+[ 2016-10-27 11:9:18]Process 8065 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 53
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101065 microseconds
+Fault on PT_F40(0X7fe06243dee0 -> 0X27fe06243fee0)
+9 microseconds
+[ 2016-10-27 11:9:18]Process 8067 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 54
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100972 microseconds
+Fault on PT_F40(0X7f1000807ee0 -> 0X27f1000805ee0)
+11 microseconds
+[ 2016-10-27 11:9:18]Process 8076 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 55
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101154 microseconds
+Fault on PT_F40(0X7fd0f5220ee0 -> 0X27fd0f5222ee0)
+13 microseconds
+[ 2016-10-27 11:9:18]Process 8078 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 56
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101238 microseconds
+Fault on PT_F40(0X7f87c40e2ee0 -> 0X27f87c40e0ee0)
+21 microseconds
+[ 2016-10-27 11:9:18]Process 8080 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 57
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101269 microseconds
+Fault on PT_F40(0X7f47d9309ee0 -> 0X27f47d930bee0)
+12 microseconds
+[ 2016-10-27 11:9:18]Process 8082 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 58
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100100 microseconds
+Fault on PT_F40(0X7f3de4accee0 -> 0X27f3de4aceee0)
+13 microseconds
+[ 2016-10-27 11:9:18]Process 8084 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 59
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101339 microseconds
+Fault on PT_F40(0X7f348d024ee0 -> 0X27f348d026ee0)
+18 microseconds
+[ 2016-10-27 11:9:18]Process 8086 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 60
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101275 microseconds
+Fault on PT_F40(0X7f12f7eb8ee0 -> 0X27f12f7ebaee0)
+11 microseconds
+[ 2016-10-27 11:9:18]Process 8088 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 61
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101262 microseconds
+Fault on PT_F40(0X7f82adb65ee0 -> 0X7b02adb65ee0)
+14 microseconds
+[ 2016-10-27 11:9:19]Process 8090 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 62
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101043 microseconds
+Fault on PT_F40(0X7fd898959ee0 -> 0X7b5898959ee0)
+23 microseconds
+[ 2016-10-27 11:9:19]Process 8092 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 63
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101106 microseconds
+Fault on PT_F40(0X7fc1e6c34ee0 -> 0X7b41e6c34ee0)
+13 microseconds
+[ 2016-10-27 11:9:19]Process 8094 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 64
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100295 microseconds
+Fault on PT_F40(0X7ff3588b2ee0 -> 0X7b73588b2ee0)
+22 microseconds
+[ 2016-10-27 11:9:19]Process 8096 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 65
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101525 microseconds
+Fault on PT_F40(0X7faddd6e3ee0 -> 0X7b2ddd6e3ee0)
+48 microseconds
+[ 2016-10-27 11:9:19]Process 8098 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 66
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101302 microseconds
+Fault on PT_F40(0X7f6fb2bceee0 -> 0X7befb2bceee0)
+20 microseconds
+[ 2016-10-27 11:9:19]Process 8100 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 67
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101602 microseconds
+Fault on PT_F40(0X7ffa15d24ee0 -> 0X7b7a15d24ee0)
+20 microseconds
+[ 2016-10-27 11:9:19]Process 8102 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 68
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101017 microseconds
+Fault on PT_F40(0X7f69376b0ee0 -> 0X7be9376b0ee0)
+17 microseconds
+[ 2016-10-27 11:9:19]Process 8104 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 69
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101186 microseconds
+Fault on PT_F40(0X7f4ab37e0ee0 -> 0X7bcab37e0ee0)
+20 microseconds
+[ 2016-10-27 11:9:19]Process 8106 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 70
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101533 microseconds
+Fault on PT_F40(0X7f463fee6ee0 -> 0X7bc63fee6ee0)
+39 microseconds
+[ 2016-10-27 11:9:19]Process 8108 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 71
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100948 microseconds
+Fault on PT_F40(0X7f2f3ea3aee0 -> 0X7f2f3eb3aea0)
+16 microseconds
+[ 2016-10-27 11:9:20]Process 8110 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 72
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101004 microseconds
+Fault on PT_F40(0X7f6ad1ed2ee0 -> 0X7f6ad1fd2ea0)
+17 microseconds
+[ 2016-10-27 11:9:20]Process 8112 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 73
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101149 microseconds
+Fault on PT_F40(0X7f5efc7cbee0 -> 0X7f5efc6cbea0)
+17 microseconds
+[ 2016-10-27 11:9:20]Process 8114 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 74
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100175 microseconds
+Fault on PT_F40(0X7fcf5fdbdee0 -> 0X7fcf5fcbdea0)
+18 microseconds
+[ 2016-10-27 11:9:20]Process 8116 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 75
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100202 microseconds
+Fault on PT_F40(0X7f0647009ee0 -> 0X7f0647109ea0)
+12 microseconds
+[ 2016-10-27 11:9:20]Process 8118 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 76
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100073 microseconds
+Fault on PT_F40(0X7f73b3168ee0 -> 0X7f73b3068ea0)
+13 microseconds
+[ 2016-10-27 11:9:20]Process 8120 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 77
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101025 microseconds
+Fault on PT_F40(0X7f294bb50ee0 -> 0X7f294ba50ea0)
+14 microseconds
+[ 2016-10-27 11:9:20]Process 8122 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 78
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101068 microseconds
+Fault on PT_F40(0X7f493c446ee0 -> 0X7f493c546ea0)
+22 microseconds
+[ 2016-10-27 11:9:20]Process 8124 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 79
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101411 microseconds
+Fault on PT_F40(0X7f124dfddee0 -> 0X7f124deddea0)
+15 microseconds
+[ 2016-10-27 11:9:20]Process 8126 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 80
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101515 microseconds
+Fault on PT_F40(0X7f9355f1dee0 -> 0X8000779355f1dee0)
+13 microseconds
+[ 2016-10-27 11:9:21]Process 8128 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 81
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101291 microseconds
+Fault on PT_F40(0X7f8e367bdee0 -> 0X8000778e367bdee0)
+21 microseconds
+[ 2016-10-27 11:9:21]Process 8130 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 82
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101158 microseconds
+Fault on PT_F40(0X7ff296024ee0 -> 0X800077f296024ee0)
+21 microseconds
+[ 2016-10-27 11:9:21]Process 8132 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 83
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101657 microseconds
+Fault on PT_F40(0X7ffbc2dcaee0 -> 0X800077fbc2dcaee0)
+12 microseconds
+[ 2016-10-27 11:9:21]Process 8134 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 84
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101205 microseconds
+Fault on PT_F40(0X7f76087b7ee0 -> 0X80007776087b7ee0)
+13 microseconds
+[ 2016-10-27 11:9:21]Process 8136 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 85
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101241 microseconds
+Fault on PT_F40(0X7f513d339ee0 -> 0X800077513d339ee0)
+12 microseconds
+[ 2016-10-27 11:9:21]Process 8138 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 86
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101009 microseconds
+Fault on PT_F40(0X7ffa2901fee0 -> 0X800077fa2901fee0)
+22 microseconds
+[ 2016-10-27 11:9:21]Process 8140 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 87
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101567 microseconds
+Fault on PT_F40(0X7fbbbff53ee0 -> 0X800077bbbff53ee0)
+21 microseconds
+[ 2016-10-27 11:9:21]Process 8142 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 88
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101098 microseconds
+Fault on PT_F40(0X7f6388f2eee0 -> 0X8000776388f2eee0)
+17 microseconds
+[ 2016-10-27 11:9:21]Process 8144 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 89
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101073 microseconds
+Fault on PT_F40(0X7ff7a1a22ee0 -> 0X80007ff7a1a22e60)
+17 microseconds
+[ 2016-10-27 11:9:22]Process 8146 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 90
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100108 microseconds
+Fault on PT_F40(0X7effdc524ee0 -> 0X80007effdc524e60)
+17 microseconds
+[ 2016-10-27 11:9:22]Process 8148 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 91
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101354 microseconds
+Fault on PT_F40(0X7fc53d941ee0 -> 0X80007fc53d941e60)
+13 microseconds
+[ 2016-10-27 11:9:22]Process 8150 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 92
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101253 microseconds
+Fault on PT_F40(0X7fc4b5208ee0 -> 0X80007fc4b5208e60)
+35 microseconds
+[ 2016-10-27 11:9:22]Process 8152 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 93
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101300 microseconds
+Fault on PT_F40(0X7fa3f814cee0 -> 0X80007fa3f814ce60)
+19 microseconds
+[ 2016-10-27 11:9:22]Process 8154 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 94
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101133 microseconds
+Fault on PT_F40(0X7f62202c4ee0 -> 0X80007f62202c4e60)
+17 microseconds
+[ 2016-10-27 11:9:22]Process 8156 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 95
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101290 microseconds
+Fault on PT_F40(0X7f63a2e48ee0 -> 0X80007f63a2e48e60)
+15 microseconds
+[ 2016-10-27 11:9:22]Process 8158 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 96
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100076 microseconds
+Fault on PT_F40(0X7f5b91dd2ee0 -> 0X80007f5b91dd2e60)
+12 microseconds
+[ 2016-10-27 11:9:22]Process 8160 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 97
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101199 microseconds
+Fault on PT_F40(0X7f02040b6ee0 -> 0X80007f02040b6e60)
+17 microseconds
+[ 2016-10-27 11:9:22]Process 8162 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 98
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101117 microseconds
+Fault on PT_F40(0X7faf1d632ee0 -> 0X807faf1d732ee0)
+9 microseconds
+[ 2016-10-27 11:9:23]Process 8164 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 99
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100983 microseconds
+Fault on PT_F40(0X7fd6f074dee0 -> 0X807fd6f064dee0)
+12 microseconds
+[ 2016-10-27 11:9:23]Process 8166 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 100
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100114 microseconds
+Fault on PT_F40(0X7ff991d8fee0 -> 0X807ff991c8fee0)
+12 microseconds
+[ 2016-10-27 11:9:23]Process 8168 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 101
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101494 microseconds
+Fault on PT_F40(0X7f9d98cc7ee0 -> 0X807f9d98dc7ee0)
+20 microseconds
+[ 2016-10-27 11:9:23]Process 8170 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 102
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101592 microseconds
+Fault on PT_F40(0X7f2b32fa0ee0 -> 0X807f2b32ea0ee0)
+20 microseconds
+[ 2016-10-27 11:9:23]Process 8172 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 103
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101323 microseconds
+Fault on PT_F40(0X7fc96990aee0 -> 0X807fc96980aee0)
+13 microseconds
+[ 2016-10-27 11:9:23]Process 8174 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 104
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101035 microseconds
+Fault on PT_F40(0X7ff5b2e30ee0 -> 0X807ff5b2f30ee0)
+13 microseconds
+[ 2016-10-27 11:9:23]Process 8176 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 105
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101494 microseconds
+Fault on PT_F40(0X7fcb81795ee0 -> 0X807fcb81695ee0)
+19 microseconds
+[ 2016-10-27 11:9:23]Process 8178 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 106
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101434 microseconds
+Fault on PT_F40(0X7fd24f70eee0 -> 0X807fd24f60eee0)
+19 microseconds
+[ 2016-10-27 11:9:23]Process 8180 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 107
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101170 microseconds
+Fault on PT_F40(0X7f0c6b9a6ee0 -> 0X3d0c6b9a6ee0)
+15 microseconds
+[ 2016-10-27 11:9:24]Process 8182 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 108
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101111 microseconds
+Fault on PT_F40(0X7fd2fdb1bee0 -> 0X3dd2fdb1bee0)
+19 microseconds
+[ 2016-10-27 11:9:24]Process 8184 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 109
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101194 microseconds
+Fault on PT_F40(0X7fa75a0ffee0 -> 0X3da75a0ffee0)
+19 microseconds
+[ 2016-10-27 11:9:24]Process 8186 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 110
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101132 microseconds
+Fault on PT_F40(0X7f83d461eee0 -> 0X3d83d461eee0)
+10 microseconds
+[ 2016-10-27 11:9:24]Process 8188 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 111
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101057 microseconds
+Fault on PT_F40(0X7fb0b86f0ee0 -> 0X3db0b86f0ee0)
+18 microseconds
+[ 2016-10-27 11:9:24]Process 8190 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 112
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101017 microseconds
+Fault on PT_F40(0X7f3e8d3d7ee0 -> 0X3d3e8d3d7ee0)
+19 microseconds
+[ 2016-10-27 11:9:24]Process 8192 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 113
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101046 microseconds
+Fault on PT_F40(0X7f7aaafcaee0 -> 0X3d7aaafcaee0)
+16 microseconds
+[ 2016-10-27 11:9:24]Process 8194 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 114
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100960 microseconds
+Fault on PT_F40(0X7fe44a26aee0 -> 0X3de44a26aee0)
+18 microseconds
+[ 2016-10-27 11:9:24]Process 8196 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 115
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100970 microseconds
+Fault on PT_F40(0X7efdd318aee0 -> 0X3cfdd318aee0)
+29 microseconds
+[ 2016-10-27 11:9:24]Process 8198 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 116
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101482 microseconds
+Fault on PT_F40(0X7fe8baebbee0 -> 0X22007fe8baebbee0)
+16 microseconds
+[ 2016-10-27 11:9:25]Process 8200 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 117
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100075 microseconds
+Fault on PT_F40(0X7f3d92007ee0 -> 0X22007f3d92007ee0)
+11 microseconds
+[ 2016-10-27 11:9:25]Process 8202 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 118
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101275 microseconds
+Fault on PT_F40(0X7fdf43f26ee0 -> 0X22007fdf43f26ee0)
+15 microseconds
+[ 2016-10-27 11:9:25]Process 8204 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 119
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101520 microseconds
+Fault on PT_F40(0X7f67d2e10ee0 -> 0X22007f67d2e10ee0)
+41 microseconds
+[ 2016-10-27 11:9:25]Process 8206 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 120
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101476 microseconds
+Fault on PT_F40(0X7f2d4b91fee0 -> 0X22007f2d4b91fee0)
+10 microseconds
+[ 2016-10-27 11:9:25]Process 8208 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 121
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101101 microseconds
+Fault on PT_F40(0X7f7f8a668ee0 -> 0X22007f7f8a668ee0)
+21 microseconds
+[ 2016-10-27 11:9:25]Process 8210 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 122
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100938 microseconds
+Fault on PT_F40(0X7fa049441ee0 -> 0X22007fa049441ee0)
+10 microseconds
+[ 2016-10-27 11:9:25]Process 8212 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 123
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100158 microseconds
+Fault on PT_F40(0X7fab227abee0 -> 0X22007fab227abee0)
+17 microseconds
+[ 2016-10-27 11:9:25]Process 8214 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 124
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101458 microseconds
+Fault on PT_F40(0X7fc8f549bee0 -> 0X22007fc8f549bee0)
+18 microseconds
+[ 2016-10-27 11:9:25]Process 8216 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 125
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101226 microseconds
+Fault on PT_F40(0X7f1dddf9fee0 -> 0Xff1dddf9fee2)
+18 microseconds
+[ 2016-10-27 11:9:26]Process 8218 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 126
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100082 microseconds
+Fault on PT_F40(0X7fd4e79efee0 -> 0Xffd4e79efee2)
+16 microseconds
+[ 2016-10-27 11:9:26]Process 8220 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 127
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101889 microseconds
+Fault on PT_F40(0X7fbd36847ee0 -> 0Xffbd36847ee2)
+18 microseconds
+[ 2016-10-27 11:9:26]Process 8222 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 128
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101510 microseconds
+Fault on PT_F40(0X7f24fb073ee0 -> 0Xff24fb073ee2)
+11 microseconds
+[ 2016-10-27 11:9:26]Process 8224 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 129
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101138 microseconds
+Fault on PT_F40(0X7fc66fa91ee0 -> 0Xffc66fa91ee2)
+12 microseconds
+[ 2016-10-27 11:9:26]Process 8226 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 130
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101303 microseconds
+Fault on PT_F40(0X7f40ff3a7ee0 -> 0Xff40ff3a7ee2)
+10 microseconds
+[ 2016-10-27 11:9:26]Process 8228 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 131
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101217 microseconds
+Fault on PT_F40(0X7fde0a82eee0 -> 0Xffde0a82eee2)
+15 microseconds
+[ 2016-10-27 11:9:26]Process 8230 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 132
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101255 microseconds
+Fault on PT_F40(0X7f2b45916ee0 -> 0Xff2b45916ee2)
+14 microseconds
+[ 2016-10-27 11:9:26]Process 8232 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 133
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+102223 microseconds
+Fault on PT_F40(0X7fe316155ee0 -> 0Xffe316155ee2)
+21 microseconds
+[ 2016-10-27 11:9:26]Process 8234 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 134
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101656 microseconds
+Fault on PT_F40(0X7fd3da4a1ee0 -> 0X7fd7da421ee0)
+24 microseconds
+[ 2016-10-27 11:9:27]Process 8236 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 135
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101710 microseconds
+Fault on PT_F40(0X7fbebed77ee0 -> 0X7fbabedf7ee0)
+13 microseconds
+[ 2016-10-27 11:9:27]Process 8242 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 136
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101198 microseconds
+Fault on PT_F40(0X7f301d4d3ee0 -> 0X7f341d453ee0)
+13 microseconds
+[ 2016-10-27 11:9:27]Process 8244 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 137
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101250 microseconds
+Fault on PT_F40(0X7f53a6dc5ee0 -> 0X7f57a6d45ee0)
+18 microseconds
+[ 2016-10-27 11:9:27]Process 8246 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 138
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100100 microseconds
+Fault on PT_F40(0X7fdcf46a0ee0 -> 0X7fd8f4620ee0)
+10 microseconds
+[ 2016-10-27 11:9:27]Process 8248 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 139
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101533 microseconds
+Fault on PT_F40(0X7ffaba3efee0 -> 0X7ffeba36fee0)
+14 microseconds
+[ 2016-10-27 11:9:27]Process 8250 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 140
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101099 microseconds
+Fault on PT_F40(0X7f1b5ecd5ee0 -> 0X7f1f5ec55ee0)
+16 microseconds
+[ 2016-10-27 11:9:27]Process 8252 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 141
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101072 microseconds
+Fault on PT_F40(0X7fcfeda09ee0 -> 0X7fcbeda89ee0)
+23 microseconds
+[ 2016-10-27 11:9:27]Process 8254 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 142
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101037 microseconds
+Fault on PT_F40(0X7fb645c2fee0 -> 0X7fb245cafee0)
+21 microseconds
+[ 2016-10-27 11:9:27]Process 8263 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 143
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101201 microseconds
+Fault on PT_F40(0X7f2335f3bee0 -> 0X7f2735fbbee0)
+26 microseconds
+[ 2016-10-27 11:9:27]Process 8265 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 144
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101440 microseconds
+Fault on PT_F40(0X7f929913eee0 -> 0X7f909933eee0)
+16 microseconds
+[ 2016-10-27 11:9:28]Process 8267 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 145
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101211 microseconds
+Fault on PT_F40(0X7f94d5814ee0 -> 0X7f96d5a14ee0)
+23 microseconds
+[ 2016-10-27 11:9:28]Process 8269 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 146
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100999 microseconds
+Fault on PT_F40(0X7f53ca24dee0 -> 0X7f51ca04dee0)
+16 microseconds
+[ 2016-10-27 11:9:28]Process 8271 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 147
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100113 microseconds
+Fault on PT_F40(0X7fca4cf00ee0 -> 0X7fc84cd00ee0)
+162 microseconds
+[ 2016-10-27 11:9:28]Process 8273 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 148
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101143 microseconds
+Fault on PT_F40(0X7f97a1aa7ee0 -> 0X7f95a18a7ee0)
+16 microseconds
+[ 2016-10-27 11:9:28]Process 8282 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 149
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100963 microseconds
+Fault on PT_F40(0X7f57427b0ee0 -> 0X7f55425b0ee0)
+17 microseconds
+[ 2016-10-27 11:9:28]Process 8284 termed with signal 11(SIGSEGV)
+PT_F40-2_bit_flip-150 Test Num : 150
+Inject into ../bin/hello
+----- Type : 2_bit_flip Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100996 microseconds
+Fault on PT_F40(0X7ff2c30b8ee0 -> 0X7ff0c32b8ee0)
+20 microseconds
+[ 2016-10-27 11:9:28]Process 8286 termed with signal 11(SIGSEGV)

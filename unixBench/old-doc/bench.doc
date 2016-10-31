@@ -1,0 +1,227 @@
+@BT
+
+[TITLE]BYTE's UNIX Benchmarks
+[DEK]Separating fact from fiction in the exploding UNIX empire
+[TOC]Before you jump into the UNIX pool, see how your favorite system stacks
+up against the rest of the pack.
+
+Ben Smith
+
+In making purchase decisions, it's difficult to know whom to believe. Each
+vendor claims, predictably, that their products are better than the
+competition's, but how does one prove, or debunk, these claims?
+  Cost and performance typically top the list of considerations for those
+seeking to purchase equipment, and while cost can be easily compared,
+performance cannot, and comparing costs without analyzing each system's
+relative value is a worthless exercise.
+  When DOS became popular, it allowed for the development of performance
+measurement programs, benchmarks, that would run on any system that ran DOS.
+BYTE's lab technicians set about creating their own, and the BYTE DOS
+benchmarks were born. Dozens of systems have been clocked using these
+facilities, and each review of a new DOS-based system includes the results of
+these benchmarks.
+  This is all very well, but while DOS is installed on a great many systems,
+it is no longer the !ITAL!only!ENDITAL! popular multi-platform operating
+system. User demands for greater expandability, better performance and
+multi-tasking have turned UNIX systems into one of the fastest growing
+segments of the market. When UNIX stepped from minicomputers to workstations,
+it established itself as the defacto OS for an exciting new breed of machine.
+Now, with solid implementations for affordable Intel and Motorola-based
+platforms, UNIX is making a name for itself in the PC realm. As UNIX finds
+its way into the mainstream, it is necessary to have the tools to objectively
+measure not only the performance of various hardware platforms, but of
+different versions of UNIX as well.
+
+!SUBHED!Unix is Not MS-DOS!ENDSUBHED!
+Conceptually, BYTE's UNIX benchmarks are the same as BYTE's MS-DOS
+benchmarks: We have combined evaluation of both low-level operations and
+high-level applications type programs to highlight the performance of the
+entire system.
+  But UNIX is considerably different from MS-DOS. In the first place, it is a
+!ITAL!multi!ENDITAL!-tasking, !ITAL!multi!ENDITAL!-user operating system. It
+is also portable, able to run on many different kinds of computers. MS-DOS is
+a !ITAL!single!ENDITAL!-tasking, !ITAL!single!ENDITAL!-user operating system,
+and it is intended to run on essentially one kind of computer, an IBM-PC or
+PC ``clone,'' utilizing a specific class of processor from Intel. As a
+result, the UNIX benchmarks differ from their MS-DOS counterparts. Even
+though there are some equivalent low-level tests, you will find that even
+these run differently; the popular Dhrystone benchmark commonly gives
+different results, on the same hardware, when run under both DOS and UNIX.
+The reason? Different compilers are being used, and the underlying operating
+systems and services are wildly different.
+  Another important difference is that Microsoft is the only real source of
+DOS; other suppliers simply repackage Microsoft's basic operating system
+under other names. In contrast, there are many different kinds of UNIX, and
+while similarities exist (the core UNIX from Dell, Everex and Interactive
+Systems are virtually the same), there are UNIX and UNIX-like operating
+systems that differ greatly from one another. Conclusion: The UNIX benchmarks
+are evaluating the implementation of UNIX and the resident compiler as well
+as the hardware on which it is running (the MS-DOS and Apple Macintosh
+benchmarks use a common compiler, the public-domain Small C).
+  With so many variables, what is constant? Well, we have established a
+baseline, SCO Xenix 386 version 2.3.1. running on the Everex 386/33 with 4
+Mbytes of RAM and an 80387 math coprocessor. While it isn't UNIX per se
+(because AT&T decides which implementations may be called ``UNIX''), it is
+more popular than any other PC UNIX implementation. It is specifically
+designed for 80386-based computers with full 32 bit memory access. The Everex
+386/33 was chosen because it is one of today's highest performance 386
+computers properly configured to run the full 32 bit operating system. (Some
+386 computers cannot access memory through single 32 bit operations; small
+matter if you are just running MS-DOS, an 8 bit operating system, but serious
+if you want to run UNIX.) This combination of system and OS is timely, but
+we'll continue to adjust the baseline as needed to reflect the installed PC
+and workstation UNIX base.
+
+!SUBHED!The Low Level Bench Programs!ENDSUBHED!
+The BYTE UNIX benchmarks consist of eight groups of programs: arithmetic,
+system calls, memory operations, disk operations, dhrystone, database
+operations, system loading, and miscellaneous. These can be roughly divided
+into the low-level tests (arithmetic, system calls, memory, disk, and
+dhrystone) and high-level tests (database operations, system loading, and the
+C-compiler test that is part of the miscellaneous set).
+  The Dhrystone test is known more formally as ``Dhrystone 2''. It performs
+no floating-point operations, but it does involve arrays, character strings,
+indirect addressing, and most of the non-floating point instructions that
+might be found in an application program. It also includes conditional
+operations and other common program flow controls. The output of the test is
+the number of dhrystone loops per second. It is used in the BYTE benchmarks
+because of its wide selection of operations and because it is one of the most
+widely run benchmark programs.
+  A future version of the BYTE UNIX benchmarks will include the Whetstone
+benchmark test program, as well. The Whetstone benchmark is conceptually
+similar to the Dhrystone, but with an emphasis on math; it is a mix of
+floating point and integer arithmetic, function calls, array operations,
+conditionals, and transcendental function calls.
+  All the arithmetic tests have the same source code with different data
+types substituted for the operations: register, short, int, long, float,
+double, and an empty loop for calculating the overhead required by the
+program. The actual test involves assignment, addition, subtraction,
+multiplication, and division. Very simple. But don't bother running the float
+and double precision test unless you have a math co-processor; what takes a
+math co-processor system 15 seconds, may take an unaided processor 30 minutes
+or more!
+  The system call tests are: system call overhead, pipe throughput, pipe
+context switching, spawning of child processes, execl (replacement of the
+current process by a new process), and file read, write, and copy. The system
+call overhead test evaluates the time required to do iterations of
+!MONO!dup()!ENDMONO!, !MONO!close()!ENDMONO!, !MONO!getpid()!ENDMONO!,
+!MONO!getuid()!ENDMONO!, and !MONO!umask()!ENDMONO! calls.
+  The pipe throughput test has no real counterpart in real-world programming;
+in it, a single process opens a pipe (an inter-process communications channel
+that works rather like its plumbing namesake) to itself and spins a megabyte
+around this short loop. You might call this the pipe overhead test. The
+context switching pipe test is more like a real-world application; the test
+program spawns a child process with which it carries on a bi-directional pipe
+conversation.
+  The spawn test creates a child process which immediately dies after its own
+!MONO!fork()!ENDMONO!. The process is repeated over and over. Similarly, the
+exec test is a process that repeatedly changes to a new incarnation. One of
+the arguments passed to the new incarnation is the number of remaining
+iterations (there has to be some control, after all).
+ The file read, write, and copy tests capture the number of characters that
+can be written, read, and copied in a specified time (default is 10 seconds).
+If you run this test with the minimum element (1 second), you should see a
+significantly higher value for all operations if your system implements disk
+cacheing. Be sure you have plenty of disk space before you run this test.
+
+!SUBHED!The High-Level Bench Programs!ENDSUBHED!
+To qualify as a high-level test, the test must involve operations that a
+real-world application program might employ, including heavy use of the CPU
+and disk. At the time of writing this article, we have currently implemented
+only the system loading and database tests, but we will be adding several new
+tests in the months ahead.
+  The system loading test is a shell script that is run by 1, 2, 4, and 8
+concurrent processes. The script consists of an alphabetic sort one file to
+another; taking the octal dump of the result and doing a numeric sort to a
+third file; running grep on the result of the alphabetic sort file;
+!MONO!tee!ENDMONO!ing the result to a file and to !MONO!wc!ENDMONO! (word
+count); writing the final result to a file; and removing all of the resulting
+files. This script was used in the original BYTE UNIX benchmarks (1983), but
+the source file is several magnitudes larger than the original.
+  The C compile and link is nothing more than that.
+  The database operations consist of random read, write, and add operations
+on a database file. The operations are handled by a server process; the
+requests come from client processes. The test is run with 1, 2, 4, and 8
+client processes. The test employs semaphores and message queues. Semaphores
+are being used less and less these days. BSD systems use sockets instead in
+place of both of these System V.3 IPC utilities. System V.4 offers both. This
+test is being rewritten using sockets, but since Xenix doesn't implement
+sockets, our baseline configuration becomes instantly obsolete when we
+replace the database test. Just another one of those little problems in
+trying to create journalistic computer benchmarks: any program that has been
+fully debugged is probably obsolete [ Murphy, et al ].
+
+!SUBHED!Miscellany!ENDSUBHED!
+The remaining tests are in the miscellaneous group: Tower of Hanoi (a test of
+recursive operations) and a test of the UNIX arbitrary precision calculator
+calculating the square root of two to 99 decimal places.
+  No doubt, we will be adding tests to this suite as we see the need to test
+and evaluate from different perspectives.
+
+!SUBHED!Problems in the Modern World!ENDSUBHED!
+The major problem we have had with developing the UNIX benchmark programs is
+designing them so that they fairly reflect the strengths and weaknesses of
+all the systems on which we anticipate using them. For example, the
+operations should allow RISC machines to give appropriately high performance
+for the sorts of operations that RISC is good for, and should also illustrate
+improvements provided by faster bus speeds, better math coprocessors and the
+like. In the case of RISC, the efficiency of the compiler is of utmost
+importance; RISC compilers must rearrange instructions to take advantage of
+instruction pipelining (for an overview of RISC, see BYTE, May 1988).
+  The majority of the UNIX systems that we look at employ disk caching. This
+is especially important because modern UNIX includes swapping and paging out
+to disk when there is insufficient memory for a task or the number of tasks.
+It is an interesting exercise to run the disk file operations test with
+increasingly large files and note the point at which performance drops.
+
+!SUBHED!How They Work!ENDSUBHED!
+A 400 line Bourne shell script (!MONO!Run!ENDMONO!) administers the
+benchmarking system. After the evaluation of the command line options, the
+benchmarking operation for each test has three stages: parameter setup,
+timing the execution of the test, and calculation/formatting operations (see
+Figure 1). After !MONO!Run!ENDMONO! determines the parameters for the test,
+it sends a formatted description to the output file. !MONO!Run!ENDMONO! then
+invokes the specific test by means of the UNIX command !MONO!time!ENDMONO!.
+The output of !MONO!time!ENDMONO! and any output from the test itself end up
+in a raw data file. Most tests are run six times so that any variance can be
+averaged. On completion of a set of tests, !MONO!Run!ENDMONO! invokes a
+cleanup script, which does the statistical calculations on the raw data using
+the !MONO!awk!ENDMONO! formatting language.
+  The greater part of the benchmark programs are written in C and are
+compiled on the test machine prior to running the tests. 
+
+!SUBHED!Using the Results!ENDSUBHED!
+If all you need is a raw measure of performance, then feel free to use the
+Dhrystone and Whetstone tests as indices of just that. But if you want to use
+the benchmarks to evaluate a machine's ability to serve some real need, then
+you should do the following:
+1. Analyze your requirements as far as the type of computing, amount and type
+of communications I/O, and amount and type of disk I/O.
+2. Score the subject machines using weighting factors that reflect your
+requirements.
+3. Generate a price vs. performance plot.
+4. Use the price vs. performance, along with information about the
+reliability servicability of the hardware.
+  Step 4 is really more of an art than anything else. It is extremely
+important, however, to not rely on price vs. performance alone.
+ We use our UNIX Benchmarks for doing a rough analysis and comparison of
+divergent machines. (See figure 2, ``UNIX Machines Tested.'') As you can see,
+we even go so far as to generate a single index number, a sort of reduction
+of all of the benchmark tests to a single value. This index is generated by
+summing the the individual indices of the dhrystone test, the floating point
+test, the shell test with eight concurrent processes, the C compiler time,
+the !MONO!dc!ENDMONO! routine, and the tower of hanoi time. By definition,
+the combined index for the baseline machine is six. Indicess above six imply
+a better overall performance than the baseline machine; indices less than
+six, worse performance. Always keep in mind that having a single index rating
+for a machine may make good cocktail conversation, but it is incredibly
+simplistic. It is like reducing a complex sculptural shape to a single point;
+you no longer can tell what you are looking at. This number doesn't reflect
+any real-world use of a UNIX system. However, the index is devised so that it
+gives an overall indication of different kinds of system operations and so is
+valuable to our reviews.
+  BYTE's UNIX benchmarking suite is small enough to port easily to any UNIX
+system, yet diverse and flexible enough to be useful for a wide spectrum of
+benchmarking requirements. Besides, they're in the public domain, so they can
+be obtained for little, if any, cost. What better reason do you need to use
+them?

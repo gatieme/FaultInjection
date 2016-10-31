@@ -4,10 +4,10 @@ MemoryFaultInjection
 
 
 
-#配置安装
+#1	配置安装
 -------
 
-##目录结构
+##1.1	目录结构
 -------
 
 ```cpp
@@ -28,7 +28,7 @@ MemoryFaultInjection
 | tools    | 故障注入的驱动接口层, 针对驱动实现的上层应用工具包 | gatieme           | fenggang, gatieme |
 
 
-##构建过程
+##1.2	构建过程
 -------
 
 
@@ -41,7 +41,7 @@ make
 进入engine, injector, tools目录完成驱动, 应用程序和工具包的构建
 
 
-###构建驱动
+###1.2.1	构建驱动
 -------
 
 *   编译驱动
@@ -62,7 +62,7 @@ insmod memeoryEngine.ko
 
 
 
-###构建应用程序
+###1.2.2	构建应用程序
 -------
 
 进入injector目录下构建应用程序      
@@ -80,10 +80,10 @@ Arguments:
 ```
 
 
-###构建工具包
+###1.2.3	构建工具包
 -------
 
-进入tools目录下构建命令工具接口     
+进入tools目录下构建命令工具接口
 工具集合如下
 
 | 工具 | 描述 |
@@ -94,10 +94,10 @@ Arguments:
 | v2p       | 将逻辑地址转换为物理地址      |
 
 
-##使用说明
+##1.3	使用说明
 -------
 
-##地址选项
+##1.4	地址选项
 -------
 
 | 参数 | 描述 |
@@ -109,7 +109,7 @@ Arguments:
 
 
 
-##虚拟地址
+##1.5	虚拟地址
 -------
 
 | 参数 | 描述 |
@@ -118,7 +118,7 @@ Arguments:
 | **其他方式未实现** | |
 
 
-##故障注入类型
+##1.6	故障注入类型
 -------
 
 | 参数 | 描述 |
@@ -131,10 +131,10 @@ Arguments:
 
 
 
-#编译问题
+#2	编译问题
 -------
 
-##内核目录问题
+##2.1	内核目录问题
 -------
 
 编译驱动使用了uname -r来获取内核头文件的地址
@@ -144,10 +144,112 @@ Arguments:
 >sudo ln -s 2.6.32-573.18.1.el6.x86_64 2.6.32-504.el6.x86_64
 
 
-#BUG描述
+##2.2	内核配置问题
 -------
 
-##bug-001
+
+在这里不说语法和API, 就说说在2.6.28.10内核(好像在2.6.25+的内核中就是这样了)中使用`mmap()`注意的事项.
+
+
+###2.2.1	内核配置选项
+-------
+
+
+在新的内核中, 有两个选项和`mmap()`映射内存`/dev/mem有关
+
+*	CONFIG_X86_PAT
+
+*	CONFIG_STRICT_DEVMEM
+
+内核中有这样一段话 :
+
+```cpp
+CONFIG_STRICT_DEVMEM:
+
+If this option is disabled, you allow userspace (root) access to all
+
+of memory, including kernel and userspace memory. Accidental
+
+access to this is obviously disastrous, but specific access can
+
+be used by people debugging the kernel. Note that with PAT support
+
+enabled, even in this case there are restrictions on /dev/mem
+
+use due to the cache aliasing requirements.
+
+If this option is switched on, the /dev/mem file only allows
+
+userspace access to PCI space and the BIOS code and data regions.
+
+This is sufficient for dosemu and X and all common users of    /dev/mem.
+```
+
+
+只有在`.config`文件中设置`CONFIG_STRICT_DEVMEM=n`才能获得对整个`memory`的访问权限, 在默认情况下, `CONFIG_STRICT_DEVMEM=y`, 这也就是之前`mmap`总是报错 : `Operation not permitted`的原因.
+
+设置这个选项后, 编译kernel, 然后运行mmap的实例程序， `mmap`还是返回错误 : `Invalid argument`. 后来查到还需要设置编译选项`CONFIG_X86_PAT=n`, 这个选项也是默认开启的, 但是要关闭这个选项还需要开启`CONFIG_EXPERT`, 否则`CONFIG_X86_PAT`总是关不掉.
+
+设置好这三个编译选项后, 重新编译`kernel`, 然后运行`tool`, 发现`kernel`已经解除了对`mmap`的访问限制, 可以正确读取对应物理地址的内容了.
+
+最后还可以通过修改内核源代码来实现，具体的源文件时在`/drivers/char/`目录下的`mem.c`文件
+
+>static inline int  range_is_allowed(unsigned long pfn, unsigned long size);
+
+
+所以，如果要使用`mmap`映射`/dev/mem`文件的话, 必须将这两个量取消.
+
+*	如果不取消`CONFIG_STRICT_DEVMEM`, 则`/dev/mem`不允许映射；
+
+*	如果不取消`CONFIG_X86_PAT`, 则内核空间不能映射, 调用`mmap`的时候会出现`Invalid Parameter`错误
+
+
+
+##2.2.2	检查内核选项
+
+可以使用如下命令检查内核中对于这两个参数选项的配置
+
+<br>
+
+>cat /usr/src/linux-headers-`uname -r`/.config | grep -E "CONFIG_STRICT_DEVMEM|CONFIG_X86_PAT"
+
+<br>
+
+![内核的参数配置信息](./src/bugs/config.png)
+
+
+
+##2.2.3	内核设置问题
+-------
+
+
+在.config文件中设置：
+
+```cpp
+CONFIG_X86_PAT=n
+CONFIG_STRICT_DEVMEM=n
+```
+
+或者在以下路径中设置取消两个选项 :
+
+CONFIG_X86_PAT的位置在 :
+
+```cpp
+Processor type and features  —>
+[ ]   x86 PAT support
+```
+
+CONFIG_STRICT_DEVMEM的位置在 :
+
+```cpp
+Kernel hacking  —>
+[ ] Filter access to /dev/mem
+```
+
+#3	BUG描述
+-------
+
+##3.1	bug-001
 -------
 
 **编号** ： bug-001
@@ -165,7 +267,7 @@ Arguments:
 
 未知
 
-##bug-002
+##3.2	bug-002
 -------
 
 **编号** ： bug-001
@@ -185,14 +287,14 @@ Arguments:
 我们的问题就在于第2个参数传入的程序运行参数有问题
 
 
-##bug-003
+##3.3	bug-003
 -------
 编号：bug-003
 描述：SIGSEG
 详细信息：
 
 ```shell
-workspace/hello 
+workspace/hello
 sudo ./memInjector -l stack -m random -t word_0 -p `pidof hello`
 ```
 出现SIGSEGV

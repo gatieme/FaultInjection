@@ -1,0 +1,15 @@
+positions        types         sigalrm   sigsegv   sigill
+  PT_F40        1_bit_flip          1         327         22    
+  PT_F40        2_bit_flip          1         340         9     
+  PT_F40         1_bit_0           118        224         8     
+  PT_F40         2_bit_0            41        297         12    
+  PT_F40         1_bit_1            73        209         68    
+  PT_F40         2_bit_1            34        287         29    
+  PT_F40         8_low_1            0         350         0     
+  PT_F40         8_low_0            0         350         0     
+  PT_F40       8_low_error          13        239         98    
+  PT_F40          plus_1            0          0         350    
+  PT_F40          plus_2           350         0          0     
+  PT_F40          plus_3           350         0          0     
+  PT_F40          plus_4            0          0         350    
+  PT_F40          plus_5            0          0         350    

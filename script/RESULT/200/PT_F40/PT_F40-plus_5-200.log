@@ -1,0 +1,1600 @@
+PT_F40-plus_5-200 Test Num : 1
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101108 microseconds
+Fault on PT_F40(0X7f47d61b8ee0 -> 0X7f47d61b8ee5)
+28 microseconds
+[ 2016-10-27 12:4:50]Process 19482 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 2
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101121 microseconds
+Fault on PT_F40(0X7fbb7a910ee0 -> 0X7fbb7a910ee5)
+21 microseconds
+[ 2016-10-27 12:4:51]Process 19484 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 3
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101194 microseconds
+Fault on PT_F40(0X7f4a0f939ee0 -> 0X7f4a0f939ee5)
+28 microseconds
+[ 2016-10-27 12:4:51]Process 19486 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 4
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100115 microseconds
+Fault on PT_F40(0X7fde60887ee0 -> 0X7fde60887ee5)
+29 microseconds
+[ 2016-10-27 12:4:51]Process 19488 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 5
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101062 microseconds
+Fault on PT_F40(0X7f2c7ee53ee0 -> 0X7f2c7ee53ee5)
+28 microseconds
+[ 2016-10-27 12:4:51]Process 19490 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 6
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100979 microseconds
+Fault on PT_F40(0X7fd6e257aee0 -> 0X7fd6e257aee5)
+19 microseconds
+[ 2016-10-27 12:4:51]Process 19492 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 7
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100993 microseconds
+Fault on PT_F40(0X7f9efb844ee0 -> 0X7f9efb844ee5)
+31 microseconds
+[ 2016-10-27 12:4:51]Process 19494 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 8
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101346 microseconds
+Fault on PT_F40(0X7f55108c4ee0 -> 0X7f55108c4ee5)
+29 microseconds
+[ 2016-10-27 12:4:51]Process 19496 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 9
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101455 microseconds
+Fault on PT_F40(0X7f7736435ee0 -> 0X7f7736435ee5)
+28 microseconds
+[ 2016-10-27 12:4:51]Process 19498 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 10
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101245 microseconds
+Fault on PT_F40(0X7fd8c1349ee0 -> 0X7fd8c1349ee5)
+19 microseconds
+[ 2016-10-27 12:4:51]Process 19500 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 11
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100951 microseconds
+Fault on PT_F40(0X7f28cd8ffee0 -> 0X7f28cd8ffee5)
+34 microseconds
+[ 2016-10-27 12:4:51]Process 19502 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 12
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100984 microseconds
+Fault on PT_F40(0X7fd7827e6ee0 -> 0X7fd7827e6ee5)
+32 microseconds
+[ 2016-10-27 12:4:52]Process 19504 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 13
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101335 microseconds
+Fault on PT_F40(0X7f2d558b0ee0 -> 0X7f2d558b0ee5)
+33 microseconds
+[ 2016-10-27 12:4:52]Process 19506 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 14
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101405 microseconds
+Fault on PT_F40(0X7f8692edaee0 -> 0X7f8692edaee5)
+44 microseconds
+[ 2016-10-27 12:4:52]Process 19508 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 15
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100994 microseconds
+Fault on PT_F40(0X7fa90a53dee0 -> 0X7fa90a53dee5)
+22 microseconds
+[ 2016-10-27 12:4:52]Process 19510 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 16
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100948 microseconds
+Fault on PT_F40(0X7f3a44b49ee0 -> 0X7f3a44b49ee5)
+22 microseconds
+[ 2016-10-27 12:4:52]Process 19512 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 17
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100900 microseconds
+Fault on PT_F40(0X7fcbc61d1ee0 -> 0X7fcbc61d1ee5)
+21 microseconds
+[ 2016-10-27 12:4:52]Process 19514 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 18
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101485 microseconds
+Fault on PT_F40(0X7f839fd58ee0 -> 0X7f839fd58ee5)
+22 microseconds
+[ 2016-10-27 12:4:52]Process 19516 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 19
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100092 microseconds
+Fault on PT_F40(0X7f91838ceee0 -> 0X7f91838ceee5)
+30 microseconds
+[ 2016-10-27 12:4:52]Process 19518 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 20
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101639 microseconds
+Fault on PT_F40(0X7f75192a4ee0 -> 0X7f75192a4ee5)
+28 microseconds
+[ 2016-10-27 12:4:52]Process 19520 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 21
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100922 microseconds
+Fault on PT_F40(0X7fc212301ee0 -> 0X7fc212301ee5)
+22 microseconds
+[ 2016-10-27 12:4:53]Process 19522 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 22
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101026 microseconds
+Fault on PT_F40(0X7f55108b4ee0 -> 0X7f55108b4ee5)
+22 microseconds
+[ 2016-10-27 12:4:53]Process 19524 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 23
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100143 microseconds
+Fault on PT_F40(0X7f0d4a017ee0 -> 0X7f0d4a017ee5)
+22 microseconds
+[ 2016-10-27 12:4:53]Process 19526 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 24
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101089 microseconds
+Fault on PT_F40(0X7f3c52354ee0 -> 0X7f3c52354ee5)
+24 microseconds
+[ 2016-10-27 12:4:53]Process 19528 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 25
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101210 microseconds
+Fault on PT_F40(0X7f3e2cf80ee0 -> 0X7f3e2cf80ee5)
+20 microseconds
+[ 2016-10-27 12:4:53]Process 19530 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 26
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101282 microseconds
+Fault on PT_F40(0X7f19a8937ee0 -> 0X7f19a8937ee5)
+27 microseconds
+[ 2016-10-27 12:4:53]Process 19532 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 27
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101040 microseconds
+Fault on PT_F40(0X7f57e72a8ee0 -> 0X7f57e72a8ee5)
+20 microseconds
+[ 2016-10-27 12:4:53]Process 19534 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 28
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101208 microseconds
+Fault on PT_F40(0X7f71f72f9ee0 -> 0X7f71f72f9ee5)
+36 microseconds
+[ 2016-10-27 12:4:53]Process 19536 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 29
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101570 microseconds
+Fault on PT_F40(0X7fceac1e6ee0 -> 0X7fceac1e6ee5)
+28 microseconds
+[ 2016-10-27 12:4:53]Process 19538 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 30
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100978 microseconds
+Fault on PT_F40(0X7fe40d2b4ee0 -> 0X7fe40d2b4ee5)
+22 microseconds
+[ 2016-10-27 12:4:54]Process 19540 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 31
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100132 microseconds
+Fault on PT_F40(0X7f87c3ac6ee0 -> 0X7f87c3ac6ee5)
+21 microseconds
+[ 2016-10-27 12:4:54]Process 19542 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 32
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100944 microseconds
+Fault on PT_F40(0X7f1ec47d1ee0 -> 0X7f1ec47d1ee5)
+30 microseconds
+[ 2016-10-27 12:4:54]Process 19544 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 33
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100972 microseconds
+Fault on PT_F40(0X7ff9e5c79ee0 -> 0X7ff9e5c79ee5)
+36 microseconds
+[ 2016-10-27 12:4:54]Process 19546 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 34
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101229 microseconds
+Fault on PT_F40(0X7f5081b99ee0 -> 0X7f5081b99ee5)
+22 microseconds
+[ 2016-10-27 12:4:54]Process 19548 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 35
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100895 microseconds
+Fault on PT_F40(0X7f45384bdee0 -> 0X7f45384bdee5)
+20 microseconds
+[ 2016-10-27 12:4:54]Process 19550 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 36
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100110 microseconds
+Fault on PT_F40(0X7fa566fecee0 -> 0X7fa566fecee5)
+27 microseconds
+[ 2016-10-27 12:4:54]Process 19552 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 37
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101337 microseconds
+Fault on PT_F40(0X7fcf164aaee0 -> 0X7fcf164aaee5)
+31 microseconds
+[ 2016-10-27 12:4:54]Process 19554 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 38
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101328 microseconds
+Fault on PT_F40(0X7f639cf5cee0 -> 0X7f639cf5cee5)
+26 microseconds
+[ 2016-10-27 12:4:54]Process 19556 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 39
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101046 microseconds
+Fault on PT_F40(0X7f1b6fb5bee0 -> 0X7f1b6fb5bee5)
+32 microseconds
+[ 2016-10-27 12:4:55]Process 19558 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 40
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100871 microseconds
+Fault on PT_F40(0X7f47847beee0 -> 0X7f47847beee5)
+20 microseconds
+[ 2016-10-27 12:4:55]Process 19560 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 41
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100983 microseconds
+Fault on PT_F40(0X7f8d9f5f8ee0 -> 0X7f8d9f5f8ee5)
+21 microseconds
+[ 2016-10-27 12:4:55]Process 19562 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 42
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100990 microseconds
+Fault on PT_F40(0X7f4348c61ee0 -> 0X7f4348c61ee5)
+20 microseconds
+[ 2016-10-27 12:4:55]Process 19564 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 43
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101198 microseconds
+Fault on PT_F40(0X7fd7f555fee0 -> 0X7fd7f555fee5)
+28 microseconds
+[ 2016-10-27 12:4:55]Process 19566 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 44
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101064 microseconds
+Fault on PT_F40(0X7f009553eee0 -> 0X7f009553eee5)
+22 microseconds
+[ 2016-10-27 12:4:55]Process 19568 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 45
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101060 microseconds
+Fault on PT_F40(0X7ff9cf606ee0 -> 0X7ff9cf606ee5)
+29 microseconds
+[ 2016-10-27 12:4:55]Process 19570 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 46
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100264 microseconds
+Fault on PT_F40(0X7fdb8d7c1ee0 -> 0X7fdb8d7c1ee5)
+20 microseconds
+[ 2016-10-27 12:4:55]Process 19572 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 47
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101181 microseconds
+Fault on PT_F40(0X7f2a37deeee0 -> 0X7f2a37deeee5)
+25 microseconds
+[ 2016-10-27 12:4:55]Process 19574 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 48
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100076 microseconds
+Fault on PT_F40(0X7f4e74c09ee0 -> 0X7f4e74c09ee5)
+22 microseconds
+[ 2016-10-27 12:4:56]Process 19576 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 49
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101077 microseconds
+Fault on PT_F40(0X7f1348a80ee0 -> 0X7f1348a80ee5)
+27 microseconds
+[ 2016-10-27 12:4:56]Process 19578 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 50
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100111 microseconds
+Fault on PT_F40(0X7f458c228ee0 -> 0X7f458c228ee5)
+22 microseconds
+[ 2016-10-27 12:4:56]Process 19580 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 51
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101270 microseconds
+Fault on PT_F40(0X7f69fa5dfee0 -> 0X7f69fa5dfee5)
+43 microseconds
+[ 2016-10-27 12:4:56]Process 19582 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 52
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101276 microseconds
+Fault on PT_F40(0X7ffb831c2ee0 -> 0X7ffb831c2ee5)
+24 microseconds
+[ 2016-10-27 12:4:56]Process 19584 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 53
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101056 microseconds
+Fault on PT_F40(0X7f6e6b5deee0 -> 0X7f6e6b5deee5)
+19 microseconds
+[ 2016-10-27 12:4:56]Process 19586 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 54
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101074 microseconds
+Fault on PT_F40(0X7f12c95d7ee0 -> 0X7f12c95d7ee5)
+30 microseconds
+[ 2016-10-27 12:4:56]Process 19588 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 55
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101180 microseconds
+Fault on PT_F40(0X7f6a6d9f4ee0 -> 0X7f6a6d9f4ee5)
+28 microseconds
+[ 2016-10-27 12:4:56]Process 19590 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 56
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101172 microseconds
+Fault on PT_F40(0X7fbd51794ee0 -> 0X7fbd51794ee5)
+32 microseconds
+[ 2016-10-27 12:4:56]Process 19592 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 57
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101475 microseconds
+Fault on PT_F40(0X7f207faf6ee0 -> 0X7f207faf6ee5)
+23 microseconds
+[ 2016-10-27 12:4:57]Process 19594 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 58
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101221 microseconds
+Fault on PT_F40(0X7efc5ebf1ee0 -> 0X7efc5ebf1ee5)
+29 microseconds
+[ 2016-10-27 12:4:57]Process 19596 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 59
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101085 microseconds
+Fault on PT_F40(0X7f506fa6bee0 -> 0X7f506fa6bee5)
+19 microseconds
+[ 2016-10-27 12:4:57]Process 19598 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 60
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101097 microseconds
+Fault on PT_F40(0X7fa8f541fee0 -> 0X7fa8f541fee5)
+19 microseconds
+[ 2016-10-27 12:4:57]Process 19600 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 61
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101548 microseconds
+Fault on PT_F40(0X7f27c7ee2ee0 -> 0X7f27c7ee2ee5)
+50 microseconds
+[ 2016-10-27 12:4:57]Process 19602 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 62
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100104 microseconds
+Fault on PT_F40(0X7f9916a8eee0 -> 0X7f9916a8eee5)
+29 microseconds
+[ 2016-10-27 12:4:57]Process 19604 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 63
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101675 microseconds
+Fault on PT_F40(0X7f51ad659ee0 -> 0X7f51ad659ee5)
+22 microseconds
+[ 2016-10-27 12:4:57]Process 19606 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 64
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100086 microseconds
+Fault on PT_F40(0X7f7e76542ee0 -> 0X7f7e76542ee5)
+36 microseconds
+[ 2016-10-27 12:4:57]Process 19608 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 65
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101287 microseconds
+Fault on PT_F40(0X7f4c5a6c6ee0 -> 0X7f4c5a6c6ee5)
+20 microseconds
+[ 2016-10-27 12:4:57]Process 19610 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 66
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101198 microseconds
+Fault on PT_F40(0X7f1c42ff8ee0 -> 0X7f1c42ff8ee5)
+27 microseconds
+[ 2016-10-27 12:4:58]Process 19612 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 67
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101132 microseconds
+Fault on PT_F40(0X7fdfc3199ee0 -> 0X7fdfc3199ee5)
+19 microseconds
+[ 2016-10-27 12:4:58]Process 19614 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 68
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100948 microseconds
+Fault on PT_F40(0X7f64b59e4ee0 -> 0X7f64b59e4ee5)
+20 microseconds
+[ 2016-10-27 12:4:58]Process 19616 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 69
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101256 microseconds
+Fault on PT_F40(0X7f7f6ce1dee0 -> 0X7f7f6ce1dee5)
+24 microseconds
+[ 2016-10-27 12:4:58]Process 19618 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 70
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101147 microseconds
+Fault on PT_F40(0X7f2c9cbe6ee0 -> 0X7f2c9cbe6ee5)
+21 microseconds
+[ 2016-10-27 12:4:58]Process 19620 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 71
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101411 microseconds
+Fault on PT_F40(0X7f2da2c8eee0 -> 0X7f2da2c8eee5)
+25 microseconds
+[ 2016-10-27 12:4:58]Process 19622 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 72
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101219 microseconds
+Fault on PT_F40(0X7f2d1c75dee0 -> 0X7f2d1c75dee5)
+20 microseconds
+[ 2016-10-27 12:4:58]Process 19624 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 73
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101211 microseconds
+Fault on PT_F40(0X7f4923d1fee0 -> 0X7f4923d1fee5)
+32 microseconds
+[ 2016-10-27 12:4:58]Process 19626 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 74
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101628 microseconds
+Fault on PT_F40(0X7f79e56f0ee0 -> 0X7f79e56f0ee5)
+19 microseconds
+[ 2016-10-27 12:4:58]Process 19628 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 75
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101008 microseconds
+Fault on PT_F40(0X7f9932374ee0 -> 0X7f9932374ee5)
+32 microseconds
+[ 2016-10-27 12:4:58]Process 19630 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 76
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100126 microseconds
+Fault on PT_F40(0X7f14f28cfee0 -> 0X7f14f28cfee5)
+22 microseconds
+[ 2016-10-27 12:4:59]Process 19632 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 77
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101131 microseconds
+Fault on PT_F40(0X7fbd053b0ee0 -> 0X7fbd053b0ee5)
+21 microseconds
+[ 2016-10-27 12:4:59]Process 19634 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 78
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101169 microseconds
+Fault on PT_F40(0X7f9d2294cee0 -> 0X7f9d2294cee5)
+22 microseconds
+[ 2016-10-27 12:4:59]Process 19636 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 79
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100995 microseconds
+Fault on PT_F40(0X7f71fcf8aee0 -> 0X7f71fcf8aee5)
+25 microseconds
+[ 2016-10-27 12:4:59]Process 19638 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 80
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101311 microseconds
+Fault on PT_F40(0X7f4a070aaee0 -> 0X7f4a070aaee5)
+21 microseconds
+[ 2016-10-27 12:4:59]Process 19640 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 81
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100981 microseconds
+Fault on PT_F40(0X7f834cf52ee0 -> 0X7f834cf52ee5)
+21 microseconds
+[ 2016-10-27 12:4:59]Process 19642 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 82
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101148 microseconds
+Fault on PT_F40(0X7f7cfc129ee0 -> 0X7f7cfc129ee5)
+25 microseconds
+[ 2016-10-27 12:4:59]Process 19644 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 83
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101244 microseconds
+Fault on PT_F40(0X7fde0c78fee0 -> 0X7fde0c78fee5)
+33 microseconds
+[ 2016-10-27 12:4:59]Process 19646 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 84
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101085 microseconds
+Fault on PT_F40(0X7fafc1b39ee0 -> 0X7fafc1b39ee5)
+20 microseconds
+[ 2016-10-27 12:4:59]Process 19648 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 85
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101259 microseconds
+Fault on PT_F40(0X7f082aa24ee0 -> 0X7f082aa24ee5)
+22 microseconds
+[  2016-10-27 12:5:0]Process 19650 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 86
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101194 microseconds
+Fault on PT_F40(0X7f6815969ee0 -> 0X7f6815969ee5)
+30 microseconds
+[  2016-10-27 12:5:0]Process 19652 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 87
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101002 microseconds
+Fault on PT_F40(0X7f7b9a0cdee0 -> 0X7f7b9a0cdee5)
+29 microseconds
+[  2016-10-27 12:5:0]Process 19654 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 88
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101355 microseconds
+Fault on PT_F40(0X7fc0e0585ee0 -> 0X7fc0e0585ee5)
+32 microseconds
+[  2016-10-27 12:5:0]Process 19656 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 89
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101024 microseconds
+Fault on PT_F40(0X7ff0984beee0 -> 0X7ff0984beee5)
+20 microseconds
+[  2016-10-27 12:5:0]Process 19658 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 90
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100983 microseconds
+Fault on PT_F40(0X7fae54db9ee0 -> 0X7fae54db9ee5)
+18 microseconds
+[  2016-10-27 12:5:0]Process 19660 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 91
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101003 microseconds
+Fault on PT_F40(0X7f0a3104fee0 -> 0X7f0a3104fee5)
+20 microseconds
+[  2016-10-27 12:5:0]Process 19662 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 92
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101551 microseconds
+Fault on PT_F40(0X7f5d7fdc6ee0 -> 0X7f5d7fdc6ee5)
+41 microseconds
+[  2016-10-27 12:5:0]Process 19664 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 93
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100997 microseconds
+Fault on PT_F40(0X7f775a08cee0 -> 0X7f775a08cee5)
+30 microseconds
+[  2016-10-27 12:5:0]Process 19666 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 94
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101386 microseconds
+Fault on PT_F40(0X7fbd394baee0 -> 0X7fbd394baee5)
+32 microseconds
+[  2016-10-27 12:5:1]Process 19668 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 95
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101812 microseconds
+Fault on PT_F40(0X7ffb94d45ee0 -> 0X7ffb94d45ee5)
+30 microseconds
+[  2016-10-27 12:5:1]Process 19670 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 96
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101561 microseconds
+Fault on PT_F40(0X7fb824776ee0 -> 0X7fb824776ee5)
+30 microseconds
+[  2016-10-27 12:5:1]Process 19672 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 97
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101190 microseconds
+Fault on PT_F40(0X7f7fd8af9ee0 -> 0X7f7fd8af9ee5)
+21 microseconds
+[  2016-10-27 12:5:1]Process 19674 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 98
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101055 microseconds
+Fault on PT_F40(0X7f81e8630ee0 -> 0X7f81e8630ee5)
+26 microseconds
+[  2016-10-27 12:5:1]Process 19676 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 99
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101253 microseconds
+Fault on PT_F40(0X7fef28ba6ee0 -> 0X7fef28ba6ee5)
+18 microseconds
+[  2016-10-27 12:5:1]Process 19678 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 100
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101083 microseconds
+Fault on PT_F40(0X7fa0fadefee0 -> 0X7fa0fadefee5)
+33 microseconds
+[  2016-10-27 12:5:1]Process 19680 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 101
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100207 microseconds
+Fault on PT_F40(0X7efc625abee0 -> 0X7efc625abee5)
+21 microseconds
+[  2016-10-27 12:5:1]Process 19682 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 102
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101165 microseconds
+Fault on PT_F40(0X7f5bdfb12ee0 -> 0X7f5bdfb12ee5)
+22 microseconds
+[  2016-10-27 12:5:1]Process 19684 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 103
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101256 microseconds
+Fault on PT_F40(0X7ff562f78ee0 -> 0X7ff562f78ee5)
+30 microseconds
+[  2016-10-27 12:5:2]Process 19686 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 104
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101072 microseconds
+Fault on PT_F40(0X7fa4a440eee0 -> 0X7fa4a440eee5)
+29 microseconds
+[  2016-10-27 12:5:2]Process 19688 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 105
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101108 microseconds
+Fault on PT_F40(0X7f2dda47bee0 -> 0X7f2dda47bee5)
+29 microseconds
+[  2016-10-27 12:5:2]Process 19690 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 106
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100140 microseconds
+Fault on PT_F40(0X7f0a352a9ee0 -> 0X7f0a352a9ee5)
+33 microseconds
+[  2016-10-27 12:5:2]Process 19692 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 107
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100252 microseconds
+Fault on PT_F40(0X7fac724f6ee0 -> 0X7fac724f6ee5)
+24 microseconds
+[  2016-10-27 12:5:2]Process 19694 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 108
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101214 microseconds
+Fault on PT_F40(0X7fed79823ee0 -> 0X7fed79823ee5)
+24 microseconds
+[  2016-10-27 12:5:2]Process 19696 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 109
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101505 microseconds
+Fault on PT_F40(0X7fe7a179aee0 -> 0X7fe7a179aee5)
+24 microseconds
+[  2016-10-27 12:5:2]Process 19698 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 110
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101777 microseconds
+Fault on PT_F40(0X7fa1e4828ee0 -> 0X7fa1e4828ee5)
+23 microseconds
+[  2016-10-27 12:5:2]Process 19700 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 111
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101293 microseconds
+Fault on PT_F40(0X7fce4176aee0 -> 0X7fce4176aee5)
+31 microseconds
+[  2016-10-27 12:5:2]Process 19702 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 112
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101289 microseconds
+Fault on PT_F40(0X7fde6744fee0 -> 0X7fde6744fee5)
+29 microseconds
+[  2016-10-27 12:5:3]Process 19704 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 113
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101299 microseconds
+Fault on PT_F40(0X7fb3b5ffcee0 -> 0X7fb3b5ffcee5)
+23 microseconds
+[  2016-10-27 12:5:3]Process 19706 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 114
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101147 microseconds
+Fault on PT_F40(0X7f9f20892ee0 -> 0X7f9f20892ee5)
+44 microseconds
+[  2016-10-27 12:5:3]Process 19708 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 115
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101079 microseconds
+Fault on PT_F40(0X7fc622656ee0 -> 0X7fc622656ee5)
+28 microseconds
+[  2016-10-27 12:5:3]Process 19710 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 116
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101295 microseconds
+Fault on PT_F40(0X7fc7607d1ee0 -> 0X7fc7607d1ee5)
+23 microseconds
+[  2016-10-27 12:5:3]Process 19712 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 117
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101034 microseconds
+Fault on PT_F40(0X7f1d8fb05ee0 -> 0X7f1d8fb05ee5)
+23 microseconds
+[  2016-10-27 12:5:3]Process 19714 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 118
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100283 microseconds
+Fault on PT_F40(0X7f51b14dfee0 -> 0X7f51b14dfee5)
+28 microseconds
+[  2016-10-27 12:5:3]Process 19716 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 119
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101203 microseconds
+Fault on PT_F40(0X7f5a04b29ee0 -> 0X7f5a04b29ee5)
+46 microseconds
+[  2016-10-27 12:5:3]Process 19718 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 120
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101500 microseconds
+Fault on PT_F40(0X7f4f68f66ee0 -> 0X7f4f68f66ee5)
+38 microseconds
+[  2016-10-27 12:5:3]Process 19720 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 121
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100124 microseconds
+Fault on PT_F40(0X7f2588e97ee0 -> 0X7f2588e97ee5)
+29 microseconds
+[  2016-10-27 12:5:4]Process 19722 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 122
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101068 microseconds
+Fault on PT_F40(0X7fa56a51eee0 -> 0X7fa56a51eee5)
+20 microseconds
+[  2016-10-27 12:5:4]Process 19724 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 123
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101482 microseconds
+Fault on PT_F40(0X7f40053d9ee0 -> 0X7f40053d9ee5)
+21 microseconds
+[  2016-10-27 12:5:4]Process 19726 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 124
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101268 microseconds
+Fault on PT_F40(0X7f0aaf2a0ee0 -> 0X7f0aaf2a0ee5)
+24 microseconds
+[  2016-10-27 12:5:4]Process 19728 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 125
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101148 microseconds
+Fault on PT_F40(0X7fc7b69ceee0 -> 0X7fc7b69ceee5)
+23 microseconds
+[  2016-10-27 12:5:4]Process 19730 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 126
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101133 microseconds
+Fault on PT_F40(0X7f3af96b2ee0 -> 0X7f3af96b2ee5)
+22 microseconds
+[  2016-10-27 12:5:4]Process 19732 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 127
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101139 microseconds
+Fault on PT_F40(0X7fa9606e4ee0 -> 0X7fa9606e4ee5)
+27 microseconds
+[  2016-10-27 12:5:4]Process 19734 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 128
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101188 microseconds
+Fault on PT_F40(0X7fc850692ee0 -> 0X7fc850692ee5)
+23 microseconds
+[  2016-10-27 12:5:4]Process 19736 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 129
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101407 microseconds
+Fault on PT_F40(0X7f1b45b0aee0 -> 0X7f1b45b0aee5)
+23 microseconds
+[  2016-10-27 12:5:4]Process 19738 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 130
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101270 microseconds
+Fault on PT_F40(0X7fd9b2db7ee0 -> 0X7fd9b2db7ee5)
+25 microseconds
+[  2016-10-27 12:5:5]Process 19740 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 131
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101169 microseconds
+Fault on PT_F40(0X7fef6646bee0 -> 0X7fef6646bee5)
+28 microseconds
+[  2016-10-27 12:5:5]Process 19742 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 132
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101325 microseconds
+Fault on PT_F40(0X7f9b99e77ee0 -> 0X7f9b99e77ee5)
+29 microseconds
+[  2016-10-27 12:5:5]Process 19744 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 133
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101710 microseconds
+Fault on PT_F40(0X7f7d85eb2ee0 -> 0X7f7d85eb2ee5)
+19 microseconds
+[  2016-10-27 12:5:5]Process 19746 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 134
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101105 microseconds
+Fault on PT_F40(0X7fabd804bee0 -> 0X7fabd804bee5)
+25 microseconds
+[  2016-10-27 12:5:5]Process 19748 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 135
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101218 microseconds
+Fault on PT_F40(0X7f7dc60daee0 -> 0X7f7dc60daee5)
+38 microseconds
+[  2016-10-27 12:5:5]Process 19750 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 136
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101188 microseconds
+Fault on PT_F40(0X7fcc94ca9ee0 -> 0X7fcc94ca9ee5)
+34 microseconds
+[  2016-10-27 12:5:5]Process 19752 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 137
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101842 microseconds
+Fault on PT_F40(0X7ff9fa47fee0 -> 0X7ff9fa47fee5)
+28 microseconds
+[  2016-10-27 12:5:5]Process 19754 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 138
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101226 microseconds
+Fault on PT_F40(0X7faa0e792ee0 -> 0X7faa0e792ee5)
+29 microseconds
+[  2016-10-27 12:5:5]Process 19756 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 139
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101136 microseconds
+Fault on PT_F40(0X7fa6a82f8ee0 -> 0X7fa6a82f8ee5)
+21 microseconds
+[  2016-10-27 12:5:6]Process 19758 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 140
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101169 microseconds
+Fault on PT_F40(0X7f4414475ee0 -> 0X7f4414475ee5)
+29 microseconds
+[  2016-10-27 12:5:6]Process 19760 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 141
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101032 microseconds
+Fault on PT_F40(0X7f4ace843ee0 -> 0X7f4ace843ee5)
+34 microseconds
+[  2016-10-27 12:5:6]Process 19762 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 142
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101727 microseconds
+Fault on PT_F40(0X7f6755b28ee0 -> 0X7f6755b28ee5)
+88 microseconds
+[  2016-10-27 12:5:6]Process 19764 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 143
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100084 microseconds
+Fault on PT_F40(0X7f4aa2fa8ee0 -> 0X7f4aa2fa8ee5)
+26 microseconds
+[  2016-10-27 12:5:6]Process 19766 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 144
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100958 microseconds
+Fault on PT_F40(0X7fb9f65b7ee0 -> 0X7fb9f65b7ee5)
+30 microseconds
+[  2016-10-27 12:5:6]Process 19768 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 145
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101049 microseconds
+Fault on PT_F40(0X7f9e7e6fcee0 -> 0X7f9e7e6fcee5)
+20 microseconds
+[  2016-10-27 12:5:6]Process 19770 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 146
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100945 microseconds
+Fault on PT_F40(0X7fc99efdcee0 -> 0X7fc99efdcee5)
+18 microseconds
+[  2016-10-27 12:5:6]Process 19772 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 147
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101061 microseconds
+Fault on PT_F40(0X7fb3174c9ee0 -> 0X7fb3174c9ee5)
+21 microseconds
+[  2016-10-27 12:5:6]Process 19774 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 148
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100951 microseconds
+Fault on PT_F40(0X7f32427c4ee0 -> 0X7f32427c4ee5)
+28 microseconds
+[  2016-10-27 12:5:7]Process 19776 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 149
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101025 microseconds
+Fault on PT_F40(0X7f9ec34b4ee0 -> 0X7f9ec34b4ee5)
+29 microseconds
+[  2016-10-27 12:5:7]Process 19778 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 150
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100257 microseconds
+Fault on PT_F40(0X7fc88f211ee0 -> 0X7fc88f211ee5)
+22 microseconds
+[  2016-10-27 12:5:7]Process 19780 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 151
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101492 microseconds
+Fault on PT_F40(0X7f854754eee0 -> 0X7f854754eee5)
+33 microseconds
+[  2016-10-27 12:5:7]Process 19782 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 152
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101068 microseconds
+Fault on PT_F40(0X7f6c97dbfee0 -> 0X7f6c97dbfee5)
+20 microseconds
+[  2016-10-27 12:5:7]Process 19784 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 153
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101470 microseconds
+Fault on PT_F40(0X7f981e8e9ee0 -> 0X7f981e8e9ee5)
+121 microseconds
+[  2016-10-27 12:5:7]Process 19786 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 154
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101093 microseconds
+Fault on PT_F40(0X7f2cd03d7ee0 -> 0X7f2cd03d7ee5)
+19 microseconds
+[  2016-10-27 12:5:7]Process 19788 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 155
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101087 microseconds
+Fault on PT_F40(0X7f751ebfcee0 -> 0X7f751ebfcee5)
+27 microseconds
+[  2016-10-27 12:5:7]Process 19790 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 156
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101056 microseconds
+Fault on PT_F40(0X7f5abe4f8ee0 -> 0X7f5abe4f8ee5)
+26 microseconds
+[  2016-10-27 12:5:7]Process 19792 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 157
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101164 microseconds
+Fault on PT_F40(0X7fe20f0dcee0 -> 0X7fe20f0dcee5)
+27 microseconds
+[  2016-10-27 12:5:7]Process 19794 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 158
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101253 microseconds
+Fault on PT_F40(0X7fb32a680ee0 -> 0X7fb32a680ee5)
+40 microseconds
+[  2016-10-27 12:5:8]Process 19796 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 159
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101475 microseconds
+Fault on PT_F40(0X7f89b3050ee0 -> 0X7f89b3050ee5)
+21 microseconds
+[  2016-10-27 12:5:8]Process 19798 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 160
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101175 microseconds
+Fault on PT_F40(0X7f4d6389cee0 -> 0X7f4d6389cee5)
+20 microseconds
+[  2016-10-27 12:5:8]Process 19800 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 161
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101230 microseconds
+Fault on PT_F40(0X7fb9720f7ee0 -> 0X7fb9720f7ee5)
+20 microseconds
+[  2016-10-27 12:5:8]Process 19802 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 162
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101017 microseconds
+Fault on PT_F40(0X7fdd423afee0 -> 0X7fdd423afee5)
+21 microseconds
+[  2016-10-27 12:5:8]Process 19804 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 163
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100966 microseconds
+Fault on PT_F40(0X7f838a48dee0 -> 0X7f838a48dee5)
+23 microseconds
+[  2016-10-27 12:5:8]Process 19806 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 164
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100108 microseconds
+Fault on PT_F40(0X7fb61bc1fee0 -> 0X7fb61bc1fee5)
+34 microseconds
+[  2016-10-27 12:5:8]Process 19808 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 165
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101270 microseconds
+Fault on PT_F40(0X7fca469b4ee0 -> 0X7fca469b4ee5)
+31 microseconds
+[  2016-10-27 12:5:8]Process 19810 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 166
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101487 microseconds
+Fault on PT_F40(0X7fb37a241ee0 -> 0X7fb37a241ee5)
+24 microseconds
+[  2016-10-27 12:5:8]Process 19812 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 167
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101243 microseconds
+Fault on PT_F40(0X7f7c25b24ee0 -> 0X7f7c25b24ee5)
+25 microseconds
+[  2016-10-27 12:5:9]Process 19814 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 168
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100158 microseconds
+Fault on PT_F40(0X7f03dc2c5ee0 -> 0X7f03dc2c5ee5)
+34 microseconds
+[  2016-10-27 12:5:9]Process 19816 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 169
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100996 microseconds
+Fault on PT_F40(0X7fba853a8ee0 -> 0X7fba853a8ee5)
+28 microseconds
+[  2016-10-27 12:5:9]Process 19818 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 170
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101475 microseconds
+Fault on PT_F40(0X7f51172bfee0 -> 0X7f51172bfee5)
+23 microseconds
+[  2016-10-27 12:5:9]Process 19820 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 171
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101075 microseconds
+Fault on PT_F40(0X7f13feb2cee0 -> 0X7f13feb2cee5)
+20 microseconds
+[  2016-10-27 12:5:9]Process 19822 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 172
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101495 microseconds
+Fault on PT_F40(0X7f1780e4bee0 -> 0X7f1780e4bee5)
+21 microseconds
+[  2016-10-27 12:5:9]Process 19824 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 173
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100077 microseconds
+Fault on PT_F40(0X7f863a3bcee0 -> 0X7f863a3bcee5)
+22 microseconds
+[  2016-10-27 12:5:9]Process 19826 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 174
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101145 microseconds
+Fault on PT_F40(0X7fe2d9d77ee0 -> 0X7fe2d9d77ee5)
+20 microseconds
+[  2016-10-27 12:5:9]Process 19828 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 175
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101061 microseconds
+Fault on PT_F40(0X7f9cf57e6ee0 -> 0X7f9cf57e6ee5)
+19 microseconds
+[  2016-10-27 12:5:9]Process 19830 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 176
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101306 microseconds
+Fault on PT_F40(0X7f8b466c9ee0 -> 0X7f8b466c9ee5)
+30 microseconds
+[ 2016-10-27 12:5:10]Process 19832 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 177
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101058 microseconds
+Fault on PT_F40(0X7f20941d1ee0 -> 0X7f20941d1ee5)
+26 microseconds
+[ 2016-10-27 12:5:10]Process 19834 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 178
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100268 microseconds
+Fault on PT_F40(0X7f9af5a6aee0 -> 0X7f9af5a6aee5)
+22 microseconds
+[ 2016-10-27 12:5:10]Process 19836 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 179
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101192 microseconds
+Fault on PT_F40(0X7f412a493ee0 -> 0X7f412a493ee5)
+31 microseconds
+[ 2016-10-27 12:5:10]Process 19838 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 180
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101021 microseconds
+Fault on PT_F40(0X7f011ad23ee0 -> 0X7f011ad23ee5)
+32 microseconds
+[ 2016-10-27 12:5:10]Process 19840 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 181
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101134 microseconds
+Fault on PT_F40(0X7f12b6afeee0 -> 0X7f12b6afeee5)
+30 microseconds
+[ 2016-10-27 12:5:10]Process 19842 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 182
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101073 microseconds
+Fault on PT_F40(0X7ff138cf0ee0 -> 0X7ff138cf0ee5)
+22 microseconds
+[ 2016-10-27 12:5:10]Process 19844 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 183
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101295 microseconds
+Fault on PT_F40(0X7f0d3abfcee0 -> 0X7f0d3abfcee5)
+21 microseconds
+[ 2016-10-27 12:5:10]Process 19846 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 184
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101118 microseconds
+Fault on PT_F40(0X7f7aa6599ee0 -> 0X7f7aa6599ee5)
+26 microseconds
+[ 2016-10-27 12:5:10]Process 19848 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 185
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101054 microseconds
+Fault on PT_F40(0X7f61b2aedee0 -> 0X7f61b2aedee5)
+30 microseconds
+[ 2016-10-27 12:5:11]Process 19850 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 186
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101547 microseconds
+Fault on PT_F40(0X7f641c68eee0 -> 0X7f641c68eee5)
+50 microseconds
+[ 2016-10-27 12:5:11]Process 19852 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 187
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101172 microseconds
+Fault on PT_F40(0X7fae05c24ee0 -> 0X7fae05c24ee5)
+20 microseconds
+[ 2016-10-27 12:5:11]Process 19854 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 188
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101032 microseconds
+Fault on PT_F40(0X7f8a1e1b2ee0 -> 0X7f8a1e1b2ee5)
+22 microseconds
+[ 2016-10-27 12:5:11]Process 19856 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 189
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101029 microseconds
+Fault on PT_F40(0X7fe4a8cf2ee0 -> 0X7fe4a8cf2ee5)
+29 microseconds
+[ 2016-10-27 12:5:11]Process 19858 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 190
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101179 microseconds
+Fault on PT_F40(0X7f9450770ee0 -> 0X7f9450770ee5)
+32 microseconds
+[ 2016-10-27 12:5:11]Process 19860 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 191
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101139 microseconds
+Fault on PT_F40(0X7f27bd275ee0 -> 0X7f27bd275ee5)
+22 microseconds
+[ 2016-10-27 12:5:11]Process 19862 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 192
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100110 microseconds
+Fault on PT_F40(0X7fa8e07adee0 -> 0X7fa8e07adee5)
+21 microseconds
+[ 2016-10-27 12:5:11]Process 19864 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 193
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100936 microseconds
+Fault on PT_F40(0X7fe318afcee0 -> 0X7fe318afcee5)
+30 microseconds
+[ 2016-10-27 12:5:11]Process 19866 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 194
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101562 microseconds
+Fault on PT_F40(0X7f0bdaf7bee0 -> 0X7f0bdaf7bee5)
+21 microseconds
+[ 2016-10-27 12:5:12]Process 19868 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 195
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+100101 microseconds
+Fault on PT_F40(0X7f7422e15ee0 -> 0X7f7422e15ee5)
+26 microseconds
+[ 2016-10-27 12:5:12]Process 19870 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 196
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101389 microseconds
+Fault on PT_F40(0X7f341ab66ee0 -> 0X7f341ab66ee5)
+26 microseconds
+[ 2016-10-27 12:5:12]Process 19872 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 197
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101306 microseconds
+Fault on PT_F40(0X7f81a5fa3ee0 -> 0X7f81a5fa3ee5)
+33 microseconds
+[ 2016-10-27 12:5:12]Process 19874 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 198
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101307 microseconds
+Fault on PT_F40(0X7f1074c52ee0 -> 0X7f1074c52ee5)
+26 microseconds
+[ 2016-10-27 12:5:12]Process 19876 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 199
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101033 microseconds
+Fault on PT_F40(0X7effab559ee0 -> 0X7effab559ee5)
+30 microseconds
+[ 2016-10-27 12:5:12]Process 19878 termed with signal 4(SIGILL)
+PT_F40-plus_5-200 Test Num : 200
+Inject into ../bin/hello
+----- Type : plus_5 Pos : PT_F40 -----
+There are 1 faults will be injected in faulttable...
+101050 microseconds
+Fault on PT_F40(0X7fe46d91bee0 -> 0X7fe46d91bee5)
+34 microseconds
+[ 2016-10-27 12:5:12]Process 19880 termed with signal 4(SIGILL)
