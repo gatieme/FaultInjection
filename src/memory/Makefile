@@ -1,10 +1,13 @@
 ROOT=../..
 SRC=..
 BIN=$(ROOT)/bin/
+MEMORY_BIN=$(ROOT)/bin/memory
+PTRACE_BIN=$(ROOT)/bin/ptrace
+UNIXBENCH_BIN=$(ROOT)/bin/unixbench
 
 MEMORY_SRC=$(SRC)/memory
 PTRACE_SRC=$(SRC)/ptrace
-UNIXBENCH_SRC=$(SRC)/unixBench
+UNIXBENCH_SRC=$(SRC)/unixbench
 
 #PLATFORM=$(shell $(SRC)/systype.sh)
 PLATFORM=linux
@@ -13,11 +16,11 @@ include $(SRC)/Make.readme
 
 
 # director config
-ENGINE=$(MEMORY_SRC)/engine
-INJECTOR=$(MEMORY_SRC)/injector
-TOOLS=$(MEMORY_SRC)/tools
+MEMORY_ENGINE=$(MEMORY_SRC)/engine
+MEMORY_INJECTOR=$(MEMORY_SRC)/injector
+MEMORY_TOOLS=$(MEMORY_SRC)/tools
 
-DIRS=$(ENGINE) $(INJECTOR) $(TOOLS)
+DIRS=$(MEMORY_ENGINE) $(MEMORY_INJECTOR) $(MEMORY_TOOLS)
 
 
 MAKE_DIR=make -C
@@ -42,11 +45,9 @@ clean:
 	done
 
 install :
-#	for i in $(DIRS); do \
-#		(cd $$i && echo "install $$i" && $(MAKE) install) || exit 1; \
-#	done
-	cp $(INJECTOR)/memInjector $(BIN)/memInjector
-	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+	for i in $(DIRS); do \
+		(cd $$i && echo "install $$i" && $(MAKE) install) || exit 1; \
+	done
 
 github:
 	make clean

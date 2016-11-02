@@ -1,10 +1,13 @@
 # director config
 ROOT=$(shell pwd)/../..
+
 SRC=$(ROOT)/src
-BIN=$(ROOT)/bin/
 MEMORY_SRC=$(SRC)/memory
 PTRACE_SRC=$(SRC)/ptrace
 
+BIN=$(ROOT)/bin
+MEMORY_BIN=$(BIN)/memory
+PTRACE_BIN=$(BIN)/ptrace
 
 PLATFORM=$(shell $(SRC)/systype.sh)
 include $(SRC)/Make.defines.$(PLATFORM)
@@ -47,11 +50,10 @@ clean:
 
 install:
 	mkdir -p $(BIN)
-	cp $(EXE) $(BIN)/injector
-	cp $(HELLO) $(BIN)/hello
-	cp $(WORKLOAD) $(BIN)/wordload
-
+	mkdir -p $(PTRACE_BIN)
+	cp $(EXE) $(PTRACE_BIN)/injector
+	cp $(HELLO) $(PTRACE_BIN)/hello
+	cp $(WORKLOAD) $(PTRACE_BIN)/wordload
 
 test :
 	sudo ./injector --step 100000 --mode microsecond --pos PT_F34 --type 2_bit_flip -e ./hello
-

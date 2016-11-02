@@ -1,0 +1,17 @@
+# Common make definitions, customized for each platform
+
+# Definitions required in all program directories to compile and link
+# C programs using gcc.
+
+# director config
+ROOT=$(shell pwd)/..
+
+SRC=$(ROOT)/src
+MEMORY_SRC=$(SRC)/memory
+PTRACE_SRC=$(SRC)/ptrace
+UNIXBENCH_SRC=$(SRC)/unixbench
+
+BIN=$(ROOT)/bin
+MEMORY_BIN=$(BIN)/memory
+PTRACE_BIN=$(BIN)/ptrace
+UNIXBENCH_BIN=$(BIN)/unixbench

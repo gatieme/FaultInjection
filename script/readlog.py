@@ -8,7 +8,6 @@ import re
 import sys
 import urllib2
 import argparse
-import xlrd
 import commands
 import os
 import subprocess
@@ -53,40 +52,43 @@ def getCode(positions, types, data) :
         #匹配的信息如下
         #[ 2016-1-26 23:25:52]Process 18497 exited with code 0
         #[  2016-1-26 23:26:5]Process 18556 termed with signal 11(SIGSEGV)
-        reStr = r'.*?(\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2})]Process (\d{1,5}) (exited with code \d|termed with signal \d{1,2}\((.*?)\))'
+        reStr = r'.*?(\d{4}-\d{1,2}-\d{1,2} \d{1,2}:\d{1,2}:\d{1,2})]Process (\d{1,5}) (exited with code \d{1,2}|termed with signal \d{1,2}\((.*?)\)|running with code \d{1,2}\((.*?)\))'
         #item[0] -=> [ 2016-1-26 23:25:52]
         #item[1] -=> pid
         #item[2] -=> Process 18497 exited with code 0 | Process 18556 termed with signal 11(SIGSEGV)
         #item[3] -=> "" | SIGSEGV
 
-        non_exception = 0
-        sigsegv_exception = 0
-        sigill_exception = 0
-        sigalrm_exception = 0
+        non     = 0
+        sigsegv = 0
+        sigill  = 0
+        sigalrm = 0
+        sigbus  = 0
         pattern = re.compile(reStr, re.S)
         myItems = re.findall(pattern, data)
         #print len(myItems)
 
         #print myItems
-        for item in myItems:
-        	#print item
-        	if item[3] == "" :
-        		non_exception += 1
-        	elif item[3] == "SIGALRM" :
-        		sigalrm_exception += 1
-        	elif item[3] == "SIGILL" :
-        		sigill_exception += 1
-        	elif item[3] == "SIGSEGV" :
-        		sigsegv_exception += 1
+        for item in myItems     :
+            print item
+            if item[3] == "TIMEOUT":
+                non += 1
+            elif item[3] == "SIGALRM"   :
+                sigalrm += 1
+            elif item[3] == "SIGILL"    :
+                sigill += 1
+            elif item[3] == "SIGSEGV"   :
+                sigsegv += 1
+            elif items[3] == "SIGBUS"   :
+                sigbus += 1
         #print "SIGSEGV", sigsegv_exception
         #print "SIGILL", sigill_exception
         #print "SIGALRM", sigalrm_exception
-        print positions.center(10), types.center(20), str(sigalrm_exception).center(10), str(sigsegv_exception).center(10), str(sigill_exception).center(10)
+        print positions.center(10), types.center(20), str(non).center(10), str(sigalrm).center(10), str(sigsegv).center(10), str(sigill).center(10), str(sigbus).center(10)
 
-        return (sigalrm_exception, sigsegv_exception, sigill_exception)
+        return (non, sigalrm, sigsegv, sigill, sigbus)
 
     finally:
-    	pass
+        pass
 
 
 
@@ -105,8 +107,8 @@ if __name__ == "__main__" :
         #for i, eachArg in enumerate(sys.argv):
         #    print "[%d] = %s" % (i, eachArg)
     else:
-    	print "Useage : read.py file..."
-    	exit(0)
+        print "Useage : read.py file..."
+        exit(0)
 
     parser = argparse.ArgumentParser( )
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
@@ -119,7 +121,8 @@ if __name__ == "__main__" :
 
     #print resultfile
     resultdata = readFile(resultfile)
-    (sigalrm, sigsegv, sigill) = getCode(args.positions, args.types, resultdata)
     #writeData(args.positions, args.types, args.numbers, sigalrm, sigsegv, sigill)
+    (non, sigalrm, sigsegv, sigill, sigbus) = getCode(args.positions, args.types, resultdata)
+
     pass
 

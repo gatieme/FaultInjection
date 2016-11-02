@@ -4,7 +4,7 @@ SRC=$(ROOT)/src
 BIN=$(ROOT)/bin/
 MEMORY_SRC=$(SRC)/memory
 PTRACE_SRC=$(SRC)/ptrace
-UNIXBENCH_SRC=$(SRC)/unixBench
+UNIXBENCH_SRC=$(SRC)/unixbench
 
 
 PLATFORM=$(shell $(SRC)/systype.sh)
@@ -36,11 +36,9 @@ clean:
 	done
 
 install :
-#	for i in $(DIRS); do \
-#		(cd $$i && echo "install $$i" && $(MAKE) install) || exit 1; \
-#	done
-	cp $(INJECTOR)/memInjector $(BIN)/memInjector
-	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+	for i in $(DIRS); do \
+		(cd $$i && echo "install $$i" && $(MAKE) install) || exit 1; \
+	done
 
 github:
 	make clean

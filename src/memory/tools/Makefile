@@ -1,6 +1,9 @@
-ROOT=..
-ENGINE=$(ROOT)/engine
-BIN = $(ROOT)/../workspace
+ROOT=../../..
+BIN=$(ROOT)/bin
+MEMORY_BIN=$(BIN)/memory
+PTRACE_BIN=$(BIN)/ptrace
+#PLATFORM=$(shell $(ROOT)/systype.sh)
+#include $(ROOT)/Make.defines.$(PLATFORM)
 
 
 targets = getpinfo v2p readpa writepa iskthread hello
@@ -28,12 +31,11 @@ hello:hello.o
 %.o:%.c
 	gcc -o $@ -c $^
 
-install:
-	cp getpinfo $(BIN)
-	cp v2p $(BIN)
-	cp readpa $(BIN)
-	cp writepa $(BIN)
-	cp inject_sys_process.sh $(BIN)
+install	:
+	mkdir -p $(BIN)
+	mkdir -p $(MEMORY_BIN)
+	cp $(targets) $(MEMORY_BIN)
+
 clean:
 	rm -rf *.o
 	rm -rf $(targets)

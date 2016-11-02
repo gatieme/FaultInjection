@@ -1,22 +1,6 @@
-SRC=src
-DIRS=$(SRC)
-
-
-all:
-	for i in $(DIRS); do \
-		(cd $$i && echo "cleaning $$i" && $(MAKE)) || exit 1; \
-	done
-clean:
-	for i in $(DIRS); do \
-		(cd $$i && echo "cleaning $$i" && $(MAKE) clean) || exit 1; \
-	done
-
-install :
-#	for i in $(DIRS); do \
-#		(cd $$i && echo "install $$i" && $(MAKE) install) || exit 1; \
-#	done
-	cp $(INJECTOR)/memInjector $(BIN)/memInjector
-	cp $(ENGINE)/memoryEngine.ko $(BIN)/memoryEngine.ko
+COMMIT="完善了makefile和目录结构(memfi+ptracefi)..."
 
 github:
-	cd $(SRC) && make github
+	git add -A
+	git commit -m $(COMMIT)
+	git push origin master

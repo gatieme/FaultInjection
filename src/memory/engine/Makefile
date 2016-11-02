@@ -8,7 +8,10 @@
 # 	Use "make install" to load it into kernel.
 # 	Use "make remove" to remove the module out of kernel.
 #
-ROOT=..
+ROOT=../../..
+BIN=$(ROOT)/bin
+MEMORY_BIN=$(BIN)/memory
+PTRACE_BIN=$(BIN)/ptrace
 #PLATFORM=$(shell $(ROOT)/systype.sh)
 #include $(ROOT)/Make.defines.$(PLATFORM)
 
@@ -16,18 +19,18 @@ ROOT=..
 ifneq ($(KERNELRELEASE),)
 
 #CFG_FLAGS += -O2  -I./
-#EXTRA_CFLAGS  += $(C_FLAGS) $(CFG_INC) $(CFG_INC)  
+#EXTRA_CFLAGS  += $(C_FLAGS) $(CFG_INC) $(CFG_INC)
 
 
 MODULE_NAME := memory-engine
 
-RESMAIN_CORE_OBJS := memoryEngine.o 
+RESMAIN_CORE_OBJS := memoryEngine.o
 RESMAIN_GLUE_OBJS := ctl.o	physicalAddr.o	signal.o		\
 					 virtualAddr.o 		kFuncName.o			\
 					 memVal.o	pid.o	taskInfo.o
 
 
-memory-engine-objs := $(RESMAIN_GLUE_OBJS) $(RESMAIN_CORE_OBJS)   
+memory-engine-objs := $(RESMAIN_GLUE_OBJS) $(RESMAIN_CORE_OBJS)
 obj-m := memory-engine.o
 
 else
@@ -68,7 +71,11 @@ clean:
 .PHNOY:
 	modules modules_install clean
 
+install :
+	mkdir -p $(BIN)
+	mkdir -p $(MEMORY_BIN)
+	cp $(MODULE_NAME).ko $(MEMORY_BIN)
 
 
-endif  
-  
+endif
+

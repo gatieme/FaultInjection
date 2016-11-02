@@ -4,35 +4,38 @@
 # Create: 2010-3-13 9:25:04
 # Last modified: 2010-6-16 15:49:14
 #
+CPP=g++
 
+ROOT=../../..
 MEMORY_SRC=..
 MEMORY_ENGINE_SRC=$(MEMORY_SRC)/engine
 MEMORY_INJECTOR_SRC=$(MEMROY_SRC)/injector
 MEMORY_TOOL_SRC=$(MEMORY_SRC)/tools
 
+BIN=$(ROOT)/bin
+MEMORY_BIN=$(BIN)/memory
+PTRACE_BIN=$(BIN)/ptrace
+
 STACK_SMASHING_PROTECTOR =
 #-fno-stack-protector
 #-z execstack -mpreferred-stack-boundary=2 -ggdb
 
-EXE = memInjector
-GCC	= g++
-CFLAG = -c -Wall $(DEFFLAGS) -I./  $(STACK_SMASHING_PROTECTOR)
-LDFLAG = -g
-BIN = $(ROOT)/../workspace
-ENGINE = $(ROOT)/engine
-TOOLS  = $(ROOT)/tools
+target = memInjector
 
-all:main.o  memoryFault.o memoryInjectorTool.o memoryInjector.o memoryEngine.o  ptrace.o
-	$(GCC) $(LDFLAG) -o $(EXE) $^
-#	make -C $(ENGINE)
-#	make -C $(TOOLS)
+all	:	$(target)
+
+
+$(target)	:	main.o  memoryFault.o memoryInjectorTool.o	\
+				memoryInjector.o memoryEngine.o  ptrace.o
+	$(CPP) $(LDFLAG) $^ -o $@
 
 .cpp.o:
-	$(GCC) $(CFLAG) $(LDFLAG) $<
+	$(CPP) $(CFLAG) $(LDFLAG) -c $^ -o $@ -I./
 
-install:
-	cp ./memInjector $(BIN)/memInjector
-	cp $(MEMORY_ENGINE)/memory-engine.ko $(BIN)/memory-engine.ko
+install	:
+	mkdir -p $(BIN)
+	mkdir -p $(MEMORY_BIN)
+	cp $(target) $(MEMORY_BIN)
 
 debug :
 	make clean
@@ -48,7 +51,7 @@ clean:
 #	make -C $(ENGINE) clean
 #	make -C $(TOOLS) clean
 	rm -rf *.o
-	rm -rf $(EXE)
+	rm -rf $(target)
 
 
 github:
