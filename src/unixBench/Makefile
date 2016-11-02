@@ -260,3 +260,24 @@ tar135:
 
 double:	
 	$(CC) -o $(PROGDIR)/double ${CFLAGS} ${OPTON} -Ddatum=double $(SRCDIR)/arith.c
+
+install	:
+	$(CP) ./unixBench/pgms/arithoh ../workload/arithoh
+	#$(CP) ./unixBench/pgms/context1 ../workload/context1
+	#$(CP) ./unixBench/pgms/dhry2 ../workload/dhry2
+	#$(CP) ./unixBench/pgms/dhry2reg ../workload/dhry2reg
+	#$(CP) ./unixBench/pgms/double ../workload/double
+	#$(CP) ./unixBench/pgms/float ../workload/float
+	#$(CP) ./unixBench/pgms/fsbuffer ../workload/fsbuffer
+	#$(CP) ./unixBench/pgms/fsdisk ../workload/fsdisk
+	#$(CP) ./unixBench/pgms/fstime ../workload/fstime
+	#$(CP) ./unixBench/pgms/hanoi ../workload/hanoi
+	#$(CP) ./unixBench/pgms/int ../workload/int
+	#$(CP) ./unixBench/pgms/long ../workload/long
+	#$(CP) ./unixBench/pgms/looper ../workload/looper
+	#$(CP) ./unixBench/pgms/pipe ../workload/pipe
+	#$(CP) ./unixBench/pgms/register ../workload/register
+	#$(CP) ./unixBench/pgms/short ../workload/short
+	#$(CP) ./unixBench/pgms/spawn ../workload/spawn
+	#$(CP) ./unixBench/pgms/syscall ../workload/syscall
+

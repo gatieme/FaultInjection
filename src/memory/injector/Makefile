@@ -4,14 +4,14 @@
 # Create: 2010-3-13 9:25:04
 # Last modified: 2010-6-16 15:49:14
 #
-ROOT=..
-ENGINE=$(ROOT)/..
 
-PLATFORM=$(shell $(ROOT)/systype.sh)
-include $(ROOT)/Make.defines.$(PLATFORM)
+MEMORY_SRC=..
+MEMORY_ENGINE_SRC=$(MEMORY_SRC)/engine
+MEMORY_INJECTOR_SRC=$(MEMROY_SRC)/injector
+MEMORY_TOOL_SRC=$(MEMORY_SRC)/tools
 
-STACK_SMASHING_PROTECTOR = 
-#-fno-stack-protector 
+STACK_SMASHING_PROTECTOR =
+#-fno-stack-protector
 #-z execstack -mpreferred-stack-boundary=2 -ggdb
 
 EXE = memInjector
@@ -32,7 +32,7 @@ all:main.o  memoryFault.o memoryInjectorTool.o memoryInjector.o memoryEngine.o  
 
 install:
 	cp ./memInjector $(BIN)/memInjector
-	cp $(ENGINE)/memory-engine.ko $(BIN)/memory-engine.ko
+	cp $(MEMORY_ENGINE)/memory-engine.ko $(BIN)/memory-engine.ko
 
 debug :
 	make clean
@@ -55,10 +55,10 @@ github:
 	cd $(ROOT) && make github
 
 insmod:
-	cd $(ENGINE) && make insmod
+	cd $(MEMORY_ENGINE_SRC) && make insmod
 
 reinsmod:
-	cd $(ENGINE) && make reinsmod
+	cd $(MEMORY_ENGINE_SRC) && make reinsmod
 
 #  Modify by gatieme for  **stack smashing detected** when execute.
 #  http://blog.csdn.net/qustdjx/article/details/8022474

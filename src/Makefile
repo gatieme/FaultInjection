@@ -1,23 +1,17 @@
-ROOT=../..
-SRC=..
+# director config
+ROOT=$(shell pwd)/..
+SRC=$(ROOT)/src
 BIN=$(ROOT)/bin/
-
 MEMORY_SRC=$(SRC)/memory
 PTRACE_SRC=$(SRC)/ptrace
 UNIXBENCH_SRC=$(SRC)/unixBench
 
-#PLATFORM=$(shell $(SRC)/systype.sh)
-PLATFORM=linux
+
+PLATFORM=$(shell $(SRC)/systype.sh)
 include $(SRC)/Make.defines.$(PLATFORM)
 include $(SRC)/Make.readme
 
-
-# director config
-ENGINE=$(MEMORY_SRC)/engine
-INJECTOR=$(MEMORY_SRC)/injector
-TOOLS=$(MEMORY_SRC)/tools
-
-DIRS=$(ENGINE) $(INJECTOR) $(TOOLS)
+DIRS=$(MEMOEY_SRC) $(PTRACE_SRC) $(UNIXBENCH_SRC)
 
 
 MAKE_DIR=make -C

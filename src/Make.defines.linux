@@ -18,6 +18,7 @@ GITHUB_COMMIT=$(COMMIT)
 
 #  complier config
 CC=gcc
+CPP=g++
 COMPILE.c=$(CC) $(CFLAGS) $(CPPFLAGS) -c
 LINK.c=$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS)
 LDFLAGS=-lm

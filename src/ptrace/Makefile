@@ -1,11 +1,18 @@
-CPP		= g++
-CPPFLAG = -g -Wall
-MV = mv
-RM = rm
-CP = cp
+# director config
+ROOT=$(shell pwd)/../..
+SRC=$(ROOT)/src
+BIN=$(ROOT)/bin/
+MEMORY_SRC=$(SRC)/memory
+PTRACE_SRC=$(SRC)/ptrace
+
+
+PLATFORM=$(shell $(SRC)/systype.sh)
+include $(SRC)/Make.defines.$(PLATFORM)
+include $(SRC)/Make.readme
+
 EXE = injector
 HELLO = hello
-WORKLOAD = test
+WORKLOAD = workload
 
 
 
@@ -25,45 +32,26 @@ $(WORKLOAD):workload.c
 $(HELLO):hello.o
 	$(CPP) $(CPPFLAG) $^ -o $@
 
-install:
-	$(MV) $(EXE) ../bin/injector
-	$(MV) $(HELLO) ../bin/hello
-	cp ../test.conf ../bin/test.conf
-	$(MV) $(WORKLOAD) ../workload/test
-	make -C unixBench
-	$(CP) ./unixBench/pgms/arithoh ../workload/arithoh
-	#$(CP) ./unixBench/pgms/context1 ../workload/context1
-	#$(CP) ./unixBench/pgms/dhry2 ../workload/dhry2
-	#$(CP) ./unixBench/pgms/dhry2reg ../workload/dhry2reg
-	#$(CP) ./unixBench/pgms/double ../workload/double
-	#$(CP) ./unixBench/pgms/float ../workload/float
-	#$(CP) ./unixBench/pgms/fsbuffer ../workload/fsbuffer
-	#$(CP) ./unixBench/pgms/fsdisk ../workload/fsdisk
-	#$(CP) ./unixBench/pgms/fstime ../workload/fstime
-	#$(CP) ./unixBench/pgms/hanoi ../workload/hanoi
-	#$(CP) ./unixBench/pgms/int ../workload/int
-	#$(CP) ./unixBench/pgms/long ../workload/long
-	#$(CP) ./unixBench/pgms/looper ../workload/looper
-	#$(CP) ./unixBench/pgms/pipe ../workload/pipe
-	#$(CP) ./unixBench/pgms/register ../workload/register
-	#$(CP) ./unixBench/pgms/short ../workload/short
-	#$(CP) ./unixBench/pgms/spawn ../workload/spawn
-	#$(CP) ./unixBench/pgms/syscall ../workload/syscall
 
 
+%.o: %.cpp
+	$(CPP) $(CPPFLAG) -c $^ -o $@ -I./ -std=c++11
 
-#sudo ./injector --step 100000 --mode microsecond --pos PT_F34 --type 2_bit_flip -c ../conf/default.conf  -e ./hello
-run :
-	sudo ./injector --step 100000 --mode microsecond --pos PT_F34 --type 2_bit_flip -e ./hello
-
-
-%.o: %.cpp %.h
-	$(CPP) $(CPPFLAG) -c $< -I./ -std=c++11
+%.o:%.c
+	$(CC) $(CFLAG) -c $^ -o $@ -I./
 
 clean:
-	$(RM) -f *.o $(TARGET)
-	$(RM) -f ../bin/*
-	$(RM) -f ../workload/*
-	$(RM) -f ../result/*
-	$(RM) -f ../faultTable/*
-	make -C unixBench clean
+	rm -rf	$(TARGET)
+	rm -rf	*.o
+
+
+install:
+	mkdir -p $(BIN)
+	cp $(EXE) $(BIN)/injector
+	cp $(HELLO) $(BIN)/hello
+	cp $(WORKLOAD) $(BIN)/wordload
+
+
+test :
+	sudo ./injector --step 100000 --mode microsecond --pos PT_F34 --type 2_bit_flip -e ./hello
+
