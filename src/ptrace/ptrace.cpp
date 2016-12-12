@@ -71,9 +71,13 @@ int ptraceGetReg( int pid, long offset, long &data )
 		cerr << "Error:incorrect register offset" << endl;
 		return RT_FAIL;
 	}
+#ifdef BUILD_FOR_ARM
+    //  write here
+#else
 	//ptrace( PTRACE_POKEUSER, pid, offset, 20);
-	data = ptrace( PTRACE_PEEKUSER, pid, offset, 0 );
-	if( data == -1 )
+    data = ptrace( PTRACE_PEEKUSER, pid, offset, 0 );
+#endif
+    if( data == -1 )
 	{
 		perror("ptrace");
 		return RT_FAIL;
@@ -89,8 +93,12 @@ int ptraceSetReg( int pid, long offset, long data )
 		cerr << "Error:incorrect register offset" << endl;
 		return RT_FAIL;
 	}
+#ifdef BUILD_FOR_ARM
+    //  write here
+#else
 	iRet = ptrace( PTRACE_POKEUSER, pid, offset, data );
-	if( iRet == -1 )
+#endif
+    if( iRet == -1 )
 	{
 		perror("ptrace");
 		return RT_FAIL;
