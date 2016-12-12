@@ -42,7 +42,7 @@ int ptraceCont(int pid)
 int ptraceCont(int pid,int sig)
 {
 	errno = 0;
-	
+
 	ptrace(PTRACE_CONT,pid,1,sig);
 	if( errno != 0 )
 	{
